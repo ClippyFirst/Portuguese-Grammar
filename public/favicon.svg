@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Gramática">
+  <rect width="32" height="32" rx="6" fill="#F3EEE3"/>
+  <rect x="1.75" y="1.75" width="28.5" height="28.5" rx="5" fill="none" stroke="#1B4F72" stroke-width="2"/>
+  <rect x="5.25" y="5.25" width="21.5" height="21.5" rx="2" fill="none" stroke="#2A6B78" stroke-width="0.9"/>
+  <path fill="#2A6B78" d="M8 3.8 9.5 5.3 8 6.8 6.5 5.3Z"/>
+  <path fill="#2A6B78" d="M24 3.8 25.5 5.3 24 6.8 22.5 5.3Z"/>
+  <path fill="#2A6B78" d="M8 25.2 9.5 26.7 8 28.2 6.5 26.7Z"/>
+  <path fill="#2A6B78" d="M24 25.2 25.5 26.7 24 28.2 22.5 26.7Z"/>
+  <text x="16" y="21.6" text-anchor="middle" fill="#1B4F72" font-family="Georgia, 'Liberation Serif', Times, serif" font-size="15" font-weight="700">G</text>
+</svg>

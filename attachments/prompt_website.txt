@@ -1,0 +1,1813 @@
+# MASTER PROMPT — Portuguese Grammar Reference for Ukrainian Speakers
+
+You are the lead software architect, UX/UI designer, frontend engineer and technical product designer.
+
+Your task is to build a modern, fast, static-first grammar reference website dedicated initially to PORTUGUESE GRAMMAR FOR UKRAINIAN-SPEAKING LEARNERS.
+
+The website is NOT a language course.
+
+It is NOT a vocabulary trainer.
+
+It is NOT a flashcard application.
+
+It is NOT primarily organized by CEFR levels.
+
+It is a comprehensive grammar REFERENCE: a place where a Ukrainian-speaking learner can quickly find a grammatical topic, understand it deeply, see clear formulas and examples, understand exceptions and common mistakes, compare major Portuguese varieties, and navigate to related topics.
+
+The core UX principle is:
+
+"Find → understand → compare → remember."
+
+The website should preserve the strongest ideas of high-quality grammar reference books while substantially improving information architecture, search, explanations, examples, error correction, regional/standard variation and navigation.
+
+==================================================
+1. TARGET AUDIENCE
+==================================================
+
+Primary audience:
+
+Ukrainian-speaking people learning Portuguese.
+
+The reference must be designed specifically for Ukrainian-speaking learners.
+
+The learner may be interested in:
+
+- Brazilian Portuguese (PT-BR);
+- European Portuguese (PT-PT);
+- African varieties of Portuguese;
+- Portuguese in other Lusophone regions.
+
+Brazilian and European Portuguese should be treated as the two principal reference varieties.
+
+The site must NOT assume that "Portuguese" automatically means Brazilian Portuguese or European Portuguese.
+
+Where relevant, explicitly distinguish:
+
+- Brazilian Portuguese;
+- European Portuguese;
+- African Portuguese varieties;
+- other Lusophone usage.
+
+However, do not overwhelm ordinary grammar pages with unnecessary regional information.
+
+The site must be understandable specifically to Ukrainian speakers.
+
+Therefore explanations must:
+
+- be written in natural Ukrainian;
+- explicitly explain differences between Ukrainian and Portuguese where useful;
+- anticipate errors caused by Ukrainian language structure;
+- avoid explanations that assume English as the learner's native language;
+- use English terminology only when useful for international terminology/SEO;
+- never make English the hidden pedagogical reference language;
+- clearly distinguish Portuguese grammatical concepts from superficially similar Ukrainian concepts.
+
+The user should be able to understand:
+
+"Why does Portuguese work this way?"
+
+rather than merely memorize:
+
+"Portuguese uses this form."
+
+==================================================
+2. PRODUCT CONCEPT
+==================================================
+
+Build a grammar reference with:
+
+- extremely clear structure;
+- concise explanation first;
+- deeper explanation below;
+- visual formulas;
+- conjugation tables;
+- declension/agreement tables where relevant;
+- examples in Portuguese + Ukrainian translation;
+- minimal pairs;
+- common mistakes;
+- exceptions;
+- regional/standard variation;
+- comparisons between PT-BR and PT-PT;
+- comparisons with Ukrainian where pedagogically useful;
+- related topics;
+- powerful client-side search;
+- breadcrumbs;
+- table of contents for long pages;
+- mobile-first responsive design.
+
+The site should feel like:
+
+- a modern reference book;
+- a high-quality digital grammar handbook;
+- a clean technical documentation site.
+
+It should NOT feel like:
+
+- Duolingo;
+- a gamified language-learning application;
+- a blog;
+- a course platform;
+- a social network.
+
+==================================================
+3. CORE DESIGN PRINCIPLE
+==================================================
+
+Prioritize:
+
+CLARITY > DECORATION
+
+READABILITY > INFORMATION DENSITY
+
+REFERENCE VALUE > GAMIFICATION
+
+CONTENT QUALITY > ANIMATION
+
+FAST LOOKUP > LONG INTRODUCTIONS
+
+The interface must be calm, clean and professional.
+
+Avoid unnecessary:
+
+- gradients;
+- excessive animations;
+- decorative illustrations;
+- huge hero sections;
+- cards everywhere;
+- excessive colors;
+- gamification.
+
+==================================================
+4. TECHNICAL STACK
+==================================================
+
+Preferred stack:
+
+- Astro
+- TypeScript
+- Markdown/MDX content
+- Astro Content Collections or equivalent structured content system
+- Pagefind for static client-side search
+- CSS or lightweight CSS architecture
+- minimal JavaScript
+- static generation
+
+The website must be deployable to:
+
+- GitHub Pages
+- Cloudflare Pages
+- Vercel
+
+Do not introduce a backend unless absolutely necessary.
+
+Avoid unnecessary frameworks.
+
+Do not build the project as a SPA.
+
+Prefer static HTML wherever possible.
+
+==================================================
+5. INFORMATION ARCHITECTURE
+==================================================
+
+Primary structure:
+
+/
+├── pt/
+│   ├── fundamentals/
+│   ├── pronunciation/
+│   ├── spelling/
+│   ├── nouns/
+│   ├── articles/
+│   ├── adjectives/
+│   ├── adverbs/
+│   ├── pronouns/
+│   ├── determiners/
+│   ├── prepositions/
+│   ├── conjunctions/
+│   ├── verbs/
+│   ├── tenses/
+│   ├── moods/
+│   ├── infinitive/
+│   ├── participles/
+│   ├── gerund/
+│   ├── verbal-periphrases/
+│   ├── sentence-structure/
+│   ├── word-formation/
+│   ├── negation/
+│   ├── questions/
+│   ├── agreement/
+│   ├── clitics/
+│   ├── regional-variants/
+│   └── ...
+│
+├── comparisons/
+│
+├── search/
+│
+└── ...
+
+The taxonomy must be designed so that:
+
+- Brazilian Portuguese;
+- European Portuguese;
+- African Portuguese
+
+can coexist without restructuring the entire project.
+
+Future structure may include:
+
+/pt/...
+/es/...
+/fr/...
+/compare/...
+
+However, the current implementation should prioritize Portuguese.
+
+==================================================
+6. PORTUGUESE VARIETY ARCHITECTURE
+==================================================
+
+This is a CORE requirement.
+
+Portuguese is a pluricentric language.
+
+Do not present one regional variety as the only "correct Portuguese".
+
+The system should distinguish at least:
+
+PT-BR
+Brazilian Portuguese
+
+PT-PT
+European Portuguese
+
+AFR
+African Portuguese varieties
+
+OTHER
+Other Lusophone varieties where relevant.
+
+Do not create separate completely independent grammar systems for Brazilian and European Portuguese unless absolutely necessary.
+
+Instead:
+
+- maintain a shared Portuguese grammatical core;
+- attach variety-specific notes to relevant topics;
+- create dedicated comparison pages where differences are substantial;
+- allow examples to be tagged by variety.
+
+Each example may optionally contain metadata such as:
+
+variety: BR
+variety: PT
+variety: AO
+variety: MZ
+etc.
+
+For ordinary pages:
+
+"Portuguese"
+
+may refer to the shared grammatical system.
+
+When a rule differs substantially between varieties, explicitly label it.
+
+For example:
+
+🇧🇷 Brazilian Portuguese
+🇵🇹 European Portuguese
+
+Do not use flags as the only semantic distinction. Text labels must always be present.
+
+==================================================
+7. AFRICAN AND OTHER PORTUGUESE VARIETIES
+==================================================
+
+The architecture must leave room for:
+
+- Angolan Portuguese;
+- Mozambican Portuguese;
+- Cape Verdean Portuguese usage;
+- São Toméan Portuguese;
+- Guinea-Bissau Portuguese;
+- Timorese Portuguese;
+- other Lusophone varieties where meaningful.
+
+Do NOT attempt to document every local variation on ordinary grammar pages.
+
+Instead:
+
+- document the standard/shared grammar;
+- mention important differences when relevant;
+- create dedicated regional pages when enough reliable material exists;
+- distinguish established standard usage from colloquial/local variation;
+- never label a regional form "wrong" merely because it differs from Brazilian or European usage.
+
+==================================================
+8. DO NOT ORGANIZE PRIMARY NAVIGATION BY CEFR
+==================================================
+
+Absolutely do not create:
+
+/a1/
+/a2/
+/b1/
+/b2/
+/c1/
+/c2/
+
+as the primary information architecture.
+
+Do not place:
+
+"A1"
+"B1"
+"B2"
+
+in topic titles.
+
+Do not describe topics as:
+
+"Grammar for B1"
+
+etc.
+
+If metadata is useful internally, it may exist as optional metadata, but it must not affect the main UX.
+
+The reference must cover the entire grammatical system from elementary foundations through highly advanced structures without exposing CEFR as the main navigation principle.
+
+==================================================
+9. HOMEPAGE
+==================================================
+
+Homepage should provide:
+
+1. Clear site identity.
+2. Short explanation of what the site is.
+3. Prominent search.
+4. Portuguese grammar categories.
+5. "Popular / Essential topics" section.
+6. Links to major grammar areas.
+7. Brazilian Portuguese / European Portuguese distinction.
+8. Regional Portuguese section.
+9. Comparisons section when available.
+10. Recently added topics if useful.
+
+The homepage should NOT become an enormous wall of links.
+
+Use hierarchy.
+
+==================================================
+10. HEADER
+==================================================
+
+Desktop:
+
+Logo / site name
+Граматика
+Варіанти
+Порівняння
+Пошук
+Мова
+
+Mobile:
+
+Logo
+Search
+Hamburger menu
+
+The header should remain visually simple.
+
+==================================================
+11. SEARCH
+==================================================
+
+Implement Pagefind.
+
+Search must support:
+
+- Ukrainian topic names;
+- Portuguese topic names;
+- English grammatical terminology;
+- common alternative terminology;
+- synonyms;
+- Portuguese forms;
+- relevant grammatical examples.
+
+Examples:
+
+Searching:
+
+"теперішній час"
+
+should find:
+
+Presente do Indicativo.
+
+Searching:
+
+"subjunctive"
+
+should find:
+
+Conjuntivo / Subjuntivo.
+
+Searching:
+
+"майбутній час"
+
+should find:
+
+Futuro do Indicativo.
+
+Searching:
+
+"особовий інфінітив"
+
+should find:
+
+Infinitivo Pessoal / Infinitivo Flexionado.
+
+Searching:
+
+"умовний спосіб"
+
+should find:
+
+Condicional.
+
+Searching:
+
+"подобається"
+
+should find:
+
+Gostar / construction with gostar.
+
+Searching:
+
+"бути"
+
+should find:
+
+Ser / Estar.
+
+Searching:
+
+"мати"
+
+should find:
+
+Ter.
+
+Searching:
+
+"робити"
+
+should find:
+
+Fazer.
+
+Searching:
+
+"заперечення"
+
+should find:
+
+Negação.
+
+Searching:
+
+"займенники"
+
+should find:
+
+Pronomes.
+
+Searching:
+
+"me"
+
+should find relevant object/clitic pronoun topics.
+
+Search is a MUST-HAVE feature.
+
+==================================================
+12. TERMINOLOGY
+==================================================
+
+Portuguese grammatical terminology must be handled carefully.
+
+Where terminology differs between Brazil and Portugal, show both where useful.
+
+For example:
+
+Brazilian terminology
+European terminology
+International terminology
+
+Do not create artificial distinctions when terminology is effectively shared.
+
+Where Portuguese grammatical terms have multiple English equivalents, store useful aliases in search metadata.
+
+The primary page language remains Ukrainian.
+
+Portuguese terminology should appear prominently because the learner will encounter it in Portuguese materials.
+
+==================================================
+13. GRAMMAR PAGE DESIGN
+==================================================
+
+Every grammar page should follow a consistent structure.
+
+Recommended structure:
+
+1. Breadcrumbs
+2. Title
+3. One-sentence explanation
+4. Variety indicator if relevant
+5. Quick Formula / Quick Reference
+6. Formation
+7. Usage
+8. Examples
+9. Time markers / trigger expressions where relevant
+10. Word order / position where relevant
+11. Exceptions & special cases
+12. Common mistakes
+13. Ukrainian-specific notes
+14. PT-BR vs PT-PT notes
+15. Other regional notes where relevant
+16. Comparison
+17. Related topics
+18. Optional practice
+
+The first screen should answer:
+
+"What is this?"
+
+and:
+
+"How is it formed?"
+
+without requiring the user to read the entire article.
+
+==================================================
+14. QUICK FORMULA COMPONENT
+==================================================
+
+Create reusable components for:
+
+- affirmative;
+- negative;
+- interrogative;
+- imperative where relevant;
+- conditional structures where relevant.
+
+For example:
+
+AFFIRMATIVE
+Subject + conjugated verb + ...
+
+NEGATIVE
+Subject + não + conjugated verb + ...
+
+QUESTION
+...?
+
+However, do NOT force the three-column structure when it is grammatically inappropriate.
+
+For conjugation topics use conjugation tables.
+
+For noun topics use agreement tables.
+
+For pronouns use form/position tables.
+
+For clitics use position tables.
+
+For verb moods and tenses use structured conjugation components.
+
+The component must adapt to the grammar topic.
+
+==================================================
+15. FORMULA VISUAL LANGUAGE
+==================================================
+
+Create reusable visual tokens for:
+
+- subject;
+- auxiliary verb;
+- conjugated verb;
+- infinitive;
+- personal infinitive;
+- participle;
+- gerund;
+- pronoun;
+- clitic;
+- negation;
+- ending;
+- stem;
+- preposition;
+- article;
+- determiner;
+- variable element.
+
+The visual language should help the learner understand structure.
+
+Do not rely solely on color.
+
+Every visual distinction must remain understandable without color.
+
+==================================================
+16. CONJUGATION SYSTEM
+==================================================
+
+Portuguese has a complex verbal system.
+
+Create reusable components capable of representing:
+
+- regular conjugations;
+- irregular verbs;
+- stem-changing patterns;
+- spelling changes;
+- auxiliary constructions;
+- compound tenses;
+- subjunctive forms;
+- imperative;
+- personal infinitive;
+- future subjunctive;
+- conditional;
+- participles;
+- gerund;
+- regional differences in verbal usage.
+
+Conjugation tables should clearly distinguish:
+
+- person;
+- number;
+- tense;
+- mood;
+- variant.
+
+Where Brazilian and European Portuguese differ, show the difference clearly.
+
+Do not create enormous tables without hierarchy.
+
+Provide:
+
+Quick view
+→ Full conjugation
+→ Notes
+→ Irregularities
+→ Regional differences
+
+==================================================
+17. PORTUGUESE VERBAL SYSTEM
+==================================================
+
+The content architecture must support the full Portuguese verbal system.
+
+At minimum cover:
+
+INDICATIVE:
+
+- Presente
+- Pretérito Perfeito
+- Pretérito Imperfeito
+- Pretérito Mais-que-perfeito
+- Futuro do Presente
+- Condicional / Futuro do Pretérito
+
+SUBJUNCTIVE / CONJUNCTIVE:
+
+- Presente do Conjuntivo / Subjuntivo
+- Imperfeito do Conjuntivo / Subjuntivo
+- Futuro do Conjuntivo / Subjuntivo
+
+IMPERATIVE:
+
+- affirmative;
+- negative;
+- regional/person differences.
+
+NON-FINITE FORMS:
+
+- Infinitivo Impessoal
+- Infinitivo Pessoal / Flexionado
+- Gerúndio
+- Particípio
+
+COMPOUND FORMS:
+
+- ter/haver + participle;
+- estar + gerund/infinitive constructions;
+- ser + participle;
+- other major verbal periphrases.
+
+The system must explain not only formation but functional distinctions.
+
+==================================================
+18. PORTUGUESE-SPECIFIC DIFFICULT TOPICS
+==================================================
+
+Give special attention to grammar that is particularly important in Portuguese.
+
+At minimum include deep coverage of:
+
+- ser vs estar;
+- ficar;
+- ter vs haver;
+- por vs para;
+- saber vs conhecer;
+- trazer vs levar;
+- vir vs chegar and related motion constructions;
+- gostar and similar constructions;
+- personal a where relevant;
+- direct and indirect objects;
+- clitic pronouns;
+- proclisis;
+- enclisis;
+- mesoclisis;
+- infinitive constructions;
+- personal infinitive;
+- future subjunctive;
+- imperfect subjunctive;
+- conditional;
+- compound tenses;
+- participles;
+- regular and irregular past participles;
+- gerund usage;
+- "estar + gerúndio";
+- Brazilian "estar + gerúndio" vs European alternatives;
+- European Portuguese "a + infinitivo" progressive construction;
+- contractions of prepositions + articles/pronouns;
+- article usage;
+- omission and use of articles;
+- possessives;
+- demonstratives;
+- relative pronouns;
+- que / quem / qual / cujo / onde;
+- subjunctive triggers;
+- sequence of tenses;
+- negative constructions;
+- double negation where applicable;
+- indefinite pronouns;
+- impersonal constructions;
+- passive voice;
+- "se" constructions;
+- reflexive vs reciprocal constructions;
+- word order;
+- inversion;
+- questions;
+- topicalization;
+- null subjects;
+- agreement;
+- gender and number;
+- diminutives and augmentatives where grammatically relevant;
+- derivational morphology;
+- spelling and accentuation where relevant to grammar.
+
+==================================================
+19. BRAZILIAN VS EUROPEAN PORTUGUESE
+==================================================
+
+This is one of the most important requirements.
+
+Do not treat PT-BR and PT-PT as merely pronunciation differences.
+
+Where relevant, explicitly distinguish:
+
+- personal pronouns;
+- você / tu;
+- vocês;
+- subject pronoun usage;
+- object pronouns;
+- clitic placement;
+- proclisis/enclisis;
+- mesoclisis;
+- gerund vs a + infinitive;
+- use of estar;
+- verbal periphrases;
+- possessives;
+- demonstratives;
+- article usage;
+- prepositions;
+- contractions;
+- vocabulary only when grammatical consequences exist;
+- word order;
+- question formation;
+- forms of address;
+- informal speech;
+- formal speech;
+- past-tense usage where differences exist;
+- future constructions;
+- pronunciation only where it affects grammatical recognition or morphology.
+
+Do not force a difference where both varieties use the same structure.
+
+Every regional note should answer:
+
+"What differs?"
+
+"Where?"
+
+"Is it mandatory or optional?"
+
+"Is it formal or colloquial?"
+
+"Would a speaker from the other region understand it?"
+
+==================================================
+20. EXAMPLE COMPONENT
+==================================================
+
+Each example should support:
+
+Portuguese sentence
+Ukrainian translation
+Optional variety label
+Optional grammatical annotation
+Optional explanation
+
+Example:
+
+Eu gosto de café.
+
+Я люблю каву / Мені подобається кава.
+
+Important:
+
+The Ukrainian translation must sound natural.
+
+Do not produce mechanically translated Ukrainian.
+
+Where the Portuguese construction has no direct Ukrainian equivalent, explain the conceptual difference.
+
+==================================================
+21. MINIMAL PAIRS
+==================================================
+
+Use minimal pairs whenever they clarify a difficult distinction.
+
+For example:
+
+Sou médico.
+Я лікар.
+
+Estou cansado.
+Я втомлений.
+
+Then explain why the Portuguese verbs differ.
+
+Minimal pairs are especially important for:
+
+- ser / estar;
+- ser / ficar / estar;
+- por / para;
+- pretérito perfeito / imperfeito;
+- indicative / subjunctive;
+- direct / indirect object;
+- object pronouns;
+- articles;
+- demonstratives;
+- prepositions;
+- ter / haver;
+- saber / conhecer;
+- levar / trazer;
+- infinitivo pessoal / infinitivo impessoal;
+- PT-BR / PT-PT constructions.
+
+==================================================
+22. COMMON MISTAKES
+==================================================
+
+Every important grammar page should contain:
+
+"Типові помилки україномовних"
+
+Each mistake should include:
+
+❌ incorrect
+✅ correct
+Why?
+
+The explanation must explain the underlying reason.
+
+Do not simply say:
+
+"Так неправильно."
+
+Examples should include mistakes caused by:
+
+- Ukrainian syntax;
+- lack of articles in Ukrainian;
+- differences in gender;
+- differences in prepositions;
+- Ukrainian case system;
+- Ukrainian aspect system;
+- different expression of possession;
+- different pronoun systems;
+- different word order;
+- Portuguese verb morphology;
+- false analogies with Spanish;
+- false analogies with English.
+
+==================================================
+23. UKRAINIAN-SPECIFIC PEDAGOGY
+==================================================
+
+This is one of the most important requirements.
+
+Whenever Portuguese grammar differs significantly from Ukrainian, explicitly explain the difference.
+
+Important areas include:
+
+- Portuguese grammatical gender vs Ukrainian grammatical gender;
+- Portuguese articles where Ukrainian has no articles;
+- Portuguese contractions;
+- Portuguese prepositions vs Ukrainian cases;
+- Portuguese subject omission;
+- Portuguese pronoun system;
+- Portuguese clitics;
+- Portuguese object marking;
+- Portuguese verb aspect vs Ukrainian aspect;
+- Portuguese tense system;
+- Portuguese subjunctive;
+- Portuguese personal infinitive;
+- Portuguese future subjunctive;
+- Portuguese ser/estar;
+- Portuguese gostar construction;
+- Portuguese word order;
+- Portuguese agreement;
+- Portuguese possessives;
+- Portuguese double negation;
+- Portuguese impersonal constructions.
+
+Do not assume English grammar as the default comparison.
+
+English may be mentioned when genuinely useful, but Ukrainian is the primary pedagogical reference language.
+
+==================================================
+24. UKRAINIAN VS PORTUGUESE VERB ASPECT
+==================================================
+
+This deserves explicit treatment.
+
+Ukrainian learners naturally think in terms of:
+
+доконаний вид
+недоконаний вид
+
+Portuguese does not have an equivalent grammatical aspect system.
+
+Therefore explanations must carefully show how Portuguese expresses meanings that Ukrainian often encodes morphologically.
+
+Explain the interaction between:
+
+- Pretérito Perfeito;
+- Pretérito Imperfeito;
+- Mais-que-perfeito;
+- periphrastic constructions;
+- lexical aspect;
+- context.
+
+Do not incorrectly equate Portuguese tenses with Ukrainian aspect.
+
+==================================================
+25. PORTUGUESE ARTICLES AND CONTRACTIONS
+==================================================
+
+Give especially strong coverage to:
+
+- o / a / os / as;
+- um / uma / uns / umas;
+- definite vs indefinite articles;
+- article omission;
+- articles with names;
+- articles with possessives;
+- articles with geographical names;
+- articles after prepositions;
+- de + article;
+- em + article;
+- a + article;
+- por + article;
+- para + article;
+- pelo / pela / pelos / pelas;
+- no / na / nos / nas;
+- do / da / dos / das;
+- ao / à / aos / às;
+- regional differences.
+
+Contractions must be presented systematically rather than as isolated vocabulary items.
+
+==================================================
+26. CLITIC PRONOUNS
+==================================================
+
+Treat Portuguese clitic pronouns as a major dedicated grammar system.
+
+Cover:
+
+- me;
+- te;
+- se;
+- o / a;
+- os / as;
+- lhe / lhes;
+- nos;
+- vos;
+- combinations;
+- direct vs indirect object;
+- placement;
+- proclisis;
+- enclisis;
+- mesoclisis;
+- contractions;
+- regional differences;
+- formal vs colloquial usage;
+- infinitive constructions;
+- gerund constructions;
+- imperative constructions.
+
+PT-BR and PT-PT differences must be explained clearly.
+
+Do not simply present pronoun tables without explaining actual usage.
+
+==================================================
+27. PERSONAL INFINITIVE
+==================================================
+
+The Personal Infinitive / Infinitivo Pessoal / Infinitivo Flexionado is a major Portuguese feature.
+
+Create dedicated coverage explaining:
+
+- what it is;
+- formation;
+- when it is used;
+- when it is not used;
+- relation to the subject;
+- difference from the ordinary infinitive;
+- relation to subjunctive;
+- common constructions;
+- formal vs conversational tendencies;
+- Brazilian vs European Portuguese differences where meaningful;
+- common mistakes by Ukrainian speakers.
+
+Use many minimal examples.
+
+==================================================
+28. FUTURE SUBJUNCTIVE
+==================================================
+
+Give dedicated treatment to the Future Subjunctive.
+
+Explain:
+
+- formation;
+- relation to infinitive;
+- irregular forms;
+- common conjunctions;
+- conditional clauses;
+- temporal clauses;
+- relative clauses;
+- formal and conversational usage;
+- comparison with Ukrainian;
+- comparison with present/imperfect subjunctive.
+
+Do not hide this topic inside a generic "subjunctive" page.
+
+==================================================
+29. SUBJUNCTIVE / CONJUNCTIVE
+==================================================
+
+Portuguese terminology may vary between:
+
+Subjuntivo
+Conjuntivo
+
+The reference should support both terminology where appropriate.
+
+Explain:
+
+- Presente;
+- Imperfeito;
+- Futuro;
+- compound forms;
+- triggers;
+- semantic meaning;
+- doubt;
+- desire;
+- emotion;
+- evaluation;
+- possibility;
+- hypothetical situations;
+- purpose;
+- condition;
+- temporal clauses;
+- relative clauses;
+- negative expressions;
+- impersonal expressions.
+
+Do not reduce the subjunctive to a list of trigger words.
+
+Explain the semantic logic behind it.
+
+==================================================
+30. NEGATION
+==================================================
+
+Cover Portuguese negation comprehensively.
+
+At minimum:
+
+- não;
+- negative pronouns;
+- negative adverbs;
+- ninguém;
+- nada;
+- nunca;
+- jamais;
+- nem;
+- double negation;
+- negative concord;
+- position of negative elements;
+- regional and stylistic differences.
+
+Compare carefully with Ukrainian.
+
+Do not incorrectly describe Portuguese negative concord using English grammatical assumptions.
+
+==================================================
+31. QUESTIONS
+==================================================
+
+Cover:
+
+- yes/no questions;
+- wh-questions;
+- interrogative pronouns;
+- interrogative adverbs;
+- question intonation;
+- written punctuation;
+- word order;
+- colloquial Brazilian usage;
+- European Portuguese usage;
+- formal written questions.
+
+Explain where Portuguese differs from Ukrainian.
+
+==================================================
+32. WORD ORDER
+==================================================
+
+Create dedicated coverage for Portuguese sentence structure.
+
+At minimum:
+
+- basic SVO;
+- subject omission;
+- subject placement;
+- object placement;
+- clitics;
+- adverb placement;
+- adjective placement;
+- topicalization;
+- inversion;
+- questions;
+- emphasis;
+- information structure.
+
+Where PT-BR and PT-PT differ, explain it.
+
+==================================================
+33. ADJECTIVES
+==================================================
+
+Cover:
+
+- gender agreement;
+- number agreement;
+- adjective position;
+- meaning changes caused by position;
+- adjective + noun constructions;
+- noun + adjective constructions;
+- irregular forms;
+- apocope where relevant;
+- comparatives;
+- superlatives;
+- absolute superlative;
+- relational adjectives;
+- participial adjectives.
+
+Pay special attention to adjective placement when it changes meaning.
+
+==================================================
+34. NOUNS AND GENDER
+==================================================
+
+Cover:
+
+- masculine/feminine;
+- gender formation;
+- irregular gender;
+- epicene/common-gender nouns where relevant;
+- number formation;
+- plural irregularities;
+- compound nouns;
+- gender differences compared with Ukrainian;
+- nouns whose grammatical gender is unexpected for Ukrainian speakers.
+
+Do not assume Portuguese gender will match Ukrainian gender.
+
+==================================================
+35. PRONOUNS AND DETERMINERS
+==================================================
+
+Cover:
+
+- personal pronouns;
+- subject pronouns;
+- object pronouns;
+- clitic pronouns;
+- reflexive pronouns;
+- reciprocal constructions;
+- possessives;
+- demonstratives;
+- interrogatives;
+- relatives;
+- indefinites;
+- quantifiers;
+- exclamatives.
+
+Make clear distinctions between:
+
+- form;
+- grammatical function;
+- position;
+- regional usage.
+
+==================================================
+36. PREPOSITIONS
+==================================================
+
+Prepositions require dedicated treatment.
+
+At minimum:
+
+- a;
+- de;
+- em;
+- por;
+- para;
+- com;
+- sem;
+- sobre;
+- entre;
+- até;
+- desde;
+- contra;
+- perante;
+- após;
+- durante;
+- mediante;
+- conforme;
+- segundo.
+
+Explain:
+
+- spatial meaning;
+- temporal meaning;
+- abstract meaning;
+- verb + preposition constructions;
+- noun + preposition;
+- adjective + preposition;
+- contractions;
+- PT-BR / PT-PT differences.
+
+Do not translate Portuguese prepositions one-to-one into Ukrainian.
+
+==================================================
+37. COMPARISON PAGES
+==================================================
+
+Build infrastructure for comparison pages.
+
+Examples:
+
+/comparisons/ser-estar
+/comparisons/ser-estar-ficar
+/comparisons/por-para
+/comparisons/preterito-perfeito-imperfeito
+/comparisons/ter-haver
+/comparisons/saber-conhecer
+/comparisons/infinitivo-pessoal-impessoal
+/comparisons/subjuntivo-indicativo
+/comparisons/gostar
+/comparisons/clitics
+/comparisons/pt-br-pt-pt
+/comparisons/articles
+/comparisons/prepositions
+
+Comparison pages should use:
+
+side-by-side tables
+minimal pairs
+common conceptual differences
+false friends
+common Ukrainian learner mistakes
+regional differences
+
+==================================================
+38. PT-BR VS PT-PT COMPARISON PAGES
+==================================================
+
+Create dedicated infrastructure for major Brazilian vs European Portuguese comparisons.
+
+Examples:
+
+/comparisons/brazilian-european-portuguese/pronouns
+/comparisons/brazilian-european-portuguese/clitics
+/comparisons/brazilian-european-portuguese/gerund
+/comparisons/brazilian-european-portuguese/progressive
+/comparisons/brazilian-european-portuguese/você-tu
+/comparisons/brazilian-european-portuguese/articles
+/comparisons/brazilian-european-portuguese/word-order
+
+The goal is not to declare one variety superior.
+
+The goal is:
+
+"What would I actually encounter?"
+
+==================================================
+39. FALSE FRIENDS
+==================================================
+
+Include false-friend infrastructure where grammar and morphology are involved.
+
+Especially consider false analogies caused by:
+
+- Ukrainian;
+- Russian;
+- Spanish;
+- English.
+
+Spanish is particularly important because many Portuguese learners already know or encounter Spanish.
+
+However:
+
+Do not turn the grammar reference into a vocabulary book.
+
+Only include false friends when they illuminate a grammatical or structural issue.
+
+==================================================
+40. REGIONAL VARIATION
+==================================================
+
+Portuguese is pluricentric.
+
+Do not present:
+
+"Brazilian Portuguese = Portuguese"
+
+or:
+
+"European Portuguese = Portuguese"
+
+as the only perspective.
+
+Where relevant distinguish:
+
+- Brazil;
+- Portugal;
+- Angola;
+- Mozambique;
+- Cape Verde;
+- Guinea-Bissau;
+- São Tomé and Príncipe;
+- Timor-Leste;
+- other Lusophone regions where reliable grammatical information exists.
+
+Regional information should be concise on ordinary pages.
+
+Create deeper dedicated regional pages where necessary.
+
+Always distinguish:
+
+- standard;
+- formal;
+- colloquial;
+- regional;
+- emerging/local;
+- prescriptive recommendations.
+
+==================================================
+41. CONTENT DEPTH
+==================================================
+
+The site must be deep.
+
+"Deep" does NOT mean unnecessarily verbose.
+
+Each topic should answer:
+
+- What is it?
+- How is it formed?
+- When is it used?
+- When is it NOT used?
+- What are the exceptions?
+- What are the common mistakes?
+- What does a Ukrainian speaker usually misunderstand?
+- What are the important PT-BR/PT-PT differences?
+- Are there relevant African/Lusophone differences?
+- What are the related grammatical concepts?
+- What terminology might the learner encounter in other grammar books?
+
+For major topics, provide enough examples to demonstrate the rule rather than merely state it.
+
+==================================================
+42. RELATED TOPICS
+==================================================
+
+Every substantial page should have related topics.
+
+Examples:
+
+Ser / Estar
+→ Ficar
+→ Adjectives
+→ Location
+→ Passive voice
+→ Progressive constructions
+
+Pretérito Perfeito
+→ Pretérito Imperfeito
+→ Mais-que-perfeito
+→ Sequence of events
+→ Aspect
+
+Object pronouns
+→ Clitics
+→ Prepositions
+→ Imperative
+→ Infinitive
+→ Gerund
+
+Infinitivo Pessoal
+→ Infinitivo Impessoal
+→ Subjuntivo
+→ Subordinate clauses
+
+Use actual internal links.
+
+Do not create dead links.
+
+==================================================
+43. ACCESSIBILITY
+==================================================
+
+Target WCAG 2.2 AA principles.
+
+Implement:
+
+- semantic HTML;
+- keyboard navigation;
+- visible focus;
+- sufficient contrast;
+- proper table headers;
+- aria labels where necessary;
+- accessible mobile navigation;
+- no information conveyed exclusively through color;
+- readable typography;
+- responsive layout.
+
+Grammar tables must remain understandable to screen readers as far as practical.
+
+==================================================
+44. RESPONSIVE DESIGN
+==================================================
+
+Mobile-first.
+
+Grammar tables must not break the layout.
+
+Possible solutions:
+
+- horizontal scrolling for wide conjugation tables;
+- stacked formula cards;
+- responsive tables;
+- collapsible sections only where they improve usability.
+
+Never make important grammar content inaccessible on mobile.
+
+==================================================
+45. SEO
+==================================================
+
+Implement:
+
+- semantic HTML;
+- unique title;
+- meta description;
+- canonical URLs;
+- sitemap;
+- robots.txt;
+- hreflang infrastructure;
+- Open Graph metadata;
+- structured data where appropriate;
+- internal linking;
+- clean URLs.
+
+URLs should be stable and readable.
+
+Examples:
+
+/pt/verbs/ser-estar/
+/pt/tenses/presente-do-indicativo/
+/pt/tenses/preterito-perfeito/
+/pt/tenses/imperfeito/
+/pt/moods/subjuntivo/
+/pt/infinitive/personal-infinitive/
+/pt/pronouns/clitic-pronouns/
+/pt/prepositions/por-para/
+/pt/regional/brazilian-european/
+
+==================================================
+46. CONTENT MODEL
+==================================================
+
+Create a structured content model capable of representing:
+
+id
+language
+slug
+category
+title_uk
+title_pt
+title_en
+short_description
+formula
+formation
+usage
+examples
+time_markers
+exceptions
+common_mistakes
+ukrainian_notes
+regional_notes
+variant_notes
+terminology
+comparison
+related_topics
+
+Optional regional metadata:
+
+varieties:
+- universal
+- BR
+- PT
+- AO
+- MZ
+- CV
+- GW
+- ST
+- TL
+- other
+
+Each example may optionally contain:
+
+text_pt
+translation_uk
+variety
+grammar_annotation
+note
+
+Do not hard-code grammar content into React/Astro components.
+
+Content must remain separate from presentation.
+
+==================================================
+47. CONTENT QUALITY CONTROL
+==================================================
+
+Never generate filler.
+
+Never repeat the same explanation using different wording just to increase length.
+
+Never invent grammatical rules.
+
+Distinguish:
+
+- standard grammar;
+- colloquial usage;
+- regional usage;
+- prescriptive recommendations;
+- disputed/variable usage;
+- historical usage when relevant.
+
+For difficult topics, prefer authoritative grammatical consensus.
+
+When Brazilian and European Portuguese differ, do not simplify the difference into:
+
+"Brazil says X, Portugal says Y"
+
+unless the distinction is genuinely systematic.
+
+Explain:
+
+- frequency;
+- register;
+- optionality;
+- context;
+- regional distribution.
+
+==================================================
+48. SOURCING AND AUTHORITY
+==================================================
+
+For difficult or disputed grammar topics, prioritize reliable linguistic sources.
+
+Where possible base explanations on:
+
+- authoritative Portuguese grammars;
+- major Portuguese and Brazilian linguistic references;
+- official orthographic standards;
+- academic sources;
+- established dictionaries and reference works.
+
+Do not rely on random language-learning blogs as primary authority.
+
+The site may simplify explanations for learners, but simplification must not distort the grammatical facts.
+
+==================================================
+49. PERFORMANCE
+==================================================
+
+Target:
+
+- static HTML;
+- minimal JavaScript;
+- minimal client hydration;
+- optimized CSS;
+- fast first contentful paint;
+- no unnecessary dependencies.
+
+Do not introduce client-side JavaScript for functionality that can be implemented statically.
+
+==================================================
+50. PROJECT STRUCTURE
+==================================================
+
+Recommended:
+
+/
+├── content/
+│   └── pt/
+│       ├── fundamentals/
+│       ├── pronunciation/
+│       ├── spelling/
+│       ├── nouns/
+│       ├── articles/
+│       ├── adjectives/
+│       ├── adverbs/
+│       ├── pronouns/
+│       ├── determiners/
+│       ├── prepositions/
+│       ├── conjunctions/
+│       ├── verbs/
+│       ├── tenses/
+│       ├── moods/
+│       ├── infinitive/
+│       ├── participles/
+│       ├── gerund/
+│       ├── verbal-periphrases/
+│       ├── sentence-structure/
+│       ├── word-formation/
+│       ├── negation/
+│       ├── questions/
+│       ├── agreement/
+│       ├── clitics/
+│       └── regional/
+│
+├── src/
+│   ├── components/
+│   ├── layouts/
+│   ├── pages/
+│   ├── styles/
+│   └── utils/
+│
+├── public/
+├── data/
+├── astro.config.mjs
+├── package.json
+└── README.md
+
+==================================================
+51. DEVELOPMENT PROCESS
+==================================================
+
+Do NOT generate the entire project blindly in one step.
+
+Work incrementally.
+
+Phase 1:
+- inspect repository;
+- determine existing files;
+- establish architecture;
+- install only necessary dependencies;
+- create base layout;
+- create design system;
+- create content schema;
+- establish Portuguese variety metadata.
+
+Phase 2:
+- homepage;
+- category pages;
+- grammar page template;
+- search;
+- navigation;
+- breadcrumbs;
+- PT-BR/PT-PT indicators.
+
+Phase 3:
+- create representative Portuguese grammar pages;
+- test difficult grammar components;
+- test conjugation tables;
+- test clitic/pronoun components;
+- test regional comparison components;
+- test mobile;
+- test accessibility.
+
+Phase 4:
+- scale content.
+
+After each major phase:
+
+- inspect generated code;
+- remove duplication;
+- fix broken imports;
+- check routing;
+- check mobile layout;
+- check build;
+- check links;
+- verify search indexing.
+
+==================================================
+52. IMPORTANT
+==================================================
+
+Do not start generating hundreds of grammar pages immediately.
+
+First build the reusable architecture.
+
+The architecture must make it possible to add 100–300+ grammar pages without changing the core frontend.
+
+The content must be replaceable independently from the UI.
+
+The architecture must also allow:
+
+- PT-BR-specific content;
+- PT-PT-specific content;
+- shared Portuguese content;
+- regional notes;
+- comparison pages
+
+without duplicating the entire grammar database.
+
+==================================================
+53. DEFINITION OF DONE
+==================================================
+
+The resulting product should feel like a serious digital Portuguese grammar handbook for Ukrainian speakers.
+
+It should be:
+
+fast
+clean
+deep
+searchable
+structured
+mobile-friendly
+accessible
+SEO-friendly
+static-first
+easy to maintain
+aware of Portuguese linguistic variation
+
+The primary differentiator is not visual novelty.
+
+It is:
+
+EXCELLENT PORTUGUESE GRAMMAR INFORMATION ARCHITECTURE
++
+EXCELLENT EXPLANATIONS FOR UKRAINIAN SPEAKERS
++
+EXCELLENT EXAMPLES
++
+EXCELLENT PT-BR / PT-PT COMPARISONS
++
+EXCELLENT SEARCH AND CROSS-LINKING
++
+CAREFUL TREATMENT OF LUSOPHONE REGIONAL VARIATION.
+
+Before making major architectural decisions, inspect the existing repository and adapt to it rather than unnecessarily rebuilding working infrastructure.
