@@ -10,7 +10,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Yes/no questions",
     summary: "Інтонація, чи, inversion у PT-PT.",
     aliases: ["загальні питання", "sim não"],
-    related: ["question-word-order", "questions-br-pt"],
+
     intro:
       "Питання так/ні в португальській часто має той самий порядок, що й розповідь, плюс питальна інтонація і `?` на письмі: `Você vem?` / `Vens?`\n\nІнверсія `Vem o João?` живіша в PT-PT і в формальному стилі. Частка на кшталт українського «чи» не обов'язкова; `é que` може пом'якшувати або фокусувати: `É que tu vens?`",
     formulas: [
@@ -40,7 +40,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Wh-questions",
     summary: "o que, quem, onde, quando, como, por que.",
     aliases: ["спеціальні питання", "o que", "quem"],
-    related: ["interrogative-pronouns", "porque-forms"],
+
     intro:
       "Питальне слово зазвичай стоїть на початку: `O que queres?`, `Onde moras?`, `Quando chegas?`, `Como está?`, `Quanto custa?`\n\n`Que` перед іменником: `Que horas são?` `O que` — коли немає іменника. `Quem` — про особу. Після прийменника: `Com quem falas?`, `De que se trata?`",
     examples: [
@@ -67,7 +67,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Question word order",
     summary: "З інверсією і без.",
     aliases: ["порядок слів питання"],
-    related: ["questions-yesno", "questions-br-pt"],
+
     intro:
       "Два продуктивні порядки: без інверсії (`Onde você mora?`) і з інверсією (`Onde mora você?` / `Onde moras?`). Другий природніший у PT-PT і на письмі; перший — у розмовному PT-BR.\n\nДовгий підмет частіше лишається перед дієсловом навіть у Європі, якщо інакше речення важке.",
     examples: [
@@ -92,7 +92,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Questions BR vs PT",
     summary: "Você vai? vs Vai o João?",
     aliases: ["питання бразилія португалія"],
-    related: ["questions-yesno", "pt-br-pt-pt"],
+
     intro:
       "У розмовному PT-BR питання так/ні майже завжди зберігає розповідний порядок: `Você vai no cinema?` У PT-PT частіша інверсія або голе дієслово 2-ї особи: `Vais ao cinema?`\n\nКаркас `é que` (`Onde é que tu estás?`) поширений в обох варіантах і часто найбезпечніший нейтральний вибір.",
     examples: [
@@ -111,7 +111,7 @@ export const pages: GrammarPage[] = [
     titleEn: "porque forms",
     summary: "Чотири написання причини й питання.",
     aliases: ["porque", "por que", "porquê"],
-    related: ["wh-questions", "prep-por"],
+
     intro:
       "Бразильська шкільна традиція розрізняє чотири написання. У Португалії система простіша: `porque` (причина), `porque é que` / `por que` (питання), `porquê` (іменник «причина»).\n\nПрактично:\n- причина: `porque`\n- питання «чому?»: PT-BR `por que` (у середині) / `por quê` (в кінці); PT-PT часто `porque` або `porque é que`\n- іменник: `o porquê`",
     tables: [

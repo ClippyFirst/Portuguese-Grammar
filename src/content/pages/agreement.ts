@@ -10,7 +10,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Subject-verb agreement",
     summary: "Кілька підметів, колективи, a gente, haver.",
     aliases: ["узгодження дієслова", "concordância verbal"],
-    related: ["se-agreement", "nos-a-gente", "haver"],
+
     intro:
       "Дієслово узгоджується з підметом у особі й числі: `os miúdos chegaram`. Кілька однорідних підметів зазвичай дають множину: `O João e a Ana chegaram`.\n\nВинятки, які ламають інтуїцію: екзистенційне `haver` не узгоджується (`havia muitas pessoas`); `a gente` бере 3-тю особу однини; з `se` пасивним дієслово часто узгоджується з іменною групою.",
     examples: [
@@ -43,7 +43,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Nominal agreement",
     summary: "Кілька іменників, predicative, particípio.",
     aliases: ["узгодження прикметника"],
-    related: ["adjective-agreement", "participle"],
+
     intro:
       "Прикметник, артикль, вказівний і присвійний узгоджуються з іменником у роді й числі: `estas casas antigas`.\n\nПри кількох іменниках різного роду предикативний прикметник зазвичай чоловічий множини: `O rapaz e a rapariga estão cansados.` Атрибутив після групи може хилитися до ближчого іменника.",
     examples: [
@@ -68,7 +68,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Special agreement",
     summary: "todo, é / são, collective, semantic agreement.",
     aliases: ["особливе узгодження", "são", "é"],
-    related: ["agreement-sv", "existential"],
+
     intro:
       "`É` vs `são` з числівниками: `São duas horas.` (множина), але `É uma hora.` Колективи (`a maioria`, `um grupo`) допускають формальну однину або смислову множину: `A maioria concordou` / `A maioria concordaram` — друга частіша в мовленні.\n\n`Tudo` — середній/нейтральний квантор: `Tudo bem.` `Todos` узгоджується: `Todos os dias`.",
     examples: [
