@@ -1,0 +1,18 @@
+# dependencies
+node_modules/
+
+# build & dev artifacts
+dist/
+.output/
+.vercel/
+.tanstack/
+
+# logs & OS
+*.log
+.DS_Store
+Thumbs.db
+
+# env (secrets never committed)
+.env
+.env.*
+!.env.example
