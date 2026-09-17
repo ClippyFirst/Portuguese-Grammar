@@ -19,7 +19,7 @@ export type Mistake = {
 
 export type Formula = {
   label?: string;
-  pattern: string;
+  pattern?: string;
   negative?: string;
   question?: string;
   note?: string;

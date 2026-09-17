@@ -1,6 +1,6 @@
-import { Link } from "@tanstack/react-router";
-import { TOPIC_BY_ID, topicHref } from "@/content/catalog";
+import { TOPIC_BY_ID } from "@/content/catalog";
 import { ArrowRight } from "lucide-react";
+import { TopicNavLink } from "./topic-nav-link";
 
 export function RelatedTopics({ ids }: { ids: string[] }) {
   const topics = ids
@@ -13,8 +13,8 @@ export function RelatedTopics({ ids }: { ids: string[] }) {
       <ul className="grid gap-2 sm:grid-cols-2">
         {topics.map((t) => (
           <li key={t.id}>
-            <Link
-              to={topicHref(t)}
+            <TopicNavLink
+              topic={t}
               className="group flex items-start justify-between gap-3 rounded-lg border border-line bg-surface px-4 py-3 transition-colors hover:border-azulejo hover:bg-azulejo-soft"
             >
               <span>
@@ -27,7 +27,7 @@ export function RelatedTopics({ ids }: { ids: string[] }) {
                 className="mt-1 size-4 shrink-0 text-muted group-hover:text-azulejo"
                 aria-hidden
               />
-            </Link>
+            </TopicNavLink>
           </li>
         ))}
       </ul>

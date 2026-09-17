@@ -10,7 +10,7 @@ export const pages: GrammarPage[] = [
     titleEn: "não",
     summary: "Реченнєве заперечення й позиція.",
     aliases: ["não", "заперечення", "не"],
-    related: ["double-negation", "proclisis"],
+    related: ["double-negation", "proclisis", "clitic-placement"],
     intro:
       "`Não` — основний маркер реченнєвого заперечення. Стоїть безпосередньо перед дієслівною групою: `Não sei.`, `Não estou a trabalhar.` / `Não estou trabalhando.`\n\nПеред клитиком `não` тягне проклізу: `Não me digas.` Це один із найжорсткіших тригерів colocação pronominal.\n\n`Não` також може заперечувати складник: `quero café, não chá`.",
     formulas: [
@@ -30,7 +30,7 @@ export const pages: GrammarPage[] = [
       },
     ],
     ukrainian: "Українське «не» клеїться до дієслова. Португальське `não` — окреме слово з фіксованим місцем і впливом на клітики.",
-    related: ["double-negation", "proclisis", "clitic-placement"],
+
   },
   {
     id: "negation-ninguem",
@@ -41,7 +41,7 @@ export const pages: GrammarPage[] = [
     titleEn: "ninguém, nada",
     summary: "Заперечні займенники й negative concord.",
     aliases: ["ninguém", "nada", "nenhum", "ніхто", "ніщо"],
-    related: ["double-negation", "indefinites"],
+    related: ["double-negation", "indefinites", "negation-nao"],
     intro:
       "`Ninguém`, `nada`, `nenhum/nenhuma` — заперечні квантори. Якщо вони стоять **після** дієслова, речення все одно потребує `não`: `Não vi ninguém.`\n\nЯкщо заперечне слово стоїть **перед** дієсловом, `não` не ставлять: `Ninguém veio.` Це і є negative concord, а не «подвійна помилка».",
     formulas: [
@@ -68,7 +68,7 @@ export const pages: GrammarPage[] = [
     ],
     ukrainian:
       "Українське «ніхто не прийшов» має і ніхто, і не. Португальська розкладає це за позицією: або `Ninguém veio`, або `Não veio ninguém`.",
-    related: ["double-negation", "indefinites", "negation-nao"],
+
   },
   {
     id: "nunca-jamais",
@@ -79,7 +79,7 @@ export const pages: GrammarPage[] = [
     titleEn: "nunca, jamais, nem",
     summary: "Часове й координативне заперечення.",
     aliases: ["nunca", "jamais", "nem", "ніколи"],
-    related: ["ja-ainda", "negation-nao"],
+    related: ["ja-ainda", "negation-nao", "double-negation"],
     intro:
       "`Nunca` — «ніколи». `Jamais` сильніше або книжніше, часто в обіцянках і клятвах. Обидва в превербальній позиції самі заперечують речення: `Nunca vi isso.` Після дієслова знову з'являється `não`: `Não vi isso nunca.`\n\n`Nem` — і «ні... ні», і додавання заперечення: `Nem eu sei.`",
     examples: [
@@ -96,7 +96,7 @@ export const pages: GrammarPage[] = [
         why: "Часове заперечення виражається nunca/jamais, а не калькою «не ніколи».",
       },
     ],
-    related: ["ja-ainda", "negation-nao", "double-negation"],
+
   },
   {
     id: "double-negation",
@@ -107,7 +107,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Negative concord",
     summary: "Não vi ninguém — норма, не «плюс».",
     aliases: ["подвійне заперечення", "concordância negativa"],
-    related: ["negation-ninguem", "negation-nao"],
+    related: ["negation-ninguem", "negation-nao", "indefinites"],
     intro:
       "Португальська має **negative concord**: кілька заперечних елементів у реченні складають одне заперечення, а не скасовують одне одного.\n\n`Não vi ninguém` = «я нікого не бачив». Це нормативно. Англійська логіка «two negatives make a positive» тут шкідлива.\n\nУкраїнська ближча: «ніхто нічого не сказав» теж узгоджене заперечення, не арифметика мінусів.",
     formulas: [
@@ -144,6 +144,6 @@ export const pages: GrammarPage[] = [
     ],
     ukrainian:
       "Не бійтеся «подвійного» заперечення: ваша українська вже так працює. Пастка радше в виборі alguém замість ninguém після não.",
-    related: ["negation-ninguem", "negation-nao", "indefinites"],
+
   },
 ];

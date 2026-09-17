@@ -65,7 +65,7 @@ export function FormulaBlock({ formulas }: { formulas: Formula[] }) {
             {f.label ? (
               <div className="text-sm font-medium text-ink-soft">{f.label}</div>
             ) : null}
-            <FormulaLine label="Ствердження" value={f.pattern} />
+            {f.pattern ? <FormulaLine label="Ствердження" value={f.pattern} /> : null}
             {f.negative ? <FormulaLine label="Заперечення" value={f.negative} /> : null}
             {f.question ? <FormulaLine label="Питання" value={f.question} /> : null}
             {f.br ? <FormulaLine label="PT-BR" value={f.br} /> : null}

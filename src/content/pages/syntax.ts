@@ -10,7 +10,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Word order",
     summary: "SVO, пропуск підмета, клітики, топік.",
     aliases: ["порядок слів", "SVO"],
-    related: ["subject-placement", "topicalization", "clitic-placement"],
+    related: ["subject-placement", "topicalization", "clitic-placement", "clefts", "questions-yesno"],
     intro:
       "Базовий порядок португальського розповідного речення — **S + V + (додаток)**. Це зручна точка відліку, а не залізне правило.\n\nПортугальська — мова з пропуском підмета: особа часто вже закодована в дієслові, тому `Cheguei.` цілком нормальне речення. Явний займенник з'являється для контрасту, зміни референта або емфази.\n\nКлитики, заперечення, питальні слова й топік змінюють поверхневий порядок. PT-BR і PT-PT тут розходяться сильніше, ніж у «звичайному» SVO.",
     formulas: [
@@ -62,7 +62,7 @@ export const pages: GrammarPage[] = [
       "В українській відмінки дозволяють рухати додаток майже вільно. У португальській цю роботу частково виконують інтонація, клітики й конструкції на кшталт `é que`. Калька «спочатку все важливе, потім дієслово» дає неграматичні речення.",
     brPt:
       "PT-PT частіше зберігає енклізу в головному стверджувальному реченні й інверсію в питанні. Розмовний PT-BR тримається ближче до SVO + прокліза + питальна інтонація без інверсії.",
-    related: ["subject-placement", "topicalization", "clitic-placement", "clefts", "questions-yesno"],
+
   },
   {
     id: "subject-placement",
@@ -73,7 +73,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Subject placement",
     summary: "Інверсія з unaccusatives, цитати, емфаза.",
     aliases: ["інверсія підмета"],
-    related: ["word-order", "inversion", "null-subject"],
+    related: ["word-order", "inversion", "null-subject", "existential", "clefts"],
     intro:
       "Підмет стоїть перед дієсловом у нейтральній розповіді. Після дієслова він з'являється з дієсловами появи, існування, руху, у цитатах і в емфазі.\n\nПропуск підмета — не «інверсія», а нульовий підмет. Це різні явища.",
     formulas: [{ pattern: "V + S", note: "Інверсія, не базовий порядок." }],
@@ -91,7 +91,7 @@ export const pages: GrammarPage[] = [
       },
     ],
     ukrainian: "Українське «прийшов потяг» калькується добре. Пастка — вважати `há/havia` звичайним дієсловом із підметом.",
-    related: ["word-order", "inversion", "null-subject", "existential", "clefts"],
+
   },
   {
     id: "topicalization",
@@ -102,7 +102,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Topicalization",
     summary: "Ліва дислокація, повтор займенника.",
     aliases: ["топік", "dislocation", "quanto a"],
-    related: ["clefts", "emphasis-focus"],
+    related: ["clefts", "emphasis-focus", "word-order", "direct-object"],
     intro:
       "Топік — те, про що речення. Його можна винести ліворуч: `Quanto ao dinheiro, eu não sei.` Часто топік дублюється займенником.\n\nЦе не те саме, що фокус. Фокус відповідає на питання «саме хто / саме що?»; топік задає рамку.",
     examples: [
@@ -119,7 +119,7 @@ export const pages: GrammarPage[] = [
       },
     ],
     ukrainian: "Українське винесення теми («От книжку цю я вже читав») близьке. У португальській частіше потрібен клитик-повтор, особливо в PT-PT.",
-    related: ["clefts", "emphasis-focus", "word-order", "direct-object"],
+
   },
   {
     id: "inversion",
@@ -130,7 +130,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Inversion",
     summary: "Стилістична й граматична інверсія.",
     aliases: ["інверсія"],
-    related: ["subject-placement", "questions-yesno"],
+    related: ["subject-placement", "questions-yesno", "questions-br-pt", "word-order"],
     intro:
       "Інверсія V–S в португальській не є загальним питальним правилом на кшталт англійської. Вона стилістична, жанрова (новини, оповідь) або лексично обмежена (дієслова появи).\n\nУ питаннях PT-PT інверсія живіша: `Chegou o Paulo?` Розмовний PT-BR часто обходиться інтонацією: `O Paulo chegou?`",
     examples: [
@@ -145,7 +145,7 @@ export const pages: GrammarPage[] = [
         why: "Інверсія не обов'язкова для питання, особливо в PT-BR.",
       },
     ],
-    related: ["subject-placement", "questions-yesno", "questions-br-pt", "word-order"],
+
   },
   {
     id: "clefts",
@@ -156,7 +156,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Cleft sentences",
     summary: "É o João que... / O que ele quer é...",
     aliases: ["é que", "clivada", "cleft"],
-    related: ["emphasis-focus", "sim-nao-emphasis"],
+    related: ["emphasis-focus", "sim-nao-emphasis", "word-order", "relative-que"],
     intro:
       "Клівти (frases clivadas) виділяють один складник як фокус: «саме X, а не щось інше».\n\nНайчастотніші схеми: `é X que ...`, `é X quem ...`, `o que ... é ...`. Окрема розмовна частка — `é que` як пояснення: `É que eu não sabia.`\n\nЦе не «зайве ser». Без клівта речення нейтральне; з клівтом воно відповідає на корекцію або приховане питання.",
     formulas: [
@@ -202,7 +202,7 @@ export const pages: GrammarPage[] = [
     ],
     ukrainian:
       "Українські «це саме», «ось хто», «річ у тім що» покривають різні португальські схеми. Не зводьте все до одного `é que`.",
-    related: ["emphasis-focus", "sim-nao-emphasis", "word-order", "relative-que"],
+
   },
   {
     id: "emphasis-focus",
@@ -213,7 +213,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Emphasis and focus",
     summary: "Контраст, корекція, інформаційна структура.",
     aliases: ["фокус", "емфаза", "contrast"],
-    related: ["clefts", "sim-nao-emphasis", "word-order"],
+    related: ["clefts", "sim-nao-emphasis", "word-order", "null-subject", "topicalization"],
     intro:
       "Інформаційна структура відповідає на питання: що вже відоме (тема), що нове (рема), що контрастивне (фокус).\n\nПортугальська кодує це порядком слів, клівтами, емфатичними `sim` / `não`, наголошеними займенниками й інтонацією. Писаний текст без маркерів часто виглядає «пласким», хоча в мовленні фокус був очевидний.",
     uses: [
@@ -241,7 +241,7 @@ export const pages: GrammarPage[] = [
       },
     ],
     ukrainian: "Українські частки «ж», «таки», «саме», «от» часто відповідають не окремому слову, а клівту чи `sim`.",
-    related: ["clefts", "sim-nao-emphasis", "null-subject", "topicalization"],
+
   },
   {
     id: "reported-speech",
@@ -252,7 +252,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Reported speech",
     summary: "Зміна часів, займенників, прислівників.",
     aliases: ["непряма мова", "discurso indireto"],
-    related: ["sequence-of-tenses", "wh-questions"],
+    related: ["sequence-of-tenses", "wh-questions", "complement-clauses", "imperative-affirmative"],
     intro:
       "У непрямій мові португальська зсуває часи, якщо головне дієслово в минулому: `disse que vinha`, `perguntou se eu tinha visto`.\n\nПитання вводиться через `se` (так/ні) або питальне слово. Наказ часто стає інфінітивом або кон'юнктивом: `disse-me para sair` / `disse que eu saísse`.",
     formulas: [
@@ -271,7 +271,7 @@ export const pages: GrammarPage[] = [
         why: "Після минулого мовлення звичайний зсув часу. Збереження теперішнього можливе, якщо пропозиція все ще чинна, але це вже свідомий вибір.",
       },
     ],
-    related: ["sequence-of-tenses", "wh-questions", "complement-clauses", "imperative-affirmative"],
+
   },
   {
     id: "coordination",
@@ -282,7 +282,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Coordination and subordination",
     summary: "Як збирається складне речення.",
     aliases: ["сурядність", "підрядність"],
-    related: ["coordinating", "subordinating"],
+    related: ["coordinating", "subordinating", "complement-clauses", "indicative-vs-subjunctive"],
     intro:
       "Сурядність з'єднує рівноправні частини (`e`, `mas`, `ou`, `nem`). Підрядність вбудовує одну клаузу в іншу (`que`, `se`, `quando`, `embora`).\n\nВід цього залежить спосіб дієслова: сурядність майже завжди тримає той самий спосіб, що й незалежне речення; підрядність може вимагати кон'юнктива.",
     examples: [
@@ -297,6 +297,6 @@ export const pages: GrammarPage[] = [
         why: "Воля + `que` відкриває підрядне з кон'юнктивом, не сурядне з індикативом.",
       },
     ],
-    related: ["coordinating", "subordinating", "complement-clauses", "indicative-vs-subjunctive"],
+
   },
 ];

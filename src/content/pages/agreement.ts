@@ -10,7 +10,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Subject-verb agreement",
     summary: "Кілька підметів, колективи, a gente, haver.",
     aliases: ["узгодження дієслова", "concordância verbal"],
-    related: ["se-agreement", "nos-a-gente", "haver"],
+    related: ["se-agreement", "nos-a-gente", "haver", "existential"],
     intro:
       "Дієслово узгоджується з підметом у особі й числі: `os miúdos chegaram`. Кілька однорідних підметів зазвичай дають множину: `O João e a Ana chegaram`.\n\nВинятки, які ламають інтуїцію: екзистенційне `haver` не узгоджується (`havia muitas pessoas`); `a gente` бере 3-тю особу однини; з `se` пасивним дієслово часто узгоджується з іменною групою.",
     examples: [
@@ -32,7 +32,7 @@ export const pages: GrammarPage[] = [
       },
     ],
     ukrainian: "Українське узгодження з «ми з тобою» ближче до множини. Не переносьте це на `a gente`.",
-    related: ["se-agreement", "nos-a-gente", "haver", "existential"],
+
   },
   {
     id: "agreement-na",
@@ -43,7 +43,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Nominal agreement",
     summary: "Кілька іменників, predicative, particípio.",
     aliases: ["узгодження прикметника"],
-    related: ["adjective-agreement", "participle"],
+    related: ["adjective-agreement", "participle", "noun-gender", "gender-vs-ukrainian"],
     intro:
       "Прикметник, артикль, вказівний і присвійний узгоджуються з іменником у роді й числі: `estas casas antigas`.\n\nПри кількох іменниках різного роду предикативний прикметник зазвичай чоловічий множини: `O rapaz e a rapariga estão cansados.` Атрибутив після групи може хилитися до ближчого іменника.",
     examples: [
@@ -57,7 +57,7 @@ export const pages: GrammarPage[] = [
         why: "`Problema` — чоловічий рід, попри -a. Прикметник іде за родом іменника, не за українським «проблема».",
       },
     ],
-    related: ["adjective-agreement", "noun-gender", "gender-vs-ukrainian"],
+
   },
   {
     id: "agreement-special",
@@ -66,9 +66,9 @@ export const pages: GrammarPage[] = [
     titleUk: "Особливі випадки узгодження",
     titlePt: "Casos especiais",
     titleEn: "Special agreement",
-    summary: "todo, é / são, collective, semantic agreement.",
+    summary: "todo, é / são, збірні іменники, смислове узгодження.",
     aliases: ["особливе узгодження", "são", "é"],
-    related: ["agreement-sv", "existential"],
+    related: ["agreement-sv", "existential", "dates-time", "indefinites"],
     intro:
       "`É` vs `são` з числівниками: `São duas horas.` (множина), але `É uma hora.` Колективи (`a maioria`, `um grupo`) допускають формальну однину або смислову множину: `A maioria concordou` / `A maioria concordaram` — друга частіша в мовленні.\n\n`Tudo` — середній/нейтральний квантор: `Tudo bem.` `Todos` узгоджується: `Todos os dias`.",
     examples: [
@@ -83,6 +83,6 @@ export const pages: GrammarPage[] = [
         why: "Години в множині вимагають são — окрім uma hora.",
       },
     ],
-    related: ["agreement-sv", "dates-time", "indefinites"],
+
   },
 ];

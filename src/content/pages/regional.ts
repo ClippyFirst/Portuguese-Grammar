@@ -10,7 +10,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Pluricentric Portuguese",
     summary: "Кілька норм, жодна не «єдина правильна».",
     aliases: ["плурицентрична", "лузофонія"],
-    related: ["pt-br-pt-pt", "angola", "mozambique"],
+    related: ["pt-br-pt-pt", "angola", "mozambique", "other-lusophone", "tu-voce-regional"],
     intro:
       "Португальська має кілька стандартних центрів. Найбільші за описовою вагою в цьому довіднику — **бразильська** (PT-BR) і **європейська** (PT-PT). Писемні норми Анголи й Мозамбіку близькі до європейської, з власними усними рисами й впливом бразильських медіа.\n\nПлурицентричність означає: різниця — це не помилка іншого. `Estou trabalhando` і `Estou a trabalhar` — обидві нормативні в своїх просторах.\n\nДовідник описує спільне ядро, а відмінності маркує, коли вони граматичні, частотні або реєстрові.",
     examples: [
@@ -29,7 +29,7 @@ export const pages: GrammarPage[] = [
       "Зручна аналогія — не «одна українська vs суржик», а наявність кількох стандартів (як британська/американська англійська), плюс африканські стандарти на спільній писемній базі.",
     regional:
       "Кабо-Верде, Гвінея-Бісау, Сан-Томе і Тимор-Лешті мають контактні ситуації (креольські мови, тетум). Писемна португальська там орієнтується переважно на європейську норму, усне вживання — мішане. Не узагальнюйте «африканську португальську» в одну граматику.",
-    related: ["pt-br-pt-pt", "angola", "mozambique", "other-lusophone", "tu-voce-regional"],
+
   },
   {
     id: "pt-br-pt-pt",
@@ -40,7 +40,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Brazilian vs European Portuguese",
     summary: "Граматична карта відмінностей, не словник.",
     aliases: ["бразильська", "європейська", "PT-BR", "PT-PT"],
-    related: ["clitics-br-pt", "progressive-br-pt", "tu-voce"],
+    related: ["clitics-br-pt", "progressive-br-pt", "tu-voce", "articles-regional", "imperative-regional", "existential", "pluricentric"],
     intro:
       "Відмінності PT-BR і PT-PT не зводяться до вимови й лексики. Граматично важливі системи: звертання (`tu` / `você`), клитики, прогресив (`estar + gerúndio` vs `estar a + inf`), екзистенційне `tem` vs `há`, артикль із власними іменами й присвійними, імператив.\n\nОбидва варіанти взаємно зрозумілі в більшості граматичних альтернатив. «Неправильно» — це коли форма не відповідає обраному варіанту й регістру, а не коли вона існує в іншому центрі.",
     tables: [
@@ -73,15 +73,7 @@ export const pages: GrammarPage[] = [
     ],
     ukrainian:
       "Не вчіть «бразильську як єдину португальську» лише тому, що її більше в інтернеті, і навпаки. Якщо плануєте жити в одному регіоні — орієнтуйте рецепцію на нього, але читайте обидві норми.",
-    related: [
-      "clitics-br-pt",
-      "progressive-br-pt",
-      "tu-voce",
-      "articles-regional",
-      "imperative-regional",
-      "existential",
-      "pluricentric",
-    ],
+
   },
   {
     id: "angola",
@@ -92,7 +84,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Angolan Portuguese",
     summary: "Релевантні граматичні риси.",
     aliases: ["ангола", "AO"],
-    related: ["mozambique", "pluricentric", "tu-voce"],
+    related: ["mozambique", "pluricentric", "tu-voce", "pt-br-pt-pt", "tu-voce-regional"],
     intro:
       "Писемна ангольська португальська орієнтується переважно на європейську норму (клитики, `estar a`, `há`). Усне мовлення має власні частотності: поширеніше `você`, спрощення клитиків, контакт з банту мовами.\n\nНе зводьте ангольську португальську до «PT-PT в Африці» чи до «помилок». Це окремий усний стандарт із європейською писемною рамкою.",
     examples: [
@@ -108,7 +100,7 @@ export const pages: GrammarPage[] = [
     ],
     regional:
       "У школі й адміністрації домінує європейська писемна модель. Бразильські серіали впливають на лексику й деякі конструкції молоді.",
-    related: ["pluricentric", "pt-br-pt-pt", "mozambique", "tu-voce-regional"],
+
   },
   {
     id: "mozambique",
@@ -119,7 +111,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Mozambican Portuguese",
     summary: "Релевантні граматичні риси.",
     aliases: ["мозамбік", "MZ"],
-    related: ["angola", "pluricentric"],
+    related: ["angola", "pluricentric", "pt-br-pt-pt"],
     intro:
       "Як і в Анголі, писемна норма Мозамбіку близька до PT-PT. Усне мовлення показує узгодження, артиклі й прийменники, що відрізняються частотністю через контакт з мовами банту.\n\nДля довідника важливо: мозамбіцькі тексти ЗМІ читаються як європейська португальська; живе мовлення може інакше ставити об'єктні займенники й узгодження.",
     examples: [
@@ -132,7 +124,7 @@ export const pages: GrammarPage[] = [
         why: "Контактні мови різні, історії різні. Спільне — роль португальської як мови школи й держави.",
       },
     ],
-    related: ["angola", "pluricentric", "pt-br-pt-pt"],
+
   },
   {
     id: "other-lusophone",
@@ -143,7 +135,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Other Lusophone varieties",
     summary: "Кабо-Верде, Гвінея-Бісау, Сан-Томе, Тимор-Лешті.",
     aliases: ["кабо-верде", "тимор", "гвінея"],
-    related: ["pluricentric", "angola"],
+    related: ["pluricentric", "angola", "pt-br-pt-pt"],
     intro:
       "У Кабо-Верде, Гвінеї-Бісау й Сан-Томе португальська співіснує з креольськими мовами. У Тиморі-Лешті — з тетумом. Шкільна й офіційна португальська орієнтується на європейську норму.\n\nДля граматичного довідника це означає: не будуємо окрему повну граматику кожного простору; згадуємо явище, лише якщо воно системно впливає на португальське речення (артикли, узгодження, клитики) і засвідчене в описі.",
     examples: [
@@ -156,7 +148,7 @@ export const pages: GrammarPage[] = [
         why: "Креольська — окрема мова. Місцева португальська — інший об'єкт.",
       },
     ],
-    related: ["pluricentric", "pt-br-pt-pt"],
+
   },
   {
     id: "tu-voce-regional",
@@ -167,7 +159,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Regional tu / você",
     summary: "Бразилія не однорідна; північ Португалії.",
     aliases: ["tu você регіони"],
-    related: ["tu-voce", "forms-of-address", "pt-br-pt-pt"],
+    related: ["tu-voce", "forms-of-address", "pt-br-pt-pt", "imperative-regional"],
     intro:
       "`Você` + дієслово 3-ї особи — граматичне ядро багатьох зон Бразилії, але не всієї: Південь (особливо Ріу-Гранді-ду-Сул) активно вживає `tu`, інколи з морфологією 3-ї особи (`tu vai`) в усному мовленні.\n\nУ Португалії неформальний стандарт — `tu` + 2sg. `Você` може звучати дистанційно або навіть різко, залежно від зони й покоління. Північ зберігає `tu` дуже стійко; `vós` живе майже лише в літургії, ораторстві й деяких північних реліктах.\n\nВ Африці шкільна норма часто вчить `tu`, а міське усне мовлення може хилитися до `você`.",
     examples: [
@@ -184,6 +176,6 @@ export const pages: GrammarPage[] = [
     ],
     ukrainian:
       "Українське «ти/ви» не лягає на `tu/você/o senhor`. `Você` — не ввічливе «ви» на кшталт українського, особливо в PT-PT.",
-    related: ["tu-voce", "forms-of-address", "imperative-regional", "pt-br-pt-pt"],
+
   },
 ];

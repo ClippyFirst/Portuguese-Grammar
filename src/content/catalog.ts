@@ -1,4 +1,5 @@
 import type { TopicMeta } from "./types";
+export type { TopicMeta } from "./types";
 
 type Row = [
   id: string,

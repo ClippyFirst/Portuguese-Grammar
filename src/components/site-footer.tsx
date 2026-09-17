@@ -27,7 +27,11 @@ export function SiteFooter() {
           <Link to="/search" className="text-ink-soft hover:text-azulejo">
             Пошук
           </Link>
-          <Link to="/pt/moods/futuro-subjuntivo" className="text-ink-soft hover:text-azulejo">
+          <Link
+            to="/pt/$category/$slug"
+            params={{ category: "moods", slug: "futuro-subjuntivo" }}
+            className="text-ink-soft hover:text-azulejo"
+          >
             Futuro do conjuntivo
           </Link>
         </nav>

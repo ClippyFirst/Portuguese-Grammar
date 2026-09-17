@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, BookOpen, GitCompare, Globe, Search } from "lucide-react";
+import { CategoryNavLink, TopicNavLink } from "@/components/topic-nav-link";
 import { CATEGORIES, GROUP_LABELS } from "@/content/categories";
-import { CATALOG, ESSENTIAL_IDS, TOPIC_BY_ID, topicHref } from "@/content/catalog";
+import { CATALOG, ESSENTIAL_IDS, TOPIC_BY_ID } from "@/content/catalog";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -66,13 +67,13 @@ function Home() {
           {essential.map((t) =>
             t ? (
               <li key={t.id}>
-                <Link
-                  to={topicHref(t)}
+                <TopicNavLink
+                  topic={t}
                   className="flex h-full flex-col rounded-lg border border-line bg-surface px-4 py-3 hover:border-azulejo hover:bg-azulejo-soft"
                 >
                   <span className="font-medium text-ink">{t.titleUk}</span>
                   <span className="font-display text-sm text-azulejo">{t.titlePt}</span>
-                </Link>
+                </TopicNavLink>
               </li>
             ) : null,
           )}
@@ -119,13 +120,13 @@ function Home() {
             <ul className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
               {CATEGORIES.filter((c) => c.group === group).map((c) => (
                 <li key={c.id}>
-                  <Link
-                    to={`/pt/${c.slug}`}
+                  <CategoryNavLink
+                    slug={c.slug}
                     className="block rounded-lg border border-line bg-surface px-4 py-3 hover:border-azulejo hover:bg-azulejo-soft"
                   >
                     <span className="font-medium text-ink">{c.titleUk}</span>
                     <span className="mt-0.5 block text-sm text-muted">{c.description}</span>
-                  </Link>
+                  </CategoryNavLink>
                 </li>
               ))}
             </ul>
