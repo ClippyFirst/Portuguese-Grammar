@@ -13,7 +13,8 @@ let allLoaded = false;
 function loaderKeys(category: string): string[] {
   const exact = `./pages/${category}.ts`;
   const prefix = `./pages/${category}-`;
-  return Object.keys(loaders).filter((k) => k === exact || k.startsWith(prefix));
+  const keys = Object.keys(loaders).filter((k) => k === exact || k.startsWith(prefix));
+  return keys;
 }
 
 export async function loadCategoryPages(category: string): Promise<GrammarPage[]> {
