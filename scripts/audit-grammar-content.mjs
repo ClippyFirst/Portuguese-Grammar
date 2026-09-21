@@ -77,6 +77,21 @@ for (const [id, row] of catalogRows) {
   }
 }
 
+for (const [id, row] of catalogRows) {
+  if (row.depth !== "high") continue;
+  const meta = pageMeta.get(id);
+  if (!meta) continue;
+  const source = pages.find((p) => p.name === meta.file)?.content ?? "";
+  const start = source.indexOf(`id: "${id}"`);
+  const next = source.indexOf("id: \"", start + 1);
+  const block = start >= 0 ? source.slice(start, next >= 0 ? next : undefined) : "";
+  if (!/\\b(?:examples|uses):/u.test(block)) {
+    warnings.push(
+      `high-depth topic without examples/uses field: ${id} (${meta.file})`,
+    );
+  }
+}
+
 for (const { name, content } of pages) {
   for (const match of content.matchAll(
     /related:\s*\[([\s\S]*?)\]/g,
