@@ -15,6 +15,19 @@ type Row = [
 ];
 
 const ROWS: Row[] = [
+  ["pragmatics-overview", "pragmatics", "overview", "Прагматика: значення в контексті", "Pragmática", "Pragmatics", "Контекст, мовленнєва дія та соціальна інтерпретація.", "прагматика,pragmatics,pragmática", "speech-acts,politeness,modal-particles", "high"],
+  ["speech-acts", "pragmatics", "speech-acts", "Мовленнєві акти", "Atos de fala", "Speech acts", "Прохання, наказ, порада, запрошення та інші комунікативні дії.", "мовленнєві акти,speech acts,atos de fala", "pragmatics-overview,politeness", "high"],
+  ["politeness", "pragmatics", "politeness", "Ввічливість і дистанція", "Cortesia e distância", "Politeness and social distance", "tu, você, senhor, умовні форми та непрямі прохання.", "ввічливість,politeness,cortesia,tu,você,senhor", "tu-vs-voce,speech-acts", "high"],
+  ["modal-particles", "pragmatics", "particles", "Прагматичні частки та маленькі слова", "Partículas pragmáticas", "Pragmatic particles", "já, ainda, mesmo, só, afinal, então у контексті.", "частки,particles,partículas,já,ainda,mesmo,só", "pragmatics-overview,aspect-overview,discourse-markers", "medium"],
+  ["register-and-directness", "pragmatics", "register", "Регістр, прямота і стиль", "Registo e estilo", "Register and directness", "Нейтральні, розмовні та формальні способи виконати одну функцію.", "регістр,register,registo,directness,стиль", "pragmatics-overview,politeness,speech-acts", "medium"],
+
+  ["discourse-overview", "discourse", "overview", "Дискурс і зв'язність", "Discurso e coesão", "Discourse and cohesion", "Як речення об'єднуються в текст.", "дискурс,discourse,discurso,зв'язність,cohesion", "discourse-markers,information-structure,ellipsis", "high"],
+  ["discourse-markers", "discourse", "markers", "Дискурсивні маркери", "Marcadores discursivos", "Discourse markers", "então, afinal, aliás, enfim та організація розмови.", "дискурсивні маркери,marcadores discursivos,então,afinal,aliás", "discourse-overview,modal-particles,conjunctions", "high"],
+  ["information-structure", "discourse", "information-structure", "Тема, рема і фокус", "Estrutura informacional", "Information structure", "Дане, нове й контрастивне в реченні.", "інформаційна структура,topic,focus,тема,рема", "topicalization,clefts,emphasis-focus", "high"],
+  ["ellipsis", "discourse", "ellipsis", "Еліпсис", "Elipse", "Ellipsis", "Пропуск компонентів, які відновлюються з контексту.", "еліпсис,ellipsis,elipse,пропуск", "discourse-overview,null-subject,coordination", "high"],
+  ["cohesion-reference", "discourse", "cohesion", "Когезія: займенники, повтор і зв'язки", "Coesão textual", "Textual cohesion", "Лексичні й граматичні засоби зв'язності тексту.", "когезія,cohesion,coesão,зв'язність тексту", "discourse-overview,discourse-markers,relative", "medium"],
+
+
   ["aspect-overview", "semantics", "aspect", "Аспект: як португальська подає подію", "Aspeto e aspecto", "Aspect", "Завершеність, тривалість, повторюваність і фаза події.", "аспект,aspect,aspeto,вид", "perfeito-vs-imperfeito,progressive-br-pt,ja-ainda,comecar-a", "high"],
   ["modality-overview", "semantics", "modality", "Модальність: можливість, необхідність, бажання", "Modalidade", "Modality", "Як португальська кодує можливість, обов'язок, дозвіл і волю.", "модальність,modality,modalidade,poder,dever", "indicative-vs-subjunctive,ter-de", "high"],
   ["reference-overview", "semantics", "reference", "Референція: про кого або про що йдеться", "Referência", "Reference", "Визначеність, специфічність, дейксис і анафора.", "референція,reference,referência,визначеність", "articles-definite,articles-indefinite,demonstratives,generic-reference", "high"],
