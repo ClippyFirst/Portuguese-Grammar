@@ -319,6 +319,25 @@ const ROWS: Row[] = [
   // Pages that previously existed in page modules but were absent from the navigation catalog.
 
 
+  ["nem", "conjunctions", "nem", "nem", "Nem", "nem", "Єднальний заперечний сполучник.", "medium", "", "", "medium"],
+  ["numerals", "determiners", "numerals", "Числівники", "Numerais", "Numerals", "Кількісні, порядкові та інші числові форми.", "medium", "", "", "medium"],
+  ["anaphora", "discourse", "anaphora", "Анафора та референція", "Anáfora", "Anaphora", "Як займенники й інші форми відсилають до вже згаданого.", "medium", "", "", "medium"],
+  ["conjunctions", "discourse", "conjunctions", "Сполучники в дискурсі", "Conjunções no discurso", "Conjunctions in discourse", "Як зв'язки між реченнями впливають на організацію дискурсу.", "medium", "", "", "medium"],
+  ["comparisons", "discourse", "comparisons", "Порівняння в дискурсі", "Comparações no discurso", "Comparisons in discourse", "Порівняльні конструкції як елемент організації висловлення.", "medium", "", "", "medium"],
+  ["relative", "syntax", "relative", "Відносні конструкції", "Construções relativas", "Relative constructions", "Зв'язок іменника з відносним реченням.", "medium", "", "", "medium"],
+  ["prepositions", "prepositions", "overview", "Прийменники: огляд", "Preposições", "Prepositions overview", "Основні прийменники та їхні функції.", "high", "", "", "high"],
+  ["ukrainian-interference", "lexical-grammar", "ukrainian-interference", "Українська інтерференція", "Interferência do ucraniano", "Ukrainian interference", "Типові переноси з української в португальську.", "medium", "", "", "medium"],
+  ["questions", "questions", "overview", "Питання: огляд", "Perguntas", "Questions overview", "Типи питань і базові моделі.", "medium", "", "", "medium"],
+  ["tu-vs-voce", "pronouns", "tu-vs-voce", "tu чи você", "Tu ou você", "tu vs você", "Вибір форми звертання та узгодження.", "high", "", "", "high"],
+  ["conditional", "tenses", "conditional", "Умовність", "Condicional", "Conditionality", "Умовні значення та відповідні форми.", "high", "", "", "high"],
+  ["focus", "syntax", "focus", "Фокус висловлення", "Foco", "Focus", "Інформаційна структура та виділення компонента.", "medium", "", "", "medium"],
+  ["regional", "regional", "overview", "Регіональні різновиди", "Variedades regionais", "Regional varieties", "Регіональна варіативність португальської.", "medium", "", "", "medium"],
+  ["dever", "verbs", "dever", "dever", "Dever", "dever", "Модальність обов'язку, необхідності та припущення.", "high", "", "", "high"],
+  ["poder", "verbs", "poder", "poder", "Poder", "poder", "Можливість, дозвіл і модальність.", "high", "", "", "high"],
+  ["infinitive", "syntax", "infinitive", "Інфінітив", "Infinitivo", "Infinitive", "Простий і особовий інфінітив та його конструкції.", "high", "", "", "high"],
+  ["clitics", "syntax", "clitics", "Клітики", "Clíticos", "Clitics", "Позиція й уживання слабких займенникових форм.", "high", "", "", "high"],
+  ["subordinate", "syntax", "subordinate", "Підрядність", "Subordinação", "Subordination", "Структура підрядних речень.", "high", "", "", "high"],
+  ["periphrases", "periphrases", "overview", "Перифрастичні конструкції", "Perífrases", "Periphrases overview", "Допоміжні та напівдопоміжні конструкції.", "high", "", "", "high"],
 ];
 
 function parseAliases(s: string): string[] {
