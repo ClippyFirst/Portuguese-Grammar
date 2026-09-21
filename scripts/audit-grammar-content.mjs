@@ -159,7 +159,7 @@ for (const [id, row] of catalogRows) {
 
 for (const { name, content } of pages) {
   for (const match of content.matchAll(
-    /related:\s*\[([\\s\\S]*?)\]/g,
+    /related:\s*\[([\s\S]*?)\]/g,
   )) {
     for (const ref of match[1].matchAll(/"([^"]+)"/g)) {
       if (!pageMeta.has(ref[1])) {
@@ -172,7 +172,7 @@ for (const { name, content } of pages) {
   // Keep this check separate from metadata extraction so it validates every
   // link the UI can render, regardless of the page declaration style.
   for (const call of content.matchAll(
-    /\\bp\\([\\s\\S]*?,\\s*\\[([^\\]]*)\\]\\s*\\)/gu,
+    /\bp\\([\s\S]*?,\\s*\[([^\]]*)\\]\s*\)/gu,
   )) {
     for (const ref of call[1].matchAll(/"([^"]+)"/gu)) {
       if (!pageMeta.has(ref[1])) {
