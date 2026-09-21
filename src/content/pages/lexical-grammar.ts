@@ -1,0 +1,72 @@
+import type { GrammarPage } from "../types";
+import { ex, mistake } from "../helpers";
+
+export const pages: GrammarPage[] = [
+  {
+    id: "collocations-overview", slug: "collocations", category: "lexical-grammar",
+    titleUk: "Сполучуваність: слова, які граматика не передбачає", titlePt: "Colocações", titleEn: "Collocations",
+    summary: "Стійкі лексико-граматичні поєднання, які треба вчити як моделі, а не перекладати слово за словом.",
+    aliases: ["сполучуваність","collocations","colocações","лексична сполучуваність"],
+    related: ["government-overview","word-formation-affixes","prepositions","false-friends"],
+    intro: "Граматика задає можливі структури, але не гарантує, що будь-які слова в них природно поєднаються. Португальська має типові колокації: tomar uma decisão, prestar atenção, ter medo, fazer uma pergunta. Для українськомовного студента буквальний переклад часто породжує граматично зрозумілу, але ненормативну або неприродну конструкцію.",
+    uses: [
+      { title: "Іменник + дієслово", body: "Вибір дієслова часто лексично закріплений.", examples: [ex("tomar uma decisão","прийняти рішення"),ex("fazer uma pergunta","поставити запитання"),ex("prestar atenção","звернути увагу")] },
+      { title: "Дієслово + прийменник", body: "Колокація може одночасно містити лексичне керування.", examples: [ex("ter medo de algo","боятися чогось"),ex("dar importância a algo","надавати чомусь значення")] },
+      { title: "Прикметник + іменник", body: "Деякі прикметники мають усталені словосполучення.", examples: [ex("forte chuva","сильний дощ"),ex("grande importância","велике значення")] },
+    ],
+    mistakes: [mistake("fazer uma decisão","tomar uma decisão","Українське «прийняти рішення» не перекладається через fazer."),mistake("fazer atenção","prestar atenção","Усталена португальська колокація — prestar atenção.")],
+    ukrainian: "Колокаційна інтерференція сильна навіть у просунутого студента: структура речення правильна, але вибір лексеми калькований.",
+    brPt: "Базові колокації спільні, але корпусна частотність окремих варіантів може відрізнятися.",
+  },
+  {
+    id: "verb-noun-collocations", slug: "verb-noun", category: "lexical-grammar",
+    titleUk: "Дієслівно-іменні колокації", titlePt: "Colocações verbo-nominais", titleEn: "Verb-noun collocations",
+    summary: "fazer, dar, tomar, ter, prestar та типові іменники після них.",
+    aliases: ["verb-noun collocations","дієслово іменник","fazer","dar","tomar","prestar"],
+    related: ["collocations-overview","government-overview"],
+    intro: "Найкорисніше вивчати португальські дієслова разом з іменниками, з якими вони утворюють типові сполуки. Це скорочує кількість кальок і одночасно закріплює керування.",
+    examples: [
+      ex("tomar uma decisão","прийняти рішення"),
+      ex("tomar medidas","вжити заходів"),
+      ex("dar um exemplo","навести приклад"),
+      ex("dar uma resposta","дати відповідь"),
+      ex("ter acesso a algo","мати доступ до чогось"),
+      ex("prestar atenção a algo","звертати увагу на щось"),
+    ],
+    mistakes: [mistake("dar uma decisão","tomar uma decisão","Вибір дієслова лексично закріплений."),mistake("ter acesso de","ter acesso a","Усталена модель містить a.")],
+    ukrainian: "Українське «дати відповідь», «прийняти рішення», «вжити заходів» лише частково збігається з португальським вибором дієслова.",
+  },
+  {
+    id: "adjective-government", slug: "adjective-government", category: "lexical-grammar",
+    titleUk: "Керування прикметників", titlePt: "Regência dos adjetivos", titleEn: "Adjective government",
+    summary: "Прикметник разом із прийменником: capaz de, interessado em, responsável por та інші моделі.",
+    aliases: ["керування прикметників","adjective government","regência nominal","capaz de","interessado em"],
+    related: ["government-overview","collocations-overview","prepositions"],
+    intro: "Керування властиве не лише дієсловам. Прикметник також може вибирати прийменникове доповнення: capaz de, interessado em, responsável por. Переклад прикметника українською не гарантує правильного прийменника.",
+    examples: [
+      ex("Ele é capaz de resolver o problema.","Він здатний розв'язати проблему."),
+      ex("Estou interessado em música.","Я цікавлюся музикою / я зацікавлений у музиці."),
+      ex("Ela é responsável pelo projeto.","Вона відповідає за проєкт."),
+      ex("Estamos habituados a trabalhar cedo.","Ми звикли працювати рано."),
+    ],
+    mistakes: [mistake("interessado por música","interessado em música","Стандартна модель для значення «зацікавлений у» — interessado em."),mistake("capaz para fazer","capaz de fazer","У цьому значенні нормативна модель — capaz de + infinitivo.")],
+    ukrainian: "Українське керування «зацікавлений у», «відповідальний за», «здатний до» не переноситься прийменник за прийменником.",
+  },
+  {
+    id: "false-friends", slug: "false-friends", category: "lexical-grammar",
+    titleUk: "Хибні друзі українськомовного студента", titlePt: "Falsos amigos", titleEn: "False friends",
+    summary: "Португальські слова, які через форму або міжнародну лексику провокують неправильне українське значення.",
+    aliases: ["хибні друзі","false friends","falsos amigos","кальки"],
+    related: ["collocations-overview","word-formation-affixes","ukrainian-interference"],
+    intro: "Хибний друг не обов'язково має повністю інше значення: іноді значення частково збігаються, але відрізняється найчастотніший контекст. Для довідника важливі приклад і керування, а не список перекладів.",
+    examples: [
+      ex("pretender algo","вимагати / претендувати на щось; не «претендувати» в кожному контексті"),
+      ex("assistir a um filme","дивитися фільм; у цій моделі assistir не означає «асистувати»"),
+      ex("eventualmente","зрештою / за певних обставин; не автоматично «евентуально»"),
+      ex("pasta","макарони / паста; значення залежить від контексту"),
+    ],
+    mistakes: [mistake("assistir alguém = асистувати комусь","дивитися: assistir a algo; допомагати: assistir alguém у відповідному значенні","Одна форма має кілька лексичних значень і моделей керування.")],
+    ukrainian: "Для українськомовного довідника false friends мають подаватися разом із типовим керуванням і прикладом, інакше список швидко стає ненадійним.",
+    regional: "Хибні друзі особливо чутливі до лексики різновидів; регіональну різницю треба маркувати за словником або корпусом.",
+  },
+];
