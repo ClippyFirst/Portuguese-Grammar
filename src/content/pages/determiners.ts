@@ -21,7 +21,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Квантифікація: весь, кожен, деякий, жоден", titlePt: "Quantificação", titleEn: "Quantification",
     summary: "todo, cada, algum, nenhum, qualquer, muito, pouco та їхні відмінності.",
     aliases: ["квантифікація","quantifiers","quantificação","todo","cada","algum","nenhum"],
-    related: ["indefinites","determiners-overview","negation-ninguem","numerals"],
+    related: ["indefinites","determiners-overview","negation-ninguem","cardinals"],
     intro: "Квантори визначають обсяг множини або кількість. Українські «всі», «кожен», «будь-який», «деякий» не є взаємозамінними, і португальський артикль додає ще один рівень структури.",
     formulas: [{ label: "Сукупність", pattern: "todo o + N / todos os + N", note: "todo o livro = увесь книжковий об'єкт; todos os livros = усі книжки." },{ label: "Дистрибуція", pattern: "cada + N(sg)", note: "cada livro = кожна книжка; після cada — однина." }],
     uses: [
