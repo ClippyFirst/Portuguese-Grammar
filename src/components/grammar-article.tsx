@@ -68,7 +68,7 @@ export function GrammarArticle({ page }: { page: GrammarPage }) {
       {toc.length > 2 ? (
         <nav
           aria-label="Зміст сторінки"
-          className="mt-6 rounded-lg border border-line bg-surface px-4 py-3 sm:hidden"
+          className="mt-6 rounded-lg border border-line bg-surface px-4 py-3"
         >
           <p className="mb-2 font-mono text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-muted">
             На сторінці
