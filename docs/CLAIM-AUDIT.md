@@ -79,3 +79,15 @@ The reference should not be called fully audited until:
 - local typecheck, lint, tests, and production build have been run successfully.
 
 GitHub Actions are intentionally out of scope for this local-only project.
+
+### Follow-up claim pass: September 2026
+
+Additional high-risk refinements completed after the first pass:
+
+- **Coordination/subordination and mood:** removed the shortcut that treated coordination as preserving the independent-clause mood and subordination as triggering conjuntivo. Mood selection is construction-, semantics- and context-sensitive.
+- **se agreement:** scoped “3rd-person singular” to genuinely impersonal se; passive se remains subject-agreeing (`Vendem-se casas`).
+- **Adjective government:** corrected an overly narrow `capaz de` rule. `capaz de` is the ordinary model for ability to perform an action, while `capaz para` is attested in the sense of suitability/capacity for something.
+- **African varieties:** avoided calling Angolan Portuguese an “oral standard” and avoided presenting Mozambican spoken patterns as a single system. National variety, written-standard orientation and spoken variation are now separated.
+- **Lexical examples:** `eventualmente` remains explicitly context-sensitive; the guide does not reduce it to an English false friend without acknowledging attested semantic extension.
+
+These changes reinforce the project's central editorial rule: a useful learner reference must distinguish **grammatical possibility, standard preference, frequency, register and regional distribution** instead of collapsing them into binary right/wrong rules.
