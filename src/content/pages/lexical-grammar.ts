@@ -7,7 +7,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Сполучуваність: слова, які граматика не передбачає", titlePt: "Colocações", titleEn: "Collocations",
     summary: "Стійкі лексико-граматичні поєднання, які треба вчити як моделі, а не перекладати слово за словом.",
     aliases: ["сполучуваність","collocations","colocações","лексична сполучуваність"],
-    related: ["government-overview","word-formation-affixes","prepositions","false-friends"],
+    related: ["government-overview","word-formation-affixes","prepositions-overview","false-friends"],
     intro: "Граматика задає можливі структури, але не гарантує, що будь-які слова в них природно поєднаються. Португальська має типові колокації: tomar uma decisão, prestar atenção, ter medo, fazer uma pergunta. Для українськомовного студента буквальний переклад часто породжує граматично зрозумілу, але ненормативну або неприродну конструкцію.",
     uses: [
       { title: "Іменник + дієслово", body: "Вибір дієслова часто лексично закріплений.", examples: [ex("tomar uma decisão","прийняти рішення"),ex("fazer uma pergunta","поставити запитання"),ex("prestar atenção","звернути увагу")] },
@@ -41,7 +41,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Керування прикметників", titlePt: "Regência dos adjetivos", titleEn: "Adjective government",
     summary: "Прикметник разом із прийменником: capaz de, interessado em, responsável por та інші моделі.",
     aliases: ["керування прикметників","adjective government","regência nominal","capaz de","interessado em"],
-    related: ["government-overview","collocations-overview","prepositions"],
+    related: ["government-overview","collocations-overview","prepositions-overview"],
     intro: "Керування властиве не лише дієсловам. Прикметник також може вибирати прийменникове доповнення: capaz de, interessado em, responsável por. Переклад прикметника українською не гарантує правильного прийменника.",
     examples: [
       ex("Ele é capaz de resolver o problema.","Він здатний розв'язати проблему."),
@@ -57,7 +57,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Хибні друзі українськомовного студента", titlePt: "Falsos amigos", titleEn: "False friends",
     summary: "Португальські слова, які через форму або міжнародну лексику провокують неправильне українське значення.",
     aliases: ["хибні друзі","false friends","falsos amigos","кальки"],
-    related: ["collocations-overview","word-formation-affixes","ukrainian-interference"],
+    related: ["collocations-overview","word-formation-affixes","false-friends"],
     intro: "Хибний друг не обов'язково має повністю інше значення: іноді значення частково збігаються, але відрізняється найчастотніший контекст. Для довідника важливі приклад і керування, а не список перекладів.",
     examples: [
       ex("pretender algo","мати намір / прагнути чогось; не автоматично «претендувати»"),
