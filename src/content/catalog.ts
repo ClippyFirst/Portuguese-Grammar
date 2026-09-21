@@ -15,6 +15,12 @@ type Row = [
 ];
 
 const ROWS: Row[] = [
+  ["aspect-overview", "semantics", "aspect", "Аспект: як португальська подає подію", "Aspeto e aspecto", "Aspect", "Завершеність, тривалість, повторюваність і фаза події.", "аспект,aspect,aspeto,вид", "perfeito-vs-imperfeito,progressive-br-pt,ja-ainda,comecar-a", "high"],
+  ["modality-overview", "semantics", "modality", "Модальність: можливість, необхідність, бажання", "Modalidade", "Modality", "Як португальська кодує можливість, обов'язок, дозвіл і волю.", "модальність,modality,modalidade,poder,dever", "indicative-vs-subjunctive,ter-de", "high"],
+  ["reference-overview", "semantics", "reference", "Референція: про кого або про що йдеться", "Referência", "Reference", "Визначеність, специфічність, дейксис і анафора.", "референція,reference,referência,визначеність", "articles-definite,articles-indefinite,demonstratives,generic-reference", "high"],
+  ["generic-reference", "semantics", "generic", "Узагальнення та родове значення", "Referência genérica", "Generic reference", "Як говорити про клас або вид без конкретного референта.", "узагальнення,generic,referência genérica", "articles-definite,zero-article,scope-and-reference", "medium"],
+
+
   ["phonetics-overview", "phonetics", "overview", "Фонетика: карта португальської вимови", "Fonética do português", "Portuguese phonetics overview", "Голосні, приголосні, наголос, редукція та назалізація як система.", "фонетика,вимова,fonética,pronúncia", "vowels-phonetics,nasal-vowels,consonants-phonetics,stress-phonology", "high"],
   ["vowels-phonetics", "phonetics", "vowels", "Голосні: відкритість, наголос і редукція", "Vogais", "Vowels", "Наголошені й ненаголошені голосні та відкритість e/o.", "голосні,vogais,e aberto,o aberto", "phonetics-overview,nasal-vowels,stress-phonology", "high"],
   ["nasal-vowels", "phonetics", "nasal-vowels", "Носові голосні та дифтонги", "Vogais e ditongos nasais", "Nasal vowels and diphthongs", "ã, õ, -am/-em/-ão та назалізація.", "носові,назалізація,nasal,ão", "vowels-phonetics,phonetics-overview,ao-plurals", "high"],
