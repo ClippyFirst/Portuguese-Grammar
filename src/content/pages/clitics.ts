@@ -791,3 +791,210 @@ PT-PT письмо: у цих контекстах *Ele chamou-me*, *Chama-me de
 в інфінітиві з \`-lo\` (*ao fazê-lo*, *convém mencioná-lo*) — це спільний канцелярський і публіцистичний стиль;
 
 у фіксованих формулах (*trata-se de*, *ha-de*, *ei-lo*).
+  }),
+
+  page({
+    id: "mesoclisis", slug: "mesoclisis", category: "clitics",
+    titleUk: "Mesóclise", titlePt: "Mesóclise", titleEn: "Mesoclisis",
+    summary: "Клитик усередині майбутнього або умовного: dir-me-á, far-se-ia.",
+    aliases: ["mesóclise", "мезокліза", "dir-me-á", "far-se-ia"],
+    related: ["clitic-placement", "enclisis", "futuro", "condicional"],
+    intro: "Mesóclise — позиція клитика всередині форми futuro do presente або condicional: dir-me-á, far-se-ia. У сучасній мові вона переважно належить до формального й книжного письма, особливо в PT-PT. Якщо є тригер проклізи, клитик виходить перед дієсловом: não me dirá, не não dir-me-á.",
+    formulas: [
+      { label: "Futuro do presente", pattern: "INF + CL + V-fut", note: "dir + me + á → dir-me-á; fazer + o + á → fá-lo-á." },
+      { label: "Condicional", pattern: "INF + CL + V-cond", note: "dir + se + ia → dir-se-ia; fazer + lhe + ia → far-lhe-ia." },
+    ],
+    uses: [
+      { title: "Формальна позиція", body: "Без проклітичного тригера формальна писемна мова може використовувати mesóclise з майбутнім або умовним.", examples: [
+        ex("Dir-lhe-ei a verdade.", "Я скажу йому / їй правду.", { variety: "PT", register: "formal" }),
+        ex("Far-se-ia uma exceção.", "Зробили б виняток.", { variety: "PT", register: "formal" }),
+        ex("Não lhe direi a verdade.", "Я не скажу йому / їй правду."),
+      ]},
+      { title: "Основа майбутнього", body: "Основа може відрізнятися від повного інфінітива: fazer → far-, dizer → dir-. Прямий клитик третьої особи має форми -lo, -la, -los, -las.", examples: [
+        ex("Vê-lo-á amanhã.", "Він / вона побачить його завтра.", { variety: "PT", register: "formal" }),
+        ex("Fá-lo-emos com cuidado.", "Ми зробимо це обережно.", { variety: "PT", register: "formal" }),
+      ]},
+    ],
+    examples: [
+      ex("Dir-me-á amanhã.", "Він / вона скаже мені завтра.", { variety: "PT", register: "formal" }),
+      ex("Não me dirá isso.", "Він / вона мені цього не скаже."),
+      ex("Far-se-ia tudo de outra maneira.", "Усе зробили б інакше.", { variety: "PT", register: "formal" }),
+    ],
+    tables: [{ caption: "Mesóclise та альтернативи", headers: ["Функція", "Формальна модель", "Альтернатива"], rows: [
+      ["майбутнє", "Dir-me-á.", "Não me dirá."],
+      ["майбутнє + DO", "Fá-lo-á.", "Não o fará."],
+      ["умовний", "Dir-se-ia.", "Não se diria."],
+    ], scroll: true }],
+    exceptions: "Mesóclise не означає «усюди в PT-PT». Це насамперед формальний писемний ресурс. У сучасному PT-BR вона значно обмеженіша в живому мовленні.",
+    mistakes: [
+      mistake("Não dir-me-á a verdade.", "Não me dirá a verdade.", "Заперечення є тригером проклізи."),
+      mistake("Dir-me-á. (як нейтральна щоденна розмова)", "У розмові частіше використовують іншу конструкцію.", "Mesóclise має формальніший розподіл."),
+    ],
+    ukrainian: "Українська не має відповідника, де займенник вставляється всередину майбутньої дієслівної форми.",
+    brPt: "У PT-BR mesóclise значно більше пов'язана з формальним письмом, юридичною та високою стилістикою, ніж із повсякденною розмовою.",
+  }),
+
+  page({
+    id: "clitic-combinations", slug: "combinations", category: "clitics",
+    titleUk: "Подвійні клитики", titlePt: "Combinações de clíticos", titleEn: "Clitic combinations",
+    summary: "Поєднання непрямого й прямого клитика: mo, ma, lho, no-lo.",
+    aliases: ["combinações de clíticos", "подвійні клитики", "mo", "lho", "no-lo"],
+    related: ["clitic-pronouns", "object-pronouns", "direct-object", "indirect-object", "clitics-br-pt"],
+    intro: "Два клитики можуть утворювати одну послідовність, коли одночасно виражають непрямий і прямий додаток: me + o → mo, lhe + o → lho, nos + o → no-lo. У сучасному PT-PT ці злиті форми особливо помітні в письмі; у PT-BR розмовна мова часто перебудовує речення.",
+    formulas: [
+      { label: "1sg IO + 3sg DO", pattern: "me + o → mo", note: "Deu-mo = deu + me + o." },
+      { label: "3sg IO + 3sg DO", pattern: "lhe + o → lho", note: "Enviou-lho = enviou + lhe + o." },
+      { label: "1pl IO + 3sg DO", pattern: "nos + o → no-lo", note: "Explicou-no-lo = explicou + nos + o." },
+    ],
+    uses: [
+      { title: "Злиті форми", body: "Перший клитик виражає непрямий додаток, другий — прямий. Найважливіші групи: mo/ma/mos/mas, lho/lha/lhos/lhas, no-lo/no-la та vo-lo/vo-la.", examples: [
+        ex("Deu-mo ontem.", "Він / вона дав мені це вчора.", { variety: "PT" }),
+        ex("Enviei-lha por email.", "Я надіслав йому / їй її електронною поштою.", { variety: "PT" }),
+        ex("Deu-no-lo ontem.", "Він / вона дав це нам учора.", { variety: "PT", register: "formal" }),
+      ]},
+      { title: "Розгортання в PT-BR", body: "Бразильська розмовна мова часто замінює складну клитичну комбінацію повними словами: me deu isso, ele me entregou o documento.", examples: [
+        ex("Ele me deu isso.", "Він дав мені це.", { variety: "BR" }),
+        ex("Deu-mo.", "Він дав мені це.", { variety: "PT", register: "formal" }),
+      ]},
+    ],
+    examples: [ex("Deu-mo sem hesitar.", "Він дав мені це без вагань.", { variety: "PT" }), ex("Envio-lho amanhã.", "Я надішлю йому / їй це завтра.", { variety: "PT", register: "formal" }), ex("Me deu o livro.", "Він дав мені книжку.", { variety: "BR" })],
+    tables: [{ caption: "Комбінації IO + DO", headers: ["IO", "DO", "Злиття", "Приклад"], rows: [
+      ["me", "o/a/os/as", "mo/ma/mos/mas", "Deu-mo."],
+      ["te", "o/a/os/as", "to/ta/tos/tas", "Deu-ta."],
+      ["lhe", "o/a/os/as", "lho/lha/lhos/lhas", "Deu-lho."],
+      ["nos", "o/a/os/as", "no-lo/no-la/no-los/no-las", "Deu-no-lo."],
+      ["vos", "o/a/os/as", "vo-lo/vo-la/vo-los/vo-las", "Deu-vo-lo."],
+    ], scroll: true }],
+    exceptions: "У живому PT-BR такі злиття набагато менш продуктивні, ніж у нормативному PT-PT. У розмові частіше використовують повні форми.",
+    mistakes: [mistake("Deu-lhe-o.", "Deu-lho. / Deu isso a ele.", "Два клитики утворюють нормативну злиту форму або перебудовуються в розмові."), mistake("Deu o-me.", "Deu-mo. / Deu-me isso.", "Клитики не ставляться після прямого додатка як окремі слова.")],
+    ukrainian: "Українська передає ці два компоненти окремими словами: «дав мені це». Португальська може стиснути їх в одну клитичну групу: deu-mo.",
+    brPt: "PT-PT зберігає злиті форми краще в писемній нормі. PT-BR у розмові переважно розгортає їх.",
+  }),
+
+  page({
+    id: "clitics-infinitive", slug: "infinitive", category: "clitics",
+    titleUk: "Клитики з інфінітивом", titlePt: "Clíticos com infinitivo", titleEn: "Clitics with infinitive",
+    summary: "Клитик біля інфінітива: fazê-lo, para o ver і позиція в інфінітивних групах.",
+    aliases: ["clíticos com infinitivo", "інфінітив клитик", "fazer-lhe", "vê-lo"],
+    related: ["clitic-placement", "proclisis", "personal-infinitive", "clitic-combinations"],
+    intro: "Інфінітив дозволяє кілька позицій клитика залежно від прийменника, керування й різновиду мови. Типова енклітична модель — fazê-lo, dizer-lhe. Перед інфінітивом можливі para o ver, para me ajudar, sem lhe dizer.",
+    formulas: [
+      { label: "Енкліза", pattern: "INF + CL", note: "ver + o → vê-lo; fazer + o → fazê-lo." },
+      { label: "Перед інфінітивом", pattern: "PREP + CL + INF", note: "para o ver, para me ajudar, sem lhe dizer." },
+    ],
+    uses: [
+      { title: "Прямий додаток 3-ї особи", body: "Після -r інфінітива r відпадає, а клитик отримує початкове l: ver + o → vê-lo, fazer + a → fazê-la.", examples: [
+        ex("Quero vê-lo amanhã.", "Я хочу побачити його завтра."), ex("É importante fazê-la bem.", "Важливо добре її зробити."), ex("Vamos comprá-los hoje.", "Ми купимо їх сьогодні."),
+      ]},
+      { title: "Прийменник + клитик + інфінітив", body: "У para me dizer або sem te ouvir клитик належить наступному дієслову. Це не тонічна форма після прийменника.", examples: [
+        ex("Vim para te ajudar.", "Я прийшов, щоб тобі допомогти."), ex("Saiu sem me avisar.", "Він / вона пішов, не попередивши мене."), ex("Antes de o conhecer, já tinha ouvido falar dele.", "До того як познайомитися з ним, я вже чув про нього."),
+      ]},
+    ],
+    examples: [ex("Quero dizê-lo claramente.", "Я хочу сказати це чітко."), ex("É para me ajudar.", "Це для того, щоб мені допомогти."), ex("Sem lhe dizer nada.", "Не сказавши йому / їй нічого.")],
+    tables: [{ caption: "Позиції", headers: ["Структура", "Приклад", "Коментар"], rows: [["INF + CL", "dizê-lo", "Енкліза; r відпадає."], ["PREP + CL + INF", "para o ver", "Клитик перед інфінітивом."], ["PREP + CL + INF", "para lhe dizer", "Непрямий додаток наступного дієслова."]], scroll: true }],
+    exceptions: "Позиція залежить від усієї синтаксичної конструкції та різновиду португальської. Не слід навчати para o ver і para vê-lo як абсолютні синоніми в усіх контекстах.",
+    mistakes: [mistake("Vim para mim ajudar.", "Vim para me ajudar.", "mim — тонічна форма; me — клитик наступного дієслова."), mistake("Quero fazer-o.", "Quero fazê-lo.", "Після інфінітива на -r прямий клитик 3-ї особи має форму -lo/-la/-los/-las.")],
+    ukrainian: "Українське «щоб мені допомогти» не має тієї самої морфологічної структури. para me ajudar — прийменник + клитик + інфінітив.",
+    brPt: "У PT-BR дуже поширені конструкції para me ajudar; енклітичні форми з -lo зберігаються передусім у формальнішому письмі.",
+  }),
+
+  page({
+    id: "clitics-gerund", slug: "gerund", category: "clitics",
+    titleUk: "Клитики з герундієм", titlePt: "Clíticos com gerúndio", titleEn: "Clitics with gerund",
+    summary: "Позиція клитика біля gerúndio та відмінність між PT-BR і PT-PT.",
+    aliases: ["clíticos com gerúndio", "герундій клитик", "estando-lhe"],
+    related: ["gerund-usage", "enclisis", "clitics-infinitive", "clitics-br-pt"],
+    intro: "Герундій може приймати клитик в енклітичній позиції: dizendo-lhe, vendo-o, fazendo-se. У PT-BR прогресив часто має estar + gerúndio, тому клитик стоїть перед герундієм: está me dizendo. У PT-PT базова прогресивна модель — estar a + infinitivo: está-me a dizer.",
+    formulas: [
+      { label: "Герундій + клитик", pattern: "GER + CL", note: "dizendo-lhe, vendo-o." },
+      { label: "PT-BR progressive", pattern: "estar + CL + GER", br: "está me dizendo" },
+      { label: "PT-PT progressive", pattern: "estar + CL + a + INF", ptEu: "está-me a dizer" },
+    ],
+    uses: [
+      { title: "Енкліза на герундії", body: "Коли герундій сам є носієм клитика, пишеться дефіс.", examples: [
+        ex("Vendo-o à distância, reconheci-o.", "Побачивши його здалеку, я його впізнав.", { variety: "PT" }),
+        ex("Dizendo-lhe a verdade, evitas problemas.", "Сказавши йому правду, ти уникнеш проблем."),
+      ]},
+      { title: "Прогресив", body: "Не змішуйте estar a + infinitivo з estar + gerúndio. Клитик повинен відповідати вибраній конструкції.", examples: [
+        ex("Ele está-me a ouvir.", "Він мене слухає.", { variety: "PT" }),
+        ex("Ele está me ouvindo.", "Він мене слухає.", { variety: "BR" }),
+      ]},
+    ],
+    examples: [ex("Fazendo-o com calma, resulta melhor.", "Якщо робити це спокійно, виходить краще."), ex("Estou lhe dizendo a verdade.", "Я кажу йому / їй правду.", { variety: "BR" }), ex("Estou-lhe a dizer a verdade.", "Я кажу йому / їй правду.", { variety: "PT" })],
+    exceptions: "Не кожна позиція біля gerúndio однаково природна в усіх різновидах. Для PT-BR конкретна частотність залежить від регістру; для PT-PT типова прогресивна модель має a + infinitivo.",
+    mistakes: [mistake("Estou a me dizendo a verdade.", "Estou-me a dizer a verdade. / Estou dizendo a verdade.", "Не змішуйте європейський estar a з бразильським gerúndio.")],
+    ukrainian: "Українська не має герундієвої системи такого типу, тому клитик краще вивчати разом із прогресивною конструкцією.",
+    brPt: "Для PT-BR важливо знати estar + gerúndio; для PT-PT — estar a + infinitivo.",
+  }),
+
+  page({
+    id: "clitics-imperative", slug: "imperative", category: "clitics",
+    titleUk: "Клитики з імперативом", titlePt: "Clíticos no imperativo", titleEn: "Clitics with imperative",
+    summary: "Diz-me, não me digas: стверджувальний і заперечний імператив.",
+    aliases: ["clíticos no imperativo", "імператив займенник", "diz-me", "não me digas"],
+    related: ["imperative-affirmative", "imperative-negative", "clitic-placement", "clitic-pronouns"],
+    intro: "Стверджувальний імператив у стандартному письмовому описі приєднує клитик після дієслова через дефіс: Diz-me, Dê-me, Sentem-se. Заперечний імператив використовує проклізу: Não me digas, Não se sente.",
+    formulas: [
+      { label: "Ствердний", pattern: "V-IMP + CL", note: "Diz-me; Dê-lhe; Sentem-se." },
+      { label: "Заперечний", pattern: "não + CL + V-SUBJ", note: "Não me digas; Não lhe diga." },
+    ],
+    uses: [
+      { title: "Ствердний наказ", body: "Форма імператива залежить від особи, а клитик приєднується енклітично.", examples: [
+        ex("Diz-me a verdade.", "Скажи мені правду.", { variety: "PT" }), ex("Dê-me um minuto.", "Дайте мені хвилину."), ex("Sentem-se, por favor.", "Сідайте, будь ласка."),
+      ]},
+      { title: "Заперечний наказ", body: "Після não використовується presente do conjuntivo, а клитик переходить перед дієсловом.", examples: [
+        ex("Não me digas isso.", "Не кажи мені цього.", { variety: "PT" }), ex("Não me diga isso.", "Не кажіть мені цього."), ex("Não me digam ainda.", "Не кажіть мені поки що."),
+      ]},
+      { title: "PT-BR розмовна модель", body: "У розмовному PT-BR прокліза значно ширша навіть у ствердному наказі: Me diz, Me espera, Me ajuda.", examples: [
+        ex("Me diz a verdade.", "Скажи мені правду.", { variety: "BR", register: "colloquial" }), ex("Me espera aqui.", "Почекай мене тут.", { variety: "BR", register: "colloquial" }),
+      ]},
+    ],
+    examples: [ex("Diz-me quando chegares.", "Скажи мені, коли приїдеш.", { variety: "PT" }), ex("Não me digas isso.", "Не кажи мені цього.", { variety: "PT" }), ex("Me diz quando você chegar.", "Скажи мені, коли приїдеш.", { variety: "BR" })],
+    tables: [{ caption: "Ствердний vs заперечний імператив", headers: ["Особа", "Ствердний", "Заперечний"], rows: [
+      ["tu", "Diz-me.", "Não me digas."], ["você", "Diga-me.", "Não me diga."], ["vocês", "Digam-me.", "Não me digam."],
+    ], scroll: true }],
+    exceptions: "У розмовному PT-BR позиція клитика в ствердному наказі значно вільніша, ніж у традиційному європейському описі.",
+    mistakes: [mistake("Não diz-me isso.", "Não me digas isso. / Não me diga isso.", "Заперечний імператив вимагає проклізи та форми кон'юнктива."), mistake("Diz me a verdade.", "Diz-me a verdade. / Me diz a verdade (BR, розмовне).", "Енкліза потребує дефіса; бразильська прокліза пишеться без нього.")],
+    ukrainian: "У перекладі «скажи мені» / «не кажи мені» займенник однаковий, але португальська змінює його позицію: diz-me ↔ não me digas.",
+    brPt: "Для PT-BR варто окремо вивчити живу модель Me diz / Me espera / Me ajuda.",
+  }),
+
+  page({
+    id: "clitics-br-pt", slug: "br-pt", category: "clitics",
+    titleUk: "Клитики: PT-BR vs PT-PT", titlePt: "Clíticos BR/PT", titleEn: "Clitics BR vs PT",
+    summary: "Порівняння позиції клитика, третьої особи та você у двох головних стандартних різновидах.",
+    aliases: ["клитики бразилія", "клитики португалія", "próclise brasileira", "ênclise europeia", "me diz", "disse-me"],
+    related: ["clitic-placement", "proclisis", "enclisis", "pt-br-pt-pt", "tu-voce", "progressive-br-pt"],
+    intro: "PT-BR і PT-PT мають спільну систему клитиків, але різний розподіл позицій та живих конструкцій. У писемному PT-PT енкліза без тригера типова: disse-me. У розмовному PT-BR прокліза широка: ele me disse, а на початку фрази можливе me disse. Після заперечення спільна модель: não me disse.",
+    formulas: [
+      { label: "Головне без тригера", pattern: "S V CL", br: "S CL V / CL V", ptEu: "S V CL", note: "disse-me vs ele me disse / me disse." },
+      { label: "Після negation", pattern: "NEG CL V", br: "não me disse", ptEu: "não me disse" },
+      { label: "Прогресив", pattern: "AUX + clitic + predicate", br: "está me dizendo", ptEu: "está-me a dizer" },
+    ],
+    uses: [
+      { title: "Позиція за замовчуванням", body: "Без тригера писемний PT-PT тяжіє до енклізи, тоді як розмовний PT-BR — до проклізи.", examples: [
+        ex("O João deu-me o número.", "Жуан дав мені номер.", { variety: "PT" }), ex("O João me deu o número.", "Жуан дав мені номер.", { variety: "BR" }), ex("Me deu o número.", "Дав мені номер.", { variety: "BR", register: "colloquial" }),
+      ]},
+      { title: "Третя особа", body: "PT-PT зберігає vi-o, encontrei-a як нейтральні форми. У розмовному PT-BR дуже поширені vi ele, encontrei ela.", examples: [
+        ex("Vi-o ontem.", "Я бачив його вчора.", { variety: "PT" }), ex("Vi ele ontem.", "Я бачив його вчора.", { variety: "BR", register: "colloquial" }),
+      ]},
+      { title: "você, te і lhe", body: "У PT-PT tu узгоджується з te, а você за нормативним описом — з o/a та lhe. У PT-BR você + te надзвичайно поширене в розмові.", examples: [
+        ex("Tu já me disseste.", "Ти вже мені сказав.", { variety: "PT" }), ex("Você já me disse.", "Ти / ви вже мені сказав(ла).", { variety: "BR" }), ex("Você sabe que eu te amo.", "Ти знаєш, що я тебе кохаю.", { variety: "BR", register: "colloquial" }),
+      ]},
+    ],
+    examples: [ex("Disse-me a verdade.", "Він / вона сказав(ла) мені правду.", { variety: "PT" }), ex("Ele me disse a verdade.", "Він сказав мені правду.", { variety: "BR" }), ex("Não me disse a verdade.", "Він / вона не сказав(ла) мені правду."), ex("Vi ele ontem.", "Я бачив його вчора.", { variety: "BR", register: "colloquial" })],
+    tables: [{ caption: "Ключові контрасти", headers: ["Контекст", "PT-PT", "PT-BR"], rows: [
+      ["головне без тригера", "Disse-me.", "Ele me disse. / Me disse."],
+      ["після não", "Não me disse.", "Não me disse."],
+      ["3-тя особа DO", "Vi-o. / Vi-a.", "Vi ele. / Vi ela."],
+      ["ствердний імператив", "Diz-me.", "Me diz. (мовлення)"],
+      ["прогресив", "Está-me a dizer.", "Está me dizendo."],
+    ], scroll: true }],
+    exceptions: "Розподіл залежить від жанру. Формальне PT-BR може використовувати енклізу й -lo, а усне PT-PT допускає більше проклізи, ніж шкільна таблиця.",
+    mistakes: [mistake("Não disse-me.", "Não me disse.", "Після não клитик стоїть перед дієсловом."), mistake("Vi ele ontem. (як нейтральний PT-PT)", "Vi-o ontem.", "Повна форма ele як прямий об'єкт характерніша для розмовного PT-BR.")],
+    ukrainian: "Для українськомовного студента найважливіше не змішувати системи. Виберіть різновид, а потім застосовуйте його типову позицію.",
+    brPt: "Ця різниця має бути позначена як варіантність, а не як список помилок. Треба також маркувати розмовний, формальний і писемний регістри.",
+    regional: "Ангольська й мозамбіцька писемність історично ближча до європейського зразка colocação, але конкретне усне вживання має власну варіативність.",
+  }),
+
+];
