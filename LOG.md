@@ -182,3 +182,19 @@ Commit-и цієї сесії включають:
 Це усуває розходження між каталогом, page metadata та runtime route lookup.
 
 Commit: `1cbec8409c984e5e0d3a9ada4f48c5de9a3c81ba`.
+
+
+## 21.09.2026 — runtime shape validation after `e.map is not a function`
+
+Локальний production preview після успішного `audit:content` і `build` показав runtime-помилку `TypeError: e.map is not a function` у зібраному `grammar-article` chunk. Stack trace локалізує проблему до рендерингу `GrammarArticle`, де кілька контентних полів очікуються як масиви.
+
+### Виправлення
+
+- У `src/content/load.ts` додано централізовану runtime-перевірку форми `GrammarPage` перед кешуванням сторінок.
+- Перевіряються всі колекційні поля: `aliases`, `related`, `formulas`, `uses`, `examples`, `markers`, `mistakes`, `tables`.
+- Якщо поле має неправильний тип, loader тепер повідомляє конкретні `category/slug`, назву поля та фактичний тип замість непрозорого `.map is not a function` у React.
+- Також перевіряється, що кожен content module експортує масив `pages`.
+
+Це не маскує помилку через `Array.isArray(...) ? ... : []`: неправильні дані залишаються hard failure, але з діагностикою на рівні джерела.
+
+Commit: `0ad74ac741f078ab95f7be7d6ce03f8f07a7aa87`.
