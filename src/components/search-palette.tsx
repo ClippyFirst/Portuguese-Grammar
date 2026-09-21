@@ -69,6 +69,7 @@ export function SearchPalette({
               if (e.key === "Escape") onClose();
               if (e.key === "Enter" && hits[0]) go(hits[0].href);
             }}
+            aria-label="Пошук граматичної теми"
             placeholder="ser, кон'юнктив, à, особовий інфінітив…"
             className="h-12 w-full bg-transparent text-base text-ink outline-none placeholder:text-muted"
             autoComplete="off"
