@@ -73,7 +73,7 @@ export const pages: GrammarPage[] = [
       ex("Fui à praia cedo.", "Я рано ходив/ходила на пляж."),
       ex("Fui ao mar cedo.", "Я рано ходив/ходила до моря."),
       ex("Diga à Maria que ligo mais tarde.", "Скажіть Марії, що я зателефоную пізніше.", { variety: "PT", note: "Якщо ім'я несе артикль; інакше Diga a Maria — без crase." }),
-      ex("As inscrições vão até às 17h? / até as 17h.", "Запис до 17:00?", { note: "після até crase часто обговорюють як факультативну / залежну від читання até + a." }),
+      ex("As inscrições vão até às 17h? / até as 17h.", "Запис до 17:00?", { note: "Варіант залежить від різновиду й аналізу: PT широко вживає até às, тоді як у BR у нормативному письмі традиційно переважає até as. Не подавайте це як довільну орфографічну варіативність усередині одного стандарту." }),
       ex("Chegámos à Ucrânia de madrugada.", "Ми прибули в Україну над ранок."),
       ex("Chegámos a Portugal de madrugada.", "Ми прибули в Португалію над ранок."),
       ex("Não obedeço à pressão.", "Я не підкоряюся тиску."),
@@ -160,7 +160,7 @@ export const pages: GrammarPage[] = [
       },
       {
         title: "Години й «о … годині»",
-        body:  "`às 8h`, `às três e meia`, `à 1h` / `à uma hora` (тут `à` = a + a з `a uma`? Обережно: `à uma hora` = a + a (артикля) + uma як числівник години; багато описів дають `à uma` як прийнятне саме в годиннику). Надійне ядро: `às` + числівник години в множинній рамці `horas`.",
+        body:  "`às 8h`, `às três e meia`, `à uma hora`, `à 1h`, `à meia-noite`. У виразах на позначення часу `uma` може бути частиною конструкції з означеністю години: `à uma hora`. Це не переноситься на звичайне `a uma` перед неозначеним іменником: `a uma amiga`, `a uma conclusão`. Надійне ядро для множини — `às` + година."",
         examples: [
           ex("Saio às cinco.", "Я виходжу о п'ятій."),
           ex("De à meia-noite às duas, a linha fecha.", "З півночі до другої лінія закрита."),
@@ -177,7 +177,7 @@ export const pages: GrammarPage[] = [
       },
       {
         title: "àquele, àquela, àqueles, àquelas, àquilo",
-        body:  "Завжди з гравісом, коли є прийменник `a`. Це не «факультативно, бо вказівний».",
+        body:  "Коли `a` є прийменником перед `aquele/aquela/aquilo`, форма має `àquele/àquela/àquilo`: тут початкове `a-` входить до складу вказівного, а не є окремим артиклем. Це не факультативна crase.",
         examples: [
           ex("Dirija-se àquela secretária.", "Зверніться до тієї секретарки / до того столу (secretária — двозначне)."),
           ex("Não dês ouvidos àquilo.", "Не слухай того."),
