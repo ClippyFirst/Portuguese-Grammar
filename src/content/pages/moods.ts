@@ -422,7 +422,7 @@ export const pages: GrammarPage[] = [
       },
       {
         title: "como se",
-        body: "`como se` завжди з імперфектом (або складеним) кон'юнктива: порівняння з не-фактом.",
+        body: "`como se` у типових порівняльно-гіпотетичних конструкціях вживає імперфект або плюсквамперфект кон'юнктива: `como se soubesse`, `como se tivesse mentido`.",
         examples: [
           ex("Fala como se soubesse de tudo.", "Говорить так, ніби все знає."),
           ex("Olhou-me como se eu tivesse mentido.", "Він подивився на мене так, ніби я збрехав."),
@@ -459,7 +459,7 @@ export const pages: GrammarPage[] = [
       mistake(
         "Se eu seria rico, comprava isto.",
         "Se eu fosse rico, comprava isto.",
-        "Після `se` ніколи не ставлять condicional. Гіпотеза — `fosse`.",
+        "У стандартній умовній конструкції після `se` для гіпотетичної / контрфактичної умови вживають `imperfeito do conjuntivo`, а не condicional: `se eu fosse`, `se eu soubesse`.",
       ),
     ],
     ukrainian:
@@ -660,7 +660,7 @@ export const pages: GrammarPage[] = [
       mistake(
         "Se eu seria chefe, mudava tudo.",
         "Se eu fosse chefe, mudava tudo.",
-        "Це вже не відкрите майбутнє, а гіпотеза — імперфект кон'юнктива, і ніколи condicional після `se`.",
+        "Це вже не відкрите майбутнє, а гіпотеза — імперфект кон'юнктива; у стандартній умовній конструкції `se` вводить саме цю форму, а condicional належить головній частині.",
       ),
       mistake(
         "Quando eu vir a Lisboa, aviso. (у значенні «приїду»)",
@@ -1323,7 +1323,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Заперечний імператив",
     titlePt: "Imperativo negativo",
     titleEn: "Negative imperative",
-    summary: "Завжди від presente do conjuntivo.",
+    summary: "Утворюється від відповідних форм presente do conjuntivo.",
     aliases: ["заперечний імператив", "não faças", "não fale", "imperativo negativo"],
     related: ["imperative-affirmative", "presente-subjuntivo", "clitics-imperative"],
     intro:
@@ -1434,7 +1434,7 @@ export const pages: GrammarPage[] = [
     aliases: ["імператив BR PT", "tu fala", "você fale", "imperativo regional"],
     related: ["tu-voce", "imperative-affirmative", "imperative-negative", "forms-of-address"],
     intro:
-      "Імператив неможливо відірвати від системи звертання. Де живе `tu`, живе `fala` / `não fales`. Де живе `você`, живе `fale` / `não fale`. Де `tu` узгоджується як `você` (частина Бразилії), форми змішуються: займенник `tu`, дієслово `fala` або навіть `fale`.\n\nЖоден різновид не «неправильний». Неправильний — змішати парадигму всередині одного речення без регіональної логіки (`você falas`) у стандартному тексті.",
+      "Імператив тісно пов'язаний із системою звертання. Де живе `tu`, живе `fala` / `não fales`. Де живе `você`, живе `fale` / `não fale`. Де `tu` узгоджується як `você` (частина Бразилії), форми змішуються: займенник `tu`, дієслово `fala` або навіть `fale`.\n\nЖоден різновид не «неправильний». Неправильний — змішати парадигму всередині одного речення без регіональної логіки (`você falas`) у стандартному тексті.",
     formulas: [
       {
         label: "PT-PT неформальне",
