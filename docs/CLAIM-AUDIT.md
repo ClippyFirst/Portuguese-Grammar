@@ -150,3 +150,13 @@ The newer reference layers received a precision pass as well:
 - **Phonetics:** the overview now distinguishes lexical stress from orthographic accent and avoids presenting a single `r` realization as universal.
 
 The purpose of this pass is consistency: the same evidence standard now applies not only to the older core grammar pages but also to the newer semantic, pragmatic, discourse, lexical and pronunciation material.
+
+
+### Follow-up pass: September 2026 — modal wording and interrogative constructions
+
+A further pass tightened two recurrent pedagogical risks:
+
+- **Conjunctive/subjunctive:** the overview no longer defines the mood simply as “non-fact”. It is described as a modal category with frequent non-assertive uses, while leaving room for the wider range of constructions and discourse effects.
+- **Interrogatives:** PT-BR yes/no questions are described as frequently retaining declarative word order rather than “almost always” doing so; `é que` is described as a productive interrogative construction rather than being assigned a blanket politeness function.
+
+The goal is to prevent a useful heuristic from hardening into a false categorical rule.
