@@ -165,3 +165,20 @@ Commit-и цієї сесії включають:
 - `deixis` → `reference-overview`.
 
 Не створювалися дублікати сторінок лише заради проходження structural audit.
+
+
+## 21.09.2026 — третій локальний audit: синхронізація двох slug
+
+Користувач повторно запустив `npm run audit:content`. Структурний аудит залишив лише два findings:
+
+- `object-pronouns`: page slug = `object-pronouns`, catalog slug = `object`;
+- `conditional-clauses`: page slug = `conditional-clauses`, catalog slug = `conditional`.
+
+Перевірено фактичний runtime lookup у `src/content/load.ts`: сторінка завантажується за парою `category/slug`, а page declarations уже мали узгоджені `id = slug`. Тому не стали змінювати page declarations або створювати aliases лише для проходження аудиту; canonical slug у каталозі приведено до фактичного slug сторінки:
+
+- `object` → `object-pronouns`;
+- `conditional` → `conditional-clauses`.
+
+Це усуває розходження між каталогом, page metadata та runtime route lookup.
+
+Commit: `1cbec8409c984e5e0d3a9ada4f48c5de9a3c81ba`.
