@@ -22,6 +22,13 @@ function add(map, key, value) {
   map.set(key, list);
 }
 
+function registerPage({ id, slug, category, file }) {
+  if (!id || !slug || !category) return;
+  add(ids, id, file);
+  add(paths, `${category}/${slug}`, file);
+  pageMeta.set(id, { file, slug, category });
+}
+
 function extractPageBlocks(content) {
   const lines = content.split("\n");
   const starts = lines
@@ -31,16 +38,39 @@ function extractPageBlocks(content) {
   return starts.map((start, i) => lines.slice(start, starts[i + 1] ?? lines.length).join("\n"));
 }
 
+/*
+ * Content modules use two representations:
+ *   1. explicit GrammarPage objects ({ id, slug, category, ... })
+ *   2. the compact p(...) helper used by older/larger modules.
+ *
+ * The previous audit understood only the first representation. That made
+ * catalog/page completeness checks blind to a large part of the handbook.
+ */
 for (const { name, content } of pages) {
   for (const block of extractPageBlocks(content)) {
-    const id = block.match(/\bid:\s*"([^"]+)"/u)?.[1];
-    const slug = block.match(/\bslug:\s*"([^"]+)"/u)?.[1];
-    const category = block.match(/\bcategory:\s*"([^"]+)"/u)?.[1];
-    if (!id || !slug || !category) continue;
+    registerPage({
+      id: block.match(/\bid:\s*"([^"]+)"/u)?.[1],
+      slug: block.match(/\bslug:\s*"([^"]+)"/u)?.[1],
+      category: block.match(/\bcategory:\s*"([^"]+)"/u)?.[1],
+      file: name,
+    });
+  }
 
-    add(ids, id, name);
-    add(paths, `${category}/${slug}`, name);
-    pageMeta.set(id, { file: name, slug, category });
+  const helperCategory = content.match(
+    /category:\s*"([^"]+)"/u,
+  )?.[1];
+
+  if (helperCategory) {
+    for (const match of content.matchAll(
+      /\bp\(\s*"([^"]+)"\s*,\s*"([^"]+)"/gu,
+    )) {
+      registerPage({
+        id: match[1],
+        slug: match[2],
+        category: helperCategory,
+        file: name,
+      });
+    }
   }
 }
 
@@ -90,7 +120,7 @@ for (const [id, row] of catalogRows) {
   if (!meta) continue;
   const source = pages.find((p) => p.name === meta.file)?.content ?? "";
   const start = source.indexOf(`id: "${id}"`);
-  const next = source.indexOf("id: \"", start + 1);
+  const next = source.indexOf('id: "', start + 1);
   const block = start >= 0 ? source.slice(start, next >= 0 ? next : undefined) : "";
   if (!/\b(?:examples|uses):/u.test(block)) {
     warnings.push(
