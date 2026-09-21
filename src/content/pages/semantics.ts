@@ -25,7 +25,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Модальність: можливість, необхідність, бажання", titlePt: "Modalidade", titleEn: "Modality",
     summary: "Як португальська кодує можливість, обов'язок, дозвіл, припущення та волю.",
     aliases: ["модальність","modality","modalidade","можливість","необхідність"],
-    related: ["indicative-vs-subjunctive","subjunctive-logic","ter-de","dever","poder"],
+    related: ["indicative-vs-subjunctive","subjunctive-logic","ter-de","poder-dever-querer","poder-dever-querer"],
     intro: "Модальність описує ставлення до істинності або необхідності ситуації. Португальська використовує poder, dever, ter de/que, precisar de, querer, talvez та конструкції з кон'юнктивом. Один переклад «можна» або «треба» може відповідати кільком різним конструкціям.",
     formulas: [{ label: "Епістемічна можливість", pattern: "poder + Inf", note: "Pode estar em casa = можливо, він/вона вдома." },{ label: "Необхідність", pattern: "ter de/que + Inf", note: "Tenho de sair = я мушу піти." }],
     uses: [
