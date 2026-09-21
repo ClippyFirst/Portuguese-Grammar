@@ -832,7 +832,7 @@ export const pages: GrammarPage[] = [
     ],
   },
   {
-    id: "generic-reference",
+    id: "generic-reference-articles",
     slug: "generic-reference",
     category: "articles",
     titleUk: "Узагальнення",
