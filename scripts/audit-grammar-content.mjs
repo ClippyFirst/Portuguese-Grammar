@@ -50,9 +50,9 @@ for (const [slug, filesForSlug] of slugs) {
 
 const catalogRows = new Map();
 for (const match of catalog.matchAll(
-  /^\s*\["([^"]+)",\s*"([^"]+)",\s*"([^"]+)",/gm,
+  /^\s*\["([^"]+)",\s*"([^"]+)",\s*"([^"]+)",[\s\S]*?,\s*"([^"]+)",\s*$/gm,
 )) {
-  catalogRows.set(match[1], { category: match[2], slug: match[3] });
+  catalogRows.set(match[1], { category: match[2], slug: match[3], depth: match[4] });
 }
 
 for (const [id, meta] of pageMeta) {
