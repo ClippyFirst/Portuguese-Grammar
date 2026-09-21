@@ -124,3 +124,16 @@ This audit is intentionally static and local. It does not replace linguistic ver
 - The infinitive pass now treats `ao + infinitivo` as a constructional temporal/subordinate pattern rather than mechanically as ordinary article contraction before a verb. It also avoids presenting `para chegar` as inherently wrong when the infinitive subject is recoverable from context.
 - The mood pass removes an erroneous/garbled sentence around future subjunctive usage and avoids explaining African Portuguese spoken variation as simply a copy of conversational PT-BR.
 - These changes remain part of the continuing claim/example review; they do not mean every example in the repository has been independently checked against a primary or reference grammar.
+
+
+### Follow-up example pass: September 2026 — questions, numerals, word formation, regional syntax
+
+The continuing pass also corrected several small but learner-relevant precision issues:
+
+- **porque / por que / porquê:** the PT-PT description now distinguishes interrogative `porque` from prepositional `por que` in constructions such as `por que motivo`; PT-BR `por que` / `por quê` remains explicitly scoped as the Brazilian orthographic convention.
+- **Time expressions:** the example `São três e dez` is now translated as 3:10 rather than carrying an incorrect minute/clock interpretation.
+- **Word formation:** `movimento` is analysed from `mover`, not mechanically from `movimentar`; the text no longer suggests that new technical terms preferentially choose `-ção` without lexical evidence.
+- **Regional address systems:** Brazilian `tu`/`você` and African address patterns are now described as regionally and socially variable rather than as country-wide binary rules.
+- **Advanced syntax:** a relative-clause variation note was moved conceptually out of the definition of complex predicates and rewritten so that it does not imply that the relative construction is part of the predicate system.
+
+These are deliberately small edits: the objective is to remove misleading learner shortcuts without replacing them with equally strong counter-claims.
