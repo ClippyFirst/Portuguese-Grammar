@@ -198,3 +198,13 @@ Commit: `1cbec8409c984e5e0d3a9ada4f48c5de9a3c81ba`.
 Це не маскує помилку через `Array.isArray(...) ? ... : []`: неправильні дані залишаються hard failure, але з діагностикою на рівні джерела.
 
 Commit: `0ad74ac741f078ab95f7be7d6ce03f8f07a7aa87`.
+
+
+## 2026-09-21 — Runtime content-contract repair
+
+- Root cause confirmed across the compact `p(...)` page modules: calls contained a second Ukrainian pedagogical/explanatory string before the examples array, while the helper signatures treated that position as `examples`. JavaScript therefore shifted the actual examples array into `related`, and the runtime renderer eventually failed on `.map`.
+- Repaired the compact constructors in `adjectives.ts`, `adverbs.ts`, `gerund.ts`, `nouns.ts`, `passive.ts`, `periphrases.ts`, `prepositions.ts`, `pronouns.ts`, `relative.ts`, `spelling.ts`, `subordinate.ts`, `tenses.ts`, and `verbs.ts` to accept the existing pedagogical note explicitly.
+- The supplied note is preserved in the rendered page by joining it to the introductory prose with a paragraph break; no source content was discarded and no arrays were coerced to silence the runtime validator.
+- Strengthened `scripts/audit-grammar-content.mjs` with a top-level argument parser for compact constructors. It now verifies the 10-argument contract and specifically checks that the teaching-note, examples, and related positions have the expected shapes.
+- The runtime validator in `src/content/load.ts` remains enabled as a defense-in-depth check, so malformed content fails with a precise content-contract error rather than an opaque UI `.map` exception.
+- This repair is intentionally content-model-first. Static GitHub Pages migration remains a separate architectural phase and must not be used to hide content/runtime defects.
