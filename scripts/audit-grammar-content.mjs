@@ -13,7 +13,7 @@ const catalog = fs.readFileSync(catalogPath, "utf8");
 const issues = [];
 const warnings = [];
 const ids = new Map();
-const slugs = new Map();
+const paths = new Map();
 const pageMeta = new Map();
 
 function add(map, key, value) {
@@ -22,18 +22,25 @@ function add(map, key, value) {
   map.set(key, list);
 }
 
-for (const { name, content } of pages) {
-  for (const match of content.matchAll(/id:\s*"([^"]+)"/g)) add(ids, match[1], name);
-  for (const match of content.matchAll(/slug:\s*"([^"]+)"/g)) add(slugs, match[1], name);
+function extractPageBlocks(content) {
+  const lines = content.split("\n");
+  const starts = lines
+    .map((line, index) => (/^  \{$/u.test(line) ? index : -1))
+    .filter((index) => index >= 0);
 
-  for (const meta of content.matchAll(
-    /id:\s*"([^"]+)"\s*,\s*slug:\s*"([^"]+)"\s*,\s*category:\s*"([^"]+)"/g,
-  )) {
-    pageMeta.set(meta[1], {
-      file: name,
-      slug: meta[2],
-      category: meta[3],
-    });
+  return starts.map((start, i) => lines.slice(start, starts[i + 1] ?? lines.length).join("\n"));
+}
+
+for (const { name, content } of pages) {
+  for (const block of extractPageBlocks(content)) {
+    const id = block.match(/\bid:\s*"([^"]+)"/u)?.[1];
+    const slug = block.match(/\bslug:\s*"([^"]+)"/u)?.[1];
+    const category = block.match(/\bcategory:\s*"([^"]+)"/u)?.[1];
+    if (!id || !slug || !category) continue;
+
+    add(ids, id, name);
+    add(paths, `${category}/${slug}`, name);
+    pageMeta.set(id, { file: name, slug, category });
   }
 }
 
@@ -42,9 +49,9 @@ for (const [id, filesForId] of ids) {
     issues.push(`duplicate page id "${id}": ${filesForId.join(", ")}`);
   }
 }
-for (const [slug, filesForSlug] of slugs) {
-  if (filesForSlug.length > 1) {
-    issues.push(`duplicate page slug "${slug}": ${filesForSlug.join(", ")}`);
+for (const [topicPath, filesForPath] of paths) {
+  if (filesForPath.length > 1) {
+    issues.push(`duplicate category/slug "${topicPath}": ${filesForPath.join(", ")}`);
   }
 }
 
@@ -129,7 +136,7 @@ if (issues.length) {
   process.exitCode = 1;
 } else {
   console.log(
-    `Grammar content audit passed: ${pages.length} modules, ${pageMeta.size} pages, ${catalogRows.size} catalog entries, ${slugs.size} unique slugs.`,
+    `Grammar content audit passed: ${pages.length} modules, ${pageMeta.size} pages, ${catalogRows.size} catalog entries, ${paths.size} unique category/slug paths.`,
   );
 }
 if (warnings.length) {
