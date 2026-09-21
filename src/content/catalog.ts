@@ -15,6 +15,22 @@ type Row = [
 ];
 
 const ROWS: Row[] = [
+  ["phonetics-overview", "phonetics", "overview", "Фонетика: карта португальської вимови", "Fonética do português", "Portuguese phonetics overview", "Голосні, приголосні, наголос, редукція та назалізація як система.", "фонетика,вимова,fonética,pronúncia", "vowels-phonetics,nasal-vowels,consonants-phonetics,stress-phonology", "high"],
+  ["vowels-phonetics", "phonetics", "vowels", "Голосні: відкритість, наголос і редукція", "Vogais", "Vowels", "Наголошені й ненаголошені голосні та відкритість e/o.", "голосні,vogais,e aberto,o aberto", "phonetics-overview,nasal-vowels,stress-phonology", "high"],
+  ["nasal-vowels", "phonetics", "nasal-vowels", "Носові голосні та дифтонги", "Vogais e ditongos nasais", "Nasal vowels and diphthongs", "ã, õ, -am/-em/-ão та назалізація.", "носові,назалізація,nasal,ão", "vowels-phonetics,phonetics-overview,ao-plurals", "high"],
+  ["consonants-phonetics", "phonetics", "consonants", "Приголосні: r, s, x, nh, lh, ch", "Consoantes", "Consonants", "Позиційні варіанти складних приголосних і диграфів.", "приголосні,consoantes,r,rr,s,x,nh,lh,ch", "phonetics-overview,reading-rules", "high"],
+  ["stress-phonology", "phonetics", "stress", "Наголос як фонологічна властивість", "Acento e prosódia", "Stress and prosody", "Наголошений склад, ритм і графічне маркування.", "наголос,stress,prosody,acento", "stress,phonetics-overview,vowels-phonetics", "medium"],
+
+  ["determiners-overview", "determiners", "overview", "Детермінативи: система перед іменником", "Determinantes", "Determiners overview", "Артиклі, вказівні, присвійні та квантори як одна система.", "детермінативи,determinantes,determiners", "articles-definite,articles-indefinite,zero-article,quantifiers-overview", "high"],
+  ["quantifiers-overview", "determiners", "quantifiers", "Квантифікація: весь, кожен, деякий, жоден", "Quantificação", "Quantification", "todo, cada, algum, nenhum, qualquer та кількісні модифікатори.", "квантифікація,quantifiers,todo,cada,algum,nenhum", "determiners-overview,indefinites,negation-ninguem,numerals", "high"],
+  ["scope-and-reference", "determiners", "scope-reference", "Сфера дії та референція", "Escopo e referência", "Scope and reference", "Як детермінатив змінює референцію та інтерпретацію.", "сфера дії,scope,reference,референція", "determiners-overview,quantifiers-overview,generic-reference,articles-definite", "high"],
+  ["determiners-agreement", "determiners", "agreement", "Узгодження детермінативів", "Concordância dos determinantes", "Determiner agreement", "Рід і число в артиклях, вказівних, присвійних і кванторах.", "узгодження детермінативів,concordância", "determiners-overview,noun-gender,noun-number,possessives", "medium"],
+
+  ["valency-overview", "valency", "overview", "Валентність дієслова", "Valência verbal", "Verb valency", "Аргументи предиката та відмінність від вільних модифікаторів.", "валентність,valency,valência,аргумент", "government-overview,direct-object,indirect-object,complement-clauses", "high"],
+  ["government-overview", "valency", "government", "Керування: дієслово + прийменник", "Regência verbal", "Verb government", "Коли прийменник є частиною лексичної моделі дієслова.", "керування,regência verbal,government,verb-preposition", "valency-overview,verb-preposition,prep-por,prep-para", "high"],
+  ["argument-vs-adjunct", "valency", "argument-vs-adjunct", "Аргумент чи обставина?", "Complemento ou modificador?", "Argument vs adjunct", "Як відрізняти вибрані предикатом компоненти від вільних модифікаторів.", "аргумент,обставина,adjunct,complemento", "valency-overview,government-overview,word-order", "high"],
+
+
   ["sentence-basics", "fundamentals", "sentence-basics", "Базова структура речення", "Estrutura da frase", "Basic sentence structure", "Підмет, присудок, додатки й базовий порядок SVO.", "речення,SVO,підмет,присудок,frase", "null-subject,word-order,parts-of-speech", "medium"],
   ["parts-of-speech", "fundamentals", "parts-of-speech", "Частини мови", "Classes de palavras", "Parts of speech", "Змінні й незмінні частини мови в португальській.", "частини мови,морфологія,classes de palavras", "sentence-basics,noun-gender,verb-system", "short"],
   ["gender-number-person", "fundamentals", "gender-number-person", "Рід, число, особа", "Género, número, pessoa", "Gender, number, person", "Граматичні категорії, які пронизують усю систему.", "рід,число,особа,género,gênero", "noun-gender,adjective-agreement,agreement-sv", "medium"],
