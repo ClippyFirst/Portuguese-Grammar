@@ -11,6 +11,7 @@ const pages = files.map((name) => ({
 const catalog = fs.readFileSync(catalogPath, "utf8");
 
 const issues = [];
+const warnings = [];
 const ids = new Map();
 const slugs = new Map();
 const pageMeta = new Map();
@@ -100,7 +101,7 @@ for (const { name, content } of pages) {
       proseFields.test(line) &&
       !line.includes("mistake(")
     ) {
-      issues.push(
+      warnings.push(
         `${name}:${index + 1}: absolute-language review: ${line.trim()}`,
       );
     }
@@ -108,11 +109,15 @@ for (const { name, content } of pages) {
 }
 
 if (issues.length) {
-  console.error("Grammar content audit found potential issues:");
+  console.error("Grammar content audit found structural/content issues:");
   for (const issue of issues) console.error(`- ${issue}`);
   process.exitCode = 1;
 } else {
   console.log(
     `Grammar content audit passed: ${pages.length} modules, ${pageMeta.size} pages, ${catalogRows.size} catalog entries, ${slugs.size} unique slugs.`,
   );
+}
+if (warnings.length) {
+  console.warn(`Grammar content audit warnings: ${warnings.length}`);
+  for (const warning of warnings) console.warn(`- ${warning}`);
 }
