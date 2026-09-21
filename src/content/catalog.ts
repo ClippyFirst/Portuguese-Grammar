@@ -247,7 +247,7 @@ const ROWS: Row[] = [
 
   ["ter-de", "periphrases", "ter-de", "ter de / ter que", "ter de / ter que", "ter de / ter que", "Обов'язок: ter de (обидва) і ter que (часто PT-BR).", "ter de,ter que,мусити", "haver-de,poder-dever-querer", "medium"],
   ["haver-de", "periphrases", "haver-de", "haver de", "haver de", "haver de", "Намір, приреченість, формальний обов'язок.", "haver de,hei de", "ter-de,haver", "short"],
-  ["acabar-de", "periphrases", "acabar-de", "acabar de", "acabar de", "acabar de", "Щойно: acabo de chegar.", "acabar de,щойно", "deixar-de,tense-aspect", "medium"],
+  ["acabar-de", "periphrases", "acabar-de", "acabar de", "acabar de", "acabar de", "Щойно: acabo de chegar.", "acabar de,щойно", "comecar-a,tense-aspect", "medium"],
   ["voltar-a", "periphrases", "voltar-a", "voltar a", "voltar a", "voltar a", "Повторна дія: voltou a chover.", "voltar a,знову", "comecar-a", "short"],
   ["comecar-a", "periphrases", "comecar-a", "começar a / continuar a / deixar de", "Perífrases aspetuais", "Aspectual periphrases", "Початок, тривання, припинення.", "começar a,continuar a,deixar de", "acabar-de,gerund-usage", "medium"],
   ["ir-infinitive", "periphrases", "ir-infinitive", "ir + infinitivo", "ir + infinitivo", "ir + infinitive", "Найчастотніше майбутнє в розмові.", "ir infinitivo,vou fazer,майбутнє", "futuro,ir-vir", "high"],
