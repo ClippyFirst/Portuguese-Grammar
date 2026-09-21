@@ -745,7 +745,7 @@ export const pages: GrammarPage[] = [
         note: "Este livro é meu. Артикля перед POSS немає. Можна Este livro é o meu — вже з еліпсом іменника («мій (той)»).",
       },
     ],
-    formation: "Порядок у номінальній групі: `(артиклю) + присвійний + (прикметник) + іменник`. Присвійний узгоджується родом і числом із **іменником**: `o meu filho`, `a minha filha`, `os nossos filhos`, `as nossas filhas`. Рід власника не впливає на форму `meu/minha`.\n\nЯкщо артикль є, контракції з прийменником чіпають артикль, не присвійний: `do meu pai`, `na tua casa`, `ao nosso amigo`, `pela vossa conta`. У PT-BR без артикля: `de meu pai` (формальніше / позначене), частіше просто `do meu pai` або перебудова `do pai`.",
+    formation: "Порядок у номінальній групі: `(артикля) + присвійний + (прикметник) + іменник`. Присвійний узгоджується родом і числом із **іменником**: `o meu filho`, `a minha filha`, `os nossos filhos`, `as nossas filhas`. Рід власника не впливає на форму `meu/minha`.\n\nЯкщо артикль є, контракції з прийменником чіпають артикль, не присвійний: `do meu pai`, `na tua casa`, `ao nosso amigo`, `pela vossa conta`. У PT-BR без артикля: `de meu pai` (формальніше / позначене), частіше просто `do meu pai` або перебудова `do pai`.",
     uses: [
       {
         title: "Нейтральна номінальна група: PT-PT",
@@ -1031,7 +1031,7 @@ export const pages: GrammarPage[] = [
         headers: ["Зона", "PT-PT", "PT-BR", "Коментар"],
         rows: [
           ["Особове ім'я", "o João", "João", "обидва зрозумілі"],
-          ["Присвійний атрибутив", "o meu livro", "meu livro", "артиклю в BR не заборонено"],
+          ["Присвійний атрибутив", "o meu livro", "meu livro", "артикля в BR не заборонено"],
           ["o Brasil / Portugal", "спільно", "спільно", "не регіональне"],
           ["Fecha a porta", "спільно", "спільно", "не регіональне"],
           ["é médico", "спільно", "спільно", "нуль після ser"],
