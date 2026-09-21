@@ -113,14 +113,14 @@ export const pages: GrammarPage[] = [
     aliases: ["porque", "por que", "porquê"],
     related: ["wh-questions", "prep-por", "causal-clauses"],
     intro:
-      "Бразильська шкільна традиція розрізняє чотири написання. У Португалії система простіша: `porque` (причина), `porque é que` / `por que` (питання), `porquê` (іменник «причина»).\n\nПрактично:\n- причина: `porque`\n- питання «чому?»: PT-BR `por que` (у середині) / `por quê` (в кінці); PT-PT часто `porque` або `porque é que`\n- іменник: `o porquê`",
+      "Бразильська шкільна традиція розрізняє чотири написання. У PT-PT в питальних реченнях нормативно вживається `porque` як питальний прислівник: `Porque vieste?`, `Porque é que vieste?`. `Por que` теж можливе, коли `por` є прийменником перед `que` у моделях на кшталт `por que motivo`, `por que razão`. `Porquê` — іменник «причина», а також можливе в кінці короткого питання: `Porquê?`. У PT-BR для питального «чому?» типове окреме написання `por que`, а в кінці `por quê`.\n\nПрактично:\n- причина: `porque`\n- питання «чому?»: PT-BR `por que` (у середині) / `por quê` (в кінці); PT-PT `porque` / `porque é que`; окреме `por que` зберігається в моделях `por que motivo`, `por que razão`\n- іменник: `o porquê`",
     tables: [
       {
         headers: ["Функція", "PT-BR (шкільна норма)", "PT-PT (типово)"],
         rows: [
           ["Причина «бо»", "porque", "porque"],
           ["Питання «чому»", "por que ... ?", "porque / porque é que"],
-          ["Питання в кінці", "por quê?", "porquê?"],
+          ["Питання в кінці", "por quê?", "porquê? / por que motivo?"],
           ["Іменник", "o porquê", "o porquê"],
         ],
       },
