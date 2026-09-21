@@ -85,7 +85,7 @@ for (const [id, row] of catalogRows) {
   const start = source.indexOf(`id: "${id}"`);
   const next = source.indexOf("id: \"", start + 1);
   const block = start >= 0 ? source.slice(start, next >= 0 ? next : undefined) : "";
-  if (!/\\b(?:examples|uses):/u.test(block)) {
+  if (!/\b(?:examples|uses):/u.test(block)) {
     warnings.push(
       `high-depth topic without examples/uses field: ${id} (${meta.file})`,
     );
