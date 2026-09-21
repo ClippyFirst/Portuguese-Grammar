@@ -86,10 +86,16 @@ for (const [topicPath, filesForPath] of paths) {
 }
 
 const catalogRows = new Map();
-for (const match of catalog.matchAll(
-  /^\s*\["([^"]+)",\s*"([^"]+)",\s*"([^"]+)",[\s\S]*?,\s*"([^"]+)",\s*$/gm,
-)) {
-  catalogRows.set(match[1], { category: match[2], slug: match[3], depth: match[4] });
+for (const line of catalog.split("\n")) {
+  const match = line.match(
+    /^\s*\["([^"]+)",\s*"([^"]+)",\s*"([^"]+)",.*?,\s*"(high|medium|short)"\],?\s*$/u,
+  );
+  if (!match) continue;
+  catalogRows.set(match[1], {
+    category: match[2],
+    slug: match[3],
+    depth: match[4],
+  });
 }
 
 for (const [id, meta] of pageMeta) {
