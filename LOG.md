@@ -208,3 +208,5 @@ Commit: `0ad74ac741f078ab95f7be7d6ce03f8f07a7aa87`.
 - Strengthened `scripts/audit-grammar-content.mjs` with a top-level argument parser for compact constructors. It now verifies the 10-argument contract and specifically checks that the teaching-note, examples, and related positions have the expected shapes.
 - The runtime validator in `src/content/load.ts` remains enabled as a defense-in-depth check, so malformed content fails with a precise content-contract error rather than an opaque UI `.map` exception.
 - This repair is intentionally content-model-first. Static GitHub Pages migration remains a separate architectural phase and must not be used to hide content/runtime defects.
+
+- Added `scripts/audit-grammar-content.test.mjs` so the strengthened content audit is part of `npm test`, not only a manually invoked command.
