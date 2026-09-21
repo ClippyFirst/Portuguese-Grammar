@@ -16,15 +16,21 @@ function loaderKey(category: string): string | undefined {
   return Object.keys(loaders).find((k) => k.endsWith(`/${category}.ts`));
 }
 
+function loaderKeys(category: string): string[] {
+  const exact = `./pages/${category}.ts`;
+  const prefix = `./pages/${category}-`;
+  return Object.keys(loaders).filter((k) => k === exact || k.startsWith(prefix));
+}
+
 export async function loadCategoryPages(category: string): Promise<GrammarPage[]> {
   if (cache.has(category)) return cache.get(category)!;
-  const key = loaderKey(category);
-  if (!key) {
+  const keys = loaderKeys(category);
+  if (!keys.length) {
     cache.set(category, []);
     return [];
   }
-  const mod = await loaders[key]();
-  const pages = mod.pages ?? [];
+  const modules = await Promise.all(keys.map((key) => loaders[key]()));
+  const pages = modules.flatMap((mod) => mod.pages ?? []).filter((p) => p.category === category);
   cache.set(category, pages);
   for (const p of pages) {
     byPath.set(`${p.category}/${p.slug}`, p);
