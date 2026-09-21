@@ -45,7 +45,7 @@ export const pages: GrammarPage[] = [
     aliases: ["узгодження прикметника"],
     related: ["adjective-agreement", "participle", "noun-gender", "gender-vs-ukrainian"],
     intro:
-      "Прикметник, артикль, вказівний і присвійний узгоджуються з іменником у роді й числі: `estas casas antigas`.\n\nПри кількох іменниках різного роду предикативний прикметник зазвичай чоловічий множини: `O rapaz e a rapariga estão cansados.` Атрибутив після групи може хилитися до ближчого іменника.",
+      "Прикметник, артикль, вказівний і присвійний узгоджуються з іменником у роді й числі: `estas casas antigas`.\n\nПри кількох іменниках різного роду узгодження множинного прикметника в багатьох стандартних конструкціях реалізується чоловічим родом: `O rapaz e a rapariga estão cansados.` Для атрибутивних конструкцій можливі додаткові моделі узгодження залежно від позиції прикметника та структури групи.",
     examples: [
       { pt: "Uma questão difícil.", uk: "Складне питання." },
       { pt: "Os livros e as revistas novos / novas.", uk: "Нові книжки й журнали.", note: "Можливе узгодження з ближчим або спільне чоловіче множини." },
@@ -70,7 +70,7 @@ export const pages: GrammarPage[] = [
     aliases: ["особливе узгодження", "são", "é"],
     related: ["agreement-sv", "existential", "dates-time", "indefinites"],
     intro:
-      "`É` vs `são` з числівниками: `São duas horas.` (множина), але `É uma hora.` Колективи (`a maioria`, `um grupo`) допускають формальну однину або смислову множину: `A maioria concordou` / `A maioria concordaram` — друга частіша в мовленні.\n\n`Tudo` — середній/нейтральний квантор: `Tudo bem.` `Todos` узгоджується: `Todos os dias`.",
+      "`É` vs `são` з числівниками: `São duas horas.` (множина), але `É uma hora.` Колективні іменники на кшталт `a maioria`, `um grupo` можуть поєднуватися з одниною за формальним узгодженням, а в певних контекстах — із множиною за смисловим узгодженням; вибір залежить від конструкції та різновиду.\n\n`Tudo` — середній/нейтральний квантор: `Tudo bem.` `Todos` узгоджується: `Todos os dias`.",
     examples: [
       { pt: "São três da tarde.", uk: "Треття година дня." },
       { pt: "A maioria dos alunos chegou tarde.", uk: "Більшість учнів прийшла пізно." },
