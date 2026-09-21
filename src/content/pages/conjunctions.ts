@@ -189,10 +189,10 @@ export const pages: GrammarPage[] = [
     aliases: ["de que", "que", "regência", "certeza de que"],
     related: ["complement-clauses", "verb-preposition", "gostar", "subordinating"],
     intro:
-      "Багато іменників, прикметників і дієслів вимагають прийменника `de` перед комплементом. Коли комплемент — речення з `que`, прийменник **не зникає**: `tenho certeza de que…`, `gosto de que…` (якщо взагалі беруть речення), `preciso de que…`.\n\nПропуск `de` — одна з найчастотніших рис розмовної мови і водночас типова помилка в формальному тексті: `tenho certeza que` чути постійно, норма писемності — `tenho certeza de que`.\n\nЦе не «два сполучники `que` і `de que`». Сполучник завжди `que`; `de` належить **керуванії** головного слова. Є зворотний випадок — *queísmo* навпаки не стоїть у фокусі: зайве `de` там, де дієслово його не хоче (`penso de que` замість `penso que`).",
+      "Багато іменників, прикметників і дієслів вимагають прийменника `de` перед комплементом. Коли комплемент — речення з `que`, прийменник **не зникає**: `tenho certeza de que…`, `gosto de que…` (якщо взагалі беруть речення), `preciso de que…`.\n\nПропуск `de` — одна з найчастотніших рис розмовної мови і водночас типова помилка в формальному тексті: `tenho certeza que` чути постійно, норма писемності — `tenho certeza de que`.\n\nЦе не «два сполучники `que` і `de que`». Сполучник завжди `que`; `de` належить **керуванняії** головного слова. Є зворотний випадок — *queísmo* навпаки не стоїть у фокусі: зайве `de` там, де дієслово його не хоче (`penso de que` замість `penso que`).",
     formulas: [
       {
-        label: "керуванія зберігається",
+        label: "керуванняія зберігається",
         pattern: "V/N/Adj + de + que + P",
         note: "Якщо без речення було б de + іменник, з реченням буде de que.",
       },
@@ -203,7 +203,7 @@ export const pages: GrammarPage[] = [
       },
     ],
     formation:
-      "Тест простий: замініть підрядне на іменник. `certeza de isso` → `certeza disso` → `certeza de que`. `penso isso` → `penso que`. `gosto de música` → якщо берете речення, логічно `gosto de que…`, хоча частіше перебудовують: `gosto que` у мовленні, або `gosto de` + інфінітив.\n\n`precisar`: PT-BR часто `preciso que` + кон'юнктив; PT-PT `preciso de que` або, природніше, `preciso que` теж зустрічається. Перевіряйте керуванію конкретного слова.",
+      "Тест простий: замініть підрядне на іменник. `certeza de isso` → `certeza disso` → `certeza de que`. `penso isso` → `penso que`. `gosto de música` → якщо берете речення, логічно `gosto de que…`, хоча частіше перебудовують: `gosto que` у мовленні, або `gosto de` + інфінітив.\n\n`precisar`: PT-BR часто `preciso que` + кон'юнктив; PT-PT `preciso de que` або, природніше, `preciso que` теж зустрічається. Перевіряйте керуванняію конкретного слова.",
     uses: [
       {
         title: "Іменники й прикметники з de",
@@ -236,7 +236,7 @@ export const pages: GrammarPage[] = [
     ],
     markers: ["de que", "que", "certeza de", "lembrar-se de", "gostar de", "pensar que"],
     exceptions:
-      "`acreditar em` vs `acreditar que`: віра в щось — `em`; зміст думки — `que` без `de`. `insistir em que`, `concordar em que` / `concordar que`. Деякі слова вагаються між нормами — тоді дивіться словник керуванії, а не інтуїцію з української.",
+      "`acreditar em` vs `acreditar que`: віра в щось — `em`; зміст думки — `que` без `de`. `insistir em que`, `concordar em que` / `concordar que`. Деякі слова вагаються між нормами — тоді дивіться словник керуванняії, а не інтуїцію з української.",
     mistakes: [
       mistake(
         "Penso de que vai chover.",
@@ -257,7 +257,7 @@ export const pages: GrammarPage[] = [
     ukrainian:
       "Українське *впевнений, що* не вимагає прийменника перед *що*. Португальське `certo` / `certeza` тримає `de`, бо конструкція та сама, що `certeza de uma coisa`. Думайте «іменник + de + зміст», а не «сполучник *що* = `que` завжди без прийменника».",
     brPt:
-      "Пропуск `de` перед `que` частотніший у PT-BR, зокрема після `certeza`, `dúvida`, `precisar`. Писемні редакції Бразилії все одно часто вимагають `de que` там, де є керуванія. PT-PT у нормі консервативніший. `lembrar` vs `lembrar-se de` — окрема регіональна керуванія: PT-PT майже завжди прономінальне з `de`.",
+      "Пропуск `de` перед `que` частотніший у PT-BR, зокрема після `certeza`, `dúvida`, `precisar`. Писемні редакції Бразилії все одно часто вимагають `de que` там, де є керуванняія. PT-PT у нормі консервативніший. `lembrar` vs `lembrar-se de` — окрема регіональна керуванняія: PT-PT майже завжди прономінальне з `de`.",
     tables: [
       {
         caption: "Швидкий тест",
