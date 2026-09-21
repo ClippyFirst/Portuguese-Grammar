@@ -25,10 +25,9 @@ for (const { name, content } of pages) {
   for (const match of content.matchAll(/id:\s*"([^"]+)"/g)) add(ids, match[1], name);
   for (const match of content.matchAll(/slug:\s*"([^"]+)"/g)) add(slugs, match[1], name);
 
-  const meta = content.match(
-    /id:\s*"([^"]+)"[\s\S]*?slug:\s*"([^"]+)"[\s\S]*?category:\s*"([^"]+)"/,
-  );
-  if (meta) {
+  for (const meta of content.matchAll(
+    /id:\s*"([^"]+)"\s*,\s*slug:\s*"([^"]+)"\s*,\s*category:\s*"([^"]+)"/g,
+  )) {
     pageMeta.set(meta[1], {
       file: name,
       slug: meta[2],
