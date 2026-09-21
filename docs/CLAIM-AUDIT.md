@@ -114,3 +114,13 @@ The repository includes `npm run audit:content` via `scripts/audit-grammar-conte
 
 This audit is intentionally static and local. It does not replace linguistic verification against reference grammars, corpora, or specialist sources.
 
+
+
+## Tooling and high-risk follow-up: September 2026
+
+- The content audit script was hardened so page metadata is extracted from multiline page objects rather than assuming `id`, `slug`, and `category` occur on one line.
+- Slug uniqueness is now checked by the real route key `category/slug`, not globally; the same slug such as `overview` is valid in different categories.
+- The crase pass now distinguishes ordinary `a uma` from time expressions such as `à uma hora`, and scopes `até às` / `até as` to the relevant variety instead of presenting them as free variation.
+- The infinitive pass now treats `ao + infinitivo` as a constructional temporal/subordinate pattern rather than mechanically as ordinary article contraction before a verb. It also avoids presenting `para chegar` as inherently wrong when the infinitive subject is recoverable from context.
+- The mood pass removes an erroneous/garbled sentence around future subjunctive usage and avoids explaining African Portuguese spoken variation as simply a copy of conversational PT-BR.
+- These changes remain part of the continuing claim/example review; they do not mean every example in the repository has been independently checked against a primary or reference grammar.
