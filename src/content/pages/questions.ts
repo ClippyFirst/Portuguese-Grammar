@@ -12,7 +12,7 @@ export const pages: GrammarPage[] = [
     aliases: ["загальні питання", "sim não"],
     related: ["question-word-order", "questions-br-pt", "inversion"],
     intro:
-      "Питання так/ні в португальській часто має той самий порядок, що й розповідь, плюс питальна інтонація і `?` на письмі: `Você vem?` / `Vens?`\n\nІнверсія `Vem o João?` живіша в PT-PT і в формальному стилі. Частка на кшталт українського «чи» не обов'язкова; конструкція `é que` широко вживається в питальних моделях і може організовувати фокус: `Onde é que tu estás?`",
+      "Питання так/ні в португальській часто має той самий порядок, що й розповідь, плюс питальна інтонація і `?` на письмі: `Você vem?` / `Vens?`\n\nІнверсія на кшталт `Vem o João?` засвідчена в PT-PT та в певних письмових/стилістичних контекстах; розподіл залежить від типу конструкції й різновиду. Окремий еквівалент українського «чи» для звичайного питання так/ні не є обов'язковим; конструкція `é que` широко вживається в питальних моделях і може організовувати фокус: `Onde é que tu estás?`",
     formulas: [
       { pattern: "S + V ?", br: "Você vem?", ptEu: "Vens? / Vem o João?" },
     ],
@@ -42,7 +42,7 @@ export const pages: GrammarPage[] = [
     aliases: ["спеціальні питання", "o que", "quem"],
     related: ["interrogative-pronouns", "porque-forms", "question-word-order"],
     intro:
-      "Питальне слово зазвичай стоїть на початку: `O que queres?`, `Onde moras?`, `Quando chegas?`, `Como está?`, `Quanto custa?`\n\n`Que` перед іменником: `Que horas são?` `O que` — коли немає іменника. `Quem` — про особу. Після прийменника: `Com quem falas?`, `De que se trata?`",
+      "Питальне слово зазвичай стоїть на початку: `O que queres?`, `Onde moras?`, `Quando chegas?`, `Como está?`, `Quanto custa?`\n\n`Que` вживається, зокрема, як визначник перед іменником: `Que horas são?`; `o que` — поширена займенникова модель, коли запитується про річ/ситуацію без названого іменника. `Quem` — про особу. Після прийменника: `Com quem falas?`, `De que se trata?`",
     examples: [
       { pt: "O que aconteceu?", uk: "Що сталося?" },
       { pt: "Quem é aquela pessoa?", uk: "Хто та людина?" },
@@ -113,7 +113,7 @@ export const pages: GrammarPage[] = [
     aliases: ["porque", "por que", "porquê"],
     related: ["wh-questions", "prep-por", "causal-clauses"],
     intro:
-      "Бразильська шкільна традиція розрізняє чотири написання. У PT-PT в питальних реченнях нормативно вживається `porque` як питальний прислівник: `Porque vieste?`, `Porque é que vieste?`. `Por que` теж можливе, коли `por` є прийменником перед `que` у моделях на кшталт `por que motivo`, `por que razão`. `Porquê` — іменник «причина», а також можливе в кінці короткого питання: `Porquê?`. У PT-BR для питального «чому?» типове окреме написання `por que`, а в кінці `por quê`.\n\nПрактично:\n- причина: `porque`\n- питання «чому?»: PT-BR `por que` (у середині) / `por quê` (в кінці); PT-PT `porque` / `porque é que`; окреме `por que` зберігається в моделях `por que motivo`, `por que razão`\n- іменник: `o porquê`",
+      "У бразильській шкільній орфографічній практиці розрізняють чотири написання: У PT-PT в питальних реченнях нормативно вживається `porque` як питальний прислівник: `Porque vieste?`, `Porque é que vieste?`. `Por que` теж можливе, коли `por` є прийменником перед `que` у моделях на кшталт `por que motivo`, `por que razão`. `Porquê` — іменник «причина», а також можливе в кінці короткого питання: `Porquê?`. У PT-BR для питального «чому?» типове окреме написання `por que`, а в кінці `por quê`.\n\nПрактично:\n- причина: `porque`\n- питання «чому?»: PT-BR `por que` (у середині) / `por quê` (в кінці); PT-PT `porque` / `porque é que`; окреме `por que` зберігається в моделях `por que motivo`, `por que razão`\n- іменник: `o porquê`",
     tables: [
       {
         headers: ["Функція", "PT-BR (шкільна норма)", "PT-PT (типово)"],
