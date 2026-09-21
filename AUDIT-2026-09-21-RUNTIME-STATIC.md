@@ -425,6 +425,6 @@ The current runtime error is therefore recorded as a **systemic content-contract
 
 The runtime `.map` failure was repaired systematically rather than page-by-page. Thirteen compact page modules had the same positional-constructor defect. Their helpers now model the actual ten-argument calls: metadata, summary, intro, pedagogical note, examples, related IDs. The note is preserved in the final intro text so no source material is silently lost.
 
-A constructor-level static audit was also added. It parses top-level arguments while respecting nested arrays/objects and quoted strings, then verifies the expected argument count and array positions. This is intended to prevent the exact class of regression that previously escaped the catalog/content audit.
+A constructor-level static audit was also added, and a regression test now executes that audit as part of `npm test`. It parses top-level arguments while respecting nested arrays/objects and quoted strings, then verifies the expected argument count and array positions. This is intended to prevent the exact class of regression that previously escaped the catalog/content audit.
 
 The GitHub Pages requirement remains the production target. Current Vercel/Nitro configuration is legacy/platform scaffolding and has not been treated as proof of static deployability. The next change set should introduce TanStack Start static prerendering and a GitHub Actions Pages artifact, then verify all catalog routes from the generated static output.
