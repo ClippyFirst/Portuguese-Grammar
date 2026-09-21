@@ -28,7 +28,7 @@ export const pages: GrammarPage[] = [
       },
     ],
     formation:
-      "0–15 мають окремі слова (`zero`, `um`, `dois` … `quinze`). 16–19 — `dezasseis` (PT-PT) / `dezesseis` (PT-BR), `dezassete`/`dezessete`, `dezoito`, `dezanove`/`dezenove`. Десятки: `vinte`, `trinta`, `quarenta`… Зв'язок одиниці через `e`: `vinte e um`, `trinta e duas`.\n\nСотні: `cem` (рівно 100), `cento e…` (101+), `duzentos`/`duzentas`, `trezentos`/`trezentas` — рід узгоджується. `Mil` без `um` у нейтральному стилі: `mil pessoas`, не обов'язково `um mil pessoas` (це розмовніше, частіше PT-BR).",
+      "0–15 мають окремі слова (`zero`, `um`, `dois` … `quinze`). 16–19 — `dezasseis` (PT-PT) / `dezesseis` (PT-BR), `dezassete`/`dezessete`, `dezoito`, `dezanove`/`dezenove`. Десятки: `vinte`, `trinta`, `quarenta`… Зв'язок одиниці через `e`: `vinte e um`, `trinta e duas`.\n\nСотні: `cem` (рівно 100), `cento e…` (101+), `duzentos`/`duzentas`, `trezentos`/`trezentas` — рід узгоджується. `Mil` зазвичай уживається без `um`: `mil pessoas`. Форма `um mil` теж трапляється в певних контекстах, зокрема в бразильському юридичному й фінансовому письмі; це не варто зводити лише до розмовної мови.",
     uses: [
       {
         title: "Лічба й кількість",
@@ -74,7 +74,7 @@ export const pages: GrammarPage[] = [
       mistake(
         "cem e um livros",
         "cento e um livros",
-        "`cem` — лише рівно 100. Від 101: `cento e…`.",
+        "`cem` уживається для 100 без наступної числової частини; перед подальшим числом — `cento e…`: `cento e um`, `cento e vinte`.",
       ),
     ],
     ukrainian:
@@ -120,7 +120,7 @@ export const pages: GrammarPage[] = [
     aliases: ["порядкові", "primeiro", "décimo", "ordinais"],
     related: ["cardinals", "dates-time", "adjective-agreement"],
     intro:
-      "Порядкові (`numerais ordinais`) відповідають на «котрий за чергою?». Вони поводяться як **прикметники**: `o primeiro dia`, `a primeira vez`, `os primeiros passos`, `as primeiras linhas`.\n\nУ датах португальська ставить порядковий лише на **перше** число місяця: `no dia 1.º de maio` / `no primeiro de maio`. Решта днів — кількісні: `no dia 2 de maio`, не `no segundo de maio`.\n\nНа письмі скорочення: `1.º`, `1.ª`, `2.º`, `2.ª` (крапка + підкреслений º/ª в традиції; у Unicode часто `1.º`).",
+      "Порядкові (`numerais ordinais`) відповідають на «котрий за чергою?». Вони поводяться як **прикметники**: `o primeiro dia`, `a primeira vez`, `os primeiros passos`, `as primeiras linhas`.\n\nУ датах порядковий числівник типовий для **першого** числа місяця: `no dia 1.º de maio` / `no primeiro de maio`. Для решти днів уживають кількісні: `no dia 2 de maio`. Форми можуть залежати від жанру й локальної практики.\n\nНа письмі скорочення: `1.º`, `1.ª`, `2.º`, `2.ª` (крапка + підкреслений º/ª в традиції; у Unicode часто `1.º`).",
     formulas: [
       {
         label: "Узгодження",
