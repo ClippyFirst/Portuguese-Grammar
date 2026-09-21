@@ -3,8 +3,8 @@ import { ex, mistake } from "../helpers";
 
 export const pages: GrammarPage[] = [
   {
-    id: "nem",
-    slug: "nem",
+    id: "coordinating",
+    slug: "coordinating",
     category: "conjunctions",
     titleUk: "Сурядні сполучники",
     titlePt: "Conjunções coordenativas",
@@ -12,7 +12,7 @@ export const pages: GrammarPage[] = [
     summary:
       "e, nem, ou, mas, porém, portanto: зв'язок рівноправних частин без зміни способу дієслова.",
     aliases: ["сурядні", "e", "mas", "ou", "nem", "porém", "coordenativas"],
-    related: ["nem", "coordination", "subordinating", "negation-nao"],
+    related: ["coordinating", "coordination", "subordinating", "negation-nao"],
     intro:
       "Сурядні сполучники (`conjunções coordenativas`) з'єднують рівноправні члени або речення: слова з словами, групи з групами, речення з реченнями. Вони **не відкривають підрядного** і самі по собі не вимагають кон'юнктива.\n\nКласи традиційної граматики: **єднальні** (`aditivas`: `e`, `nem`), **протиставні** (`adversativas`: `mas`, `porém`, `contudo`, `todavia`), **розділові** (`alternativas` / `disjuntivas`: `ou`, `ora… ora`, `quer… quer`), **пояснювальні** (`explicativas`: `pois`, `que`, `porque` у сурядному вжитку), **висновкові** (`conclusivas`: `logo`, `portanto`, `pois` після коми).\n\nДля українця `nem` — найважливіший пункт: це не просто «і не», а повноцінний єднальний сполучник заперечення, часто з negative concord.",
     formulas: [
