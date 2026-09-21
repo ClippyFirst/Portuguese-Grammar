@@ -122,6 +122,14 @@ export const CATEGORIES: CategoryDef[] = [
     group: "core",
   },
   {
+    id: "semantics",
+    slug: "semantics",
+    titleUk: "Семантика",
+    titlePt: "Semântica",
+    description: "Аспект, модальність, референція, визначеність і родові значення.",
+    group: "ref",
+  },
+  {
     id: "conjunctions",
     slug: "conjunctions",
     titleUk: "Сполучники",
