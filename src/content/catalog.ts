@@ -17,7 +17,7 @@ type Row = [
 const ROWS: Row[] = [
   ["collocations-overview", "lexical-grammar", "collocations", "Сполучуваність: слова, які граматика не передбачає", "Colocações", "Collocations", "Типові лексико-граматичні поєднання.", "сполучуваність,collocations,colocações", "verb-noun-collocations,government-overview", "high"],
   ["verb-noun-collocations", "lexical-grammar", "verb-noun", "Дієслівно-іменні колокації", "Colocações verbo-nominais", "Verb-noun collocations", "fazer, dar, tomar, ter, prestar та типові моделі.", "verb-noun collocations,дієслово іменник", "collocations-overview,government-overview", "high"],
-  ["adjective-government", "lexical-grammar", "adjective-government", "Керування прикметників", "Regência dos adjetivos", "Adjective government", "Прикметники разом із вибраними прийменниками.", "керування прикметників,adjective government,regência nominal", "government-overview,collocations-overview,prepositions", "high"],
+  ["adjective-government", "lexical-grammar", "adjective-government", "Керування прикметників", "Regência dos adjetivos", "Adjective government", "Прикметники разом із вибраними прийменниками.", "керування прикметників,adjective government,regência nominal", "government-overview,collocations-overview,prep-a", "high"],
   ["false-friends", "lexical-grammar", "false-friends", "Хибні друзі українськомовного студента", "Falsos amigos", "False friends", "Лексеми, що провокують помилковий переклад або керування.", "хибні друзі,false friends,falsos amigos,кальки", "collocations-overview,word-formation-affixes,gender-vs-ukrainian", "medium"],
 
 
@@ -174,7 +174,7 @@ const ROWS: Row[] = [
   ["crase-optional", "crase", "optional", "Факультативна й заборонена crase", "Crase facultativa", "Optional and forbidden crase", "Перед жіночими іменами, займенниками; коли à неможливе.", "факультативна crase", "crase,crase-rules", "medium"],
   ["a-vs-crase", "crase", "a-vs-a", "a vs à", "a vs à", "a vs à", "Тест заміни на чоловічий іменник.", "a чи à,як перевірити crase", "crase,prep-a", "high"],
 
-  ["coordinating", "conjunctions", "coordinating", "Сурядні сполучники", "Conjunções coordenativas", "Coordinating conjunctions", "e, nem, ou, mas, porém, portanto.", "сурядні,e,mas,ou,nem", "nem,coordination", "short"],
+  ["coordinating", "conjunctions", "coordinating", "Сурядні сполучники", "Conjunções coordenativas", "Coordinating conjunctions", "e, nem, ou, mas, porém, portanto.", "сурядні,e,mas,ou,nem", "coordination", "short"],
   ["subordinating", "conjunctions", "subordinating", "Підрядні сполучники", "Conjunções subordinativas", "Subordinating conjunctions", "Огляд класів і вибір способу.", "підрядні сполучники", "subjunctive-triggers,conditional-clauses", "medium"],
   ["que-de-que", "conjunctions", "que-de-que", "que / de que", "que e de que", "que vs de que", "Гніздо дієслова: tenho certeza de que.", "de que,que,gnest", "complement-clauses,verb-preposition", "medium"],
 
