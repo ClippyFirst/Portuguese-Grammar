@@ -315,7 +315,7 @@ export const pages: GrammarPage[] = [
     ],
     examples: [
       ex("Não fui a Roma, fui a Lisboa.", "Я їздив/їздила не в Рим, а в Лісабон."),
-      ex("Não fui à Baixa.", "Я не ходив/ходила в Байшу.", { note: "Baixa з артиклем: a Baixa → à Baixa." }),
+      ex("Não fui à Baixa.", "Я не ходив/ходила в Байшу.", { note: "Baixa в цьому вживанні має означений артикль: a Baixa → à Baixa." }),
       ex("Dirija-se a qualquer janela.", "Зверніться до будь-якого віконця.", { note: "qualquer — не означений артикль." }),
       ex("De janeiro a março.", "З січня по березень."),
       ex("De janeiro à Páscoa.", "З січня до Великодня.", { note: "a Páscoa з артиклем → можливе à." }),
