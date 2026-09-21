@@ -133,7 +133,24 @@ for (const [id, row] of catalogRows) {
   const start = source.indexOf(`id: "${id}"`);
   const next = source.indexOf('id: "', start + 1);
   const block = start >= 0 ? source.slice(start, next >= 0 ? next : undefined) : "";
-  if (!/\b(?:examples|uses):/u.test(block)) {
+
+  // Compact `p(...)` pages do not expose named `examples:` / `uses:`
+  // properties. Their page payload still contains the examples array, so
+  // inspect the complete helper call when the object-field lookup is absent.
+  const compactStart = source.indexOf(`p("${id}"`);
+  const compactNext = compactStart >= 0
+    ? source.indexOf('p("', compactStart + 1)
+    : -1;
+  const compactBlock =
+    compactStart >= 0
+      ? source.slice(compactStart, compactNext >= 0 ? compactNext : undefined)
+      : "";
+
+  const hasExamplesOrUses =
+    /\b(?:examples|uses):/u.test(block) ||
+    /\[\s*\{\s*pt:/u.test(compactBlock);
+
+  if (!hasExamplesOrUses) {
     warnings.push(
       `high-depth topic without examples/uses field: ${id} (${meta.file})`,
     );
