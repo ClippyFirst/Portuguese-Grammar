@@ -115,7 +115,6 @@ const absolute =
   /\b(?:завжди|ніколи|обов['’]язково|неможливо|always|never|must|impossible)\b/iu;
 const proseFields =
   /^(?:\s*)(?:intro|formation|exceptions|ukrainian|regional|brPt|body|note):/u;
-const exampleField = /\b(?:pt|uk):\s*"/u;
 const highRisk = /(?:crase|infinitive|moods|clitics|se|questions|articles|agreement|valency)/iu;
 
 for (const { name, content } of pages) {
