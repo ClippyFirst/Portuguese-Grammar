@@ -7,7 +7,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Каузативні конструкції", titlePt: "Construções causativas", titleEn: "Causative constructions",
     summary: "Змусити, дозволити або організувати дію іншого: fazer, mandar, deixar та інші моделі.",
     aliases: ["каузатив","causative","causativo","fazer","mandar","deixar"],
-    related: ["valency-overview","infinitive","clitics","complex-predicates"],
+    related: ["valency-overview","personal-vs-impersonal","clitic-pronouns","complex-predicates"],
     intro: "Каузативна конструкція додає каузатора — учасника, який спричиняє або організовує дію іншого. У португальській різні дієслова кодують примус, дозвіл або організацію дії. Не всі моделі мають однаковий ступінь контролю.",
     formulas: [
       { label: "Примус / спричинення", pattern: "fazer + NP + Inf", note: "Каузатор спричиняє виконання дії." },
@@ -28,7 +28,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Raising і control: два типи інфінітивних конструкцій", titlePt: "Elevação e controlo", titleEn: "Raising and control",
     summary: "Чому parecer, querer, tentar та інші дієслова поводяться по-різному з інфінітивом.",
     aliases: ["raising","control","elevação","controlo","parecer","tentar","querer"],
-    related: ["infinitive","causative-constructions","subject-placement","complement-clauses"],
+    related: ["personal-vs-impersonal","causative-constructions","subject-placement","complement-clauses"],
     intro: "У поверхневій формі parecer + infinitivo і querer + infinitivo схожі, але синтаксично їхня структура різна. У control підмет головної клаузи контролює невиражений суб'єкт інфінітива: João tentou sair. У raising предикат верхнього рівня не додає нового агента до події: João parece estar cansado.",
     uses: [
       { title: "Control", body: "tentar, querer, decidir та подібні предикати мають семантичного учасника, який контролює дію інфінітива.", examples: [ex("A Maria tentou sair.","Марія спробувала вийти."),ex("O João decidiu estudar.","Жуан вирішив учитися.")] },
@@ -42,7 +42,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Номіналізація: коли дія стає іменником", titlePt: "Nominalização", titleEn: "Nominalization",
     summary: "formação, crescimento, decisão та перетворення предикативної структури на іменну.",
     aliases: ["номіналізація","nominalization","nominalização","віддієслівний іменник"],
-    related: ["word-formation-affixes","valency-overview","relative","complement-clauses"],
+    related: ["word-formation-affixes","valency-overview","relative-pronouns","complement-clauses"],
     intro: "Номіналізація перетворює подію, стан або властивість на іменну структуру. Це не лише словотвір: разом зі словом змінюється синтаксична організація. Formação do projeto відповідає за функцією ao projeto na frase em que alguém forma o projeto, але не має тієї самої граматичної структури.",
     examples: [
       ex("A construção da ponte demorou dois anos.","Будівництво мосту тривало два роки."),
@@ -58,7 +58,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Складні відносні речення", titlePt: "Orações relativas avançadas", titleEn: "Advanced relative clauses",
     summary: "Restrictive/non-restrictive, прийменник + relative, cujo, o que та вибір форми.",
     aliases: ["складні відносні","advanced relatives","orações relativas","cujo","o que"],
-    related: ["relative","prepositions","articles-definite","subordinate"],
+    related: ["relative-pronouns","prepositions-overview","articles-definite","subordinating"],
     intro: "Відносне речення може обмежувати множину референтів або додавати коментар до вже ідентифікованого референта. Від цього залежить пунктуація та інтерпретація. У складніших моделях важливі прийменник + відносний займенник, cujo та o que.",
     uses: [
       { title: "Обмежувальне", body: "Визначає, про яких саме членів множини йдеться.", examples: [ex("Os alunos que estudaram passaram.","Студенти, які вчилися, склали іспит.")] },
@@ -74,7 +74,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Складені предикати й аналітичні конструкції", titlePt: "Predicados complexos", titleEn: "Complex predicates",
     summary: "Допоміжні, модальні, фазові та каузативні компоненти одного предиката.",
     aliases: ["складений предикат","complex predicate","predicado complexo","перифраза"],
-    related: ["periphrases","causative-constructions","aspect-overview","modality-overview"],
+    related: ["ir-infinitive","causative-constructions","aspect-overview","modality-overview"],
     intro: "У португальській кілька дієслів можуть спільно утворювати один предикативний комплекс: estar a trabalhar, ter de sair, começar a chover, fazer alguém rir. Для читача важливо відрізняти лексичне дієслово від допоміжного, модального або фазового компонента.",
     examples: [
       ex("Estou a trabalhar.","Я зараз працюю.",{ variety: "PT" }),
