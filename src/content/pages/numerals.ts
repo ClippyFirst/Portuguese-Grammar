@@ -205,7 +205,7 @@ export const pages: GrammarPage[] = [
         body: "`Que horas são?` — `São três e quinze.` `É uma hora.` Хвилини: `e` додає, `menos` / `para as` віднімає. `em ponto` — рівно.",
         examples: [
           ex("São duas em ponto.", "Друга рівно."),
-          ex("São três e dez.", "Третина десята / 15:10 залежно від контексту 12/24."),
+          ex("São três e dez.", "Третя десять / 3:10."),
         ],
       },
       {
