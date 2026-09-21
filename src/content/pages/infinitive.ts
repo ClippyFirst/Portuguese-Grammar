@@ -756,7 +756,7 @@ export const pages: GrammarPage[] = [
       mistake(
         "Comecei de trabalhar às nove.",
         "Comecei a trabalhar às nove.",
-        "`começar a` + INF. `começar de` — не та керуваня.",
+        "`começar a` + INF. `começar de` — не та керування.",
       ),
       mistake(
         "Gosto a nadar.",
@@ -775,7 +775,7 @@ export const pages: GrammarPage[] = [
         caption: "Прийменник + інфінітив: ядро",
         headers: ["Прийменник", "Типове значення", "Приклад"],
         rows: [
-          ["de", "керуваня, час, поступка", "depois de sair, gostar de ler"],
+          ["de", "керування, час, поступка", "depois de sair, gostar de ler"],
           ["a", "початок, прогресив PT-PT", "começar a falar, estar a falar"],
           ["ao", "момент дії", "ao chegar"],
           ["para", "мета", "para viver"],
