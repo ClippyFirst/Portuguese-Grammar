@@ -903,3 +903,61 @@ CAPLE описує B2-C2 як рівні, де зростає роль скла�
 - доказове маркування тверджень для різних стандартів і регіонів.
 
 Наступний quality gate тому має бути не «додати ще сторінки», а **перевірити кожне нове й старе твердження, приклад та regional label**.
+
+
+## 36. Quality pass: content graph and loader architecture
+
+The expansion exposed an architectural issue: the original content loader assumed one TypeScript module per category. That made an extension module such as an advanced syntax file invisible to the runtime even when its catalog entries existed.
+
+The loader now supports category extension modules using the naming convention:
+
+- `syntax.ts`
+- `syntax-advanced.ts`
+- `syntax-<feature>.ts`
+
+The category loader merges those modules and filters their exported pages by category.
+
+This is important because a reference project should not have a false-positive state in which:
+
+> catalog entry exists → URL exists → page data is actually unavailable.
+
+The content graph was also checked for dangling `related` IDs and the catalog references introduced during expansion were corrected.
+
+## 37. Evidence policy
+
+A separate `docs/CONTENT-VERIFICATION.md` document now defines the evidence hierarchy and claim-level quality gate.
+
+The current policy prioritizes:
+
+1. reference grammars and official institutions;
+2. specialist linguistic reference works;
+3. corpus/usage evidence where a claim is about frequency rather than grammatical possibility.
+
+The policy explicitly distinguishes categorical rules from preferences, tendencies, register, regional variation and disputed usage.
+
+This distinction is particularly important for:
+
+- infinitive selection;
+- verb government;
+- BR/PT contrasts;
+- clitic placement;
+- relative clauses;
+- pronunciation;
+- colloquial vs formal constructions.
+
+## 38. Current status
+
+The project has passed from a topic-count audit into a structural coverage + content-quality audit.
+
+The next high-value work is **claim-level verification of the existing 259 catalog topics**, with priority given to:
+
+- statements using “always”, “never”, “only”;
+- BR/PT contrasts;
+- claims about African varieties;
+- pronunciation generalizations;
+- government/regency;
+- infinitive rules;
+- article/reference rules;
+- examples marked as normative or formal.
+
+Adding more pages before this pass would create diminishing returns and could increase the amount of unverified material.
