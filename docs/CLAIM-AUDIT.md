@@ -92,6 +92,22 @@ Additional high-risk refinements completed after the first pass:
 
 These changes reinforce the project's central editorial rule: a useful learner reference must distinguish **grammatical possibility, standard preference, frequency, register and regional distribution** instead of collapsing them into binary right/wrong rules.
 
+### Example-level pass: September 2026
+
+A targeted example pass has now been extended into the older article, comparison, contraction, crase, valency, and infinitive modules. The pass corrected or scoped examples where the problem was not raw grammaticality but misleading presentation: regional distribution presented too categorically, government described as a spelling issue, Ukrainian translations carrying an artificial demonstrative meaning, and terminology artifacts in Ukrainian explanations.
+
+Particular attention was paid to:
+
+- proper-name and possessive article distribution in PT-PT vs PT-BR;
+- `até às` / `até as` as a usage-sensitive construction rather than a universal error rule;
+- `assistir a` vs direct-object usage in PT-BR/PT-PT;
+- `a` + demonstratives and the distinction between `a este` and `àquele`;
+- `de ele + infinitivo` versus the contracted `dele`;
+- examples where a Ukrainian translation could accidentally imply that `o/a` means «цей/ця»;
+- Ukrainian terminology for government (`керування`) across content modules.
+
+This is a **continuing pass**, not a declaration that every example in the repository has been independently verified. The release gate remains unchanged.
+
 ## Automated structural gate
 
 The repository includes `npm run audit:content` via `scripts/audit-grammar-content.mjs`. It checks duplicate page IDs/slugs, page↔catalog presence and metadata consistency, broken `related` references, and flags absolute-language claims for human review. Structural inconsistencies fail the command; absolute-language findings are warnings because some categorical statements are legitimate when they describe a scoped normative rule.
