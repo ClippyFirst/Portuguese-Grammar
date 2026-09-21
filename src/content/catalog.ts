@@ -15,6 +15,13 @@ type Row = [
 ];
 
 const ROWS: Row[] = [
+  ["causative-constructions", "syntax", "causative", "Каузативні конструкції", "Construções causativas", "Causative constructions", "fazer, mandar, deixar та спричинення/дозвіл дії.", "каузатив,causative,causativo,fazer,mandar,deixar", "valency-overview,infinitive,complex-predicates", "high"],
+  ["raising-and-control", "syntax", "raising-control", "Raising і control", "Elevação e controlo", "Raising and control", "parecer, tentar, querer та різні інфінітивні структури.", "raising,control,elevação,controlo,parecer,tentar,querer", "infinitive,valency-overview,complex-predicates", "high"],
+  ["nominalization", "syntax", "nominalization", "Номіналізація: коли дія стає іменником", "Nominalização", "Nominalization", "Як подія переходить в іменну структуру.", "номіналізація,nominalization,nominalização", "word-formation-affixes,valency-overview,complement-clauses", "high"],
+  ["advanced-relatives", "syntax", "advanced-relatives", "Складні відносні речення", "Orações relativas avançadas", "Advanced relative clauses", "Обмежувальні/пояснювальні relative, cujo, o que та прийменники.", "складні відносні,advanced relatives,orações relativas,cujo,o que", "relative,prepositions,subordinate", "high"],
+  ["complex-predicates", "syntax", "complex-predicates", "Складені предикати й аналітичні конструкції", "Predicados complexos", "Complex predicates", "Модальні, фазові, прогресивні та каузативні комплекси.", "складений предикат,complex predicate,predicado complexo,перифраза", "periphrases,causative-constructions,aspect-overview,modality-overview", "high"],
+
+
   ["pragmatics-overview", "pragmatics", "overview", "Прагматика: значення в контексті", "Pragmática", "Pragmatics", "Контекст, мовленнєва дія та соціальна інтерпретація.", "прагматика,pragmatics,pragmática", "speech-acts,politeness,modal-particles", "high"],
   ["speech-acts", "pragmatics", "speech-acts", "Мовленнєві акти", "Atos de fala", "Speech acts", "Прохання, наказ, порада, запрошення та інші комунікативні дії.", "мовленнєві акти,speech acts,atos de fala", "pragmatics-overview,politeness", "high"],
   ["politeness", "pragmatics", "politeness", "Ввічливість і дистанція", "Cortesia e distância", "Politeness and social distance", "tu, você, senhor, умовні форми та непрямі прохання.", "ввічливість,politeness,cortesia,tu,você,senhor", "tu-vs-voce,speech-acts", "high"],
