@@ -22,6 +22,125 @@ function add(map, key, value) {
   map.set(key, list);
 }
 
+function splitTopLevelArguments(source) {
+  const args = [];
+  let start = 0;
+  let depth = 0;
+  let quote = null;
+  let escaped = false;
+
+  for (let i = 0; i < source.length; i += 1) {
+    const char = source[i];
+
+    if (quote) {
+      if (escaped) {
+        escaped = false;
+      } else if (char === "\\") {
+        escaped = true;
+      } else if (char === quote) {
+        quote = null;
+      }
+      continue;
+    }
+
+    if (char === '"' || char === "'" || char === "`") {
+      quote = char;
+      continue;
+    }
+
+    if (char === "(" || char === "[" || char === "{") {
+      depth += 1;
+      continue;
+    }
+    if (char === ")" || char === "]" || char === "}") {
+      depth -= 1;
+      continue;
+    }
+
+    if (char === "," && depth === 0) {
+      args.push(source.slice(start, i).trim());
+      start = i + 1;
+    }
+  }
+
+  args.push(source.slice(start).trim());
+  return args;
+}
+
+function auditCompactPageConstructors(content, file) {
+  const hasTeachingNoteHelper =
+    /const\s+p\s*=\s*\([^)]*\bteachingNote:string\b[^)]*\):GrammarPage/u.test(
+      content,
+    );
+  if (!hasTeachingNoteHelper) return;
+
+  for (const match of content.matchAll(/\bp\(/gu)) {
+    const open = match.index + match[0].length;
+    let depth = 1;
+    let quote = null;
+    let escaped = false;
+    let close = -1;
+
+    for (let i = open; i < content.length; i += 1) {
+      const char = content[i];
+
+      if (quote) {
+        if (escaped) {
+          escaped = false;
+        } else if (char === "\\") {
+          escaped = true;
+        } else if (char === quote) {
+          quote = null;
+        }
+        continue;
+      }
+
+      if (char === '"' || char === "'" || char === "`") {
+        quote = char;
+        continue;
+      }
+
+      if (char === "(") depth += 1;
+      if (char === ")") {
+        depth -= 1;
+        if (depth === 0) {
+          close = i;
+          break;
+        }
+      }
+    }
+
+    if (close < 0) {
+      issues.push(`unterminated compact page constructor in ${file}`);
+      continue;
+    }
+
+    const args = splitTopLevelArguments(content.slice(open, close));
+    if (args.length !== 10) {
+      issues.push(
+        `compact page constructor in ${file} has ${args.length} arguments; expected 10 (including teaching note)`,
+      );
+      continue;
+    }
+
+    if (!/^["'\`]/u.test(args[7])) {
+      issues.push(
+        `compact page constructor in ${file} has invalid teaching-note argument at position 8`,
+      );
+    }
+    if (!/^\s*\[/u.test(args[8])) {
+      issues.push(
+        `compact page constructor in ${file} has non-array examples argument at position 9`,
+      );
+    }
+    if (!/^\s*\[/u.test(args[9])) {
+      issues.push(
+        `compact page constructor in ${file} has non-array related argument at position 10`,
+      );
+    }
+  }
+}
+
 function registerPage({ id, slug, category, file }) {
   if (!id || !slug || !category) return;
   add(ids, id, file);
@@ -158,6 +277,8 @@ for (const [id, row] of catalogRows) {
 }
 
 for (const { name, content } of pages) {
+  auditCompactPageConstructors(content, name);
+
   for (const match of content.matchAll(
     /related:\s*\[([\s\S]*?)\]/g,
   )) {
