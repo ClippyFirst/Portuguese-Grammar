@@ -173,3 +173,14 @@ This pass tightened several examples and explanations that were too categorical 
 - **African varieties:** regional notes avoid collapsing Angola/Mozambique into one European-style administrative norm; claims are now explicitly tied to country, genre and documented description where possible.
 
 These changes are example-level and wording-level refinements. They do **not** constitute exhaustive external verification of every example in the repository.
+
+
+## External spot-check: September 2026 — interrogative orthography
+
+For the latest interrogative pass, external reference material was checked for the high-risk porque / por que distinction:
+
+- Ciberdúvidas describes European Portuguese interrogative porque in forms such as "Porque vieste?" and "Porque é que vieste?", while por que remains appropriate when por is a preposition in constructions such as "por que motivo" or "por que razão".
+- The same source describes the Brazilian orthographic convention of writing interrogative por que (and sentence-final por quê) in contexts where European Portuguese commonly writes interrogative porque / porquê.
+- The repository therefore keeps the distinction explicitly scoped by variety and construction, rather than teaching a single four-item rule as if it applied identically across all Portuguese varieties.
+
+This is a targeted external spot-check, not an exhaustive source audit of the repository.
