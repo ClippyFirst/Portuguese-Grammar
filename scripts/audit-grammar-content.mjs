@@ -78,7 +78,7 @@ for (const [id, row] of catalogRows) {
 
 for (const { name, content } of pages) {
   for (const match of content.matchAll(
-    /related:\s*\[((?:[^\]]|\][^\]])*)\]/gs,
+    /related:\s*\[([\s\S]*?)\]/g,
   )) {
     for (const ref of match[1].matchAll(/"([^"]+)"/g)) {
       if (!pageMeta.has(ref[1])) {
@@ -90,10 +90,16 @@ for (const { name, content } of pages) {
 
 const absolute =
   /\b(?:завжди|ніколи|обов['’]язково|неможливо|always|never|must|impossible)\b/iu;
+const proseFields =
+  /^(?:\s*)(?:intro|formation|exceptions|ukrainian|regional|brPt|body|note):/u;
 
 for (const { name, content } of pages) {
   content.split("\n").forEach((line, index) => {
-    if (absolute.test(line) && !line.includes("mistake(")) {
+    if (
+      absolute.test(line) &&
+      proseFields.test(line) &&
+      !line.includes("mistake(")
+    ) {
       issues.push(
         `${name}:${index + 1}: absolute-language review: ${line.trim()}`,
       );
