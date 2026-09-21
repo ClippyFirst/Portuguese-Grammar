@@ -316,6 +316,9 @@ const ROWS: Row[] = [
   ["mozambique", "regional", "mozambique", "Португальська Мозамбіку", "Português de Moçambique", "Mozambican Portuguese", "Релевантні граматичні риси.", "мозамбік,MZ", "angola,pluricentric", "medium"],
   ["other-lusophone", "regional", "other-lusophone", "Інші лузофонні різновиди", "Outras variedades", "Other Lusophone varieties", "Кабо-Верде, Гвінея-Бісау, Сан-Томе, Тимор-Лешті.", "кабо-верде,тимор,гвінея", "pluricentric,angola", "short"],
   ["tu-voce-regional", "regional", "tu-voce-regional", "tu / você регіонально", "tu/você nas regiões", "Regional tu / você", "Бразилія не однорідна; північ Португалії.", "tu você регіони", "tu-voce,forms-of-address,pt-br-pt-pt", "high"],
+  // Pages that previously existed in page modules but were absent from the navigation catalog.
+
+
 ];
 
 function parseAliases(s: string): string[] {
