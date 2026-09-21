@@ -7,7 +7,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Дискурс і зв'язність", titlePt: "Discurso e coesão", titleEn: "Discourse and cohesion",
     summary: "Як речення об'єднуються в текст і як читач відновлює зв'язки між ними.",
     aliases: ["дискурс","discourse","discurso","зв'язність","cohesion"],
-    related: ["discourse-markers","anaphora","ellipsis","information-structure"],
+    related: ["discourse-markers","cohesion-reference","ellipsis","information-structure"],
     intro: "Граматичне речення ще не є зв'язним текстом. Дискурс організує референти, часову послідовність, причини, контрасти та тему. Португальська використовує займенники, артиклі, повтор, сполучники, дискурсивні маркери й еліпсис.",
     uses: [
       { title: "Анафора", body: "Займенник або означена група повертає читача до вже введеного референта.", examples: [ex("Vi a Maria. Ela estava cansada.","Я побачив Марію. Вона була втомлена.")] },
@@ -20,7 +20,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Дискурсивні маркери", titlePt: "Marcadores discursivos", titleEn: "Discourse markers",
     summary: "então, afinal, portanto, contudo, aliás, enfim та організація розмови.",
     aliases: ["дискурсивні маркери","marcadores discursivos","então","afinal","aliás","enfim"],
-    related: ["discourse-overview","modal-particles","conjunctions","register-and-directness"],
+    related: ["discourse-overview","modal-particles","coordinating","register-and-directness"],
     intro: "Дискурсивний маркер організує взаємозв'язок реплік або частин тексту. Те саме слово може мати сполучникову, часову або дискурсивну функцію. Тому então не можна перекласти одним словом у всіх позиціях.",
     uses: [
       { title: "então", body: "Може виражати наслідок, висновок, перехід або повернення до теми.", examples: [ex("Então, vamos começar.","Отже, почнімо."),ex("E então?","Ну і що далі?")] },
@@ -51,7 +51,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Еліпсис", titlePt: "Elipse", titleEn: "Ellipsis",
     summary: "Пропуск зрозумілих компонентів без втрати граматичності та зв'язності.",
     aliases: ["еліпсис","ellipsis","elipse","пропуск"],
-    related: ["discourse-overview","null-subject","coordination","comparisons"],
+    related: ["discourse-overview","null-subject","coordination","comparatives"],
     intro: "Еліпсис — навмисний або системний пропуск компонента, який легко відновити з контексту. Не кожен пропуск є «неповним реченням». Португальська допускає нульовий підмет, а в координації може не повторювати спільні компоненти.",
     examples: [
       ex("Eu fui ao mercado e [eu] comprei pão.","Я пішов/пішла на ринок і купив/купила хліб."),
@@ -67,7 +67,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Когезія: займенники, повтор і зв'язки", titlePt: "Coesão textual", titleEn: "Textual cohesion",
     summary: "Лексичні й граматичні засоби, які утримують текст разом.",
     aliases: ["когезія","cohesion","coesão","зв'язність тексту"],
-    related: ["discourse-overview","discourse-markers","anaphora","relative"],
+    related: ["discourse-overview","discourse-markers","cohesion-reference","relative-pronouns"],
     intro: "Когезія — формальні зв'язки між частинами тексту. Вона включає анафору, повтор, синонімічні заміни, сполучники та часові зв'язки. Правильне окреме речення може стати неприродним у тексті через неправильний референційний ланцюжок.",
     examples: [
       ex("Comprei um livro. O livro é sobre música.","Я купив книжку. Книжка про музику."),
