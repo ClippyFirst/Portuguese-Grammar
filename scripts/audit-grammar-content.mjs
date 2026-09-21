@@ -181,18 +181,15 @@ if (issues.length) {
     `Grammar content audit passed: ${pages.length} modules, ${pageMeta.size} pages, ${catalogRows.size} catalog entries, ${paths.size} unique category/slug paths.`,
   );
 }
-// High-risk modules get an additional conservative signal for examples that omit
-// explicit variety/register metadata. This is a review queue, not a correctness test.
-for (const { name, content } of pages) {
-  if (!highRisk.test(name)) continue;
-  for (const match of content.matchAll(/\bex\("([^"]+)",\s*"([^"]+)"/g)) {
-    const start = match.index ?? 0;
-    const tail = content.slice(start, start + 220);
-    if (!/variety:|register:/u.test(tail)) {
-      warnings.push(`${name}: high-risk example review: ${match[1]} — consider variety/register metadata where relevant`);
-    }
-  }
-}
+/*
+ * Do not flag every example in a "high-risk" module merely because it lacks
+ * variety/register metadata. Most neutral examples do not need an annotation,
+ * and the previous heuristic generated hundreds of low-value warnings.
+ *
+ * Regional/register metadata remains part of the content model and should be
+ * added where the example itself depends on a particular variety or register.
+ */
+void highRisk;
 
 if (warnings.length) {
   console.warn(`Grammar content audit warnings: ${warnings.length}`);
