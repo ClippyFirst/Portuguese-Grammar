@@ -49,7 +49,7 @@ export const pages: GrammarPage[] = [
       ex("Ela é responsável pelo projeto.","Вона відповідає за проєкт."),
       ex("Estamos habituados a trabalhar cedo.","Ми звикли працювати рано."),
     ],
-    mistakes: [mistake("interessado por música","interessado em música","Стандартна модель для значення «зацікавлений у» — interessado em."),mistake("capaz para fazer","capaz de fazer","У цьому значенні нормативна модель — capaz de + infinitivo.")],
+    mistakes: [mistake("interessado por música","interessado em música","Стандартна модель для значення «зацікавлений у» — interessado em."),mistake("capaz para fazer = автоматично помилка","capaz de fazer для значення «здатний зробити»; capaz para + іменна група можливе в значенні «придатний / здатний для»","Керування залежить від значення: `capaz de` є типовою моделлю для здатності виконати дію, тоді як `capaz para` засвідчено, зокрема, в значенні придатності / готовності до чогось.")],
     ukrainian: "Українське керування «зацікавлений у», «відповідальний за», «здатний до» не переноситься прийменник за прийменником.",
   },
   {
