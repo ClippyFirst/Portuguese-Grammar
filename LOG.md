@@ -145,3 +145,23 @@ Commit-и цієї сесії включають:
 - \`65fc61c3...\` — restore canonical conjunction page identity;
 - \`dedd5d06...\` / \`8d1cb41c...\` — related-link audit;
 - \`d58bfbae...\` — compact page example QA.
+
+
+## 21.09.2026 — другий локальний audit: canonical related IDs
+
+Користувач повторно запустив `npm run audit:content`. Залишилися 15 broken related references. Перевірено контекст кожного посилання та замінено їх на canonical IDs, що реально існують у каталозі:
+
+- `semantics` → `aspect-overview`;
+- `passive` → `ser-passive`;
+- `subordinate-clauses` → `subordinating`;
+- `regional` → `pt-br-pt-pt`;
+- `object` → `object-pronouns`;
+- `syntax` → `word-order`;
+- `conjunctions-overview` → `subordinating`;
+- `conditional` → `conditional-clauses`;
+- `tenses` → `verb-system`;
+- `moods` → `subjunctive-overview`;
+- `periphrases` → `ir-infinitive`;
+- `deixis` → `reference-overview`.
+
+Не створювалися дублікати сторінок лише заради проходження structural audit.
