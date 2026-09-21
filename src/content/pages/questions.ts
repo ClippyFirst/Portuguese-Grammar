@@ -94,7 +94,7 @@ export const pages: GrammarPage[] = [
     aliases: ["питання бразилія португалія"],
     related: ["questions-yesno", "pt-br-pt-pt", "prep-em", "prep-a"],
     intro:
-      "У розмовному PT-BR питання так/ні майже завжди зберігає розповідний порядок: `Você vai no cinema?` У PT-PT частіша інверсія або голе дієслово 2-ї особи: `Vais ao cinema?`\n\nКаркас `é que` (`Onde é que tu estás?`) поширений в обох варіантах і часто найбезпечніший нейтральний вибір.",
+      "У розмовному PT-BR питання так/ні дуже часто зберігає розповідний порядок: `Você vai no cinema?` У PT-PT частіша інверсія або голе дієслово 2-ї особи: `Vais ao cinema?`\n\nКаркас `é que` (`Onde é que tu estás?`) поширений в обох варіантах і часто найбезпечніший нейтральний вибір.",
     examples: [
       { pt: "Você já comeu?", uk: "Ти вже їв/їла?", variety: "BR" },
       { pt: "Já comeste?", uk: "Ти вже їв/їла?", variety: "PT" },
