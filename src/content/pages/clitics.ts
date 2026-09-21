@@ -1312,7 +1312,7 @@ PT-BR розмовний компенсує трьома засобами, ус�
           ["ver", "para o ver", "para vê-lo"],
           ["amar", "sem a amar", "sem amá-la"],
           ["vender", "por os vender", "por vendê-los"],
-          ["fazer", "ao o fazer (рідко)", "ao fazê-lo"],
+          ["fazer", "—", "ao fazê-lo"],
           ["pôr", "de o pôr", "de pô-lo"],
           ["ter visto", "por me ter visto", "por ter-me visto / por tê-lo visto"],
         ],
