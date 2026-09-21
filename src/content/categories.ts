@@ -130,6 +130,22 @@ export const CATEGORIES: CategoryDef[] = [
     group: "ref",
   },
   {
+    id: "pragmatics",
+    slug: "pragmatics",
+    titleUk: "Прагматика",
+    titlePt: "Pragmática",
+    description: "Мовленнєві акти, ввічливість, контекст, частки та регістри.",
+    group: "ref",
+  },
+  {
+    id: "discourse",
+    slug: "discourse",
+    titleUk: "Дискурс і текст",
+    titlePt: "Discurso e texto",
+    description: "Зв'язність, дискурсивні маркери, інформаційна структура та еліпсис.",
+    group: "ref",
+  },
+  {
     id: "conjunctions",
     slug: "conjunctions",
     titleUk: "Сполучники",
