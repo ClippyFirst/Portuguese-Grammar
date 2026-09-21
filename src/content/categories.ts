@@ -146,6 +146,14 @@ export const CATEGORIES: CategoryDef[] = [
     group: "ref",
   },
   {
+    id: "lexical-grammar",
+    slug: "lexical-grammar",
+    titleUk: "Лексико-граматична сполучуваність",
+    titlePt: "Gramática lexical",
+    description: "Колокації, керування прикметників і типові хибні друзі українськомовного студента.",
+    group: "ref",
+  },
+  {
     id: "conjunctions",
     slug: "conjunctions",
     titleUk: "Сполучники",
