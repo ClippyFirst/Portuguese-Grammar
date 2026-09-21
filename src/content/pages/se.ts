@@ -468,7 +468,7 @@ export const pages: GrammarPage[] = [
       },
     ],
     formation:
-      "Завжди 3-тя особа однини відповідного часу: `vive-se`, `viveu-se`, `viver-se-á`, `se vive`, `se viveu`. Підмета-іменника немає, або він не керує узгодженням.\n\n`tratar-se de` застигло в безособовій рамці: `Trata-se de um problema sério` («Йдеться про серйозну проблему»), не `*Tratam-se de problemas` у цьому значенні.",
+      "У безособовій конструкції з `se` дієслово стоїть у 3-й особі однини: `vive-se`, `viveu-se`, `viver-se-á`, `se vive`, `se viveu`. Це стосується саме безособового аналізу; не поширюйте правило на пасивне `se`, де дієслово узгоджується з пацієнсом: `Vendem-se casas`.\n\n`tratar-se de` застигло в безособовій рамці: `Trata-se de um problema sério` («Йдеться про серйозну проблему»), не `*Tratam-se de problemas` у цьому значенні.",
     uses: [
       {
         title: "Загальний стан речей",
