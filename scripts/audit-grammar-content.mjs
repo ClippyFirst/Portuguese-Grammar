@@ -115,6 +115,8 @@ const absolute =
   /\b(?:завжди|ніколи|обов['’]язково|неможливо|always|never|must|impossible)\b/iu;
 const proseFields =
   /^(?:\s*)(?:intro|formation|exceptions|ukrainian|regional|brPt|body|note):/u;
+const exampleField = /\b(?:pt|uk):\s*"/u;
+const highRisk = /(?:crase|infinitive|moods|clitics|se|questions|articles|agreement|valency)/iu;
 
 for (const { name, content } of pages) {
   content.split("\n").forEach((line, index) => {
@@ -139,6 +141,19 @@ if (issues.length) {
     `Grammar content audit passed: ${pages.length} modules, ${pageMeta.size} pages, ${catalogRows.size} catalog entries, ${paths.size} unique category/slug paths.`,
   );
 }
+// High-risk modules get an additional conservative signal for examples that omit
+// explicit variety/register metadata. This is a review queue, not a correctness test.
+for (const { name, content } of pages) {
+  if (!highRisk.test(name)) continue;
+  for (const match of content.matchAll(/\bex\("([^"]+)",\s*"([^"]+)"/g)) {
+    const start = match.index ?? 0;
+    const tail = content.slice(start, start + 220);
+    if (!/variety:|register:/u.test(tail)) {
+      warnings.push(`${name}: high-risk example review: ${match[1]} — consider variety/register metadata where relevant`);
+    }
+  }
+}
+
 if (warnings.length) {
   console.warn(`Grammar content audit warnings: ${warnings.length}`);
   for (const warning of warnings) console.warn(`- ${warning}`);
