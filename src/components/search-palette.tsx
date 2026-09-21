@@ -29,6 +29,7 @@ export function SearchPalette({
   onClose: () => void;
 }) {
   const [q, setQ] = useState("");
+  const [activeIndex, setActiveIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
   const hits = useMemo(() => searchTopics(q, 12), [q]);
@@ -40,8 +41,15 @@ export function SearchPalette({
   }, [open]);
 
   useEffect(() => {
-    if (!open) setQ("");
+    if (!open) {
+      setQ("");
+      setActiveIndex(0);
+    }
   }, [open]);
+
+  useEffect(() => {
+    setActiveIndex(0);
+  }, [q]);
 
   if (!open) return null;
 
@@ -66,10 +74,31 @@ export function SearchPalette({
             value={q}
             onChange={(e) => setQ(e.target.value)}
             onKeyDown={(e) => {
-              if (e.key === "Escape") onClose();
-              if (e.key === "Enter" && hits[0]) go(hits[0].href);
+              if (e.key === "Escape") {
+                e.preventDefault();
+                onClose();
+                return;
+              }
+              if (e.key === "ArrowDown" && hits.length) {
+                e.preventDefault();
+                setActiveIndex((i) => Math.min(i + 1, hits.length - 1));
+                return;
+              }
+              if (e.key === "ArrowUp" && hits.length) {
+                e.preventDefault();
+                setActiveIndex((i) => Math.max(i - 1, 0));
+                return;
+              }
+              if (e.key === "Enter" && hits[activeIndex]) {
+                e.preventDefault();
+                go(hits[activeIndex].href);
+              }
             }}
             aria-label="Пошук граматичної теми"
+            aria-controls="grammar-search-results"
+            aria-activedescendant={hits[activeIndex] ? `grammar-search-option-${activeIndex}` : undefined}
+            role="combobox"
+            aria-expanded="true"
             placeholder="ser, кон'юнктив, à, особовий інфінітив…"
             className="h-12 w-full bg-transparent text-base text-ink outline-none placeholder:text-muted"
             autoComplete="off"
@@ -85,18 +114,27 @@ export function SearchPalette({
             <X className="size-4" />
           </button>
         </div>
-        <ul className="max-h-[min(24rem,50vh)] overflow-y-auto p-2">
+        <ul
+          id="grammar-search-results"
+          role="listbox"
+          aria-label="Результати пошуку"
+          className="max-h-[min(24rem,50vh)] overflow-y-auto p-2"
+        >
           {q && hits.length === 0 ? (
             <li className="px-3 py-6 text-center text-sm text-muted">Нічого не знайдено</li>
           ) : null}
           {hits.map((h, i) => (
             <li key={h.topic.id}>
               <button
+                id={`grammar-search-option-${i}`}
                 type="button"
+                role="option"
+                aria-selected={i === activeIndex}
+                onMouseEnter={() => setActiveIndex(i)}
                 onClick={() => go(h.href)}
                 className={cn(
                   "flex w-full flex-col items-start rounded-md px-3 py-2.5 text-left hover:bg-azulejo-soft",
-                  i === 0 && q ? "bg-azulejo-soft" : "",
+                  i === activeIndex ? "bg-azulejo-soft" : "",
                 )}
               >
                 <span className="font-medium text-ink">{h.topic.titleUk}</span>
