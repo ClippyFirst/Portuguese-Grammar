@@ -106,7 +106,7 @@ export const pages: GrammarPage[] = [
     brPt:
       "Логіка способу спільна. Терміни: PT-PT *conjuntivo*, PT-BR *subjuntivo*. Частотність `não acho que` + conj. висока в обох. У дуже розмовному PT-BR інколи чути індикатив там, де норма очікує кон'юнктив (`quero que você vem`) — це не стандарт.",
     regional:
-      "Писемні норми Анголи й Мозамбіку дотримуються того самого поділу indicativo / conjuntivo. Усна спрощеність ближча до розмовного PT-BR.",
+      "Писемні норми Анголи й Мозамбіку використовують той самий базовий поділ indicativo / conjuntivo. Усне вживання може мати власні національні та контактні особливості; їх не слід автоматично пояснювати впливом PT-BR.",
     tables: [
       {
         caption: "Що робить головне речення з пропозицією",
@@ -630,7 +630,7 @@ export const pages: GrammarPage[] = [
       "quem / o que / onde + fut. conj.",
     ],
     exceptions:
-      "`caso` + presente do conjuntivo (`caso seja preciso`), не `caso for` як перший вибір. `caso for` існує, але `caso seja` частотніше.\n\n`talvez` не бере майбутній кон'юнктив: `talvez venha`, не `*talvez vier`.\n\nПісля `para que`, `embora`, `antes que` — presente або imperfeito, не майбутній.\n\nУ головному реченні після `quando eu chegar` можна поставити наказовий (`avisa`), теперішній (`aviso`) або `ir` + INF (`vou avisar`). Усі три нормальні. Futuro simples (`avisarei`) — формальніший.\n\nУ дуже розмовному мовленні, особливо PT-BR, інколи чути `quando eu chegar` замінене на `quando eu chegar` (це якраз правильна форма!) — помилка інша: `quando eu chegar` плутають із `quando eu chegue` або `quando eu vou chegar`. Ще розмовніше: `quando eu chegar lá, eu te ligo` — повністю стандартно. Нестандарт: `quando eu chegar` → заміна на `se eu chegar` без різниці; різниця `se`/`quando` при цьому стирається прагматично, але граматична форма лишається futuro do conjuntivo.\n\nПівнічні діалекти Португалії добре зберігають форму; ніде в стандарті вона не «мертва».",
+      "`caso` + presente do conjuntivo (`caso seja preciso`) є типовою моделлю; `caso for` також трапляється в певних контекстах.\n\n`talvez` не бере майбутній кон'юнктив: `talvez venha`, не `*talvez vier`.\n\nПісля `para que`, `embora`, `antes que` — presente або imperfeito, не майбутній.\n\nУ головному реченні після `quando eu chegar` можна поставити наказовий (`avisa`), теперішній (`aviso`) або `ir` + INF (`vou avisar`). Усі три нормальні. Futuro simples (`avisarei`) можливий і може мати формальніший відтінок.\n\nУ розмовному мовленні не слід вигадувати окрему «спрощену» форму futuro do conjuntivo: стандартна форма `quando eu chegar` зберігається. Варіативність, якщо вона з'являється, стосується інших аспектів конструкції та конкретного різновиду. `quando eu chegar lá, eu te ligo` — цілком стандартно. Не змішуйте `se` і `quando`: вони можуть бути близькими в окремих контекстах, але не є граматично взаємозамінними.",
     mistakes: [
       mistake(
         "Quando eu chegarei, ligo.",
