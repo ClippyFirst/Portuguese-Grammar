@@ -791,8 +791,8 @@ PT-PT письмо: у цих контекстах *Ele chamou-me*, *Chama-me de
 в інфінітиві з \`-lo\` (*ao fazê-lo*, *convém mencioná-lo*) — це спільний канцелярський і публіцистичний стиль;
 
 у фіксованих формулах (*trata-se de*, *ha-de*, *ei-lo*).
+`,
   }),
-
   page({
     id: "mesoclisis", slug: "mesoclisis", category: "clitics",
     titleUk: "Mesóclise", titlePt: "Mesóclise", titleEn: "Mesoclisis",
