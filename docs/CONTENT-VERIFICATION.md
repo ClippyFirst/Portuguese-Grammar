@@ -177,3 +177,14 @@ The preferred wording is **typical / frequent / especially common / in formal wr
 4. Descriptive/academic sources for national and regional varieties.
 
 When sources disagree, preserve the disagreement and explain the scope rather than collapsing it into a single “correct” rule.
+
+## Reference anchors
+
+For broad grammatical description, the project uses the *Gramática do Português* (Fundação Calouste Gulbenkian) as a principal reference work. Its published description explicitly treats the language descriptively, includes European Portuguese together with Brazilian, Angolan and Mozambican varieties, and incorporates multiple registers and spoken/written data. See:
+
+- https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/
+- https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/
+- https://gulbenkian.pt/publications/gramatica-do-portugues-vol-iii/
+
+These references should not be treated as a single prescriptive authority. Where the project makes a normative claim, the claim should be separately checked against the relevant orthographic, educational or specialist normative source.
+
