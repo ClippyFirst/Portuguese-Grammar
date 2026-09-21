@@ -133,3 +133,47 @@ Before adding another large batch of topics, review each new page against:
 ## Verification status
 
 The current repository has moved from simple topic expansion toward an evidence-aware reference architecture. The next audit should focus on claim-level verification of existing pages, not merely on increasing topic count.
+
+## Verification pass: September 2026
+
+This pass prioritizes high-risk claims over adding more topic count.
+
+### Infinitive: avoid mechanical rules
+
+The personal infinitive should be described in terms of subject structure, coreference, emphasis and construction rather than as a simple “different subject = personal infinitive” algorithm. Ciberdúvidas explicitly describes the choice as involving tendencies and stylistic factors, and gives examples where both personal and impersonal forms are possible with the same subject.
+
+Practical policy:
+- say **usually / tends to / in this construction** where the distribution is a tendency;
+- reserve **required** for contexts where the construction genuinely excludes the alternative;
+- do not treat `para + infinitive`, `a + infinitive`, or modal verbs as universal triggers independent of clause structure;
+- distinguish the infinitive's subject from the subject of the matrix clause.
+
+Reference checks:
+- Ciberdúvidas, “Infinitivo pessoal, ou impessoal?” — both forms can be acceptable when the subjects are the same, with a preference for the impersonal form in the cited context.
+- Ciberdúvidas, “Infinitivo flexionado” — describes the use of the personal infinitive in terms of tendencies rather than exclusively mechanical rules.
+- Ciberdúvidas, “A seleção do infinitivo pessoal por diferentes classes gramaticais” — explicitly relates personal infinitive to an infinitive clause with its own subject and discusses emphasis.
+
+### African Portuguese
+
+Do not write “African Portuguese = European Portuguese” as a categorical identity. A historical description may say that European Portuguese was the standard model in Angola, Mozambique and other Portuguese-speaking African/Asian contexts, but current descriptions also discuss emerging national varieties/norms and contact-induced changes.
+
+Practical policy:
+- distinguish **historical/educational standard orientation** from **actual spoken usage**;
+- do not generalize Angola and Mozambique into one grammar;
+- do not label contact features as errors;
+- if a concrete feature is attributed to Angola or Mozambique, provide a source for that feature rather than extrapolating from the existence of language contact.
+
+### BR/PT contrasts
+
+A table entry such as “PT-BR = X / PT-PT = Y” is acceptable only when the text immediately makes clear whether the distinction is normative, frequent, colloquial, regional, register-specific, or a pedagogical simplification.
+
+The preferred wording is **typical / frequent / especially common / in formal writing / in colloquial speech**, not an unqualified universal.
+
+### Source hierarchy
+
+1. Fundação Calouste Gulbenkian, *Gramática do Português* — reference grammar.
+2. Camões / official orthographic and language-learning materials — pedagogical and normative support.
+3. Ciberdúvidas — targeted usage questions and explanations; useful for disputed or variable constructions.
+4. Descriptive/academic sources for national and regional varieties.
+
+When sources disagree, preserve the disagreement and explain the scope rather than collapsing it into a single “correct” rule.
