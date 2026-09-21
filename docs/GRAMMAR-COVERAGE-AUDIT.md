@@ -642,3 +642,127 @@ CAPLE описує B2-C2 як рівні, де зростає роль скла�
 - CAPLE — https://caple.letras.ulisboa.pt/exames
 - Fundação Calouste Gulbenkian, Gramática do Português — https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/
 - Ciberdúvidas — https://ciberduvidas.iscte-iul.pt/
+## 27. Оновлений implementation backlog
+
+Після повторної перевірки файлового дерева важливо розрізняти **категорію в каталозі** та **реально опрацьований контент**. Частина понять уже згадується всередині наявних сторінок, але це не означає, що вони мають достатнє окреме покриття. Тому нові сторінки слід створювати за coverage gap, а не лише за відсутністю ключового слова.
+
+### Wave A — мовний фундамент
+
+Створити нові тематичні модулі:
+
+- `phonetics`: голосні, приголосні, носалізація, дифтонги, редукція, IPA;
+- `pronunciation`: r/rr, s/x/z, lh/nh/ch, b/v, d/t, кінцеві голосні;
+- `phonology`: склад, наголос, фонологічні опозиції, алофонія;
+- `orthoepy`: нормативна вимова, читання нових слів, BR/PT;
+- `determiners`: повна система детермінативів;
+- `quantification`: universal, existential, distributive, scalar та approximate quantification;
+- `valency`: аргументи дієслова та типи комплементів;
+- `government`: дієслівне, прикметникове та іменникове керування.
+
+### Wave B — значення
+
+- `aspect`: lexical + grammatical aspect;
+- `modality`: epistemic, deontic, dynamic, evidential/inferential meaning;
+- `reference`: definiteness, specificity, deixis, anaphora;
+- `scope`: negation, quantifiers, focus;
+- `comparison-semantics`: degree, equality, inequality, scalar readings;
+- `temporal-semantics`: anteriority, simultaneity, posteriority, duration, habituality.
+
+### Wave C — комунікація
+
+- `pragmatics`: speech acts, politeness, indirectness, hedging;
+- `discourse-markers`: então, pois, afinal, aliás, enfim, ou seja тощо;
+- `information-structure`: topic, focus, contrast, given/new information;
+- `discourse`: cohesion, coherence, reference chains, paragraph structure;
+- `ellipsis`: nominal, verbal, clausal and conversational ellipsis;
+- `registers`: neutral, informal, formal, academic, journalistic, literary.
+
+### Wave D — складна граматика
+
+- `causative`: fazer/deixar/mandar + infinitivo та альтернативні конструкції;
+- `raising-control`: parecer, tentar, conseguir, decidir, prometer тощо;
+- `nominalization`: derivation та syntactic nominalization;
+- `reduced-clauses`: infinitival, participial and gerundial reductions;
+- `advanced-relatives`: complex relative structures;
+- `reported-speech`: direct, indirect and free-indirect/reporting constructions;
+- `complex-predicate`: light verbs and lexicalized predicates.
+
+### Wave E — лексико-граматична система
+
+- `collocations`: частотні лексико-граматичні сполучення;
+- `verb-preposition`: розширити до повного government reference;
+- `adjective-preposition`;
+- `noun-preposition`;
+- `fixed-expressions`;
+- `false-friends` для українськомовного користувача;
+- `calques` та типові українські моделі, які не переносяться буквально.
+
+### Wave F — словотвір та орфографія
+
+- `derivation`: prefixation, suffixation, parasynthesis;
+- `composition`: compound formation та pluralization;
+- `conversion`: зміна категорії без очевидного афікса;
+- `productive-suffixes`;
+- `productive-prefixes`;
+- `hyphenation`;
+- `abbreviations`;
+- `acronyms`;
+- `numbers-in-writing`;
+- `advanced-punctuation`.
+
+## 28. Рекомендована модель кожної нової сторінки
+
+Щоб не накопичувати поверхневий AI-контент, нові теми мають проходити однакову структуру перевірки.
+
+### A. Linguistic definition
+Що саме описується і до якого рівня мови належить явище.
+
+### B. Form
+Формула, морфологічна модель або синтаксична структура.
+
+### C. Distribution
+Де конструкція можлива, неможлива або обмежена.
+
+### D. Meaning
+Основні семантичні значення; не плутати форму зі значенням.
+
+### E. Pragmatics/register
+Яку комунікативну функцію має конструкція і в якому регістрі вона природна.
+
+### F. Examples
+Мінімальні пари та контрастивні приклади, а не лише ізольовані речення.
+
+### G. BR/PT
+Розділяти спільне правило і реальну варіативність між Бразилією та Португалією.
+
+### H. Ukrainian interference
+Пояснювати, де українська модель може спричинити помилку.
+
+### I. Exceptions
+Винятки, lexicalized forms, frequency-sensitive patterns.
+
+### J. References
+Для академічно спірних або нормативних тверджень потрібне джерело. Не можна подавати сумнівну норму як універсальне правило.
+
+## 29. Контроль якості coverage
+
+Після реалізації кожної хвилі слід перевіряти не тільки кількість сторінок, а:
+
+- чи має кожен великий домен overview;
+- чи існує navigation від overview до мікротем;
+- чи немає дублювання одного правила в кількох місцях;
+- чи всі BR/PT-відмінності позначені однаково;
+- чи відрізняються normative rules від usage/variation;
+- чи українські пояснення не створюють хибних аналогій;
+- чи приклади справді демонструють правило;
+- чи немає непідтверджених універсальних тверджень;
+- чи related links утворюють логічний граф;
+- чи теми можна знайти через пошук за португальським терміном.
+
+## 30. Цільовий результат
+
+Цільова система не повинна вимірюватися фразою «було 225, стало 400 тем». Значно кращий KPI:
+
+> кожен великий рівень португальської має overview, системну карту понять, достатню кількість мікротем, контраст із українською та BR/PT-відмінності там, де вони мовно значущі.
+
+Після закриття Wave A–E довідник стане значно ближчим до **повного практичного reference system**, а не просто великого набору граматичних статей.
