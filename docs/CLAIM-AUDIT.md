@@ -91,3 +91,10 @@ Additional high-risk refinements completed after the first pass:
 - **Lexical examples:** `eventualmente` remains explicitly context-sensitive; the guide does not reduce it to an English false friend without acknowledging attested semantic extension.
 
 These changes reinforce the project's central editorial rule: a useful learner reference must distinguish **grammatical possibility, standard preference, frequency, register and regional distribution** instead of collapsing them into binary right/wrong rules.
+
+## Automated structural gate
+
+The repository includes `npm run audit:content` via `scripts/audit-grammar-content.mjs`. It checks duplicate page IDs/slugs, page↔catalog presence and metadata consistency, broken `related` references, and flags absolute-language claims for human review. Structural inconsistencies fail the command; absolute-language findings are warnings because some categorical statements are legitimate when they describe a scoped normative rule.
+
+This audit is intentionally static and local. It does not replace linguistic verification against reference grammars, corpora, or specialist sources.
+
