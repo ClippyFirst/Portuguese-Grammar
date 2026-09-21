@@ -121,3 +121,27 @@ Commit: \`40a7a1456315883ba7ae49380a1b587b07a1e24b\`.
 Блок прибрано. Метадані \`variety/register\` залишаються частиною моделі й мають додаватися там, де вони реально потрібні для правильної інтерпретації прикладу.
 
 Commit: \`e38b043f27608f09ea6a605d7feff4cf527f8b12\`.
+
+
+## 21.09.2026 — сесія: виправлення реальних findings після локального audit:content
+
+Користувач запустив актуальний \`npm run audit:content\` локально. Після виправлення parser залишилися конкретні structural findings, тому цього разу виправлення виконувалися вже за фактичним локальним результатом, а не за старим snapshot.
+
+### Виправлено
+
+- \`por-verb\`: catalog використовував slug \`por\`, тоді як page має \`por-verb\`; slug синхронізовано.
+- Нормалізовано related IDs у \`conjunctions.ts\`, \`determiners.ts\`, \`discourse.ts\`, \`lexical-grammar.ts\`, \`pragmatics.ts\`, \`semantics.ts\` і \`syntax-advanced.ts\` до реальних catalog/page IDs.
+- Не створювалися штучні catalog entries для слів на кшталт \`dever\`, \`poder\`, \`relative\`, \`prepositions\` тощо: вони є концептуальними скороченнями, тоді як UI пов'язує related topics через \`TOPIC_BY_ID\`. Вибрано наявні canonical IDs.
+- Аудитор тепер перевіряє related IDs і в explicit \`related: [...]\`, і в компактному \`p(..., [...])\`.
+- Для компактних \`p(...)\` сторінок high-depth QA тепер розпізнає фактичний масив прикладів, а не помилково вимагає буквальне поле \`examples:\`.
+- Виправлено побічну зміну metadata \`nem\` у \`conjunctions.ts\`; canonical page ID залишається \`coordinating\`.
+
+### Принцип
+
+Related topic має бути не просто «словом, яке тематично підходить», а реальним ID з \`CATALOG\`, тому що \`RelatedTopics\` будує навігацію через \`TOPIC_BY_ID\`.
+
+Commit-и цієї сесії включають:
+- \`cae1b178...\` — catalog slug correction;
+- \`65fc61c3...\` — restore canonical conjunction page identity;
+- \`dedd5d06...\` / \`8d1cb41c...\` — related-link audit;
+- \`d58bfbae...\` — compact page example QA.
