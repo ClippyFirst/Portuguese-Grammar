@@ -24,7 +24,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Мовленнєві акти", titlePt: "Atos de fala", titleEn: "Speech acts",
     summary: "Повідомлення, прохання, наказ, пропозиція, обіцянка, вибачення та інші дії мовлення.",
     aliases: ["мовленнєві акти","speech acts","atos de fala","прохання","наказ"],
-    related: ["pragmatics-overview","imperative-affirmative","imperative-negative","politeness","questions"],
+    related: ["pragmatics-overview","imperative-affirmative","imperative-negative","politeness","questions-yesno"],
     intro: "Одна граматична форма може виконувати різні мовленнєві дії. Імператив типовий для наказу, але в контексті може бути інструкцією або запрошенням. Питання може бути проханням.",
     uses: [
       { title: "Прохання", body: "Імператив, питання з poder та умовні формули дають різний ступінь прямоти.", examples: [ex("Fecha a janela.","Зачини вікно."),ex("Pode fechar a janela?","Можете зачинити вікно?"),ex("Podia fechar a janela?","Чи не могли б ви зачинити вікно?")] },
@@ -39,7 +39,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Ввічливість і дистанція", titlePt: "Cortesia e distância", titleEn: "Politeness and social distance",
     summary: "tu, você, o senhor/a senhora, умовні форми та непрямі прохання.",
     aliases: ["ввічливість","politeness","cortesia","tu","você","senhor"],
-    related: ["tu-vs-voce","speech-acts","questions","conditional"],
+    related: ["tu-voce","speech-acts","questions-yesno","conditional-clauses"],
     intro: "Ввічливість у португальській не зводиться до одного «ввічливого займенника». Важливі вибір звертання, дієслівна форма, непрямість, por favor, титули та соціальна дистанція. Система сильно варіює між Бразилією, Португалією та іншими країнами.",
     uses: [
       { title: "Пряме прохання", body: "Імператив може бути цілком нормальним між близькими співрозмовниками.", examples: [ex("Espera um momento.","Зачекай хвилинку.")] },
@@ -56,7 +56,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Прагматичні частки та маленькі слова", titlePt: "Partículas pragmáticas", titleEn: "Pragmatic particles",
     summary: "já, ainda, mesmo, só, afinal, então та інші слова, що організують інтерпретацію.",
     aliases: ["частки","particles","partículas","já","ainda","mesmo","só","afinal","então"],
-    related: ["pragmatics-overview","aspect-overview","discourse-markers","focus"],
+    related: ["pragmatics-overview","aspect-overview","discourse-markers","information-structure"],
     intro: "Деякі короткі слова мають значення, яке не можна передати одним словниковим відповідником. já може кодувати час, зміну стану або очікування; mesmo — тотожність, підсилення або згоду; só — обмеження.",
     uses: [
       { title: "já", body: "Часове «вже» може переходити в значення зміни стану або протиставлення очікуванню.", examples: [ex("Já chegou.","Він/вона вже прийшов/прийшла."),ex("Agora já sei.","Тепер я вже знаю.")] },
@@ -71,7 +71,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Регістр, прямота і стиль", titlePt: "Registo, grau de diretividade e estilo", titleEn: "Register and directness",
     summary: "Нейтральне, розмовне, формальне та письмове формулювання однієї функції.",
     aliases: ["регістр","register","registo","directness","стиль"],
-    related: ["pragmatics-overview","politeness","speech-acts","regional"],
+    related: ["pragmatics-overview","politeness","speech-acts","pt-br-pt-pt"],
     intro: "Граматично правильне речення може бути недоречним за стилем. Для довідника корисно показувати одну функцію в нейтральному, розмовному та формальному варіантах, не оголошуючи один із них «правильнішим».",
     examples: [
       ex("Quero falar consigo.","Я хочу з вами поговорити.",{ variety: "PT", register: "neutral" }),
