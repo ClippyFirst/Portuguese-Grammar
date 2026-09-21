@@ -3,16 +3,16 @@ import { ex, mistake } from "../helpers";
 
 export const pages: GrammarPage[] = [
   {
-    id: "coordinating",
-    slug: "coordinating",
+    id: "nem",
+    slug: "nem",
     category: "conjunctions",
     titleUk: "Сурядні сполучники",
     titlePt: "Conjunções coordenativas",
     titleEn: "Coordinating conjunctions",
     summary:
       "e, nem, ou, mas, porém, portanto: зв'язок рівноправних частин без зміни способу дієслова.",
-    aliases: ["сурядні", "e", "mas", "ou", "coordinating", "porém", "coordenativas"],
-    related: ["coordinating", "coordination", "subordinating", "negation-nao"],
+    aliases: ["сурядні", "e", "mas", "ou", "nem", "porém", "coordenativas"],
+    related: ["nem", "coordination", "subordinating", "negation-nao"],
     intro:
       "Сурядні сполучники (`conjunções coordenativas`) з'єднують рівноправні члени або речення: слова з словами, групи з групами, речення з реченнями. Вони **не відкривають підрядного** і самі по собі не вимагають кон'юнктива.\n\nКласи традиційної граматики: **єднальні** (`aditivas`: `e`, `nem`), **протиставні** (`adversativas`: `mas`, `porém`, `contudo`, `todavia`), **розділові** (`alternativas` / `disjuntivas`: `ou`, `ora… ora`, `quer… quer`), **пояснювальні** (`explicativas`: `pois`, `que`, `porque` у сурядному вжитку), **висновкові** (`conclusivas`: `logo`, `portanto`, `pois` після коми).\n\nДля українця `nem` — найважливіший пункт: це не просто «і не», а повноцінний єднальний сполучник заперечення, часто з negative concord.",
     formulas: [
@@ -49,7 +49,7 @@ export const pages: GrammarPage[] = [
       ex("Estava cansado; porém, acabou o trabalho.", "Був утомлений; проте роботу закінчив."),
       ex("Penso, logo existo.", "Мислю, отже існую."),
     ],
-    markers: ["e", "coordinating", "ou", "mas", "porém", "contudo", "todavia", "logo", "portanto", "pois"],
+    markers: ["e", "nem", "ou", "mas", "porém", "contudo", "todavia", "logo", "portanto", "pois"],
     exceptions:
       "`pois` буває сурядним висновковим (`Está frio, pois fecha a janela` — рідше) і пояснювальним (`Fecha, pois está frio`). У PT-PT `pois` ще й дискурсивний маркер відповіді («так», «ну»). Не плутайте сурядне `porque` («бо») з підрядним причини, яке відкриває залежне речення: межа іноді тонка, але інтонація й кома допомагають.",
     mistakes: [
