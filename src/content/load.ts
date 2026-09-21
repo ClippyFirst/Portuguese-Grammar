@@ -53,12 +53,7 @@ export async function loadPageById(id: string): Promise<GrammarPage | null> {
 
 export async function loadAllPages(): Promise<GrammarPage[]> {
   if (allLoaded) return [...byPath.values()].filter((p) => p.slug);
-  const cats = new Set<string>();
-  for (const key of Object.keys(loaders)) {
-    const file = key.replace("./pages/", "").replace(".ts", "");
-    const base = file.split("-")[0];
-    cats.add(base);
-  }
+  const cats = new Set([...TOPIC_BY_PATH.values()].map((topic) => topic.category));
   await Promise.all([...cats].map((c) => loadCategoryPages(c)));
   allLoaded = true;
   const seen = new Set<string>();
