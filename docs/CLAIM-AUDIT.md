@@ -184,3 +184,12 @@ For the latest interrogative pass, external reference material was checked for t
 - The repository therefore keeps the distinction explicitly scoped by variety and construction, rather than teaching a single four-item rule as if it applied identically across all Portuguese varieties.
 
 This is a targeted external spot-check, not an exhaustive source audit of the repository.
+
+
+## Example-level pass: September 2026 — numerals, questions, regional and lexical wording
+
+- **Numerals/time:** softened categorical wording around `Que horas são?`, weekday articles, and date ordinals; examples retain explicit PT/BR labels where the contrast is genuinely relevant.
+- **Questions:** interrogative word order is treated as variable rather than a binary BR/PT rule; `é que` is described as a productive interrogative construction whose distribution depends on construction, register and region.
+- **Regional address:** `você` is described through its standard agreement pattern without turning sociolinguistic usage into an absolute rule; Portuguese address systems are scoped by region, generation and situation.
+- **Lexical/derivational examples:** Ukrainian translations were checked for semantic naturalness; ambiguous employment wording was replaced with a direct translation.
+- This pass is a targeted refinement, not a claim that every example in these modules has been independently verified against a corpus.
