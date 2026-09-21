@@ -15,6 +15,12 @@ type Row = [
 ];
 
 const ROWS: Row[] = [
+  ["collocations-overview", "lexical-grammar", "collocations", "Сполучуваність: слова, які граматика не передбачає", "Colocações", "Collocations", "Типові лексико-граматичні поєднання.", "сполучуваність,collocations,colocações", "verb-noun-collocations,government-overview", "high"],
+  ["verb-noun-collocations", "lexical-grammar", "verb-noun", "Дієслівно-іменні колокації", "Colocações verbo-nominais", "Verb-noun collocations", "fazer, dar, tomar, ter, prestar та типові моделі.", "verb-noun collocations,дієслово іменник", "collocations-overview,government-overview", "high"],
+  ["adjective-government", "lexical-grammar", "adjective-government", "Керування прикметників", "Regência dos adjetivos", "Adjective government", "Прикметники разом із вибраними прийменниками.", "керування прикметників,adjective government,regência nominal", "government-overview,collocations-overview,prepositions", "high"],
+  ["false-friends", "lexical-grammar", "false-friends", "Хибні друзі українськомовного студента", "Falsos amigos", "False friends", "Лексеми, що провокують помилковий переклад або керування.", "хибні друзі,false friends,falsos amigos,кальки", "collocations-overview,word-formation-affixes,ukrainian-interference", "medium"],
+
+
   ["causative-constructions", "syntax", "causative", "Каузативні конструкції", "Construções causativas", "Causative constructions", "fazer, mandar, deixar та спричинення/дозвіл дії.", "каузатив,causative,causativo,fazer,mandar,deixar", "valency-overview,infinitive,complex-predicates", "high"],
   ["raising-and-control", "syntax", "raising-control", "Raising і control", "Elevação e controlo", "Raising and control", "parecer, tentar, querer та різні інфінітивні структури.", "raising,control,elevação,controlo,parecer,tentar,querer", "infinitive,valency-overview,complex-predicates", "high"],
   ["nominalization", "syntax", "nominalization", "Номіналізація: коли дія стає іменником", "Nominalização", "Nominalization", "Як подія переходить в іменну структуру.", "номіналізація,nominalization,nominalização", "word-formation-affixes,valency-overview,complement-clauses", "high"],
