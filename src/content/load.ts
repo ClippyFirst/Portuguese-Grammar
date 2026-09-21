@@ -10,12 +10,6 @@ const cache = new Map<string, GrammarPage[]>();
 const byPath = new Map<string, GrammarPage>();
 let allLoaded = false;
 
-function loaderKey(category: string): string | undefined {
-  const exact = `./pages/${category}.ts`;
-  if (exact in loaders) return exact;
-  return Object.keys(loaders).find((k) => k.endsWith(`/${category}.ts`));
-}
-
 function loaderKeys(category: string): string[] {
   const exact = `./pages/${category}.ts`;
   const prefix = `./pages/${category}-`;
