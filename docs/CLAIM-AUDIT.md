@@ -160,3 +160,16 @@ A further pass tightened two recurrent pedagogical risks:
 - **Interrogatives:** PT-BR yes/no questions are described as frequently retaining declarative word order rather than “almost always” doing so; `é que` is described as a productive interrogative construction rather than being assigned a blanket politeness function.
 
 The goal is to prevent a useful heuristic from hardening into a false categorical rule.
+
+## Follow-up example pass: September 2026 — numerals, questions, regional variation
+
+This pass tightened several examples and explanations that were too categorical or assigned a construction to one variety without sufficient qualification:
+
+- **Time questions:** `Que horas são?` remains the standard learner-facing model, but `Que hora é?` is also attested; the reference no longer presents the plural as the only grammatical question.
+- **Numeral `mil`:** `mil` remains the default neutral form in examples, while `um mil` is acknowledged as possible in specific contexts, including Brazilian legal/financial writing, rather than being labelled simply as colloquial PT-BR.
+- **Time expressions:** `para as`, `menos`, and quarter-hour formulas are now treated as variable by variety, region and style instead of as a rigid BR/PT partition.
+- **Address forms:** `você` is described as taking 3rd-person agreement in the standard agreement pattern, while its social meaning in Portugal is explicitly scoped by region, generation, relationship and situation.
+- **Word order:** the basic direct-object-after-verb pattern is described as typical neutral order, not as an almost-universal prohibition on other orders.
+- **African varieties:** regional notes avoid collapsing Angola/Mozambique into one European-style administrative norm; claims are now explicitly tied to country, genre and documented description where possible.
+
+These changes are example-level and wording-level refinements. They do **not** constitute exhaustive external verification of every example in the repository.
