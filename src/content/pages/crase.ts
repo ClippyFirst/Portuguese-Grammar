@@ -209,7 +209,7 @@ export const pages: GrammarPage[] = [
       "àquele",
       "às vezes",
     ],
-    exceptions: "Навіть «обов'язкові» зони скасовуються, якщо артикль зникає: `ir a Lisboa` (місто без артикля), `assistir a espetáculos` (гола множина / нуль у деяких уживаннях), `chegar a casa` (ідіома).\n\n`assistir o jogo` без `a` — поширена керуваня PT-BR («дивитися гру» з прямим додатком). Тоді crase немає, бо немає прийменника. PT-PT частіше `assistir ao jogo` / `à peça`. Різниця керуванї, не різний знак crase.",
+    exceptions: "Навіть «обов'язкові» зони скасовуються, якщо артикль зникає: `ir a Lisboa` (місто без артикля), `assistir a espetáculos` (гола множина / нуль у деяких уживаннях), `chegar a casa` (ідіома).\n\n`assistir o jogo` без `a` — поширена керування PT-BR («дивитися гру» з прямим додатком). Тоді crase немає, бо немає прийменника. PT-PT частіше `assistir ao jogo` / `à peça`. Різниця керуванї, не різний знак crase.",
     mistakes: [
       mistake(
         "Cheguei a conclusão.",
@@ -228,7 +228,7 @@ export const pages: GrammarPage[] = [
       ),
     ],
     ukrainian: "Список «завжди ставте à перед школою, пляжем, годиною» працює як милиця, але ламається на `Lisboa`, `Portugal`, `ela`, `trabalhar`. Тримати треба умови (прийменник + артикль), а милиці — як частотні ілюстрації.",
-    brPt: "`assistir a` vs `assistir` (прямий додаток) змінює наявність crase: BR `assisti o jogo` (розмовно/поширено) vs PT `assisti ao jogo`. Перед `à peça` в обох, якщо керуваня з `a` збережена.",
+    brPt: "`assistir a` vs `assistir` (прямий додаток) змінює наявність crase: BR `assisti o jogo` (розмовно/поширено) vs PT `assisti ao jogo`. Перед `à peça` в обох, якщо керування з `a` збережена.",
     tables: [
       {
         caption: "Обов'язкові ядра",
