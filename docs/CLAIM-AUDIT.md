@@ -137,3 +137,16 @@ The continuing pass also corrected several small but learner-relevant precision 
 - **Advanced syntax:** a relative-clause variation note was moved conceptually out of the definition of complex predicates and rewritten so that it does not imply that the relative construction is part of the predicate system.
 
 These are deliberately small edits: the objective is to remove misleading learner shortcuts without replacing them with equally strong counter-claims.
+
+
+### Follow-up pass: September 2026 — semantics, pragmatics, syntax and phonetics
+
+The newer reference layers received a precision pass as well:
+
+- **Semantics:** aspect is kept distinct from Ukrainian grammatical aspect; `pretérito perfeito` and `imperfeito` are not treated as automatic Ukrainian perfective/imperfective equivalents.
+- **Pragmatics:** questions, imperatives and modal forms are described as capable of performing different speech acts depending on context, rather than being assigned one fixed communicative function.
+- **Politeness:** `você` is not presented as a universal polite equivalent of Ukrainian `Ви`; address forms are explicitly region- and situation-sensitive.
+- **Syntax:** information structure and inversion are separated from the basic SVO description; explicit subject pronouns are not described with evaluative claims such as “egocentric”.
+- **Phonetics:** the overview now distinguishes lexical stress from orthographic accent and avoids presenting a single `r` realization as universal.
+
+The purpose of this pass is consistency: the same evidence standard now applies not only to the older core grammar pages but also to the newer semantic, pragmatic, discourse, lexical and pronunciation material.
