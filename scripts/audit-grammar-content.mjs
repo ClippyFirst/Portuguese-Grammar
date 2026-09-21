@@ -29,51 +29,56 @@ function registerPage({ id, slug, category, file }) {
   pageMeta.set(id, { file, slug, category });
 }
 
-function extractPageBlocks(content) {
-  const lines = content.split("\n");
-  const starts = lines
-    .map((line, index) => (/^  \{$/u.test(line) ? index : -1))
-    .filter((index) => index >= 0);
+function extractPageMetadata(content, file) {
+  const metadata = [];
+  const seen = new Set();
 
-  return starts.map((start, i) => lines.slice(start, starts[i + 1] ?? lines.length).join("\n"));
-}
+  /*
+   * Page modules are intentionally allowed to use several representations:
+   *   - { id, slug, category, ... }
+   *   - page({ id, slug, category, ... })
+   *   - p("id", "slug", ..., ...)
+   *
+   * Do not parse object nesting by indentation. Examples/tables contain nested
+   * objects and made the previous line-based parser split pages incorrectly.
+   * Metadata is declared near the beginning of every page, so extracting a
+   * bounded window after each id is both simpler and resilient to formatting.
+   */
+  for (const match of content.matchAll(/\bid:\s*"([^"]+)"/gu)) {
+    const id = match[1];
+    if (seen.has(id)) continue;
 
-/*
- * Content modules use two representations:
- *   1. explicit GrammarPage objects ({ id, slug, category, ... })
- *   2. the compact p(...) helper used by older/larger modules.
- *
- * The previous audit understood only the first representation. That made
- * catalog/page completeness checks blind to a large part of the handbook.
- */
-for (const { name, content } of pages) {
-  for (const block of extractPageBlocks(content)) {
-    registerPage({
-      id: block.match(/\bid:\s*"([^"]+)"/u)?.[1],
-      slug: block.match(/\bslug:\s*"([^"]+)"/u)?.[1],
-      category: block.match(/\bcategory:\s*"([^"]+)"/u)?.[1],
-      file: name,
+    const window = content.slice(match.index ?? 0, (match.index ?? 0) + 1800);
+    const slug = window.match(/\bslug:\s*"([^"]+)"/u)?.[1];
+    const category = window.match(/\bcategory:\s*"([^"]+)"/u)?.[1];
+    if (!slug || !category) continue;
+
+    seen.add(id);
+    metadata.push({ id, slug, category, file });
+  }
+
+  for (const match of content.matchAll(
+    /\bp\(\s*"([^"]+)"\s*,\s*"([^"]+)"/gu,
+  )) {
+    const id = match[1];
+    if (seen.has(id)) continue;
+    seen.add(id);
+    metadata.push({
+      id,
+      slug: match[2],
+      category: content.match(/\bcategory:\s*"([^"]+)"/u)?.[1] ?? "",
+      file,
     });
   }
 
-  const helperCategory = content.match(
-    /category:\s*"([^"]+)"/u,
-  )?.[1];
-
-  if (helperCategory) {
-    for (const match of content.matchAll(
-      /\bp\(\s*"([^"]+)"\s*,\s*"([^"]+)"/gu,
-    )) {
-      registerPage({
-        id: match[1],
-        slug: match[2],
-        category: helperCategory,
-        file: name,
-      });
-    }
-  }
+  return metadata;
 }
 
+for (const { name, content } of pages) {
+  for (const meta of extractPageMetadata(content, name)) {
+    registerPage(meta);
+  }
+}
 for (const [id, filesForId] of ids) {
   if (filesForId.length > 1) {
     issues.push(`duplicate page id "${id}": ${filesForId.join(", ")}`);
