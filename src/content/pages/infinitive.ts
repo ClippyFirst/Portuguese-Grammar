@@ -674,7 +674,7 @@ export const pages: GrammarPage[] = [
       },
     ],
     formation:
-      "Найчастотніші прийменники з інфінітивом:\n\n`de` — після іменників, прикметників, дієслів з регенцією (`gostar de`, `acabar de`, `antes de`, `depois de`, `a fim de`, `apesar de`)\n`a` — напрямок до дії, європейський прогресив, `começar a`, `voltar a`, `aprender a`, `ao` + INF\n`para` — мета, адресат дії\n`por` — причина, обмін, «за те що»\n`sem` — без виконання дії\n`até` — межа в часі\n`em` — рідше: `em se tratando de`, `hesitar em`\n`com` — `com` + INF рідкісний; частіше `com` + іменник або герундій у BR (`com o tempo passando`)\n\nСкладені: `a fim de`, `apesar de`, `em vez de`, `depois de`, `antes de`, `ao` (контракція `a` + `o`).",
+      "Найчастотніші прийменники з інфінітивом:\n\n`de` — після іменників, прикметників, дієслів з керуванєю (`gostar de`, `acabar de`, `antes de`, `depois de`, `a fim de`, `apesar de`)\n`a` — напрямок до дії, європейський прогресив, `começar a`, `voltar a`, `aprender a`, `ao` + INF\n`para` — мета, адресат дії\n`por` — причина, обмін, «за те що»\n`sem` — без виконання дії\n`até` — межа в часі\n`em` — рідше: `em se tratando de`, `hesitar em`\n`com` — `com` + INF рідкісний; частіше `com` + іменник або герундій у BR (`com o tempo passando`)\n\nСкладені: `a fim de`, `apesar de`, `em vez de`, `depois de`, `antes de`, `ao` (контракція `a` + `o`).",
     uses: [
       {
         title: "de + infinitivo",
@@ -756,7 +756,7 @@ export const pages: GrammarPage[] = [
       mistake(
         "Comecei de trabalhar às nove.",
         "Comecei a trabalhar às nove.",
-        "`começar a` + INF. `começar de` — не та регенція.",
+        "`começar a` + INF. `começar de` — не та керуваня.",
       ),
       mistake(
         "Gosto a nadar.",
@@ -775,7 +775,7 @@ export const pages: GrammarPage[] = [
         caption: "Прийменник + інфінітив: ядро",
         headers: ["Прийменник", "Типове значення", "Приклад"],
         rows: [
-          ["de", "регенція, час, поступка", "depois de sair, gostar de ler"],
+          ["de", "керуваня, час, поступка", "depois de sair, gostar de ler"],
           ["a", "початок, прогресив PT-PT", "começar a falar, estar a falar"],
           ["ao", "момент дії", "ao chegar"],
           ["para", "мета", "para viver"],
