@@ -45,6 +45,9 @@ const routes = new Set([
 ]);
 
 for (const row of rows) routes.add(routeFor(row));
+for (const category of new Set(rows.filter((row) => !["comparisons", "regional"].includes(row.category)).map((row) => row.category))) {
+  routes.add(`/pt/${category}`);
+}
 
 const missing = [...routes].filter((route) => !fs.existsSync(expectedFile(route)));
 const htmlCount = [];
