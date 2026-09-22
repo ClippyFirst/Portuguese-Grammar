@@ -25,7 +25,9 @@
     "build:github-pages": "npm run audit:content && node scripts/with-app-env.mjs vite build --mode github-pages",
     "verify:static": "node scripts/verify-static-output.mjs",
     "build:github-pages:ci": "npm run build:github-pages && npm run generate:static:sitemap && npm run verify:static",
-    "generate:static:sitemap": "node scripts/generate-static-sitemap.mjs"
+    "generate:static:sitemap": "node scripts/generate-static-sitemap.mjs",
+    "qa:static:smoke": "node scripts/qa-static-site.mjs",
+    "qa:static": "npm run build:github-pages:ci && npm run qa:static:smoke"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.5.4",
