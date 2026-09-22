@@ -6,6 +6,8 @@ import { AppErrorComponent } from "@/lib/error-component";
 import appCss from "../styles.css?url";
 
 const APP_NAME = "Gramática";
+const SITE_BASE = import.meta.env.BASE_URL;
+
 const APP_DESC =
   "Довідник португальської граматики для україномовних. PT-BR і PT-PT, формули, приклади, типові помилки.";
 
@@ -19,10 +21,10 @@ export const Route = createRootRoute({
       { name: "theme-color", content: "#1B4F72" },
     ],
     links: [
-      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "icon", type: "image/svg+xml", href: `${SITE_BASE}favicon.svg` },
       { rel: "stylesheet", href: appCss },
-      { rel: "manifest", href: "/__grok/manifest.webmanifest" },
-      { rel: "apple-touch-icon", href: "/__grok/icon-180.png" },
+      { rel: "manifest", href: `${SITE_BASE}__grok/manifest.webmanifest` },
+      { rel: "apple-touch-icon", href: `${SITE_BASE}__grok/icon-180.png` },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap",
@@ -62,11 +64,11 @@ function NotFound() {
         Такої граматичної теми немає. Спробуйте пошук або перелік розділів.
       </p>
       <p className="mt-6">
-        <a href="/" className="text-azulejo underline underline-offset-4">
+        <a href={SITE_BASE} className="text-azulejo underline underline-offset-4">
           На головну
         </a>
         {" · "}
-        <a href="/pt" className="text-azulejo underline underline-offset-4">
+        <a href={`${SITE_BASE}pt`} className="text-azulejo underline underline-offset-4">
           Усі теми
         </a>
       </p>
