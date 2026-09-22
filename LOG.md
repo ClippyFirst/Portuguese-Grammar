@@ -221,3 +221,11 @@ Commit: `0ad74ac741f078ab95f7be7d6ce03f8f07a7aa87`.
 - Added generated sitemap support for the catalog and shell routes, plus a GitHub Pages-compatible `404.html` and sitemap declaration in `robots.txt`.
 - Added a GitHub Actions Pages workflow using the official Pages artifact/deployment actions. The workflow builds, generates the sitemap, verifies the prerendered route set, stages the static artifact, and deploys it.
 - This is intentionally a separate production build mode; Vercel/Nitro remains available for the existing non-static workflow until the static build has passed CI verification.
+
+
+## 2026-09-22 — Static CI caught an audit-regex regression
+
+- The first GitHub Actions static build reached `npm run audit:content` and failed before the actual prerender step because the compact-constructor audit contained an invalid escaped backtick inside a regular-expression character class under Node 24.
+- This was a useful fail-closed result: the new production pipeline exposed a portability/runtime defect that local assumptions had not caught.
+- Repaired the expression to a standards-compliant quote character class and pushed the fix as `bef77acde1fc6f597a08e274f1facb778aed986f`.
+- A new static validation run is executing against that exact commit. The production Pages workflow remains intentionally restricted to `main`; the validation workflow runs on the working branch and pull requests.
