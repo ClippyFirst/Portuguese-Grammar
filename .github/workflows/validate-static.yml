@@ -4,9 +4,6 @@ on:
   pull_request:
     branches:
       - main
-  push:
-    branches:
-      - chore/local-development
   workflow_dispatch:
 
 permissions:
