@@ -180,6 +180,23 @@ export default defineConfig(({ command, isPreview, mode }) => ({
               failOnError: true,
             }
           : undefined,
+      pages:
+        mode === "github-pages"
+          ? [
+              "/",
+              "/pt",
+              "/search",
+              "/comparisons",
+              "/regional",
+              "/tables",
+            ].map((path) => ({
+              path,
+              prerender: {
+                enabled: true,
+                outputPath: path === "/" ? "/index.html" : path + "/index.html",
+              },
+            }))
+          : undefined,
     }),
     ...(command === "build" && mode !== "github-pages" || isPreview
       ? [
