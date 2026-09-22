@@ -35,6 +35,9 @@ jobs:
       - name: Build static site
         run: npm run build:github-pages
 
+      - name: Generate sitemap
+        run: npm run generate:static:sitemap
+
       - name: Verify prerendered routes
         run: npm run verify:static
 
