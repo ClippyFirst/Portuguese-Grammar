@@ -7,6 +7,7 @@ import appCss from "../styles.css?url";
 
 const APP_NAME = "Gramática";
 const SITE_BASE = import.meta.env.BASE_URL;
+const IS_STATIC = import.meta.env.MODE === "github-pages";
 
 const APP_DESC =
   "Довідник португальської граматики для україномовних. PT-BR і PT-PT, формули, приклади, типові помилки.";
@@ -23,8 +24,12 @@ export const Route = createRootRoute({
     links: [
       { rel: "icon", type: "image/svg+xml", href: `${SITE_BASE}favicon.svg` },
       { rel: "stylesheet", href: appCss },
-      { rel: "manifest", href: `${SITE_BASE}__grok/manifest.webmanifest` },
-      { rel: "apple-touch-icon", href: `${SITE_BASE}__grok/icon-180.png` },
+      ...(IS_STATIC
+        ? []
+        : [
+            { rel: "manifest", href: `${SITE_BASE}__grok/manifest.webmanifest` },
+            { rel: "apple-touch-icon", href: `${SITE_BASE}__grok/icon-180.png` },
+          ]),
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap",
