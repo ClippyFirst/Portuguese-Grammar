@@ -14,9 +14,6 @@ export const Route = createFileRoute("/comparisons/$slug")({
     return { page };
   },
   component: ComparisonRoute,
-    const { page } = Route.useLoaderData();
-    return <GrammarArticle page={page} />;
-  },
   head: ({ loaderData }) => ({
     meta: loaderData
       ? [
