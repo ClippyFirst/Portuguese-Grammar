@@ -428,3 +428,12 @@ The runtime `.map` failure was repaired systematically rather than page-by-page.
 A constructor-level static audit was also added, and a regression test now executes that audit as part of `npm test`. It parses top-level arguments while respecting nested arrays/objects and quoted strings, then verifies the expected argument count and array positions. This is intended to prevent the exact class of regression that previously escaped the catalog/content audit.
 
 The GitHub Pages requirement remains the production target. Current Vercel/Nitro configuration is legacy/platform scaffolding and has not been treated as proof of static deployability. The next change set should introduce TanStack Start static prerendering and a GitHub Actions Pages artifact, then verify all catalog routes from the generated static output.
+
+
+## Static implementation status — 2026-09-22
+
+The repository now has a dedicated `github-pages` build mode. It uses TanStack Start prerendering with link crawling and explicit shell routes, while deliberately omitting the legacy Nitro/Vercel plugin and platform PWA middleware from that build. The Vite base and TanStack Router basepath are both aligned to the project-site path `/Portuguese-Grammar/`.
+
+The CI path is deliberately fail-closed: content audit → static build → sitemap generation → expected-route verification → Pages artifact → deployment. The verifier derives topic routes from the catalog and checks that every catalog topic plus grammar category and shell route has an `index.html` in the static artifact.
+
+This implementation is not yet considered production-proven until the GitHub Actions workflow has completed successfully on the branch and the resulting artifact has been manually checked for representative deep links, refreshes, search, assets, 404 behavior, and mobile rendering. Those are verification tasks, not reasons to weaken the static contract.
