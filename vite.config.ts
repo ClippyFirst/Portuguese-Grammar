@@ -198,7 +198,7 @@ export default defineConfig(({ command, isPreview, mode }) => ({
             }))
           : undefined,
     }),
-    ...(command === "build" && mode !== "github-pages" || isPreview
+    ...((command === "build" && mode !== "github-pages") || isPreview
       ? [
           nitro({
             preset: "vercel",
