@@ -9,8 +9,6 @@ export const Route = createFileRoute("/regional/$slug")({
     return { page };
   },
   component: RegionalRoute,
-    const { page } = Route.useLoaderData();
-    return <GrammarArticle page={page} />;
   head: ({ loaderData }) => ({
     meta: loaderData
       ? [
