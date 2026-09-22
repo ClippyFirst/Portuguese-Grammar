@@ -248,6 +248,7 @@ test("site title Grok App is a real name, not a sentinel", () => {
 test("published grok.me slug is still a title fallback", () => {
   const out = injectGrokPwaHead("<html><head></head></html>", {
     host: "wild-race.grok.me",
+    cwd: emptyCwd(),
   });
   assert.match(out, /property="og:title" content="Wild Race"/);
 });
@@ -309,6 +310,7 @@ test("emits og:image for a public host and prefers a custom card", () => {
     appName: "Wild Race",
     host: "wild-race.grok.me",
     site: { title: "Wild Race" },
+    cwd: emptyCwd(),
   });
   assert.match(
     placeholder,
@@ -329,6 +331,7 @@ test("placeholder og:image appends site.color when it is 6-digit hex", () => {
   const themed = injectGrokPwaHead("<html><head></head></html>", {
     host: "wild-race.grok.me",
     site: { title: "Wild Race", color: "#FF4D2E" },
+    cwd: emptyCwd(),
   });
   assert.match(
     themed,
@@ -365,7 +368,7 @@ test("site.json title wins over the host slug", () => {
 });
 
 test("injects into documents with no head element", () => {
-  const out = injectGrokPwaHead("<html><body>hi</body></html>", { appName: "Solo" });
+  const out = injectGrokPwaHead("<html><body>hi</body></html>", { appName: "Solo", cwd: emptyCwd() });
   assert.match(out, /<head>/);
   assert.match(out, /property="og:title" content="Solo"/);
   assert.match(out, /<\/head>/);
@@ -391,13 +394,14 @@ test("does not duplicate the extensions script", () => {
 });
 
 test("is idempotent", () => {
-  const once = injectGrokPwaHead("<html><head></head></html>", { cwd: emptyCwd() });
-  const twice = injectGrokPwaHead(once);
+  const cwd = emptyCwd();
+  const once = injectGrokPwaHead("<html><head></head></html>", { cwd });
+  const twice = injectGrokPwaHead(once, { cwd });
   assert.equal(once, twice);
 });
 
 test("uses the app name in the injected title tag", () => {
-  const out = injectGrokPwaHead("<html><head></head></html>", { appName: "Wild Race" });
+  const out = injectGrokPwaHead("<html><head></head></html>", { appName: "Wild Race", cwd: emptyCwd() });
   assert.match(out, /apple-mobile-web-app-title" content="Wild Race"/);
 });
 
