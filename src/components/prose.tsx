@@ -36,7 +36,7 @@ function wikiAnchor(id: string, label: string): string {
 export function toHtml(src: string): string {
   const escaped = escapeHtml(src);
   const withMarks = escaped
-    .replace(/\`([^\`]+)\`/g, '<code class="font-mono text-[0.9em] text-azulejo">$1</code>')
+    .replace(/`([^`]+)`/g, '<code class="font-mono text-[0.9em] text-azulejo">$1</code>')
     .replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold text-ink">$1</strong>')
     .replace(/\*([^*]+)\*/g, "<em>$1</em>")
     .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, (_m, id: string, label: string) =>
