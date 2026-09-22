@@ -164,8 +164,8 @@ export default defineConfig(({ command, isPreview, mode }) => ({
     authPopupPlugin(),
     // Dev-only /__app-env, read by scripts/check-auth-invariant.mjs.
     appEnvPlugin(),
-    // PWA head + ?install=1 tutorial page; runs before Start/Nitro.
-    grokPwaPlugin(),
+    // Platform PWA chrome is not part of the GitHub Pages static artifact.
+    ...(mode === "github-pages" ? [] : [grokPwaPlugin()]),
     tailwindcss(),
     tanstackStart({
       prerender:
