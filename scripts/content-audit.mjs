@@ -56,8 +56,9 @@ if (missing.length) {
 }
 
 const known = new Set(catalogIds);
-const related = [...catalogText.matchAll(/\[\s*"[^"]+"(?:,[^\n]*){8},\s*"([^"]*)"/g)]
-  .flatMap((m) => m[1].split(",").map((x) => x.trim()).filter(Boolean));
+const related = [...catalogText.matchAll(
+  /\\["[^"]+",\\s*"[^"]+",\\s*"[^"]+",\\s*"[^"]*",\\s*"[^"]*",\\s*"[^"]*",\\s*"[^"]*",\\s*"[^"]*",\\s*"([^"]*)",\\s*"[^"]+"\\]/g,
+)].flatMap((m) => m[1].split(",").map((x) => x.trim()).filter(Boolean));
 const brokenRelated = [...new Set(related.filter((id) => !known.has(id)))];
 if (brokenRelated.length) failures.push(`catalog related IDs missing from catalog: ${brokenRelated.join(", ")}`);
 
