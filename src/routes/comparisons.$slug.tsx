@@ -13,7 +13,7 @@ export const Route = createFileRoute("/comparisons/$slug")({
     if (!page) throw notFound();
     return { page };
   },
-  component: () => {
+  component: ComparisonRoute,
     const { page } = Route.useLoaderData();
     return <GrammarArticle page={page} />;
   },
@@ -26,3 +26,8 @@ export const Route = createFileRoute("/comparisons/$slug")({
       : [],
   }),
 });
+
+function ComparisonRoute() {
+  const { page } = Route.useLoaderData();
+  return <GrammarArticle page={page} />;
+}
