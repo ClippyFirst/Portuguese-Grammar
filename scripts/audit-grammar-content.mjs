@@ -123,7 +123,7 @@ function auditCompactPageConstructors(content, file) {
       continue;
     }
 
-    if (!/^["'\`]/u.test(args[7])) {
+    if (!/^["'`]/u.test(args[7])) {
       issues.push(
         `compact page constructor in ${file} has invalid teaching-note argument at position 8`,
       );
