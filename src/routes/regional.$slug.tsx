@@ -8,10 +8,7 @@ export const Route = createFileRoute("/regional/$slug")({
     if (!page) throw notFound();
     return { page };
   },
-  component: () => {
-    const { page } = Route.useLoaderData();
-    return <GrammarArticle page={page} />;
-  },
+  component: RegionalRoute,
   head: ({ loaderData }) => ({
     meta: loaderData
       ? [
@@ -21,3 +18,8 @@ export const Route = createFileRoute("/regional/$slug")({
       : [],
   }),
 });
+
+function RegionalRoute() {
+  const { page } = Route.useLoaderData();
+  return <GrammarArticle page={page} />;
+}

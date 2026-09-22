@@ -952,7 +952,7 @@ condicional: \`-ia, -ias, -ia, -íamos, -íeis, -iam\` → \`far-se-ia, dar-te-i
     ],
     exceptions: `Мезокліза не утворюється від складених часів: немає *ter-me-á dito як обов'язкової сучасної форми в мовленні; пишуть \`ter-me-á dito\` ще в дуже формальному PT-PT, але частіше \`há de me ter dito\` / \`me terá dito\` / \`terá me dito\`. Не утворюється від \`ir + INF\`: *vai-me-á dizer не існує.
 
-Неправильні основи треба вчити окремо: *fazer → far-\* (far-lhe-ei, не *fazer-lhe-ei), *dizer → dir-\*, *trazer → trar-\*, *pôr → por-\` / \`pôr-\` (pôr-se-á).
+Неправильні основи треба вчити окремо: *fazer → far-* (far-lhe-ei, не *fazer-lhe-ei), *dizer → dir-*, *trazer → trar-*, *pôr → por-\` / \`pôr-\` (pôr-se-á).
 
 Подвійний клитик у мезоклізі (*enviar-lho-emos*) формально можливий і майже не зустрічається поза пародією на канцелярит.`,
     mistakes: [
