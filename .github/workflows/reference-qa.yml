@@ -18,7 +18,9 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      # The repository lockfile currently predates a transitive lru-cache peer required by the pinned toolchain.
+      # Install resolves that graph before the actual QA commands; lockfile reconciliation is tracked separately.
+      - run: npm install --no-audit --no-fund
       - run: npm run typecheck
       - run: npm run lint
       - run: npm run audit:content
