@@ -210,3 +210,14 @@ Commit: `0ad74ac741f078ab95f7be7d6ce03f8f07a7aa87`.
 - This repair is intentionally content-model-first. Static GitHub Pages migration remains a separate architectural phase and must not be used to hide content/runtime defects.
 
 - Added `scripts/audit-grammar-content.test.mjs` so the strengthened content audit is part of `npm test`, not only a manually invoked command.
+
+
+## 2026-09-22 — GitHub Pages static architecture
+
+- Added a dedicated `github-pages` Vite mode with TanStack Start static prerendering enabled, link crawling, explicit shell routes, retries, and fail-fast prerender errors. TanStack documents this mode as the mechanism for generating static HTML for hosts without SSR. 
+- Disabled the legacy Nitro/Vercel build path and platform-specific PWA middleware for the GitHub Pages mode; the normal development/preview path remains unchanged.
+- Added Vite base path `/Portuguese-Grammar/` and passed that base path into TanStack Router so project-site URLs and client navigation work under the repository subpath.
+- Added static-output verification that derives expected grammar topic routes and category routes from the catalog and requires an `index.html` for every expected route.
+- Added generated sitemap support for the catalog and shell routes, plus a GitHub Pages-compatible `404.html` and sitemap declaration in `robots.txt`.
+- Added a GitHub Actions Pages workflow using the official Pages artifact/deployment actions. The workflow builds, generates the sitemap, verifies the prerendered route set, stages the static artifact, and deploys it.
+- This is intentionally a separate production build mode; Vercel/Nitro remains available for the existing non-static workflow until the static build has passed CI verification.
