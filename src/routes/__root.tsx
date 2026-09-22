@@ -1,5 +1,4 @@
 import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
-import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { SiteShell } from "@/components/site-shell";
 import { AppErrorComponent } from "@/lib/error-component";
@@ -42,11 +41,9 @@ function RootComponent() {
       </head>
       <body>
         <PreviewHostBridge />
-        <AuthProvider>
-          <SiteShell>
-            <Outlet />
-          </SiteShell>
-        </AuthProvider>
+        <SiteShell>
+          <Outlet />
+        </SiteShell>
         <Scripts />
       </body>
     </html>
