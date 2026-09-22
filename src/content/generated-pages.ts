@@ -201,10 +201,6 @@ function makePage(meta: (typeof CATALOG)[number]): GrammarPage {
   };
 }
 
-const HANDWRITTEN = new Set<string>([
-  // Filled by dedicated modules; generated pages must never override them.
-  ...CATALOG.map((t) => t.id),
-]);
 
 export const GENERATED_PAGES: GrammarPage[] = CATALOG
   .filter((meta) => meta.category !== "comparisons" && meta.category !== "regional")
