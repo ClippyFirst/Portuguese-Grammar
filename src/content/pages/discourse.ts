@@ -1,0 +1,80 @@
+import type { GrammarPage } from "../types";
+import { ex, mistake } from "../helpers";
+
+export const pages: GrammarPage[] = [
+  {
+    id: "discourse-overview", slug: "overview", category: "discourse",
+    titleUk: "Дискурс і зв'язність", titlePt: "Discurso e coesão", titleEn: "Discourse and cohesion",
+    summary: "Як речення об'єднуються в текст і як читач відновлює зв'язки між ними.",
+    aliases: ["дискурс","discourse","discurso","зв'язність","cohesion"],
+    related: ["discourse-markers","cohesion-reference","ellipsis","information-structure"],
+    intro: "Граматичне речення ще не є зв'язним текстом. Дискурс організує референти, часову послідовність, причини, контрасти та тему. Португальська використовує займенники, артиклі, повтор, сполучники, дискурсивні маркери й еліпсис.",
+    uses: [
+      { title: "Анафора", body: "Займенник або означена група повертає читача до вже введеного референта.", examples: [ex("Vi a Maria. Ela estava cansada.","Я побачив Марію. Вона була втомлена.")] },
+      { title: "Логічний зв'язок", body: "Маркер може зробити причинно-наслідковий зв'язок явним.", examples: [ex("Estava cansado, por isso fui dormir.","Я був утомлений, тому пішов спати.")] },
+    ],
+    ukrainian: "Українська має аналогічні засоби зв'язності, але португальський артикль додає інформацію про статус референта.",
+  },
+  {
+    id: "discourse-markers", slug: "markers", category: "discourse",
+    titleUk: "Дискурсивні маркери", titlePt: "Marcadores discursivos", titleEn: "Discourse markers",
+    summary: "então, afinal, portanto, contudo, aliás, enfim та організація розмови.",
+    aliases: ["дискурсивні маркери","marcadores discursivos","então","afinal","aliás","enfim"],
+    related: ["discourse-overview","modal-particles","coordinating","register-and-directness"],
+    intro: "Дискурсивний маркер організує взаємозв'язок реплік або частин тексту. Те саме слово може мати сполучникову, часову або дискурсивну функцію. Тому então не можна перекласти одним словом у всіх позиціях.",
+    uses: [
+      { title: "então", body: "Може виражати наслідок, висновок, перехід або повернення до теми.", examples: [ex("Então, vamos começar.","Отже, почнімо."),ex("E então?","Ну і що далі?")] },
+      { title: "afinal", body: "Повертає до питання, уточнює висновок або сигналізує результат пошуку пояснення.", examples: [ex("Afinal, o que aconteceu?","То що зрештою сталося?")] },
+      { title: "aliás", body: "Додає уточнення, корекцію або побічну, але релевантну інформацію.", examples: [ex("Aliás, tenho outra pergunta.","До речі / власне, у мене є ще одне питання.")] },
+      { title: "enfim", body: "Сигналізує завершення, підсумок або перехід після переліку.", examples: [ex("Enfim, chegámos a um acordo.","Зрештою, ми дійшли згоди.",{ variety: "PT" })] },
+    ],
+    mistakes: [mistake("вивчати então = «тоді» у всіх випадках","визначати його дискурсивну функцію","У розмові então часто організує висновок або перехід.")],
+    regional: "Частотність і набір дискурсивних маркерів змінюються за регіоном, жанром та поколінням.",
+  },
+  {
+    id: "information-structure", slug: "information-structure", category: "discourse",
+    titleUk: "Тема, рема і фокус", titlePt: "Estrutura informacional", titleEn: "Information structure",
+    summary: "Дане, нове й контрастивне в португальському реченні.",
+    aliases: ["інформаційна структура","topic","focus","тема","рема","фокус"],
+    related: ["topicalization","clefts","emphasis-focus","discourse-overview"],
+    intro: "Тема — те, про що говоримо; рема — інформація, яку про неї повідомляємо; фокус — елемент, який виділяється як новий або контрастивний. Португальська використовує порядок слів, інтонацію, clefts і займенники.",
+    uses: [
+      { title: "Тема", body: "Тема може бути винесена ліворуч і задавати рамку.", examples: [ex("Quanto ao projeto, ainda não sei.","Щодо проєкту, я ще не знаю.")] },
+      { title: "Контрастивний фокус", body: "Cleft виділяє конкретний елемент.", examples: [ex("Foi a Maria que ligou.","Саме Марія зателефонувала.")] },
+      { title: "Новий фокус", body: "Нова інформація часто розташовується праворуч у нейтральному SVO.", examples: [ex("A Maria comprou um carro.","Марія купила автомобіль.")] },
+    ],
+    mistakes: [mistake("називати будь-яке винесення «фокусом»","відрізняти topic від focus","Винесений елемент може бути темою, а не контрастивним фокусом.")],
+    ukrainian: "Українська використовує порядок слів та інтонацію ще вільніше, тому буквальне копіювання португальської позиції не завжди потрібне.",
+  },
+  {
+    id: "ellipsis", slug: "ellipsis", category: "discourse",
+    titleUk: "Еліпсис", titlePt: "Elipse", titleEn: "Ellipsis",
+    summary: "Пропуск зрозумілих компонентів без втрати граматичності та зв'язності.",
+    aliases: ["еліпсис","ellipsis","elipse","пропуск"],
+    related: ["discourse-overview","null-subject","coordination","comparatives"],
+    intro: "Еліпсис — навмисний або системний пропуск компонента, який легко відновити з контексту. Не кожен пропуск є «неповним реченням». Португальська допускає нульовий підмет, а в координації може не повторювати спільні компоненти.",
+    examples: [
+      ex("Eu fui ao mercado e [eu] comprei pão.","Я пішов/пішла на ринок і купив/купила хліб."),
+      ex("A Ana gosta de café; o João, de chá.","Ана любить каву; Жуан — чай.",{ variety: "PT" }),
+      ex("Quem quer café? — Eu.","Хто хоче кави? — Я."),
+      ex("Eu trabalho mais do que ele.","Я працюю більше, ніж він.",{ note: "Порівняння дозволяє не повторювати предикат, який відновлюється з контексту." }),
+    ],
+    mistakes: [mistake("вважати пропуск підмета помилкою","розрізняти pro-drop та еліпсис","У португальській нульовий підмет є системною властивістю, а не недомовленістю.")],
+    ukrainian: "Українська також часто пропускає підмет і повтори. Відмінність — у тому, скільки граматичної інформації можна відновити з дієслівної форми.",
+  },
+  {
+    id: "cohesion-reference", slug: "cohesion", category: "discourse",
+    titleUk: "Когезія: займенники, повтор і зв'язки", titlePt: "Coesão textual", titleEn: "Textual cohesion",
+    summary: "Лексичні й граматичні засоби, які утримують текст разом.",
+    aliases: ["когезія","cohesion","coesão","зв'язність тексту"],
+    related: ["discourse-overview","discourse-markers","cohesion-reference","relative-pronouns"],
+    intro: "Когезія — формальні зв'язки між частинами тексту. Вона включає анафору, повтор, синонімічні заміни, сполучники та часові зв'язки. Правильне окреме речення може стати неприродним у тексті через неправильний референційний ланцюжок.",
+    examples: [
+      ex("Comprei um livro. O livro é sobre música.","Я купив книжку. Книжка про музику."),
+      ex("A empresa lançou o produto. Este teve grande sucesso.","Компанія випустила продукт. Той мав великий успіх.",{ variety: "PT" }),
+      ex("A empresa lançou o produto, que teve grande sucesso.","Компанія випустила продукт, який мав великий успіх."),
+    ],
+    mistakes: [mistake("міняти референт без маркування","використовувати займенники та артиклі послідовно","Читач має розуміти, до якого референта належить кожен ланцюжок.")],
+    ukrainian: "Українська дозволяє більше нульових іменних повторів; португальський вибір артикля часто допомагає читачеві визначити статус референта.",
+  },
+];

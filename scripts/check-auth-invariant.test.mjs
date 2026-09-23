@@ -14,6 +14,17 @@ import {
 } from "./check-auth-invariant.mjs";
 import { projectRoot } from "./with-app-env.mjs";
 
+function tryCreateSymlink(t, target, link) {
+  try { symlinkSync(target, link); return true; }
+  catch (error) {
+    if (process.platform === "win32" && ["EPERM", "EACCES"].includes(error?.code)) {
+      t.skip("Windows does not permit this symlink in the current test environment");
+      return false;
+    }
+    throw error;
+  }
+}
+
 /**
  * The JSON body `/__app-env` would serve. Do not start a real Vite server —
  * `import { createServer } from "vite"` loads rolldown native bindings that
@@ -95,11 +106,11 @@ test("the build side resolves the template's shipped app-env", () => {
   assert.equal(buildAuthEnabled(projectRoot(), { VITE_AUTH_ENABLED: "true" }), true);
 });
 
-test("the CLI reports rather than silently passing when run via a symlink", async () => {
+test("the CLI reports rather than silently passing when run via a symlink", async (t) => {
   // A check whose exit code is the whole signal must never no-op to 0 because
   // process.argv[1] came in through a symlinked path.
   const link = join(mkdtempSync(join(tmpdir(), "auth-invariant-link-")), "scripts");
-  symlinkSync(join(projectRoot(), "scripts"), link);
+  if (!tryCreateSymlink(t, join(projectRoot(), "scripts"), link)) return;
   const error = await promisify(execFile)(process.execPath, [
     join(link, "check-auth-invariant.mjs"),
     "--dev-url",

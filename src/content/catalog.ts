@@ -15,6 +15,54 @@ type Row = [
 ];
 
 const ROWS: Row[] = [
+  ["collocations-overview", "lexical-grammar", "collocations", "Сполучуваність: слова, які граматика не передбачає", "Colocações", "Collocations", "Типові лексико-граматичні поєднання.", "сполучуваність,collocations,colocações", "verb-noun-collocations,government-overview", "high"],
+  ["verb-noun-collocations", "lexical-grammar", "verb-noun", "Дієслівно-іменні колокації", "Colocações verbo-nominais", "Verb-noun collocations", "fazer, dar, tomar, ter, prestar та типові моделі.", "verb-noun collocations,дієслово іменник", "collocations-overview,government-overview", "high"],
+  ["adjective-government", "lexical-grammar", "adjective-government", "Керування прикметників", "Regência dos adjetivos", "Adjective government", "Прикметники разом із вибраними прийменниками.", "керування прикметників,adjective government,regência nominal", "government-overview,collocations-overview,prep-a", "high"],
+  ["false-friends", "lexical-grammar", "false-friends", "Хибні друзі українськомовного студента", "Falsos amigos", "False friends", "Лексеми, що провокують помилковий переклад або керування.", "хибні друзі,false friends,falsos amigos,кальки", "collocations-overview,word-formation-affixes,gender-vs-ukrainian", "medium"],
+
+
+  ["causative-constructions", "syntax", "causative", "Каузативні конструкції", "Construções causativas", "Causative constructions", "fazer, mandar, deixar та спричинення/дозвіл дії.", "каузатив,causative,causativo,fazer,mandar,deixar", "valency-overview,personal-infinitive,complex-predicates", "high"],
+  ["raising-and-control", "syntax", "raising-control", "Raising і control", "Elevação e controlo", "Raising and control", "parecer, tentar, querer та різні інфінітивні структури.", "raising,control,elevação,controlo,parecer,tentar,querer", "personal-infinitive,valency-overview,complex-predicates", "high"],
+  ["nominalization", "syntax", "nominalization", "Номіналізація: коли дія стає іменником", "Nominalização", "Nominalization", "Як подія переходить в іменну структуру.", "номіналізація,nominalization,nominalização", "word-formation-affixes,valency-overview,complement-clauses", "high"],
+  ["advanced-relatives", "syntax", "advanced-relatives", "Складні відносні речення", "Orações relativas avançadas", "Advanced relative clauses", "Обмежувальні/пояснювальні relative, cujo, o que та прийменники.", "складні відносні,advanced relatives,orações relativas,cujo,o que", "relative-que,prep-a,complement-clauses", "high"],
+  ["complex-predicates", "syntax", "complex-predicates", "Складені предикати й аналітичні конструкції", "Predicados complexos", "Complex predicates", "Модальні, фазові, прогресивні та каузативні комплекси.", "складений предикат,complex predicate,predicado complexo,перифраза", "progressive-br-pt,causative-constructions,aspect-overview,modality-overview", "high"],
+
+
+  ["pragmatics-overview", "pragmatics", "overview", "Прагматика: значення в контексті", "Pragmática", "Pragmatics", "Контекст, мовленнєва дія та соціальна інтерпретація.", "прагматика,pragmatics,pragmática", "speech-acts,politeness,modal-particles", "high"],
+  ["speech-acts", "pragmatics", "speech-acts", "Мовленнєві акти", "Atos de fala", "Speech acts", "Прохання, наказ, порада, запрошення та інші комунікативні дії.", "мовленнєві акти,speech acts,atos de fala", "pragmatics-overview,politeness", "high"],
+  ["politeness", "pragmatics", "politeness", "Ввічливість і дистанція", "Cortesia e distância", "Politeness and social distance", "tu, você, senhor, умовні форми та непрямі прохання.", "ввічливість,politeness,cortesia,tu,você,senhor", "tu-voce,speech-acts", "high"],
+  ["modal-particles", "pragmatics", "particles", "Прагматичні частки та маленькі слова", "Partículas pragmáticas", "Pragmatic particles", "já, ainda, mesmo, só, afinal, então у контексті.", "частки,particles,partículas,já,ainda,mesmo,só", "pragmatics-overview,aspect-overview,discourse-markers", "medium"],
+  ["register-and-directness", "pragmatics", "register", "Регістр, прямота і стиль", "Registo e estilo", "Register and directness", "Нейтральні, розмовні та формальні способи виконати одну функцію.", "регістр,register,registo,directness,стиль", "pragmatics-overview,politeness,speech-acts", "medium"],
+
+  ["discourse-overview", "discourse", "overview", "Дискурс і зв'язність", "Discurso e coesão", "Discourse and cohesion", "Як речення об'єднуються в текст.", "дискурс,discourse,discurso,зв'язність,cohesion", "discourse-markers,information-structure,ellipsis", "high"],
+  ["discourse-markers", "discourse", "markers", "Дискурсивні маркери", "Marcadores discursivos", "Discourse markers", "então, afinal, aliás, enfim та організація розмови.", "дискурсивні маркери,marcadores discursivos,então,afinal,aliás", "discourse-overview,modal-particles,coordinating", "high"],
+  ["information-structure", "discourse", "information-structure", "Тема, рема і фокус", "Estrutura informacional", "Information structure", "Дане, нове й контрастивне в реченні.", "інформаційна структура,topic,focus,тема,рема", "topicalization,clefts,emphasis-focus", "high"],
+  ["ellipsis", "discourse", "ellipsis", "Еліпсис", "Elipse", "Ellipsis", "Пропуск компонентів, які відновлюються з контексту.", "еліпсис,ellipsis,elipse,пропуск", "discourse-overview,null-subject,coordination", "high"],
+  ["cohesion-reference", "discourse", "cohesion", "Когезія: займенники, повтор і зв'язки", "Coesão textual", "Textual cohesion", "Лексичні й граматичні засоби зв'язності тексту.", "когезія,cohesion,coesão,зв'язність тексту", "discourse-overview,discourse-markers,relative-que", "medium"],
+
+
+  ["aspect-overview", "semantics", "aspect", "Аспект: як португальська подає подію", "Aspeto e aspecto", "Aspect", "Завершеність, тривалість, повторюваність і фаза події.", "аспект,aspect,aspeto,вид", "perfeito-vs-imperfeito,progressive-br-pt,ja-ainda,comecar-a", "high"],
+  ["modality-overview", "semantics", "modality", "Модальність: можливість, необхідність, бажання", "Modalidade", "Modality", "Як португальська кодує можливість, обов'язок, дозвіл і волю.", "модальність,modality,modalidade,poder,dever", "indicative-vs-subjunctive,ter-de", "high"],
+  ["reference-overview", "semantics", "reference", "Референція: про кого або про що йдеться", "Referência", "Reference", "Визначеність, специфічність, дейксис і анафора.", "референція,reference,referência,визначеність", "articles-definite,articles-indefinite,demonstratives,generic-reference", "high"],
+  ["generic-reference", "semantics", "generic", "Узагальнення та родове значення", "Referência genérica", "Generic reference", "Як говорити про клас або вид без конкретного референта.", "узагальнення,generic,referência genérica", "articles-definite,zero-article,scope-and-reference", "medium"],
+
+
+  ["phonetics-overview", "phonetics", "overview", "Фонетика: карта португальської вимови", "Fonética do português", "Portuguese phonetics overview", "Голосні, приголосні, наголос, редукція та назалізація як система.", "фонетика,вимова,fonética,pronúncia", "vowels-phonetics,nasal-vowels,consonants-phonetics,stress-phonology", "high"],
+  ["vowels-phonetics", "phonetics", "vowels", "Голосні: відкритість, наголос і редукція", "Vogais", "Vowels", "Наголошені й ненаголошені голосні та відкритість e/o.", "голосні,vogais,e aberto,o aberto", "phonetics-overview,nasal-vowels,stress-phonology", "high"],
+  ["nasal-vowels", "phonetics", "nasal-vowels", "Носові голосні та дифтонги", "Vogais e ditongos nasais", "Nasal vowels and diphthongs", "ã, õ, -am/-em/-ão та назалізація.", "носові,назалізація,nasal,ão", "vowels-phonetics,phonetics-overview,ao-plurals", "high"],
+  ["consonants-phonetics", "phonetics", "consonants", "Приголосні: r, s, x, nh, lh, ch", "Consoantes", "Consonants", "Позиційні варіанти складних приголосних і диграфів.", "приголосні,consoantes,r,rr,s,x,nh,lh,ch", "phonetics-overview,reading-rules", "high"],
+  ["stress-phonology", "phonetics", "stress", "Наголос як фонологічна властивість", "Acento e prosódia", "Stress and prosody", "Наголошений склад, ритм і графічне маркування.", "наголос,stress,prosody,acento", "stress,phonetics-overview,vowels-phonetics", "medium"],
+
+  ["determiners-overview", "determiners", "overview", "Детермінативи: система перед іменником", "Determinantes", "Determiners overview", "Артиклі, вказівні, присвійні та квантори як одна система.", "детермінативи,determinantes,determiners", "articles-definite,articles-indefinite,zero-article,quantifiers-overview", "high"],
+  ["quantifiers-overview", "determiners", "quantifiers", "Квантифікація: весь, кожен, деякий, жоден", "Quantificação", "Quantification", "todo, cada, algum, nenhum, qualquer та кількісні модифікатори.", "квантифікація,quantifiers,todo,cada,algum,nenhum", "determiners-overview,indefinites,negation-ninguem,cardinals", "high"],
+  ["scope-and-reference", "determiners", "scope-reference", "Сфера дії та референція", "Escopo e referência", "Scope and reference", "Як детермінатив змінює референцію та інтерпретацію.", "сфера дії,scope,reference,референція", "determiners-overview,quantifiers-overview,generic-reference,articles-definite", "high"],
+  ["determiners-agreement", "determiners", "agreement", "Узгодження детермінативів", "Concordância dos determinantes", "Determiner agreement", "Рід і число в артиклях, вказівних, присвійних і кванторах.", "узгодження детермінативів,concordância", "determiners-overview,noun-gender,noun-number,possessives", "medium"],
+
+  ["valency-overview", "valency", "overview", "Валентність дієслова", "Valência verbal", "Verb valency", "Аргументи предиката та відмінність від вільних модифікаторів.", "валентність,valency,valência,аргумент", "government-overview,direct-object,indirect-object,complement-clauses", "high"],
+  ["government-overview", "valency", "government", "Керування: дієслово + прийменник", "Regência verbal", "Verb government", "Коли прийменник є частиною лексичної моделі дієслова.", "керування,regência verbal,government,verb-preposition", "valency-overview,verb-preposition,prep-por,prep-para", "high"],
+  ["argument-vs-adjunct", "valency", "argument-vs-adjunct", "Аргумент чи обставина?", "Complemento ou modificador?", "Argument vs adjunct", "Як відрізняти вибрані предикатом компоненти від вільних модифікаторів.", "аргумент,обставина,adjunct,complemento", "valency-overview,government-overview,word-order", "high"],
+
+
   ["sentence-basics", "fundamentals", "sentence-basics", "Базова структура речення", "Estrutura da frase", "Basic sentence structure", "Підмет, присудок, додатки й базовий порядок SVO.", "речення,SVO,підмет,присудок,frase", "null-subject,word-order,parts-of-speech", "medium"],
   ["parts-of-speech", "fundamentals", "parts-of-speech", "Частини мови", "Classes de palavras", "Parts of speech", "Змінні й незмінні частини мови в португальській.", "частини мови,морфологія,classes de palavras", "sentence-basics,noun-gender,verb-system", "short"],
   ["gender-number-person", "fundamentals", "gender-number-person", "Рід, число, особа", "Género, número, pessoa", "Gender, number, person", "Граматичні категорії, які пронизують усю систему.", "рід,число,особа,género,gênero", "noun-gender,adjective-agreement,agreement-sv", "medium"],
@@ -49,7 +97,7 @@ const ROWS: Row[] = [
   ["articles-proper-names", "articles", "proper-names", "Артикль із власними назвами", "Artigo com nomes próprios", "Articles with names", "Особові імена: PT-PT часто з артиклем, PT-BR — ні.", "артикіль імена,o João,a Maria", "articles-geography,articles-regional", "high"],
   ["articles-geography", "articles", "geography", "Артикль із географічними назвами", "Topónimos", "Articles with place names", "Країни, міста, річки, гори.", "країни,o Brasil,Portugal,a França", "articles-definite,articles-regional", "medium"],
   ["articles-possessives", "articles", "possessives", "Артикль із присвійними", "Artigo + possessivo", "Articles with possessives", "o meu / meu: норма PT-PT vs PT-BR.", "присвійні артикль,o meu,meu livro", "possessives,articles-regional", "high"],
-  ["generic-reference", "articles", "generic-reference", "Узагальнення", "Referência genérica", "Generic reference", "Os cães vs Cães vs Um cão як клас.", "узагальнення,generic,os portugueses", "articles-definite,zero-article", "medium"],
+  ["generic-reference-articles", "articles", "generic-reference", "Узагальнення", "Referência genérica", "Generic reference", "Os cães vs Cães vs Um cão як клас.", "узагальнення,generic,os portugueses", "articles-definite,zero-article", "medium"],
   ["articles-regional", "articles", "regional", "Артиклі: регіональні відмінності", "Artigos: variação", "Regional article usage", "Власні назви, присвійні, розмовні опущення.", "артикіль BR PT", "articles-proper-names,articles-possessives,pt-br-pt-pt", "medium"],
   ["articles-ukrainian", "comparisons", "articles-ukrainian", "Артиклі vs українська", "Artigos e o ucraniano", "Articles vs Ukrainian", "Як думати про артиклі, якщо в рідній мові їх немає.", "артикіль українська,немає артиклів", "articles-definite,zero-article,articles-indefinite", "high"],
 
@@ -57,8 +105,8 @@ const ROWS: Row[] = [
   ["adjective-position", "adjectives", "position", "Позиція прикметника", "Posição do adjetivo", "Adjective position", "Перед і після іменника: норма й стилістика.", "позиція прикметника,antes,depois", "adjective-meaning,word-order", "high"],
   ["adjective-meaning", "adjectives", "position-meaning", "Зміна значення від позиції", "Sentido e posição", "Meaning and position", "grande homem vs homem grande, pobre vs pobre.", "grande,pobre,certo,próprio", "adjective-position", "high"],
   ["comparatives", "adjectives", "comparatives", "Порівняльний ступінь", "Comparativo", "Comparatives", "mais... do que, tão... como, melhor / pior.", "порівняння,mais que,do que,melhor", "superlatives,comparative-clauses", "medium"],
-  ["superlatives", "adjectives", "superlatives", "Суперлатив", "Super//lativo relativo", "Superlative", "o mais..., o melhor — відносний суперлатив.", "суперлатив,o mais,o melhor", "comparatives,absolute-superlative", "medium"],
-  ["absolute-superlative", "adjectives", "absolute-superlative", "Абсолютний суперлатив", "Super//lativo absoluto", "Absolute superlative", "muito + adj vs -íssimo / -érrimo.", "íssimo,muito,absolutний", "superlatives,adverbs-degree", "short"],
+  ["superlatives", "adjectives", "superlatives", "Суперлатив", "Superlativo relativo", "Superlative", "o mais..., o melhor — відносний суперлатив.", "суперлатив,o mais,o melhor", "comparatives,absolute-superlative", "medium"],
+  ["absolute-superlative", "adjectives", "absolute-superlative", "Абсолютний суперлатив", "Superlativo absoluto", "Absolute superlative", "muito + adj vs -íssimo / -érrimo.", "íssimo,muito,absolutний", "superlatives,adverbs-degree", "short"],
   ["irregular-adjectives", "adjectives", "irregular", "Неправильні прикметники", "Adjetivos irregulares", "Irregular adjectives", "bom, mau, grande, pequeno та апокопа.", "bom,mau,grande,pequeno", "comparatives,adjective-agreement", "short"],
 
   ["adverbs-overview", "adverbs", "overview", "Прислівники: огляд", "Advérbios", "Adverbs overview", "Класи прислівників і відмінність від прикметників.", "прислівник,advérbio,bem,bom", "mente-formation,adverb-position", "medium"],
@@ -74,7 +122,7 @@ const ROWS: Row[] = [
   ["voces-vos", "pronouns", "voces-vos", "vocês / vós", "vocês e vós", "vocês vs vós", "Сучасне vocês і реліктове vós.", "vocês,vós,ви множина", "tu-voce,forms-of-address", "medium"],
   ["nos-a-gente", "pronouns", "nos-a-gente", "nós / a gente", "nós e a gente", "nós vs a gente", "a gente + 3-тя особа однини.", "a gente,nós,ми", "subject-pronouns,agreement-sv", "medium"],
   ["forms-of-address", "pronouns", "forms-of-address", "Форми звертання", "Formas de tratamento", "Forms of address", "o senhor, a senhora, você, tu, regionalні системи.", "o senhor,a senhora,звертання", "tu-voce,pt-br-pt-pt", "high"],
-  ["object-pronouns", "pronouns", "object", "Об'єктні займенники", "Pronomes objeto", "Object pronouns", "Прямий і непрямий додаток: me, te, o/a, lhe.", "об'єктні,me,te,o,a,lhe", "direct-object,indirect-object,clitic-pronouns", "high"],
+  ["object-pronouns", "pronouns", "object-pronouns", "Об'єктні займенники", "Pronomes objeto", "Object pronouns", "Прямий і непрямий додаток: me, te, o/a, lhe.", "об'єктні,me,te,o,a,lhe", "direct-object,indirect-object,clitic-pronouns", "high"],
   ["direct-object", "pronouns", "direct-object", "Прямий додаток", "Objeto direto", "Direct object", "o / a / os / as, lo/la після приголосного.", "прямий додаток,o,a,lo,la", "indirect-object,lhe-vs-o,clitic-pronouns", "high"],
   ["indirect-object", "pronouns", "indirect-object", "Непрямий додаток", "Objeto indireto", "Indirect object", "me, te, lhe, lhes, a mim.", "непрямий,lhe,lhes,me", "direct-object,lhe-vs-o,gostar", "high"],
   ["lhe-vs-o", "pronouns", "lhe-vs-o", "lhe/lhes vs o/a/os/as", "lhe vs o/a", "lhe vs o/a", "Кому vs кого: найчастіша плутанина.", "lhe,o,a,кому,кого", "direct-object,indirect-object,clitics-br-pt", "high"],
@@ -109,7 +157,7 @@ const ROWS: Row[] = [
   ["prep-para", "prepositions", "para", "Прийменник para", "Preposição para", "Preposition para", "Мета, адресат, дедлайн, напрямок.", "прийменник para,для", "por-para,purpose-clauses", "high"],
   ["por-para", "prepositions", "por-para", "por vs para", "por vs para", "por vs para", "Причина й шлях vs мета й адресат.", "por para,для,через", "prep-por,prep-para,purpose-clauses", "high"],
   ["prep-com", "prepositions", "com-sem", "com і sem", "com e sem", "com and sem", "Супровід, інструмент, відсутність; comigo.", "com,sem,з,без", "prepositional-pronouns", "short"],
-  ["prep-other", "prepositions", "other", "sobre, entre, até, desde", "Outras preposições", "Other prepositions", "Простір, час, межа, джерело.", "sobre,entre,até,desde,após", "ha-faz-desde,temporal-clauses", "medium"],
+  ["prep-other", "prepositions", "other", "sobre, entre, até, desde", "Outras preposições", "Other prepositions", "Простір, час, межа, джерело.", "sobre,entre,até,desde,após", "existential,temporal-clauses", "medium"],
   ["verb-preposition", "prepositions", "verb-preposition", "Дієслово + прийменник", "Regência verbal", "Verb + preposition", "gostar de, pensar em, assistir a, namorar.", "регенція,gostar de,pensar em", "gostar,prep-de,prep-a", "high"],
   ["compound-prepositions", "prepositions", "compound", "Складені прийменники", "Locuções prepositivas", "Compound prepositions", "apesar de, a fim de, em vez de, devido a.", "apesar de,a fim de,em vez de", "concessive-clauses,purpose-clauses", "short"],
 
@@ -126,7 +174,7 @@ const ROWS: Row[] = [
   ["crase-optional", "crase", "optional", "Факультативна й заборонена crase", "Crase facultativa", "Optional and forbidden crase", "Перед жіночими іменами, займенниками; коли à неможливе.", "факультативна crase", "crase,crase-rules", "medium"],
   ["a-vs-crase", "crase", "a-vs-a", "a vs à", "a vs à", "a vs à", "Тест заміни на чоловічий іменник.", "a чи à,як перевірити crase", "crase,prep-a", "high"],
 
-  ["coordinating", "conjunctions", "coordinating", "Сурядні сполучники", "Conjunções coordenativas", "Coordinating conjunctions", "e, nem, ou, mas, porém, portanto.", "сурядні,e,mas,ou,nem", "nem,coordination", "short"],
+  ["coordinating", "conjunctions", "coordinating", "Сурядні сполучники", "Conjunções coordenativas", "Coordinating conjunctions", "e, nem, ou, mas, porém, portanto.", "сурядні,e,mas,ou,nem", "coordination", "short"],
   ["subordinating", "conjunctions", "subordinating", "Підрядні сполучники", "Conjunções subordinativas", "Subordinating conjunctions", "Огляд класів і вибір способу.", "підрядні сполучники", "subjunctive-triggers,conditional-clauses", "medium"],
   ["que-de-que", "conjunctions", "que-de-que", "que / de que", "que e de que", "que vs de que", "Гніздо дієслова: tenho certeza de que.", "de que,que,gnest", "complement-clauses,verb-preposition", "medium"],
 
@@ -151,7 +199,7 @@ const ROWS: Row[] = [
   ["ir-vir", "verbs", "ir-vir", "ir vs vir", "ir vs vir", "ir vs vir", "Йти / їхати туди vs сюди; ir + inf.", "ir,vir,йти,приходити", "levar-trazer,ir-infinitive", "high"],
   ["poder-dever-querer", "verbs", "poder-dever-querer", "poder, dever, querer", "poder, dever, querer", "Modals poder dever querer", "Модальність: змога, повинність, воля.", "poder,dever,querer,можу,маю", "ter-de,subjunctive-triggers", "medium"],
   ["pronominal-verbs", "verbs", "pronominal", "Прономінальні дієслова", "Verbos pronominais", "Pronominal verbs", "lembrar-se, esquecer-se, ir-se: se як частина лексеми.", "прономінальні,lembrar-se,esquecer-se", "se-pronominal,se-reflexive", "medium"],
-  ["por-verb", "verbs", "por", "pôr і похідні", "verbo pôr", "pôr", "pôr, dispor, compor, repor.", "pôr,poner,класти", "irregular-verbs,homograph-accents", "short"],
+  ["por-verb", "verbs", "por-verb", "pôr і похідні", "verbo pôr", "pôr", "pôr, dispor, compor, repor.", "pôr,poner,класти", "irregular-verbs,homograph-accents", "short"],
 
   ["presente", "tenses", "presente", "Presente do indicativo", "Presente do indicativo", "Present indicative", "Зараз, звичка, загальна істина, майбутнє.", "теперішній,presente", "verb-system,futuro,ir-infinitive", "high"],
   ["preterito-perfeito", "tenses", "preterito-perfeito", "Pretérito perfeito simples", "Pretérito perfeito", "Preterite", "Завершена дія як подія розповіді.", "перфект,pretérito perfeito,минулий", "preterito-imperfeito,perfeito-vs-imperfeito", "high"],
@@ -199,7 +247,7 @@ const ROWS: Row[] = [
 
   ["ter-de", "periphrases", "ter-de", "ter de / ter que", "ter de / ter que", "ter de / ter que", "Обов'язок: ter de (обидва) і ter que (часто PT-BR).", "ter de,ter que,мусити", "haver-de,poder-dever-querer", "medium"],
   ["haver-de", "periphrases", "haver-de", "haver de", "haver de", "haver de", "Намір, приреченість, формальний обов'язок.", "haver de,hei de", "ter-de,haver", "short"],
-  ["acabar-de", "periphrases", "acabar-de", "acabar de", "acabar de", "acabar de", "Щойно: acabo de chegar.", "acabar de,щойно", "deixar-de,tense-aspect", "medium"],
+  ["acabar-de", "periphrases", "acabar-de", "acabar de", "acabar de", "acabar de", "Щойно: acabo de chegar.", "acabar de,щойно", "comecar-a,tense-aspect", "medium"],
   ["voltar-a", "periphrases", "voltar-a", "voltar a", "voltar a", "voltar a", "Повторна дія: voltou a chover.", "voltar a,знову", "comecar-a", "short"],
   ["comecar-a", "periphrases", "comecar-a", "começar a / continuar a / deixar de", "Perífrases aspetuais", "Aspectual periphrases", "Початок, тривання, припинення.", "começar a,continuar a,deixar de", "acabar-de,gerund-usage", "medium"],
   ["ir-infinitive", "periphrases", "ir-infinitive", "ir + infinitivo", "ir + infinitivo", "ir + infinitive", "Найчастотніше майбутнє в розмові.", "ir infinitivo,vou fazer,майбутнє", "futuro,ir-vir", "high"],
@@ -248,7 +296,7 @@ const ROWS: Row[] = [
   ["complement-clauses", "subordinate", "complement", "Додаткові підрядні", "Completivas", "Complement clauses", "dizer que, querer que, achar que.", "додаткові,completivas,que", "indicative-vs-subjunctive,infinitive-vs-subjunctive", "high"],
   ["causal-clauses", "subordinate", "causal", "Причинові речення", "Causais", "Causal clauses", "porque, pois, já que, como, devido a.", "причина,porque,já que,pois", "prep-por,porque-forms", "medium"],
   ["purpose-clauses", "subordinate", "purpose", "Речення мети", "Finais", "Purpose clauses", "para + inf vs para que + conjuntivo.", "мета,para que,a fim de", "infinitive-vs-subjunctive,prep-para", "high"],
-  ["conditional-clauses", "subordinate", "conditional", "Умовні речення", "Condicionais", "Conditional clauses", "Реальні, можливі, контрфактичні; se + futuro do conjuntivo.", "умова,se,caso,se eu fosse", "futuro-subjuntivo,imperfeito-subjuntivo,condicional", "high"],
+  ["conditional-clauses", "subordinate", "conditional-clauses", "Умовні речення", "Condicionais", "Conditional clauses", "Реальні, можливі, контрфактичні; se + futuro do conjuntivo.", "умова,se,caso,se eu fosse", "futuro-subjuntivo,imperfeito-subjuntivo,condicional", "high"],
   ["concessive-clauses", "subordinate", "concessive", "Допустові речення", "Concessivas", "Concessive clauses", "embora, mesmo que, apesar de.", "допустові,embora,mesmo que", "subjunctive-triggers,compound-prepositions", "medium"],
   ["temporal-clauses", "subordinate", "temporal", "Часові підрядні", "Temporais", "Temporal clauses", "quando + futuro do conjuntivo; antes que vs depois que.", "часові,quando,assim que,antes que", "futuro-subjuntivo,ja-ainda", "high"],
   ["consecutive-clauses", "subordinate", "consecutive", "Наслідкові речення", "Consecutivas", "Consecutive clauses", "tão... que, de modo que.", "наслідок,tão que,de modo que", "comparatives,adverbs-degree", "short"],
@@ -268,6 +316,9 @@ const ROWS: Row[] = [
   ["mozambique", "regional", "mozambique", "Португальська Мозамбіку", "Português de Moçambique", "Mozambican Portuguese", "Релевантні граматичні риси.", "мозамбік,MZ", "angola,pluricentric", "medium"],
   ["other-lusophone", "regional", "other-lusophone", "Інші лузофонні різновиди", "Outras variedades", "Other Lusophone varieties", "Кабо-Верде, Гвінея-Бісау, Сан-Томе, Тимор-Лешті.", "кабо-верде,тимор,гвінея", "pluricentric,angola", "short"],
   ["tu-voce-regional", "regional", "tu-voce-regional", "tu / você регіонально", "tu/você nas regiões", "Regional tu / você", "Бразилія не однорідна; північ Португалії.", "tu você регіони", "tu-voce,forms-of-address,pt-br-pt-pt", "high"],
+  // Pages that previously existed in page modules but were absent from the navigation catalog.
+
+
 ];
 
 function parseAliases(s: string): string[] {
@@ -279,7 +330,7 @@ export const CATALOG: TopicMeta[] = ROWS.map((r) => ({
   category: r[1],
   slug: r[2],
   titleUk: r[3],
-  titlePt: r[4].replace("Super//lativo", "Superlativo"),
+  titlePt: r[4],
   titleEn: r[5],
   summary: r[6],
   aliases: parseAliases(r[7]),

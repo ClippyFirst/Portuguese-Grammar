@@ -279,6 +279,7 @@ function tokenIdentityKey(token: string): string {
         }
       }
     } catch {
+      // Fall back to hashing the opaque token when JWT parsing fails.
       // Ignore malformed token payloads and fall back to the full token digest.
     }
   }

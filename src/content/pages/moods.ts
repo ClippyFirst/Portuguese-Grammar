@@ -19,7 +19,7 @@ export const pages: GrammarPage[] = [
     ],
     related: ["subjunctive-overview", "subjunctive-logic", "subjunctive-triggers", "subjunctive-not"],
     intro:
-      "Португальське дієслово в особовій формі стоїть в одному зі способів (*modos*). Два головні в підрядному реченні — *indicativo* (дійсний спосіб) і *conjuntivo* / *subjuntivo* (кон'юнктив).\n\nЦе не «впевненість vs невпевненість» у побутовому сенсі. Індикатив **стверджує пропозицію як частину реальності** (або подає її так). Кон'юнктив **не стверджує** її: він подає ситуацію як бажану, оцінену, можливу, потрібну, ще не насталу, або як зміст волі / емоції / сумніву.\n\n`Sei que ele está em casa` — я подаю «він удома» як факт. `Quero que ele esteja em casa` — я не кажу, що він удома; я хочу цього. Один і той самий зміст «він удома» змінює спосіб, бо змінюється *мовленнєва операція*.",
+      "Португальське дієслово в особовій формі стоїть в одному зі способів (*modos*). Два головні в підрядному реченні — *indicativo* (дійсний спосіб) і *conjuntivo* / *subjuntivo* (кон'юнктив).\n\nЦе не «впевненість vs невпевненість» у побутовому сенсі. Індикатив **стверджує пропозицію як частину реальності** (або подає її так). Кон'юнктив зазвичай не подає її як просте твердження; він може оформлювати бажання, оцінку, можливість, необхідність, сумнів, умову та інші модальні значення.\n\n`Sei que ele está em casa` — я подаю «він удома» як факт. `Quero que ele esteja em casa` — я не кажу, що він удома; я хочу цього. Один і той самий зміст «він удома» змінює спосіб, бо змінюється *мовленнєва операція*.",
     formulas: [
       {
         label: "Індикатив: пропозиція як факт",
@@ -93,12 +93,12 @@ export const pages: GrammarPage[] = [
       mistake(
         "Sei que ele esteja doente.",
         "Sei que ele está doente.",
-        "Знання стверджує факт — індикатив. Кон'юнктив після `sei que` звучить як внутрішнє протиріччя.",
+        "`sei que` типовим чином вводить пропозицію, яку мовець подає як факт, тому в нейтральній моделі очікуваний індикатив. Інші способи можуть з'являтися при зміні значення або конструкції.",
       ),
       mistake(
         "Acho que seja tarde.",
         "Acho que é tarde.",
-        "Афірмативне `achar que` в португальській бере індикатив. Кон'юнктив — калька з іспанської (`creo que sea`).",
+        "Афірмативне `achar que` часто поєднується з індикативом, коли мовець подає пропозицію як прийняту / стверджувану; вибір способу залежить від значення й контексту. Не переносіть автоматично іспанську модель `creo que sea`.",
       ),
     ],
     ukrainian:
@@ -106,7 +106,7 @@ export const pages: GrammarPage[] = [
     brPt:
       "Логіка способу спільна. Терміни: PT-PT *conjuntivo*, PT-BR *subjuntivo*. Частотність `não acho que` + conj. висока в обох. У дуже розмовному PT-BR інколи чути індикатив там, де норма очікує кон'юнктив (`quero que você vem`) — це не стандарт.",
     regional:
-      "Писемні норми Анголи й Мозамбіку дотримуються того самого поділу indicativo / conjuntivo. Усна спрощеність ближча до розмовного PT-BR.",
+      "Писемні норми Анголи й Мозамбіку використовують той самий базовий поділ indicativo / conjuntivo. Усне вживання може мати власні національні та контактні особливості; їх не слід автоматично пояснювати впливом PT-BR.",
     tables: [
       {
         caption: "Що робить головне речення з пропозицією",
@@ -146,7 +146,7 @@ export const pages: GrammarPage[] = [
       "subjunctive-logic",
     ],
     intro:
-      "Кон'юнктив — спосіб не-факту. У європейській граматичній традиції його називають **conjuntivo**, у бразильській — **subjuntivo**. Це той самий спосіб, не дві різні системи. У цьому довіднику вживаються обидва терміни.\n\nСистема має три прості часи й три складені:\n\nпрості — *presente*, *pretérito imperfeito*, *futuro*\nскладені — *pretérito perfeito* (`tenha feito`), *mais-que-perfeito* (`tivesse feito`), *futuro composto* (`tiver feito`)\n\nМайбутній кон'юнктив — не «ще один відтінок теперішнього». Це окрема, дуже жива форма португальської, якої майже немає в інших романських мовах. Їй присвячена окрема стаття.\n\nКон'юнктив рідко стоїть у незалежному реченні (`Talvez venha`, `Oxalá corra bem`, побажання). Його типове місце — підрядне.",
+      "Кон'юнктив — модально маркований спосіб, який часто подає ситуацію як нестверджену, бажану, можливу, оцінену, сумнівну або залежну від умови. У європейській граматичній традиції його називають **conjuntivo**, у бразильській — **subjuntivo**. Це той самий спосіб, не дві різні системи. У цьому довіднику вживаються обидва терміни.\n\nСистема має три прості часи й три складені:\n\nпрості — *presente*, *pretérito imperfeito*, *futuro*\nскладені — *pretérito perfeito* (`tenha feito`), *mais-que-perfeito* (`tivesse feito`), *futuro composto* (`tiver feito`)\n\nМайбутній кон'юнктив — окрема форма, продуктивна в португальських конструкціях із відкритою майбутньою умовою та часовими підрядними; її не слід зводити до «відтінку» presente do conjuntivo. Їй присвячена окрема стаття.\n\nКон'юнктив рідко стоїть у незалежному реченні (`Talvez venha`, `Oxalá corra bem`, побажання). Його типове місце — підрядне.",
     formulas: [
       {
         label: "Ядро підрядного",
@@ -189,7 +189,7 @@ export const pages: GrammarPage[] = [
       mistake(
         "Talvez ele vem amanhã.",
         "Talvez ele venha amanhã.",
-        "`talvez` у стандарті бере кон'юнктив (індикатив можливий як розмовний, коли мовець майже стверджує).",
+        "`talvez` часто поєднується з кон'юнктивом у стандартному описі; індикатив також засвідчений у деяких різновидах і контекстах, особливо коли висловлення наближається до ствердження.",
       ),
       mistake(
         "Quando eu vou, ligo.",
@@ -320,7 +320,7 @@ export const pages: GrammarPage[] = [
       mistake(
         "Quando ele chegue, começamos.",
         "Quando ele chegar, começamos.",
-        "Майбутня відкрита подія після `quando` — futuro do conjuntivo, не теперішній. Це калька з іспанської (`cuando llegue`).",
+        "Для майбутньої події після `quando` та споріднених сполучників португальська часто використовує futuro do conjuntivo: `quando eu chegar`. Водночас вибір способу залежить від часової та модальної структури речення; не ототожнюйте це механічно з іспанською.",
       ),
       mistake(
         "É importante que tu estás aqui.",
@@ -333,7 +333,7 @@ export const pages: GrammarPage[] = [
     brPt:
       "Форми спільні. У PT-BR з `você`: `quero que você fale` (3-тя особа). У PT-PT з `tu`: `quero que fales`. Розмовний PT-BR інколи ставить індикатив (`quero que você fala`) — ненормативно.",
     regional:
-      "У південній Бразилії з `tu` нормативне `que tu fales`; у фактичному мовленні часто `que tu fale` / `que tu fala` зі змішаною узгодженістю.",
+      "У регіонах Бразилії, де вживається `tu`, фактичне узгодження може варіювати; нормативна форма для `tu` — `fales`, але живі варіанти треба маркувати як регіональні/розмовні, не узагальнюючи на всю Бразилію.",
     tables: [
       {
         caption: "Presente do conjuntivo: регулярні",
@@ -422,7 +422,7 @@ export const pages: GrammarPage[] = [
       },
       {
         title: "como se",
-        body: "`como se` завжди з імперфектом (або складеним) кон'юнктива: порівняння з не-фактом.",
+        body: "`como se` у типових порівняльно-гіпотетичних конструкціях вживає імперфект або плюсквамперфект кон'юнктива: `como se soubesse`, `como se tivesse mentido`.",
         examples: [
           ex("Fala como se soubesse de tudo.", "Говорить так, ніби все знає."),
           ex("Olhou-me como se eu tivesse mentido.", "Він подивився на мене так, ніби я збрехав."),
@@ -459,7 +459,7 @@ export const pages: GrammarPage[] = [
       mistake(
         "Se eu seria rico, comprava isto.",
         "Se eu fosse rico, comprava isto.",
-        "Після `se` ніколи не ставлять condicional. Гіпотеза — `fosse`.",
+        "У стандартній умовній конструкції після `se` для гіпотетичної / контрфактичної умови вживають `imperfeito do conjuntivo`, а не condicional: `se eu fosse`, `se eu soubesse`.",
       ),
     ],
     ukrainian:
@@ -630,7 +630,7 @@ export const pages: GrammarPage[] = [
       "quem / o que / onde + fut. conj.",
     ],
     exceptions:
-      "`caso` + presente do conjuntivo (`caso seja preciso`), не `caso for` як перший вибір. `caso for` існує, але `caso seja` частотніше.\n\n`talvez` не бере майбутній кон'юнктив: `talvez venha`, не `*talvez vier`.\n\nПісля `para que`, `embora`, `antes que` — presente або imperfeito, не майбутній.\n\nУ головному реченні після `quando eu chegar` можна поставити наказовий (`avisa`), теперішній (`aviso`) або `ir` + INF (`vou avisar`). Усі три нормальні. Futuro simples (`avisarei`) — формальніший.\n\nУ дуже розмовному мовленні, особливо PT-BR, інколи чути `quando eu chegar` замінене на `quando eu chegar` (це якраз правильна форма!) — помилка інша: `quando eu chegar` плутають із `quando eu chegue` або `quando eu vou chegar`. Ще розмовніше: `quando eu chegar lá, eu te ligo` — повністю стандартно. Нестандарт: `quando eu chegar` → заміна на `se eu chegar` без різниці; різниця `se`/`quando` при цьому стирається прагматично, але граматична форма лишається futuro do conjuntivo.\n\nПівнічні діалекти Португалії добре зберігають форму; ніде в стандарті вона не «мертва».",
+      "`caso` + presente do conjuntivo (`caso seja preciso`) є типовою моделлю; `caso for` також трапляється в певних контекстах.\n\n`talvez` не бере майбутній кон'юнктив: `talvez venha`, не `*talvez vier`.\n\nПісля `para que`, `embora`, `antes que` — presente або imperfeito, не майбутній.\n\nУ головному реченні після `quando eu chegar` можна поставити наказовий (`avisa`), теперішній (`aviso`) або `ir` + INF (`vou avisar`). Усі три нормальні. Futuro simples (`avisarei`) можливий і може мати формальніший відтінок.\n\nУ розмовному мовленні не слід вигадувати окрему «спрощену» форму futuro do conjuntivo: стандартна форма `quando eu chegar` зберігається. Варіативність, якщо вона з'являється, стосується інших аспектів конструкції та конкретного різновиду. `quando eu chegar lá, eu te ligo` — цілком стандартно. Не змішуйте `se` і `quando`: вони можуть бути близькими в окремих контекстах, але не є граматично взаємозамінними.",
     mistakes: [
       mistake(
         "Quando eu chegarei, ligo.",
@@ -660,7 +660,7 @@ export const pages: GrammarPage[] = [
       mistake(
         "Se eu seria chefe, mudava tudo.",
         "Se eu fosse chefe, mudava tudo.",
-        "Це вже не відкрите майбутнє, а гіпотеза — імперфект кон'юнктива, і ніколи condicional після `se`.",
+        "Це вже не відкрите майбутнє, а гіпотеза — імперфект кон'юнктива; у стандартній умовній конструкції `se` вводить саме цю форму, а condicional належить головній частині.",
       ),
       mistake(
         "Quando eu vir a Lisboa, aviso. (у значенні «приїду»)",
@@ -1323,7 +1323,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Заперечний імператив",
     titlePt: "Imperativo negativo",
     titleEn: "Negative imperative",
-    summary: "Завжди від presente do conjuntivo.",
+    summary: "Утворюється від відповідних форм presente do conjuntivo.",
     aliases: ["заперечний імператив", "não faças", "não fale", "imperativo negativo"],
     related: ["imperative-affirmative", "presente-subjuntivo", "clitics-imperative"],
     intro:
@@ -1434,7 +1434,7 @@ export const pages: GrammarPage[] = [
     aliases: ["імператив BR PT", "tu fala", "você fale", "imperativo regional"],
     related: ["tu-voce", "imperative-affirmative", "imperative-negative", "forms-of-address"],
     intro:
-      "Імператив неможливо відірвати від системи звертання. Де живе `tu`, живе `fala` / `não fales`. Де живе `você`, живе `fale` / `não fale`. Де `tu` узгоджується як `você` (частина Бразилії), форми змішуються: займенник `tu`, дієслово `fala` або навіть `fale`.\n\nЖоден різновид не «неправильний». Неправильний — змішати парадигму всередині одного речення без регіональної логіки (`você falas`) у стандартному тексті.",
+      "Імператив тісно пов'язаний із системою звертання. Де живе `tu`, живе `fala` / `não fales`. Де живе `você`, живе `fale` / `não fale`. Де `tu` узгоджується як `você` (частина Бразилії), форми змішуються: займенник `tu`, дієслово `fala` або навіть `fale`.\n\nЖоден різновид не «неправильний». Неправильний — змішати парадигму всередині одного речення без регіональної логіки (`você falas`) у стандартному тексті.",
     formulas: [
       {
         label: "PT-PT неформальне",

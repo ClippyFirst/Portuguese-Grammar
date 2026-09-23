@@ -14,20 +14,27 @@ function wikiHref(id: string): string | null {
   return topic ? topicHref(topic) : null;
 }
 
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function wikiAnchor(id: string, label: string): string {
   const href = wikiHref(id);
+  const safeLabel = escapeHtml(label);
   if (!href) {
-    return `<span class="font-medium text-ink">${label}</span>`;
+    return `<span class="font-medium text-ink">${safeLabel}</span>`;
   }
-  return `<a class="text-azulejo underline decoration-azulejo/30 underline-offset-2 hover:decoration-azulejo" href="${href}">${label}</a>`;
+  return `<a class="text-azulejo underline decoration-azulejo/30 underline-offset-2 hover:decoration-azulejo" href="${escapeHtml(href)}">${safeLabel}</a>`;
 }
 
 /** Lightweight markup: paragraphs split by blank lines; `*em*`; **strong**; `code`; [[id|label]] wiki-links. */
 export function toHtml(src: string): string {
-  const escaped = src
-    .replace(/&/g, "&")
-    .replace(/</g, "<")
-    .replace(/>/g, ">");
+  const escaped = escapeHtml(src);
   const withMarks = escaped
     .replace(/`([^`]+)`/g, '<code class="font-mono text-[0.9em] text-azulejo">$1</code>')
     .replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold text-ink">$1</strong>')

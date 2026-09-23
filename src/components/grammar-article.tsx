@@ -1,5 +1,6 @@
 import type { GrammarPage } from "@/content/types";
 import { CATEGORY_BY_SLUG } from "@/content/categories";
+import { topicHref, topicsInCategory } from "@/content/catalog";
 import { Breadcrumbs } from "./breadcrumbs";
 import { ExampleList } from "./example-block";
 import { ExampleCard } from "./example-block";
@@ -26,6 +27,14 @@ export function GrammarArticle({ page }: { page: GrammarPage }) {
       : page.category === "regional"
         ? "/regional"
         : `/pt/${page.category}`;
+  const categoryTopics = topicsInCategory(page.category);
+  const currentIndex = categoryTopics.findIndex((topic) => topic.id === page.id);
+  const previousTopic = currentIndex > 0 ? categoryTopics[currentIndex - 1] : null;
+  const nextTopic =
+    currentIndex >= 0 && currentIndex < categoryTopics.length - 1
+      ? categoryTopics[currentIndex + 1]
+      : null;
+
   const catLabel =
     page.category === "comparisons"
       ? "Порівняння"
@@ -68,7 +77,7 @@ export function GrammarArticle({ page }: { page: GrammarPage }) {
       {toc.length > 2 ? (
         <nav
           aria-label="Зміст сторінки"
-          className="mt-6 rounded-lg border border-line bg-surface px-4 py-3 sm:hidden"
+          className="mt-6 rounded-lg border border-line bg-surface px-4 py-3"
         >
           <p className="mb-2 font-mono text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-muted">
             На сторінці
@@ -190,6 +199,40 @@ export function GrammarArticle({ page }: { page: GrammarPage }) {
       ) : null}
 
       <RelatedTopics ids={page.related} />
+
+      {(previousTopic || nextTopic) ? (
+        <nav
+          aria-label="Навігація між темами"
+          className="mt-10 grid gap-2 border-t border-line pt-5 sm:grid-cols-2"
+        >
+          {previousTopic ? (
+            <a
+              href={topicHref(previousTopic)}
+              className="rounded-lg border border-line bg-surface px-4 py-3 transition-colors hover:border-azulejo"
+            >
+              <span className="block font-mono text-[0.68rem] uppercase tracking-[0.12em] text-muted">
+                ← Попередня тема
+              </span>
+              <span className="mt-1 block font-medium text-ink">
+                {previousTopic.titleUk}
+              </span>
+            </a>
+          ) : <span />}
+          {nextTopic ? (
+            <a
+              href={topicHref(nextTopic)}
+              className="rounded-lg border border-line bg-surface px-4 py-3 text-left transition-colors hover:border-azulejo sm:text-right"
+            >
+              <span className="block font-mono text-[0.68rem] uppercase tracking-[0.12em] text-muted">
+                Наступна тема →
+              </span>
+              <span className="mt-1 block font-medium text-ink">
+                {nextTopic.titleUk}
+              </span>
+            </a>
+          ) : null}
+        </nav>
+      ) : null}
     </article>
   );
 }

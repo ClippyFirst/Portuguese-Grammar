@@ -4,6 +4,8 @@ import { CategoryNavLink, TopicNavLink } from "@/components/topic-nav-link";
 import { CATEGORIES, GROUP_LABELS } from "@/content/categories";
 import { CATALOG, ESSENTIAL_IDS, TOPIC_BY_ID } from "@/content/catalog";
 
+const SITE_BASE = import.meta.env.BASE_URL;
+
 export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({
@@ -34,7 +36,7 @@ function Home() {
           Знайдіть конструкцію, побачте формулу, порівняйте PT-BR і PT-PT, зрозумійте, чому
           українська калька тут не працює.
         </p>
-        <form action="/search" className="mt-8">
+        <form action={`${SITE_BASE}search`} className="mt-8">
           <label htmlFor="home-search" className="sr-only">
             Пошук граматичної теми
           </label>

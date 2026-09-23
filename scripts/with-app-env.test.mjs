@@ -15,7 +15,18 @@ import {
 
 const execFileAsync = promisify(execFile);
 const WRAPPER = join(projectRoot(), "scripts/with-app-env.mjs");
-const PRINT_FLAG = "process.stdout.write(String(process.env.VITE_AUTH_ENABLED));";
+const PRINT_FLAG = "process.stdout.write(String(process.env.VITE_AUTH_ENABLED));"
+
+function tryCreateSymlink(t, target, link) {
+  try { symlinkSync(target, link); return true; }
+  catch (error) {
+    if (process.platform === "win32" && ["EPERM", "EACCES"].includes(error?.code)) {
+      t.skip("Windows does not permit this symlink in the current test environment");
+      return false;
+    }
+    throw error;
+  }
+};
 
 function makeWorkspace(appEnvJson) {
   const root = mkdtempSync(join(tmpdir(), "app-env-"));
@@ -113,11 +124,11 @@ test("a signal-killed command is never reported as success", async () => {
   );
 });
 
-test("the CLI still runs when invoked through a symlinked path", async () => {
+test("the CLI still runs when invoked through a symlinked path", async (t) => {
   // node realpaths import.meta.url but not process.argv[1], so a raw comparison
   // turns the wrapper into a no-op that exits 0 without starting anything.
   const link = join(mkdtempSync(join(tmpdir(), "app-env-link-")), "scripts");
-  symlinkSync(join(projectRoot(), "scripts"), link);
+  if (!tryCreateSymlink(t, join(projectRoot(), "scripts"), link)) return;
   const { stdout } = await execFileAsync(process.execPath, [
     join(link, "with-app-env.mjs"),
     process.execPath,

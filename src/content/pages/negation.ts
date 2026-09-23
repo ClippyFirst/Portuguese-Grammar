@@ -12,7 +12,7 @@ export const pages: GrammarPage[] = [
     aliases: ["não", "заперечення", "не"],
     related: ["double-negation", "proclisis", "clitic-placement"],
     intro:
-      "`Não` — основний маркер реченнєвого заперечення. Стоїть безпосередньо перед дієслівною групою: `Não sei.`, `Não estou a trabalhar.` / `Não estou trabalhando.`\n\nПеред клитиком `não` тягне проклізу: `Não me digas.` Це один із найжорсткіших тригерів colocação pronominal.\n\n`Não` також може заперечувати складник: `quero café, não chá`.",
+      "`Não` — основний маркер реченнєвого заперечення. Стоїть безпосередньо перед дієслівною групою: `Não sei.`, `Não estou a trabalhar.` / `Não estou trabalhando.`\n\nПеред клитиком `não` тягне проклізу: `Não me digas.` Це один із найжорсткіших тригерів colocação pronominal.\n\n`Não` також може заперечувати окремий складник: `Quero café, não chá`.",
     formulas: [
       { pattern: "NEG + V", negative: "não + V", note: "Клитик стоїть між não і дієсловом: não + CL + V." },
     ],
@@ -43,7 +43,7 @@ export const pages: GrammarPage[] = [
     aliases: ["ninguém", "nada", "nenhum", "ніхто", "ніщо"],
     related: ["double-negation", "indefinites", "negation-nao"],
     intro:
-      "`Ninguém`, `nada`, `nenhum/nenhuma` — заперечні квантори. Якщо вони стоять **після** дієслова, речення все одно потребує `não`: `Não vi ninguém.`\n\nЯкщо заперечне слово стоїть **перед** дієсловом, `não` не ставлять: `Ninguém veio.` Це і є negative concord, а не «подвійна помилка».",
+      "`Ninguém`, `nada`, `nenhum/nenhuma` — заперечні квантори. Якщо вони стоять **після** дієслова, речення все одно потребує `não`: `Não vi ninguém.`\n\nЯкщо заперечний елемент стоїть **перед** дієсловом, окреме `não` зазвичай не додається: `Ninguém veio.` Це одна з моделей negative concord, а не «подвійна помилка».",
     formulas: [
       { pattern: "NEG + V + ninguém/nada" },
       { pattern: "Ninguém/Nada + V", note: "Превербальна позиція замінює não." },
@@ -81,7 +81,7 @@ export const pages: GrammarPage[] = [
     aliases: ["nunca", "jamais", "nem", "ніколи"],
     related: ["ja-ainda", "negation-nao", "double-negation"],
     intro:
-      "`Nunca` — «ніколи». `Jamais` сильніше або книжніше, часто в обіцянках і клятвах. Обидва в превербальній позиції самі заперечують речення: `Nunca vi isso.` Після дієслова знову з'являється `não`: `Não vi isso nunca.`\n\n`Nem` — і «ні... ні», і додавання заперечення: `Nem eu sei.`",
+      "`Nunca` — «ніколи». `Jamais` сильніше або книжніше, часто в обіцянках і клятвах. Обидва в превербальній позиції самі заперечують речення: `Nunca vi isso.` У поствербальній позиції `nunca` може поєднуватися з `não`: `Não vi isso nunca.`\n\n`Nem` — і «ні... ні», і додавання заперечення: `Nem eu sei.`",
     examples: [
       { pt: "Nunca fui ao Brasil.", uk: "Я ніколи не був/була в Бразилії." },
       { pt: "Não volto jamais.", uk: "Я більше ніколи не повернуся." },
@@ -91,9 +91,9 @@ export const pages: GrammarPage[] = [
     markers: ["nunca", "jamais", "nem", "jamais jamais"],
     mistakes: [
       {
-        wrong: "Eu não ніколи vi.",
+        wrong: "Eu não nunca vi.",
         right: "Nunca vi. / Não vi nunca.",
-        why: "Часове заперечення виражається nunca/jamais, а не калькою «не ніколи».",
+        why: "Для значення «ніколи» вживають `nunca`/`jamais`; поєднання `não` з поствербальним `nunca` теж можливе, але має іншу позиційну модель і не є механічною калькою українського «не ніколи».",
       },
     ],
 
@@ -117,12 +117,12 @@ export const pages: GrammarPage[] = [
     uses: [
       {
         title: "Обов'язкове não при поствербальному кванторі",
-        body: "Якщо ninguém/nada/nunca стоять після дієслова, não перед дієсловом обов'язкове.",
+        body: "Для поствербальних `ninguém` і `nada` модель `não` перед дієсловом є стандартною. Для інших заперечних елементів позиція й поєднання з `não` залежать від конструкції та різновиду.",
         examples: [{ pt: "Não disse nada a ninguém.", uk: "Нікому нічого не сказав/сказала." }],
       },
       {
         title: "Ланцюжки заперечень",
-        body: "Можна комбінувати кілька елементів: вони підсилюють одне заперечення.",
+        body: "Кілька заперечних елементів можуть співіснувати в одному реченні й утворювати одне заперечне значення; конкретна комбінація залежить від їхньої синтаксичної позиції.",
         examples: [{ pt: "Nunca ninguém me explicou nada.", uk: "Ніхто мені ніколи нічого не пояснив." }],
       },
     ],

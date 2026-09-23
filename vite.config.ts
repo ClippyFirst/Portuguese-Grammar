@@ -145,7 +145,8 @@ function authPopupPlugin(): Plugin {
 // `0.0.0.0:8080` is the live-preview contract — don't change host/port.
 // The dev server starts once `src/router.tsx` and `src/routes/` exist — see
 // AGENTS.md § "First scaffold".
-export default defineConfig(({ command, isPreview }) => ({
+export default defineConfig(({ command, isPreview, mode }) => ({
+  base: mode === "github-pages" ? "/Portuguese-Grammar/" : "/",
   server: {
     host: "0.0.0.0",
     port: 8080,
@@ -163,11 +164,41 @@ export default defineConfig(({ command, isPreview }) => ({
     authPopupPlugin(),
     // Dev-only /__app-env, read by scripts/check-auth-invariant.mjs.
     appEnvPlugin(),
-    // PWA head + ?install=1 tutorial page; runs before Start/Nitro.
-    grokPwaPlugin(),
+    // Platform PWA chrome is not part of the GitHub Pages static artifact.
+    ...(mode === "github-pages" ? [] : [grokPwaPlugin()]),
     tailwindcss(),
-    tanstackStart(),
-    ...(command === "build" || isPreview
+    tanstackStart({
+      prerender:
+        mode === "github-pages"
+          ? {
+              enabled: true,
+              autoSubfolderIndex: true,
+              autoStaticPathsDiscovery: true,
+              crawlLinks: true,
+              concurrency: 8,
+              retryCount: 2,
+              failOnError: true,
+            }
+          : undefined,
+      pages:
+        mode === "github-pages"
+          ? [
+              "/",
+              "/pt",
+              "/search",
+              "/comparisons",
+              "/regional",
+              "/tables",
+            ].map((path) => ({
+              path,
+              prerender: {
+                enabled: true,
+                outputPath: path === "/" ? "/index.html" : path + "/index.html",
+              },
+            }))
+          : undefined,
+    }),
+    ...((command === "build" && mode !== "github-pages") || isPreview
       ? [
           nitro({
             preset: "vercel",

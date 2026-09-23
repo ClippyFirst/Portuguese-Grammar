@@ -111,10 +111,17 @@ function main(argv) {
     process.exit(2);
   }
   const env = mergeAppEnv(readAppEnv(projectRoot()), process.env);
+  // Avoid shell parsing for explicit executable paths on Windows. In
+  // particular, "C:\\Program Files\\nodejs\\node.exe" must not be split
+  // at the space. npm/pnpm/yarn shims still use the shell.
+  const needsWindowsShell =
+    process.platform === "win32" &&
+    !/^(?:[a-zA-Z]:[\\/]|[\\/]|\.\.?(?:[\\/]|$))/.test(command) &&
+    !/\.(?:cmd|bat)$/i.test(command);
   const child = spawn(command, args, {
     stdio: "inherit",
     env,
-    shell: process.platform === "win32",
+    shell: needsWindowsShell,
   });
   // The dev server is long-running and is stopped by signalling this wrapper.
   for (const signal of ["SIGINT", "SIGTERM", "SIGHUP"]) {
