@@ -693,8 +693,7 @@ Object.assign(SPECIAL, {
     mistakes: [{ wrong: "para = «для», por = «за» у всіх випадках.", right: "Визначити semantic relation конкретної конструкції.", why: "Обидва прийменники мають кілька продуктивних значень." }],
     ukrainian: "Українські «для, заради, через, по, до, на, щоб» розподіляють значення інакше; тому потрібне навчання за конструкціями.",
     learnerQuestions: ["Причина чи мета?", "Адресат чи бенефіціар?", "Напрямок чи траєкторія?", "Дедлайн чи тривалість?"]
-  }
-
+  },
   "pt-br-pt-pt": {
     formulas: [{ pattern: "PT-BR ↔ PT-PT → порівнювати систему за вимовою, займенниками, clitic placement, progressive, лексикою та регістром", note: "Різновиди мають спільне ядро, але не є взаємозамінними наборами правил." }],
     examples: [
@@ -1109,6 +1108,86 @@ Object.assign(SPECIAL, {
     ukrainian: "Не переносіть українську форму узгодження автоматично: у португальській важливі тип підмета, конструкція та лексикалізована модель.",
     learnerQuestions: ["Який тип підмета?", "Чи конструкція екзистенційна або часово-кількісна?", "Чи є нормативна варіантність?", "Що саме контролює число?"]
   },
+  "subjunctive-triggers-advanced": {
+    formulas: [{ pattern: "trigger + oração dependente → conjuntivo/indicativo according to semantics", note: "Не кожен сполучник автоматично визначає спосіб: важливі предикат, модальність, пресупозиція та тип залежності." }],
+    examples: [
+      { pt: "Duvido que ele venha.", uk: "Я сумніваюся, що він прийде." },
+      { pt: "Sei que ele vem.", uk: "Я знаю, що він приходить/прийде." },
+      { pt: "É possível que chova.", uk: "Можливо, що буде дощ." }
+    ],
+    mistakes: [{ wrong: "Ставити conjuntivo після кожної підрядної конструкції.", right: "Розрізняти факт, сумнів, оцінку, бажання та умову.", why: "Вибір способу залежить від семантики й синтаксичної рамки." }],
+    ukrainian: "Українські сполучники «що/щоб» не кодують тієї самої морфологічної опозиції. Аналізуйте ставлення мовця до пропозиції.",
+    learnerQuestions: ["Це факт, сумнів, бажання, оцінка чи умова?", "Що саме є trigger?", "Чи є presupposition?", "Чи вибір змінюється в іншому різновиді або конструкції?"]
+  },
+  "conditional-clauses-advanced": {
+    formulas: [{ pattern: "se + protasis → apodosis", note: "Тип умови взаємодіє з часом, способом і реальністю/гіпотетичністю ситуації." }],
+    examples: [
+      { pt: "Se tiver tempo, vou contigo.", uk: "Якщо матиму час, піду з тобою." },
+      { pt: "Se tivesse tempo, iria contigo.", uk: "Якби мав/мала час, пішов/пішла б із тобою." },
+      { pt: "Se tivesse estudado, teria passado.", uk: "Якби я вчився/вчилася, склав/склала б." }
+    ],
+    ukrainian: "Українське «якщо/якби» не передає всіх часово-модальних відмінностей португальської. Розрізняйте відкриту умову, гіпотезу та нереальну минулу умову.",
+    learnerQuestions: ["Умова відкрита чи гіпотетична?", "Яка часова точка?", "Де protasis і де apodosis?", "Чи потрібен futuro do conjuntivo або imperfeito do conjuntivo?"]
+  },
+  "comparatives-advanced": {
+    formulas: [{ pattern: "mais/menos/tão + Adj/Adv + que/como", note: "Порівняльна конструкція має власну синтаксичну рамку; не перекладайте прийменники механічно." }],
+    examples: [
+      { pt: "Ela é mais alta do que eu.", uk: "Вона вища за мене." },
+      { pt: "Ele trabalha tão bem como ela.", uk: "Він працює так само добре, як вона." },
+      { pt: "Este livro é menos caro que aquele.", uk: "Ця книжка дешевша за ту." }
+    ],
+    ukrainian: "Українська часто виражає порівняння відмінком або іншою конструкцією. У португальській важливі сполучник і тип порівняння.",
+    learnerQuestions: ["Що порівнюється?", "Яка шкала: більше, менше чи рівність?", "Який тип complement?", "Чи конструкція має лексикалізовану форму?"]
+  },
+  "clefts-advanced": {
+    formulas: [{ pattern: "ser + constituent + que/quem → cleft / focus construction", note: "Cleft виділяє компонент як фокус; це не просто перестановка слів." }],
+    examples: [
+      { pt: "Foi a Maria que comprou o livro.", uk: "Саме Марія купила книжку." },
+      { pt: "Foi ontem que ele chegou.", uk: "Саме вчора він прийшов." }
+    ],
+    ukrainian: "Українська може виражати фокус інтонацією та порядком слів без обов'язкової копії cleft-моделі. Не перекладайте структуру дослівно.",
+    learnerQuestions: ["Який constituent є focus?", "Яка інформація presupposed?", "Чи потрібен cleft, чи достатня звичайна конструкція?", "Який регістр?"]
+  },
+  "participle-agreement": {
+    formulas: [{ pattern: "ser/estar/ficar + particípio → agreement determined by construction", note: "Пасив із ser та результативні конструкції мають інші властивості, ніж ter/haver + particípio." }],
+    examples: [
+      { pt: "As cartas foram escritas.", uk: "Листи були написані." },
+      { pt: "As portas estão fechadas.", uk: "Двері зачинені." },
+      { pt: "Tenho escrito muitas cartas.", uk: "Я написав/написувала багато листів останнім часом." }
+    ],
+    mistakes: [{ wrong: "Узгоджувати participle з підметом після ter.", right: "Tenho escrito muitas cartas.", why: "У конструкції ter + particípio participle не узгоджується з прямим додатком як у пасиві ser." }],
+    ukrainian: "Українська має інші моделі дієприкметникового узгодження. Вчіть португальську форму разом із допоміжним дієсловом.",
+    learnerQuestions: ["Який auxiliary?", "Це пасив, resultative чи compound tense?", "З чим узгоджується participle?", "Чи є variant participle?"]
+  },
+  "gerund-functions": {
+    formulas: [{ pattern: "gerúndio → progressive / manner / simultaneous circumstance", note: "Gerúndio не обмежується конструкцією estar + gerúndio." }],
+    examples: [
+      { pt: "Entrou sorrindo.", uk: "Він/вона увійшов/увійшла, усміхаючись." },
+      { pt: "Saiu correndo.", uk: "Він/вона вибіг/вибігла." },
+      { pt: "Está estudando.", uk: "Він/вона зараз навчається.", variety: "BR" }
+    ],
+    ukrainian: "Український дієприслівник частково допомагає зрозуміти gerúndio, але функціональна сфера не збігається повністю.",
+    learnerQuestions: ["Gerúndio є частиною прогресиву чи обставинною формою?", "Хто є implicit subject?", "Який зв'язок між двома подіями?", "Який різновид Portuguese?"]
+  },
+  "coordination-ellipsis": {
+    formulas: [{ pattern: "A + conector + Ø → ellipsis recoverable from context", note: "Еліпсис у сурядних конструкціях не означає випадкове пропущення: компонент відновлюється з попередньої структури." }],
+    examples: [
+      { pt: "Eu fui ao Porto e ela a Lisboa.", uk: "Я поїхав/поїхала до Порту, а вона — до Лісабона." },
+      { pt: "Uns estudam; outros trabalham.", uk: "Одні навчаються, інші працюють." }
+    ],
+    ukrainian: "Українська також активно використовує еліпсис, тому головна пастка — не переклад, а неправильне відновлення пропущеного компонента.",
+    learnerQuestions: ["Що саме пропущено?", "Чи відновлюється воно однозначно?", "Чи зберігається паралелізм?", "Чи змінюється акцент/контраст?"]
+  },
+  "que-complementizer": {
+    formulas: [{ pattern: "matrix predicate + que + finite clause", note: "que як complementizer не виконує роль відносного займенника; його функція визначається структурою." }],
+    examples: [
+      { pt: "Acho que ele vem.", uk: "Я думаю, що він прийде." },
+      { pt: "É possível que chova.", uk: "Можливо, що буде дощ." }
+    ],
+    mistakes: [{ wrong: "Вважати que в кожному реченні відносним займенником.", right: "Acho que ele vem.", why: "Тут que вводить доповнювальну підрядну частину, а не займає синтаксичну роль всередині неї." }],
+    ukrainian: "Українське «що» так само може бути сполучником, тому це хороша зона для позитивного переносу — але синтаксичну роль все одно треба перевірити.",
+    learnerQuestions: ["Чи que має роль усередині підрядної?", "Чи вводить воно complement clause?", "Який matrix predicate?", "Чи потрібен прийменник de перед que?"]
+  },
   "register-and-directness": {
     formulas: [{ pattern: "форма + дистанція + комунікативна мета → регістр", note: "Одна функція може мати нейтральну, розмовну, формальну та непряму реалізацію." }],
     examples: [
@@ -1120,6 +1199,36 @@ Object.assign(SPECIAL, {
     learnerQuestions: ["Хто до кого звертається?", "Яка соціальна дистанція?", "Це прохання, наказ чи пропозиція?", "Чи форма відповідає потрібному регістру?"]
   }
 };
+
+const SPECIAL_ALIASES: Record<string, string> = {
+  "subjunctive-triggers": "subjunctive-triggers-advanced",
+  "conditional-clauses": "conditional-clauses-advanced",
+  "comparatives": "comparatives-advanced",
+  "clefts": "clefts-advanced",
+  "clitic-combinations": "clitic-clusters",
+  "clitics-infinitive": "clitic-climbing",
+  "clitics-gerund": "gerund-functions",
+  "ellipsis": "coordination-ellipsis",
+  "que-de-que": "que-complementizer",
+  "advanced-relatives": "advanced-relatives",
+  "determiners-overview": "determiners-overview",
+  "scope-and-reference": "scope-and-reference",
+  "vowels-phonetics": "vowels-phonetics",
+  "stress-phonology": "stress-phonology",
+  "punctuation": "punctuation",
+  "capitalization": "capitalization-and-names",
+  "register-and-directness": "register-and-directness",
+  "aspect-overview": "aspect-overview",
+  "modality-overview": "modality-overview",
+  "quantifiers-overview": "quantifiers-overview",
+  "adjective-government": "adjective-government",
+  "government-overview": "government-overview",
+  "argument-vs-adjunct": "argument-vs-adjunct",
+  "generic-reference": "generic-reference",
+};
+for (const [id, alias] of Object.entries(SPECIAL_ALIASES)) {
+  if (SPECIAL[alias]) SPECIAL[id] = SPECIAL[alias];
+}
 
 function genericLayer(meta: (typeof CATALOG)[number]): LearnerLayer {
   const common: Record<string, LearnerLayer> = {
