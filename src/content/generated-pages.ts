@@ -173,6 +173,61 @@ const SPECIAL: Record<string, LearnerLayer> = {
     examples: [{ pt: "É importante estudarmos.", uk: "Важливо, щоб ми вчилися." }, { pt: "Antes de saíres, liga.", uk: "Перед тим як вийдеш, зателефонуй." }],
     ukrainian: "Українська часто використає «щоб/коли/перед тим як» там, де португальська може використати особовий інфінітив.",
   },
+  "se-pronominal": {
+    formulas: [{ pattern: "verbo pronominal + se → parte da valência lexical", note: "У прономінальних дієсловах se не слід трактувати як звичайний прямий додаток; його наявність пов'язана з лексичною моделлю дієслова." }],
+    examples: [
+      { pt: "Ele queixou-se do barulho.", uk: "Він поскаржився на шум.", variety: "PT" },
+      { pt: "Lembro-me desse dia.", uk: "Я пам'ятаю той день.", variety: "PT" }
+    ],
+    mistakes: [{ wrong: "Вважати queixar-se просто рефлексивним «скаржити себе».", right: "Вчити queixar-se як лексему з її керуванням.", why: "se тут є частиною дієслівної моделі, а не буквальним позначенням рефлексивного об'єкта." }],
+    ukrainian: "Український переклад часто не має окремого займенника, тому тип se треба визначати за португальською лексемою та її валентністю.",
+    learnerQuestions: ["Чи змінюється значення без se?", "Який прийменник вибирає дієслово?", "Це справжня рефлексія чи лексична модель?"]
+  },
+  "se-middle": {
+    formulas: [{ pattern: "se + intransitivized/anticausative event → change of state without overt agent", note: "Медіальне/антикаузативне se не тотожне пасивному se: конструкція описує подію або зміну стану без вираженого агенса." }],
+    examples: [
+      { pt: "A porta abriu-se.", uk: "Двері відчинилися.", variety: "PT" },
+      { pt: "O vidro partiu-se.", uk: "Скло розбилося.", variety: "PT" }
+    ],
+    ukrainian: "Українська має власні антикaузативні моделі на -ся/-ся, але відповідність не механічна. Питайте, чи речення описує результат/зміну стану, а не пасивну дію над пацієнсом.",
+    learnerQuestions: ["Чи можна природно назвати іменник пацієнсом пасивної конструкції?", "Чи описується зміна стану?", "Чи виражений агент?"]
+  },
+  "se-agreement": {
+    formulas: [{ pattern: "se-passive: V agrees with patient NP; impersonal se: finite V remains 3sg", note: "Ключ до розрізнення — синтаксична структура, особливо наявність прийменникового complement і можливість пасивної парафрази." }],
+    examples: [
+      { pt: "Vendem-se casas.", uk: "Будинки продаються.", note: "3-я особа множини узгоджується з casas." },
+      { pt: "Precisa-se de funcionários.", uk: "Потрібні працівники.", note: "3-я особа однини; de funcionários не є підметом пасивної конструкції." }
+    ],
+    mistakes: [{ wrong: "Vende-se casas. як автоматично нормативний пасив.", right: "Vendem-se casas. / Precisa-se de funcionários.", why: "Необхідно спочатку визначити тип se-конструкції; у пасивному se дієслово узгоджується з пацієнсом." }],
+    ukrainian: "Український переклад «потрібні/продаються» не показує португальського механізму. Перевіряйте узгодження та прийменникову рамку.",
+    learnerQuestions: ["Що є граматичним підметом?", "Чи має complement прийменник de?", "Яке число дієслова очікується в цій конструкції?"]
+  },
+  "clitics-infinitive": {
+    formulas: [{ pattern: "para + infinitive: para o ver / infinitive + clitic: vê-lo", note: "Позиція клітики біля інфінітива залежить від конструкції та різновиду; обидві моделі не є взаємозамінними в кожному контексті." }],
+    examples: [
+      { pt: "Para o ver, fui cedo.", uk: "Щоб його побачити, я прийшов/прийшла рано.", variety: "PT" },
+      { pt: "Fui cedo para vê-lo.", uk: "Я прийшов/прийшла рано, щоб його побачити.", variety: "PT" }
+    ],
+    ukrainian: "Не копіюйте позицію українського займенника. Спочатку визначте прийменникову конструкцію та тип інфінітива.",
+    learnerQuestions: ["Чи є перед інфінітивом прийменник?", "Який різновид португальської описується?", "Чи клітика приєднана до інфінітива чи стоїть перед ним?"]
+  },
+  "clitics-gerund": {
+    formulas: [{ pattern: "gerund + clitic / clitic + gerund according to construction and variety", note: "Розподіл позицій залежить від синтаксичної конструкції та нормативної моделі конкретного різновиду." }],
+    examples: [
+      { pt: "Estando-lhe grato, agradeci.", uk: "Будучи йому вдячним/вдячною, я подякував/подякувала.", variety: "PT" }
+    ],
+    ukrainian: "Позиція клітики з герундієм не копіює українську. Для навчання аналізуйте конструкцію як ціле, а не окремо перекладайте gerúndio та займенник.",
+    learnerQuestions: ["Який статус має gerúndio в реченні?", "Який елемент керує позицією клітики?", "Чи описується PT-BR чи PT-PT?"]
+  },
+  "clitics-imperative": {
+    formulas: [{ pattern: "affirmative imperative + clitic → enclisis; negative imperative → proclisis", note: "Негативна й ствердна форми наказового способу мають різні моделі позиції клітики." }],
+    examples: [
+      { pt: "Diz-me a verdade.", uk: "Скажи мені правду.", variety: "PT" },
+      { pt: "Não me digas isso.", uk: "Не кажи мені цього.", variety: "PT" }
+    ],
+    ukrainian: "Українська не має тотожної системи clitic placement, тому корисно вчити наказовий спосіб разом із позицією займенника.",
+    learnerQuestions: ["Наказ ствердний чи заперечний?", "Який різновид і регістр описується?", "Чи є елемент, що тригерує próclise?"]
+  },
   "articles-ukrainian": {
     formulas: [{ pattern: "означеність → o/a/os/as; введення → um/uma/uns/umas; Ø у лексикалізованих моделях", note: "Українська не має артиклів, тому визначеність часто виражається контекстом." }],
     examples: [{ pt: "Entrou um homem.", uk: "Увійшов чоловік." }, { pt: "O homem sentou-se.", uk: "Чоловік сів." }, { pt: "Sou médica.", uk: "Я лікарка." }],
@@ -1739,10 +1794,8 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "estar-participle": "participle-agreement",
   "se-overview": "se-system",
   "se-reflexive": "se-system",
-  "se-pronominal": "se-system",
   "se-impersonal": "se-system",
   "se-passive": "se-system",
-  "se-agreement": "se-system",
   "word-order": "subject-object-order",
   "subject-placement": "subject-object-order",
   "topicalization": "subject-object-order",
@@ -1783,7 +1836,6 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "reflexive-pronouns": "se-system",
   "indefinites": "reference-overview",
   "interrogative-pronouns": "question-word-order",
-  "clitics-imperative": "clitic-placement",
   "prepositions-overview": "government-overview",
   "compound-prepositions": "government-overview",
   "coordinating": "subordination-and-coordination",
@@ -1819,7 +1871,6 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "ir-infinitive": "periphrases",
   "other-periphrases": "periphrases",
   "se-reciprocal": "se-system",
-  "se-middle": "se-system",
   "nominalization": "nominalization-advanced",
   "stress-phonology": "stress",
   "parts-of-speech": "parts-of-speech-advanced",
