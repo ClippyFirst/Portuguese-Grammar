@@ -235,6 +235,34 @@ const SPECIAL: Record<string, LearnerLayer> = {
   },
 };
 
+
+Object.assign(SPECIAL, {
+  "articles-definite": SPECIAL["articles-ukrainian"],
+  "articles-indefinite": {
+    formation: "um/uma/uns/umas вводять референт як новий або неідентифікований у дискурсі; їхній вибір залежить від роду, числа та референції.",
+    learnerQuestions: ["Чи референт новий для слухача?", "Чи потрібна саме одинична/множинна неозначеність?", "Чи конструкція має кількісне або стилістичне значення?"],
+  },
+  "zero-article": {
+    formation: "Відсутність артикля — частина граматики, а не автоматична помилка. Перевіряйте іменну групу, референцію, власну назву та сталі моделі.",
+    learnerQuestions: ["Чи це масова/абстрактна речовина або загальне поняття?", "Чи власна назва допускає артикль у цій нормі?", "Чи це лексикалізована конструкція?"],
+  },
+  "articles-proper-names": SPECIAL["articles-ukrainian"],
+  "relative-que": SPECIAL["relative-pronouns"],
+  "relative-cujo": SPECIAL["relative-pronouns"],
+  "relative-quem": SPECIAL["relative-pronouns"],
+  "se-passive": SPECIAL["se-system"],
+  "se-impersonal": SPECIAL["se-system"],
+  "se-pronominal": SPECIAL["se-system"],
+  "clitic-pronouns": SPECIAL["clitic-placement"],
+  "proclisis": SPECIAL["clitic-placement"],
+  "enclisis": SPECIAL["clitic-placement"],
+  "mesoclisis": SPECIAL["clitic-placement"],
+  "tense-aspect": SPECIAL["tenses"],
+  "tense-vs-ukrainian": SPECIAL["tenses"],
+  "subjunctive-present": SPECIAL["subjunctive-overview"],
+  "subjunctive-imperfect": SPECIAL["subjunctive-overview"],
+});
+
 function genericLayer(meta: (typeof CATALOG)[number]): LearnerLayer {
   const common: Record<string, LearnerLayer> = {
     fundamentals: { ukrainian: "Починайте з функції категорії в реченні. Українська має відмінки й іншу систему дієслівного виду, тому поверхневий переклад часто приховує справжню граматичну різницю." },
