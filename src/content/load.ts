@@ -1,5 +1,6 @@
 import type { GrammarPage } from "./types";
 import { TOPIC_BY_PATH, type TopicMeta } from "./catalog";
+import { generatedPageFor } from "./generated-pages";
 
 const loaders = import.meta.glob("./pages/*.ts") as Record<
   string,
@@ -81,7 +82,7 @@ export async function loadPage(
   const direct = byPath.get(`${category}/${slug}`);
   if (direct) return direct;
   const pages = await loadCategoryPages(category);
-  return pages.find((p) => p.slug === slug || p.id === slug) ?? null;
+  return pages.find((p) => p.slug === slug || p.id === slug) ?? generatedPageFor(category, slug);
 }
 
 export async function loadPageById(id: string): Promise<GrammarPage | null> {

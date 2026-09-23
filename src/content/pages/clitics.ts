@@ -826,6 +826,46 @@ PT-PT письмо: у цих контекстах *Ele chamou-me*, *Chama-me de
       ["умовний", "Dir-se-ia.", "Não se diria."],
     ], scroll: true }],
     exceptions: "Mesóclise не означає «усюди в PT-PT». Це насамперед формальний писемний ресурс. У сучасному PT-BR вона значно обмеженіша в живому мовленні.",
+      ex("Dir-me-á a verdade, ao menos?", "Він мені хоч правду скаже?", {
+        register: "literary",
+      }),
+      ex("Convidar-nos-iam, se tivessem lugar.", "Вони запросили б нас, якби було місце.", {
+        register: "formal",
+      }),
+      ex("Fá-lo-ei assim que puder.", "Я зроблю це, щойно зможу.", {
+        register: "formal",
+      }),
+      ex("Pôr-se-ia a chover de um momento para o outro.", "Щомиті могло піти дощем.", {
+        register: "literary",
+      }),
+      ex("Ele vai me dizer a verdade.", "Він мені скаже правду.", {
+        variety: "BR",
+      }),
+      ex("Há de dizer-me a verdade.", "Він мені таки скаже правду.", {
+        variety: "PT",
+        register: "formal",
+      }),
+    ],
+    tables: [
+      {
+        caption: "Схема dir + me в майбутньому і умовному",
+        headers: ["Особа", "Futuro", "Condicional"],
+        rows: [
+          ["eu", "dir-me-ei", "dir-me-ia"],
+          ["tu", "dir-me-ás", "dir-me-ias"],
+          ["ele / você", "dir-me-á", "dir-me-ia"],
+          ["nós", "dir-me-emos", "dir-me-íamos"],
+          ["vós", "dir-me-eis", "dir-me-íeis"],
+          ["eles / vocês", "dir-me-ão", "dir-me-iam"],
+        ],
+        note: "Те саме з te, se, lhe, nos, vos; з o/a — di-lo-á, fá-lo-ia.",
+      },
+    ],
+    exceptions: `Мезокліза не утворюється від складених часів: немає *ter-me-á dito як обов'язкової сучасної форми в мовленні; пишуть \`ter-me-á dito\` ще в дуже формальному PT-PT, але частіше \`há de me ter dito\` / \`me terá dito\` / \`terá me dito\`. Не утворюється від \`ir + INF\`: *vai-me-á dizer не існує.
+
+Неправильні основи треба вчити окремо: *fazer → far-* (far-lhe-ei, не *fazer-lhe-ei), *dizer → dir-*, *trazer → trar-*, *pôr → por-\` / \`pôr-\` (pôr-se-á).
+
+Подвійний клитик у мезоклізі (*enviar-lho-emos*) формально можливий і майже не зустрічається поза пародією на канцелярит.`,
     mistakes: [
       mistake("Não dir-me-á a verdade.", "Não me dirá a verdade.", "Заперечення є тригером проклізи."),
       mistake("Dir-me-á. (як нейтральна щоденна розмова)", "У розмові частіше використовують іншу конструкцію.", "Mesóclise має формальніший розподіл."),

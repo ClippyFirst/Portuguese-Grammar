@@ -1,5 +1,5 @@
 {
-  "name": "app-builder-workspace",
+  "name": "portuguese-grammar-reference",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -28,6 +28,8 @@
     "generate:static:sitemap": "node scripts/generate-static-sitemap.mjs",
     "qa:static:smoke": "node scripts/qa-static-site.mjs",
     "qa:static": "npm run build:github-pages:ci && npm run qa:static:smoke"
+    "audit:content": "node scripts/content-audit.mjs",
+    "qa:static": "npm run typecheck && npm run lint && npm run audit:content && npm run build"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.5.4",
