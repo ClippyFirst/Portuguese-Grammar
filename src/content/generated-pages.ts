@@ -215,7 +215,7 @@ ominal": {
     examples: [{ pt: "Quero que venhas.", uk: "Я хочу, щоб ти прийшов/прийшла." }, { pt: "É possível que chova.", uk: "Можливо, буде дощ." }, { pt: "Se tiver tempo, vou.", uk: "Якщо матиму час, піду." }],
     learnerQuestions: ["Чи є головне речення джерелом волі, оцінки, сумніву або іншої модальності?", "Чи має підрядна дія власний підмет?", "Чи потрібен conjuntivo, infinitivo або indicativo за конкретним сполучником/дієсловом?"],
   },
-rogressive-br-pt": {
+"progressive-br-pt": {
     exceptions: "Розподіл gerúndio та a + infinitivo не означає, що одна модель «правильна», а друга «неправильна». Йдеться про системні переваги різновидів.",
     learnerQuestions: ["Чи описую PT-BR, PT-PT чи інший різновид?", "Чи справді значення прогресивне, а не просто тривале/аспектуальне?", "Чи потрібна форма estar або інша перифраза?"],
   },
@@ -477,6 +477,7 @@ Object.assign(SPECIAL, {
 });
 
 
+Object.assign(SPECIAL, {
   "ter": {
     formulas: [{ pattern: "ter + nome → posse / relação; ter + particípio → tempo composto; ter de/que + infinitivo → obrigação", note: "A função de ter depende da construção: não reduza ter ao verbo ucraniano «мати»." }],
     formation: "Distinga o verbo lexical ter, o auxiliar dos tempos compostos e as perífrases ter de / ter que. Na construção existencial, compare também ter com haver e considere a variedade.",
@@ -1727,7 +1728,7 @@ Object.assign(SPECIAL, {
     ],
     ukrainian: "Українська теж має вказівні займенники, але не має тотожної системи contracted forms; аналізуйте склад форми.",
     learnerQuestions: ["Який прийменник входить до форми?", "Який демонстратив і його рід/число?", "Чи є тут окрема crase?"]
-  },,
+  },
 
   "purpose-clauses": {
     formulas: [{ pattern: "para + infinitivo ↔ para que + conjuntivo", note: "Обидві конструкції виражають мету, але мають різну синтаксичну будову. Вибір залежить, зокрема, від референції суб'єкта та структури речення." }],
@@ -2049,6 +2050,70 @@ for (const [id, alias] of Object.entries(SPECIAL_ALIASES)) {
   if (SPECIAL[alias]) SPECIAL[id] = SPECIAL[alias];
 }
 
+Object.assign(SPECIAL, {
+  "verb-valency-frames": {
+    formulas: [{ pattern: "V + arguments → valency frame", note: "Описуйте дієслово через кількість і тип аргументів, їхні синтаксичні ролі та форму complement." }],
+    formation: "Для кожного дієслова визначте предикат, вибрані аргументи, тип кожного complement, прийменник за потреби, альтернативні рамки та різновид/регістр.",
+    examples: [
+      { pt: "Ela deu um livro ao João.", uk: "Вона дала книжку Жуану." },
+      { pt: "Ela colocou o livro na mesa.", uk: "Вона поклала книжку на стіл." },
+      { pt: "Ele gosta de música.", uk: "Він любить музику." }
+    ],
+    mistakes: [{ wrong: "Вважати всі компоненти після дієслова однаковими «додатками».", right: "Розрізняти прямий додаток, адресата, прийменниковий аргумент і вільний модифікатор.", why: "Аргументна структура визначається лексемою та конструкцією, а не лише позицією компонента." }],
+    ukrainian: "Український відмінок часто стискає відмінності, які португальська розгортає через прийменники та окремі займенникові форми. Вчіть дієслово разом із повною рамкою.",
+    learnerQuestions: ["Скільки аргументів вибирає дієслово?", "Яка синтаксична роль кожного аргументу?", "Яка форма complement: NP, PP, finite clause чи infinitivo?", "Чи рамка змінюється разом зі значенням дієслова?"]
+  },
+  "verb-ditransitive-frames": {
+    formulas: [{ pattern: "V + coisa + a + pessoa → transferred object + recipient", note: "Дитранзитивна рамка не означає, що другий компонент завжди можна описати одним універсальним терміном «непрямий додаток»." }],
+    examples: [
+      { pt: "Dei o livro ao João.", uk: "Я дав/дала книжку Жуану." },
+      { pt: "Disse a verdade à Maria.", uk: "Я сказав/сказала правду Марії." },
+      { pt: "Perguntei a resposta ao professor.", uk: "Я запитав/запитала відповідь у викладача." }
+    ],
+    mistakes: [{ wrong: "Завжди замінювати a + pessoa на lhe.", right: "Спершу визначати синтаксичну роль і конкретну дієслівну рамку.", why: "lhe часто реалізує дативний/непрямий компонент, але не кожна конструкція з a поводиться однаково." }],
+    ukrainian: "Українські відмінки можуть передавати адресата без португальського a. Тому корисно вчити dar, dizer, perguntar разом із ролями їхніх аргументів.",
+    learnerQuestions: ["Що передається або повідомляється?", "Хто є адресатом?", "Чи можна замінити адресата клітикою lhe/lhes у цій моделі?", "Чи не змінюється рамка при зміні значення дієслова?"]
+  },
+  "verb-complement-types": {
+    formulas: [{ pattern: "V + NP / PP / que-clause / infinitivo → complement type", note: "Форма доповнення є частиною валентної моделі; одна лексема може допускати кілька типів complement із різними умовами." }],
+    examples: [
+      { pt: "Acho a resposta correta.", uk: "Я вважаю відповідь правильною." },
+      { pt: "Acho que ele vem.", uk: "Я думаю, що він прийде." },
+      { pt: "Quero estudar.", uk: "Я хочу вчитися." },
+      { pt: "Quero que ele estude.", uk: "Я хочу, щоб він учився." }
+    ],
+    mistakes: [{ wrong: "Вважати que універсальним маркером будь-якого доповнення.", right: "Розрізняти NP, PP, finite complement clause та infinitivo.", why: "Тип complement залежить від предиката, структури й відношення між суб'єктами." }],
+    ukrainian: "Українські «що/щоб» можуть перекривати кілька португальських моделей. Спочатку визначте тип доповнення та суб'єктну структуру.",
+    learnerQuestions: ["Який тип complement використано?", "Чи має підрядна частина власного підмета?", "Чи можливий infinitivo?", "Чи змінюється значення при зміні типу complement?"]
+  },
+  "verb-clitic-frames": {
+    formulas: [{ pattern: "argument role → clitic form → placement", note: "Форма o/a/os/as не є просто версією lhe/lhes: спочатку встановіть роль аргументу, а потім вибирайте займенникову форму." }],
+    examples: [
+      { pt: "Vi-o ontem.", uk: "Я бачив/бачила його вчора.", variety: "PT" },
+      { pt: "Telefonei-lhe ontem.", uk: "Я зателефонував/зателефонувала йому вчора.", variety: "PT" },
+      { pt: "Dei-lho ontem.", uk: "Я дав/дала йому це вчора.", variety: "PT", register: "formal" }
+    ],
+    mistakes: [{ wrong: "Вибирати lhe лише тому, що українською переклад має «йому/їй».", right: "Визначати роль аргументу та рамку дієслова перед вибором клітики.", why: "Український відмінок не є прямою таблицею португальських clitics." }],
+    ukrainian: "Українські форми «його/йому» дають корисний контраст, але португальські o/a/os/as і lhe/lhes розподіляються за синтаксичною роллю та лексичною моделлю.",
+    brPt: "У PT-BR повні форми ele/ela як прямий додаток поширені в розмовній мові; у формальнішому мовленні та в PT-PT клітичні форми мають інший розподіл. Потрібно вказувати різновид і регістр.",
+    learnerQuestions: ["Це прямий, дативний чи інший аргумент?", "Яка клітика відповідає цій ролі в цільовому різновиді?", "Де розміщується клітика в цій конструкції?", "Чи є кластер із двох клітик?"]
+  },
+  "verb-meaning-alternations": {
+    formulas: [{ pattern: "meaning 1 + frame 1 ↔ meaning 2 + frame 2", note: "Полісемічне дієслово треба вчити через зв'язок значення та синтаксичної рамки." }],
+    examples: [
+      { pt: "Assisti ao concerto.", uk: "Я був/була на концерті." },
+      { pt: "Assisti o doente.", uk: "Я доглядав/доглядала хворого." },
+      { pt: "Lembro-me do nome.", uk: "Я пам'ятаю ім'я." },
+      { pt: "Lembrei o nome.", uk: "Я згадав/згадала ім'я." }
+    ],
+    mistakes: [{ wrong: "Вчити один прийменник як незмінну властивість усіх значень дієслова.", right: "Запам'ятовувати значення разом із frame.", why: "Зміна значення може супроводжуватися зміною аргументної структури або прийменника." }],
+    ukrainian: "Українська також має полісемічні дієслова з різним керуванням. Для порівняння важливо зіставляти значення й рамку, а не окремі перекладні слова.",
+    learnerQuestions: ["Яке значення дієслова активне?", "Які аргументи воно вибирає в цьому значенні?", "Чи змінюється прийменник або тип complement?", "Чи є форма регіонально або стилістично маркованою?"]
+  }
+});
+
+});
+
 function genericLayer(meta: (typeof CATALOG)[number]): LearnerLayer {
   const common: Record<string, LearnerLayer> = {
     fundamentals: { ukrainian: "Починайте з функції категорії в реченні. Українська має відмінки й іншу систему дієслівного виду, тому поверхневий переклад часто приховує справжню граматичну різницю." },
@@ -2194,3 +2259,5 @@ export function enrichPage(page: GrammarPage): GrammarPage {
     intro: page.intro + diagnostic,
   };
 }
+
+
