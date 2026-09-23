@@ -331,6 +331,32 @@ Object.assign(SPECIAL, {
   },
 });
 
+
+Object.assign(SPECIAL, {
+  "proclisis": {
+    formation: "Próclise ставить clitic перед дієсловом. У стандартній моделі її викликають певні синтаксичні елементи й конструкції; PT-BR має ширший живий ужиток próclise, особливо в розмовній мові.",
+    examples:[{pt:"Não me disseram nada.",uk:"Мені нічого не сказали."},{pt:"Quem te contou isso?",uk:"Хто тобі це сказав?"},{pt:"Eu me lembro disso.",uk:"Я це пам'ятаю.",variety:"BR"}],
+    mistakes:[{wrong:"Não disseram-me nada.",right:"Não me disseram nada.",why:"Заперечення não перед дієсловом є типовим тригером próclise."}],
+    learnerQuestions:["Який елемент перед дієсловом є тригером?","Чи це PT-BR чи PT-PT?","Чи приклад належить до формальної письмової норми чи живого мовлення?"],
+  },
+  "enclisis": {
+    formation: "Ênclise приєднує clitic після дієслова через дефіс: disse-me, viu-o, faça-se. Її роль і продуктивність залежать від синтаксичної позиції, різновиду та регістру; не називайте кожну postverbal форму «європейською», не уточнивши контекст.",
+    examples:[{pt:"Disse-me a verdade.",uk:"Він сказав мені правду.",variety:"PT",register:"formal"},{pt:"Diga-me o seu nome.",uk:"Скажіть мені ваше ім'я.",variety:"PT"}],
+    learnerQuestions:["Чи немає попереднього тригера próclise?","Який регістр і стандарт?","Чи форма стоїть після особового дієслова, інфінітива або gerúndio?"],
+  },
+  "mesoclisis": {
+    formation: "Mesóclise вставляє clitic усередину синтетичного futuro do indicativo або condicional: dir-lhe-ei, far-se-ia. Це високоформальна/книжна модель і не слід подавати її як звичайну розмовну конструкцію.",
+    examples:[{pt:"Dir-lhe-ei amanhã.",uk:"Я скажу йому/їй завтра.",register:"formal"},{pt:"Far-se-ia uma exceção.",uk:"Було б зроблено виняток.",register:"formal"}],
+    mistakes:[{wrong:"Я використовую mesóclise у звичайному чаті.",right:"У розмовній мові зазвичай обирається інша конструкція залежно від різновиду.",why:"Mesóclise має виразно формальний регістр."}],
+    learnerQuestions:["Чи це справді futuro/condicional?","Чи потрібен такий формальний регістр?","Чи не природніша perifrástica конструкція?"],
+  },
+  "clitics-br-pt": {
+    formation: "Для PT-BR треба розділяти письмову стандартну норму, освічене мовлення та розмовні моделі. Próclise дуже продуктивна в живій мові; повні форми ele/ela також широко конкурують із o/a.",
+    examples:[{pt:"Eu te vi ontem.",uk:"Я бачив/бачила тебе вчора.",variety:"BR"},{pt:"Eu vi ele ontem.",uk:"Я бачив/бачила його вчора.",variety:"BR",register:"colloquial"},{pt:"Eu o vi ontem.",uk:"Я бачив/бачила його вчора.",variety:"BR",register:"formal"}],
+    learnerQuestions:["Який саме шар PT-BR я описую?","Чи приклад призначений для формального письма чи розмови?","Чи повний займенник конкурує з clitic?"],
+  },
+});
+
 function genericLayer(meta: (typeof CATALOG)[number]): LearnerLayer {
   const common: Record<string, LearnerLayer> = {
     fundamentals: { ukrainian: "Починайте з функції категорії в реченні. Українська має відмінки й іншу систему дієслівного виду, тому поверхневий переклад часто приховує справжню граматичну різницю." },
