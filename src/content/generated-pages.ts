@@ -477,7 +477,6 @@ Object.assign(SPECIAL, {
 });
 
 
-Object.assign(SPECIAL, {
   "ter": {
     formulas: [{ pattern: "ter + nome → posse / relação; ter + particípio → tempo composto; ter de/que + infinitivo → obrigação", note: "A função de ter depende da construção: não reduza ter ao verbo ucraniano «мати»." }],
     formation: "Distinga o verbo lexical ter, o auxiliar dos tempos compostos e as perífrases ter de / ter que. Na construção existencial, compare também ter com haver e considere a variedade.",
@@ -1877,8 +1876,6 @@ Object.assign(SPECIAL, {
 
 };
 
-});
-
 const SPECIAL_ALIASES: Record<string, string> = {
   "subjunctive-triggers": "subjunctive-triggers-advanced",
   "conditional-clauses": "conditional-clauses-advanced",
@@ -2259,6 +2256,8 @@ export function enrichPage(page: GrammarPage): GrammarPage {
     intro: page.intro + diagnostic,
   };
 }
+
+
 
 
 
