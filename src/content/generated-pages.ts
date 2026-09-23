@@ -536,6 +536,28 @@ Object.assign(SPECIAL, {
     ukrainian: "Українські відмінки приховують прийменникове керування, тому лексему краще вчити разом із рамкою.",
     learnerQuestions: ["Який прийменник вибирає дієслово?", "Чи змінюється рамка залежно від значення дієслова?", "Чи contracted form потрібна перед артиклем?"]
   },
+  "complement-clauses": {
+    formulas: [{ pattern: "matrix predicate + complement clause → infinitive or que + finite clause", note: "Вибір залежить від валентності предиката, кореференції суб'єктів, контролю та типу конструкції." }],
+    examples: [
+      { pt: "Acho que ele vem.", uk: "Я думаю, що він прийде." },
+      { pt: "Quero estudar.", uk: "Я хочу вчитися." },
+      { pt: "Quero que ele estude.", uk: "Я хочу, щоб він учився." }
+    ],
+    mistakes: [{ wrong: "Вважати, що після кожного дієслова автоматично ставиться que.", right: "Перевіряти модель конкретного предиката: querer + infinitivo, querer que + conjuntivo.", why: "Португальська розрізняє структури за суб'єктом і валентністю предиката." }],
+    ukrainian: "Українське «що/щоб» не визначає португальську форму автоматично. Спершу визначте тип доповнення та його суб'єкт.",
+    learnerQuestions: ["Це іменне чи реченнєве доповнення?", "Чи збігаються суб'єкти?", "Який предикат керує підрядною?", "Чи потрібен conjuntivo?"]
+  },
+  "advanced-complement-clauses": {
+    formulas: [{ pattern: "predicate + preposition + infinitive/que-clause → complement frame", note: "Складні доповнювальні конструкції треба вчити разом із прийменником, способом і відношенням між суб'єктами." }],
+    examples: [
+      { pt: "Insisto em que estudes.", uk: "Я наполягаю, щоб ти вчився/вчилася.", variety: "PT" },
+      { pt: "Insisto em estudar mais.", uk: "Я наполягаю на тому, щоб більше вчитися." },
+      { pt: "Duvido que ele venha.", uk: "Я сумніваюся, що він прийде." }
+    ],
+    mistakes: [{ wrong: "Insisto que estudes.", right: "Insisto em que estudes.", why: "У цій моделі insistir вимагає прийменникового complement." }],
+    ukrainian: "В українській прийменник може зникати через іншу синтаксичну модель. Тому португальський predicative frame треба запам'ятовувати цілком.",
+    learnerQuestions: ["Який прийменник керує complement?", "Чи complement має власного суб'єкта?", "Чи потрібен conjuntivo?", "Чи можливий infinitivo?"]
+  },
   "questions-yesno": {
     formulas: [{ pattern: "декларативне речення + інтонація / interrogative syntax", note: "PT-BR часто використовує висхідну інтонацію без обов'язкової інверсії; PT-PT також має інші стратегії, включно з інверсією в окремих моделях." }],
     examples: [
