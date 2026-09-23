@@ -1480,6 +1480,70 @@ Object.assign(SPECIAL, {
   }
 };
 
+  "noun-gender": {
+    formulas: [{ pattern: "artigo/determinante + nome → gênero; concordância → marcação de gênero em outros elementos", note: "O gênero é propriedade lexical e gramatical do nome; não se infere de modo confiável apenas pela terminação." }],
+    examples: [
+      { pt: "o mapa", uk: "карта" },
+      { pt: "a foto", uk: "фотографія" },
+      { pt: "o problema", uk: "проблема" }
+    ],
+    mistakes: [{ wrong: "a mapa", right: "o mapa", why: "Рід португальського іменника не визначається українським родом; mapa є іменником чоловічого роду." }],
+    ukrainian: "Український рід може не збігатися з португальським. Вивчайте новий іменник разом з артиклем або іншою формою, що явно показує рід.",
+    learnerQuestions: ["Який граматичний рід має саме португальське слово?", "Чи є форма винятковою або лексикалізованою?", "Що в реченні має узгодитися з іменником?"]
+  },
+  "noun-number": {
+    formulas: [{ pattern: "singular ↔ plural → number of the nominal referent", note: "Множина має морфологічні моделі й лексикалізовані винятки; не зводьте її до одного суфікса." }],
+    examples: [
+      { pt: "livro → livros", uk: "книга → книги" },
+      { pt: "mês → meses", uk: "місяць → місяці" },
+      { pt: "pão → pães", uk: "хліб → хліби" }
+    ],
+    mistakes: [{ wrong: "mêses", right: "meses", why: "Множина mês утворюється за моделлю mês → meses." }],
+    ukrainian: "Українська теж має однину й множину, але португальські моделі множини треба засвоювати за типом закінчення та словом.",
+    learnerQuestions: ["Яка модель множини працює для цього закінчення?", "Чи форма регулярна?", "Чи змінюється наголос або написання?"]
+  },
+  "object-pronouns": {
+    formulas: [{ pattern: "direct object: me/te/o/a/nos/vos/os/as; indirect object: me/te/lhe/nos/vos/lhes → syntactic role + government", note: "Повні набори й розподіл форм залежать від різновиду та регістру." }],
+    examples: [
+      { pt: "Vi-o ontem.", uk: "Я бачив/бачила його вчора.", variety: "PT" },
+      { pt: "Eu vi ele ontem.", uk: "Я бачив/бачила його вчора.", variety: "BR", register: "colloquial" },
+      { pt: "Telefonei-lhe ontem.", uk: "Я зателефонував/зателефонувала йому вчора.", variety: "PT" }
+    ],
+    mistakes: [{ wrong: "Telefonei-o ontem.", right: "Telefonei-lhe ontem.", why: "У цій стандартній моделі telefonear вимагає непрямого додатка lhe; керування треба перевіряти для конкретного значення та різновиду." }],
+    ukrainian: "Українські «його/йому» корисні як контраст, але не визначають португальську форму автоматично: спочатку встановіть синтаксичну роль і керування.",
+    learnerQuestions: ["Це прямий чи непрямий додаток?", "Який займенниковий тип приймає дієслово?", "Який різновид і регістр моделюється?"]
+  },
+  "alphabet": {
+    formulas: [{ pattern: "letra → nome gráfico; letra + contexto → leitura", note: "Алфавіт і правила читання — різні рівні: назва літери не передбачає її вимову в кожному слові." }],
+    examples: [
+      { pt: "a, b, c", uk: "a, b, c; назви літер" },
+      { pt: "casa", uk: "дім; c перед a має /k/" },
+      { pt: "gente", uk: "люди; g перед e має іншу реалізацію, ніж у gato" }
+    ],
+    ukrainian: "Не переносіть українське правило «літера = звук». Спочатку вивчіть назви літер, потім позиційні правила читання.",
+    learnerQuestions: ["Це назва літери чи її звук у слові?", "Який контекст визначає читання?", "Чи є різниця між PT-BR і PT-PT у вимові?"]
+  },
+  "sentence-basics": {
+    formulas: [{ pattern: "S + V + O → basic clause; constituents may be displaced for information structure", note: "SVO є базовою моделлю, а не правилом про незмінний порядок усіх компонентів." }],
+    examples: [
+      { pt: "A Maria comprou o livro.", uk: "Марія купила книжку." },
+      { pt: "A Maria comprou o livro ontem.", uk: "Марія купила книжку вчора." },
+      { pt: "O livro foi comprado pela Maria.", uk: "Книжку купила Марія / Книжка була куплена Марією." }
+    ],
+    ukrainian: "Українська завдяки відмінкам допускає ширшу перестановку компонентів. У португальській базовий порядок сильніше взаємодіє з синтаксисом та інформаційною структурою.",
+    learnerQuestions: ["Де підмет, присудок і додаток?", "Який порядок є базовим?", "Чи перестановка має інформаційно-структурну причину?"]
+  },
+  "spelling-br-pt": {
+    formulas: [{ pattern: "Acordo Ortográfico + national usage → spelling choice", note: "Не кожна різниця BR/PT є простою різницею «до/після реформи»: частина варіантів зберігається через вимову або національну норму." }],
+    examples: [
+      { pt: "fato / facto", uk: "факт / факт", variety: "BR" },
+      { pt: "ação", uk: "дія" },
+      { pt: "receção / recepção", uk: "приймання / прийом; залежно від стандарту й вимови", variety: "PT" }
+    ],
+    mistakes: [{ wrong: "Усі PT-BR/PT-PT відмінності після угоди — помилки.", right: "Перевіряти конкретну форму в потрібному національному стандарті.", why: "Орфографічна угода гармонізує частину написань, але не скасовує всю національну варіантність." }],
+    ukrainian: "Для навчання завжди вказуйте, який національний стандарт моделюється; не називайте нормативну варіантність «помилкою».",
+    learnerQuestions: ["Це спільне написання чи дозволений/національний варіант?", "Чи пов'язана різниця з вимовою?", "Який стандарт потрібен у цьому контексті?"]
+  },
 const SPECIAL_ALIASES: Record<string, string> = {
   "subjunctive-triggers": "subjunctive-triggers-advanced",
   "conditional-clauses": "conditional-clauses-advanced",
@@ -1554,17 +1618,12 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "existential": "null-and-expletive-subjects",
   "impersonal-constructions": "null-and-expletive-subjects",
   "agent-expression": "passive",
-  "sentence-basics": "subject-object-order",
   "null-subject": "null-and-expletive-subjects",
-  "alphabet": "phonetics-overview",
   "reading-rules": "consonants-phonetics",
   "diacritics": "accentuation-advanced",
   "homograph-accents": "accentuation-advanced",
   "capitalization": "capitalization-and-names",
-  "spelling-br-pt": "acordo-ortografico",
-  "noun-gender": "agreement-na",
   "gender-vs-ukrainian": "articles-ukrainian",
-  "noun-number": "agreement-na",
   "plural-formation": "agreement-na",
   "common-epicene": "agreement-na",
   "professions-gender": "agreement-na",
@@ -1576,7 +1635,6 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "ja-ainda": "modal-particles",
   "adverb-position": "subject-object-order",
   "forms-of-address": "politeness",
-  "object-pronouns": "personal-pronouns",
   "direct-object": "personal-pronouns",
   "indirect-object": "lhe-vs-o",
   "prepositional-pronouns": "personal-pronouns",
