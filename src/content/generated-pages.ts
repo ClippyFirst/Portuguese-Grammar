@@ -1750,8 +1750,6 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "comparatives": "comparatives-advanced",
   "clefts": "clefts-advanced",
   "clitic-combinations": "clitic-clusters",
-  "clitics-infinitive": "clitic-climbing",
-  "clitics-gerund": "gerund-functions",
   "ellipsis": "coordination-ellipsis",
   "que-de-que": "que-complementizer",
   "advanced-relatives": "advanced-relatives",
