@@ -62,6 +62,12 @@ const ROWS: Row[] = [
   ["government-overview", "valency", "government", "Керування: дієслово + прийменник", "Regência verbal", "Verb government", "Коли прийменник є частиною лексичної моделі дієслова.", "керування,regência verbal,government,verb-preposition", "valency-overview,verb-preposition,prep-por,prep-para", "high"],
   ["argument-vs-adjunct", "valency", "argument-vs-adjunct", "Аргумент чи обставина?", "Complemento ou modificador?", "Argument vs adjunct", "Як відрізняти вибрані предикатом компоненти від вільних модифікаторів.", "аргумент,обставина,adjunct,complemento", "valency-overview,government-overview,word-order", "high"],
 
+  ["verb-valency-frames", "valency", "verb-valency-frames", "Валентні рамки дієслів", "Quadros de valência verbal", "Verb valency frames", "Аргументи дієслова, типи complement і повні моделі керування.", "валентні рамки,verb valency,valência verbal,argument structure", "valency-overview,government-overview,verb-complement-types", "high"],
+  ["verb-ditransitive-frames", "valency", "verb-ditransitive-frames", "Дитранзитивні рамки", "Quadros ditransitivos", "Ditransitive frames", "Моделі передавання, повідомлення, адресата та інших двохаргументних конструкцій.", "дитранзитивні,ditransitive,адресат,argument structure", "verb-valency-frames,indirect-object,verb-clitic-frames", "high"],
+  ["verb-complement-types", "valency", "verb-complement-types", "Типи дієслівних доповнень", "Tipos de complementos verbais", "Verb complement types", "NP, PP, підрядна частина та інфінітив у валентних моделях.", "типи доповнень,complement types,NP,PP,infinitivo", "verb-valency-frames,complement-clauses,verb-government-infinitive", "high"],
+  ["verb-clitic-frames", "valency", "verb-clitic-frames", "Валентність і клітики", "Valência e clíticos", "Valency and clitics", "Зв'язок аргументної ролі, форми клітики та її позиції.", "клітики,clitic,valency,lhe,o/a", "verb-valency-frames,lhe-vs-o,clitic-placement", "high"],
+  ["verb-meaning-alternations", "valency", "verb-meaning-alternations", "Зміна рамки зі зміною значення", "Alternâncias de regência e significado", "Meaning and valency alternations", "Полісемія, різні аргументні структури та прийменникові рамки.", "зміна керування,полісемія,alternâncias,meaning frames", "verb-valency-frames,verb-preposition,false-friends", "high"],
+
 
   ["sentence-basics", "fundamentals", "sentence-basics", "Базова структура речення", "Estrutura da frase", "Basic sentence structure", "Підмет, присудок, додатки й базовий порядок SVO.", "речення,SVO,підмет,присудок,frase", "null-subject,word-order,parts-of-speech", "medium"],
   ["parts-of-speech", "fundamentals", "parts-of-speech", "Частини мови", "Classes de palavras", "Parts of speech", "Змінні й незмінні частини мови в португальській.", "частини мови,морфологія,classes de palavras", "sentence-basics,noun-gender,verb-system", "short"],
@@ -401,3 +407,5 @@ export const COMPARISON_IDS = [
   "a-vs-crase",
   "pt-br-pt-pt",
 ] as const;
+
+
