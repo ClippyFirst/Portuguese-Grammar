@@ -1777,7 +1777,6 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "comparatives": "comparatives-advanced",
   "clitic-pronouns": "clitic-placement",
   "clitic-combinations": "clitic-clusters",
-  "clitics-gerund": "gerund-functions",
   "crase-rules": "crase",
   "a-vs-crase": "crase",
   "indicative-vs-subjunctive": "subjunctive-overview",
