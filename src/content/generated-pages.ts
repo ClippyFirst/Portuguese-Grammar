@@ -119,7 +119,7 @@ const SPECIAL: Record<string, LearnerLayer> = {
     mistakes: [{ wrong: "Sou cansado.", right: "Estou cansado.", why: "Для актуального стану cansado типовим є estar." }],
     ukrainian: "Не перекладайте українське «бути» одним португальським дієсловом: спершу встановіть семантику предиката.",
   },
-u-voce-regional": {
+  "tu-voce-regional": {
     formulas: [{ pattern: "tu + 2-а особа; você + 3-я особа", note: "Розподіл tu/você є соціально й регіонально варіантним; у деяких зонах можливе змішування займенника та дієслівного узгодження." }],
     examples: [
       { pt: "Tu sabes a resposta.", uk: "Ти знаєш відповідь.", note: "2-а особа в узгодженні." },
@@ -135,7 +135,7 @@ u-voce-regional": {
     examples: [{ pt: "Vi-o ontem.", uk: "Я бачив/бачила його вчора." }, { pt: "Telefonei-lhe ontem.", uk: "Я зателефонував/зателефонувала йому вчора.", variety: "PT" }],
     ukrainian: "Український відмінок не дає готової відповіді на португальське керування: вчіть дієслово разом із його моделлю.",
   },
-ominal": {
+  "nominal": {
     formulas: [{ pattern: "verbo pronominal + se → parte da valência lexical", note: "У прономінальних дієсловах se не слід трактувати як звичайний прямий додаток; його наявність пов'язана з лексичною моделлю дієслова." }],
     examples: [
       { pt: "Ele queixou-se do barulho.", uk: "Він поскаржився на шум.", variety: "PT" },
