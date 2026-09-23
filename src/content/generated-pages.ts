@@ -1188,6 +1188,86 @@ Object.assign(SPECIAL, {
     ukrainian: "Українське «що» так само може бути сполучником, тому це хороша зона для позитивного переносу — але синтаксичну роль все одно треба перевірити.",
     learnerQuestions: ["Чи que має роль усередині підрядної?", "Чи вводить воно complement clause?", "Який matrix predicate?", "Чи потрібен прийменник de перед que?"]
   },
+  "agreement-edge-cases": {
+    formulas: [{ pattern: "agreement target = syntactic structure + number/person + construction", note: "Підмет, quantifier, collective noun і postposed subject можуть давати різні моделі узгодження; не зводьте все до найближчого іменника." }],
+    examples: [
+      { pt: "A maioria dos alunos chegou cedo.", uk: "Більшість студентів прийшла рано." },
+      { pt: "A maioria dos alunos chegaram cedo.", uk: "Більшість студентів прийшли рано.", register: "colloquial" },
+      { pt: "Fui eu que fiz isso.", uk: "Це я зробив/зробила це." }
+    ],
+    mistakes: [{ wrong: "Завжди узгоджувати дієслово з найближчим іменником.", right: "A maioria dos alunos chegou cedo.", why: "Структура підмета та тип узгодження важливіші за лінійну близькість." }],
+    ukrainian: "Українське узгодження теж має складні випадки, але моделі не збігаються автоматично. Особливо перевіряйте колективні й кількісні підмети.",
+    learnerQuestions: ["Яка голова підметової групи?", "Чи є кількісний/колективний вираз?", "Чи це звичайне чи семантичне узгодження?", "Чи існує варіантність за регістром?"]
+  },
+  "null-and-expletive-subjects": {
+    formulas: [{ pattern: "referential null subject ≠ expletive subject ≠ impersonal construction", note: "Португальська дозволяє нульовий референтний підмет у багатьох контекстах, але це не означає наявності прихованого «воно» в безособових конструкціях." }],
+    examples: [
+      { pt: "Cheguei cedo.", uk: "Я прийшов/прийшла рано." },
+      { pt: "Há muita gente aqui.", uk: "Тут багато людей." },
+      { pt: "Está frio hoje.", uk: "Сьогодні холодно." }
+    ],
+    ukrainian: "Українська також допускає нульовий підмет, але механізм португальського pro-drop не тотожний українському. Не вставляйте займенник лише тому, що в перекладі він є.",
+    learnerQuestions: ["Підмет референтний чи безособовий?", "Чи його можна відновити з морфології?", "Чи потрібен expletive?", "Яка конструкція виражає погоду/існування/подію?"]
+  },
+  "subject-object-order": {
+    formulas: [{ pattern: "SVO → neutral; marked order → information structure / discourse", note: "Відхилення від SVO треба пояснювати фокусом, топіком, синтаксичною конструкцією або дискурсом." }],
+    examples: [
+      { pt: "A Maria comprou o livro.", uk: "Марія купила книжку." },
+      { pt: "O livro, a Maria comprou ontem.", uk: "Книжку Марія купила вчора." },
+      { pt: "Foi a Maria que comprou o livro.", uk: "Саме Марія купила книжку." }
+    ],
+    ukrainian: "Українська має значно вільніший порядок слів завдяки відмінковому маркуванню. У португальській позиція аргументів частіше взаємодіє із синтаксисом та інформаційною структурою.",
+    learnerQuestions: ["Який порядок нейтральний?", "Що є topic/focus?", "Чи зміна порядку змінює інтерпретацію?", "Чи це topicalization, cleft або звичайний порядок?"]
+  },
+  "subordination-and-coordination": {
+    formulas: [{ pattern: "coordenação → рівноправні компоненти; subordinação → залежна предикація", note: "Сполучник не є єдиним критерієм: дивіться на синтаксичну залежність і можливість окремої предикації." }],
+    examples: [
+      { pt: "Estudei e fiz o teste.", uk: "Я навчався/навчалася і склав/склала тест." },
+      { pt: "Estudei porque tinha um teste.", uk: "Я навчався/навчалася, бо мав/мала тест." },
+      { pt: "Quero que ele venha.", uk: "Я хочу, щоб він прийшов." }
+    ],
+    ukrainian: "Українські моделі сурядності й підрядності дають добрий старт, але португальська має власні сполучники, способи та інфінітивні конструкції.",
+    learnerQuestions: ["Чи компоненти рівноправні?", "Яка частина залежить від іншої?", "Який тип підрядності?", "Який спосіб/інфінітив потрібен у залежній частині?"]
+  },
+  "discourse-reference": {
+    formulas: [{ pattern: "referent → introduction → maintenance → tracking → reactivation", note: "Артиклі, займенники, повтори й нульові форми працюють разом для відстеження референта." }],
+    examples: [
+      { pt: "Vi um homem. O homem entrou no café.", uk: "Я побачив/побачила чоловіка. Чоловік зайшов у кафе." },
+      { pt: "A Maria chegou. Ela estava cansada.", uk: "Марія прийшла. Вона була втомлена." }
+    ],
+    ukrainian: "Українська також має анафору та нульові форми, тому корисно порівнювати стратегії підтримання референта, а не лише артиклі окремо.",
+    learnerQuestions: ["Референт новий чи вже активний?", "Чи потрібен артикль?", "Чи займенник потрібен для контрасту/ясності?", "Чи можна залишити підмет нульовим?"]
+  },
+  "accentuation-advanced": {
+    formulas: [{ pattern: "stress + syllable structure + hiatus/diphthong + orthographic rules → accent mark when required", note: "Акцент не ставиться «за звучанням»: треба визначити наголошений склад і тип слова." }],
+    examples: [
+      { pt: "país / pais", uk: "країна / батьки" },
+      { pt: "pôde / pode", uk: "зміг/змогла / може" },
+      { pt: "saída / saíra", uk: "вихід / вийшов/вийшла (mais-que-perfeito simples)" }
+    ],
+    ukrainian: "Український наголос не дає португальського правила постановки акценту. Особливо уважно вивчайте hiato, дифтонги та омографічні контрасти.",
+    learnerQuestions: ["Де наголос?", "Hiato чи дифтонг?", "Чи accent mark є обов'язковим?", "Чи акцент розрізняє граматичні форми?"]
+  },
+  "hyphenation": {
+    formulas: [{ pattern: "prefix/compound + base → hyphen according to orthographic convention", note: "Правила дефіса залежать від морфемної межі, початкової літери наступного компонента та конкретної лексеми." }],
+    examples: [
+      { pt: "guarda-chuva", uk: "парасоля" },
+      { pt: "ex-presidente", uk: "колишній президент" },
+      { pt: "dar-lhe-ei", uk: "я дам йому/їй (формально)" }
+    ],
+    ukrainian: "Не переносіть український дефіс механічно: португальський дефіс пов'язаний з окремими орфографічними й морфосинтаксичними моделями.",
+    learnerQuestions: ["Це складне слово, prefix + base чи clitic?", "Яка норма після Acordo Ortográfico?", "Чи дефіс є обов'язковим?", "Чи це окрема лексема?"]
+  },
+  "capitalization-and-names": {
+    formulas: [{ pattern: "proper-name convention + genre/register → capitalization choice", note: "Власні назви, посади, географічні назви й назви свят мають різні конвенції; не переносіть українську капіталізацію автоматично." }],
+    examples: [
+      { pt: "o presidente da República", uk: "президент Республіки" },
+      { pt: "segunda-feira", uk: "понеділок" },
+      { pt: "Brasil, Portugal, Lisboa", uk: "Бразилія, Португалія, Лісабон" }
+    ],
+    ukrainian: "Українська та португаломовні орфографічні конвенції частково різняться. Перевіряйте назву, жанр і чинну норму, а не лише «чи це важливе слово».",
+    learnerQuestions: ["Це власна чи загальна назва?", "Який жанр/тип документа?", "Яка чинна орфографічна норма?", "Чи є усталена назва?"]
+  },
   "register-and-directness": {
     formulas: [{ pattern: "форма + дистанція + комунікативна мета → регістр", note: "Одна функція може мати нейтральну, розмовну, формальну та непряму реалізацію." }],
     examples: [
