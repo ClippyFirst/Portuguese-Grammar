@@ -1124,7 +1124,7 @@ Object.assign(SPECIAL, {
     examples: [
       { pt: "Se tiver tempo, vou contigo.", uk: "Якщо матиму час, піду з тобою." },
       { pt: "Se tivesse tempo, iria contigo.", uk: "Якби мав/мала час, пішов/пішла б із тобою." },
-      { pt: "Se tivesse estudado, teria passado.", uk: "Якби я вчився/вчилася, склав/склала б." }
+      { pt: "Se tivesse estudado, teria passado.", uk: "Якби я вчився/вчилася, я склав/склала б іспит." }
     ],
     ukrainian: "Українське «якщо/якби» не передає всіх часово-модальних відмінностей португальської. Розрізняйте відкриту умову, гіпотезу та нереальну минулу умову.",
     learnerQuestions: ["Умова відкрита чи гіпотетична?", "Яка часова точка?", "Де protasis і де apodosis?", "Чи потрібен futuro do conjuntivo або imperfeito do conjuntivo?"]
