@@ -1877,6 +1877,8 @@ Object.assign(SPECIAL, {
 
 };
 
+});
+
 const SPECIAL_ALIASES: Record<string, string> = {
   "subjunctive-triggers": "subjunctive-triggers-advanced",
   "conditional-clauses": "conditional-clauses-advanced",
@@ -2112,8 +2114,6 @@ Object.assign(SPECIAL, {
   }
 });
 
-});
-
 function genericLayer(meta: (typeof CATALOG)[number]): LearnerLayer {
   const common: Record<string, LearnerLayer> = {
     fundamentals: { ukrainian: "Починайте з функції категорії в реченні. Українська має відмінки й іншу систему дієслівного виду, тому поверхневий переклад часто приховує справжню граматичну різницю." },
@@ -2259,5 +2259,7 @@ export function enrichPage(page: GrammarPage): GrammarPage {
     intro: page.intro + diagnostic,
   };
 }
+
+
 
 
