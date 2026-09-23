@@ -2067,7 +2067,7 @@ Object.assign(SPECIAL, {
     examples: [
       { pt: "Dei o livro ao João.", uk: "Я дав/дала книжку Жуану." },
       { pt: "Disse a verdade à Maria.", uk: "Я сказав/сказала правду Марії." },
-      { pt: "Perguntei a resposta ao professor.", uk: "Я запитав/запитала відповідь у викладача." }
+      { pt: "Expliquei o problema ao professor.", uk: "Я пояснив/пояснила проблему викладачеві." }
     ],
     mistakes: [{ wrong: "Завжди замінювати a + pessoa на lhe.", right: "Спершу визначати синтаксичну роль і конкретну дієслівну рамку.", why: "lhe часто реалізує дативний/непрямий компонент, але не кожна конструкція з a поводиться однаково." }],
     ukrainian: "Українські відмінки можуть передавати адресата без португальського a. Тому корисно вчити dar, dizer, perguntar разом із ролями їхніх аргументів.",
@@ -2256,6 +2256,8 @@ export function enrichPage(page: GrammarPage): GrammarPage {
     intro: page.intro + diagnostic,
   };
 }
+
+
 
 
 
