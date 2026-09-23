@@ -551,6 +551,150 @@ Object.assign(SPECIAL, {
     brPt: "Окремі відмінності, як fato/facto, пов'язані з вимовою та національним стандартом і не зводяться до простої «старої/нової орфографії»."
   }
 
+  "subjunctive-present": {
+    formulas: [{ pattern: "que + presente do conjuntivo → vontade, dúvida, avaliação, necessidade, finalidade, condição não factual", note: "O conjuntivo não é simplesmente «tempo de incerteza»: a seleção depende da construção e da modalidade." }],
+    examples: [
+      { pt: "Espero que venhas amanhã.", uk: "Сподіваюся, що ти прийдеш завтра." },
+      { pt: "É importante que estudes todos os dias.", uk: "Важливо, щоб ти щодня вчився/вчилася.", variety: "PT" },
+      { pt: "Talvez ele venha amanhã.", uk: "Можливо, він прийде завтра." }
+    ],
+    mistakes: [{ wrong: "Espero que vem amanhã.", right: "Espero que venha amanhã.", why: "Після конструкції esperança + que в стандартній моделі потрібен conjuntivo." }],
+    ukrainian: "Українське «щоб», умовні конструкції та модальні слова допомагають зрозуміти функцію, але не передбачають механічної відповідності форм.",
+    learnerQuestions: ["Що саме вибирає conjuntivo?", "Це залежність від іншої предикації чи самостійне модальне значення?", "Чи змінився час/референція, чи лише модальність?"]
+  },
+  "subjunctive-imperfect": {
+    formulas: [{ pattern: "pretérito imperfeito do conjuntivo → умова, гіпотеза, залежність у минулому, бажання", note: "Типова модель форми походить від 3-ї особи множини pretérito perfeito." }],
+    examples: [
+      { pt: "Se eu tivesse tempo, viajaria mais.", uk: "Якби я мав/мала час, я б більше подорожував/подорожувала." },
+      { pt: "Queria que ele viesse.", uk: "Я хотів/хотіла, щоб він прийшов." },
+      { pt: "Se estudasses mais, aprenderias mais.", uk: "Якби ти більше вчився/вчилася, ти б більше навчився/навчилася.", variety: "PT" }
+    ],
+    mistakes: [{ wrong: "Se eu teria tempo, viajaria.", right: "Se eu tivesse tempo, viajaria.", why: "У стандартній умовній конструкції protasis використовує imperfeito do conjuntivo, а apodosis — condicional." }],
+    ukrainian: "Українська умовність теж розрізняє передумову й наслідок, але форми не збігаються з португальськими.",
+    learnerQuestions: ["Яка частина речення є умовою?", "Чи йдеться про гіпотезу, бажання або залежність у минулому?", "Чи потрібно розрізняти simultaneidade та anterioridade?"]
+  },
+  "futuro-subjuntivo": {
+    formulas: [{ pattern: "se/quando/logo que/assim que + futuro do conjuntivo → майбутня умова/часова залежність", note: "Форма особливо важлива для реальних або відкритих майбутніх ситуацій." }],
+    examples: [
+      { pt: "Quando chegares, liga-me.", uk: "Коли приїдеш, подзвони мені.", variety: "PT" },
+      { pt: "Se tiveres tempo, vem comigo.", uk: "Якщо матимеш час, ходи зі мною.", variety: "PT" },
+      { pt: "Quando você chegar, me avise.", uk: "Коли приїдеш/приїдете, дай/дайте мені знати.", variety: "BR" }
+    ],
+    mistakes: [{ wrong: "Quando chegarás, liga-me.", right: "Quando chegares, liga-me.", why: "Після майбутнього часового/умовного маркера потрібен futuro do conjuntivo, а не futuro do indicativo." }],
+    ukrainian: "Українська не має прямого морфологічного аналога futuro do conjuntivo; переклад часто використовує звичайний майбутній час.",
+    learnerQuestions: ["Чи подія ще не відбулася?", "Чи є вона умовою/часовою передумовою?", "Чи є підрядна частина відкритою щодо майбутнього виконання?"]
+  },
+  "personal-infinitive": {
+    formulas: [{ pattern: "infinitivo pessoal → infinitivo з власним/відновлюваним суб'єктом", note: "Форма не є просто «ще одним минулим часом» і не замінює автоматично будь-яку підрядну конструкцію." }],
+    examples: [
+      { pt: "É importante estudarmos.", uk: "Важливо, щоб ми вчилися." },
+      { pt: "Antes de saíres, fecha a porta.", uk: "Перед тим як вийти, зачини двері.", variety: "PT" },
+      { pt: "É melhor eles ficarem aqui.", uk: "Краще, щоб вони залишилися тут." }
+    ],
+    mistakes: [{ wrong: "Personal infinitive потрібен у кожному реченні з «щоб».", right: "É importante estudar. / É importante estudarmos.", why: "Вибір залежить від референції, синтаксису, контролю суб'єкта та стилю." }],
+    ukrainian: "Українське підрядне з «щоб» часто є семантичною підказкою, але не визначає автоматично португальську конструкцію.",
+    learnerQuestions: ["Хто є суб'єктом інфінітива?", "Чи треба його експлікувати?", "Чи є coreference з матричним суб'єктом?", "Чи конструкція формальна/нейтральна?"]
+  },
+  "gerund": {
+    formulas: [{ pattern: "estar + gerúndio → прогресивність; gerúndio/adverbial → супровідна або способова дія", note: "Розподіл форм і продуктивність різняться між різновидами португальської." }],
+    examples: [
+      { pt: "Estou a estudar.", uk: "Я зараз навчаюся.", variety: "PT" },
+      { pt: "Estou estudando.", uk: "Я зараз навчаюся.", variety: "BR" },
+      { pt: "Entrou sorrindo.", uk: "Він/вона увійшов/увійшла, усміхаючись." }
+    ],
+    mistakes: [{ wrong: "Estou estudando = неправильна португальська.", right: "Estou estudando. / Estou a estudar.", why: "Обидві моделі граматичні, але їхня частотність і соціально-регіональний розподіл різняться." }],
+    ukrainian: "Український недоконаний вид часто передає прогресивну ситуацію без окремої герундіальної форми; не перекладайте gerúndio механічно.",
+    brPt: "estar + gerúndio є дуже продуктивним у PT-BR; estar a + infinitivo є центральною моделлю в PT-PT."
+  },
+  "periphrases": {
+    formulas: [{ pattern: "auxiliar/semiauxiliar + infinitivo/gerúndio/particípio → аспект, модальність, початок, тривалість, завершення, намір", note: "Значення визначається всією конструкцією, а не одним дієсловом." }],
+    examples: [
+      { pt: "Vou estudar amanhã.", uk: "Я навчатимуся завтра / Я буду вчитися завтра." },
+      { pt: "Tenho de trabalhar.", uk: "Мені треба працювати." },
+      { pt: "Começou a chover.", uk: "Почало дощити." }
+    ],
+    mistakes: [{ wrong: "Vou estudar = лише буквальне «рухаюся вчитися».", right: "Vou estudar.", why: "ir + infinitivo може бути конструкцією майбутньої/інтенційної перспективи, а не буквально рухом." }],
+    ukrainian: "Українська широко виражає аспект і модальність префіксами, суфіксами та допоміжними словами; португальські perífrases часто потребують навчання як окремих рамок.",
+    learnerQuestions: ["Який компонент несе лексичне значення?", "Який компонент додає аспект/модальність?", "Чи змінюється значення залежно від різновиду?"]
+  },
+  "passive": {
+    formulas: [{ pattern: "ser + particípio → пасивна подія; estar/ficar + particípio → результативний стан; se-passive → конструкція з se", note: "Не ототожнюйте passive event і resultative state." }],
+    examples: [
+      { pt: "A carta foi escrita ontem.", uk: "Лист був написаний учора." },
+      { pt: "A porta está fechada.", uk: "Двері зачинені." },
+      { pt: "Vendem-se casas.", uk: "Продаються будинки." }
+    ],
+    mistakes: [{ wrong: "A porta está fechada = завжди пасив.", right: "Аналізуйте також resultative reading.", why: "estar + particípio може описувати стан, який є результатом попередньої дії." }],
+    ukrainian: "Українська також розрізняє дію і стан, але морфологічні та аналітичні засоби інші.",
+    learnerQuestions: ["Йдеться про подію чи результативний стан?", "Чи названо агента?", "Чи se-конструкція є passive, impersonal або reflexive?"]
+  },
+  "subordinate-clauses": {
+    formulas: [{ pattern: "oração principal + subordinada → causal, temporal, concessiva, final, condicional, completiva, relativa...", note: "Тип підрядності визначає сполучник, порядок, час/спосіб та іноді вибір conjuntivo." }],
+    examples: [
+      { pt: "Quando chegar, liga-me.", uk: "Коли приїдеш, подзвони мені." },
+      { pt: "Embora esteja cansado, continuo.", uk: "Хоч я втомився/втомилася, я продовжую." },
+      { pt: "Estudo porque quero aprender.", uk: "Я навчаюся, бо хочу вивчити." }
+    ],
+    mistakes: [{ wrong: "Embora estou cansado.", right: "Embora esteja cansado.", why: "У concessive clause embora за стандартною моделлю вимагає conjuntivo." }],
+    ukrainian: "Українські сполучники «коли, хоча, бо, щоб, якщо» корисні для семантичного зіставлення, але керування способами в португальській треба вчити окремо.",
+    learnerQuestions: ["Який тип залежності?", "Який сполучник/прийменникова конструкція?", "Який mode вибирає підрядність?", "Чи є coreference між суб'єктами?"]
+  },
+  "relative-pronouns": {
+    formulas: [{ pattern: "antecedent + que/quem/onde/o qual/cujo + clause", note: "Вибір відносного займенника залежить від семантики, синтаксичної ролі та прийменникового керування." }],
+    examples: [
+      { pt: "O livro que comprei.", uk: "Книжка, яку я купив/купила." },
+      { pt: "A pessoa com quem falei.", uk: "Людина, з якою я говорив/говорила." },
+      { pt: "A cidade onde nasci.", uk: "Місто, де я народився/народилася." }
+    ],
+    mistakes: [{ wrong: "A pessoa que falei.", right: "A pessoa com quem falei.", why: "falar у цій конструкції вимагає прийменникового complemento: falar com alguém." }],
+    ukrainian: "Українська відмінкова система часто кодує відношення, які португальська виражає прийменником + relative pronoun.",
+    learnerQuestions: ["Яка роль antecedent у підрядній частині?", "Чи потрібен прийменник?", "Чи cujo виражає володіння?", "Чи конструкція restrictive або non-restrictive?"]
+  },
+  "syntax-word-order": {
+    formulas: [{ pattern: "SVO як базова модель + topicalization/focus/cleft/inversion", note: "Базовий порядок не означає, що інші порядки неправильні; їхня інтерпретація залежить від інформаційної структури." }],
+    examples: [
+      { pt: "A Maria comprou o livro.", uk: "Марія купила книжку." },
+      { pt: "O livro, a Maria comprou ontem.", uk: "Книжку Марія купила вчора." },
+      { pt: "Foi a Maria que comprou o livro.", uk: "Саме Марія купила книжку." }
+    ],
+    mistakes: [{ wrong: "Вважати будь-який порядок, відмінний від SVO, помилкою.", right: "Аналізувати topic, focus і register.", why: "Португальська допускає інформаційно мотивовані перестановки." }],
+    ukrainian: "Українська має вільніший порядок слів завдяки відмінкам; тому український студент може переносити перестановки без маркування інформаційної структури.",
+    learnerQuestions: ["Що є topic?", "Що є focus?", "Чи змінилася семантика чи лише інформаційна структура?", "Який регістр?"]
+  },
+  "information-structure": {
+    formulas: [{ pattern: "topic + comment / focus + presupposition → порядок, просодія та cleft constructions", note: "Інформаційна структура пояснює частину порядку слів, займенникового дублювання та cleft-конструкцій." }],
+    examples: [
+      { pt: "Quanto ao João, ele já chegou.", uk: "Щодо Жуана, він уже прийшов." },
+      { pt: "Foi o João que telefonou.", uk: "Саме Жуан подзвонив." }
+    ],
+    ukrainian: "Українська також використовує topic/focus, але може кодувати їх іншим порядком слів і просодією; не переносіть українську інтонацію як єдине правило.",
+    learnerQuestions: ["Яка інформація вже відома?", "Що є новою/контрастивною інформацією?", "Чому займенник або cleft тут природний?"]
+  },
+  "ser-estar": {
+    formulas: [{ pattern: "ser → identity/classification/origin/characteristic; estar → state/location/temporary condition; lexically fixed contrasts exist", note: "Це не проста пара «постійне vs тимчасове»." }],
+    examples: [
+      { pt: "Ela é médica.", uk: "Вона лікарка." },
+      { pt: "Ela está cansada.", uk: "Вона втомлена." },
+      { pt: "O livro está na mesa.", uk: "Книжка на столі." },
+      { pt: "Lisboa fica em Portugal.", uk: "Лісабон розташований у Португалії." }
+    ],
+    mistakes: [{ wrong: "estar = усе тимчасове; ser = усе постійне.", right: "Вивчати значення конкретної predicação.", why: "Місце, оцінка, характеристика, ідентичність і лексикалізовані значення не зводяться до однієї шкали тривалості." }],
+    ukrainian: "Українська не має прямого граматичного розщеплення ser/estar; переклад «бути» приховує різницю, яку в португальській треба аналізувати синтаксично й семантично.",
+    learnerQuestions: ["Це identity/classification чи state/location?", "Чи прикметник має інше значення з ser та estar?", "Чи конструкція лексикалізована?"]
+  },
+  "por-para": {
+    formulas: [{ pattern: "por → причина, засіб, траєкторія, обмін, тривалість/агент у пасиві; para → напрямок, адресат, мета, дедлайн, призначення", note: "Значення залежать від конструкції; переклад «за/для» недостатній." }],
+    examples: [
+      { pt: "Fiz isso por você.", uk: "Я зробив/зробила це заради тебе." },
+      { pt: "Isto é para você.", uk: "Це для тебе." },
+      { pt: "Vou para casa.", uk: "Я йду додому." },
+      { pt: "Estudo para aprender.", uk: "Я вчуся, щоб навчитися." }
+    ],
+    mistakes: [{ wrong: "para = «для», por = «за» у всіх випадках.", right: "Визначити semantic relation конкретної конструкції.", why: "Обидва прийменники мають кілька продуктивних значень." }],
+    ukrainian: "Українські «для, заради, через, по, до, на, щоб» розподіляють значення інакше; тому потрібне навчання за конструкціями.",
+    learnerQuestions: ["Причина чи мета?", "Адресат чи бенефіціар?", "Напрямок чи траєкторія?", "Дедлайн чи тривалість?"]
+  }
+
 function genericLayer(meta: (typeof CATALOG)[number]): LearnerLayer {
   const common: Record<string, LearnerLayer> = {
     fundamentals: { ukrainian: "Починайте з функції категорії в реченні. Українська має відмінки й іншу систему дієслівного виду, тому поверхневий переклад часто приховує справжню граматичну різницю." },
