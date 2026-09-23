@@ -1601,7 +1601,82 @@ Object.assign(SPECIAL, {
     ],
     ukrainian: "Українська теж має вказівні займенники, але не має тотожної системи contracted forms; аналізуйте склад форми.",
     learnerQuestions: ["Який прийменник входить до форми?", "Який демонстратив і його рід/число?", "Чи є тут окрема crase?"]
+  },,
+
+  "purpose-clauses": {
+    formulas: [{ pattern: "para + infinitivo ↔ para que + conjuntivo", note: "Обидві конструкції виражають мету, але мають різну синтаксичну будову. Вибір залежить, зокрема, від референції суб'єкта та структури речення." }],
+    examples: [
+      { pt: "Estudo para aprender.", uk: "Я вчуся, щоб навчитися." },
+      { pt: "Estudo para que os meus filhos aprendam.", uk: "Я вчуся/працюю для того, щоб мої діти навчалися." },
+      { pt: "Saí cedo para não chegar atrasado.", uk: "Я вийшов/вийшла рано, щоб не запізнитися." }
+    ],
+    mistakes: [{ wrong: "Вважати, що українське «щоб» автоматично визначає para que.", right: "Estudo para aprender. / Estudo para que os alunos aprendam.", why: "Інфінітив і особова підрядна частина мають різну структуру; аналізуйте суб'єкт і керування." }],
+    ukrainian: "Українське «щоб» охоплює кілька португальських конструкцій. Не обирайте форму лише за перекладом.",
+    learnerQuestions: ["Чи збігаються суб'єкти?", "Чи потрібен окремий підмет у підрядній?", "Це para + infinitivo чи para que + conjuntivo?", "Чи заперечення належить до інфінітива?"]
   },
+  "temporal-clauses": {
+    formulas: [{ pattern: "antes de/depois de + infinitivo ↔ antes que/depois que + finite clause", note: "Інфінітивні та особові часові підрядні мають різну структуру; майбутні часові залежності можуть вимагати futuro do conjuntivo." }],
+    examples: [
+      { pt: "Antes de sair, feche a porta.", uk: "Перед тим як вийти, зачиніть двері." },
+      { pt: "Antes que ele saia, feche a porta.", uk: "Перед тим як він вийде, зачиніть двері." },
+      { pt: "Quando chegares, liga-me.", uk: "Коли приїдеш, зателефонуй мені.", variety: "PT" }
+    ],
+    mistakes: [{ wrong: "Antes que sair, feche a porta.", right: "Antes de sair, feche a porta. / Antes que ele saia, feche a porta.", why: "Після antes de стоїть інфінітив; antes que вводить особову підрядну частину." }],
+    ukrainian: "Українські «перед тим як» і «коли» не показують португальського розподілу між прийменниковою інфінітивною та особовою підрядною конструкцією.",
+    learnerQuestions: ["Чи підрядна частина має власний виражений підмет?", "Який connector використано?", "Чи йдеться про майбутню подію?", "Чи потрібен futuro do conjuntivo?"]
+  },
+  "concessive-clauses": {
+    formulas: [{ pattern: "embora + conjuntivo ↔ apesar de + noun/infinitive; concessive finite clauses may use other connectors", note: "Допустовість — семантичне відношення; форма залежить від конкретного сполучника або прийменникової конструкції." }],
+    examples: [
+      { pt: "Embora esteja cansado, continuo.", uk: "Хоча я втомлений/втомлена, я продовжую." },
+      { pt: "Apesar de estar cansado, continuo.", uk: "Попри те, що я втомлений/втомлена, я продовжую." },
+      { pt: "Mesmo que chova, vamos.", uk: "Навіть якщо буде дощ, ми підемо." }
+    ],
+    mistakes: [{ wrong: "Embora estou cansado.", right: "Embora esteja cansado.", why: "У цій стандартній моделі embora вводить підрядну частину з conjuntivo." }],
+    ukrainian: "Українське «хоча/попри» не визначає португальську форму автоматично. Спершу встановіть connector і тип complement.",
+    learnerQuestions: ["Це хоча/навіть якщо чи попри?", "Який connector?", "Чи після нього finite clause чи infinitive/іменна група?", "Який mood потрібен?"]
+  },
+  "without-clauses": {
+    formulas: [{ pattern: "sem + infinitivo ↔ sem que + conjuntivo", note: "sem + infinitivo і sem que + особова підрядна частина виражають відсутність супровідної/очікуваної дії, але мають різну синтаксичну будову." }],
+    examples: [
+      { pt: "Saiu sem se despedir.", uk: "Він/вона пішов/пішла, не попрощавшись." },
+      { pt: "Saiu sem que ninguém o visse.", uk: "Він/вона пішов/пішла так, що ніхто його/її не побачив." }
+    ],
+    mistakes: [{ wrong: "Saiu sem que se despedir.", right: "Saiu sem se despedir. / Saiu sem que ninguém o visse.", why: "sem вимагає інфінітивної моделі без que; sem que вводить особову підрядну частину." }],
+    ukrainian: "Український дієприслівник або конструкція з «не» можуть передавати обидві моделі, але португальська розрізняє їх за структурою.",
+    learnerQuestions: ["Чи має залежна дія окремий підмет?", "Після sem стоїть infinitivo чи que + clause?", "Чи є заперечення частиною конструкції?"]
+  },
+  "por-infinitive": {
+    formulas: [{ pattern: "por + infinitivo → cause, means, circumstance or agentive/nominal relation according to construction", note: "por + infinitivo має кілька значень; не зводьте його лише до українського «через»." }],
+    examples: [
+      { pt: "Obrigado por ajudar.", uk: "Дякую за допомогу / що допоміг/допомогла." },
+      { pt: "Por chegar cedo, conseguiu falar com ela.", uk: "Оскільки він/вона прийшов/прийшла рано, то зміг/змогла з нею поговорити." }
+    ],
+    ukrainian: "Українське «за/через/тим, що» не визначає одну португальську форму. Визначайте семантичне відношення всієї конструкції.",
+    learnerQuestions: ["Це причина, підстава чи інше відношення?", "Чи infinitivo має власного суб'єкта?", "Чи por є частиною лексичного керування?"]
+  },
+  "de-infinitive": {
+    formulas: [{ pattern: "de + infinitivo → selected complement / infinitival construction", note: "de + infinitivo може бути частиною керування, номінальної/ад'єктивної конструкції або іншої синтаксичної моделі; значення визначає головна лексема." }],
+    examples: [
+      { pt: "Tenho de estudar.", uk: "Мені треба вчитися." },
+      { pt: "Antes de sair, avisa-me.", uk: "Перед тим як вийти, попередь мене." },
+      { pt: "É difícil de explicar.", uk: "Це важко пояснити." }
+    ],
+    ukrainian: "Не перекладайте de + infinitivo одним українським прийменником. Спочатку визначте головну конструкцію та її керування.",
+    learnerQuestions: ["Хто є головним предикатом?", "de є частиною лексичного керування чи часової конструкції?", "Хто є суб'єктом інфінітива?", "Чи змінюється значення без de?"]
+  },
+  "a-infinitive": {
+    formulas: [{ pattern: "a + infinitivo → selected construction; estar a + infinitivo → progressive in PT-PT", note: "a + infinitivo має кілька функцій. Не ототожнюйте кожну появу a з прогресивом." }],
+    examples: [
+      { pt: "Começou a chover.", uk: "Почало дощити." },
+      { pt: "Estou a estudar.", uk: "Я зараз навчаюся.", variety: "PT" },
+      { pt: "Aprendeu a nadar.", uk: "Він/вона навчився/навчилася плавати." }
+    ],
+    brPt: "estar a + infinitivo є центральною прогресивною моделлю PT-PT; у PT-BR прогресив зазвичай реалізується через estar + gerúndio.",
+    ukrainian: "Українська не має окремої конструкції, яка механічно відповідає всім випадкам a + infinitivo. Визначайте конкретну модель.",
+    learnerQuestions: ["Чи a є частиною фазової/лексичної конструкції?", "Чи це estar a + infinitivo?", "Який різновид португальської?", "Чи дієслово вимагає a?"]
+  },
+
 };
 
 const SPECIAL_ALIASES: Record<string, string> = {
@@ -1765,9 +1840,9 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "questions-br-pt": "questions-advanced",
   "porque-forms": "questions-advanced",
   "causal-clauses": "subordinate-types-advanced",
-  "purpose-clauses": "subordinate-types-advanced",
-  "concessive-clauses": "subordinate-types-advanced",
-  "temporal-clauses": "subordinate-types-advanced",
+  "purpose-clauses": "purpose-clauses",
+  "concessive-clauses": "concessive-clauses",
+  "temporal-clauses": "temporal-clauses",
   "consecutive-clauses": "subordinate-types-advanced",
   "comparative-clauses": "comparatives-advanced",
   "ser-passive": "passive",
