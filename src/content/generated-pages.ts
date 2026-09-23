@@ -1544,6 +1544,98 @@ Object.assign(SPECIAL, {
     ukrainian: "Для навчання завжди вказуйте, який національний стандарт моделюється; не називайте нормативну варіантність «помилкою».",
     learnerQuestions: ["Це спільне написання чи дозволений/національний варіант?", "Чи пов'язана різниця з вимовою?", "Який стандарт потрібен у цьому контексті?"]
   },
+  "prep-em": {
+    formulas: [{ pattern: "em + lugar/estado/tempo → no/na/nos/nas before definite article", note: "Значення й вибір em треба відрізняти від a та para; contracted form залежить від наступного елемента." }],
+    examples: [
+      { pt: "Estou em casa.", uk: "Я вдома." },
+      { pt: "Moro no Porto.", uk: "Я живу в Порту." },
+      { pt: "Em 2024, estudava português.", uk: "У 2024 році я вивчав/вивчала португальську." }
+    ],
+    mistakes: [{ wrong: "Moro a Porto.", right: "Moro no Porto.", why: "У цій конструкції місце виражається em; перед означеним артиклем виникає no." }],
+    ukrainian: "Українські «в/у/на» не задають автоматичного вибору em, a або para. Визначайте тип просторового чи часового відношення та модель конструкції.",
+    learnerQuestions: ["Це місце, стан чи час?", "Чи потрібен артикль після em?", "Чи є дієслово частиною окремої моделі керування?"]
+  },
+  "prep-por": {
+    formulas: [{ pattern: "por + causa/meio/percurso/duração/agente → pelo/pela... before article", note: "por і para розрізняються за відношенням, а не одним українським відповідником." }],
+    examples: [
+      { pt: "Passei por Lisboa.", uk: "Я проїхав/проїхала через Лісабон." },
+      { pt: "Fiz isso por ti.", uk: "Я зробив/зробила це заради тебе." },
+      { pt: "O livro foi escrito por Ana.", uk: "Книжку написала Ана." }
+    ],
+    mistakes: [{ wrong: "O livro foi escrito para Ana. → «агент»", right: "O livro foi escrito por Ana.", why: "В пасивній конструкції автор дії виражається por; para може виражати адресата або мету." }],
+    ukrainian: "Українські «через/за/для» розподіляють значення інакше, тому por треба вчити через функцію конструкції.",
+    learnerQuestions: ["Це причина, засіб, маршрут, тривалість чи агент?", "Чи це адресат/мета, для яких потрібен para?", "Чи виникає форма pelo/pela?"]
+  },
+  "prep-para": {
+    formulas: [{ pattern: "para + destino/recipient/purpose/deadline → purpose or endpoint", note: "para часто виражає спрямованість до мети або адресата; точне значення задає контекст." }],
+    examples: [
+      { pt: "Este presente é para ti.", uk: "Цей подарунок для тебе." },
+      { pt: "Estudo para aprender.", uk: "Я вчуся, щоб навчитися." },
+      { pt: "Vou para casa.", uk: "Я йду/їду додому." }
+    ],
+    mistakes: [{ wrong: "Estudo por aprender.", right: "Estudo para aprender.", why: "Мета дії в цій конструкції виражається para." }],
+    ukrainian: "Не перекладайте para одним українським прийменником: «для», «щоб», напрямок до місця та інші значення залежать від конструкції.",
+    learnerQuestions: ["Це мета, адресат, напрямок чи часовий орієнтир?", "Чи після para стоїть іменна група чи інфінітив?", "Чи справді тут потрібен por, а не para?"]
+  },
+  "prep-com": {
+    formulas: [{ pattern: "com + companion/instrument/manner; comigo/contigo/consigo in pronominal combinations", note: "com має власні злиті займенникові форми; sem не утворює такого самого набору." }],
+    examples: [
+      { pt: "Vou com a Maria.", uk: "Я йду з Марією." },
+      { pt: "Escrevo com uma caneta.", uk: "Я пишу ручкою." },
+      { pt: "Vem comigo.", uk: "Іди зі мною." }
+    ],
+    mistakes: [{ wrong: "Vem com eu.", right: "Vem comigo.", why: "Після com у цій конструкції вживається спеціальна форма comigo, а не eu." }],
+    ukrainian: "Українські «з/із» можуть передавати супровід або засіб, але португальська має окремі форми з займенниками.",
+    learnerQuestions: ["Це супровід, інструмент чи спосіб?", "Яка форма потрібна після com із займенником?", "Чи не йдеться насправді про sem?"]
+  },
+  "prep-other": {
+    formulas: [{ pattern: "sobre/entre/até/desde/após + complement → relation of topic/space/boundary/time", note: "Не зводьте всі прийменники до одного українського відповідника; значення визначається конструкцією." }],
+    examples: [
+      { pt: "Falámos sobre o projeto.", uk: "Ми говорили про проєкт." },
+      { pt: "Entre Lisboa e Porto.", uk: "Між Лісабоном і Порту." },
+      { pt: "Trabalhei desde segunda-feira.", uk: "Я працював/працювала від понеділка." }
+    ],
+    ukrainian: "Для прийменників із кількома українськими відповідниками перевіряйте не буквальний переклад, а семантичне відношення.",
+    learnerQuestions: ["Яке відношення виражає прийменник?", "Яка форма керування потрібна?", "Чи є близький прийменник із іншим значенням?"]
+  },
+  "de-article": {
+    formulas: [{ pattern: "de + o/a/os/as → do/da/dos/das", note: "Це морфологічне злиття прийменника з означеним артиклем; не плутайте його з окремим do як лексемою." }],
+    examples: [
+      { pt: "O livro do João.", uk: "Книжка Жуана." },
+      { pt: "A cor da casa.", uk: "Колір будинку." }
+    ],
+    mistakes: [{ wrong: "livro de o João", right: "livro do João", why: "У стандартній конструкції de + o зливається в do." }],
+    ukrainian: "Українська не має такого самого артиклевого злиття, тому do/da треба розпізнавати як contracted form.",
+    learnerQuestions: ["Чи це de + означений артикль?", "Який рід і число артикля?", "Чи є перед нами інша лексична конструкція?"]
+  },
+  "em-article": {
+    formulas: [{ pattern: "em + o/a/os/as → no/na/nos/nas", note: "Форма залежить від роду й числа означеного артикля." }],
+    examples: [
+      { pt: "Estou no carro.", uk: "Я в автомобілі." },
+      { pt: "Estamos nas ruas.", uk: "Ми на вулицях." }
+    ],
+    mistakes: [{ wrong: "em o carro", right: "no carro", why: "em + o утворює no." }],
+    ukrainian: "Розпізнавайте no/na/nos/nas як em + article, коли це відповідає конструкції.",
+    learnerQuestions: ["Який артикль стоїть після em?", "Чи є злиття обов'язковим у цій конструкції?", "Чи не є no іншою граматичною формою?"]
+  },
+  "por-article": {
+    formulas: [{ pattern: "por + o/a/os/as → pelo/pela/pelos/pelas", note: "Це регулярне злиття por з означеним артиклем." }],
+    examples: [
+      { pt: "Passei pelo centro.", uk: "Я пройшов/пройшла через центр." },
+      { pt: "A janela foi aberta pela Maria.", uk: "Вікно відкрила Марія." }
+    ],
+    mistakes: [{ wrong: "por a cidade", right: "pela cidade", why: "por + a дає pela." }],
+    learnerQuestions: ["Який артикль зливається з por?", "Чи тут por виражає маршрут, агент або інше значення?", "Яка форма потрібна за родом і числом?"]
+  },
+  "prep-demonstrative": {
+    formulas: [{ pattern: "preposição + demonstrativo → neste/deste/àquele/daquilo etc.", note: "Злиття залежить і від прийменника, і від демонстратива; crase в àquele має окрему орфографічну реалізацію." }],
+    examples: [
+      { pt: "Neste caso, concordo.", uk: "У цьому випадку я погоджуюся." },
+      { pt: "Não me refiro àquele livro.", uk: "Я не маю на увазі ту книжку." }
+    ],
+    ukrainian: "Українська теж має вказівні займенники, але не має тотожної системи contracted forms; аналізуйте склад форми.",
+    learnerQuestions: ["Який прийменник входить до форми?", "Який демонстратив і його рід/число?", "Чи є тут окрема crase?"]
+  },
 const SPECIAL_ALIASES: Record<string, string> = {
   "subjunctive-triggers": "subjunctive-triggers-advanced",
   "conditional-clauses": "conditional-clauses-advanced",
@@ -1580,8 +1672,6 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "clitic-pronouns": "clitic-placement",
   "clitic-combinations": "clitic-clusters",
   "clitics-gerund": "gerund-functions",
-  "prep-por": "por-para",
-  "prep-para": "por-para",
   "crase-rules": "crase",
   "a-vs-crase": "crase",
   "indicative-vs-subjunctive": "subjunctive-overview",
@@ -1644,9 +1734,6 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "interrogative-pronouns": "question-word-order",
   "clitics-imperative": "clitic-placement",
   "prepositions-overview": "government-overview",
-  "prep-em": "prep-a",
-  "prep-com": "prep-a",
-  "prep-other": "government-overview",
   "compound-prepositions": "government-overview",
   "coordinating": "subordination-and-coordination",
   "subordinating": "subordination-and-coordination",
@@ -1701,11 +1788,7 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "ordinals": "numerals-overview-advanced",
   "dates-time": "numerals-overview-advanced",
   "contractions-overview": "contractions-advanced",
-  "de-article": "contractions-advanced",
-  "em-article": "contractions-advanced",
   "a-article": "contractions-advanced",
-  "por-article": "contractions-advanced",
-  "prep-demonstrative": "contractions-advanced",
   "prep-pronoun-contr": "contractions-advanced",
   "crase-optional": "crase",
   "stem-changing": "verb-alternations",
