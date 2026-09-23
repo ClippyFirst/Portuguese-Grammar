@@ -119,20 +119,7 @@ const SPECIAL: Record<string, LearnerLayer> = {
     mistakes: [{ wrong: "Sou cansado.", right: "Estou cansado.", why: "Для актуального стану cansado типовим є estar." }],
     ukrainian: "Не перекладайте українське «бути» одним португальським дієсловом: спершу встановіть семантику предиката.",
   },
-  "por-para": {
-    formulas: [{ pattern: "por → причина / шлях / засіб / обмін; para → мета / напрям / адресат / дедлайн", note: "Це евристика, а не повний словник керування." }],
-    examples: [{ pt: "Estudo para aprender.", uk: "Я вчуся, щоб навчитися." }, { pt: "Obrigado por ajudares.", uk: "Дякую, що допоміг/допомогла." }, { pt: "Vou para Lisboa.", uk: "Я їду до Лісабона." }],
-    mistakes: [{ wrong: "Obrigado para ajudar.", right: "Obrigado por ajudar.", why: "У цій конструкції подяка оформлюється por + інфінітив." }],
-    ukrainian: "Українські «для / за / через / по» перекривають португальські por/para лише частково.",
-  },
-  "tu-voce": {
-    formulas: [{ pattern: "tu + 2-а особа; você + 3-я особа дієслова", note: "Розподіл залежить від країни, регіону, соціального контексту та стилю." }],
-    examples: [{ pt: "Tu sabes.", uk: "Ти знаєш.", variety: "PT" }, { pt: "Você sabe.", uk: "Ви/ти знаєте.", variety: "BR" }],
-    mistakes: [{ wrong: "Você sabes.", right: "Você sabe.", why: "você граматично узгоджується з 3-ю особою." }],
-    ukrainian: "Не прирівнюйте você автоматично до українського «ви»: система звертання португальської не є простою копією української.",
-    brPt: "PT-BR не є однорідним: tu активно вживається в частині регіонів, часто з варіантами узгодження. У PT-PT tu є центральною формою неформальної 2-ї особи.",
-  },
-  "tu-voce-regional": {
+u-voce-regional": {
     formulas: [{ pattern: "tu + 2-а особа; você + 3-я особа", note: "Розподіл tu/você є соціально й регіонально варіантним; у деяких зонах можливе змішування займенника та дієслівного узгодження." }],
     examples: [
       { pt: "Tu sabes a resposta.", uk: "Ти знаєш відповідь.", note: "2-а особа в узгодженні." },
@@ -148,32 +135,7 @@ const SPECIAL: Record<string, LearnerLayer> = {
     examples: [{ pt: "Vi-o ontem.", uk: "Я бачив/бачила його вчора." }, { pt: "Telefonei-lhe ontem.", uk: "Я зателефонував/зателефонувала йому вчора.", variety: "PT" }],
     ukrainian: "Український відмінок не дає готової відповіді на португальське керування: вчіть дієслово разом із його моделлю.",
   },
-  "perfeito-vs-imperfeito": {
-    formulas: [{ pattern: "pretérito perfeito → подія як ціле; imperfeito → фон, звичка, повторюваність або незавершена перспектива", note: "Це не тотожне українському доконаному/недоконаному виду." }],
-    examples: [{ pt: "Ontem trabalhei até às seis.", uk: "Учора я працював/працювала до шостої." }, { pt: "Quando era criança, trabalhava com o meu pai.", uk: "Коли я був/була дитиною, я працював/працювала з батьком." }],
-    ukrainian: "Португальський час і український вид перетинаються, але не збігаються. Розв'язуйте задачу на рівні події та дискурсу.",
-  },
-  "progressive-br-pt": {
-    formulas: [{ pattern: "PT-BR: estar + gerúndio; PT-PT: estar a + infinitivo", note: "Обидві моделі нормативні у своїх основних різновидах." }],
-    examples: [{ pt: "Estou trabalhando.", uk: "Я зараз працюю.", variety: "BR" }, { pt: "Estou a trabalhar.", uk: "Я зараз працюю.", variety: "PT" }],
-    brPt: "Різниця стосується не лише словника: це системна перевага різних конструкцій для прогресивного значення.",
-  },
-  "clitics-br-pt": {
-    formulas: [{ pattern: "PT-PT: широкий набір умов próclise/ênclise; PT-BR: сильна перевага próclise у живій мові", note: "Формальна писемна норма та розмовне вживання не завжди збігаються." }],
-    examples: [{ pt: "Não o vi.", uk: "Я його не бачив/бачила.", variety: "PT" }, { pt: "Eu não vi ele.", uk: "Я його не бачив/бачила.", variety: "BR", register: "colloquial" }],
-    brPt: "Не вчіть клітики як одну таблицю для всіх португаломовних спільнот. Розрізняйте нормативну модель, реальне мовлення та регістр.",
-  },
-  "futuro-subjuntivo": {
-    formulas: [{ pattern: "se/quando/logo que/assim que + futuro do conjuntivo", note: "Особливо важливий у реальних майбутніх умовах і часових підрядних." }],
-    examples: [{ pt: "Quando chegares, liga-me.", uk: "Коли приїдеш, зателефонуй мені." }, { pt: "Se tiver tempo, vou.", uk: "Якщо матиму час, піду." }],
-    ukrainian: "Українська не має прямого морфологічного відповідника, тому цю форму краще вчити через конструкції, а не через переклад назви часу.",
-  },
-  "personal-infinitive": {
-    formulas: [{ pattern: "infinitivo + особове закінчення", note: "Особливо корисний, коли інфінітив має власний підмет або коли конструкція дозволяє уникнути підрядного речення." }],
-    examples: [{ pt: "É importante estudarmos.", uk: "Важливо, щоб ми вчилися." }, { pt: "Antes de saíres, liga.", uk: "Перед тим як вийдеш, зателефонуй." }],
-    ukrainian: "Українська часто використає «щоб/коли/перед тим як» там, де португальська може використати особовий інфінітив.",
-  },
-  "se-pronominal": {
+ominal": {
     formulas: [{ pattern: "verbo pronominal + se → parte da valência lexical", note: "У прономінальних дієсловах se не слід трактувати як звичайний прямий додаток; його наявність пов'язана з лексичною моделлю дієслова." }],
     examples: [
       { pt: "Ele queixou-se do barulho.", uk: "Він поскаржився на шум.", variety: "PT" },
@@ -202,16 +164,7 @@ const SPECIAL: Record<string, LearnerLayer> = {
     ukrainian: "Український переклад «потрібні/продаються» не показує португальського механізму. Перевіряйте узгодження та прийменникову рамку.",
     learnerQuestions: ["Що є граматичним підметом?", "Чи має complement прийменник de?", "Яке число дієслова очікується в цій конструкції?"]
   },
-  "clitics-infinitive": {
-    formulas: [{ pattern: "para + infinitive: para o ver / infinitive + clitic: vê-lo", note: "Позиція клітики біля інфінітива залежить від конструкції та різновиду; обидві моделі не є взаємозамінними в кожному контексті." }],
-    examples: [
-      { pt: "Para o ver, fui cedo.", uk: "Щоб його побачити, я прийшов/прийшла рано.", variety: "PT" },
-      { pt: "Fui cedo para vê-lo.", uk: "Я прийшов/прийшла рано, щоб його побачити.", variety: "PT" }
-    ],
-    ukrainian: "Не копіюйте позицію українського займенника. Спочатку визначте прийменникову конструкцію та тип інфінітива.",
-    learnerQuestions: ["Чи є перед інфінітивом прийменник?", "Який різновид португальської описується?", "Чи клітика приєднана до інфінітива чи стоїть перед ним?"]
-  },
-  "clitics-gerund": {
+"clitics-gerund": {
     formulas: [{ pattern: "gerund + clitic / clitic + gerund according to construction and variety", note: "Розподіл позицій залежить від синтаксичної конструкції та нормативної моделі конкретного різновиду." }],
     examples: [
       { pt: "Vendo-o, saiu.", uk: "Побачивши його, він/вона вийшов/вийшла.", variety: "PT", note: "o є клітикою, приєднаною до gerúndio." }
@@ -228,15 +181,7 @@ const SPECIAL: Record<string, LearnerLayer> = {
     ukrainian: "Українська не має тотожної системи clitic placement, тому корисно вчити наказовий спосіб разом із позицією займенника.",
     learnerQuestions: ["Наказ ствердний чи заперечний?", "Який різновид і регістр описується?", "Чи є елемент, що тригерує próclise?"]
   },
-  "articles-ukrainian": {
-    formulas: [{ pattern: "означеність → o/a/os/as; введення → um/uma/uns/umas; Ø у лексикалізованих моделях", note: "Українська не має артиклів, тому визначеність часто виражається контекстом." }],
-    examples: [{ pt: "Entrou um homem.", uk: "Увійшов чоловік." }, { pt: "O homem sentou-se.", uk: "Чоловік сів." }, { pt: "Sou médica.", uk: "Я лікарка." }],
-    mistakes: [{ wrong: "Sou uma médica. (як автоматичний переклад професії)", right: "Sou médica.", why: "Після ser назва професії часто вживається без артикля в нейтральній предикації." }],
-    ukrainian: "Не шукайте в українському реченні «слово, яке відповідає артиклю». Питайте про референцію, введення нового референта, унікальність і лексикалізовану конструкцію.",
-    brPt: "PT-PT частіше вживає артикль перед особовими іменами та присвійними групами, ніж PT-BR; це варіантна граматика.",
-  },
-
-  "clitic-placement": {
+"clitic-placement": {
     formulas: [{ pattern: "próclise: clitic перед дієсловом; ênclise: після дієслова; mesóclise: усередині форми майбутнього/умовного в нормативній письмовій моделі", note: "Вибір залежить від синтаксичних тригерів, конструкції, різновиду мови та регістру." }],
     formation: "Спочатку визначте, чи є перед дієсловом елемент, який впливає на позицію clitic (заперечення, певні підрядні/кванторні елементи тощо). Потім перевірте час, тип конструкції та норму конкретного різновиду.",
     examples: [{ pt: "Não me disseram nada.", uk: "Мені нічого не сказали." }, { pt: "Disseram-me a verdade.", uk: "Мені сказали правду.", variety: "PT", register: "formal" }, { pt: "Vou dizer-te amanhã.", uk: "Я скажу тобі завтра.", variety: "PT" }],
@@ -267,37 +212,19 @@ const SPECIAL: Record<string, LearnerLayer> = {
   },
   "subjunctive-overview": {
     formation: "Conjuntivo треба вчити як систему залежності від модальності, оцінки, волевиявлення, сумніву, неактуальності, умови та інших контекстів; не як універсальний «час невпевненості».",
-    examples: [{ pt: "Quero que venhas.", uk: "Я хочу, щоб ти прийшов/прийшла." }, { pt: "É possível que chova.", uk: "Можливо, що буде дощ." }, { pt: "Se tiver tempo, vou.", uk: "Якщо матиму час, піду." }],
+    examples: [{ pt: "Quero que venhas.", uk: "Я хочу, щоб ти прийшов/прийшла." }, { pt: "É possível que chova.", uk: "Можливо, буде дощ." }, { pt: "Se tiver tempo, vou.", uk: "Якщо матиму час, піду." }],
     learnerQuestions: ["Чи є головне речення джерелом волі, оцінки, сумніву або іншої модальності?", "Чи має підрядна дія власний підмет?", "Чи потрібен conjuntivo, infinitivo або indicativo за конкретним сполучником/дієсловом?"],
   },
-  "futuro-subjuntivo": {
-    exceptions: "Форма особливо продуктивна в умовах і часових підрядних із реальною майбутньою орієнтацією; не підміняйте її будь-яким майбутнім значенням.",
-    learnerQuestions: ["Чи йдеться про ще не реалізовану умову/часову подію?", "Який сполучник відкриває конструкцію?", "Чи йдеться про реальну можливість, а не гіпотезу, для якої потрібен інший тип умовного речення?"],
-  },
-  "personal-infinitive": {
-    exceptions: "Особовий інфінітив не є механічною заміною будь-якого підрядного речення. Вибір залежить від синтаксичної структури, кореферентності та стилю.",
-    learnerQuestions: ["Хто є підметом інфінітива?", "Чи він збігається з підметом головної частини?", "Чи потрібне особове маркування для ясності?", "Чи звучить конструкція природно в цьому регістрі?"],
-  },
-  "progressive-br-pt": {
+rogressive-br-pt": {
     exceptions: "Розподіл gerúndio та a + infinitivo не означає, що одна модель «правильна», а друга «неправильна». Йдеться про системні переваги різновидів.",
     learnerQuestions: ["Чи описую PT-BR, PT-PT чи інший різновид?", "Чи справді значення прогресивне, а не просто тривале/аспектуальне?", "Чи потрібна форма estar або інша перифраза?"],
   },
-  "clitics-br-pt": {
-    exceptions: "Розмовна PT-BR, формальна PT-BR та PT-PT можуть мати різний розподіл займенникових форм. Для навчального прикладу завжди маркуйте різновид і регістр, якщо він істотно впливає на оцінку.",
-    learnerQuestions: ["Чи це clitic, tonic pronoun чи форма з прямим займенником?", "Який різновид і регістр?", "Чи відрізняється письмова норма від живого мовлення?"],
-  },
-  "crase": {
+"crase": {
     formation: "Crase виникає в типовій моделі як злиття прийменника a з означеним артиклем a/as або з відповідною займенниковою/демонстративною формою. Тому її перевіряють через керування, а не «на слух».",
     examples: [{ pt: "Vou à escola.", uk: "Я йду до школи." }, { pt: "Entreguei o documento à diretora.", uk: "Я передав/передала документ директорці." }],
     mistakes: [{ wrong: "Vou à Lisboa.", right: "Vou a Lisboa.", why: "Не кожна назва місця допускає артикль; спочатку встановіть модель назви, потім перевіряйте crase." }],
     ukrainian: "Український відмінок не дозволяє автоматично визначити crase. Вона залежить від португальського прийменникового керування та наявності означеного елемента.",
     learnerQuestions: ["Чи вимагає дієслово/конструкція прийменника a?", "Чи є після нього форма, яка приймає a/as?", "Чи допускає конкретна назва місця артикль?", "Чи це сталий випадок або виняток?"],
-  },
-  "relative-pronouns": {
-    formation: "Вибір que, quem, onde, o qual/a qual/os quais/as quais, cujo тощо залежить від синтаксичної ролі, типу антецедента та прийменникового керування.",
-    examples: [{ pt: "A pessoa com quem falei chegou.", uk: "Людина, з якою я говорив/говорила, прийшла." }, { pt: "O livro de que preciso está aqui.", uk: "Книжка, яка мені потрібна, тут." }, { pt: "A cidade onde nasci fica no norte.", uk: "Місто, де я народився/народилася, на півночі." }],
-    mistakes: [{ wrong: "A pessoa que falei.", right: "A pessoa com quem falei.", why: "Відносна конструкція зберігає прийменникове керування базового речення." }],
-    learnerQuestions: ["Яку синтаксичну роль має відносний елемент?", "Який прийменник вимагає базове речення?", "Чи антецедент — особа, місце, річ або присвійна конструкція?", "Чи доречний більш формальний o qual/cujo?"],
   },
 };
 
@@ -619,16 +546,7 @@ Object.assign(SPECIAL, {
     mistakes: [{ wrong: "duas casa grande", right: "duas casas grandes", why: "Детермінатив, іменник і прикметник узгоджуються за числом; прикметник також за родом." }],
     ukrainian: "Українська теж має узгодження, але відмінок додає ще одну морфологічну категорію; у португальській її немає."
   },
-  "determiners-overview": {
-    formulas: [{ pattern: "determiner + noun phrase → reference / quantity / deixis", note: "Артиклі, demonstratives, possessives та quantifiers взаємодіють, але не є взаємозамінними." }],
-    examples: [
-      { pt: "o livro", uk: "книга / ця відома книга" },
-      { pt: "este livro", uk: "ця книга" },
-      { pt: "meu livro", uk: "моя книга" }
-    ],
-    ukrainian: "Українська не має артиклів, тому систему детермінативів краще вчити через референцію та структуру noun phrase, а не через список перекладів."
-  },
-  "acordo-ortografico": {
+"acordo-ortografico": {
     formulas: [{ pattern: "Orthographic Agreement 1990 → standardized spellings with permitted national/regional variants", note: "Угода не усунула всіх орфографічних варіантів між PT-BR та PT-PT." }],
     examples: [
       { pt: "ação", uk: "дія" },
@@ -1022,88 +940,7 @@ Object.assign(SPECIAL, {
     ukrainian: "Українське «щоб» часто покриває кілька португальських структур. Порівнюйте суб'єкт, контроль і регістр.",
     learnerQuestions: ["Чи збігаються підмети?", "Чи інфінітив має власного явного суб'єкта?", "Чи конструкція допускає conjuntivo?", "Який стиль природніший?"]
   },
-  "agreement-edge-cases": {
-    formulas: [{ pattern: "syntactic subject + agreement controller → person/number", note: "У складних структурах узгодження визначається не лише найближчим іменником." }],
-    examples: [
-      { pt: "A maioria dos alunos chegou cedo.", uk: "Більшість студентів прийшла рано." },
-      { pt: "A maioria dos alunos chegou cedo.", uk: "Більшість студентів прийшли рано.", note: "Узгодження з plural-іменником може траплятися за семантичним узгодженням; не подавайте його як автоматично «розмовне правило»." },
-      { pt: "Fomos nós que fizemos isso.", uk: "Це ми зробили." }
-    ],
-    mistakes: [{ wrong: "Узгоджувати дієслово автоматично з найближчим іменником.", right: "Спершу знайти syntactic subject та тип конструкції.", why: "Складні групи допускають нормативні або варіантні моделі узгодження." }],
-    ukrainian: "Українська також має узгодження з колективними та кількісними групами, але конкретні моделі не збігаються.",
-    learnerQuestions: ["Що є граматичним підметом?", "Чи є група колективною/кількісною?", "Чи варіантність залежить від регістру?", "Чи узгодження контролюється relative/clause structure?"]
-  },
-  "null-and-expletive-subjects": {
-    formulas: [{ pattern: "null subject / expletive subject → clause without ordinary lexical subject", note: "Португальська допускає нульові підмети, але не всі безособові конструкції мають однакову структуру." }],
-    examples: [
-      { pt: "Choveu ontem.", uk: "Учора йшов дощ." },
-      { pt: "Há muita gente aqui.", uk: "Тут багато людей." },
-      { pt: "Cheguei cedo.", uk: "Я прийшов/прийшла рано." }
-    ],
-    ukrainian: "Українська теж допускає нульовий суб'єкт, тому інтерференція тут часто менш очевидна: важливо розрізняти нульовий referential subject та безособову конструкцію.",
-    learnerQuestions: ["Чи можна відновити referential subject?", "Чи конструкція безособова?", "Чи є формальний/expletive subject?", "Яка модель у PT-BR/PT-PT?"]
-  },
-  "subject-object-order": {
-    formulas: [{ pattern: "SVO → marked order via topic/focus/inversion", note: "Порядок компонентів змінюється не довільно: він взаємодіє з інформаційною структурою та типом предиката." }],
-    examples: [
-      { pt: "A Maria comprou o livro.", uk: "Марія купила книжку." },
-      { pt: "O livro, a Maria comprou ontem.", uk: "Книжку Марія купила вчора." },
-      { pt: "Chegou o João.", uk: "Прийшов Жуан." }
-    ],
-    ukrainian: "Українська допускає ширшу перестановку компонентів завдяки відмінковим маркерам. У португальській порядок часто сильніше пов'язаний із темою, фокусом і структурою предиката.",
-    learnerQuestions: ["Чи порядок базовий чи маркований?", "Що є темою?", "Де фокус?", "Чи предикат допускає інверсію?"]
-  },
-  "subordination-and-coordination": {
-    formulas: [{ pattern: "coordenação: A + conector + B; subordinação: matriz + oração dependente", note: "Сурядність і підрядність відрізняються синтаксичною залежністю, а не лише сполучником." }],
-    examples: [
-      { pt: "Cheguei e sentei-me.", uk: "Я прийшов/прийшла і сів/сіла." },
-      { pt: "Fiquei porque chovia.", uk: "Я залишився/залишилася, бо йшов дощ." },
-      { pt: "Embora chovesse, saí.", uk: "Хоча йшов дощ, я вийшов/вийшла." }
-    ],
-    ukrainian: "Українські «і/бо/хоча» зручні для першої орієнтації, але португальська розподіляє форми залежно від типу зв'язку та модальності.",
-    learnerQuestions: ["Чи частини рівноправні?", "Яка частина залежить від іншої?", "Який зв'язок: причина, умова, допустовість, час?", "Який спосіб/інфінітив потрібен?"]
-  },
-  "discourse-reference": {
-    formulas: [{ pattern: "NP + anaphoric expression → discourse reference", note: "Вибір займенника, артикля та повтору залежить від того, як референт уже представлений у дискурсі." }],
-    examples: [
-      { pt: "Vi um homem. O homem entrou.", uk: "Я побачив/побачила чоловіка. Чоловік зайшов." },
-      { pt: "Vi a Maria. Ela saiu.", uk: "Я побачив/побачила Марію. Вона вийшла." },
-      { pt: "Aquele livro é meu.", uk: "Та книжка моя." }
-    ],
-    ukrainian: "Українська може частіше обходитися нульовим підметом, відмінюванням або повтором без артикля. У португальській референція тісно пов'язана з артиклями й займенниками.",
-    learnerQuestions: ["Чи референт уже введений?", "Чи він доступний із контексту?", "Чи потрібен артикль, займенник або повтор?", "Чи форма створює контраст?"]
-  },
-  "accentuation-advanced": {
-    formulas: [{ pattern: "stress class + syllable structure + diacritic → spelling", note: "Акцентуація треба вивчати як взаємодію наголосу, закінчення, дифтонгів/гіатусу та омографічних контрастів." }],
-    examples: [
-      { pt: "país / pais", uk: "країна / батьки" },
-      { pt: "saída / saíra", uk: "вихід / форма дієслова sair", note: "Пара для ілюстрації наголосу потребує контексту; saíra — форма mais-que-perfeito simples." },
-      { pt: "pôr / por", uk: "класти / через, за" }
-    ],
-    ukrainian: "Українські наголоси й апострофні/йотовані моделі не дають прямого правила для португальської акцентуації. Особливо важливі hiato та графічний знак.",
-    learnerQuestions: ["Де наголос?", "Чи є hiatus?", "Чи знак позначає наголос або розрізняє омографи?", "Яке правило застосовується до закінчення?"]
-  },
-  "hyphenation": {
-    formulas: [{ pattern: "word boundary + prefix/clitic/compound → hífen", note: "Дефіс залежить від морфології, орфографічної норми та конкретної лексеми; не переносіть українські правила." }],
-    examples: [
-      { pt: "guarda-chuva", uk: "парасоля" },
-      { pt: "ex-presidente", uk: "колишній президент" },
-      { pt: "dar-lhe-ei", uk: "я дам йому/їй", variety: "PT", register: "formal" }
-    ],
-    ukrainian: "Український дефіс не є прямим аналогом португальського hífen. Вивчайте продуктивні правила разом із винятками та словниковими формами.",
-    learnerQuestions: ["Це слово, складене слово чи clitic?", "Яка орфографічна норма?", "Чи дефіс обумовлений морфологією або лексикалізацією?"]
-  },
-  "capitalization-and-names": {
-    formulas: [{ pattern: "proper name/title + orthographic convention → capitalization", note: "Великі літери в назвах, посадах, святах і географічних назвах треба перевіряти за португальською нормою." }],
-    examples: [
-      { pt: "Portugal", uk: "Португалія" },
-      { pt: "o presidente da República", uk: "президент Республіки" },
-      { pt: "segunda-feira", uk: "понеділок" }
-    ],
-    ukrainian: "Українська та португальська не мають повністю однакових правил капіталізації назв посад, свят і днів тижня.",
-    learnerQuestions: ["Це власна назва чи загальна назва?", "Чи входить слово до офіційної назви?", "Який стиль/норма застосовується?"]
-  },
-  "discourse-and-pragmatics": {
+-pragmatics": {
     formulas: [{ pattern: "form + context + interlocutor relation → pragmatic interpretation", note: "Прагматичний ефект не завжди кодується окремим граматичним маркером." }],
     examples: [
       { pt: "Pode fechar a porta?", uk: "Можете зачинити двері?" },
@@ -1165,7 +1002,7 @@ Object.assign(SPECIAL, {
     ],
     mistakes: [{ wrong: "Підставляти прийменник за українським перекладом.", right: "gostar de / pensar em / precisar de", why: "Лексичне керування не є прямим перекладним відповідником." }],
     ukrainian: "Для україномовного це одна з ключових зон інтерференції: український відмінок часто приховує португальський прийменник.",
-    learnerQuestions: ["Який компонент є head?", "Який complement він вибирає?", "Чи прийменник лексично закріплений?", "Чи змінюється модель у PT-BR/PT-PT?"]
+    learnerQuestions: ["Який компонент є головним (head)?", "Який додаток (complement) він вибирає?", "Чи прийменник лексично закріплений?", "Чи змінюється модель у PT-BR/PT-PT?"]
   },
   "argument-vs-adjunct": {
     formulas: [{ pattern: "predicate-selected complement ≠ optional adjunct", note: "Аргумент є частиною валентності предиката; adjunct додає обставинну інформацію без такого самого лексичного вибору." }],
@@ -1242,7 +1079,7 @@ Object.assign(SPECIAL, {
     examples: [
       { pt: "As cartas foram escritas.", uk: "Листи були написані." },
       { pt: "As portas estão fechadas.", uk: "Двері зачинені." },
-      { pt: "Tenho escrito muitas cartas.", uk: "Я написав/написувала багато листів останнім часом." }
+      { pt: "Tenho escrito muitas cartas.", uk: "Я останнім часом багато пишу листів." }
     ],
     mistakes: [{ wrong: "Узгоджувати participle з підметом після ter.", right: "Tenho escrito muitas cartas.", why: "У конструкції ter + particípio participle не узгоджується з прямим додатком як у пасиві ser." }],
     ukrainian: "Українська має інші моделі дієприкметникового узгодження. Вчіть португальську форму разом із допоміжним дієсловом.",
@@ -1252,7 +1089,7 @@ Object.assign(SPECIAL, {
     formulas: [{ pattern: "gerúndio → progressive / manner / simultaneous circumstance", note: "Gerúndio не обмежується конструкцією estar + gerúndio." }],
     examples: [
       { pt: "Entrou sorrindo.", uk: "Він/вона увійшов/увійшла, усміхаючись." },
-      { pt: "Saiu correndo.", uk: "Він/вона вибіг/вибігла." },
+      { pt: "Saiu correndo.", uk: "Він/вона вийшов/вийшла, біжучи." },
       { pt: "Está estudando.", uk: "Він/вона зараз навчається.", variety: "BR" }
     ],
     ukrainian: "Український дієприслівник частково допомагає зрозуміти gerúndio, але функціональна сфера не збігається повністю.",
@@ -1268,7 +1105,7 @@ Object.assign(SPECIAL, {
     learnerQuestions: ["Що саме пропущено?", "Чи відновлюється воно однозначно?", "Чи зберігається паралелізм?", "Чи змінюється акцент/контраст?"]
   },
   "que-complementizer": {
-    formulas: [{ pattern: "matrix predicate + que + finite clause", note: "que як complementizer не виконує роль відносного займенника; його функція визначається структурою." }],
+    formulas: [{ pattern: "предикат головної частини + que + особова підрядна частина", note: "que як complementizer не виконує роль відносного займенника; його функція визначається структурою." }],
     examples: [
       { pt: "Acho que ele vem.", uk: "Я думаю, що він прийде." },
       { pt: "É possível que chova.", uk: "Можливо, що буде дощ." }
@@ -1567,8 +1404,7 @@ Object.assign(SPECIAL, {
     ukrainian: "Українська також кодує дистанцію та ввічливість, але граматичні ресурси їх вираження не збігаються. Вивчайте форму разом із ситуацією.",
     learnerQuestions: ["Хто до кого звертається?", "Яка соціальна дистанція?", "Це прохання, наказ чи пропозиція?", "Чи форма відповідає потрібному регістру?"]
   }
-};
-
+  ,
   "noun-gender": {
     formulas: [{ pattern: "artigo/determinante + nome → gênero; concordância → marcação de gênero em outros elementos", note: "O gênero é propriedade lexical e gramatical do nome; não se infere de modo confiável apenas pela terminação." }],
     examples: [
@@ -1766,6 +1602,8 @@ Object.assign(SPECIAL, {
     ukrainian: "Українська теж має вказівні займенники, але не має тотожної системи contracted forms; аналізуйте склад форми.",
     learnerQuestions: ["Який прийменник входить до форми?", "Який демонстратив і його рід/число?", "Чи є тут окрема crase?"]
   },
+};
+
 const SPECIAL_ALIASES: Record<string, string> = {
   "subjunctive-triggers": "subjunctive-triggers-advanced",
   "conditional-clauses": "conditional-clauses-advanced",
