@@ -1268,6 +1268,137 @@ Object.assign(SPECIAL, {
     ukrainian: "Українська та португаломовні орфографічні конвенції частково різняться. Перевіряйте назву, жанр і чинну норму, а не лише «чи це важливе слово».",
     learnerQuestions: ["Це власна чи загальна назва?", "Який жанр/тип документа?", "Яка чинна орфографічна норма?", "Чи є усталена назва?"]
   },
+  "pragmatics-overview": {
+    formulas: [{ pattern: "form + context + speaker intention → pragmatic interpretation", note: "Прагматика пояснює, чому одна граматично правильна форма може бути доречною, надто прямою, дистанційною або іронічною в іншій ситуації." }],
+    examples: [
+      { pt: "Pode fechar a porta?", uk: "Можеш зачинити двері?", register: "neutral" },
+      { pt: "Feche a porta.", uk: "Зачини двері.", register: "neutral" },
+      { pt: "Será que pode fechar a porta?", uk: "Чи не могли б ви зачинити двері?", register: "formal" }
+    ],
+    ukrainian: "Українська теж кодує ввічливість і непрямість, але конкретні граматичні ресурси не збігаються. Порівнюйте комунікативний ефект, а не лише переклад.",
+    learnerQuestions: ["Що мовцеві потрібно зробити?", "Яка соціальна дистанція?", "Наскільки прямим є висловлення?", "Чи форма змінює силу прохання?"]
+  },
+  "speech-acts": {
+    formulas: [{ pattern: "utterance → communicative act", note: "Граматична форма не дорівнює мовленнєвому акту: запитання може функціонувати як прохання, а твердження — як попередження." }],
+    examples: [
+      { pt: "Pode ajudar-me?", uk: "Можете мені допомогти?" },
+      { pt: "Você tem um minuto?", uk: "У вас є хвилинка?" },
+      { pt: "Cuidado!", uk: "Обережно!" }
+    ],
+    learnerQuestions: ["Який literal meaning?", "Який communicative act?", "Чи є непрямість?", "Який регістр і відносини між співрозмовниками?"]
+  },
+  "politeness": {
+    formulas: [{ pattern: "address form + modalization + register → social distance", note: "tu/você/senhor(a), conditional forms, questions and mitigation interact; жоден один маркер не визначає всю ввічливість." }],
+    examples: [
+      { pt: "Você pode ajudar-me?", uk: "Ви можете мені допомогти?", register: "neutral" },
+      { pt: "O senhor poderia ajudar-me?", uk: "Чи могли б Ви мені допомогти?", register: "formal" },
+      { pt: "Podes ajudar-me?", uk: "Можеш мені допомогти?", register: "neutral" }
+    ],
+    regional: "Системи звертання сильно варіюють за країною, регіоном, віком, соціальними відносинами й ситуацією. Не подавайте tu/você як просту універсальну шкалу «неформальне/формальне».",
+    learnerQuestions: ["Хто до кого звертається?", "Яка норма конкретного регіону?", "Чи форма є соціально нейтральною саме тут?", "Які ще засоби пом'якшують прохання?"]
+  },
+  "modal-particles": {
+    formulas: [{ pattern: "particle + proposition/discourse → aspectual, scalar or pragmatic effect", note: "já, ainda, mesmo, só, afinal, então мають кілька функцій; переклад одним словом часто вводить в оману." }],
+    examples: [
+      { pt: "Ainda estou a trabalhar.", uk: "Я ще працюю.", variety: "PT" },
+      { pt: "Já terminei.", uk: "Я вже закінчив/закінчила." },
+      { pt: "Só quero ajudar.", uk: "Я лише хочу допомогти." }
+    ],
+    learnerQuestions: ["Яка саме функція слова тут?", "Чи воно аспектуальне, скалярне чи дискурсивне?", "Який компонент має scope?", "Чи змінюється значення від позиції?"]
+  },
+  "discourse-overview": {
+    formulas: [{ pattern: "sentence + sentence + reference + connector + information structure → discourse cohesion", note: "Зв'язний текст не є просто послідовністю граматично правильних речень." }],
+    examples: [
+      { pt: "Cheguei cedo. Por isso, consegui falar com ela.", uk: "Я прийшов/прийшла рано. Тому зміг/змогла з нею поговорити." },
+      { pt: "Vi a Maria. Ela estava cansada.", uk: "Я побачив/побачила Марію. Вона була втомлена." }
+    ],
+    learnerQuestions: ["Як речення пов'язані?", "Що є topic?", "Який референт підтримується?", "Який зв'язок причинний, часовий чи контрастивний?"]
+  },
+  "discourse-markers": {
+    formulas: [{ pattern: "discourse marker → relation / stance / turn management", note: "Маркери можуть організовувати аргументацію, зміну теми, висновок або хід розмови." }],
+    examples: [
+      { pt: "Então, vamos começar.", uk: "Отже, почнімо." },
+      { pt: "Afinal, o que aconteceu?", uk: "То що зрештою сталося?" },
+      { pt: "Aliás, tenho outra pergunta.", uk: "До речі, у мене є ще одне питання." }
+    ],
+    learnerQuestions: ["Що зв'язує marker?", "Він організовує текст чи ставлення мовця?", "Чи це conjunction?", "Чи слово має інше лексичне значення поза дискурсом?"]
+  },
+  "cohesion-reference": {
+    formulas: [{ pattern: "anaphora + lexical repetition + substitution + omission → textual cohesion", note: "Когезія розподілена між граматичними й лексичними засобами." }],
+    examples: [
+      { pt: "Comprei um livro. O livro é sobre história.", uk: "Я купив/купила книжку. Книжка про історію." },
+      { pt: "A Ana chegou e Ø sentou-se.", uk: "Ана прийшла й сіла." }
+    ],
+    learnerQuestions: ["Як відновлюється референт?", "Чи потрібен займенник?", "Чи повтор природний?", "Чи можна використати zero subject?"]
+  },
+  "reference-overview": {
+    formulas: [{ pattern: "determination + deixis + anaphora → reference", note: "Визначеність, специфічність, дейксис і анафора перетинаються, але не є синонімами." }],
+    examples: [
+      { pt: "Vi um cão. O cão era preto.", uk: "Я побачив/побачила собаку. Собака була чорна." },
+      { pt: "Este livro é meu.", uk: "Ця книжка моя." },
+      { pt: "Procuro um médico.", uk: "Я шукаю лікаря." }
+    ],
+    learnerQuestions: ["Референт конкретний?", "Він уже активний у дискурсі?", "Чи є deictic component?", "Яку роль відіграє article/determiner?"]
+  },
+  "phonetics-overview": {
+    formulas: [{ pattern: "segmental inventory + syllable + stress + reduction + nasalization → pronunciation system", note: "Вимову треба вивчати системно: одна й та сама буква може мати різні фонетичні реалізації залежно від позиції та різновиду." }],
+    examples: [
+      { pt: "casa", uk: "дім; голосні й /z/ між голосними" },
+      { pt: "pão", uk: "хліб; носовий дифтонг" },
+      { pt: "carro", uk: "автомобіль; rr має окрему вимовну модель" }
+    ],
+    regional: "Фонетична реалізація особливо чутлива до різновиду: PT-BR і PT-PT відрізняються ритмом, редукцією ненаголошених голосних та низкою приголосних реалізацій.",
+    learnerQuestions: ["Який фонемний контраст?", "Де наголос?", "Чи є редукція?", "Чи вимова характерна для BR, PT або обох?"]
+  },
+  "nasal-vowels": {
+    formulas: [{ pattern: "vowel + nasal environment/tilde → nasal vowel or nasal diphthong", note: "Носовість не слід зводити до українського «м/н»: вона є властивістю голосного/дифтонга." }],
+    examples: [
+      { pt: "mãe", uk: "мати; носовий дифтонг" },
+      { pt: "pão", uk: "хліб; /ãw̃/-тип носової структури" },
+      { pt: "bem", uk: "добре; кінцевий носовий компонент" }
+    ],
+    learnerQuestions: ["Де саме носовість?", "Це голосний чи дифтонг?", "Яка роль кінцевої літери?", "Чи є regional phonetic difference?"]
+  },
+  "consonants-phonetics": {
+    formulas: [{ pattern: "letter/digraph + position + variety → consonant realization", note: "r, s, x, ch, lh, nh не мають одного універсального правила «одна літера = один звук»." }],
+    examples: [
+      { pt: "caro / carro", uk: "дорогий / автомобіль; контраст r/rr" },
+      { pt: "casa", uk: "дім; s між голосними часто має дзвінку реалізацію" },
+      { pt: "filho / vinho", uk: "син / вино; lh/nh як диграфи" }
+    ],
+    regional: "Реалізація r, s і x істотно варіює між PT-BR, PT-PT та окремими регіонами. Навчальний довідник має подавати варіант як варіант, а не як універсальну вимову.",
+    learnerQuestions: ["Яка позиція звука?", "Це диграф?", "Яка варіантність між регіонами?", "Чи орфографія приховує фонетичну різницю?"]
+  },
+  "determiners-agreement": {
+    formulas: [{ pattern: "determiner + noun → gender/number agreement", note: "Артикль, demonstrative і possessive зазвичай узгоджуються з іменником; квантори мають власні обмеження." }],
+    examples: [
+      { pt: "esta casa / estes livros", uk: "цей будинок / ці книжки" },
+      { pt: "o meu livro / as minhas casas", uk: "моя книжка / мої будинки" },
+      { pt: "todos os alunos", uk: "усі студенти" }
+    ],
+    mistakes: [{ wrong: "Узгоджувати possessive з особою-власником.", right: "a minha casa / o meu livro", why: "Рід і число possessive узгоджуються з possessed noun, а не з власником." }],
+    learnerQuestions: ["Хто є possessor, а що possessed?", "Який рід/число головного іменника?", "Який determiner?", "Чи конструкція має особливу норму PT-BR/PT-PT?"]
+  },
+  "valency-overview": {
+    formulas: [{ pattern: "predicate → required/selected arguments + optional adjuncts", note: "Валентність описує, які компоненти предикат ліцензує або вимагає; це не те саме, що кількість слів у реченні." }],
+    examples: [
+      { pt: "Ela deu um livro ao João.", uk: "Вона дала книжку Жуану." },
+      { pt: "Ele gosta de música.", uk: "Він любить музику." },
+      { pt: "Ela colocou o livro na mesa.", uk: "Вона поклала книжку на стіл." }
+    ],
+    ukrainian: "Український відмінок часто кодує те, що португальська виражає прийменниковою конструкцією. Тому вчіть дієслово разом із його valency frame.",
+    learnerQuestions: ["Які аргументи вибирає предикат?", "Який прийменник потрібен?", "Чи компонент optional?", "Чи змінюється frame при зміні значення дієслова?"]
+  },
+  "verb-noun-collocations": {
+    formulas: [{ pattern: "verb + noun → conventional lexical combination", note: "Колокація не завжди передбачувана з окремих значень слів." }],
+    examples: [
+      { pt: "tomar uma decisão", uk: "прийняти рішення" },
+      { pt: "prestar atenção", uk: "звернути увагу" },
+      { pt: "ter em conta", uk: "взяти до уваги" }
+    ],
+    ukrainian: "Український відповідник може використовувати інше дієслово. Вчіть колокацію як готову лексико-граматичну рамку.",
+    learnerQuestions: ["Це вільне поєднання чи collocation?", "Який article/прийменник?", "Чи змінюється verb залежно від різновиду?", "Чи є близька українська калька, якої слід уникати?"]
+  },
   "register-and-directness": {
     formulas: [{ pattern: "форма + дистанція + комунікативна мета → регістр", note: "Одна функція може мати нейтральну, розмовну, формальну та непряму реалізацію." }],
     examples: [
