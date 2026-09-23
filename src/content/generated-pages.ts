@@ -1515,7 +1515,7 @@ Object.assign(SPECIAL, {
     learnerQuestions: ["Це прямий чи непрямий додаток?", "Який займенниковий тип приймає дієслово?", "Який різновид і регістр моделюється?"]
   },
   "prepositional-pronouns": {
-    formulas: [{ pattern: "preposição + mim/ti/si/ele/ela/nós/vós/eles/elas; com → comigo/contigo/consigo/conosco/convosco/consigo", note: "Після прийменника вживається тонічна форма; з com існують спеціальні злиті форми." }],
+    formulas: [{ pattern: "preposição + mim/ti/ele/ela/nós/vós/eles/elas; reflexive → si; com → comigo/contigo/consigo/conosco/convosco/consigo", note: "Після прийменника вживається тонічна форма; si має рефлексивну функцію, а з com існують спеціальні злиті форми." }],
     examples: [
       { pt: "Isto é para mim.", uk: "Це для мене." },
       { pt: "Falaram de ti.", uk: "Вони говорили про тебе." },
@@ -1523,7 +1523,7 @@ Object.assign(SPECIAL, {
     ],
     mistakes: [{ wrong: "Isto é para eu.", right: "Isto é para mim.", why: "Після простого прийменника потрібна тонічна форма mim; eu можливе, якщо є підмет інфінітива: para eu fazer." }],
     ukrainian: "Український відмінок частково підказує значення, але португальська розрізняє клітичні та тонічні форми окремо. Вчіть прийменник разом із моделлю займенника.",
-    learnerQuestions: ["Це займенник після прийменника чи підмет інфінітива?", "Чи є тут спеціальна форма з com?", "Чи потрібна форма si для кореферентного referent?"]
+    learnerQuestions: ["Це займенник після прийменника чи підмет інфінітива?", "Чи є тут спеціальна форма з com?", "Чи є si рефлексивним і кореферентним із підметом?"]
   },
   "pronoun-reference": {
     formulas: [{ pattern: "pronoun → referent recovered from discourse/context", note: "Вибір форми пов'язаний не лише з родом і числом, а й з тим, який референт доступний у дискурсі." }],
@@ -1546,7 +1546,7 @@ Object.assign(SPECIAL, {
     brPt: "У сучасній PT-BR просторовий контраст este/esse у багатьох контекстах частково нейтралізується; для навчання важливо розрізняти нормативний опис і фактичне вживання."
   },
   "clitic-infinitive": {
-    formulas: [{ pattern: "infinitive + clitic / preposition + infinitive + clitic; placement depends on construction and variety", note: "Позиція клітики біля інфінітива конкурує з іншими позиціями в складених конструкціях; це не проста копія українського порядку слів." }],
+    formulas: [{ pattern: "infinitive + clitic; preposition + clitic + infinitive in relevant constructions", note: "Позиція клітики біля інфінітива залежить від типу конструкції, прийменника, матричного дієслова та різновиду." }],
     examples: [
       { pt: "É importante ajudá-lo.", uk: "Важливо йому допомогти / важливо допомогти йому.", variety: "PT" },
       { pt: "Quero vê-la amanhã.", uk: "Я хочу побачити її завтра." },
