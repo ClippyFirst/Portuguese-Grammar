@@ -214,7 +214,7 @@ const SPECIAL: Record<string, LearnerLayer> = {
   "clitics-gerund": {
     formulas: [{ pattern: "gerund + clitic / clitic + gerund according to construction and variety", note: "Розподіл позицій залежить від синтаксичної конструкції та нормативної моделі конкретного різновиду." }],
     examples: [
-      { pt: "Estando-lhe grato, agradeci.", uk: "Будучи йому вдячним/вдячною, я подякував/подякувала.", variety: "PT" }
+      { pt: "Vendo-o, saiu.", uk: "Побачивши його, він/вона вийшов/вийшла.", variety: "PT", note: "o є клітикою, приєднаною до gerúndio." }
     ],
     ukrainian: "Позиція клітики з герундієм не копіює українську. Для навчання аналізуйте конструкцію як ціле, а не окремо перекладайте gerúndio та займенник.",
     learnerQuestions: ["Який статус має gerúndio в реченні?", "Який елемент керує позицією клітики?", "Чи описується PT-BR чи PT-PT?"]
