@@ -230,6 +230,108 @@ rogressive-br-pt": {
 
 
 Object.assign(SPECIAL, {
+  "verb-government-core": {
+    formation: "Вивчайте дієслово разом із його валентною рамкою: gostar de + complemento, pensar em + complemento, precisar de + complemento, confiar em + complemento. Прийменник є частиною моделі, а не довільним перекладом українського «на/про/в/до».",
+    examples: [
+      { pt: "Gosto de música.", uk: "Я люблю музику." },
+      { pt: "Penso em viajar.", uk: "Я думаю про подорож." },
+      { pt: "Preciso de ajuda.", uk: "Мені потрібна допомога." },
+      { pt: "Confio em ti.", uk: "Я тобі довіряю." }
+    ],
+    mistakes: [
+      { wrong: "Penso o problema.", right: "Penso no problema.", why: "У значенні «думати про/щось розмірковувати» pensar зазвичай будує цей complement з em." },
+      { wrong: "Gosto música.", right: "Gosto de música.", why: "У цій моделі gostar вимагає de перед nominal complement." }
+    ],
+    ukrainian: "Український переклад часто не показує португальського прийменника: «думати про» не означає, що португальська модель має той самий прийменник.",
+    learnerQuestions: ["Яка лексема є головною?", "Який прийменник входить до її валентної рамки?", "Чи змінюється рамка разом зі значенням дієслова?"]
+  },
+  "verb-government-se-de": {
+    formation: "Прономінальні дієслова треба вчити разом із se та прийменником: lembrar-se de + complemento, queixar-se de + complemento. Se тут є частиною лексичної моделі, а не буквальним рефлексивним об'єктом.",
+    examples: [
+      { pt: "Lembro-me desse dia.", uk: "Я пам'ятаю той день.", variety: "PT" },
+      { pt: "Ela queixou-se do barulho.", uk: "Вона поскаржилася на шум.", variety: "PT" },
+      { pt: "Não me lembro disso.", uk: "Я цього не пам'ятаю." }
+    ],
+    mistakes: [
+      { wrong: "Lembro-me esse dia.", right: "Lembro-me desse dia.", why: "У цій прономінальній моделі lembrar-se керує complement з de." },
+      { wrong: "Queixo-me o barulho.", right: "Queixo-me do barulho.", why: "queixar-se будує complement з de." }
+    ],
+    ukrainian: "Український переклад може не містити ні займенника, ні того самого прийменника. Запам'ятовуйте повну рамку, а не лише переклад дієслова.",
+    learnerQuestions: ["Чи є se частиною лексеми?", "Який прийменник вводить complement?", "Чи форма змінюється через próclise/enclise у конкретному реченні?"]
+  },
+  "verb-government-a": {
+    formation: "Деякі дієслова керують a у стандартних моделях: assistir a + подія/програма у значенні «бути присутнім, дивитися»; obedecer a + особа/правило; responder a + адресат/запит у відповідних значеннях.",
+    examples: [
+      { pt: "Assisti ao filme ontem.", uk: "Я вчора подивився/подивилася фільм." },
+      { pt: "Obedeceu às regras.", uk: "Він/вона дотримався/дотрималася правил." },
+      { pt: "Respondi à pergunta.", uk: "Я відповів/відповіла на запитання." }
+    ],
+    mistakes: [
+      { wrong: "Assisti o filme.", right: "Assisti ao filme.", why: "У значенні «дивитися/бути присутнім на» assistir керує a; перед означеним артиклем виникає ao." }
+    ],
+    ukrainian: "Українські конструкції «дивитися фільм», «відповідати на запитання» не дають прямої карти португальського керування.",
+    learnerQuestions: ["Яке значення має дієслово?", "Чи входить a до його валентної рамки?", "Чи виникає contraction a + o/a/as/os?"]
+  },
+  "verb-government-em": {
+    formation: "У низці моделей em є частиною керування: confiar em, insistir em, pensar em. Перед означеним артиклем em зливається з ним: em + o → no, em + a → na, em + os → nos, em + as → nas.",
+    examples: [
+      { pt: "Confio em ti.", uk: "Я тобі довіряю." },
+      { pt: "Insisto em estudar.", uk: "Я наполягаю на навчанні." },
+      { pt: "Penso na solução.", uk: "Я думаю про рішення." }
+    ],
+    mistakes: [
+      { wrong: "Confio de ti.", right: "Confio em ti.", why: "У цій моделі confiar керує em." },
+      { wrong: "Penso a solução.", right: "Penso na solução.", why: "У значенні «думати про» pensar будує complement з em." }
+    ],
+    ukrainian: "Не переносіть українські «довіряти комусь», «наполягати на чомусь», «думати про щось» буквально: португальська рамка має власний прийменник.",
+    learnerQuestions: ["Чи є em частиною керування?", "Чи complement — інфінітив, займенник або іменна група?", "Чи потрібна форма no/na/nos/nas?"]
+  },
+  "verb-government-de": {
+    formation: "У моделях gostar de, precisar de, depender de та lembrar-se de прийменник de входить до керування. Перед артиклями він може скорочуватися: de + o → do, de + a → da, de + os → dos, de + as → das.",
+    examples: [
+      { pt: "Gosto do livro.", uk: "Мені подобається ця книжка." },
+      { pt: "Preciso de tempo.", uk: "Мені потрібен час." },
+      { pt: "Tudo depende do contexto.", uk: "Усе залежить від контексту." }
+    ],
+    mistakes: [
+      { wrong: "Preciso ajuda.", right: "Preciso de ajuda.", why: "У цій моделі precisar керує de." },
+      { wrong: "Tudo depende o contexto.", right: "Tudo depende do contexto.", why: "depender вимагає de перед complement." }
+    ],
+    ukrainian: "Український переклад «потребувати чогось» або «залежати від чогось» не дозволяє вгадати португальський прийменник.",
+    learnerQuestions: ["Чи входить de до валентної рамки?", "Чи complement означений артиклем?", "Чи потрібна форма do/da/dos/das?"]
+  },
+  "verb-government-arrival-motion": {
+    formation: "Для руху й досягнення точки треба розрізняти значення та різновид: chegar a + destination є нормативною моделлю в багатьох контекстах; ir a/para може розрізняти короткочасний напрямок/відвідання та напрямок або ціль, але конкретний вибір залежить від конструкції, лексики й норми.",
+    examples: [
+      { pt: "Cheguei a Lisboa ontem.", uk: "Я приїхав/приїхала до Лісабона вчора." },
+      { pt: "Vou a Lisboa amanhã.", uk: "Я їду до Лісабона завтра." },
+      { pt: "Vou para Lisboa no verão.", uk: "Я їду до Лісабона на літо." }
+    ],
+    mistakes: [
+      { wrong: "Cheguei Lisboa.", right: "Cheguei a Lisboa.", why: "У цій моделі destination вводиться прийменником a." }
+    ],
+    ukrainian: "Українське «до» може відповідати різним португальським конструкціям. Не вибирайте a/para лише за українським прийменником.",
+    regional: "Розподіл a/para після дієслів руху не слід перетворювати на універсальне правило «тимчасово = a, назавжди = para». Перевіряйте конкретну конструкцію та різновид португальської.",
+    learnerQuestions: ["Яка саме семантика руху?", "Чи йдеться про destination, direction, відвідання або тривале переміщення?", "Який різновид і регістр описується?"]
+  },
+  "verb-government-meaning-shifts": {
+    formation: "Один дієслівний корінь може мати різні значення й рамки. Тому керування вчать парами «значення + конструкція», а не як один список прийменників.",
+    examples: [
+      { pt: "Assisti ao concerto.", uk: "Я був/була на концерті." },
+      { pt: "Assisti o doente.", uk: "Я доглядав/доглядала хворого.", note: "Інше значення assistir має іншу рамку." },
+      { pt: "Pensei no problema.", uk: "Я думав/думала про проблему." },
+      { pt: "Pensei em viajar.", uk: "Я думав/думала про подорож." }
+    ],
+    mistakes: [
+      { wrong: "Вивчити одне правило «дієслово X = прийменник Y» для всіх значень.", right: "Вивчати кожне значення разом із його типовою рамкою.", why: "Полісемія може супроводжуватися зміною синтаксичної моделі." }
+    ],
+    ukrainian: "Українська теж має лексичне керування, але конкретні прийменники та відмінки не збігаються з португальськими. Найнадійніша одиниця навчання — дієслово + значення + приклад + рамка.",
+    learnerQuestions: ["Яке саме значення дієслова активне?", "Чи змінюється complement?", "Чи зміна прийменника змінює значення або лише конструкцію?"]
+  }
+});
+
+
+Object.assign(SPECIAL, {
   "articles-definite": SPECIAL["articles-ukrainian"],
   "articles-indefinite": {
     formation: "um/uma/uns/umas вводять референт як новий або неідентифікований у дискурсі; їхній вибір залежить від роду, числа та референції.",
