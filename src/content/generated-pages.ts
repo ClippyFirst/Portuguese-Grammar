@@ -268,3 +268,51 @@ export const GENERATED_PAGES: GrammarPage[] = CATALOG
 export function generatedPageFor(category: string, slug: string): GrammarPage | null {
   return GENERATED_PAGES.find((p) => p.category === category && p.slug === slug) ?? null;
 }
+
+/**
+ * Editorial enrichment for dedicated pages.
+ * Dedicated modules remain authoritative; this layer fills structural gaps
+ * so every article exposes the learner-facing diagnostic dimensions.
+ */
+export function enrichPage(page: GrammarPage): GrammarPage {
+  const meta = CATALOG.find((m) => m.id === page.id || (m.category === page.category && m.slug === page.slug));
+  if (!meta) return page;
+  const layer = { ...genericLayer(meta), ...(SPECIAL[meta.id] ?? {}) };
+  const examples = page.examples?.length ? page.examples : examplesFor(meta.category, meta.id);
+  const learnerQuestions = layer.learnerQuestions ?? [
+    "Яку функцію виконує конструкція, а не лише що вона означає в перекладі?",
+    "Яке керування, узгодження або позиційне правило треба перевірити?",
+    "Чи змінюється форма в PT-BR, PT-PT, іншому різновиді або регістрі?",
+    "Чи це продуктивне правило, лексикалізована модель, виняток чи контекстна варіантність?",
+  ];
+  const diagnostic = [
+    "",
+    "### Як перевіряти себе",
+    "",
+    "1. **Функція:** визначте, що саме кодує конструкція в реченні.",
+    "2. **Форма:** перевірте морфологію, узгодження, прийменник або позицію.",
+    "3. **Контекст:** встановіть референцію, часову перспективу, інформаційну структуру та регістр.",
+    "4. **Варіант мови:** якщо доречно, перевірте PT-BR, PT-PT та інші засвідчені різновиди окремо.",
+    "5. **Українська:** лише після цього порівнюйте з українською, щоб побачити можливу інтерференцію.",
+    "",
+    "**Діагностичні питання:** " + learnerQuestions.join(" · "),
+  ].join("\n");
+  const mergedExamples = examples.slice(0, 6);
+  return {
+    ...page,
+    formulas: page.formulas?.length ? page.formulas : layer.formulas,
+    formation: page.formation ?? layer.formation,
+    examples,
+    markers: page.markers?.length ? page.markers : layer.markers,
+    exceptions: page.exceptions ?? layer.exceptions,
+    mistakes: page.mistakes?.length ? page.mistakes : layer.mistakes,
+    ukrainian: page.ukrainian ?? layer.ukrainian,
+    brPt: page.brPt ?? layer.brPt,
+    regional: page.regional ?? layer.regional,
+    uses: page.uses?.length ? page.uses : [
+      { title: "Розпізнавання", body: "Спочатку визначте граматичну функцію, потім форму й контекст.", examples: mergedExamples.slice(0, 2) },
+      { title: "Варіантність і регістр", body: layer.brPt ?? "Не змішуйте національний стандарт, розмовну норму та інші різновиди в одну модель.", examples: mergedExamples.filter((e) => e.variety || e.register).slice(0, 3) },
+    ],
+    intro: page.intro + diagnostic,
+  };
+}
