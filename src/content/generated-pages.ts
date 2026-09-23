@@ -937,7 +937,7 @@ Object.assign(SPECIAL, {
     formulas: [{ pattern: "syntactic subject + agreement controller → person/number", note: "У складних структурах узгодження визначається не лише найближчим іменником." }],
     examples: [
       { pt: "A maioria dos alunos chegou cedo.", uk: "Більшість студентів прийшла рано." },
-      { pt: "A maioria dos alunos chegaram cedo.", uk: "Більшість студентів прийшли рано.", register: "colloquial" },
+      { pt: "A maioria dos alunos chegou cedo.", uk: "Більшість студентів прийшли рано.", note: "Узгодження з plural-іменником може траплятися за семантичним узгодженням; не подавайте його як автоматично «розмовне правило»." },
       { pt: "Fomos nós que fizemos isso.", uk: "Це ми зробили." }
     ],
     mistakes: [{ wrong: "Узгоджувати дієслово автоматично з найближчим іменником.", right: "Спершу знайти syntactic subject та тип конструкції.", why: "Складні групи допускають нормативні або варіантні моделі узгодження." }],
