@@ -333,6 +333,10 @@ Object.assign(SPECIAL, {
 
 Object.assign(SPECIAL, {
   "verb-preposition": SPECIAL["verb-government-core"],
+  "verb-infinitive-complements": SPECIAL["verb-government-infinitive"],
+  "verb-com-government": SPECIAL["verb-government-com"],
+  "verb-por-government": SPECIAL["verb-government-por"],
+  "verb-government-alternations": SPECIAL["verb-government-alternations"],
   "government-overview": {
     ...SPECIAL["government-overview"],
     formation: "Керування (regência) описує, яку синтаксичну рамку вибирає головна лексема. Для дієслів корисно вчити не просто «дієслово + прийменник», а «значення + complement + прийменник + приклад».",
