@@ -394,15 +394,16 @@ Object.assign(SPECIAL, {
     brPt: "Ter existential — важлива PT-BR зона варіантності; у формальному письмі та в PT-PT haver залишається центральним у відповідних екзистенційних конструкціях."
   },
   "personal-pronouns": {
-    formulas: [{ pattern: "sujeito: eu/tu/você/ele...; objeto: me/te/o/a/lhe...; tónico após preposição: mim/ti/ele...", note: "Форма залежить від синтаксичної ролі, прийменника, клітичності, різновиду та регістру." }],
+    formulas: [{ pattern: "підмет: eu/tu/você/ele...; клітика: me/te/o/a/lhe...; після прийменника: mim/ti/ele...", note: "Форма визначається синтаксичною роллю, прийменником, позицією клітики, різновидом і регістром." }],
     examples: [
       { pt: "Eu vi-o ontem.", uk: "Я бачив/бачила його вчора.", variety: "PT" },
       { pt: "Eu vi ele ontem.", uk: "Я бачив/бачила його вчора.", variety: "BR", register: "colloquial" },
-      { pt: "Isto é para mim.", uk: "Це для мене." }
+      { pt: "Isto é para mim.", uk: "Це для мене." },
+      { pt: "Isto é para eu fazer amanhã.", uk: "Це мені зробити завтра.", note: "eu є підметом інфінітива fazer, тому форма не замінюється на mim." }
     ],
-    mistakes: [{ wrong: "Isto é para eu.", right: "Isto é para mim.", why: "Після прийменника у цій конструкції потрібна tonic pronoun mim; eu зберігається в окремих infinitival subject constructions." }],
-    ukrainian: "Українські форми «я/мене/мені» не відповідають механічно португальським eu/me/mim; спочатку визначте синтаксичну позицію.",
-    brPt: "У PT-BR повні форми ele/ela можуть конкурувати з o/a як об'єктні форми в розмовному мовленні; для навчання позначайте регістр."
+    mistakes: [{ wrong: "Isto é para mim fazer amanhã.", right: "Isto é para eu fazer amanhã.", why: "Після прийменника mim є тонічною формою; якщо займенник є підметом інфінітива, використовується eu." }],
+    ukrainian: "Українські «я/мене/мені» не відповідають механічно eu/me/mim. Спочатку визначте синтаксичну роль займенника і те, чи він належить до особової форми дієслова, чи є підметом інфінітива.",
+    brPt: "У PT-BR повні форми ele/ela як прямий додаток поширені в живому мовленні; у формальнішому письмі та в PT-PT клітичні o/a/os/as мають інший розподіл і продуктивність."
   },
   "subject-pronouns": {
     formulas: [{ pattern: "eu, tu, você, ele/ela, nós, vocês, eles/elas", note: "Підметовий займенник може бути виражений або нульовим; вибір також пов'язаний із формою звертання." }],
@@ -1513,6 +1514,47 @@ Object.assign(SPECIAL, {
     ukrainian: "Українські «його/йому» корисні як контраст, але не визначають португальську форму автоматично: спочатку встановіть синтаксичну роль і керування.",
     learnerQuestions: ["Це прямий чи непрямий додаток?", "Який займенниковий тип приймає дієслово?", "Який різновид і регістр моделюється?"]
   },
+  "prepositional-pronouns": {
+    formulas: [{ pattern: "preposição + mim/ti/si/ele/ela/nós/vós/eles/elas; com → comigo/contigo/consigo/conosco/convosco/consigo", note: "Після прийменника вживається тонічна форма; з com існують спеціальні злиті форми." }],
+    examples: [
+      { pt: "Isto é para mim.", uk: "Це для мене." },
+      { pt: "Falaram de ti.", uk: "Вони говорили про тебе." },
+      { pt: "Vou contigo.", uk: "Я піду з тобою." }
+    ],
+    mistakes: [{ wrong: "Isto é para eu.", right: "Isto é para mim.", why: "Після простого прийменника потрібна тонічна форма mim; eu можливе, якщо є підмет інфінітива: para eu fazer." }],
+    ukrainian: "Український відмінок частково підказує значення, але португальська розрізняє клітичні та тонічні форми окремо. Вчіть прийменник разом із моделлю займенника.",
+    learnerQuestions: ["Це займенник після прийменника чи підмет інфінітива?", "Чи є тут спеціальна форма з com?", "Чи потрібна форма si для кореферентного referent?"]
+  },
+  "pronoun-reference": {
+    formulas: [{ pattern: "pronoun → referent recovered from discourse/context", note: "Вибір форми пов'язаний не лише з родом і числом, а й з тим, який референт доступний у дискурсі." }],
+    examples: [
+      { pt: "A Ana falou com a Maria e depois ela saiu.", uk: "Ана поговорила з Марією, а потім вона вийшла.", note: "Без контексту український переклад так само може бути двозначним." },
+      { pt: "Vi o João ontem. Ele estava cansado.", uk: "Я бачив/бачила Жуана вчора. Він був втомлений." }
+    ],
+    ukrainian: "Українські займенники також залежать від дискурсивної референції, але португальська додатково розподіляє clitic/tonic форми та часто покладається на нульовий підмет. Не визначайте референта лише за найближчим іменником.",
+    learnerQuestions: ["Який референт є центром поточного дискурсу?", "Чи може займенник мати кілька можливих антецедентів?", "Чи потрібен виражений підмет для уникнення двозначності?"]
+  },
+  "demonstratives": {
+    formulas: [{ pattern: "este/esta/isto; esse/essa/isso; aquele/aquela/aquilo → deictic or discourse reference", note: "Розподіл залежить від просторової/дискурсивної близькості та різновиду мови; не зводьте його до механічної схеми «цей/той»." }],
+    examples: [
+      { pt: "Este livro é meu.", uk: "Ця книжка моя." },
+      { pt: "Esse livro que mencionaste é interessante.", uk: "Та книжка, про яку ти згадав/згадала, цікава." },
+      { pt: "Aquele prédio fica longe.", uk: "Та будівля там далеко." }
+    ],
+    mistakes: [{ wrong: "Завжди перекладати este як «цей», esse як «той» без урахування контексту.", right: "Визначати просторову або дискурсивну відстань.", why: "Демонстративи кодують дейксис і референцію, а не лише українську пару «цей/той»." }],
+    ukrainian: "Українська також має дейктичну систему, але межі між формами й їхнє дискурсивне використання не повністю збігаються з португальськими.",
+    brPt: "У сучасній PT-BR просторовий контраст este/esse у багатьох контекстах частково нейтралізується; для навчання важливо розрізняти нормативний опис і фактичне вживання."
+  },
+  "clitic-infinitive": {
+    formulas: [{ pattern: "infinitive + clitic / preposition + infinitive + clitic; placement depends on construction and variety", note: "Позиція клітики біля інфінітива конкурує з іншими позиціями в складених конструкціях; це не проста копія українського порядку слів." }],
+    examples: [
+      { pt: "É importante ajudá-lo.", uk: "Важливо йому допомогти / важливо допомогти йому.", variety: "PT" },
+      { pt: "Quero vê-la amanhã.", uk: "Я хочу побачити її завтра." },
+      { pt: "Para o ajudar, precisamos de tempo.", uk: "Щоб йому допомогти, нам потрібен час.", variety: "PT" }
+    ],
+    ukrainian: "Українська ставить займенниковий додаток інакше, тому не переносіть його позицію на португальську. Аналізуйте тип інфінітива, прийменник, матричне дієслово та різновид.",
+    learnerQuestions: ["Клітика належить до інфінітива чи до матричного предиката?", "Чи є перед інфінітивом прийменник?", "Який варіант нормативний у цільовому різновиді?"]
+  },
   "alphabet": {
     formulas: [{ pattern: "letra → nome gráfico; letra + contexto → leitura", note: "Алфавіт і правила читання — різні рівні: назва літери не передбачає її вимову в кожному слові." }],
     examples: [
@@ -1727,9 +1769,7 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "forms-of-address": "politeness",
   "direct-object": "personal-pronouns",
   "indirect-object": "lhe-vs-o",
-  "prepositional-pronouns": "personal-pronouns",
   "reflexive-pronouns": "se-system",
-  "demonstratives": "reference-overview",
   "indefinites": "reference-overview",
   "interrogative-pronouns": "question-word-order",
   "clitics-imperative": "clitic-placement",
