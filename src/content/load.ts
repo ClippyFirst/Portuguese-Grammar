@@ -72,7 +72,7 @@ export async function loadCategoryPages(category: string): Promise<GrammarPage[]
     byPath.set(`${p.category}/${p.slug}`, p);
     byPath.set(p.id, p);
   }
-  return pages;
+  return enrichedPages;
 }
 
 export async function loadPage(
