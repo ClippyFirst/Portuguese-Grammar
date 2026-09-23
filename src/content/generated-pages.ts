@@ -332,6 +332,26 @@ Object.assign(SPECIAL, {
 
 
 Object.assign(SPECIAL, {
+  "verb-preposition": SPECIAL["verb-government-core"],
+  "government-overview": {
+    ...SPECIAL["government-overview"],
+    formation: "Керування (regência) описує, яку синтаксичну рамку вибирає головна лексема. Для дієслів корисно вчити не просто «дієслово + прийменник», а «значення + complement + прийменник + приклад».",
+    examples: [
+      ...SPECIAL["government-overview"].examples ?? [],
+      { pt: "Confio em ti.", uk: "Я тобі довіряю." },
+      { pt: "Lembro-me desse dia.", uk: "Я пам'ятаю той день.", variety: "PT" },
+      { pt: "Assisti ao filme ontem.", uk: "Я вчора подивився/подивилася фільм." }
+    ],
+    learnerQuestions: [
+      ...(SPECIAL["government-overview"].learnerQuestions ?? []),
+      "Чи є прийменник частиною лексичної валентності, а не вільним обставинним модифікатором?",
+      "Чи змінюється рамка разом зі значенням дієслова?"
+    ]
+  }
+});
+
+
+Object.assign(SPECIAL, {
   "articles-definite": SPECIAL["articles-ukrainian"],
   "articles-indefinite": {
     formation: "um/uma/uns/umas вводять референт як новий або неідентифікований у дискурсі; їхній вибір залежить від роду, числа та референції.",
