@@ -357,6 +357,200 @@ Object.assign(SPECIAL, {
   },
 });
 
+
+  "ter": {
+    formulas: [{ pattern: "ter + nome → posse / relação; ter + particípio → tempo composto; ter de/que + infinitivo → obrigação", note: "A função de ter depende da construção: não reduza ter ao verbo ucraniano «мати»." }],
+    formation: "Distinga o verbo lexical ter, o auxiliar dos tempos compostos e as perífrases ter de / ter que. Na construção existencial, compare também ter com haver e considere a variedade.",
+    examples: [
+      { pt: "Tenho dois irmãos.", uk: "У мене є два брати." },
+      { pt: "Tenho estudado muito.", uk: "Я останнім часом багато вчуся." },
+      { pt: "Tenho de trabalhar amanhã.", uk: "Мені треба працювати завтра." }
+    ],
+    mistakes: [{ wrong: "Eu tenho estudado ontem.", right: "Estudei ontem.", why: "O tempo composto com ter não é um equivalente mecânico de qualquer passado ucraniano; a leitura depende do intervalo e da aspectualidade." }],
+    ukrainian: "Українське «мати» не охоплює всі функції ter: порівнюйте володіння, допоміжність, обов'язок і конструкції існування.",
+    brPt: "У PT-BR ter é muito produtivo em construções existenciais na fala, enquanto haver permanece importante em registros formais e em usos específicos. Не змішуйте розмовну та формальну моделі."
+  },
+  "haver": {
+    formulas: [{ pattern: "há + nome → existência; haver + particípio → tempo composto em registros/construções específicos; haver de + infinitivo → valor modal", note: "Há é forma impessoal de haver no presente." }],
+    formation: "Em há no sentido existencial, não trate o nome posterior como sujeito que obrigatoriamente controla o verbo: a construção é impessoal. Separe-a de haver de e dos usos auxiliares.",
+    examples: [
+      { pt: "Há muitas pessoas aqui.", uk: "Тут багато людей." },
+      { pt: "Há um problema.", uk: "Є одна проблема." },
+      { pt: "Hei de voltar.", uk: "Я ще повернуся / я маю повернутися.", variety: "PT", register: "formal" }
+    ],
+    mistakes: [{ wrong: "Hão muitas pessoas aqui.", right: "Há muitas pessoas aqui.", why: "Haver existencial é impessoal no padrão descrito aqui." }],
+    ukrainian: "Не перекладайте há одним українським дієсловом: «є», «існує», «мається» та інші переклади не визначають португальську граматику.",
+    brPt: "У розмовній PT-BR конструкції ter + SN широко вживається в екзистенційному значенні; для нейтральної/формальної письмової мови важливо знати нормативне há."
+  },
+  "ter-haver": {
+    formulas: [{ pattern: "ter → posse / usos auxiliares / existência em variedades; haver → existência impessoal / usos auxiliares / haver de", note: "Порівняння треба робити за конкретною конструкцією, а не за перекладом «мати / бути»." }],
+    examples: [
+      { pt: "Tenho um carro.", uk: "У мене є автомобіль." },
+      { pt: "Há um carro na rua.", uk: "На вулиці є автомобіль." },
+      { pt: "Tem um carro na rua.", uk: "На вулиці є автомобіль.", variety: "BR", register: "colloquial" }
+    ],
+    mistakes: [{ wrong: "Há dois irmãos. → «У мене є два брати»", right: "Tenho dois irmãos.", why: "Володіння/родинна належність і екзистенційне значення — різні конструкції." }],
+    ukrainian: "Українська «мати» і безособове «є/існує» допомагають як контраст, але не є готовою схемою вибору ter/haver.",
+    brPt: "Ter existential — важлива PT-BR зона варіантності; у формальному письмі та в PT-PT haver залишається центральним у відповідних екзистенційних конструкціях."
+  },
+  "personal-pronouns": {
+    formulas: [{ pattern: "sujeito: eu/tu/você/ele...; objeto: me/te/o/a/lhe...; tónico após preposição: mim/ti/ele...", note: "Форма залежить від синтаксичної ролі, прийменника, клітичності, різновиду та регістру." }],
+    examples: [
+      { pt: "Eu vi-o ontem.", uk: "Я бачив/бачила його вчора.", variety: "PT" },
+      { pt: "Eu vi ele ontem.", uk: "Я бачив/бачила його вчора.", variety: "BR", register: "colloquial" },
+      { pt: "Isto é para mim.", uk: "Це для мене." }
+    ],
+    mistakes: [{ wrong: "Isto é para eu.", right: "Isto é para mim.", why: "Після прийменника у цій конструкції потрібна tonic pronoun mim; eu зберігається в окремих infinitival subject constructions." }],
+    ukrainian: "Українські форми «я/мене/мені» не відповідають механічно португальським eu/me/mim; спочатку визначте синтаксичну позицію.",
+    brPt: "У PT-BR повні форми ele/ela можуть конкурувати з o/a як об'єктні форми в розмовному мовленні; для навчання позначайте регістр."
+  },
+  "subject-pronouns": {
+    formulas: [{ pattern: "eu, tu, você, ele/ela, nós, vocês, eles/elas", note: "Підметовий займенник може бути виражений або нульовим; вибір також пов'язаний із формою звертання." }],
+    examples: [
+      { pt: "Eu estudo português.", uk: "Я вивчаю португальську." },
+      { pt: "Estudo português.", uk: "Я вивчаю португальську." },
+      { pt: "Você estuda português?", uk: "Ви/ти вивчаєте португальську?" }
+    ],
+    mistakes: [{ wrong: "Я завжди мушу сказати Eu.", right: "Estudo português. / Eu estudo português.", why: "Португальська допускає null subject, але прагматичні й варіантні фактори впливають на вибір вираженого підмета." }],
+    ukrainian: "Українська також часто опускає підмет, але фактори відновлення референта й інформаційного фокусу не повністю збігаються.",
+    regional: "У PT-BR частота виражених підметових займенників вища в низці конструкцій, ніж у традиційно описуваній європейській моделі; це пов'язано з перебудовою займенникової системи та дієслівного узгодження."
+  },
+  "nos-a-gente": {
+    formulas: [{ pattern: "nós + 1-а особа множини; a gente + 3-я особа однини", note: "Обидві конструкції можуть означати «ми», але відрізняються стилістично й регіонально." }],
+    examples: [
+      { pt: "Nós vamos amanhã.", uk: "Ми підемо завтра." },
+      { pt: "A gente vai amanhã.", uk: "Ми підемо завтра.", variety: "BR" }
+    ],
+    mistakes: [{ wrong: "A gente vamos.", right: "A gente vai.", why: "a gente граматично керує 3-ю особою однини." }],
+    ukrainian: "Українське «ми» не підказує, що a gente потребує 3-ї особи однини.",
+    brPt: "A gente особливо продуктивне в PT-BR; воно також існує в інших різновидах, але частотність і соціальне значення відрізняються."
+  },
+  "possessives": {
+    formulas: [{ pattern: "meu/minha, teu/tua, seu/sua, nosso/nossa... + узгодження з possessed noun", note: "Рід і число присвійного узгоджуються з предметом володіння, а не з власником." }],
+    examples: [
+      { pt: "A minha casa.", uk: "Мій будинок.", variety: "PT" },
+      { pt: "Minha casa.", uk: "Мій будинок.", variety: "BR" },
+      { pt: "Os meus livros.", uk: "Мої книги.", variety: "PT" }
+    ],
+    mistakes: [{ wrong: "meu casa", right: "minha casa", why: "Форма узгоджується з casa, яка є жіночого роду." }],
+    ukrainian: "Українське «мій/моя» також узгоджується з предметом, але артикль і система звертання створюють додаткові португальські правила.",
+    brPt: "Артикль перед присвійним має варіантний розподіл: o meu/a minha типовіше для PT-PT, тоді як PT-BR часто вживає meu/minha без артикля; регіональна та стилістична варіантність значна."
+  },
+  "prep-a": {
+    formulas: [{ pattern: "a + infinitivo / destino / destinatário / час; ao/à/aos/às = a + artigo", note: "Точне значення визначає керування та конструкція; crase — окреме орфографічне явище." }],
+    examples: [
+      { pt: "Vou a Lisboa.", uk: "Я їду до Лісабона." },
+      { pt: "Vou ao Porto.", uk: "Я їду до Порту." },
+      { pt: "Entreguei o livro à professora.", uk: "Я передав/передала книжку викладачці." }
+    ],
+    mistakes: [{ wrong: "Vou à Lisboa.", right: "Vou a Lisboa.", why: "У цій власній назві немає артикля, з яким a утворив би crase." }],
+    ukrainian: "Українські «до/в/на/о» не дають автоматичного португальського прийменника. Вчіть a як частину керування й конструкцій.",
+    learnerQuestions: ["Чи є після a артикль a/as?", "Чи вимагає дієслово саме a?", "Чи йдеться про час, напрямок, адресата або інфінітив?"]
+  },
+  "prep-de": {
+    formulas: [{ pattern: "de + origem / posse / conteúdo / material / complemento nominal", note: "de часто входить до лексичної рамки дієслова, іменника або прикметника." }],
+    examples: [
+      { pt: "Venho de casa.", uk: "Я приходжу з дому." },
+      { pt: "O livro do João.", uk: "Книжка Жуана." },
+      { pt: "Gosto de música.", uk: "Я люблю музику." }
+    ],
+    mistakes: [{ wrong: "Gosto música.", right: "Gosto de música.", why: "gostar керує de." }],
+    ukrainian: "В українській конструкція «любити щось» не має прийменника, тому gostar de — типова зона інтерференції.",
+    learnerQuestions: ["Це вільний прийменниковий модифікатор чи частина керування?", "Чи треба de + артикль/займенник?", "Чи форма змінюється після власної назви або займенника?"]
+  },
+  "verb-preposition": {
+    formulas: [{ pattern: "V + preposição selecionada + complemento", note: "Керування є властивістю конкретної лексеми/конструкції, а не загальним правилом перекладу." }],
+    examples: [
+      { pt: "Gosto de música.", uk: "Я люблю музику." },
+      { pt: "Penso no problema.", uk: "Я думаю про проблему." },
+      { pt: "Preciso de ajuda.", uk: "Мені потрібна допомога." }
+    ],
+    mistakes: [{ wrong: "Penso o problema.", right: "Penso no problema.", why: "У цій моделі pensar вимагає em перед nominal complement." }],
+    ukrainian: "Українські відмінки приховують прийменникове керування, тому лексему краще вчити разом із рамкою.",
+    learnerQuestions: ["Який прийменник вибирає дієслово?", "Чи змінюється рамка залежно від значення дієслова?", "Чи contracted form потрібна перед артиклем?"]
+  },
+  "questions-yesno": {
+    formulas: [{ pattern: "декларативне речення + інтонація / interrogative syntax", note: "PT-BR часто використовує висхідну інтонацію без обов'язкової інверсії; PT-PT також має інші стратегії, включно з інверсією в окремих моделях." }],
+    examples: [
+      { pt: "Você vem amanhã?", uk: "Ти/ви прийдеш/прийдете завтра.", variety: "BR" },
+      { pt: "Vens amanhã?", uk: "Ти прийдеш завтра?", variety: "PT" },
+      { pt: "É que vais amanhã?", uk: "Ти справді/а ти їдеш завтра?", variety: "PT", register: "neutral" }
+    ],
+    ukrainian: "Українська також часто формує питання інтонацією, тому англійська модель do/inversion не повинна бути стартовою схемою для португальської.",
+    learnerQuestions: ["Чи питання відрізняється від твердження лише інтонацією?", "Чи потрібен interrogative pronoun/particle?", "Який різновид і регістр моделюється?"]
+  },
+  "question-word-order": {
+    formulas: [{ pattern: "interrogative word + clause / interrogative phrase + clause", note: "Порядок залежить від типу питання, фокусу, різновиду та регістру." }],
+    examples: [
+      { pt: "Onde moras?", uk: "Де ти живеш?", variety: "PT" },
+      { pt: "Onde você mora?", uk: "Де ти/ви живеш/живете?", variety: "BR" },
+      { pt: "O que você quer?", uk: "Що ти/ви хочеш/хочете?", variety: "BR" }
+    ],
+    ukrainian: "Не переносіть англійську інверсію: португальські wh-questions мають власні порядки слів, а PT-BR часто зберігає declarative order."
+  },
+  "negation-nao": {
+    formulas: [{ pattern: "não + verbo / constituinte negado", note: "não зазвичай стоїть перед finite verb у нейтральному реченні; позиція взаємодіє з clitic placement." }],
+    examples: [
+      { pt: "Não sei.", uk: "Я не знаю." },
+      { pt: "Não me disseram nada.", uk: "Мені нічого не сказали." },
+      { pt: "Eu não fui.", uk: "Я не пішов/пішла." }
+    ],
+    mistakes: [{ wrong: "Não disseram-me nada.", right: "Não me disseram nada.", why: "não є тригером próclise." }],
+    ukrainian: "Українське «не» не має окремого клитичного компонента, який змінює позицію займенника; португальська синтаксично пов'язує ці явища.",
+    learnerQuestions: ["Що саме заперечується?", "Чи є негативний займенник після дієслова?", "Як заперечення впливає на clitic placement?"]
+  },
+  "negation-ninguem": {
+    formulas: [{ pattern: "não + ninguém/nada/nenhum... = negative concord", note: "Два негативні елементи разом виражають одне негативне твердження." }],
+    examples: [
+      { pt: "Não vi ninguém.", uk: "Я нікого не бачив/бачила." },
+      { pt: "Não tenho nada.", uk: "У мене нічого немає." },
+      { pt: "Ninguém veio.", uk: "Ніхто не прийшов." }
+    ],
+    mistakes: [{ wrong: "Não vi ninguém = «я бачив когось».", right: "Não vi ninguém.", why: "Португальська використовує negative concord; não і ninguém не скасовують одне одного." }],
+    ukrainian: "Українська також має конструкції «не...ніхто/нічого», тому це добра зона для контрастивного навчання, але форми й позиції різняться.",
+    learnerQuestions: ["Чи negative item стоїть перед чи після дієслова?", "Чи потрібне não?", "Чи це заперечення всього речення чи окремого компонента?"]
+  },
+  "agreement-sv": {
+    formulas: [{ pattern: "subject + verb → agreement in person/number; impersonal constructions → special behaviour", note: "Складені підмети, a gente, haver і se створюють різні моделі." }],
+    examples: [
+      { pt: "A Maria chegou.", uk: "Марія прийшла." },
+      { pt: "A Maria e o João chegaram.", uk: "Марія та Жуан прийшли." },
+      { pt: "A gente chegou cedo.", uk: "Ми прийшли рано.", variety: "BR" }
+    ],
+    mistakes: [{ wrong: "A gente chegámos.", right: "A gente chegou.", why: "a gente керує 3-ю особою однини." }],
+    ukrainian: "Українська має багатшу відмінкову систему, але узгодження підмета з присудком теж є; основна пастка — спеціальні португальські конструкції та варіантність.",
+    learnerQuestions: ["Яка форма є граматичним підметом?", "Чи конструкція impersonal/existential?", "Чи a gente, se або collective noun змінює модель?"]
+  },
+  "agreement-na": {
+    formulas: [{ pattern: "determinante/nome/adjetivo/particípio → gênero e número", note: "Узгодження треба розглядати в межах nominal phrase та predicative structure." }],
+    examples: [
+      { pt: "Duas casas grandes.", uk: "Два великі будинки." },
+      { pt: "As portas estão abertas.", uk: "Двері відчинені." }
+    ],
+    mistakes: [{ wrong: "duas casa grande", right: "duas casas grandes", why: "Детермінатив, іменник і прикметник узгоджуються за числом; прикметник також за родом." }],
+    ukrainian: "Українська теж має узгодження, але відмінок додає ще одну морфологічну категорію; у португальській її немає."
+  },
+  "determiners-overview": {
+    formulas: [{ pattern: "determiner + noun phrase → reference / quantity / deixis", note: "Артиклі, demonstratives, possessives та quantifiers взаємодіють, але не є взаємозамінними." }],
+    examples: [
+      { pt: "o livro", uk: "книга / ця відома книга" },
+      { pt: "este livro", uk: "ця книга" },
+      { pt: "meu livro", uk: "моя книга" }
+    ],
+    ukrainian: "Українська не має артиклів, тому систему детермінативів краще вчити через референцію та структуру noun phrase, а не через список перекладів."
+  },
+  "acordo-ortografico": {
+    formulas: [{ pattern: "Orthographic Agreement 1990 → standardized spellings with permitted national/regional variants", note: "Угода не усунула всіх орфографічних варіантів між PT-BR та PT-PT." }],
+    examples: [
+      { pt: "ação", uk: "дія" },
+      { pt: "facto", uk: "факт", variety: "PT" },
+      { pt: "fato", uk: "факт", variety: "BR" }
+    ],
+    mistakes: [{ wrong: "Вважати, що всі відмінності написання після 1990 зникли.", right: "Перевіряти конкретне слово й національний стандарт.", why: "Угода гармонізує частину орфографії, але допускає або зберігає варіантність у певних зонах." }],
+    ukrainian: "Для україномовного студента важливо не змішувати орфографічну варіантність із «помилкою»: спочатку визначте стандарт і словникову норму.",
+    brPt: "Окремі відмінності, як fato/facto, пов'язані з вимовою та національним стандартом і не зводяться до простої «старої/нової орфографії»."
+  }
+
 function genericLayer(meta: (typeof CATALOG)[number]): LearnerLayer {
   const common: Record<string, LearnerLayer> = {
     fundamentals: { ukrainian: "Починайте з функції категорії в реченні. Українська має відмінки й іншу систему дієслівного виду, тому поверхневий переклад часто приховує справжню граматичну різницю." },
