@@ -82,7 +82,7 @@ export const pages: GrammarPage[] = [
     intro: "Модальні підрядні описують спосіб, у який відбувається дія або ситуація. У термінології різних граматик межі цього класу можуть описуватися дещо по-різному, тому тут важливіша функція конструкції, ніж механічне запам'ятовування ярлика.",
     definition: "Модальне підрядне — залежна конструкція, яка характеризує спосіб або модальну обставину перебігу ситуації.",
     uses: [
-      { title: "Спосіб виконання", body: "Конструкція відповідає приблизно на питання «як? яким чином?» і модифікує спосіб дії.", examples: [ex("Ele saiu sem que ninguém percebesse.", "Він вийшов так, що ніхто цього не помітив.") ] },
+      { title: "Спосіб виконання", body: "Конструкція відповідає приблизно на питання «як? яким чином?» і модифікує спосіб дії.", examples: [ex("Resolveu o problema como lhe ensinaram.", "Він розв’язав проблему так, як його навчили.") ] },
       { title: "Обставина способу", body: "Зміст підрядного уточнює, як реалізується основна ситуація.", examples: [ex("Resolveu o problema como lhe ensinaram.", "Він розв'язав проблему так, як його навчили.")] }
     ],
     examples: [
@@ -108,7 +108,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Locative clauses",
     summary: "Підрядні, що локалізують подію або ситуацію в просторі.",
     aliases: ["локативні підрядні", "locative clauses", "orações locativas", "onde"],
-    related: ["relative-que", "temporal-clauses", "subordinating", "locative-prepositions"],
+    related: ["relative-que", "temporal-clauses", "subordinating", "prepositions-overview"],
     status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "high",
     intro: "Локативна підрядна частина задає місце, у якому відбувається ситуація. Важливо відрізняти локативне підрядне від відносного речення з onde: одна й та сама форма може мати різну синтаксичну функцію.",
     definition: "Локативне підрядне — залежна конструкція, що виконує просторову роль щодо ситуації головної частини.",
@@ -235,7 +235,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Participial reduced clauses",
     summary: "Залежні конструкції з particípio та їхня часово-результативна інтерпретація.",
     aliases: ["дієприкметникові зредуковані", "participial reduced clauses", "orações reduzidas de particípio"],
-    related: ["reduced-clauses", "passive-ser", "resultative-estar-participle", "participle"],
+    related: ["reduced-clauses", "ser-passive", "estar-participle", "participle"],
     status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "high",
     intro: "Particípio може бути центром зредукованої залежної конструкції, але також входить до складених часів, пасиву та результативних структур. Для правильної інтерпретації потрібно встановити всю конструкцію, а не реагувати лише на форму закінчення.",
     definition: "Дієприкметникова зредукована підрядна — залежна нефінітна конструкція, побудована навколо particípio.",
