@@ -12,7 +12,7 @@ export const pages: GrammarPage[] = [
     id: "agreement-edge-cases", slug: "edge-cases", category: "agreement",
     titleUk: "Складні випадки узгодження", titlePt: "Casos especiais de concordância", titleEn: "Agreement edge cases",
     summary: "Випадки, де формальне й семантичне узгодження можуть розходитися.",
-    aliases: "agreement edge cases,concordância",
+    aliases: ["agreement edge cases","concordância"],
     related: ["agreement-sv","nominal-agreement","semantic-agreement"],
     depth: "medium",
     ukrainianContrast: "high",
