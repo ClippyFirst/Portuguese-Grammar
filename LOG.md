@@ -324,3 +324,35 @@ Academic Writing Toolkit було використано як додаткови
 ### Методологія
 
 Набір продовжує canonical standard: український contrast, definition → formation → functions → examples → learner errors → regional scope, окреме маркування PT-BR/PT-PT там, де воно граматично релевантне, та джерельні посилання для спеціалізованих тверджень.
+
+
+## 25.09.2026 — content quality batch 03: upgrade of gap articles
+
+Продовжено на тій самій робочій гілці `content/production-2026-09-batch-01`.
+
+### Що зроблено
+
+Не створювалися дублікати вже наявних topic IDs. Натомість **8 наявних gap/draft сторінок** переписано з коротких заготовок у повноцінні довідникові статті:
+
+- `null-and-expletive-subjects`
+- `subject-object-order`
+- `subordination-and-coordination`
+- `discourse-and-pragmatics`
+- `accentuation-advanced`
+- `hyphenation`
+- `capitalization-and-names`
+- `discourse-reference`
+
+Кожна отримала розгорнуті definition / formation / uses / examples / learner mistakes / український контраст / regional scope / PT-BR note та source metadata.
+
+### Лічильник
+
+- Canonical topics: **349**.
+- Dedicated GrammarPage corpus: **234 / 349**.
+- Залишилося за corpus-лічильником: **115 / 349**.
+- Цього разу лічильник **не збільшується**, оскільки ці 8 topic IDs уже були реальними GrammarPage-об'єктами й тому вже входили до попередніх 234. Зміни — це підвищення якості та глибини, а не додавання нових topic IDs.
+- Fallback/generated pages не зараховуються.
+
+### Принцип
+
+Не створювати штучний прогрес шляхом повторного зарахування існуючих сторінок. Окремо фіксуємо **coverage progress** (234/349) і **quality upgrades** (8 сторінок переписано).
