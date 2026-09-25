@@ -229,3 +229,37 @@ Commit: `0ad74ac741f078ab95f7be7d6ce03f8f07a7aa87`.
 - This was a useful fail-closed result: the new production pipeline exposed a portability/runtime defect that local assumptions had not caught.
 - Repaired the expression to a standards-compliant quote character class and pushed the fix as `bef77acde1fc6f597a08e274f1facb778aed986f`.
 - A new static validation run is executing against that exact commit. The production Pages workflow remains intentionally restricted to `main`; the validation workflow runs on the working branch and pull requests.
+
+
+## 25.09.2026 — content production batch 01: advanced syntax
+
+Взято за основу актуальну гілку `content/production-2026-09` (tip: `1e6cc33ca8e5ea0d112b9c1f654a301643573763`) і створено робочу гілку `content/production-2026-09-batch-01`.
+
+### Лічильник контенту
+
+- Canonical topics у поточному `catalog.ts`: **347**.
+- Нових dedicated articles у цій сесії: **6**.
+- Лічильник цієї виробничої серії: **6 / 347 написано; 341 / 347 залишилося**.
+- Fallback не зараховується як написана стаття.
+- Наявні dedicated articles з попередніх сесій не перераховуються як «написані в цій серії»; вони залишаються частиною вже наявного corpus.
+
+### Додано
+
+`src/content/pages/syntax-production-3.ts`:
+
+1. `causative-constructions`
+2. `raising-and-control`
+3. `advanced-relatives`
+4. `complement-clauses-advanced`
+5. `infinitive-vs-subjunctive`
+6. `clitic-clusters`
+
+Статті побудовано за canonical article requirements: український contrast, form/function/meaning, production-oriented examples, типізовані learner errors, PT-BR/PT-PT scope, related graph та source metadata.
+
+### Джерельна перевірка
+
+Для каузативних та infinitive-related claims використано актуальні матеріали Ciberdúvidas, зокрема щодо `fazer/mandar/deixar`, infinitivo pessoal та розрізнення infinitivo/futuro do conjuntivo. Загальна структура синтаксичних описів узгоджена з reference-grammar policy репозиторію.
+
+### Статус
+
+Batch 01 створено. Перед release/merge потрібні structural/typecheck/content QA та перевірка, що всі шість ID справді були fallback-only на старті batch.
