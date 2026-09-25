@@ -25,21 +25,4 @@ export const pages: GrammarPage[] = [
     regional: "Кластери особливо чутливі до стандарту, письмового/усного каналу та різновиду.",
     brPt: "",
   }),
-  draft({
-    id: "clitic-climbing", slug: "clitic-climbing", category: "pronouns",
-    titleUk: "Підняття клітики", titlePt: "Subida do clítico", titleEn: "Clitic climbing",
-    summary: "Розташування клітики щодо інфінітивної конструкції.",
-    aliases: ["clitic climbing","subida do clítico"],
-    related: ["clitic-placement","personal-infinitive","complex-predicates"],
-    depth: "medium",
-    ukrainianContrast: "high",
-    intro: "У деяких складених дієслівних конструкціях клітика може реалізуватися біля матричного дієслова або при інфінітиві залежно від конструкції, регістру та різновиду. Це окрема проблема від загального правила proclisis/enclisis.",
-    definition: "Clitic climbing — синтаксичне розміщення клітики поза тим дієслівним компонентом, до якого вона семантично належить.",
-    uses: [],
-    examples: [{"pt":"Quero-o ver.","uk":"Я хочу його побачити.","variety":"PT"}],
-    mistakes: [mistake("вважати позицію клітики вільною","спочатку визначати тип перифрази та норму","Розподіл залежить від конструкції, а не лише від бажання мовця.","predicted-l1-transfer","medium")],
-    ukrainian: "Українська не має тотожної системи клітичного розміщення, тому позицію треба вчити разом із конструкцією.",
-    regional: "Не узагальнюйте одну модель на всі перифрази та різновиди.",
-    brPt: "",
-  }),
-];
+;
