@@ -357,7 +357,6 @@ const ROWS: Row[] = [
   ["preterite-perfect-imperfect", "tenses", "preterite-perfect-imperfect", "Pretérito perfeito чи imperfeito", "Pretérito perfeito e imperfeito", "Perfect vs imperfect past", "Завершена подія, фон, стан і звичність у минулому.", "perfeito imperfeito,pretérito perfeito,pretérito imperfeito", "tense-aspect,past-tense,aspect-overview,sequence-of-tenses", "high"],
   ["progressive-br-pt-choice", "gerund", "progressive-br-pt-choice", "Прогресив: estar a + infinitivo та estar + gerúndio", "Estar a + infinitivo e estar + gerúndio", "Progressive: estar a vs estar + gerund", "Порівняння основних прогресивних моделей PT-PT та PT-BR.", "estar a,estar + gerúndio,progressive", "progressive-br-pt,gerund,complex-predicates", "high"],
 
-  ["future-subjunctive", "moods", "futuro-subjuntivo", "Futuro do conjuntivo", "Futuro do conjuntivo", "Future subjunctive", "Майбутній conjuntivo в умовних і часових конструкціях.", "futuro do conjuntivo,future subjunctive,майбутній конʼюнктив", "subjunctive-overview,conditional-clauses,temporal-clauses,personal-infinitive", "high"],
 
 ];
 
