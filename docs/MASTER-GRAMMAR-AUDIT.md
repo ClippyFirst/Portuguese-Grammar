@@ -7,7 +7,7 @@
 
 ## 1. Вердикт
 
-> **Coverage scope is now governed by `docs/CANONICAL-GRAMMAR-INVENTORY.md`. It contains 887 canonical coverage units; these are ontology units, not 742 mandatory URLs.**
+> **Coverage scope is now governed by `docs/CANONICAL-GRAMMAR-INVENTORY.md`. It contains 889 canonical coverage units; these are ontology units, not 742 mandatory URLs.**
 
 
 **Ні: граматичне охоплення ще не можна вважати повним.**
@@ -951,4 +951,9 @@ A final constituent/discourse pass added explicit coverage for adjectival and ad
 
 An independent cross-check against Cambridge's *The Syntax of Portuguese* and Wiley-Blackwell's *The Handbook of Portuguese Linguistics* found a small set of explicit syntax/reference identities that were not yet separately discoverable in the canonical ontology: null direct objects, null oblique objects, null possessors, VP ellipsis, emphatic affirmation, biased polar questions, minimal yes/no answers, bare nominals, Brazilian Portuguese topic-subject constructions, and the definite/indefinite/expletive null-subject subtypes. These are now closed as explicit canonical units. The personal infinitive, clitic placement, topicalisation, focus, information structure and broad null-subject syntax were already represented and were not duplicated.
 
-The canonical baseline is therefore **887 coverage units**. This is a bounded coverage ontology, not a target page count. Further expansion requires a documented reference gap or a distinct learner-facing phenomenon; specialist theoretical subdivisions should normally remain modules unless they create an independently searchable learner problem.
+The canonical baseline is therefore **889 coverage units**. This is a bounded coverage ontology, not a target page count. Further expansion requires a documented reference gap or a distinct learner-facing phenomenon; specialist theoretical subdivisions should normally remain modules unless they create an independently searchable learner problem.
+
+
+### Final scope refinement (2026-09-25)
+
+A final cross-check against the *Handbook of Portuguese Linguistics* and current research identified two additional learner-searchable coverage identities that should not remain implicit: **secondary stress** within Portuguese prosody, and **discourse markers and discourse-marker functions** as a distinct discourse-pragmatic class. The handbook explicitly treats main and secondary stress, while Portuguese discourse-marker research documents marker classes and discourse functions in Brazilian Portuguese. These are now canonical units 888–889. Binding, phonology–syntax interface, DP structure, acquisition, contact, and historical change remain modules or contextual metadata unless a distinct learner-facing problem warrants a separate canonical identity.
