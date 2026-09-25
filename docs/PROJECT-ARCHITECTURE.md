@@ -343,9 +343,16 @@ Architecture-level DoD:
 
 ### Scope re-audit (2026-09-25)
 
-The canonical inventory was re-audited against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. Four underrepresented domains were identified and added to the canonical ontology: **adverbs/adverbial locutions; conjunctions/connective expressions; interjections/exclamatives; sentence types, polarity and illocutionary force**. The canonical inventory now contains **852 coverage units**. This is an ontology count, not a target number of pages.
+The canonical inventory was re-audited against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. Four underrepresented domains were identified and added to the canonical ontology: **adverbs/adverbial locutions; conjunctions/connective expressions; interjections/exclamatives; sentence types, polarity and illocutionary force**. The canonical inventory now contains **887 coverage units**. This is an ontology count, not a target number of pages.
 
 
 ### Scope re-audit extension (2026-09-25)
 
-A final constituent/discourse pass added explicit coverage for adjectival and adverbial phrase structure, noun/adjective complements, apposition, phrase-vs-clause coordination, ellipsis/zeugma, free indirect discourse, and denotative words/particles. The canonical inventory therefore now contains **875 coverage units**. These are coverage identities, not mandatory page counts.
+A final constituent/discourse pass added explicit coverage for adjectival and adverbial phrase structure, noun/adjective complements, apposition, phrase-vs-clause coordination, ellipsis/zeugma, free indirect discourse, and denotative words/particles. The canonical inventory therefore now contains **887 coverage units**. These are coverage identities, not mandatory page counts.
+
+
+### Final bounded reference-scope check (2026-09-25)
+
+An independent cross-check against Cambridge's *The Syntax of Portuguese* and Wiley-Blackwell's *The Handbook of Portuguese Linguistics* found a small set of explicit syntax/reference identities that were not yet separately discoverable in the canonical ontology: null direct objects, null oblique objects, null possessors, VP ellipsis, emphatic affirmation, biased polar questions, minimal yes/no answers, bare nominals, Brazilian Portuguese topic-subject constructions, and the definite/indefinite/expletive null-subject subtypes. These are now closed as explicit canonical units. The personal infinitive, clitic placement, topicalisation, focus, information structure and broad null-subject syntax were already represented and were not duplicated.
+
+The canonical baseline is therefore **887 coverage units**. This is a bounded coverage ontology, not a target page count. Further expansion requires a documented reference gap or a distinct learner-facing phenomenon; specialist theoretical subdivisions should normally remain modules unless they create an independently searchable learner problem.
