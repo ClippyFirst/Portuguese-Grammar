@@ -1065,7 +1065,7 @@ Object.assign(SPECIAL, {
     ukrainian: "Українське «щоб» часто покриває кілька португальських структур. Порівнюйте суб'єкт, контроль і регістр.",
     learnerQuestions: ["Чи збігаються підмети?", "Чи інфінітив має власного явного суб'єкта?", "Чи конструкція допускає conjuntivo?", "Який стиль природніший?"]
   },
--pragmatics": {
+"pragmatics": {
     formulas: [{ pattern: "form + context + interlocutor relation → pragmatic interpretation", note: "Прагматичний ефект не завжди кодується окремим граматичним маркером." }],
     examples: [
       { pt: "Pode fechar a porta?", uk: "Можете зачинити двері?" },
