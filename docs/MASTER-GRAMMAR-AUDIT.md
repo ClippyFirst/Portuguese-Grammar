@@ -7,7 +7,7 @@
 
 ## 1. Вердикт
 
-> **Coverage scope is now governed by `docs/CANONICAL-GRAMMAR-INVENTORY.md`. It contains 742 canonical coverage units; these are ontology units, not 742 mandatory URLs.**
+> **Coverage scope is now governed by `docs/CANONICAL-GRAMMAR-INVENTORY.md`. It contains 852 canonical coverage units; these are ontology units, not 742 mandatory URLs.**
 
 
 **Ні: граматичне охоплення ще не можна вважати повним.**
@@ -935,3 +935,8 @@ Fallback може забезпечувати навігаційну цілісн
 Не в сенсі «поганий» або «сирий»: навпаки, ядро вже дуже широке. Незавершений означає, що карта системи ще не замкнена на рівні повного reference grammar inventory.
 
 Наступна мета — не збільшити число сторінок заради числа, а зробити так, щоб **кожна граматична система мала однозначне місце в архітектурі й контрастивне пояснення для носія української.**
+
+
+### Scope re-audit (2026-09-25)
+
+The canonical inventory was re-audited against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. Four underrepresented domains were identified and added to the canonical ontology: **adverbs/adverbial locutions; conjunctions/connective expressions; interjections/exclamatives; sentence types, polarity and illocutionary force**. The canonical inventory now contains **852 coverage units**. This is an ontology count, not a target number of pages.
