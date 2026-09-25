@@ -22,6 +22,11 @@ export const pages: GrammarPage[] = [
     examples: [ex("Quero comprar um carro.", "Я хочу купити автомобіль."), ex("O carro que comprámos é azul.", "Автомобіль, який ми купили, синій.")],
     mistakes: [mistake("вважати um = неспецифічний, а o = специфічний","розрізняти тип референції та спосіб ідентифікації","Артикль не кодує специфічність як просту бінарну ознаку.","predicted-l1-transfer","high")],
     ukrainian: "Українська часто залишає ці відмінності контексту, лексики та порядку слів, тоді як португальський артикль додає граматичну інформацію.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
+      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
+    ],
     regional: "Базове розрізнення концептуальне; конкретні інтерпретації залежать від контексту.",
   }),
   page({
@@ -44,7 +49,17 @@ export const pages: GrammarPage[] = [
     examples: [ex("Expliquei-lhe o problema.", "Я пояснив/пояснила йому/їй проблему."), ex("Conheço-o bem.", "Я добре його знаю.", { variety: "PT" })],
     mistakes: [mistake("замінювати будь-яке «йому/його» одним португальським займенником","визначати синтаксичну роль аргумента та керування дієслова","Український відмінок не є прямою таблицею португальських клітик.","predicted-l1-transfer","high")],
     ukrainian: "Українська відмінкова система робить ролі додатків морфологічно помітними. У португальській треба враховувати дієслівну валентність і систему клітик.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
+      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
+    ],
     regional: "У PT-BR система об'єктних займенників у живому мовленні відрізняється від консервативних письмових моделей; не змішуйте нормативну форму клітики з розмовними займенниковими стратегіями.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
+      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
+    ],
     brPt: "PT-PT зберігає ширше використання o/a/lhe як клітик. У PT-BR у розмовній мові можливі інші способи реалізації об'єкта; конкретний вибір залежить від регістру та конструкції.",
   }),
   page({
@@ -67,6 +82,11 @@ export const pages: GrammarPage[] = [
     examples: [ex("É melhor irmos agora.", "Краще нам піти зараз."), ex("Depois de chegares, liga-me.", "Після того як ти приїдеш, зателефонуй мені.")],
     mistakes: [mistake("вважати особовий інфінітив обов'язковим при кожному різному підметі","визначати структуру, суб'єкта та комунікативну потребу в явному маркуванні","Вибір залежить від конструкції та інтерпретації, а не від одного механічного тесту.","predicted-l1-transfer","high")],
     ukrainian: "Українська не має морфологічно тотожної форми особового інфінітива. Український переклад часто використовує підрядне речення, тому форму португальського інфінітива легко не помітити.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
+      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
+    ],
     regional: "Особовий інфінітив є важливою частиною системи, але конкретні моделі й частотність слід описувати разом із конструкцією.",
   }),
   page({
@@ -90,6 +110,11 @@ export const pages: GrammarPage[] = [
     examples: [ex("Acho que funciona.", "Думаю, що це працює."), ex("É possível que funcione.", "Можливо, що це працює / працюватиме.")],
     mistakes: [mistake("перекладати українське «що» як indicativo, а «щоб» як conjuntivo","аналізувати головний предикат і тип залежності","Українські сполучники не є механічними маркерами португальського способу.","predicted-l1-transfer","high")],
     ukrainian: "Українська має умовний і наказовий способи та інші засоби модальності, але не має тієї самої системи розподілу conjuntivo. Переклад «щоб» корисний лише як семантична підказка.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
+      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
+    ],
     regional: "Базовий розподіл спільний, але окремі предикати й розмовні моделі можуть варіюватися. Конкретні винятки треба перевіряти за джерелом.",
   }),
   page({
@@ -113,6 +138,11 @@ export const pages: GrammarPage[] = [
     examples: [ex("Ontem estudei duas horas.", "Учора я вчився/вчилася дві години."), ex("Quando era criança, estudava aqui.", "Коли я був/була дитиною, я навчався/навчалася тут.")],
     mistakes: [mistake("perfeito = доконаний вид, imperfeito = недоконаний вид","визначати часову рамку, аспектуальну перспективу та дискурсивну функцію","Португальські минулі форми не є копією української видової опозиції.","predicted-l1-transfer","high")],
     ukrainian: "Український вид може бути корисною підказкою, але не алгоритмом. Особливо важливо дивитися на фон/подію, стан, звичність і завершеність у конкретній часовій рамці.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
+      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
+    ],
     regional: "Базове розрізнення є системним; перифрастичні конструкції та деякі частотні моделі можуть відрізнятися між BR і PT.",
   }),
   page({
@@ -135,7 +165,17 @@ export const pages: GrammarPage[] = [
     examples: [ex("Ela está a trabalhar.", "Вона зараз працює.", { variety: "PT" }), ex("Ela está trabalhando.", "Вона зараз працює.", { variety: "BR" })],
     mistakes: [mistake("вважати одну модель єдино граматичною для всієї португальської","спочатку визначати різновид і регістр","BR/PT розрізняються частотними профілями прогресивних конструкцій.","predicted-l1-transfer","medium")],
     ukrainian: "Українська часто передає прогресивність лексично, контекстом або формою недоконаного виду. Тому переклад не завжди показує необхідність перифрази.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
+      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
+    ],
     regional: "PT-PT і PT-BR мають різні частотні переваги. Не перетворюйте їх на взаємовиключні правила без контексту.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
+      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
+    ],
     brPt: "PT-PT: estar a + infinitivo широко вживається. PT-BR: estar + gerúndio широко вживається. Інші моделі можуть бути можливими залежно від різновиду та контексту.",
   })
 ];
