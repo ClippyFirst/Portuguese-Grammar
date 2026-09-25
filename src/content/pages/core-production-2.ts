@@ -65,7 +65,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Choosing the personal infinitive",
     summary: "Вибір особового інфінітива за структурою підмета, а не за простим перекладом.",
     aliases: ["особовий інфінітив","infinitivo pessoal","personal infinitive choice"],
-    related: ["personal-infinitive","impersonal-infinitive","personal-vs-impersonal","raising-control"],
+    related: ["personal-infinitive","impersonal-infinitive","personal-vs-impersonal","raising-and-control"],
     status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Особовий інфінітив не можна зводити до правила «різні підмети = особовий». Він особливо корисний, коли треба явно показати суб'єкта інфінітивної ситуації або коли структура робить його окремим від підмета головної частини.",
     definition: "Особовий інфінітив — інфінітив із формою, що кодує особу й число суб'єкта: falar, falares, falarmos, falarem тощо.",
