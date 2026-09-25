@@ -178,883 +178,883 @@ A canonical topic is **closed** only when:
 
 ### AJ. Additional constituent and discourse structures
 
-853. adjectival phrase structure
-854. adverbial phrase structure
-855. complement of the noun
-856. modifier of the noun
-857. apposition
-858. complement of the adjective
-859. coordination of phrases vs coordination of clauses
-860. ellipsis types and zeugma
-861. free indirect discourse
-862. denotative words and particles
+866. adjectival phrase structure
+867. adverbial phrase structure
+868. complement of the noun
+869. modifier of the noun
+870. apposition
+871. complement of the adjective
+872. coordination of phrases vs coordination of clauses
+873. ellipsis types and zeugma
+874. free indirect discourse
+875. denotative words and particles
 
 ### AK. Advanced syntax, constructional style and sentence-level rhetoric
 
-863. prepositional locutions
-864. semantic and syntactic status of prepositional locutions
-865. rhetorical/syntactic construction devices overview
-866. pleonasm and pleonastic constructions
-867. hyperbaton and anastrophe
-868. prolepsis as syntactic fronting
-869. anacoluthon
-870. syntactic/semantic agreement (syllepsis)
-871. asyndeton as a marked coordination pattern
-872. polysyndeton as a marked coordination pattern
-873. syntactic anaphora as a discourse-structuring repetition
-874. distinction between grammatical construction and stylistic figure
+876. prepositional locutions
+877. semantic and syntactic status of prepositional locutions
+878. rhetorical/syntactic construction devices overview
+879. pleonasm and pleonastic constructions
+880. hyperbaton and anastrophe
+881. prolepsis as syntactic fronting
+882. anacoluthon
+883. syntactic/semantic agreement (syllepsis)
+884. asyndeton as a marked coordination pattern
+885. polysyndeton as a marked coordination pattern
+886. syntactic anaphora as a discourse-structuring repetition
+887. distinction between grammatical construction and stylistic figure
 
 ### AL. Additional syntax, reference and variation structures
 
-875. null direct objects
-876. null oblique objects
-877. null possessors
-878. verbal phrase ellipsis (VP ellipsis)
-879. emphatic affirmation
-880. biased polar questions
-881. minimal answers to yes/no questions
-882. bare nominals and determinerless noun phrases
-883. Brazilian Portuguese topic-subject constructions
-884. definite null subjects
-885. indefinite null subjects
-886. expletive null subjects
+888. null direct objects
+889. null oblique objects
+890. null possessors
+891. verbal phrase ellipsis (VP ellipsis)
+892. emphatic affirmation
+893. biased polar questions
+894. minimal answers to yes/no questions
+895. bare nominals and determinerless noun phrases
+896. Brazilian Portuguese topic-subject constructions
+897. definite null subjects
+898. indefinite null subjects
+899. expletive null subjects
 
 ### AF. Adverbs and adverbial locutions
 
-744. adverb system overview
-745. adverbs vs adjectives
-746. adverb formation
-747. adverbial locutions
-748. manner adverbs
-749. place adverbs
-750. direction adverbs
-751. time adverbs
-752. frequency adverbs
-753. duration adverbs
-754. degree adverbs
-755. quantity adverbs
-756. focus adverbs
-757. restriction/exclusion adverbs
-758. sentence adverbs
-759. epistemic adverbs
-760. evaluative adverbs
-761. connective adverbs
-762. interrogative adverbs
-763. relative adverbs
-764. negative adverbs
-765. adverb position
-766. adverb scope
-767. adverb + adjective
-768. adverb + adverb
-769. adverb + verb
-770. adverbial modification of the clause
-771. adverbial modification of the noun phrase
-772. degree modification
-773. comparative adverbial constructions
-774. adverb agreement and invariability
-775. adverbs ending in -mente
-776. semantic interpretation of -mente adverbs
-777. Portuguese vs Ukrainian adverb placement
-778. adverbial ambiguity
-779. fixed adverbial expressions
-780. discourse-pragmatic adverbs
-781. adverbial register variation
+756. adverb system overview
+757. adverbs vs adjectives
+758. adverb formation
+759. adverbial locutions
+760. manner adverbs
+761. place adverbs
+762. direction adverbs
+763. time adverbs
+764. frequency adverbs
+765. duration adverbs
+766. degree adverbs
+767. quantity adverbs
+768. focus adverbs
+769. restriction/exclusion adverbs
+770. sentence adverbs
+771. epistemic adverbs
+772. evaluative adverbs
+773. connective adverbs
+774. interrogative adverbs
+775. relative adverbs
+776. negative adverbs
+777. adverb position
+778. adverb scope
+779. adverb + adjective
+780. adverb + adverb
+781. adverb + verb
+782. adverbial modification of the clause
+783. adverbial modification of the noun phrase
+784. degree modification
+785. comparative adverbial constructions
+786. adverb agreement and invariability
+787. adverbs ending in -mente
+788. semantic interpretation of -mente adverbs
+789. Portuguese vs Ukrainian adverb placement
+790. adverbial ambiguity
+791. fixed adverbial expressions
+792. discourse-pragmatic adverbs
+793. adverbial register variation
 
 ### AG. Conjunctions and connective expressions
 
-782. conjunction system overview
-783. coordinating conjunctions
-784. subordinating conjunctions
-785. conjunctive locutions
-786. additive conjunctions
-787. alternative conjunctions
-788. adversative conjunctions
-789. explanatory conjunctions
-790. conclusive conjunctions
-791. causal conjunctions
-792. temporal conjunctions
-793. conditional conjunctions
-794. concessive conjunctions
-795. final/purpose conjunctions
-796. comparative conjunctions
-797. consecutive conjunctions
-798. conformative conjunctions
-799. proportional conjunctions
-800. modal conjunctions
-801. locative conjunctions
-802. conjunction vs discourse connective
-803. conjunction selection and meaning
-804. coordination with asyndesis
-805. coordination with multiple conjunctions
-806. correlative conjunctions
-807. negative coordination (nem... nem)
-808. additive correlative patterns
-809. conjunctions and punctuation
-810. conjunctions and clause mood
-811. Portuguese vs Ukrainian conjunction correspondence
-812. false-equivalent conjunctions
-813. fixed conjunctive expressions
+794. conjunction system overview
+795. coordinating conjunctions
+796. subordinating conjunctions
+797. conjunctive locutions
+798. additive conjunctions
+799. alternative conjunctions
+800. adversative conjunctions
+801. explanatory conjunctions
+802. conclusive conjunctions
+803. causal conjunctions
+804. temporal conjunctions
+805. conditional conjunctions
+806. concessive conjunctions
+807. final/purpose conjunctions
+808. comparative conjunctions
+809. consecutive conjunctions
+810. conformative conjunctions
+811. proportional conjunctions
+812. modal conjunctions
+813. locative conjunctions
+814. conjunction vs discourse connective
+815. conjunction selection and meaning
+816. coordination with asyndesis
+817. coordination with multiple conjunctions
+818. correlative conjunctions
+819. negative coordination (nem... nem)
+820. additive correlative patterns
+821. conjunctions and punctuation
+822. conjunctions and clause mood
+823. Portuguese vs Ukrainian conjunction correspondence
+824. false-equivalent conjunctions
+825. fixed conjunctive expressions
 
 ### AH. Interjections and exclamative expressions
 
-814. interjection system overview
-815. primary interjections
-816. secondary interjections
-817. interjectional locutions
-818. vocal reactions and written interjections
-819. greetings and farewell formulas as interjectional expressions
-820. calls and attention-getters
-821. surprise and admiration
-822. pain, fear and relief
-823. agreement, disagreement and hesitation
-824. discourse-management interjections
-825. interjection + vocative
-826. interjections vs pragmatic particles
-827. interjections vs ordinary lexical items
-828. punctuation with interjections
-829. register and regional variation of interjections
-830. Ukrainian-Portuguese false equivalents of interjections
+826. interjection system overview
+827. primary interjections
+828. secondary interjections
+829. interjectional locutions
+830. vocal reactions and written interjections
+831. greetings and farewell formulas as interjectional expressions
+832. calls and attention-getters
+833. surprise and admiration
+834. pain, fear and relief
+835. agreement, disagreement and hesitation
+836. discourse-management interjections
+837. interjection + vocative
+838. interjections vs pragmatic particles
+839. interjections vs ordinary lexical items
+840. punctuation with interjections
+841. register and regional variation of interjections
+842. Ukrainian-Portuguese false equivalents of interjections
 
 ### AI. Sentence types, polarity and illocutionary force
 
-831. declarative sentences
-832. interrogative sentences
-833. exclamative sentences
-834. imperative sentences
-835. optative/wish constructions
-836. hortative and exhortative constructions
-837. direct vs indirect directive constructions
-838. affirmative polarity
-839. negative polarity
-840. marked declaratives
-841. sentence fragments and verbless clauses
-842. answer fragments and elliptical responses
-843. question tags and confirmation questions
-844. echo questions
-845. rhetorical questions
-846. exclamative word order
-847. imperative softening and intensification
-848. sentence type vs speech act
-849. sentence type vs intonation
-850. sentence type vs punctuation
-851. sentence-type variation across PT-BR/PT-PT
-852. illocutionary force and grammatical form
-853. grammaticalisation of discourse functions
+843. declarative sentences
+844. interrogative sentences
+845. exclamative sentences
+846. imperative sentences
+847. optative/wish constructions
+848. hortative and exhortative constructions
+849. direct vs indirect directive constructions
+850. affirmative polarity
+851. negative polarity
+852. marked declaratives
+853. sentence fragments and verbless clauses
+854. answer fragments and elliptical responses
+855. question tags and confirmation questions
+856. echo questions
+857. rhetorical questions
+858. exclamative word order
+859. imperative softening and intensification
+860. sentence type vs speech act
+861. sentence type vs intonation
+862. sentence type vs punctuation
+863. sentence-type variation across PT-BR/PT-PT
+864. illocutionary force and grammatical form
+865. grammaticalisation of discourse functions
 
 ### E. Pronouns and pronominal reference
 
-111. personal subject pronouns
-112. object pronouns overview
-113. direct-object pronouns
-114. indirect-object pronouns
-115. `o/a/os/as`
-116. `lhe/lhes`
-117. `lhe` vs `o/a`
-118. prepositional pronouns
-119. reflexive pronouns
-120. reciprocal pronouns
-121. pronoun omission
-122. emphatic pronouns
-123. demonstrative pronouns
-124. possessive pronouns
-125. indefinite pronouns
-126. negative pronouns
-127. interrogative pronouns
-128. relative pronouns
-129. `que`
-130. `quem`
-131. `qual`
-132. `o qual / a qual`
-133. `cujo`
-134. `onde`
-135. `o que`
-136. free relative constructions
-137. `a gente`
-138. `nós` vs `a gente`
-139. `tu`, `você`, `vocês`, `vós`
-140. pronoun reference and ambiguity
-141. pronouns in discourse
+110. personal subject pronouns
+111. object pronouns overview
+112. direct-object pronouns
+113. indirect-object pronouns
+114. `o/a/os/as`
+115. `lhe/lhes`
+116. `lhe` vs `o/a`
+117. prepositional pronouns
+118. reflexive pronouns
+119. reciprocal pronouns
+120. pronoun omission
+121. emphatic pronouns
+122. demonstrative pronouns
+123. possessive pronouns
+124. indefinite pronouns
+125. negative pronouns
+126. interrogative pronouns
+127. relative pronouns
+128. `que`
+129. `quem`
+130. `qual`
+131. `o qual / a qual`
+132. `cujo`
+133. `onde`
+134. `o que`
+135. free relative constructions
+136. `a gente`
+137. `nós` vs `a gente`
+138. `tu`, `você`, `vocês`, `vós`
+139. pronoun reference and ambiguity
+140. pronouns in discourse
 
 ### F. Clitics
 
-142. clitic inventory
-143. clitic vs tonic pronoun
-144. clitic position overview
-145. proclisis
-146. enclisis
-147. mesoclisis
-148. proclisis triggers
-149. negation and clitic placement
-150. interrogatives and clitic placement
-151. subordinators and clitic placement
-152. relative clauses and clitic placement
-153. imperative and clitics
-154. infinitive and clitics
-155. gerund and clitics
-156. clitic combinations
-157. clitic ordering
-158. fused clitic forms
-159. clitic placement in PT-BR
-160. clitic placement in PT-PT
-161. clitic placement and register
+141. clitic inventory
+142. clitic vs tonic pronoun
+143. clitic position overview
+144. proclisis
+145. enclisis
+146. mesoclisis
+147. proclisis triggers
+148. negation and clitic placement
+149. interrogatives and clitic placement
+150. subordinators and clitic placement
+151. relative clauses and clitic placement
+152. imperative and clitics
+153. infinitive and clitics
+154. gerund and clitics
+155. clitic combinations
+156. clitic ordering
+157. fused clitic forms
+158. clitic placement in PT-BR
+159. clitic placement in PT-PT
+160. clitic placement and register
 
 ### G. Numerals and quantitative expressions
 
-162. cardinal numbers
-163. ordinal numbers
-164. multiplicative numerals
-165. fractional numerals
-166. collective numerals
-167. decimal numbers
-168. percentages
-169. dates
-170. years
-171. clock time
-172. durations
-173. money amounts
-174. measurements and units
-175. ranges and intervals
-176. numbers in noun phrases
-177. numeral agreement
-178. numerals as determiners
-179. numerals as noun phrases
-180. `mil`
-181. `milhão / milhões`
-182. large-number syntax
-183. approximate quantity
+161. cardinal numbers
+162. ordinal numbers
+163. multiplicative numerals
+164. fractional numerals
+165. collective numerals
+166. decimal numbers
+167. percentages
+168. dates
+169. years
+170. clock time
+171. durations
+172. money amounts
+173. measurements and units
+174. ranges and intervals
+175. numbers in noun phrases
+176. numeral agreement
+177. numerals as determiners
+178. numerals as noun phrases
+179. `mil`
+180. `milhão / milhões`
+181. large-number syntax
+182. approximate quantity
 
 ### H. Prepositions and prepositional government
 
-184. preposition system overview
-185. `a`
-186. `de`
-187. `em`
-188. `por`
-189. `para`
-190. `com`
-191. `sem`
-192. `sobre`
-193. `entre`
-194. `até`
-195. `desde`
-196. `contra`
-197. `perante`
-198. `sob`
-199. `sobre`
-200. `trás`
-201. spatial prepositions
-202. direction and destination
-203. temporal prepositions
-204. cause
-205. purpose
-206. means and instrument
-207. origin/source
-208. manner
-209. comparison
-210. fixed prepositional phrases
-211. preposition + infinitive
-212. verb government
-213. adjective government
-214. noun government
-215. prepositional complements
-216. preposition choice as a meaning contrast
+183. preposition system overview
+184. `a`
+185. `de`
+186. `em`
+187. `por`
+188. `para`
+189. `com`
+190. `sem`
+191. `sobre`
+192. `entre`
+193. `até`
+194. `desde`
+195. `contra`
+196. `perante`
+197. `sob`
+198. `sobre`
+199. `trás`
+200. spatial prepositions
+201. direction and destination
+202. temporal prepositions
+203. cause
+204. purpose
+205. means and instrument
+206. origin/source
+207. manner
+208. comparison
+209. fixed prepositional phrases
+210. preposition + infinitive
+211. verb government
+212. adjective government
+213. noun government
+214. prepositional complements
+215. preposition choice as a meaning contrast
 
 ### I. Contractions and crase
 
-217. `de + article`
-218. `em + article`
-219. `a + article`
-220. `por + article`
-221. `em + demonstrative`
-222. `de + demonstrative`
-223. `a + demonstrative`
-224. contractions with pronouns
-225. `à` and crase
-226. crase diagnostics
-227. crase with feminine noun phrases
-228. crase with place names
-229. crase with time expressions
-230. crase with fixed expressions
-231. prohibited crase
-232. optional/variable crase
-233. crase after `até`
-234. orthography vs underlying contraction
+216. `de + article`
+217. `em + article`
+218. `a + article`
+219. `por + article`
+220. `em + demonstrative`
+221. `de + demonstrative`
+222. `a + demonstrative`
+223. contractions with pronouns
+224. `à` and crase
+225. crase diagnostics
+226. crase with feminine noun phrases
+227. crase with place names
+228. crase with time expressions
+229. crase with fixed expressions
+230. prohibited crase
+231. optional/variable crase
+232. crase after `até`
+233. orthography vs underlying contraction
 
 ### J. Verbs and verbal morphology
 
-235. verb system overview
-236. person and number
-237. conjugation classes
-238. regular -ar verbs
-239. regular -er verbs
-240. regular -ir verbs
-241. stem-changing verbs
-242. spelling-changing verbs
-243. irregular verbs
-244. suppletive/irregular paradigms
-245. `ser`
-246. `estar`
-247. `ficar`
-248. `ter`
-249. `haver`
-250. `ir`
-251. `vir`
-252. `pôr`
-253. `fazer`
-254. `dizer`
-255. modal verbs
-256. pronominal verbs
-257. transitivity
-258. valency
-259. verb government
-260. argument structure
-261. causative verbs
-262. raising predicates
-263. control predicates
-264. lexical aspect
-265. verb alternations
-266. productive verbal morphology
+234. verb system overview
+235. person and number
+236. conjugation classes
+237. regular -ar verbs
+238. regular -er verbs
+239. regular -ir verbs
+240. stem-changing verbs
+241. spelling-changing verbs
+242. irregular verbs
+243. suppletive/irregular paradigms
+244. `ser`
+245. `estar`
+246. `ficar`
+247. `ter`
+248. `haver`
+249. `ir`
+250. `vir`
+251. `pôr`
+252. `fazer`
+253. `dizer`
+254. modal verbs
+255. pronominal verbs
+256. transitivity
+257. valency
+258. verb government
+259. argument structure
+260. causative verbs
+261. raising predicates
+262. control predicates
+263. lexical aspect
+264. verb alternations
+265. productive verbal morphology
 
 ### K. Tense and temporal interpretation
 
-267. present indicative
-268. present with future meaning
-269. present with habitual meaning
-270. present with generic meaning
-271. pretérito perfeito simples
-272. pretérito imperfeito
-273. perfeito vs imperfeito
-274. pretérito perfeito composto
-275. mais-que-perfeito simples
-276. mais-que-perfeito composto
-277. future indicative
-278. future perfect
-279. conditional / futuro do pretérito
-280. compound tenses
-281. tense and aspect
-282. tense and discourse reference
-283. sequence of tenses
-284. anteriority
-285. simultaneity
-286. posteriority
-287. tense in reported speech
-288. Portuguese tense vs Ukrainian aspect
-289. tense interpretation with temporal adverbials
+266. present indicative
+267. present with future meaning
+268. present with habitual meaning
+269. present with generic meaning
+270. pretérito perfeito simples
+271. pretérito imperfeito
+272. perfeito vs imperfeito
+273. pretérito perfeito composto
+274. mais-que-perfeito simples
+275. mais-que-perfeito composto
+276. future indicative
+277. future perfect
+278. conditional / futuro do pretérito
+279. compound tenses
+280. tense and aspect
+281. tense and discourse reference
+282. sequence of tenses
+283. anteriority
+284. simultaneity
+285. posteriority
+286. tense in reported speech
+287. Portuguese tense vs Ukrainian aspect
+288. tense interpretation with temporal adverbials
 
 ### L. Mood and modality
 
-290. indicative overview
-291. conjuntivo/subjuntivo overview
-292. present subjunctive
-293. imperfect subjunctive
-294. future subjunctive
-295. compound subjunctives
-296. subjunctive formation
-297. indicative vs subjunctive
-298. subjunctive triggers
-299. negation and subjunctive
-300. relative clauses and mood
-301. complement clauses and mood
-302. concessives and mood
-303. conditionals and mood
-304. independent subjunctive
-305. imperative
-306. affirmative imperative
-307. negative imperative
-308. imperative + clitics
-309. conditional mood
-310. epistemic modality
-311. deontic modality
-312. volitional modality
-313. possibility, necessity and permission
+289. indicative overview
+290. conjuntivo/subjuntivo overview
+291. present subjunctive
+292. imperfect subjunctive
+293. future subjunctive
+294. compound subjunctives
+295. subjunctive formation
+296. indicative vs subjunctive
+297. subjunctive triggers
+298. negation and subjunctive
+299. relative clauses and mood
+300. complement clauses and mood
+301. concessives and mood
+302. conditionals and mood
+303. independent subjunctive
+304. imperative
+305. affirmative imperative
+306. negative imperative
+307. imperative + clitics
+308. conditional mood
+309. epistemic modality
+310. deontic modality
+311. volitional modality
+312. possibility, necessity and permission
 
 ### M. Infinitive, gerund and participle
 
-314. infinitive overview
-315. personal infinitive
-316. impersonal infinitive
-317. personal vs impersonal infinitive
-318. infinitive subjects
-319. infinitive control
-320. infinitive after prepositions
-321. infinitival clauses
-322. infinitive after modal verbs
-323. infinitive with perception verbs
-324. infinitive with causative verbs
-325. `ao + infinitivo`
-326. infinitive + clitic
-327. gerund formation
-328. gerund functions
-329. progressive constructions
-330. gerundial clauses
-331. PT-BR gerund progressive
-332. PT-PT `a + infinitivo` progressive
-333. participle formation
-334. regular participles
-335. irregular participles
-336. double participles
-337. participle with `ter/haver`
-338. participle with `ser`
-339. participle with `estar`
-340. resultative participles
-341. participle agreement
+313. infinitive overview
+314. personal infinitive
+315. impersonal infinitive
+316. personal vs impersonal infinitive
+317. infinitive subjects
+318. infinitive control
+319. infinitive after prepositions
+320. infinitival clauses
+321. infinitive after modal verbs
+322. infinitive with perception verbs
+323. infinitive with causative verbs
+324. `ao + infinitivo`
+325. infinitive + clitic
+326. gerund formation
+327. gerund functions
+328. progressive constructions
+329. gerundial clauses
+330. PT-BR gerund progressive
+331. PT-PT `a + infinitivo` progressive
+332. participle formation
+333. regular participles
+334. irregular participles
+335. double participles
+336. participle with `ter/haver`
+337. participle with `ser`
+338. participle with `estar`
+339. resultative participles
+340. participle agreement
 
 ### N. Verbal periphrases and aspectual constructions
 
-342. aspectual periphrases overview
-343. inchoative constructions
-344. continuative constructions
-345. terminative constructions
-346. repetitive constructions
-347. recent-past `acabar de`
-348. `voltar a`
-349. `começar a`
-350. `continuar a`
-351. `deixar de`
-352. `ir + infinitivo`
-353. `estar + gerund/infinitive`
-354. `andar a`
-355. `ficar a`
-356. `vir a`
-357. `estar para`
-358. `ter de / ter que`
-359. `haver de`
-360. `poder / dever / querer`
-361. phase vs tense vs aspect
+341. aspectual periphrases overview
+342. inchoative constructions
+343. continuative constructions
+344. terminative constructions
+345. repetitive constructions
+346. recent-past `acabar de`
+347. `voltar a`
+348. `começar a`
+349. `continuar a`
+350. `deixar de`
+351. `ir + infinitivo`
+352. `estar + gerund/infinitive`
+353. `andar a`
+354. `ficar a`
+355. `vir a`
+356. `estar para`
+357. `ter de / ter que`
+358. `haver de`
+359. `poder / dever / querer`
+360. phase vs tense vs aspect
 
 ### O. `se` and related constructions
 
-362. `se` overview
-363. reflexive `se`
-364. reciprocal `se`
-365. pronominal `se`
-366. passive `se`
-367. impersonal `se`
-368. middle `se`
-369. anticausative `se`
-370. `se` in lexicalised constructions
-371. passive vs impersonal `se`
-372. agreement with `se`
-373. diagnostics for `se`
-374. Ukrainian false equivalents of `se`
+361. `se` overview
+362. reflexive `se`
+363. reciprocal `se`
+364. pronominal `se`
+365. passive `se`
+366. impersonal `se`
+367. middle `se`
+368. anticausative `se`
+369. `se` in lexicalised constructions
+370. passive vs impersonal `se`
+371. agreement with `se`
+372. diagnostics for `se`
+373. Ukrainian false equivalents of `se`
 
 ### P. Negation
 
-375. sentence negation with `não`
-376. constituent negation
-377. negative concord
-378. negative indefinites
-379. `ninguém`
-380. `nada`
-381. `nenhum`
-382. `nunca`
-383. `jamais`
-384. `nem`
-385. preverbal negative
-386. postverbal negative
-387. double negation
-388. contrastive negation
-389. negation and clitic placement
-390. negation and mood
-391. pragmatic uses of negation
+374. sentence negation with `não`
+375. constituent negation
+376. negative concord
+377. negative indefinites
+378. `ninguém`
+379. `nada`
+380. `nenhum`
+381. `nunca`
+382. `jamais`
+383. `nem`
+384. preverbal negative
+385. postverbal negative
+386. double negation
+387. contrastive negation
+388. negation and clitic placement
+389. negation and mood
+390. pragmatic uses of negation
 
 ### Q. Questions and interrogatives
 
-392. yes/no questions
-393. wh-questions
-394. interrogative pronouns
-395. `o que`
-396. `que`
-397. `quem`
-398. `qual`
-399. `quanto`
-400. `onde`
-401. `quando`
-402. `como`
-403. `por que / porque / porquê / por quê`
-404. preposition + interrogative
-405. interrogative word order
-406. inversion
-407. `é que`
-408. echo questions
-409. alternative questions
-410. negative questions
-411. rhetorical questions
-412. question intonation
-413. PT-BR vs PT-PT interrogative patterns
+391. yes/no questions
+392. wh-questions
+393. interrogative pronouns
+394. `o que`
+395. `que`
+396. `quem`
+397. `qual`
+398. `quanto`
+399. `onde`
+400. `quando`
+401. `como`
+402. `por que / porque / porquê / por quê`
+403. preposition + interrogative
+404. interrogative word order
+405. inversion
+406. `é que`
+407. echo questions
+408. alternative questions
+409. negative questions
+410. rhetorical questions
+411. question intonation
+412. PT-BR vs PT-PT interrogative patterns
 
 ### R. Sentence structure and syntax
 
-414. canonical SVO order
-415. subject placement
-416. object placement
-417. null-subject syntax
-418. predicate structure
-419. direct object
-420. indirect object
-421. oblique complement
-422. predicative complement
-423. adjuncts
-424. argument vs adjunct
-425. word order variation
-426. inversion
-427. topicalisation
-428. left dislocation
-429. right dislocation
-430. cleft constructions
-431. pseudo-clefts
-432. focus
-433. emphasis
-434. information structure
-435. causative constructions
-436. raising
-437. control
-438. complex predicates
-439. nominalisation
-440. ellipsis
-441. coordination
-442. subordination
-443. constituent tests
-444. ambiguity and attachment
+413. canonical SVO order
+414. subject placement
+415. object placement
+416. null-subject syntax
+417. predicate structure
+418. direct object
+419. indirect object
+420. oblique complement
+421. predicative complement
+422. adjuncts
+423. argument vs adjunct
+424. word order variation
+425. inversion
+426. topicalisation
+427. left dislocation
+428. right dislocation
+429. cleft constructions
+430. pseudo-clefts
+431. focus
+432. emphasis
+433. information structure
+434. causative constructions
+435. raising
+436. control
+437. complex predicates
+438. nominalisation
+439. ellipsis
+440. coordination
+441. subordination
+442. constituent tests
+443. ambiguity and attachment
 
 ### S. Coordination
 
-445. coordination overview
-446. additive coordination
-447. adversative coordination
-448. alternative coordination
-449. explanatory coordination
-450. conclusive coordination
-451. coordinated noun phrases
-452. coordinated adjectives
-453. coordinated clauses
-454. coordination and agreement
-455. coordination and punctuation
-456. discourse connectives
+444. coordination overview
+445. additive coordination
+446. adversative coordination
+447. alternative coordination
+448. explanatory coordination
+449. conclusive coordination
+450. coordinated noun phrases
+451. coordinated adjectives
+452. coordinated clauses
+453. coordination and agreement
+454. coordination and punctuation
+455. discourse connectives
 
 ### T. Subordination and clause types
 
-457. subordinate clauses overview
-458. complement clauses
-459. subject clauses
-460. object clauses
-461. predicative clauses
-462. relative clauses overview
-463. restrictive relatives
-464. non-restrictive relatives
-465. free relatives
-466. causal clauses
-467. concessive clauses
-468. conditional clauses
-469. temporal clauses
-470. final/purpose clauses
-471. consecutive clauses
-472. comparative clauses
-473. conformative clauses
-474. proportional clauses
-475. modal clauses
-476. locative clauses
-477. reduced clauses overview
-478. infinitival reduced clauses
-479. gerundial reduced clauses
-480. participial reduced clauses
-481. finite vs non-finite subordination
-482. clause mood selection
-483. subordinate-clause punctuation
+456. subordinate clauses overview
+457. complement clauses
+458. subject clauses
+459. object clauses
+460. predicative clauses
+461. relative clauses overview
+462. restrictive relatives
+463. non-restrictive relatives
+464. free relatives
+465. causal clauses
+466. concessive clauses
+467. conditional clauses
+468. temporal clauses
+469. final/purpose clauses
+470. consecutive clauses
+471. comparative clauses
+472. conformative clauses
+473. proportional clauses
+474. modal clauses
+475. locative clauses
+476. reduced clauses overview
+477. infinitival reduced clauses
+478. gerundial reduced clauses
+479. participial reduced clauses
+480. finite vs non-finite subordination
+481. clause mood selection
+482. subordinate-clause punctuation
 
 ### U. Relative constructions
 
-484. relative `que`
-485. relative `quem`
-486. relative `o qual`
-487. relative `cujo`
-488. relative `onde`
-489. relative `o que`
-490. preposition + relative
-491. pied-piping and stranded-preposition alternatives where relevant
-492. restrictive vs explanatory interpretation
-493. relative-clause punctuation
-494. antecedent selection
-495. relative-clause mood
+483. relative `que`
+484. relative `quem`
+485. relative `o qual`
+486. relative `cujo`
+487. relative `onde`
+488. relative `o que`
+489. preposition + relative
+490. pied-piping and stranded-preposition alternatives where relevant
+491. restrictive vs explanatory interpretation
+492. relative-clause punctuation
+493. antecedent selection
+494. relative-clause mood
 
 ### V. Passive, impersonal and existential constructions
 
-496. passive with `ser + particípio`
-497. passive agent
-498. `por` vs other agent expressions
-499. passive `se`
-500. impersonal `se`
-501. passive vs impersonal diagnostics
-502. impersonal `haver`
-503. existential `há`
-504. existential `ter` in Brazilian usage
-505. `existir`
-506. meteorological predicates
-507. temporal `fazer`
-508. impersonal predicates
-509. `é preciso` and related constructions
-510. resultative `estar + particípio`
-511. passive vs resultative
+495. passive with `ser + particípio`
+496. passive agent
+497. `por` vs other agent expressions
+498. passive `se`
+499. impersonal `se`
+500. passive vs impersonal diagnostics
+501. impersonal `haver`
+502. existential `há`
+503. existential `ter` in Brazilian usage
+504. `existir`
+505. meteorological predicates
+506. temporal `fazer`
+507. impersonal predicates
+508. `é preciso` and related constructions
+509. resultative `estar + particípio`
+510. passive vs resultative
 
 ### W. Agreement and concordance
 
-512. nominal agreement overview
-513. noun-adjective agreement
-514. determiner agreement
-515. subject-verb agreement
-516. predicative agreement
-517. mixed-gender agreement
-518. coordinated subjects
-519. collective nouns
-520. `a gente` agreement
-521. `haver` agreement
-522. `se` agreement
-523. numeral agreement
-524. participle agreement
-525. semantic vs grammatical agreement
-526. agreement in complex noun phrases
+511. nominal agreement overview
+512. noun-adjective agreement
+513. determiner agreement
+514. subject-verb agreement
+515. predicative agreement
+516. mixed-gender agreement
+517. coordinated subjects
+518. collective nouns
+519. `a gente` agreement
+520. `haver` agreement
+521. `se` agreement
+522. numeral agreement
+523. participle agreement
+524. semantic vs grammatical agreement
+525. agreement in complex noun phrases
 
 ### X. Word formation and derivational morphology
 
-527. derivation vs inflection
-528. prefixation
-529. suffixation
-530. productive prefixes
-531. productive suffixes
-532. negative prefixes
-533. evaluative suffixes
-534. diminutives
-535. augmentatives
-536. pejorative/affective derivation
-537. nominalisation
-538. adjectivisation
-539. verbal derivation
-540. adverb formation
-541. conversion / zero derivation
-542. compounding
-543. compound nouns
-544. compound adjectives
-545. compound verbs
-546. lexicalisation
-547. productive vs lexicalised derivation
-548. neologism formation
-549. derivational semantic shifts
-550. orthographic effects of derivation
+526. derivation vs inflection
+527. prefixation
+528. suffixation
+529. productive prefixes
+530. productive suffixes
+531. negative prefixes
+532. evaluative suffixes
+533. diminutives
+534. augmentatives
+535. pejorative/affective derivation
+536. nominalisation
+537. adjectivisation
+538. verbal derivation
+539. adverb formation
+540. conversion / zero derivation
+541. compounding
+542. compound nouns
+543. compound adjectives
+544. compound verbs
+545. lexicalisation
+546. productive vs lexicalised derivation
+547. neologism formation
+548. derivational semantic shifts
+549. orthographic effects of derivation
 
 ### Y. Phonetics, phonology and pronunciation
 
-551. phonetics vs phonology
-552. phoneme vs allophone
-553. vowel system
-554. open vs closed `e/o`
-555. unstressed-vowel reduction
-556. nasal vowels
-557. nasal diphthongs
-558. oral diphthongs
-559. triphthongs
-560. semivowels/glides
-561. consonant system
-562. `r/rr`
-563. `s` and its positional variants
-564. `x`
-565. `lh/nh/ch`
-566. `c/ç`
-567. `g/j`
-568. `b/v`
-569. syllable structure
-570. syllabification
-571. stress
-572. word stress patterns
-573. prosody
-574. intonation
-575. rhythm
-576. connected speech
-577. reduction and deletion in connected speech
-578. elision
-579. linking phenomena where relevant
-580. IPA transcription
-581. pronunciation lookup methodology
-582. pronunciation of unfamiliar words
-583. PT-BR vs PT-PT pronunciation
-584. regional pronunciation variation
+550. phonetics vs phonology
+551. phoneme vs allophone
+552. vowel system
+553. open vs closed `e/o`
+554. unstressed-vowel reduction
+555. nasal vowels
+556. nasal diphthongs
+557. oral diphthongs
+558. triphthongs
+559. semivowels/glides
+560. consonant system
+561. `r/rr`
+562. `s` and its positional variants
+563. `x`
+564. `lh/nh/ch`
+565. `c/ç`
+566. `g/j`
+567. `b/v`
+568. syllable structure
+569. syllabification
+570. stress
+571. word stress patterns
+572. prosody
+573. intonation
+574. rhythm
+575. connected speech
+576. reduction and deletion in connected speech
+577. elision
+578. linking phenomena where relevant
+579. IPA transcription
+580. pronunciation lookup methodology
+581. pronunciation of unfamiliar words
+582. PT-BR vs PT-PT pronunciation
+583. regional pronunciation variation
 
 ### Z. Orthography and punctuation
 
-585. Portuguese alphabet
-586. letter names
-587. grapheme-sound correspondences
-588. reading rules
-589. accentuation
-590. oxytone/paroxytone/proparoxytone patterns
-591. acute accent
-592. circumflex
-593. grave accent
-594. tilde
-595. cedilla
-596. distinctive accents
-597. capitalisation
-598. punctuation overview
-599. comma
-600. semicolon
-601. colon
-602. dash
-603. quotation marks
-604. parentheses and brackets
-605. question mark and exclamation mark
-606. ellipsis points / reticências
-607. punctuation with coordination
-608. punctuation with subordination
-609. punctuation with relative clauses
-610. punctuation and information structure
-611. punctuation and direct speech
-612. hyphenation
-613. word division
-614. compound spelling
-615. Acordo Ortográfico
-616. PT-BR vs PT-PT spelling variants
+584. Portuguese alphabet
+585. letter names
+586. grapheme-sound correspondences
+587. reading rules
+588. accentuation
+589. oxytone/paroxytone/proparoxytone patterns
+590. acute accent
+591. circumflex
+592. grave accent
+593. tilde
+594. cedilla
+595. distinctive accents
+596. capitalisation
+597. punctuation overview
+598. comma
+599. semicolon
+600. colon
+601. dash
+602. quotation marks
+603. parentheses and brackets
+604. question mark and exclamation mark
+605. ellipsis points / reticências
+606. punctuation with coordination
+607. punctuation with subordination
+608. punctuation with relative clauses
+609. punctuation and information structure
+610. punctuation and direct speech
+611. hyphenation
+612. word division
+613. compound spelling
+614. Acordo Ortográfico
+615. PT-BR vs PT-PT spelling variants
 
 ### AA. Semantics and interpretation
 
-617. lexical vs grammatical meaning
-618. tense meaning
-619. aspect
-620. lexical aspect
-621. event structure
-622. states
-623. activities
-624. accomplishments
-625. achievements
-626. habituality
-627. iteration
-628. inception
-629. continuation
-630. termination
-631. resultative meaning
-632. modality
-633. possibility
-634. necessity
-635. permission
-636. volition
-637. evidential/epistemic interpretation where grammatically relevant
-638. definiteness
-639. specificity
-640. genericity
-641. deixis
-642. anaphora
-643. cataphora
-644. quantification
-645. scope
-646. semantic ambiguity
-647. structural ambiguity
-648. lexical ambiguity
-649. semantic contrasts that affect grammar choice
+616. lexical vs grammatical meaning
+617. tense meaning
+618. aspect
+619. lexical aspect
+620. event structure
+621. states
+622. activities
+623. accomplishments
+624. achievements
+625. habituality
+626. iteration
+627. inception
+628. continuation
+629. termination
+630. resultative meaning
+631. modality
+632. possibility
+633. necessity
+634. permission
+635. volition
+636. evidential/epistemic interpretation where grammatically relevant
+637. definiteness
+638. specificity
+639. genericity
+640. deixis
+641. anaphora
+642. cataphora
+643. quantification
+644. scope
+645. semantic ambiguity
+646. structural ambiguity
+647. lexical ambiguity
+648. semantic contrasts that affect grammar choice
 
 ### AB. Pragmatics
 
-650. pragmatics overview
-651. speech acts
-652. requests
-653. commands
-654. advice
-655. offers
-656. invitations
-657. permission
-658. prohibition
-659. agreement and disagreement
-660. correction
-661. confirmation
-662. refusal
-663. politeness
-664. directness and indirectness
-665. hedging
-666. social distance
-667. forms of address
-668. pragmatic particles
-669. pragmatic uses of tense/mood
-670. pragmatic uses of negation
-671. pragmatic uses of diminutives
-672. register
-673. formality
-674. conversational implicature where relevant
-675. discourse-sensitive interpretation
+649. pragmatics overview
+650. speech acts
+651. requests
+652. commands
+653. advice
+654. offers
+655. invitations
+656. permission
+657. prohibition
+658. agreement and disagreement
+659. correction
+660. confirmation
+661. refusal
+662. politeness
+663. directness and indirectness
+664. hedging
+665. social distance
+666. forms of address
+667. pragmatic particles
+668. pragmatic uses of tense/mood
+669. pragmatic uses of negation
+670. pragmatic uses of diminutives
+671. register
+672. formality
+673. conversational implicature where relevant
+674. discourse-sensitive interpretation
 
 ### AC. Discourse and text
 
-676. discourse overview
-677. topic/comment
-678. theme/rheme
-679. focus
-680. given/new information
-681. contrastive focus
-682. anaphoric cohesion
-683. lexical cohesion
-684. textual reference
-685. ellipsis
-686. discourse markers
-687. paragraph-level cohesion
-688. sequencing
-689. narrative discourse
-690. description
-691. exposition
-692. argumentation
-693. academic/formal prose
-694. journalistic prose
-695. spoken discourse
-696. direct speech
-697. indirect speech
-698. reported speech
-699. sequence of tense in reported speech
-700. deictic shift in reported speech
-701. pronoun shift in reported speech
-702. paraphrase and grammatical reformulation
+675. discourse overview
+676. topic/comment
+677. theme/rheme
+678. focus
+679. given/new information
+680. contrastive focus
+681. anaphoric cohesion
+682. lexical cohesion
+683. textual reference
+684. ellipsis
+685. discourse markers
+686. paragraph-level cohesion
+687. sequencing
+688. narrative discourse
+689. description
+690. exposition
+691. argumentation
+692. academic/formal prose
+693. journalistic prose
+694. spoken discourse
+695. direct speech
+696. indirect speech
+697. reported speech
+698. sequence of tense in reported speech
+699. deictic shift in reported speech
+700. pronoun shift in reported speech
+701. paraphrase and grammatical reformulation
 
 ### AD. Lexical grammar
 
-703. collocations overview
-704. verb-noun collocations
-705. adjective-noun collocations
-706. verb-preposition collocations
-707. adjective-preposition collocations
-708. noun-preposition collocations
-709. lexicalised constructions
-710. fixed prepositional frames
-711. semantic restrictions on lexical combinations
-712. support/light verbs
-713. multiword expressions
-714. formulaic sequences
-715. false friends for Ukrainian speakers
-716. lexical calques
-717. lexical choice constrained by grammar
-718. lexical variation by register
-719. lexical variation by region
+702. collocations overview
+703. verb-noun collocations
+704. adjective-noun collocations
+705. verb-preposition collocations
+706. adjective-preposition collocations
+707. noun-preposition collocations
+708. lexicalised constructions
+709. fixed prepositional frames
+710. semantic restrictions on lexical combinations
+711. support/light verbs
+712. multiword expressions
+713. formulaic sequences
+714. false friends for Ukrainian speakers
+715. lexical calques
+716. lexical choice constrained by grammar
+717. lexical variation by register
+718. lexical variation by region
 
 ### AE. Variation, standards and registers
 
-720. pluricentric Portuguese
-721. European Portuguese
-722. Brazilian Portuguese
-723. Angolan Portuguese
-724. Mozambican Portuguese
-725. other Lusophone varieties
-726. standard language vs descriptive variation
-727. grammaticality vs normative status
-728. frequency vs grammaticality
-729. regional variation
-730. social variation
-731. register variation
-732. spoken vs written variation
-733. formal vs informal variation
-734. address-system variation
-735. clitic-placement variation
-736. progressive-construction variation
-737. article variation
-738. pronunciation variation
-739. lexical variation
-740. spelling variation
-741. variation in agreement
-742. variation in syntax
-743. variation in discourse/pragmatics
-744. evidence-scoped regional notes
+719. pluricentric Portuguese
+720. European Portuguese
+721. Brazilian Portuguese
+722. Angolan Portuguese
+723. Mozambican Portuguese
+724. other Lusophone varieties
+725. standard language vs descriptive variation
+726. grammaticality vs normative status
+727. frequency vs grammaticality
+728. regional variation
+729. social variation
+730. register variation
+731. spoken vs written variation
+732. formal vs informal variation
+733. address-system variation
+734. clitic-placement variation
+735. progressive-construction variation
+736. article variation
+737. pronunciation variation
+738. lexical variation
+739. spelling variation
+740. variation in agreement
+741. variation in syntax
+742. variation in discourse/pragmatics
+743. evidence-scoped regional notes
 
 ## 4. Explicit closure requirements
 
@@ -1142,15 +1142,15 @@ An item may have secondary modules, but it must have one canonical home.
 
 For every substantive article, the editorial workflow must ask:
 
-3. Is there a Ukrainian analogue?
-4. If yes, does it function the same way?
-5. If no, what Ukrainian structure normally expresses the same meaning?
-6. Does Portuguese encode a distinction Ukrainian leaves implicit?
-7. Does Ukrainian encode a distinction Portuguese expresses differently?
-8. Is there a false formal equivalent?
-9. Does a Ukrainian translation hide the Portuguese construction?
-10. Is positive transfer plausible?
-11. Is a learner-error claim documented, or merely predicted?
+744. Is there a Ukrainian analogue?
+745. If yes, does it function the same way?
+746. If no, what Ukrainian structure normally expresses the same meaning?
+747. Does Portuguese encode a distinction Ukrainian leaves implicit?
+748. Does Ukrainian encode a distinction Portuguese expresses differently?
+749. Is there a false formal equivalent?
+750. Does a Ukrainian translation hide the Portuguese construction?
+751. Is positive transfer plausible?
+752. Is a learner-error claim documented, or merely predicted?
 
 The ninth question is critical: the repository must never present an invented statement such as “Ukrainians usually make X error” as an established fact.
 
@@ -1210,9 +1210,9 @@ The target is not “the largest possible number of pages”. The target is **cl
 
 The Portuguese grammar reference is considered **coverage-complete** when a Ukrainian-speaking learner can reasonably search for any central Portuguese grammatical, phonological, orthographic, semantic, pragmatic, discourse or lexical-grammatical phenomenon and receive either:
 
-3. a dedicated canonical article;
-4. a clearly identified module in a canonical article; or
-5. a typed redirect to the canonical article that owns the concept.
+753. a dedicated canonical article;
+754. a clearly identified module in a canonical article; or
+755. a typed redirect to the canonical article that owns the concept.
 
 No major phenomenon should exist only accidentally inside an unrelated page.
 
