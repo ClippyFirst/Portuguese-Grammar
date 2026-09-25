@@ -476,3 +476,34 @@ Academic Writing Toolkit використано для paragraph-level logic che
 - Fallback/generated pages не враховуються.
 - Переписування вже наявних сторінок не збільшує coverage counter.
 
+
+
+## 2026-09-25 — content production batch 08: adjective degrees and adverb foundations
+
+Продовжено наповнення canonical corpus на робочій гілці `content/production-2026-09-batch-01`. Цього разу взято теми, які до batch 08 мали лише короткі/legacy fallback-реалізації й не входили до quality production modules.
+
+### Додано 6 нових dedicated GrammarPage-статей
+
+- `adjective-agreement` — узгодження прикметників;
+- `comparatives` — порівняльний ступінь;
+- `superlatives` — суперлатив;
+- `absolute-superlative` — абсолютний суперлатив;
+- `irregular-adjectives` — нерегулярні прикметники та особливі ступені;
+- `adverbs-overview` — система та функції прислівників.
+
+Файл: `src/content/pages/adjectives-adverbs-production-3.ts`.
+
+### Якість
+
+Статті розмежовують form / function / interpretation, містять production і comprehension приклади, український контраст, типові помилки та PT-BR/PT-PT scope. Особливу увагу приділено різниці між comparativo й superlativo, нерегулярним melhor/pior/maior/menor, а також області дії прислівників.
+
+Academic Writing Toolkit використано для paragraph-level sanity check. Інструмент повернув лише generic `short-paragraph` сигнали на рівні технічного input-файлу; це не виявило предметної граматичної суперечності в підготовленому контенті.
+
+### Лічильник покриття
+
+- Було: **260 / 349 написано**.
+- Додано нових canonical IDs: **6**.
+- Стало: **266 / 349 написано**.
+- Залишилося: **83 / 349**.
+- Fallback/generated pages не зараховуються.
+- Переписування вже наявних dedicated IDs не збільшує coverage counter.
