@@ -263,3 +263,37 @@ Commit: `0ad74ac741f078ab95f7be7d6ce03f8f07a7aa87`.
 ### Статус
 
 Batch 01 створено. Перед release/merge потрібні structural/typecheck/content QA та перевірка, що всі шість ID справді були fallback-only на старті batch.
+
+
+## 25.09.2026 — content production batch 01: second article set
+
+Після першої шістки продовжено наповнення тієї самої робочої гілки.
+
+### Лічильник контенту
+
+- Canonical topics у catalog.ts: **347**.
+- Додано ще **6** dedicated articles.
+- Кумулятивний production corpus за перевіреними page modules: **228 / 347 написано; 119 / 347 залишилося**.
+- Цей лічильник рахує лише реальні GrammarPage-статті, а не fallback/generated pages.
+- Попередні 6 статей входять у кумулятивні 228; повторно не рахуються.
+
+### Додано
+
+src/content/pages/adjectives-nouns-production-2.ts:
+
+1. adjective-position
+2. adjective-meaning
+3. adverbs-degree
+4. noun-number
+5. noun-gender
+6. gender-vs-ukrainian
+
+### Якість
+
+Статті містять визначення, структуру/формування, функціональні підрозділи, production/comprehension приклади, український контраст, типові помилки, PT-BR/PT-PT notes, related IDs та джерела. Для adjective-position / adjective-meaning використано матеріали Ciberdúvidas про позицію та семантичні ефекти прикметника; для noun gender/number — матеріали Ciberdúvidas про граматичний рід, винятки, plural і non-count nouns.
+
+Academic Writing Toolkit було використано як додатковий paragraph-level sanity check; його сигнали про короткі абзаци не є content failures, оскільки статті навмисно структуровані як довідникові блоки, а не як академічний розділ.
+
+### Наступний крок
+
+Продовжувати тільки з canonical topics, які ще не мають dedicated GrammarPage, і після кожної серії оновлювати цей кумулятивний лічильник.
