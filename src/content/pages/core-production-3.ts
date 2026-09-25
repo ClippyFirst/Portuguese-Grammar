@@ -43,7 +43,7 @@ export const pages: GrammarPage[] = [
     summary: "Як контекст дозволяє не повторювати прийменниковий аргумент дієслова.",
     aliases: ["нульовий непрямий додаток", "null oblique object", "objeto oblíquo nulo"],
     related: ["government-overview", "verb-valency-frames", "argument-vs-adjunct", "ellipsis"],
-    status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "high",
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Деякі португальські дієслова вибирають прийменниковий аргумент: gostar de, falar com, precisar de та інші. У контексті такий аргумент може не бути вимовлений, хоча його тип і зміст відновлюються. Це важливо для україномовного студента, бо відсутність прийменникової групи не означає автоматичної зміни керування.",
     definition: "Нульовий непрямий або прийменниковий аргумент — невиражений аргумент, який у повній конструкції реалізувався б як прийменникова група або інший обліковий додаток.",
     uses: [
@@ -69,7 +69,7 @@ export const pages: GrammarPage[] = [
     summary: "Як власник предмета або частини тіла відновлюється без займенника чи іменної групи.",
     aliases: ["нульовий посесор", "null possessor", "possessor omission"],
     related: ["possessives", "articles-possessives", "discourse-reference", "ellipsis"],
-    status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "medium",
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "medium",
     intro: "У деяких конструкціях власник предмета або частини тіла не називається явно, бо його легко відновити з підмета, ситуації чи попереднього дискурсу. Особливо прозорими є конструкції з частинами тіла, де португальська може не вимагати явного meu/seu, якщо власник уже однозначний.",
     definition: "Нульовий посесор — невиражений власник, який інтерпретується з контексту або з аргументної структури конструкції.",
     uses: [
@@ -95,7 +95,7 @@ export const pages: GrammarPage[] = [
     summary: "Як повторювана дієслівна група відновлюється без повного повторення.",
     aliases: ["VP ellipsis", "дієслівний еліпсис", "elipse verbal"],
     related: ["ellipsis", "discourse-reference", "coordination", "information-structure"],
-    status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "medium",
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "medium",
     intro: "У зв'язному мовленні португальська може не повторювати всю дієслівну групу, якщо її зміст уже відомий. Для навчання важливо відрізняти такий еліпсис від неповного речення: граматична структура інтерпретується завдяки попередній частині.",
     definition: "Еліпсис дієслівної групи — невираження частини предикативної структури, яку можна відновити з попереднього матеріалу.",
     uses: [
@@ -121,7 +121,7 @@ export const pages: GrammarPage[] = [
     summary: "Іменні групи без артикля чи іншого явного детермінатора та їхня інтерпретація.",
     aliases: ["голі іменні групи", "bare nominals", "sintagmas nominais nus"],
     related: ["zero-article", "article-omission", "generic-reference-articles", "specificity"],
-    status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "high",
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Гола іменна група — це не просто «забутий артикль». У певних контекстах португальська допускає іменні групи без явного детермінатора, а їхня інтерпретація залежить від числа, масовості, предиката, референції, конструкції та різновиду мови. Особливо важливо не переносити один шаблон із бразильської португальської на всі різновиди.",
     definition: "Гола іменна група — іменна група без overt-детермінатора, яка має самостійну граматичну та семантичну інтерпретацію в конкретній конструкції.",
     uses: [
@@ -149,7 +149,7 @@ export const pages: GrammarPage[] = [
     summary: "Конструкції, де початковий іменник задає тему, а предикат не оформлює його як звичайний граматичний підмет.",
     aliases: ["topic-subject", "тема-підмет", "tópico-sujeito", "бразильська португальська"],
     related: ["topicalization", "subject-object-order", "information-structure", "pt-br-pt-pt"],
-    status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "high",
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "У бразильській португальській описують конструкції, де іменна група на початку речення задає тему, а предикативний зв'язок із нею не збігається з простим SVO-підметом. Це важливо відрізняти від звичайної topicalização: структура може мати власні властивості узгодження, ролей і семантичного зв'язку.",
     definition: "Topic-subject — назва для групи бразильських португаломовних конструкцій, у яких початковий компонент має тематичний статус і водночас бере участь у предикації не так, як канонічний граматичний підмет.",
     uses: [
