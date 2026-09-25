@@ -21,7 +21,6 @@ export const pages: GrammarPage[] = [
     mistakes:[mistake("вибирати perfeito = доконаний, imperfeito = недоконаний","аналізувати часову рамку та перспективу події","Назви португальських часів не є перекладами українських видових категорій.","predicted-l1-transfer","high")],
     ukrainian:"Український вид — сильна граматична підказка, але вона не повинна замінювати аналіз португальського часу. Особливо обережно працюйте з imperfeito, станами та звичками.",
     regional:"Базовий контраст часів спільний; перифрастичні моделі та деякі частотні переваги можуть відрізнятися між BR і PT.",
-    reviewStatus:"review-needed"
   }),
   page({
     id:"sequence-of-tenses",slug:"sequence-of-tenses",category:"tenses",
@@ -40,7 +39,6 @@ export const pages: GrammarPage[] = [
     mistakes:[mistake("копіювати український час без визначення точки відліку","визначати співвідношення часу між двома подіями","Одна українська форма може відповідати різним португальським часовим перспективам.","predicted-l1-transfer","medium")],
     ukrainian:"Українська теж виражає часові співвідношення, але не має тотожної системи португальських форм. Корисно спочатку встановити точку відліку, а потім вибирати форму.",
     regional:"Окремі розмовні моделі непрямої мови можуть варіюватися; приклади треба оцінювати разом із регістром.",
-    reviewStatus:"review-needed"
   }),
   page({
     id:"future-subjunctive",slug:"futuro-subjuntivo",category:"subordinate",
@@ -56,7 +54,6 @@ export const pages: GrammarPage[] = [
     mistakes:[mistake("Se você venha amanhã...","Se você vier amanhã...","У майбутній відкритій умові потрібен futuro do conjuntivo, а не presente do conjuntivo.","predicted-l1-transfer","high"),mistake("плутати futuro do conjuntivo з futuro do indicativo","перевіряти синтаксичний тригер","Форма визначається конструкцією, а не лише значенням «майбутнє».","editorial","high")],
     ukrainian:"Українська не має окремої морфологічної форми з таким самим розподілом. Українське «якщо прийдеш» приховує португальську різницю між типами conjuntivo.",
     regional:"Форма є частиною стандартної граматики основних різновидів; частотність залежить від типу конструкції та каналу.",
-    reviewStatus:"review-needed"
   }),
   page({
     id:"se-passive",slug:"se-passive",category:"se",
@@ -75,7 +72,6 @@ export const pages: GrammarPage[] = [
     mistakes:[mistake("Alugam-se apartamento","Alugam-se apartamentos","За пасивного se множинний пацієнс узгоджується з дієсловом.","predicted-l1-transfer","high"),mistake("називати всі se безособовими","визначати тип конструкції та узгодження","se має кілька граматичних функцій.","editorial","high")],
     ukrainian:"Українська має пасивні конструкції, але не має такого самого se-маркера. Тому переклад «продають / продаються» не завжди показує португальську синтаксичну структуру.",
     regional:"Конструкція належить до стандартної граматики, але реальна частотність і альтернативні безособові моделі можуть різнитися за різновидами.",
-    reviewStatus:"review-needed"
   }),
   page({
     id:"se-impersonal",slug:"se-impersonal",category:"se",
@@ -90,6 +86,5 @@ export const pages: GrammarPage[] = [
     mistakes:[mistake("вважати se impessoal пасивним за замовчуванням","перевіряти тип предиката й узгодження","Безособове se та пасивне se мають різну синтаксичну поведінку.","predicted-l1-transfer","high")],
     ukrainian:"Українські безособові та неозначено-особові конструкції можуть передавати близький зміст, але не мають того самого se.",
     regional:"Конкретні діагностики й альтернативні моделі варто перевіряти для цільового різновиду.",
-    reviewStatus:"review-needed"
   })
 ];
