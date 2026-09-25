@@ -71,7 +71,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Фрагменти речення та бездієслівні висловлення", titlePt: "Fragmentos de frase e enunciados sem verbo", titleEn: "Sentence fragments and verbless clauses",
     summary: "Неповні або бездієслівні структури, які в контексті можуть бути повноцінними висловленнями.",
     aliases: ["фрагменти речення", "sentence fragments", "verbless clauses", "enunciados sem verbo"],
-    related: ["ellipsis", "minimal-answers", "direct-speech", "discourse-reference"],
+    related: ["ellipsis", "minimal-yes-no-answers", "direct-speech", "discourse-reference"],
     status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Не кожне висловлення в португальській має повну форму простого речення з явним дієсловом. У відповідях, заголовках, розмовних репліках і певних стилістичних конструкціях можуть уживатися іменні, прийменникові або інші фрагменти. Їх треба відрізняти від випадкового обриву граматично очікуваної конструкції.",
     definition: "Фрагмент речення — висловлення, яке не має повної клаузальної структури, але в конкретному контексті виконує самостійну комунікативну функцію.",
