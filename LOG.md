@@ -507,3 +507,42 @@ Academic Writing Toolkit використано для paragraph-level sanity ch
 - Залишилося: **83 / 349**.
 - Fallback/generated pages не зараховуються.
 - Переписування вже наявних dedicated IDs не збільшує coverage counter.
+
+
+## 2026-09-26 — content production batch 09: core subordinate clauses
+
+Продовжено наповнення canonical corpus на робочій гілці `content/production-2026-09-batch-01`. Цього разу закрито вісім тем, які раніше мали лише компактні legacy/fallback-реалізації в `subordinate.ts` і не мали dedicated production-сторінок.
+
+### Додано 8 нових dedicated GrammarPage-статей
+
+У `src/content/pages/subordinate-production-3.ts` створено:
+
+- `complement-clauses` — підрядні додаткові;
+- `causal-clauses` — причинні;
+- `purpose-clauses` — підрядні мети;
+- `conditional-clauses` — умовні;
+- `concessive-clauses` — допустові;
+- `temporal-clauses` — часові;
+- `consecutive-clauses` — наслідкові;
+- `comparative-clauses` — порівняльні.
+
+### Якість
+
+Кожна стаття має definition, функціональні підрозділи, production/comprehension/contrast приклади, типові learner mistakes, український контраст, regional/PT-BR/PT-PT scope та джерела. Особливу увагу приділено зонам, де український переклад може маскувати португальську структуру: indicativo/conjuntivo у completivas, futuro do conjuntivo в майбутніх умовних і часових підрядних, para + infinitivo / para que + conjuntivo, embora + conjuntivo, а також розмежуванню causal/consecutive/comparative/conformative relations.
+
+Для comparative clauses окремо зафіксовано, що `como` багатофункціональне й не визначає клас підрядної самостійно; для conditional/temporal clauses — що збіг форм futuro do conjuntivo та infinitivo pessoal не означає тотожності категорій.
+
+### Джерельна перевірка
+
+Для методологічного контролю використано матеріали Ciberdúvidas щодо класифікації та розмежування adverbial clauses, зокрема conformative/proportional/modal structures і різних значень `como`. Основні джерела в самих сторінках: Gramática do Português (Fundação Calouste Gulbenkian), Referencial Camões PLE.
+
+Academic Writing Toolkit застосовано для paragraph-level logic review. Інструмент повернув один generic `short-paragraph` сигнал на рівні технічного input-контейнера; предметних логічних суперечностей у восьми статтях не було вказано. Це не трактуємо як повний формальний proofread.
+
+### Лічильник покриття
+
+- Було: **266 / 349 написано**.
+- Додано нових canonical IDs: **8**.
+- Стало: **274 / 349 написано**.
+- Залишилося: **75 / 349**.
+- Fallback/generated pages не зараховуються.
+- Переписування вже наявних dedicated IDs не збільшує coverage counter.
