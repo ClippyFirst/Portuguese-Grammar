@@ -110,7 +110,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Хортативні та спонукальні конструкції", titlePt: "Construções hortativas e exortativas", titleEn: "Hortative and exhortative constructions",
     summary: "Як мовець спонукає співрозмовника або групу до спільної дії.",
     aliases: ["спонукальні конструкції", "hortative", "exhortative", "construções exortativas"],
-    related: ["imperative", "speech-acts", "optative-wish-constructions", "forms-of-address"],
+    related: ["imperative-affirmative", "speech-acts", "optative-wish-constructions", "forms-of-address"],
     status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Спонукання не зводиться до наказового способу. Португальська може виражати пропозицію спільної дії через конструкції з `vamos`, першу особу множини, імперативні форми та інші контекстуальні засоби. Вибір форми залежить від того, кого саме мовець залучає до дії та наскільки прямим є спонукання.",
     definition: "Хортативна або ексортативна конструкція — висловлення, що спонукає адресата або групу, включно з мовцем, до певної дії.",
