@@ -165,7 +165,7 @@ export const pages: GrammarPage[] = [
       { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
     ],
     regional: "PT-PT і PT-BR мають різні частотні переваги. Не перетворюйте їх на взаємовиключні правила без контексту.",
-  })
+  }),
 
   page({
     id: "article-omission",
