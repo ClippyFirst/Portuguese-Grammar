@@ -1,5 +1,5 @@
 import type { GrammarPage } from "../types";
-import { ex, mistake } from "../helpers";
+import { mistake } from "../helpers";
 
 const draft = (p: GrammarPage): GrammarPage => ({
   ...p,
