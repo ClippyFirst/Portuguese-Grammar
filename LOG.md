@@ -297,3 +297,30 @@ Academic Writing Toolkit було використано як додаткови
 ### Наступний крок
 
 Продовжувати тільки з canonical topics, які ще не мають dedicated GrammarPage, і після кожної серії оновлювати цей кумулятивний лічильник.
+
+
+## 25.09.2026 — content production batch 02: syntax, reference and prosody
+
+Продовжено роботу без зміни робочої гілки: `content/production-2026-09-batch-01`.
+
+### Лічильник контенту
+
+- Canonical topics у `catalog.ts`: **349**.
+- Кумулятивний production corpus після цього набору: **234 / 349 написано; 115 / 349 залишилося**.
+- Додано **6** нових dedicated articles.
+- Лічильник рахує лише реальні `GrammarPage`-статті; fallback/generated pages не зараховуються.
+
+### Додано
+
+`src/content/pages/production-batch-02.ts`:
+
+1. `bare-nominals`
+2. `brazilian-topic-subject`
+3. `emphatic-affirmation`
+4. `biased-polar-questions`
+5. `definite-null-subjects`
+6. `secondary-stress`
+
+### Методологія
+
+Набір продовжує canonical standard: український contrast, definition → formation → functions → examples → learner errors → regional scope, окреме маркування PT-BR/PT-PT там, де воно граматично релевантне, та джерельні посилання для спеціалізованих тверджень.
