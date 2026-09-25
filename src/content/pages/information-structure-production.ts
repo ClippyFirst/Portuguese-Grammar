@@ -1,0 +1,65 @@
+import type { GrammarPage } from "../types";
+import { ex, mistake, page } from "../helpers";
+
+export const pages: GrammarPage[] = [
+  page({
+    id:"topicalization",slug:"topicalization",category:"syntax",
+    titleUk:"Топікалізація",titlePt:"Topicalização",titleEn:"Topicalization",
+    summary:"Винесення компонента в позицію теми та зв'язок із інформаційною структурою.",
+    aliases:["топікалізація","topicalização","topic fronting"],
+    related:["word-order","information-structure","clefts","emphasis-focus"],
+    status:"draft",origin:"handwritten",depth:"high",ukrainianContrast:"high",
+    intro:"Топікалізація змінює порядок компонентів так, щоб певний елемент став темою висловлення. Це не просто «переставляння слів»: зміна позиції має дискурсивну функцію й може супроводжуватися займенниковим дублюванням або іншими структурними засобами.",
+    definition:"Топікалізація — винесення конституента в позицію, що сигналізує його як тему або вихідний пункт висловлення.",
+    examples:[ex("Esse livro, eu já li.","Цю книжку я вже читав/читала."),ex("A Maria, eu falei com ela ontem.","З Марією я вчора говорив/говорила.",{variety:"BR"})],
+    mistakes:[mistake("вважати будь-яку перестановку нейтральною","визначати інформаційну функцію винесення","Українська має вільніший порядок завдяки відмінкам, але португальська перестановка може змінювати дискурсивну інтерпретацію.","predicted-l1-transfer","medium")],
+    ukrainian:"Українська активно використовує порядок слів для теми й фокусу, тому аналогія корисна. Водночас українська відмінкова система дозволяє перестановки без тієї самої синтаксичної невизначеності.",
+    regional:"Моделі topicalization і частотність займенникового дублювання особливо варіюють між PT-BR та PT-PT.",
+    reviewStatus:"review-needed"
+  }),
+  page({
+    id:"clefts",slug:"clefts",category:"syntax",
+    titleUk:"Розщеплені конструкції",titlePt:"Construções clivadas",titleEn:"Cleft constructions",
+    summary:"Конструкції типу é X que..., які виділяють фокусований компонент.",
+    aliases:["cleft","clivadas","розщеплене речення","é ... que"],
+    related:["information-structure","topicalization","emphasis-focus","relative-que"],
+    status:"draft",origin:"handwritten",depth:"high",ukrainianContrast:"high",
+    intro:"Cleft-конструкція організує речення навколо фокусованого компонента: É a Ana que chegou primeiro. Вона дозволяє не лише передати пропозицію, а й показати, який компонент є відповіддю на питання «хто саме? що саме?».",
+    definition:"Розщеплена конструкція — структура, у якій пропозиція розподіляється між копулою, фокусованим компонентом і залежною частиною.",
+    examples:[ex("Foi a Ana que chegou primeiro.","Саме Ана прийшла першою."),ex("É amanhã que vamos partir.","Саме завтра ми вирушаємо.")],
+    mistakes:[mistake("перекладати cleft лише як звичайне речення","визначати фокус висловлення","Розщеплення додає інформаційно-структурний ефект.","editorial","medium")],
+    ukrainian:"Українська може передавати той самий фокус порядком слів, часткою «саме» або інтонацією. Португальська має окремі синтаксичні конструкції для цього.",
+    regional:"Різні cleft-моделі мають власні частотні та стилістичні профілі; не зводьте їх до однієї формули.",
+    reviewStatus:"review-needed"
+  }),
+  page({
+    id:"inversion",slug:"inversion",category:"syntax",
+    titleUk:"Інверсія та немаркований порядок",titlePt:"Inversão",titleEn:"Inversion",
+    summary:"Коли підмет або інший компонент опиняється після дієслова.",
+    aliases:["інверсія","inversão","verb-subject order"],
+    related:["word-order","subject-placement","information-structure","topicalization"],
+    status:"draft",origin:"handwritten",depth:"high",ukrainianContrast:"high",
+    intro:"Інверсія змінює базовий порядок компонентів, але її статус залежить від конструкції. Вона може бути зумовлена питанням, інформаційною структурою, типом предиката, стилем або жанром. Тому правило «підмет завжди перед дієсловом» так само хибне, як «порядок вільний».",
+    definition:"Інверсія — порядок, у якому типовий поствербальний або препозитивний компонент займає нетипову позицію щодо іншого компонента.",
+    examples:[ex("Chegou o João.","Прийшов Жуан."),ex("Onde está a Ana?","Де Ана?")],
+    mistakes:[mistake("вважати будь-який V-S порядок помилкою","визначати конструкцію та інформаційну функцію","Постпозиція підмета має нормативні та дискурсивні умови.","predicted-l1-transfer","medium")],
+    ukrainian:"Українська дозволяє значно більше перестановок завдяки відмінкам. У португальській порядок тісніше пов'язаний із синтаксисом та інформаційною структурою.",
+    regional:"Частотність інверсії залежить від конструкції, регістру та різновиду.",
+    reviewStatus:"review-needed"
+  }),
+  page({
+    id:"emphasis-focus",slug:"emphasis-focus",category:"discourse",
+    titleUk:"Фокус і контрастивне виділення",titlePt:"Foco e ênfase",titleEn:"Focus and emphasis",
+    summary:"Як порядок слів, частки та спеціальні конструкції виділяють нову або протиставлену інформацію.",
+    aliases:["фокус","контрастивний фокус","ênfase","focus"],
+    related:["information-structure","topicalization","clefts","sim-nao-emphasis"],
+    status:"draft",origin:"handwritten",depth:"high",ukrainianContrast:"high",
+    intro:"Фокус — компонент, який подається як новий, контрастивний або особливо релевантний у поточному дискурсі. Португальська може виражати його порядком слів, просодією, частками та cleft-конструкціями.",
+    definition:"Фокус — інформаційний статус компонента, який виділяється щодо альтернатив у дискурсі.",
+    examples:[ex("Eu comprei O LIVRO, não a revista.","Я купив/купила КНИЖКУ, а не журнал.",{purpose:"contrast"}),ex("Foi a Ana que comprou o livro.","Саме Ана купила книжку.",{purpose:"contrast"})],
+    mistakes:[mistake("вважати наголос єдиним способом фокусування","перевіряти синтаксичну та дискурсивну конструкцію","Фокус може кодуватися кількома засобами.","editorial","medium")],
+    ukrainian:"Українська також використовує інтонацію, порядок слів і частку «саме». Порівнюйте функцію, а не одну формальну реалізацію.",
+    regional:"Просодичні та розмовні способи фокусування потребують окремого опису; письмовий текст не завжди передає інтонацію.",
+    reviewStatus:"review-needed"
+  })
+];
