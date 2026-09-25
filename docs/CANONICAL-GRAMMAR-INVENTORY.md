@@ -175,6 +175,129 @@ A canonical topic is **closed** only when:
 108. compound adjectives
 109. adjective substantivisation
 
+
+### AF. Adverbs and adverbial locutions
+
+743. adverb system overview
+744. adverbs vs adjectives
+745. adverb formation
+746. adverbial locutions
+747. manner adverbs
+748. place adverbs
+749. direction adverbs
+750. time adverbs
+751. frequency adverbs
+752. duration adverbs
+753. degree adverbs
+754. quantity adverbs
+755. focus adverbs
+756. restriction/exclusion adverbs
+757. sentence adverbs
+758. epistemic adverbs
+759. evaluative adverbs
+760. connective adverbs
+761. interrogative adverbs
+762. relative adverbs
+763. negative adverbs
+764. adverb position
+765. adverb scope
+766. adverb + adjective
+767. adverb + adverb
+768. adverb + verb
+769. adverbial modification of the clause
+770. adverbial modification of the noun phrase
+771. degree modification
+772. comparative adverbial constructions
+773. adverb agreement and invariability
+774. adverbs ending in -mente
+775. semantic interpretation of -mente adverbs
+776. Portuguese vs Ukrainian adverb placement
+777. adverbial ambiguity
+778. fixed adverbial expressions
+779. discourse-pragmatic adverbs
+780. adverbial register variation
+
+### AG. Conjunctions and connective expressions
+
+781. conjunction system overview
+782. coordinating conjunctions
+783. subordinating conjunctions
+784. conjunctive locutions
+785. additive conjunctions
+786. alternative conjunctions
+787. adversative conjunctions
+788. explanatory conjunctions
+789. conclusive conjunctions
+790. causal conjunctions
+791. temporal conjunctions
+792. conditional conjunctions
+793. concessive conjunctions
+794. final/purpose conjunctions
+795. comparative conjunctions
+796. consecutive conjunctions
+797. conformative conjunctions
+798. proportional conjunctions
+799. modal conjunctions
+800. locative conjunctions
+801. conjunction vs discourse connective
+802. conjunction selection and meaning
+803. coordination with asyndesis
+804. coordination with multiple conjunctions
+805. correlative conjunctions
+806. negative coordination (nem... nem)
+807. additive correlative patterns
+808. conjunctions and punctuation
+809. conjunctions and clause mood
+810. Portuguese vs Ukrainian conjunction correspondence
+811. false-equivalent conjunctions
+812. fixed conjunctive expressions
+
+### AH. Interjections and exclamative expressions
+
+813. interjection system overview
+814. primary interjections
+815. secondary interjections
+816. interjectional locutions
+817. vocal reactions and written interjections
+818. greetings and farewell formulas as interjectional expressions
+819. calls and attention-getters
+820. surprise and admiration
+821. pain, fear and relief
+822. agreement, disagreement and hesitation
+823. discourse-management interjections
+824. interjection + vocative
+825. interjections vs pragmatic particles
+826. interjections vs ordinary lexical items
+827. punctuation with interjections
+828. register and regional variation of interjections
+829. Ukrainian-Portuguese false equivalents of interjections
+
+### AI. Sentence types, polarity and illocutionary force
+
+830. declarative sentences
+831. interrogative sentences
+832. exclamative sentences
+833. imperative sentences
+834. optative/wish constructions
+835. hortative and exhortative constructions
+836. direct vs indirect directive constructions
+837. affirmative polarity
+838. negative polarity
+839. marked declaratives
+840. sentence fragments and verbless clauses
+841. answer fragments and elliptical responses
+842. question tags and confirmation questions
+843. echo questions
+844. rhetorical questions
+845. exclamative word order
+846. imperative softening and intensification
+847. sentence type vs speech act
+848. sentence type vs intonation
+849. sentence type vs punctuation
+850. sentence-type variation across PT-BR/PT-PT
+851. illocutionary force and grammatical form
+852. grammaticalisation of discourse functions
+
 ### E. Pronouns and pronominal reference
 
 110. personal subject pronouns
@@ -1041,6 +1164,12 @@ The Portuguese grammar reference is considered **coverage-complete** when a Ukra
 No major phenomenon should exist only accidentally inside an unrelated page.
 
 ---
+
+### Completeness audit — 2026-09-25
+
+A second scope audit was performed against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. The audit identified four structural domains that were underrepresented in the original 742-unit ontology: **adverbs/adverbial locutions, conjunctions/connective expressions, interjections/exclamatives, and explicit sentence types/illocutionary force**. Camões explicitly treats adverbs and locutions, conjunctions, phrase constituents and sentence types as core grammatical inventory categories; the Gulbenkian reference separately covers sentence types and illocutionary force, discourse and morphology. These additions are therefore coverage requirements, not merely optional enrichment. The expanded inventory now contains **852 canonical coverage units**. The unit count remains an ontology count, not a page count.
+
+The audit also confirmed that the repository already contains substantial coverage of pronouns, determiners, quantification, prepositions, verb morphology, tense/mood, clitics, subordination, agreement, word formation, phonology, orthography, semantics, pragmatics, discourse and variation. Those domains should be mapped and de-duplicated during the next coverage phase rather than expanded indiscriminately.
 
 ## Reference scope
 
