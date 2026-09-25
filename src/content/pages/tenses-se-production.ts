@@ -27,7 +27,7 @@ export const pages: GrammarPage[] = [
     titleUk:"Узгодження часів",titlePt:"Concordância dos tempos",titleEn:"Sequence of tenses",
     summary:"Як час підрядної частини співвідноситься з часом головної.",
     aliases:["узгодження часів","sequence of tenses","concordância dos tempos"],
-    related:["compound-clauses","reported-speech","tense-aspect","indicative-vs-subjunctive"],
+    related:["compound-tenses","reported-speech","tense-aspect","indicative-vs-subjunctive"],
     status:"draft",origin:"handwritten",depth:"high",ukrainianContrast:"medium",
     intro:"Час у підрядній частині не завжди механічно копіює час головного дієслова. Треба розрізняти одночасність, попередність і наступність щодо точки відліку та враховувати тип підрядної конструкції.",
     definition:"Узгодження часів — взаємодія часових форм головної та залежної частин для вираження їхнього часового співвідношення.",
