@@ -16,7 +16,7 @@ export const pages: GrammarPage[] = [
     summary: "Підрядні, що виражають відповідність певному правилу, джерелу, способу або домовленості.",
     aliases: ["конформативні підрядні", "conformative clauses", "orações conformativas", "conforme", "segundo"],
     related: ["complement-clauses", "causal-clauses", "comparative-clauses", "subordinating"],
-    status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "high",
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Конформативна конструкція показує, що ситуація відбувається відповідно до певного джерела, правила, інструкції або способу опису. Для україномовного студента важливо не зводити conforme, segundo та подібні засоби до одного перекладу «згідно з»: їхня конкретна синтаксична модель і смисловий зв'язок залежать від контексту.",
     definition: "Конформативне підрядне — підрядна конструкція, що встановлює відповідність змісту головної частини певному джерелу, нормі, способу або опису.",
     uses: [
@@ -47,7 +47,7 @@ export const pages: GrammarPage[] = [
     summary: "Конструкції, що показують зміну однієї ситуації разом зі зміною іншої.",
     aliases: ["пропорційні підрядні", "proportional clauses", "orações proporcionais", "à medida que", "quanto mais"],
     related: ["temporal-clauses", "comparative-clauses", "consecutive-clauses", "subordinating"],
-    status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "high",
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Пропорційний зв'язок описує дві величини або ситуації, зміни яких пов'язані між собою. Його не слід змішувати з простою часовою послідовністю або зі звичайним порівнянням: головним є залежність між ступенем чи напрямом двох змін.",
     definition: "Пропорційне підрядне — конструкція, у якій зміна в одній ситуації корелює зі зміною в іншій.",
     uses: [
@@ -78,7 +78,7 @@ export const pages: GrammarPage[] = [
     summary: "Підрядні, що характеризують спосіб або обставини виконання дії.",
     aliases: ["модальні підрядні", "modal clauses", "orações modais"],
     related: ["conformative-clauses", "temporal-clauses", "comparative-clauses", "subordinating"],
-    status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "high",
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Модальні підрядні описують спосіб, у який відбувається дія або ситуація. У термінології різних граматик межі цього класу можуть описуватися дещо по-різному, тому тут важливіша функція конструкції, ніж механічне запам'ятовування ярлика.",
     definition: "Модальне підрядне — залежна конструкція, яка характеризує спосіб або модальну обставину перебігу ситуації.",
     uses: [
@@ -109,7 +109,7 @@ export const pages: GrammarPage[] = [
     summary: "Підрядні, що локалізують подію або ситуацію в просторі.",
     aliases: ["локативні підрядні", "locative clauses", "orações locativas", "onde"],
     related: ["relative-que", "temporal-clauses", "subordinating", "prepositions-overview"],
-    status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "high",
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Локативна підрядна частина задає місце, у якому відбувається ситуація. Важливо відрізняти локативне підрядне від відносного речення з onde: одна й та сама форма може мати різну синтаксичну функцію.",
     definition: "Локативне підрядне — залежна конструкція, що виконує просторову роль щодо ситуації головної частини.",
     uses: [
@@ -140,7 +140,7 @@ export const pages: GrammarPage[] = [
     summary: "Залежні конструкції з нефінітною формою дієслова замість особової предикації.",
     aliases: ["зредуковані підрядні", "reduced clauses", "orações reduzidas", "нефінітні підрядні"],
     related: ["infinitival-reduced-clauses", "gerundial-reduced-clauses", "participial-reduced-clauses", "finite-vs-nonfinite"],
-    status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "high",
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Зредукована підрядна конструкція використовує нефінітну дієслівну форму й не виражає повну особову предикацію так, як фінітне підрядне. Для навчання корисно спочатку встановити відношення між частинами, а вже потім визначати, чи може воно бути реалізоване інфінітивом, герундієм або дієприкметником.",
     definition: "Зредукована підрядна конструкція — залежна конструкція з нефінітною формою, яка виконує функцію, подібну до відповідної фінітної підрядної.",
     uses: [
@@ -174,7 +174,7 @@ export const pages: GrammarPage[] = [
     summary: "Нефінітні залежні конструкції з інфінітивом.",
     aliases: ["інфінітивні зредуковані", "infinitival reduced clauses", "orações reduzidas de infinitivo"],
     related: ["reduced-clauses", "personal-infinitive", "infinitive-vs-subjunctive", "infinitive-prepositions"],
-    status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "high",
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Інфінітивна редукція — не просто «дієслово після прийменника». У ній інфінітив утворює залежну предикативну структуру, а його суб'єкт і зв'язок із головною частиною визначають інтерпретацію.",
     definition: "Інфінітивна зредукована підрядна — залежна конструкція, предикативний центр якої виражено інфінітивом.",
     uses: [
@@ -205,7 +205,7 @@ export const pages: GrammarPage[] = [
     summary: "Залежні конструкції з gerúndio та їхня часово-способова інтерпретація.",
     aliases: ["герундіальні зредуковані", "gerundial reduced clauses", "orações reduzidas de gerúndio"],
     related: ["reduced-clauses", "gerund-usage", "progressive-br-pt", "temporal-clauses"],
-    status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "high",
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Gerúndio може входити до прогресивної перефрази, але не кожен gerúndio є частиною прогресиву. У зредукованій підрядній він може задавати залежну ситуацію, часовий супровід або спосіб.",
     definition: "Герундіальна зредукована підрядна — залежна нефінітна конструкція з gerúndio, яка має власну синтаксичну функцію щодо головної частини.",
     uses: [
@@ -236,7 +236,7 @@ export const pages: GrammarPage[] = [
     summary: "Залежні конструкції з particípio та їхня часово-результативна інтерпретація.",
     aliases: ["дієприкметникові зредуковані", "participial reduced clauses", "orações reduzidas de particípio"],
     related: ["reduced-clauses", "ser-passive", "estar-participle", "participle"],
-    status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "high",
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Particípio може бути центром зредукованої залежної конструкції, але також входить до складених часів, пасиву та результативних структур. Для правильної інтерпретації потрібно встановити всю конструкцію, а не реагувати лише на форму закінчення.",
     definition: "Дієприкметникова зредукована підрядна — залежна нефінітна конструкція, побудована навколо particípio.",
     uses: [
@@ -267,7 +267,7 @@ export const pages: GrammarPage[] = [
     summary: "Як вибір особової або нефінітної форми змінює структуру підрядної конструкції.",
     aliases: ["фінітні нефінітні", "finite vs non-finite", "subordinação finita e não finita"],
     related: ["complement-clauses", "reduced-clauses", "personal-infinitive", "gerundial-reduced-clauses"],
-    status: "draft", origin: "handwritten", depth: "advanced", ukrainianContrast: "high",
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Фінітна підрядна має особову дієслівну форму й виражає категорії особи, часу та способу безпосередньо. Нефінітна конструкція використовує інфінітив, gerúndio або particípio, тому частина цієї інформації кодується інакше або відновлюється з контексту.",
     definition: "Фінітна/нефінітна опозиція — розрізнення залежних конструкцій за типом предикації та морфологічним статусом дієслівної форми.",
     uses: [
