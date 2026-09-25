@@ -340,3 +340,7 @@ Architecture-level DoD:
 ## 21. Архітектурний принцип одним реченням
 
 Граматика є структурованими даними; український контраст є педагогічним шаром; learner evidence і variation мають provenance; ontology зв'язує теми; UI лише відображає модель.
+
+### Scope re-audit (2026-09-25)
+
+The canonical inventory was re-audited against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. Four underrepresented domains were identified and added to the canonical ontology: **adverbs/adverbial locutions; conjunctions/connective expressions; interjections/exclamatives; sentence types, polarity and illocutionary force**. The canonical inventory now contains **852 coverage units**. This is an ontology count, not a target number of pages.
