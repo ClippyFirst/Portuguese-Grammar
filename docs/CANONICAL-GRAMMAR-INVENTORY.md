@@ -204,6 +204,21 @@ A canonical topic is **closed** only when:
 873. syntactic anaphora as a discourse-structuring repetition
 874. distinction between grammatical construction and stylistic figure
 
+### AL. Additional syntax, reference and variation structures
+
+875. null direct objects
+876. null oblique objects
+877. null possessors
+878. verbal phrase ellipsis (VP ellipsis)
+879. emphatic affirmation
+880. biased polar questions
+881. minimal answers to yes/no questions
+882. bare nominals and determinerless noun phrases
+883. Brazilian Portuguese topic-subject constructions
+884. definite null subjects
+885. indefinite null subjects
+886. expletive null subjects
+
 ### AF. Adverbs and adverbial locutions
 
 743. adverb system overview
@@ -888,7 +903,7 @@ A canonical topic is **closed** only when:
 604. question mark and exclamation mark
 605. ellipsis points / reticências
 606. punctuation with coordination
-606. punctuation with subordination
+607. punctuation with subordination
 608. punctuation with relative clauses
 609. punctuation and information structure
 610. punctuation and direct speech
@@ -1048,6 +1063,9 @@ The following are **not optional backlog items**. They are closure requirements 
 ### Must be independently discoverable
 
 - vocative;
+- null direct objects and null oblique objects;
+- null possessors;
+- verbal phrase ellipsis;
 - interjections;
 - exclamative constructions;
 - complete numeral system;
@@ -1076,7 +1094,10 @@ The following are **not optional backlog items**. They are closure requirements 
 - discourse-level paraphrase;
 - prepositional locutions;
 - reticências as a punctuation/intonation interface;
-- advanced constructional figures such as pleonasm, hyperbaton, anacoluthon and syllepsis.
+- advanced constructional figures such as pleonasm, hyperbaton, anacoluthon and syllepsis;
+- bare nominals and Brazilian Portuguese topic-subject constructions;
+- explicit types of null subject (definite, indefinite, expletive);
+- emphatic affirmation, biased polar questions and minimal yes/no answers.
 
 ### Must be explicit even when covered by another article
 
@@ -1199,7 +1220,7 @@ No major phenomenon should exist only accidentally inside an unrelated page.
 
 ### Completeness audit — 2026-09-25
 
-A second scope audit was performed against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. The audit identified four structural domains that were underrepresented in the original 742-unit ontology: **adverbs/adverbial locutions, conjunctions/connective expressions, interjections/exclamatives, and explicit sentence types/illocutionary force**. Camões explicitly treats adverbs and locutions, conjunctions, phrase constituents and sentence types as core grammatical inventory categories; the Gulbenkian reference separately covers sentence types and illocutionary force, discourse and morphology. These additions are therefore coverage requirements, not merely optional enrichment. The expanded inventory now contains **875 canonical coverage units**. A final boundary audit also identified a small advanced layer that should be represented explicitly: prepositional locutions, reticências, and construction-level stylistic syntax. These are not evidence for indefinite scope expansion; they are a bounded extension needed to prevent advanced phenomena from remaining hidden in generic syntax/punctuation pages. The unit count remains an ontology count, not a page count.
+A second scope audit was performed against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. The audit identified four structural domains that were underrepresented in the original 742-unit ontology: **adverbs/adverbial locutions, conjunctions/connective expressions, interjections/exclamatives, and explicit sentence types/illocutionary force**. Camões explicitly treats adverbs and locutions, conjunctions, phrase constituents and sentence types as core grammatical inventory categories; the Gulbenkian reference separately covers sentence types and illocutionary force, discourse and morphology. These additions are therefore coverage requirements, not merely optional enrichment. The expanded inventory now contains **887 canonical coverage units**. A final boundary audit also identified a small advanced layer that should be represented explicitly: prepositional locutions, reticências, and construction-level stylistic syntax. A subsequent reference-scope check against *The Syntax of Portuguese* and *The Handbook of Portuguese Linguistics* identified a second bounded closure layer: null objects/possessors, VP ellipsis, emphatic affirmation, biased polar questions, minimal answers, bare nominals, Brazilian Portuguese topic-subject constructions, and explicit null-subject subtypes. These are not evidence for indefinite scope expansion; they are evidence-driven closure items that should not remain hidden inside generic syntax or reference pages. The unit count remains an ontology count, not a page count.
 
 The audit also confirmed that the repository already contains substantial coverage of pronouns, determiners, quantification, prepositions, verb morphology, tense/mood, clitics, subordination, agreement, word formation, phonology, orthography, semantics, pragmatics, discourse and variation. Those domains should be mapped and de-duplicated during the next coverage phase rather than expanded indiscriminately.
 
@@ -1209,3 +1230,10 @@ The audit also confirmed that the repository already contains substantial covera
 - *Referencial Camões PLE*, Camões, I.P. — pedagogical reference with linguistic, pragmatic and notional inventories across proficiency levels.
 
 This document should be updated when the canonical ontology changes; individual article rewrites must not silently redefine the scope.
+
+
+### Boundary audit extension — 2026-09-25
+
+A second independent reference check was performed against *The Syntax of Portuguese* (Cambridge University Press) and *The Handbook of Portuguese Linguistics* (Wiley-Blackwell). The Cambridge syntax reference explicitly separates **null objects and null possessors**, including null direct objects, null oblique objects and verbal-phrase ellipsis, and also treats **emphatic affirmation, biased polar questions and minimal answers**. The Handbook separately treats **null objects and VP ellipsis**, pronominal binding, DP semantics and current morphosyntactic variation. Recent Oxford Research Encyclopedia work confirms that **bare nominals** are a substantive Portuguese nominal-domain phenomenon, especially in Brazilian Portuguese, and research literature documents **topic-subject constructions** as a characteristic area of Brazilian Portuguese syntax.
+
+The inventory already contained the personal infinitive, clitic placement, null-subject syntax, topicalisation, focus, information structure and variation. Therefore those were not duplicated. Instead, the audit added only the missing explicit closure identities: null direct/oblique objects, null possessors, VP ellipsis, emphatic affirmation, biased polar questions, minimal yes/no answers, bare nominals, Brazilian Portuguese topic-subject constructions, and the three major null-subject subtypes (definite, indefinite and expletive). The resulting **887 units** are the final bounded reference baseline for migration. Further additions should require a documented new reference gap or a new learner-facing phenomenon; they should not be added merely because a specialist grammar contains a more fine-grained theoretical analysis.
