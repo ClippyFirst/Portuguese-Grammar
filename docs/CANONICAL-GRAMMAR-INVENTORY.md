@@ -178,168 +178,168 @@ A canonical topic is **closed** only when:
 
 ### AJ. Additional constituent and discourse structures
 
-866. adjectival phrase structure
-867. adverbial phrase structure
-868. complement of the noun
-869. modifier of the noun
-870. apposition
-871. complement of the adjective
-872. coordination of phrases vs coordination of clauses
-873. ellipsis types and zeugma
-874. free indirect discourse
-875. denotative words and particles
+854. adjectival phrase structure
+855. adverbial phrase structure
+856. complement of the noun
+857. modifier of the noun
+858. apposition
+859. complement of the adjective
+860. coordination of phrases vs coordination of clauses
+861. ellipsis types and zeugma
+862. free indirect discourse
+863. denotative words and particles
 
 ### AK. Advanced syntax, constructional style and sentence-level rhetoric
 
-876. prepositional locutions
-877. semantic and syntactic status of prepositional locutions
-878. rhetorical/syntactic construction devices overview
-879. pleonasm and pleonastic constructions
-880. hyperbaton and anastrophe
-881. prolepsis as syntactic fronting
-882. anacoluthon
-883. syntactic/semantic agreement (syllepsis)
-884. asyndeton as a marked coordination pattern
-885. polysyndeton as a marked coordination pattern
-886. syntactic anaphora as a discourse-structuring repetition
-887. distinction between grammatical construction and stylistic figure
+864. prepositional locutions
+865. semantic and syntactic status of prepositional locutions
+866. rhetorical/syntactic construction devices overview
+867. pleonasm and pleonastic constructions
+868. hyperbaton and anastrophe
+869. prolepsis as syntactic fronting
+870. anacoluthon
+871. syntactic/semantic agreement (syllepsis)
+872. asyndeton as a marked coordination pattern
+873. polysyndeton as a marked coordination pattern
+874. syntactic anaphora as a discourse-structuring repetition
+875. distinction between grammatical construction and stylistic figure
 
 ### AL. Additional syntax, reference and variation structures
 
-888. null direct objects
-889. null oblique objects
-890. null possessors
-891. verbal phrase ellipsis (VP ellipsis)
-892. emphatic affirmation
-893. biased polar questions
-894. minimal answers to yes/no questions
-895. bare nominals and determinerless noun phrases
-896. Brazilian Portuguese topic-subject constructions
-897. definite null subjects
-898. indefinite null subjects
-899. expletive null subjects
+876. null direct objects
+877. null oblique objects
+878. null possessors
+879. verbal phrase ellipsis (VP ellipsis)
+880. emphatic affirmation
+881. biased polar questions
+882. minimal answers to yes/no questions
+883. bare nominals and determinerless noun phrases
+884. Brazilian Portuguese topic-subject constructions
+885. definite null subjects
+886. indefinite null subjects
+887. expletive null subjects
 
 ### AF. Adverbs and adverbial locutions
 
-756. adverb system overview
-757. adverbs vs adjectives
-758. adverb formation
-759. adverbial locutions
-760. manner adverbs
-761. place adverbs
-762. direction adverbs
-763. time adverbs
-764. frequency adverbs
-765. duration adverbs
-766. degree adverbs
-767. quantity adverbs
-768. focus adverbs
-769. restriction/exclusion adverbs
-770. sentence adverbs
-771. epistemic adverbs
-772. evaluative adverbs
-773. connective adverbs
-774. interrogative adverbs
-775. relative adverbs
-776. negative adverbs
-777. adverb position
-778. adverb scope
-779. adverb + adjective
-780. adverb + adverb
-781. adverb + verb
-782. adverbial modification of the clause
-783. adverbial modification of the noun phrase
-784. degree modification
-785. comparative adverbial constructions
-786. adverb agreement and invariability
-787. adverbs ending in -mente
-788. semantic interpretation of -mente adverbs
-789. Portuguese vs Ukrainian adverb placement
-790. adverbial ambiguity
-791. fixed adverbial expressions
-792. discourse-pragmatic adverbs
-793. adverbial register variation
+744. adverb system overview
+745. adverbs vs adjectives
+746. adverb formation
+747. adverbial locutions
+748. manner adverbs
+749. place adverbs
+750. direction adverbs
+751. time adverbs
+752. frequency adverbs
+753. duration adverbs
+754. degree adverbs
+755. quantity adverbs
+756. focus adverbs
+757. restriction/exclusion adverbs
+758. sentence adverbs
+759. epistemic adverbs
+760. evaluative adverbs
+761. connective adverbs
+762. interrogative adverbs
+763. relative adverbs
+764. negative adverbs
+765. adverb position
+766. adverb scope
+767. adverb + adjective
+768. adverb + adverb
+769. adverb + verb
+770. adverbial modification of the clause
+771. adverbial modification of the noun phrase
+772. degree modification
+773. comparative adverbial constructions
+774. adverb agreement and invariability
+775. adverbs ending in -mente
+776. semantic interpretation of -mente adverbs
+777. Portuguese vs Ukrainian adverb placement
+778. adverbial ambiguity
+779. fixed adverbial expressions
+780. discourse-pragmatic adverbs
+781. adverbial register variation
 
 ### AG. Conjunctions and connective expressions
 
-794. conjunction system overview
-795. coordinating conjunctions
-796. subordinating conjunctions
-797. conjunctive locutions
-798. additive conjunctions
-799. alternative conjunctions
-800. adversative conjunctions
-801. explanatory conjunctions
-802. conclusive conjunctions
-803. causal conjunctions
-804. temporal conjunctions
-805. conditional conjunctions
-806. concessive conjunctions
-807. final/purpose conjunctions
-808. comparative conjunctions
-809. consecutive conjunctions
-810. conformative conjunctions
-811. proportional conjunctions
-812. modal conjunctions
-813. locative conjunctions
-814. conjunction vs discourse connective
-815. conjunction selection and meaning
-816. coordination with asyndesis
-817. coordination with multiple conjunctions
-818. correlative conjunctions
-819. negative coordination (nem... nem)
-820. additive correlative patterns
-821. conjunctions and punctuation
-822. conjunctions and clause mood
-823. Portuguese vs Ukrainian conjunction correspondence
-824. false-equivalent conjunctions
-825. fixed conjunctive expressions
+782. conjunction system overview
+783. coordinating conjunctions
+784. subordinating conjunctions
+785. conjunctive locutions
+786. additive conjunctions
+787. alternative conjunctions
+788. adversative conjunctions
+789. explanatory conjunctions
+790. conclusive conjunctions
+791. causal conjunctions
+792. temporal conjunctions
+793. conditional conjunctions
+794. concessive conjunctions
+795. final/purpose conjunctions
+796. comparative conjunctions
+797. consecutive conjunctions
+798. conformative conjunctions
+799. proportional conjunctions
+800. modal conjunctions
+801. locative conjunctions
+802. conjunction vs discourse connective
+803. conjunction selection and meaning
+804. coordination with asyndesis
+805. coordination with multiple conjunctions
+806. correlative conjunctions
+807. negative coordination (nem... nem)
+808. additive correlative patterns
+809. conjunctions and punctuation
+810. conjunctions and clause mood
+811. Portuguese vs Ukrainian conjunction correspondence
+812. false-equivalent conjunctions
+813. fixed conjunctive expressions
 
 ### AH. Interjections and exclamative expressions
 
-826. interjection system overview
-827. primary interjections
-828. secondary interjections
-829. interjectional locutions
-830. vocal reactions and written interjections
-831. greetings and farewell formulas as interjectional expressions
-832. calls and attention-getters
-833. surprise and admiration
-834. pain, fear and relief
-835. agreement, disagreement and hesitation
-836. discourse-management interjections
-837. interjection + vocative
-838. interjections vs pragmatic particles
-839. interjections vs ordinary lexical items
-840. punctuation with interjections
-841. register and regional variation of interjections
-842. Ukrainian-Portuguese false equivalents of interjections
+814. interjection system overview
+815. primary interjections
+816. secondary interjections
+817. interjectional locutions
+818. vocal reactions and written interjections
+819. greetings and farewell formulas as interjectional expressions
+820. calls and attention-getters
+821. surprise and admiration
+822. pain, fear and relief
+823. agreement, disagreement and hesitation
+824. discourse-management interjections
+825. interjection + vocative
+826. interjections vs pragmatic particles
+827. interjections vs ordinary lexical items
+828. punctuation with interjections
+829. register and regional variation of interjections
+830. Ukrainian-Portuguese false equivalents of interjections
 
 ### AI. Sentence types, polarity and illocutionary force
 
-843. declarative sentences
-844. interrogative sentences
-845. exclamative sentences
-846. imperative sentences
-847. optative/wish constructions
-848. hortative and exhortative constructions
-849. direct vs indirect directive constructions
-850. affirmative polarity
-851. negative polarity
-852. marked declaratives
-853. sentence fragments and verbless clauses
-854. answer fragments and elliptical responses
-855. question tags and confirmation questions
-856. echo questions
-857. rhetorical questions
-858. exclamative word order
-859. imperative softening and intensification
-860. sentence type vs speech act
-861. sentence type vs intonation
-862. sentence type vs punctuation
-863. sentence-type variation across PT-BR/PT-PT
-864. illocutionary force and grammatical form
-865. grammaticalisation of discourse functions
+831. declarative sentences
+832. interrogative sentences
+833. exclamative sentences
+834. imperative sentences
+835. optative/wish constructions
+836. hortative and exhortative constructions
+837. direct vs indirect directive constructions
+838. affirmative polarity
+839. negative polarity
+840. marked declaratives
+841. sentence fragments and verbless clauses
+842. answer fragments and elliptical responses
+843. question tags and confirmation questions
+844. echo questions
+845. rhetorical questions
+846. exclamative word order
+847. imperative softening and intensification
+848. sentence type vs speech act
+849. sentence type vs intonation
+850. sentence type vs punctuation
+851. sentence-type variation across PT-BR/PT-PT
+852. illocutionary force and grammatical form
+853. grammaticalisation of discourse functions
 
 ### E. Pronouns and pronominal reference
 
@@ -1142,15 +1142,15 @@ An item may have secondary modules, but it must have one canonical home.
 
 For every substantive article, the editorial workflow must ask:
 
-744. Is there a Ukrainian analogue?
-745. If yes, does it function the same way?
-746. If no, what Ukrainian structure normally expresses the same meaning?
-747. Does Portuguese encode a distinction Ukrainian leaves implicit?
-748. Does Ukrainian encode a distinction Portuguese expresses differently?
-749. Is there a false formal equivalent?
-750. Does a Ukrainian translation hide the Portuguese construction?
-751. Is positive transfer plausible?
-752. Is a learner-error claim documented, or merely predicted?
+2. Is there a Ukrainian analogue?
+3. If yes, does it function the same way?
+4. If no, what Ukrainian structure normally expresses the same meaning?
+5. Does Portuguese encode a distinction Ukrainian leaves implicit?
+6. Does Ukrainian encode a distinction Portuguese expresses differently?
+7. Is there a false formal equivalent?
+8. Does a Ukrainian translation hide the Portuguese construction?
+9. Is positive transfer plausible?
+10. Is a learner-error claim documented, or merely predicted?
 
 The ninth question is critical: the repository must never present an invented statement such as “Ukrainians usually make X error” as an established fact.
 
@@ -1212,7 +1212,7 @@ The Portuguese grammar reference is considered **coverage-complete** when a Ukra
 
 753. a dedicated canonical article;
 754. a clearly identified module in a canonical article; or
-755. a typed redirect to the canonical article that owns the concept.
+4. a typed redirect to the canonical article that owns the concept.
 
 No major phenomenon should exist only accidentally inside an unrelated page.
 
