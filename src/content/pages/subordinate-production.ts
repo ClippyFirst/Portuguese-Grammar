@@ -5,7 +5,6 @@ const draft = (p: GrammarPage): GrammarPage => ({
   ...p,
   status: "draft",
   origin: "handwritten",
-  reviewStatus: undefined as never,
 });
 
 export const pages: GrammarPage[] = [
@@ -19,12 +18,11 @@ export const pages: GrammarPage[] = [
     ukrainianContrast: "high",
     intro: "Доповнювальна частина може реалізувати зміст думки, волі, оцінки, сприйняття або повідомлення. Вибір indicativo/conjuntivo та infinitivo залежить від головного предиката й структури підметів.",
     definition: "Доповнювальна підрядна — залежна частина, яка заповнює валентну позицію предиката.",
-    uses: "",
+    uses: [],
     examples: [{"pt":"Acho que ele vem.","uk":"Думаю, що він прийде."},{"pt":"Quero que ele venha.","uk":"Хочу, щоб він прийшов."}],
     mistakes: [mistake("вибирати спосіб лише за українським «що/щоб»","визначати семантичну операцію головного предиката","Українські сполучники не є прямою таблицею португальських способів.","predicted-l1-transfer","high")],
     ukrainian: "Українське «що/щоб» допомагає побачити залежність, але не передбачає португальський спосіб механічно.",
     regional: "Дивіться також окремі сторінки про indicativo/conjuntivo та infinitivo.",
     brPt: "",
-    reviewStatus: "review-needed"
   }),
 ];
