@@ -176,7 +176,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Infinitive vs subjunctive",
     summary: "Контраст інфінітивних і finite conjunctive constructions у підрядних структурах.",
     aliases: ["infinitivo vs conjuntivo", "infinitive vs subjunctive", "інфінітив чи суб'юнктив"],
-    related: ["personal-infinitive", "subjunctive-overview", "complement-clauses-advanced", "future-subjunctive"],
+    related: ["personal-infinitive", "subjunctive-overview", "complement-clauses-advanced", "futuro-subjuntivo"],
     status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Infinitivo та conjuntivo можуть передавати близькі змістові відношення, але це не дві взаємозамінні форми. Для вибору потрібно дивитися на синтаксичну залежність, співвідношення суб'єктів, тип підрядної конструкції, керування матричного предиката та регістр. Особливо важливо не переносити на всі випадки спрощене правило «однаковий суб'єкт → infinitivo, різні суб'єкти → conjuntivo»: воно корисне як початкова евристика лише в окремих моделях.",
     definition: "Контраст infinitivo/conjuntivo — вибір між нефінітною інфінітивною конструкцією та finite clause із conjuntivo. Він залежить від конкретного синтаксичного середовища, а не лише від українського перекладу.",
