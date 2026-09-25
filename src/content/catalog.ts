@@ -358,7 +358,12 @@ const ROWS: Row[] = [
   ["progressive-br-pt-choice", "gerund", "progressive-br-pt-choice", "Прогресив: estar a + infinitivo та estar + gerúndio", "Estar a + infinitivo e estar + gerúndio", "Progressive: estar a vs estar + gerund", "Порівняння основних прогресивних моделей PT-PT та PT-BR.", "estar a,estar + gerúndio,progressive", "progressive-br-pt,gerund,complex-predicates", "high"],
 
 
-];
+  ["article-omission", "articles", "omission", "Опущення артикля", "Omissão do artigo", "Article omission", "Системне опущення артикля та його відмінність від помилки.", "опущення артикля,article omission,omissão do artigo", "zero-article,articles-definite,articles-indefinite,contractions-overview", "high"],
+  ["articles-professions-roles", "articles", "professions-roles", "Артикль із професіями та ролями", "Artigo com profissões e papéis", "Articles with professions and roles", "Класифікація особи та конкретна роль у виборі детермінатора.", "професії,profissões,roles,ser médico", "zero-article,articles-definite,articles-indefinite,articles-proper-names", "high"],
+  ["articles-abstract-nouns", "articles", "abstract-nouns", "Артикль з абстрактними іменниками", "Artigo com nomes abstratos", "Articles with abstract nouns", "Абстрактне поняття, конкретизований референт і вияв властивості.", "абстрактні іменники,abstract nouns,nomes abstratos", "zero-article,articles-definite,generic-reference-articles,specificity", "high"],
+  ["articles-mass-nouns", "articles", "mass-nouns", "Артикль із речовинними та масовими іменниками", "Artigo com nomes massivos", "Articles with mass nouns", "Речовина, конкретна маса та порційне читання.", "масові іменники,mass nouns,nomes massivos", "zero-article,articles-definite,articles-indefinite,quantifiers-overview", "high"],
+  ["determiner-stacking", "determiners", "stacking", "Поєднання та несумісність детермінативів", "Combinação e incompatibilidade de determinantes", "Determiner stacking and incompatibility", "Структура сумісності артиклів, присвійних, вказівних і кванторів.", "детермінативи,stacking,incompatibility", "determiners-overview,determiners-agreement,quantifiers-overview,articles-definite,articles-possessives", "high"],
+]; 
 
 function parseAliases(s: string): string[] {
   return s.split(",").map((x) => x.trim()).filter(Boolean);
