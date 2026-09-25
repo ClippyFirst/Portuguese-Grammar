@@ -1,1 +1,35 @@
-import type { GrammarPage } from "../types";\nimport { ex, mistake } from "../helpers";\n\nexport const pages: GrammarPage[] = [\n  {\n    id: "exclamatives", slug: "exclamatives", category: "syntax",\n    titleUk: "Окличні конструкції", titlePt: "Construções exclamativas", titleEn: "Exclamative constructions",\n    summary: "Конструкції, що виражають високу інтенсивність, оцінку або емоційну реакцію.",\n    aliases: ["окличні речення","exclamatives","exclamativas","оклик","інтенсивність"],\n    related: ["speech-acts","information-structure","punctuation","interjections"],\n    status: "draft", origin: "handwritten", depth: "medium", ukrainianContrast: "medium",\n    intro: "Окличність — не просто знак оклику. Португальська має конструкції, у яких граматична форма й порядок компонентів допомагають виразити високу міру, здивування або оцінку: Que livro interessante!, Como ele trabalha!, Que bom que vieste! Пунктуація підсилює інтерпретацію, але не створює її сама.",\n    definition: "Оклична конструкція — висловлення або конструкція, організована для вираження інтенсивної оцінки, емоційної реакції чи іншої експресивної інтерпретації.",\n    functions: { text: "Окличність може виражати захоплення, здивування, обурення, сильну позитивну або негативну оцінку. Конкретний ефект залежить від лексики, синтаксису, інтонації та контексту." },\n    usage: { text: "Часті моделі містять que або como перед оцінюваним компонентом. Для учня важливо відрізняти exclamative від звичайного розповідного речення зі знаком оклику." },\n    examples: [\n      ex("Que dia lindo!", "Який чудовий день!", { purpose: "production" }),\n      ex("Como ele corre!", "Як він швидко біжить!", { purpose: "comprehension" }),\n      ex("Que bom que vieste!", "Як добре, що ти прийшов/прийшла!", { purpose: "production" }),\n    ],\n    mistakes: [\n      mistake("вважати знак ! достатнім для утворення окличної конструкції","аналізувати синтаксичну модель та експресивну функцію","Розповідне речення може бути емоційним і без спеціальної exclamative-конструкції.","editorial","high"),\n      mistake("перекладати que як одне значення в усіх окличних моделях","розпізнавати конструкцію que + NP та інші функціональні моделі","В окличних конструкціях форма que може бути частиною спеціальної синтаксичної схеми.","predicted-l1-transfer","medium"),\n    ],\n    ukrainianContrast: {\n      ukrainianAnalogy: { text: "Українська теж має окличні речення та моделі на кшталт «Який чудовий день!»." },\n      ukrainianDifference: { text: "Португальські моделі que/como мають власний синтаксичний розподіл; переклад через український окличний займенник не є достатнім правилом." }\n    },\n    register: { text: "Окличні конструкції природні в усному, художньому та публіцистичному мовленні; у нейтральному академічному письмі їхня частотність нижча." },\n    reviewStatus: "review-needed"\n  }\n];\n
+import type { GrammarPage } from "../types";
+import { ex, mistake } from "../helpers";
+
+export const pages: GrammarPage[] = [
+  {
+    id: "exclamatives",
+    slug: "exclamatives",
+    category: "syntax",
+    titleUk: "Окличні конструкції",
+    titlePt: "Construções exclamativas",
+    titleEn: "Exclamative constructions",
+    summary: "Конструкції, що виражають високу інтенсивність, оцінку або емоційну реакцію.",
+    aliases: ["окличні речення","exclamatives","exclamativas","інтенсивність"],
+    related: ["speech-acts","information-structure","punctuation","interjections"],
+    status: "draft", origin: "handwritten", depth: "medium", ukrainianContrast: "medium",
+    intro: "Окличність — не просто знак оклику. Португальська має конструкції, у яких граматична форма й порядок компонентів допомагають виразити високу міру, здивування або оцінку: Que livro interessante!, Como ele trabalha!, Que bom que vieste! Пунктуація підсилює інтерпретацію, але не створює її сама.",
+    definition: "Оклична конструкція — висловлення або конструкція, організована для вираження інтенсивної оцінки, емоційної реакції чи іншої експресивної інтерпретації.",
+    uses: [
+      { title: "Que + іменна група", body: "Que може входити до моделі оцінки високого ступеня.", examples: [ex("Que dia lindo!", "Який чудовий день!")] },
+      { title: "Como + предикат", body: "Como може вводити окличну оцінку інтенсивності дії або властивості.", examples: [ex("Como ele corre!", "Як він швидко біжить!")] },
+      { title: "Que bom que...", body: "Окличність може поєднуватися з оцінкою ситуації, вираженою підрядною частиною.", examples: [ex("Que bom que vieste!", "Як добре, що ти прийшов/прийшла!")] }
+    ],
+    examples: [
+      ex("Que surpresa!", "Який сюрприз!", { purpose: "production" }),
+      ex("Como está frio!", "Як холодно!", { purpose: "comprehension" })
+    ],
+    mistakes: [
+      mistake("вважати знак ! достатнім для утворення окличної конструкції","аналізувати синтаксичну модель та експресивну функцію","Розповідне речення може бути емоційним і без спеціальної exclamative-конструкції.","editorial","high"),
+      mistake("перекладати que як одне значення в усіх окличних моделях","розпізнавати конкретну конструкцію","Форма que може виконувати різні граматичні функції; її не слід зводити до одного перекладу.","predicted-l1-transfer","medium")
+    ],
+    ukrainian: "Українська теж має окличні речення та моделі на кшталт «Який чудовий день!». Однак португальські моделі que/como мають власний синтаксичний розподіл; переклад не є достатнім правилом.",
+    regional: "Окличні конструкції чутливі до інтонації, контексту та жанру. Ця стаття не прирівнює всі регіональні й розмовні моделі до одного стандарту.",
+    reviewStatus: "review-needed"
+  }
+];
