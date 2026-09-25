@@ -12,7 +12,7 @@ export const pages: GrammarPage[] = [
     id: "complement-clauses-advanced", slug: "complement-advanced", category: "subordinate",
     titleUk: "Складні доповнювальні підрядні", titlePt: "Orações completivas avançadas", titleEn: "Advanced complement clauses",
     summary: "Доповнювальні частини з різними предикатами, способами та типами залежності.",
-    aliases: "advanced complement clauses,orações completivas",
+    aliases: ["advanced complement clauses","orações completivas"],
     related: ["complement-clauses","indicative-vs-subjunctive","personal-infinitive"],
     depth: "medium",
     ukrainianContrast: "high",
