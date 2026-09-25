@@ -939,12 +939,12 @@ Fallback може забезпечувати навігаційну цілісн
 
 ### Scope re-audit (2026-09-25)
 
-The canonical inventory was re-audited against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. Four underrepresented domains were identified and added to the canonical ontology: **adverbs/adverbial locutions; conjunctions/connective expressions; interjections/exclamatives; sentence types, polarity and illocutionary force**. The canonical inventory now contains **887 coverage units**. This is an ontology count, not a target number of pages.
+The canonical inventory was re-audited against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. Four underrepresented domains were identified and added to the canonical ontology: **adverbs/adverbial locutions; conjunctions/connective expressions; interjections/exclamatives; sentence types, polarity and illocutionary force**. At that stage, the canonical inventory reached **852 coverage units**. This is an ontology count, not a target number of pages.
 
 
 ### Scope re-audit extension (2026-09-25)
 
-A final constituent/discourse pass added explicit coverage for adjectival and adverbial phrase structure, noun/adjective complements, apposition, phrase-vs-clause coordination, ellipsis/zeugma, free indirect discourse, and denotative words/particles. The canonical inventory therefore now contains **887 coverage units**. These are coverage identities, not mandatory page counts.
+A final constituent/discourse pass added explicit coverage for adjectival and adverbial phrase structure, noun/adjective complements, apposition, phrase-vs-clause coordination, ellipsis/zeugma, free indirect discourse, and denotative words/particles. At that stage, the canonical inventory reached **875 coverage units**. These are coverage identities, not mandatory page counts.
 
 
 ### Final bounded reference-scope check (2026-09-25)
