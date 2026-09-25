@@ -176,6 +176,19 @@ A canonical topic is **closed** only when:
 109. adjective substantivisation
 
 
+### AJ. Additional constituent and discourse structures
+
+853. adjectival phrase structure
+854. adverbial phrase structure
+855. complement of the noun
+856. modifier of the noun
+857. apposition
+858. complement of the adjective
+859. coordination of phrases vs coordination of clauses
+860. ellipsis types and zeugma
+861. free indirect discourse
+862. denotative words and particles
+
 ### AF. Adverbs and adverbial locutions
 
 743. adverb system overview
@@ -1167,7 +1180,7 @@ No major phenomenon should exist only accidentally inside an unrelated page.
 
 ### Completeness audit — 2026-09-25
 
-A second scope audit was performed against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. The audit identified four structural domains that were underrepresented in the original 742-unit ontology: **adverbs/adverbial locutions, conjunctions/connective expressions, interjections/exclamatives, and explicit sentence types/illocutionary force**. Camões explicitly treats adverbs and locutions, conjunctions, phrase constituents and sentence types as core grammatical inventory categories; the Gulbenkian reference separately covers sentence types and illocutionary force, discourse and morphology. These additions are therefore coverage requirements, not merely optional enrichment. The expanded inventory now contains **852 canonical coverage units**. The unit count remains an ontology count, not a page count.
+A second scope audit was performed against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. The audit identified four structural domains that were underrepresented in the original 742-unit ontology: **adverbs/adverbial locutions, conjunctions/connective expressions, interjections/exclamatives, and explicit sentence types/illocutionary force**. Camões explicitly treats adverbs and locutions, conjunctions, phrase constituents and sentence types as core grammatical inventory categories; the Gulbenkian reference separately covers sentence types and illocutionary force, discourse and morphology. These additions are therefore coverage requirements, not merely optional enrichment. The expanded inventory now contains **862 canonical coverage units**. The unit count remains an ontology count, not a page count.
 
 The audit also confirmed that the repository already contains substantial coverage of pronouns, determiners, quantification, prepositions, verb morphology, tense/mood, clitics, subordination, agreement, word formation, phonology, orthography, semantics, pragmatics, discourse and variation. Those domains should be mapped and de-duplicated during the next coverage phase rather than expanded indiscriminately.
 
