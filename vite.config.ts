@@ -201,15 +201,19 @@ export default defineConfig(({ command, isPreview, mode }) => ({
     ...((command === "build" || isPreview)
       ? [
           nitro({
-            ...(mode === "github-pages" ? {} : { preset: "vercel" }),
+            ...(mode === "github-pages"
+              ? {}
+              : {
+                  preset: "vercel",
+                  // Auto-register server/middleware/* for deployed server builds.
+                  serverDir: "./server",
+                }),
             // TanStack Start prerendering starts a Vite preview server after
             // the application build. Nitro must participate in that build even
-            // for the GitHub Pages artifact; otherwise its preview hook cannot
-            // find Nitro build metadata and prerendering aborts with
-            // "Cannot load nitro build info".
-            // For non-static deployments, keep the existing Vercel preset and
-            // explicit serverDir wiring for server/middleware/*.
-            serverDir: "./server",
+            // for the GitHub Pages artifact so its preview hook can find Nitro
+            // build metadata. The static build intentionally does not register
+            // the app's server middleware, which is not part of the GitHub
+            // Pages artifact.
           }),
         ]
       : []),
