@@ -820,11 +820,6 @@ PT-PT письмо: у цих контекстах *Ele chamou-me*, *Chama-me de
       ex("Não me dirá isso.", "Він / вона мені цього не скаже."),
       ex("Far-se-ia tudo de outra maneira.", "Усе зробили б інакше.", { variety: "PT", register: "formal" }),
     ],
-    tables: [{ caption: "Mesóclise та альтернативи", headers: ["Функція", "Формальна модель", "Альтернатива"], rows: [
-      ["майбутнє", "Dir-me-á.", "Não me dirá."],
-      ["майбутнє + DO", "Fá-lo-á.", "Não o fará."],
-      ["умовний", "Dir-se-ia.", "Não se diria."],
-    ], scroll: true }],
     tables: [
       {
         caption: "Схема dir + me в майбутньому і умовному",
