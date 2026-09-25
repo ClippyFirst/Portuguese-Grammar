@@ -349,6 +349,14 @@ const ROWS: Row[] = [
   ["verb-government-infinitive", "valency", "verb-government-infinitive", "Керування дієслів з інфінітивом", "Regência verbal com infinitivo", "Verb government with infinitive", "Вибір моделі інфінітивного доповнення.", "verb infinitive government,regência,infinitivo", "government-overview,verb-valency-frames,personal-infinitive", "high"],
   ["verb-government-alternations", "valency", "verb-government-alternations", "Альтернації дієслівного керування", "Alternâncias de regência verbal", "Verb government alternations", "Різні рамки однієї лексеми.", "verb government alternations,alternâncias,regência", "verb-valency-frames,government-overview,verb-meaning-alternations", "high"],
 
+
+  ["specificity", "articles", "specificity", "Означеність і специфічність", "Definitude e especificidade", "Definiteness and specificity", "Чому означеність і специфічність не тотожні.", "specificity,definitude,специфічність", "articles-definite,articles-indefinite,definiteness,generic-reference-articles", "high"],
+  ["lhe-vs-o-a", "pronouns", "lhe-vs-o-a", "Lhe та o/a: непрямий і прямий додаток", "Lhe e o/a", "Lhe vs o/a", "Розрізнення непрямого та прямого додатка.", "lhe,o/a,lhe vs o", "clitic-pronouns,object-pronouns,verb-government,clitic-placement", "high"],
+  ["personal-infinitive-choice", "infinitive", "personal-choice", "Коли вибирати особовий інфінітив", "Escolha do infinitivo pessoal", "Choosing the personal infinitive", "Вибір особового інфінітива за структурою підмета.", "особовий інфінітив,infinitivo pessoal", "personal-infinitive,impersonal-infinitive,infinitive-selection,subject-control", "high"],
+  ["indicative-vs-subjunctive-choice", "moods", "indicative-vs-subjunctive-choice", "Indicativo чи conjuntivo: як визначати вибір", "Indicativo ou conjuntivo", "Indicative vs subjunctive choice", "Вибір способу за предикатом і типом залежності.", "indicativo vs conjuntivo,indicativo ou conjuntivo", "indicative-vs-subjunctive,subjunctive-overview,complement-clauses,subjunctive-triggers", "high"],
+  ["preterite-perfect-imperfect", "tenses", "preterite-perfect-imperfect", "Pretérito perfeito чи imperfeito", "Pretérito perfeito e imperfeito", "Perfect vs imperfect past", "Завершена подія, фон, стан і звичність у минулому.", "perfeito imperfeito,pretérito perfeito,pretérito imperfeito", "tense-aspect,past-tense,aspect-overview,sequence-of-tenses", "high"],
+  ["progressive-br-pt-choice", "gerund", "progressive-br-pt-choice", "Прогресив: estar a + infinitivo та estar + gerúndio", "Estar a + infinitivo e estar + gerúndio", "Progressive: estar a vs estar + gerund", "Порівняння основних прогресивних моделей PT-PT та PT-BR.", "estar a,estar + gerúndio,progressive", "progressive-br-pt,gerund,complex-predicates", "high"],
+
 ];
 
 function parseAliases(s: string): string[] {
