@@ -198,7 +198,7 @@ export function GrammarArticle({ page }: { page: GrammarPage }) {
         </section>
       ) : null}
 
-      <RelatedTopics ids={page.related} />
+      <RelatedTopics ids={page.related ?? []} />
 
       {(previousTopic || nextTopic) ? (
         <nav
