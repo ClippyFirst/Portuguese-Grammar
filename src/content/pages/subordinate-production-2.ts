@@ -18,7 +18,7 @@ export const pages: GrammarPage[] = [
     regional:"Базові моделі спільні; вибір інфінітивної форми може залежати від структури підметів.",
   }),
   page({
-    id:"conditional-clauses",slug:"conditional",category:"subordinate",
+    id:"conditional-clauses",slug:"conditional-clauses",category:"subordinate",
     titleUk:"Умовні речення",titlePt:"Orações condicionais",titleEn:"Conditional clauses",
     summary:"Як реальна, гіпотетична та нереалізована умова впливає на часово-модальну форму.",
     aliases:["умовні речення","orações condicionais","conditional clauses","se"],
