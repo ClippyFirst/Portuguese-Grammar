@@ -298,7 +298,7 @@ src/content/pages/regional
 
 ## 18. Coverage closure
 
-The repository must distinguish **coverage ontology** from **page count**. The canonical inventory currently defines 887 coverage units across foundations, morphology, syntax, semantics, pragmatics, discourse, phonology/orthography, lexical grammar and variation. These are not 742 mandatory URLs: a unit may be an article, an explicit module, or a typed cross-link. Coverage is closed only when every unit has a documented disposition and no major phenomenon is covered accidentally.
+The repository must distinguish **coverage ontology** from **page count**. The canonical inventory currently defines 889 coverage units across foundations, morphology, syntax, semantics, pragmatics, discourse, phonology/orthography, lexical grammar and variation. These are not 742 mandatory URLs: a unit may be an article, an explicit module, or a typed cross-link. Coverage is closed only when every unit has a documented disposition and no major phenomenon is covered accidentally.
 
 Before mass rewriting, the team must produce a machine-checkable mapping:
 
@@ -355,4 +355,9 @@ A final constituent/discourse pass added explicit coverage for adjectival and ad
 
 An independent cross-check against Cambridge's *The Syntax of Portuguese* and Wiley-Blackwell's *The Handbook of Portuguese Linguistics* found a small set of explicit syntax/reference identities that were not yet separately discoverable in the canonical ontology: null direct objects, null oblique objects, null possessors, VP ellipsis, emphatic affirmation, biased polar questions, minimal yes/no answers, bare nominals, Brazilian Portuguese topic-subject constructions, and the definite/indefinite/expletive null-subject subtypes. These are now closed as explicit canonical units. The personal infinitive, clitic placement, topicalisation, focus, information structure and broad null-subject syntax were already represented and were not duplicated.
 
-The canonical baseline is therefore **887 coverage units**. This is a bounded coverage ontology, not a target page count. Further expansion requires a documented reference gap or a distinct learner-facing phenomenon; specialist theoretical subdivisions should normally remain modules unless they create an independently searchable learner problem.
+The canonical baseline is therefore **889 coverage units**. This is a bounded coverage ontology, not a target page count. Further expansion requires a documented reference gap or a distinct learner-facing phenomenon; specialist theoretical subdivisions should normally remain modules unless they create an independently searchable learner problem.
+
+
+### Final scope refinement (2026-09-25)
+
+The bounded scope audit was refined once more against the *Handbook of Portuguese Linguistics* and current Portuguese discourse/prosody research. Two additional independently searchable learner-facing identities were closed: **secondary stress** and **discourse markers/discourse-marker functions**. The canonical inventory is now **889 coverage units**. This does not reopen indefinite scope expansion: further additions still require a documented reference gap or a distinct learner-facing phenomenon. Theoretical areas such as binding and the phonology–syntax interface remain modules unless they create such a distinct problem.
