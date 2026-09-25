@@ -474,7 +474,6 @@ Object.assign(SPECIAL, {
     examples:[{pt:"Eu te vi ontem.",uk:"Я бачив/бачила тебе вчора.",variety:"BR"},{pt:"Eu vi ele ontem.",uk:"Я бачив/бачила його вчора.",variety:"BR",register:"colloquial"},{pt:"Eu o vi ontem.",uk:"Я бачив/бачила його вчора.",variety:"BR",register:"formal"}],
     learnerQuestions:["Який саме шар PT-BR я описую?","Чи приклад призначений для формального письма чи розмови?","Чи повний займенник конкурує з clitic?"],
   },
-});
 
 
   "ter": {
@@ -1874,7 +1873,7 @@ Object.assign(SPECIAL, {
   },
 
 
-};
+});
 
 const SPECIAL_ALIASES: Record<string, string> = {
   "subjunctive-triggers": "subjunctive-triggers-advanced",
