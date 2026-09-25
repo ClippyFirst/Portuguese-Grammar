@@ -1,4 +1,5 @@
 import type { GrammarPage } from "../types";
+import { ex, mistake } from "../helpers";
 const p=(id:string,slug:string,titleUk:string,titlePt:string,titleEn:string,summary:string,intro:string,teachingNote:string,examples:GrammarPage["examples"],related:string[]=[]):GrammarPage=>({id,slug,category:"spelling",titleUk,titlePt,titleEn,summary,aliases:[titleUk,slug],related,intro:teachingNote ? `${intro}\n\n${teachingNote}` : intro,examples,markers:[],mistakes:[]});
 export const pages:GrammarPage[]=[
 p("alphabet","alphabet","Алфавіт і назви літер","Alfabeto","Alphabet","Літери, диграфи й назви графем.","Португальська використовує латинку. Важливо відрізняти назву літери від її звукової реалізації: ` h ` самостійно зазвичай не позначає звук, а ` ch, lh, nh ` — диграфи.","Вимова залежить від позиції, слова та різновиду португальської.",[{pt:"chave",uk:"ключ"},{pt:"filho",uk:"син"},{pt:"vinho",uk:"вино"}],["reading-rules","phonetics-overview"]),
