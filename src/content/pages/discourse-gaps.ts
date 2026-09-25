@@ -12,7 +12,7 @@ export const pages: GrammarPage[] = [
     id: "discourse-reference", slug: "reference", category: "discourse",
     titleUk: "Референція в дискурсі", titlePt: "Referência no discurso", titleEn: "Discourse reference",
     summary: "Як артиклі, займенники та лексичний повтор утримують референт у тексті.",
-    aliases: "discourse reference,referência,anaphora",
+    aliases: ["discourse reference","referência","anaphora"],
     related: ["discourse-overview","cohesion-reference","articles-definite"],
     depth: "medium",
     ukrainianContrast: "high",
