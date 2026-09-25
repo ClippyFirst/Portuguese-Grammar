@@ -21,7 +21,6 @@ export const pages: GrammarPage[] = [
     mistakes:[mistake("Dei-o o livro","Dei-lhe o livro","o не є стандартним клитиком непрямого додатка в базовій моделі.","predicted-l1-transfer","high"),mistake("вибирати lhe лише за перекладом «йому»","визначати синтаксичну роль","Українські відмінки не є прямою таблицею португальських клитиків.","predicted-l1-transfer","high")],
     ukrainian:"Український давальний/знахідний добре допомагає як стартова аналогія, але португальську форму треба визначати за валентністю дієслова та роллю доповнення.",
     regional:"PT-BR має моделі з lhe, які відрізняються від традиційної PT-PT системи; не узагальнюйте одну норму на всі канали.",
-    reviewStatus:"review-needed"
   }),
   page({
     id:"personal-vs-impersonal",slug:"personal-vs-impersonal",category:"infinitive",
@@ -42,6 +41,5 @@ export const pages: GrammarPage[] = [
     mistakes:[mistake("вважати personal infinitive просто «інфінітивом із займенником»","аналізувати суб'єкта та конструкцію","Флексія інфінітива сама є граматичним сигналом.","predicted-l1-transfer","high")],
     ukrainian:"Український інфінітив не має аналогічної особової флексії. Українське «щоб ми залишилися» може відповідати португальському personal infinitive або conjuntivo залежно від структури.",
     regional:"Особовий інфінітив є центральною рисою португальської, але частотність конкретних конструкцій залежить від стилю та різновиду.",
-    reviewStatus:"review-needed"
   })
 ];
