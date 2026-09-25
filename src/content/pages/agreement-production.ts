@@ -1,5 +1,5 @@
 import type { GrammarPage } from "../types";
-import { ex, mistake } from "../helpers";
+import { mistake } from "../helpers";
 
 const draft = (p: GrammarPage): GrammarPage => ({
   ...p,
@@ -13,7 +13,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Складні випадки узгодження", titlePt: "Casos especiais de concordância", titleEn: "Agreement edge cases",
     summary: "Випадки, де формальне й семантичне узгодження можуть розходитися.",
     aliases: ["agreement edge cases","concordância"],
-    related: ["agreement-sv","nominal-agreement","semantic-agreement"],
+    related: ["agreement-sv"],
     depth: "medium",
     ukrainianContrast: "high",
     intro: "У складних групах підмета, при узгодженні з колективними назвами або за незвичного порядку компонентів треба визначати граматичний центр конструкції, а не погоджувати дієслово з найближчим словом.",
