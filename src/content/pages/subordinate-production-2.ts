@@ -139,7 +139,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Reduced clauses",
     summary: "Залежні конструкції з нефінітною формою дієслова замість особової предикації.",
     aliases: ["зредуковані підрядні", "reduced clauses", "orações reduzidas", "нефінітні підрядні"],
-    related: ["infinitival-reduced-clauses", "gerundial-reduced-clauses", "participial-reduced-clauses", "finite-vs-nonfinite"],
+    related: ["infinitival-reduced-clauses", "gerundial-reduced-clauses", "participial-reduced-clauses", "finite-vs-nonfinite-subordination"],
     status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Зредукована підрядна конструкція використовує нефінітну дієслівну форму й не виражає повну особову предикацію так, як фінітне підрядне. Для навчання корисно спочатку встановити відношення між частинами, а вже потім визначати, чи може воно бути реалізоване інфінітивом, герундієм або дієприкметником.",
     definition: "Зредукована підрядна конструкція — залежна конструкція з нефінітною формою, яка виконує функцію, подібну до відповідної фінітної підрядної.",
