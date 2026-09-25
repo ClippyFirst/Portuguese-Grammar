@@ -198,13 +198,17 @@ export default defineConfig(({ command, isPreview, mode }) => ({
             }))
           : undefined,
     }),
-    ...((command === "build" && mode !== "github-pages") || isPreview
+    ...((command === "build" || isPreview)
       ? [
           nitro({
-            preset: "vercel",
-            // Auto-registers server/middleware/* (the PWA install page +
-            // manifest + head-tag middleware). Nitro v3 defaults serverDir to
-            // false, so removing this silently unwires /?install=1 on deploys.
+            ...(mode === "github-pages" ? {} : { preset: "vercel" }),
+            // TanStack Start prerendering starts a Vite preview server after
+            // the application build. Nitro must participate in that build even
+            // for the GitHub Pages artifact; otherwise its preview hook cannot
+            // find Nitro build metadata and prerendering aborts with
+            // "Cannot load nitro build info".
+            // For non-static deployments, keep the existing Vercel preset and
+            // explicit serverDir wiring for server/middleware/*.
             serverDir: "./server",
           }),
         ]
