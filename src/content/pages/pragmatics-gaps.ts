@@ -12,7 +12,7 @@ export const pages: GrammarPage[] = [
     id: "discourse-and-pragmatics", slug: "discourse-pragmatics", category: "pragmatics",
     titleUk: "Дискурс і прагматика", titlePt: "Discurso e pragmática", titleEn: "Discourse and pragmatics",
     summary: "Як граматичні форми працюють у реальній комунікативній ситуації.",
-    aliases: "discourse pragmatics,discurso,pragmática",
+    aliases: ["discourse pragmatics","discurso","pragmática"],
     related: ["discourse-overview","pragmatics-overview","speech-acts"],
     depth: "medium",
     ukrainianContrast: "high",
