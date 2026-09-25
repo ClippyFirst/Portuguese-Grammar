@@ -442,3 +442,37 @@ Academic Writing Toolkit було використано як додаткови
 
 Пакет закриває зв'язок між граматичною формою та комунікативною інтерпретацією: непрямі прохання, мовленнєві акти, ввічливість, регістр, інформаційна структура, еліпсис і generic reference. Окремо зафіксовано, що PT-BR/PT-PT відмінності та соціальна інтерпретація не повинні перетворюватися на механічні правила «форма = одна функція».
 
+
+
+## 2026-09-25 — content production batch 07: infinitive, mood, tense, progressive and determiners
+
+Продовжено наповнення canonical corpus на робочій гілці `content/production-2026-09-batch-01`.
+
+### Додано 6 нових dedicated GrammarPage-статей
+
+- `personal-infinitive-choice` — вибір особового / безособового інфінітива;
+- `indicative-vs-subjunctive-choice` — вибір indicativo / conjuntivo;
+- `preterite-perfect-imperfect` — контраст pretérito perfeito / imperfeito;
+- `progressive-br-pt-choice` — прогресивні моделі estar a + infinitivo / estar + gerúndio;
+- `determiner-stacking` — комбінації детермінативів;
+- `article-omission` — системна відсутність артикля.
+
+Усі шість сторінок мають learner-facing структуру: definition, formation, функціональні підрозділи, production/comprehension/contrast приклади, типові помилки, український контраст, regional/PT-BR/PT-PT notes та source metadata.
+
+### Методологія
+
+Пакет спеціально закриває теми, де український переклад легко створює хибну відповідність: personal infinitive не ототожнюється з українським підрядним «щоб», conjuntivo не прирівнюється до українського умовного способу, а perfeito/imperfeito не зводяться до доконаного/недоконаного виду. Окремо показано плурицентричний розподіл прогресивних моделей та структурні обмеження determiner stacking.
+
+### QA
+
+Academic Writing Toolkit використано для paragraph-level logic check. Єдиний сигнал — `short-paragraph` на технічному рівні вхідного файлу; він не вказує на логічну помилку в жодній із шести статей. Інших paragraph-logic findings не отримано.
+
+### Лічильник покриття
+
+- Було: **254 / 349 написано**.
+- Додано нових canonical IDs: **6**.
+- Стало: **260 / 349 написано**.
+- Залишилося: **89 / 349**.
+- Fallback/generated pages не враховуються.
+- Переписування вже наявних сторінок не збільшує coverage counter.
+
