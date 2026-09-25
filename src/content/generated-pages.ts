@@ -139,17 +139,15 @@ function makePage(meta: (typeof CATALOG)[number]): GrammarPage {
     },
   ];
 
-  const mistakes = special.mistakes ?? [
-    {
-      wrong: `Дослівно переносити українську модель у «${meta.titlePt}».`,
-      right: first.pt,
-      why: "Португальська граматика має власні моделі керування, узгодження й порядку слів.",
-    },
-  ];
+  // Do not invent "typical mistakes" merely to fill the template.
+  // Generated pages are coverage scaffolds, not linguistically reviewed articles.
+  const mistakes = special.mistakes;
 
   return {
     id: meta.id,
     slug: meta.slug,
+    status: "catalogued",
+    origin: "generated",
     category: meta.category,
     titleUk: meta.titleUk,
     titlePt: meta.titlePt,
