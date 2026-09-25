@@ -55,12 +55,6 @@ export const pages: GrammarPage[] = [
       { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
     ],
     regional: "У PT-BR система об'єктних займенників у живому мовленні відрізняється від консервативних письмових моделей; не змішуйте нормативну форму клітики з розмовними займенниковими стратегіями.",
-    sources: [
-      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
-      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
-      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
-    ],
-    brPt: "PT-PT зберігає ширше використання o/a/lhe як клітик. У PT-BR у розмовній мові можливі інші способи реалізації об'єкта; конкретний вибір залежить від регістру та конструкції.",
   }),
   page({
     id: "personal-infinitive-choice",
@@ -171,11 +165,5 @@ export const pages: GrammarPage[] = [
       { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
     ],
     regional: "PT-PT і PT-BR мають різні частотні переваги. Не перетворюйте їх на взаємовиключні правила без контексту.",
-    sources: [
-      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
-      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
-      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
-    ],
-    brPt: "PT-PT: estar a + infinitivo широко вживається. PT-BR: estar + gerúndio широко вживається. Інші моделі можуть бути можливими залежно від різновиду та контексту.",
   })
 ];
