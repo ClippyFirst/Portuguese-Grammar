@@ -16,7 +16,7 @@ p("capitalization","capitalization","Великі літери","Maiúsculas","C
   titleEn: "Punctuation",
   summary: "Розділові знаки та їхній зв’язок із синтаксисом, інформаційною структурою й прямою мовою.",
   aliases: ["пунктуація","pontuação","vírgula","comma","тире","двокрапка"],
-  related: ["sentence-basics","coordination","subordination","relative-restrictive","direct-speech"],
+  related: ["sentence-basics","coordination","relative-restrictive","direct-speech"],
   status: "draft",
   origin: "handwritten",
   depth: "medium",
