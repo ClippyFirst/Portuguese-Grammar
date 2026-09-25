@@ -825,27 +825,6 @@ PT-PT письмо: у цих контекстах *Ele chamou-me*, *Chama-me de
       ["майбутнє + DO", "Fá-lo-á.", "Não o fará."],
       ["умовний", "Dir-se-ia.", "Não se diria."],
     ], scroll: true }],
-    exceptions: "Mesóclise не означає «усюди в PT-PT». Це насамперед формальний писемний ресурс. У сучасному PT-BR вона значно обмеженіша в живому мовленні.",
-      ex("Dir-me-á a verdade, ao menos?", "Він мені хоч правду скаже?", {
-        register: "literary",
-      }),
-      ex("Convidar-nos-iam, se tivessem lugar.", "Вони запросили б нас, якби було місце.", {
-        register: "formal",
-      }),
-      ex("Fá-lo-ei assim que puder.", "Я зроблю це, щойно зможу.", {
-        register: "formal",
-      }),
-      ex("Pôr-se-ia a chover de um momento para o outro.", "Щомиті могло піти дощем.", {
-        register: "literary",
-      }),
-      ex("Ele vai me dizer a verdade.", "Він мені скаже правду.", {
-        variety: "BR",
-      }),
-      ex("Há de dizer-me a verdade.", "Він мені таки скаже правду.", {
-        variety: "PT",
-        register: "formal",
-      }),
-    ],
     tables: [
       {
         caption: "Схема dir + me в майбутньому і умовному",
