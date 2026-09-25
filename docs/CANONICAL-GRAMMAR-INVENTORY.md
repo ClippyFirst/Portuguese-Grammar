@@ -189,6 +189,21 @@ A canonical topic is **closed** only when:
 861. free indirect discourse
 862. denotative words and particles
 
+### AK. Advanced syntax, constructional style and sentence-level rhetoric
+
+863. prepositional locutions
+864. semantic and syntactic status of prepositional locutions
+865. rhetorical/syntactic construction devices overview
+866. pleonasm and pleonastic constructions
+867. hyperbaton and anastrophe
+868. prolepsis as syntactic fronting
+869. anacoluthon
+870. syntactic/semantic agreement (syllepsis)
+871. asyndeton as a marked coordination pattern
+872. polysyndeton as a marked coordination pattern
+873. syntactic anaphora as a discourse-structuring repetition
+874. distinction between grammatical construction and stylistic figure
+
 ### AF. Adverbs and adverbial locutions
 
 743. adverb system overview
@@ -871,16 +886,17 @@ A canonical topic is **closed** only when:
 602. quotation marks
 603. parentheses and brackets
 604. question mark and exclamation mark
-605. punctuation with coordination
+605. ellipsis points / reticências
+606. punctuation with coordination
 606. punctuation with subordination
-607. punctuation with relative clauses
-608. punctuation and information structure
-609. punctuation and direct speech
-610. hyphenation
-611. word division
-612. compound spelling
-613. Acordo Ortográfico
-614. PT-BR vs PT-PT spelling variants
+608. punctuation with relative clauses
+609. punctuation and information structure
+610. punctuation and direct speech
+611. hyphenation
+612. word division
+613. compound spelling
+614. Acordo Ortográfico
+615. PT-BR vs PT-PT spelling variants
 
 ### AA. Semantics and interpretation
 
@@ -1057,7 +1073,10 @@ The following are **not optional backlog items**. They are closure requirements 
 - modal clauses;
 - locative clauses;
 - comparative clauses;
-- discourse-level paraphrase.
+- discourse-level paraphrase;
+- prepositional locutions;
+- reticências as a punctuation/intonation interface;
+- advanced constructional figures such as pleonasm, hyperbaton, anacoluthon and syllepsis.
 
 ### Must be explicit even when covered by another article
 
@@ -1180,7 +1199,7 @@ No major phenomenon should exist only accidentally inside an unrelated page.
 
 ### Completeness audit — 2026-09-25
 
-A second scope audit was performed against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. The audit identified four structural domains that were underrepresented in the original 742-unit ontology: **adverbs/adverbial locutions, conjunctions/connective expressions, interjections/exclamatives, and explicit sentence types/illocutionary force**. Camões explicitly treats adverbs and locutions, conjunctions, phrase constituents and sentence types as core grammatical inventory categories; the Gulbenkian reference separately covers sentence types and illocutionary force, discourse and morphology. These additions are therefore coverage requirements, not merely optional enrichment. The expanded inventory now contains **862 canonical coverage units**. The unit count remains an ontology count, not a page count.
+A second scope audit was performed against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. The audit identified four structural domains that were underrepresented in the original 742-unit ontology: **adverbs/adverbial locutions, conjunctions/connective expressions, interjections/exclamatives, and explicit sentence types/illocutionary force**. Camões explicitly treats adverbs and locutions, conjunctions, phrase constituents and sentence types as core grammatical inventory categories; the Gulbenkian reference separately covers sentence types and illocutionary force, discourse and morphology. These additions are therefore coverage requirements, not merely optional enrichment. The expanded inventory now contains **874 canonical coverage units**. A final boundary audit also identified a small advanced layer that should be represented explicitly: prepositional locutions, reticências, and construction-level stylistic syntax. These are not evidence for indefinite scope expansion; they are a bounded extension needed to prevent advanced phenomena from remaining hidden in generic syntax/punctuation pages. The unit count remains an ontology count, not a page count.
 
 The audit also confirmed that the repository already contains substantial coverage of pronouns, determiners, quantification, prepositions, verb morphology, tense/mood, clitics, subordination, agreement, word formation, phonology, orthography, semantics, pragmatics, discourse and variation. Those domains should be mapped and de-duplicated during the next coverage phase rather than expanded indiscriminately.
 
