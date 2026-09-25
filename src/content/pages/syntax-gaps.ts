@@ -1,5 +1,5 @@
 import type { GrammarPage } from "../types";
-import { ex, mistake } from "../helpers";
+import { mistake } from "../helpers";
 
 const draft = (p: GrammarPage): GrammarPage => ({
   ...p,
@@ -47,7 +47,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Координація і субординація", titlePt: "Coordenação e subordinação", titleEn: "Coordination and subordination",
     summary: "Два різні способи поєднання частин речення.",
     aliases: ["coordination","subordination","coordenação","subordinação"],
-    related: ["coordination","subordination","complement-clauses"],
+    related: ["coordination","complement-clauses"],
     depth: "medium",
     ukrainianContrast: "high",
     intro: "Координація поєднує синтаксично більш незалежні частини; субординація робить одну частину залежною від іншої. Для вибору сполучника спочатку визначте цей тип зв'язку.",
