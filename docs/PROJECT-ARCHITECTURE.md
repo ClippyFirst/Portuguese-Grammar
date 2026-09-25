@@ -348,4 +348,4 @@ The canonical inventory was re-audited against the Camões PLE grammatical inven
 
 ### Scope re-audit extension (2026-09-25)
 
-A final constituent/discourse pass added explicit coverage for adjectival and adverbial phrase structure, noun/adjective complements, apposition, phrase-vs-clause coordination, ellipsis/zeugma, free indirect discourse, and denotative words/particles. The canonical inventory therefore now contains **862 coverage units**. These are coverage identities, not mandatory page counts.
+A final constituent/discourse pass added explicit coverage for adjectival and adverbial phrase structure, noun/adjective complements, apposition, phrase-vs-clause coordination, ellipsis/zeugma, free indirect discourse, and denotative words/particles. The canonical inventory therefore now contains **875 coverage units**. These are coverage identities, not mandatory page counts.
