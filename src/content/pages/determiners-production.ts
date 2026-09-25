@@ -36,7 +36,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Articles with proper names",
     summary: "Коли власна назва вживається з артиклем і чому це не зводиться до правила «імена завжди без артикля».",
     aliases: ["артикль імена","o João","a Maria","nomes próprios"],
-    related: ["articles-definite","articles-geography","articles-regional","personal-names"],
+    related: ["articles-definite","articles-geography","articles-regional","articles-proper-names"],
     status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Власна назва вже сама по собі ідентифікує референт, але португальська не тому автоматично забороняє артикль. Особливо важливі особові імена та географічні назви: вибір залежить від назви, різновиду мови й контексту.",
     definition: "Артикль при власній назві — означений артикль, що входить до іменної групи з власним іменем.",
