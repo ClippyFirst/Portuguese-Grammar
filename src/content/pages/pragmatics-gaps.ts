@@ -5,7 +5,6 @@ const draft = (p: GrammarPage): GrammarPage => ({
   ...p,
   status: "draft",
   origin: "handwritten",
-  reviewStatus: undefined as never,
 });
 
 export const pages: GrammarPage[] = [
@@ -19,12 +18,11 @@ export const pages: GrammarPage[] = [
     ukrainianContrast: "high",
     intro: "Граматична форма не визначає повністю комунікативний ефект. Питання може бути проханням, заперечення — корекцією, а порядок слів — сигналом теми або фокусу.",
     definition: "Дискурс і прагматика описують використання граматичних і лексичних засобів у контексті взаємодії.",
-    uses: "",
+    uses: [],
     examples: [{"pt":"Pode fechar a janela?","uk":"Можете зачинити вікно?","purpose":"comprehension"},{"pt":"Isso eu não sei.","uk":"Ось цього я не знаю.","purpose":"contrast"}],
     mistakes: [mistake("перекладати форму без урахування мовленнєвої дії","визначати, що мовець робить висловленням","Форма питання не гарантує, що очікується лише інформаційна відповідь.","editorial","medium")],
     ukrainian: "Українська теж широко використовує непрямі мовленнєві дії, тому корисно порівнювати конкретні конвенції, а не сам принцип.",
     regional: "Прагматичні ефекти особливо залежать від ситуації, стосунків і регістру.",
     brPt: "",
-    reviewStatus: "review-needed"
   }),
 ];
