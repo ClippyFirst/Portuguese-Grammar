@@ -308,3 +308,47 @@ export const TOP_NAV = [
   { href: "/regional", label: "Варіанти" },
   { href: "/tables", label: "Таблиці" },
 ] as const;
+
+
+/**
+ * Shared taxonomy layer.
+ * Category slugs remain stable; the layer is the cross-repository ontology.
+ */
+export const CATEGORY_LAYERS: Record<string, string> = {
+  fundamentals: "foundations",
+  spelling: "orthography",
+  phonetics: "phonology-pronunciation",
+  determiners: "determiners",
+  valency: "prepositions-government",
+  nouns: "nominal",
+  articles: "determiners",
+  adjectives: "nominal",
+  adverbs: "nominal",
+  pronouns: "pronouns",
+  clitics: "pronouns",
+  numerals: "nominal",
+  prepositions: "prepositions-government",
+  contractions: "prepositions-government",
+  crase: "prepositions-government",
+  semantics: "semantics",
+  pragmatics: "discourse-pragmatics",
+  discourse: "discourse-pragmatics",
+  "lexical-grammar": "word-formation-lexical",
+  conjunctions: "syntax",
+  verbs: "verbs",
+  tenses: "tense-aspect-mood",
+  moods: "tense-aspect-mood",
+  infinitive: "non-finite",
+  gerund: "non-finite",
+  periphrases: "verb-constructions",
+  se: "passive-impersonal",
+  syntax: "syntax",
+  negation: "negation-questions",
+  questions: "negation-questions",
+  agreement: "syntax",
+  relative: "syntax",
+  subordinate: "syntax",
+  passive: "passive-impersonal",
+  "word-formation": "word-formation-lexical",
+  regional: "variation",
+};
