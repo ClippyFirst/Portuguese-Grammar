@@ -1,0 +1,66 @@
+import type { GrammarPage } from "../types";
+import { ex, mistake } from "../helpers";
+
+const draft = (p: GrammarPage): GrammarPage => ({
+  ...p,
+  status: "draft",
+  origin: "handwritten",
+  reviewStatus: undefined as never,
+});
+
+export const pages: GrammarPage[] = [
+  draft({
+    id: "null-and-expletive-subjects", slug: "null-expletive", category: "syntax",
+    titleUk: "Типи нульового підмета", titlePt: "Tipos de sujeito nulo", titleEn: "Types of null subjects",
+    summary: "Розрізнення визначеного, невизначеного та екзплетивного нульового підмета.",
+    aliases: "null subject types,definite null subject,expletive subject",
+    related: ["null-subject","sentence-basics","subject-placement"],
+    depth: "medium",
+    ukrainianContrast: "high",
+    intro: "Нульовий підмет не завжди означає одне й те саме. У Cheguei підмет відновлюється як конкретний учасник; у Choveu немає референтного підмета. Розрізняйте ці випадки.",
+    definition: "Нульовий підмет — відсутня в поверхневій структурі підметова форма; його інтерпретація може бути референтною або екзплетивною.",
+    uses: "",
+    examples: [{"pt":"Cheguei cedo.","uk":"Я прийшов/прийшла рано."},{"pt":"Choveu muito.","uk":"Сильно дощило."}],
+    mistakes: [mistake("вважати кожен пропуск підмета однаковим","визначати, чи є референт","У Choveu немає такого самого референтного підмета, як у Cheguei.","editorial","high")],
+    ukrainian: "Українська теж часто опускає підмет, але португальська має системні випадки без референтного підмета.",
+    regional: "Екзплетивні та референтні випадки потребують окремого опису в конкретних конструкціях.",
+    brPt: "",
+    reviewStatus: "review-needed"
+  }),
+  draft({
+    id: "subject-object-order", slug: "subject-object-order", category: "syntax",
+    titleUk: "Порядок підмета й додатка", titlePt: "Ordem de sujeito e objeto", titleEn: "Subject-object order",
+    summary: "Нейтральний порядок і мотивовані перестановки підмета та додатка.",
+    aliases: "subject object order,word order,SVO",
+    related: ["word-order","subject-placement","topicalization","information-structure"],
+    depth: "medium",
+    ukrainianContrast: "high",
+    intro: "Базова модель португальського речення часто SVO, але інформаційна структура, тип предиката та дискурсивний статус можуть мотивувати інший порядок.",
+    definition: "Порядок підмета й додатка — синтаксичне розміщення цих конституентів відносно дієслова.",
+    uses: "",
+    examples: [{"pt":"A Ana leu o livro.","uk":"Ана прочитала книжку."},{"pt":"O livro, a Ana já leu.","uk":"Книжку Ана вже прочитала."}],
+    mistakes: [mistake("переносити українську вільність порядку як нейтральний португальський порядок","спершу встановлювати нейтральну SVO-модель, потім інформаційну структуру","Відмінки української дозволяють перестановки, які в португальській можуть бути маркованими.","predicted-l1-transfer","medium")],
+    ukrainian: "Українські відмінки дають більшу свободу поверхневого порядку. Португальська сильніше спирається на порядок, прийменники, клітики та інформаційну структуру.",
+    regional: "PT-BR і PT-PT мають спільну базову модель, але частотність інверсії та деяких топікальних схем відрізняється.",
+    brPt: "",
+    reviewStatus: "review-needed"
+  }),
+  draft({
+    id: "subordination-and-coordination", slug: "subordination-coordination", category: "syntax",
+    titleUk: "Координація і субординація", titlePt: "Coordenação e subordinação", titleEn: "Coordination and subordination",
+    summary: "Два різні способи поєднання частин речення.",
+    aliases: "coordination,subordination,coordenação,subordinação",
+    related: ["coordination","subordination","complement-clauses"],
+    depth: "medium",
+    ukrainianContrast: "high",
+    intro: "Координація поєднує синтаксично більш незалежні частини; субординація робить одну частину залежною від іншої. Для вибору сполучника спочатку визначте цей тип зв'язку.",
+    definition: "Координація та субординація — різні синтаксичні відношення між частинами складного речення.",
+    uses: "",
+    examples: [{"pt":"Cheguei e sentei-me.","uk":"Я прийшов/прийшла і сів/сіла."},{"pt":"Quando cheguei, ele saiu.","uk":"Коли я прийшов/прийшла, він вийшов."}],
+    mistakes: [mistake("називати будь-яке з'єднання речень координацією","перевіряти залежність частин","У підрядному реченні одна частина виконує визначену синтаксичну роль щодо іншої.","editorial","high")],
+    ukrainian: "Українська має аналогічний базовий поділ, але сполучники та пунктуаційні правила не є тотожними.",
+    regional: "Потрібен окремий аналіз для кожного типу підрядності.",
+    brPt: "",
+    reviewStatus: "review-needed"
+  }),
+];
