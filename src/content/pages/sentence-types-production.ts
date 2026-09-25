@@ -91,7 +91,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Оптативні та побажальні конструкції", titlePt: "Construções optativas e desiderativas", titleEn: "Optative and wish constructions",
     summary: "Граматичні способи виражати побажання, прокляття або побажаний стан.",
     aliases: ["побажальні конструкції", "optative", "wish constructions", "construções optativas"],
-    related: ["subjunctive-overview", "independent-subjunctive", "speech-acts", "exclamatives"],
+    related: ["subjunctive-overview", "subjunctive-overview", "speech-acts", "exclamatives"],
     status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Побажання в португальській може оформлюватися різними засобами: самостійним conjuntivo, лексичними формулами на кшталт `tomara que` та іншими конструкціями. Тут важливо відрізняти граматичний спосіб від комунікативної функції: conjuntivo не означає автоматично «побажання», а побажання не має однієї обов'язкової форми.",
     definition: "Оптативна конструкція — висловлення, у якому мовець виражає бажаний стан справ, побажання або прокляття; португальська реалізує цю функцію кількома граматичними й лексичними засобами.",
