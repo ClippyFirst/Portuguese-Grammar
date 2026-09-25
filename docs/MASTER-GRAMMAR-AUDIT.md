@@ -7,7 +7,7 @@
 
 ## 1. Вердикт
 
-> **Coverage scope is now governed by `docs/CANONICAL-GRAMMAR-INVENTORY.md`. It contains 852 canonical coverage units; these are ontology units, not 742 mandatory URLs.**
+> **Coverage scope is now governed by `docs/CANONICAL-GRAMMAR-INVENTORY.md`. It contains 862 canonical coverage units; these are ontology units, not 742 mandatory URLs.**
 
 
 **Ні: граматичне охоплення ще не можна вважати повним.**
@@ -939,4 +939,9 @@ Fallback може забезпечувати навігаційну цілісн
 
 ### Scope re-audit (2026-09-25)
 
-The canonical inventory was re-audited against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. Four underrepresented domains were identified and added to the canonical ontology: **adverbs/adverbial locutions; conjunctions/connective expressions; interjections/exclamatives; sentence types, polarity and illocutionary force**. The canonical inventory now contains **852 coverage units**. This is an ontology count, not a target number of pages.
+The canonical inventory was re-audited against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. Four underrepresented domains were identified and added to the canonical ontology: **adverbs/adverbial locutions; conjunctions/connective expressions; interjections/exclamatives; sentence types, polarity and illocutionary force**. The canonical inventory now contains **862 coverage units**. This is an ontology count, not a target number of pages.
+
+
+### Scope re-audit extension (2026-09-25)
+
+A final constituent/discourse pass added explicit coverage for adjectival and adverbial phrase structure, noun/adjective complements, apposition, phrase-vs-clause coordination, ellipsis/zeugma, free indirect discourse, and denotative words/particles. The canonical inventory therefore now contains **862 coverage units**. These are coverage identities, not mandatory page counts.
