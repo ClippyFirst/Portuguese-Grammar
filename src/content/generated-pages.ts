@@ -337,22 +337,7 @@ Object.assign(SPECIAL, {
   "verb-com-government": SPECIAL["verb-government-com"],
   "verb-por-government": SPECIAL["verb-government-por"],
   "verb-government-alternations": SPECIAL["verb-government-alternations"],
-  "government-overview": {
-    ...SPECIAL["government-overview"],
-    formation: "Керування (regência) описує, яку синтаксичну рамку вибирає головна лексема. Для дієслів корисно вчити не просто «дієслово + прийменник», а «значення + complement + прийменник + приклад».",
-    examples: [
-      ...SPECIAL["government-overview"].examples ?? [],
-      { pt: "Confio em ti.", uk: "Я тобі довіряю." },
-      { pt: "Lembro-me desse dia.", uk: "Я пам'ятаю той день.", variety: "PT" },
-      { pt: "Assisti ao filme ontem.", uk: "Я вчора подивився/подивилася фільм." }
-    ],
-    learnerQuestions: [
-      ...(SPECIAL["government-overview"].learnerQuestions ?? []),
-      "Чи є прийменник частиною лексичної валентності, а не вільним обставинним модифікатором?",
-      "Чи змінюється рамка разом зі значенням дієслова?"
-    ]
-  }
-});
+);
 
 
 Object.assign(SPECIAL, {
@@ -1120,14 +1105,21 @@ Object.assign(SPECIAL, {
   },
   "government-overview": {
     formulas: [{ pattern: "V/N/Adj + selected complement → regência", note: "Керування — це вибір предикатом або іншою лексемою структури complement; прийменник є частиною моделі." }],
+    formation: "Керування (regência) описує, яку синтаксичну рамку вибирає головна лексема. Для дієслів корисно вчити не просто «дієслово + прийменник», а «значення + complement + прийменник + приклад».",
     examples: [
       { pt: "Gosto de música.", uk: "Я люблю музику." },
       { pt: "Penso em viajar.", uk: "Я думаю про подорож." },
-      { pt: "Preciso de ajuda.", uk: "Мені потрібна допомога." }
+      { pt: "Preciso de ajuda.", uk: "Мені потрібна допомога." },
+      { pt: "Confio em ti.", uk: "Я тобі довіряю." },
+      { pt: "Lembro-me desse dia.", uk: "Я пам'ятаю той день.", variety: "PT" },
+      { pt: "Assisti ao filme ontem.", uk: "Я вчора подивився/подивилася фільм." },
     ],
     mistakes: [{ wrong: "Підставляти прийменник за українським перекладом.", right: "gostar de / pensar em / precisar de", why: "Лексичне керування не є прямим перекладним відповідником." }],
     ukrainian: "Для україномовного це одна з ключових зон інтерференції: український відмінок часто приховує португальський прийменник.",
-    learnerQuestions: ["Який компонент є головним (head)?", "Який додаток (complement) він вибирає?", "Чи прийменник лексично закріплений?", "Чи змінюється модель у PT-BR/PT-PT?"]
+    learnerQuestions: ["Який компонент є головним (head)?", "Який додаток (complement) він вибирає?", "Чи прийменник лексично закріплений?", "Чи змінюється модель у PT-BR/PT-PT?",
+      "Чи є прийменник частиною лексичної валентності, а не вільним обставинним модифікатором?",
+      "Чи змінюється рамка разом зі значенням дієслова?",
+    ]
   },
   "argument-vs-adjunct": {
     formulas: [{ pattern: "predicate-selected complement ≠ optional adjunct", note: "Аргумент є частиною валентності предиката; adjunct додає обставинну інформацію без такого самого лексичного вибору." }],
