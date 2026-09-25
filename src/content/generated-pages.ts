@@ -337,7 +337,7 @@ Object.assign(SPECIAL, {
   "verb-com-government": SPECIAL["verb-government-com"],
   "verb-por-government": SPECIAL["verb-government-por"],
   "verb-government-alternations": SPECIAL["verb-government-alternations"],
-);
+});
 
 
 Object.assign(SPECIAL, {
