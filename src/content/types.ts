@@ -1,6 +1,14 @@
-export type Variety = "universal" | "BR" | "PT" | "AFR" | "AO" | "MZ" | "CV" | "other";
+export type ContentStatus =
+  | "planned"
+  | "catalogued"
+  | "draft"
+  | "review"
+  | "release-ready"
+  | "deprecated";
 
-export type Register = "neutral" | "colloquial" | "formal" | "literary" | "rare";
+export type Variety = "universal" | "BR" | "PT" | "AFR" | "AO" | "MZ" | "CV" | "GW" | "STP" | "TL" | "other";
+
+export type Register = "neutral" | "colloquial" | "formal" | "literary" | "rare" | "spoken" | "written";
 
 export type ArticleType =
   | "concept"
@@ -195,7 +203,22 @@ export type GrammarArticle = {
   reviewStatus: ReviewStatus;
 };
 
-export type GrammarPage = {
+export type Source = {
+  label: string;
+  url?: string;
+  note?: string;
+};
+
+export type TopicRelations = {
+  prerequisites?: string[];
+  related?: string[];
+  contrast?: string[];
+  next?: string[];
+  variant?: string[];
+  partOf?: string;
+};
+
+export type GrammarPage = TopicRelations & {
   id: string;
   slug: string;
   category: string;
@@ -204,22 +227,35 @@ export type GrammarPage = {
   titleEn: string;
   summary: string;
   aliases: string[];
-  related: string[];
+
+  status?: ContentStatus;
+  origin?: "handwritten" | "generated";
+  depth?: "high" | "medium" | "short";
+  register?: Register;
+  variety?: Variety[];
+  ukrainianContrast?: "high" | "medium" | "low" | "none";
+
   intro: string;
   formulas?: Formula[];
   formation?: string;
   uses?: UseCase[];
   examples?: Example[];
+  definition?: string;
+  nonUses?: UseCase[];
   markers?: string[];
   exceptions?: string;
   mistakes?: Mistake[];
   ukrainian?: string;
+  comparisonUk?: string;
   regional?: string;
   brPt?: string;
   tables?: TableData[];
+
+  sources?: Source[];
+  reviewedAt?: string;
 };
 
-export type TopicMeta = {
+export type TopicMeta = TopicRelations & {
   id: string;
   slug: string;
   category: string;
@@ -228,8 +264,12 @@ export type TopicMeta = {
   titleEn: string;
   summary: string;
   aliases: string[];
-  related: string[];
   depth: "high" | "medium" | "short";
+  status?: ContentStatus;
+  origin?: "handwritten" | "generated";
+  ukrainianContrast?: "high" | "medium" | "low" | "none";
+  register?: Register;
+  variety?: Variety[];
 };
 
 export type CategoryDef = {

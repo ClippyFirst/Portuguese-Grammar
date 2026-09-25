@@ -1,6 +1,6 @@
 import type { GrammarPage } from "./types";
 import { TOPIC_BY_PATH, type TopicMeta } from "./catalog";
-import { generatedPageFor } from "./generated-pages";
+import { enrichPage, generatedPageFor } from "./generated-pages";
 
 const loaders = import.meta.glob("./pages/*.ts") as Record<
   string,
@@ -64,15 +64,16 @@ export async function loadCategoryPages(category: string): Promise<GrammarPage[]
       return modulePages;
     })
     .filter((p) => p.category === category);
-  for (const page of pages) {
+  const enrichedPages = pages.map(enrichPage);
+  for (const page of enrichedPages) {
     assertGrammarPageShape(page, "content loader");
   }
-  cache.set(category, pages);
-  for (const p of pages) {
+  cache.set(category, enrichedPages);
+  for (const p of enrichedPages) {
     byPath.set(`${p.category}/${p.slug}`, p);
     byPath.set(p.id, p);
   }
-  return pages;
+  return enrichedPages;
 }
 
 export async function loadPage(

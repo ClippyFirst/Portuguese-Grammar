@@ -62,6 +62,13 @@ const ROWS: Row[] = [
   ["government-overview", "valency", "government", "Керування: дієслово + прийменник", "Regência verbal", "Verb government", "Коли прийменник є частиною лексичної моделі дієслова.", "керування,regência verbal,government,verb-preposition", "valency-overview,verb-preposition,prep-por,prep-para", "high"],
   ["argument-vs-adjunct", "valency", "argument-vs-adjunct", "Аргумент чи обставина?", "Complemento ou modificador?", "Argument vs adjunct", "Як відрізняти вибрані предикатом компоненти від вільних модифікаторів.", "аргумент,обставина,adjunct,complemento", "valency-overview,government-overview,word-order", "high"],
 
+  ["verb-valency-frames", "valency", "verb-valency-frames", "Валентні рамки дієслів", "Quadros de valência verbal", "Verb valency frames", "Аргументи дієслова, типи complement і повні моделі керування.", "валентні рамки,verb valency,valência verbal,argument structure", "valency-overview,government-overview,verb-complement-types", "high"],
+  ["verb-valency-arguments", "valency", "verb-valency-arguments", "Аргументи та семантичні ролі дієслова", "Argumentos e papéis semânticos", "Verb arguments and semantic roles", "Як відрізняти аргументи предиката, їхні ролі та синтаксичну реалізацію.", "аргументи,семантичні ролі,argumentos,papéis semânticos,valency", "verb-valency-frames,argument-vs-adjunct,verb-complement-types", "high"],
+  ["verb-ditransitive-frames", "valency", "verb-ditransitive-frames", "Дитранзитивні рамки", "Quadros ditransitivos", "Ditransitive frames", "Моделі передавання, повідомлення, адресата та інших двохаргументних конструкцій.", "дитранзитивні,ditransitive,адресат,argument structure", "verb-valency-frames,indirect-object,verb-clitic-frames", "high"],
+  ["verb-complement-types", "valency", "verb-complement-types", "Типи дієслівних доповнень", "Tipos de complementos verbais", "Verb complement types", "NP, PP, підрядна частина та інфінітив у валентних моделях.", "типи доповнень,complement types,NP,PP,infinitivo", "verb-valency-frames,complement-clauses,verb-government-infinitive", "high"],
+  ["verb-clitic-frames", "valency", "verb-clitic-frames", "Валентність і клітики", "Valência e clíticos", "Valency and clitics", "Зв'язок аргументної ролі, форми клітики та її позиції.", "клітики,clitic,valency,lhe,o/a", "verb-valency-frames,lhe-vs-o,clitic-placement", "high"],
+  ["verb-meaning-alternations", "valency", "verb-meaning-alternations", "Зміна рамки зі зміною значення", "Alternâncias de regência e significado", "Meaning and valency alternations", "Полісемія, різні аргументні структури та прийменникові рамки.", "зміна керування,полісемія,alternâncias,meaning frames", "verb-valency-frames,verb-preposition,false-friends", "high"],
+
 
   ["sentence-basics", "fundamentals", "sentence-basics", "Базова структура речення", "Estrutura da frase", "Basic sentence structure", "Підмет, присудок, додатки й базовий порядок SVO.", "речення,SVO,підмет,присудок,frase", "null-subject,word-order,parts-of-speech", "medium"],
   ["parts-of-speech", "fundamentals", "parts-of-speech", "Частини мови", "Classes de palavras", "Parts of speech", "Змінні й незмінні частини мови в португальській.", "частини мови,морфологія,classes de palavras", "sentence-basics,noun-gender,verb-system", "short"],
@@ -316,6 +323,19 @@ const ROWS: Row[] = [
   ["mozambique", "regional", "mozambique", "Португальська Мозамбіку", "Português de Moçambique", "Mozambican Portuguese", "Релевантні граматичні риси.", "мозамбік,MZ", "angola,pluricentric", "medium"],
   ["other-lusophone", "regional", "other-lusophone", "Інші лузофонні різновиди", "Outras variedades", "Other Lusophone varieties", "Кабо-Верде, Гвінея-Бісау, Сан-Томе, Тимор-Лешті.", "кабо-верде,тимор,гвінея", "pluricentric,angola", "short"],
   ["tu-voce-regional", "regional", "tu-voce-regional", "tu / você регіонально", "tu/você nas regiões", "Regional tu / você", "Бразилія не однорідна; північ Португалії.", "tu você регіони", "tu-voce,forms-of-address,pt-br-pt-pt", "high"],
+  ["clitic-clusters", "pronouns", "clitic-clusters", "Кластери клітик", "Clusters de clíticos", "Clitic clusters", "Поєднання двох займенникових клітик та їхній порядок.", "кластери клітик,clitic clusters,clusters de clíticos", "clitic-placement,lhe-vs-o", "high"],
+  ["clitic-climbing", "syntax", "clitic-climbing", "Підняття клітики", "Subida de clíticos", "Clitic climbing", "Позиція клітики в інфінітивних та складених конструкціях.", "підняття клітики,clitic climbing,subida de clíticos", "clitic-placement,personal-infinitive", "high"],
+  ["complement-clauses-advanced", "subordinate", "complement-advanced", "Складні додаткові підрядні", "Orações completivas avançadas", "Advanced complement clauses", "Indicativo, conjuntivo та інфінітив у доповнювальних конструкціях.", "додаткові підрядні,complement clauses,completivas", "complement-clauses,indicative-vs-subjunctive,infinitive-vs-subjunctive", "high"],
+  ["agreement-edge-cases", "agreement", "edge-cases", "Складні випадки дієслівного узгодження", "Casos complexos de concordância", "Agreement edge cases", "Колективні, кількісні та конструкції з foco/relative.", "складне узгодження,agreement edge cases", "agreement-sv,agreement-special", "high"],
+  ["null-and-expletive-subjects", "syntax", "null-expletive", "Нульові та формальні підмети", "Sujeitos nulos e expletivos", "Null and expletive subjects", "Нульовий referential subject і безособові конструкції.", "нульовий підмет,expletive,null subject", "null-subject,existential,impersonal-constructions", "high"],
+  ["subject-object-order", "syntax", "subject-object-order", "Порядок підмета й додатка", "Ordem de sujeito e objeto", "Subject-object order", "Базовий SVO та марковані порядки.", "SVO,порядок підмета й додатка", "word-order,topicalization,information-structure", "high"],
+  ["subordination-and-coordination", "syntax", "subordination-coordination", "Сурядність і підрядність", "Coordenação e subordinação", "Coordination and subordination", "Синтаксична залежність, сполучники та структура складного речення.", "сурядність,підрядність,coordenação,subordinação", "coordination,complement-clauses,subordinate-clauses", "high"],
+  ["discourse-reference", "discourse", "reference", "Референція в дискурсі", "Referência no discurso", "Discourse reference", "Артиклі, займенники, повтор і анафора.", "дискурсивна референція,анафора,reference", "discourse-overview,cohesion-reference,articles-definite", "high"],
+  ["accentuation-advanced", "spelling", "accentuation-advanced", "Поглиблена акцентуація", "Acentuação avançada", "Advanced accentuation", "Наголос, hiato, дифтонги та омографічні контрасти.", "акцентуація,hiato,наголос", "stress,diacritics,homograph-accents", "high"],
+  ["hyphenation", "spelling", "hyphenation", "Дефіс", "Hífen", "Hyphenation", "Дефіс у складних словах, префіксах і clitic-конструкціях.", "дефіс,hífen,hyphenation", "spelling-br-pt,acordo-ortografico,clitic-placement", "medium"],
+  ["capitalization-and-names", "spelling", "capitalization-names", "Капіталізація назв", "Maiúsculas e nomes", "Capitalization and names", "Власні назви, посади, свята та географічні назви.", "великі літери,назви,capitalization", "capitalization,punctuation,articles-proper-names", "medium"],
+  ["discourse-and-pragmatics", "pragmatics", "discourse-pragmatics", "Дискурс і прагматичне значення", "Discurso e pragmática", "Discourse and pragmatics", "Непрямі прохання, соціальна дистанція та контекст.", "дискурс,прагматика,непряме прохання", "pragmatics-overview,speech-acts,register-and-directness", "high"],
+
   // Pages that previously existed in page modules but were absent from the navigation catalog.
 
 
@@ -388,3 +408,5 @@ export const COMPARISON_IDS = [
   "a-vs-crase",
   "pt-br-pt-pt",
 ] as const;
+
+
