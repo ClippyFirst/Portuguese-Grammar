@@ -339,6 +339,12 @@ const ROWS: Row[] = [
   // Pages that previously existed in page modules but were absent from the navigation catalog.
 
 
+
+  ["interjections", "fundamentals", "interjections", "Вигуки", "Interjeições", "Interjections", "Реакція, заклик, привітання та інші вигукові функції.", "вигуки,interjeições,interjections", "parts-of-speech,speech-acts,punctuation", "medium"],
+  ["direct-speech", "discourse", "direct-speech", "Пряма мова", "Discurso direto", "Direct speech", "Передавання репліки мовця з її власним оформленням.", "пряма мова,discurso direto,direct speech", "reported-speech,indirect-speech,punctuation", "medium"],
+  ["indirect-speech", "discourse", "indirect-speech", "Непряма мова", "Discurso indireto", "Indirect speech", "Передавання змісту висловлення через підрядну або іншу вбудовану конструкцію.", "непряма мова,discurso indireto,indirect speech", "direct-speech,reported-speech,sequence-of-tenses", "medium"],
+  ["exclamatives", "syntax", "exclamatives", "Окличні конструкції", "Construções exclamativas", "Exclamative constructions", "Граматичні способи вираження високої інтенсивності, оцінки або емоційної реакції.", "окличні речення,exclamatives,exclamativas", "speech-acts,information-structure,punctuation", "medium"],
+
 ];
 
 function parseAliases(s: string): string[] {
