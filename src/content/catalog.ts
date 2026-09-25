@@ -345,6 +345,10 @@ const ROWS: Row[] = [
   ["indirect-speech", "discourse", "indirect-speech", "Непряма мова", "Discurso indireto", "Indirect speech", "Передавання змісту висловлення через підрядну або іншу вбудовану конструкцію.", "непряма мова,discurso indireto,indirect speech", "direct-speech,reported-speech,sequence-of-tenses", "medium"],
   ["exclamatives", "syntax", "exclamatives", "Окличні конструкції", "Construções exclamativas", "Exclamative constructions", "Граматичні способи вираження високої інтенсивності, оцінки або емоційної реакції.", "окличні речення,exclamatives,exclamativas", "speech-acts,information-structure,punctuation", "medium"],
 
+
+  ["verb-government-infinitive", "valency", "verb-government-infinitive", "Керування дієслів з інфінітивом", "Regência verbal com infinitivo", "Verb government with infinitive", "Вибір моделі інфінітивного доповнення.", "verb infinitive government,regência,infinitivo", "government-overview,verb-valency-frames,personal-infinitive", "high"],
+  ["verb-government-alternations", "valency", "verb-government-alternations", "Альтернації дієслівного керування", "Alternâncias de regência verbal", "Verb government alternations", "Різні рамки однієї лексеми.", "verb government alternations,alternâncias,regência", "verb-valency-frames,government-overview,verb-meaning-alternations", "high"],
+
 ];
 
 function parseAliases(s: string): string[] {
