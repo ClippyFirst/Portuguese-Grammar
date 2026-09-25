@@ -166,4 +166,145 @@ export const pages: GrammarPage[] = [
     ],
     regional: "PT-PT і PT-BR мають різні частотні переваги. Не перетворюйте їх на взаємовиключні правила без контексту.",
   })
+
+  page({
+    id: "article-omission",
+    slug: "omission",
+    category: "articles",
+    titleUk: "Опущення артикля: коли воно граматично мотивоване",
+    titlePt: "Omissão do artigo",
+    titleEn: "Article omission",
+    summary: "Чим системне опущення артикля відрізняється від випадкового «пропуску».",
+    aliases: ["опущення артикля", "article omission", "omissão do artigo", "без артикля"],
+    related: ["zero-article", "articles-definite", "articles-indefinite", "contractions-overview"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Опущення артикля не завжди означає нульовий артикль і не завжди є помилкою. У португальській є конструкції, де іменна група закономірно з'являється без детермінатора, а є випадки, де артикль очікується. Для україномовного студента важливо не переносити українське правило «іменник може стояти сам» на всі контексти.",
+    definition: "Опущення артикля — поверхневе явище; граматично треба розрізняти нульову детермінацію, еліптичну структуру та випадки, де артикль не реалізований через властивості конструкції.",
+    uses: [
+      { title: "Нуль у сталих моделях", body: "У деяких предикативних та прийменникових моделях голий іменник є частиною звичної конструкції.", examples: [ex("Estou com fome.", "Я голодний/голодна."), ex("Vou a casa.", "Я йду додому.")] },
+      { title: "Власна назва без артикля", body: "Частина власних назв, зокрема багато міст і деякі країни, функціонує без артикля.", examples: [ex("Moro em Lisboa.", "Я живу в Лісабоні."), ex("Vivo em Portugal.", "Я живу в Португалії.")] },
+      { title: "Не плутати з помилковим пропуском", body: "Коли референт уже ідентифікований і конструкція вимагає детермінатора, українська звичка до голого іменника може привести до ненормативної форми.", examples: [ex("Vi o livro ontem.", "Я бачив/бачила книжку вчора.")] }
+    ],
+    examples: [ex("Gosto de café.", "Я люблю каву."), ex("Gosto do café que compraste.", "Я люблю каву, яку ти купив/купила.")],
+    mistakes: [mistake("опускати артикль щоразу, коли українською іменник стоїть без нього", "спочатку визначати конструкцію та тип референції", "Українська не має тієї самої системи детермінації, тому буквальний перенос є ненадійним.", "predicted-l1-transfer", "high")],
+    ukrainian: "В українській нульова детермінація є звичайною для дуже широкого кола іменних груп. У португальській відсутність артикля треба інтерпретувати в межах конкретної конструкції.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
+      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
+    ],
+    regional: "Конкретні моделі нульової детермінації можуть мати варіантність; не перетворюйте один приклад на універсальне правило."
+  }),
+  page({
+    id: "articles-professions-roles",
+    slug: "professions-roles",
+    category: "articles",
+    titleUk: "Артикль із професіями та ролями",
+    titlePt: "Artigo com profissões e papéis",
+    titleEn: "Articles with professions and roles",
+    summary: "Чому професія після ser часто має нуль, а конкретна роль — артикль.",
+    aliases: ["професії та артикль", "profissões", "roles", "ser médico", "артикль із професією"],
+    related: ["zero-article", "articles-definite", "articles-indefinite", "articles-proper-names"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Після ser професія, національність або роль часто подається без артикля, коли йдеться про класифікацію особи: Ele é médico. Якщо ж мовець ідентифікує конкретного носія ролі або додає обмежувальний модифікатор, означений чи неозначений артикль може з'явитися. Отже, правило не «професії завжди без артикля».",
+    definition: "Артикль у назвах професій і ролей залежить від того, чи іменна група класифікує особу, чи референційно ідентифікує конкретного представника ролі.",
+    uses: [
+      { title: "Класифікація після ser", body: "Нульова детермінація типова, коли професія називає статус або клас особи.", examples: [ex("A Ana é médica.", "Ана — лікарка."), ex("O João é professor.", "Жуан — викладач.", { variety: "PT" })] },
+      { title: "Конкретний носій ролі", body: "Означений артикль з'являється, коли йдеться про конкретну особу, яку слухач може ідентифікувати за роллю.", examples: [ex("Ele é o médico que nos atendeu.", "Він той лікар, який нас приймав.")] },
+      { title: "Неозначений представник", body: "Um/uma може представляти одного представника класу або вводити новий референт.", examples: [ex("Ela é uma médica muito experiente.", "Вона дуже досвідчена лікарка.")] }
+    ],
+    examples: [ex("Sou engenheiro.", "Я інженер/інженерка."), ex("Sou o engenheiro responsável pelo projeto.", "Я інженер, відповідальний за проєкт.")],
+    mistakes: [mistake("ставити o/a перед кожною професією після ser", "спершу визначати, чи це класифікація, чи ідентифікація референта", "Українська не змушує виражати цю відмінність артиклем.", "predicted-l1-transfer", "high")],
+    ukrainian: "Українська передає класифікацію і референційну ідентифікацію переважно без артикля. Тому португальський контраст треба вчити через функцію всієї іменної групи.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
+      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
+    ],
+    regional: "Точні обмеження залежать від предиката та типу іменної групи; приклади з професіями не слід поширювати на всі конструкції."
+  }),
+  page({
+    id: "articles-abstract-nouns",
+    slug: "abstract-nouns",
+    category: "articles",
+    titleUk: "Артикль з абстрактними іменниками",
+    titlePt: "Artigo com nomes abstratos",
+    titleEn: "Articles with abstract nouns",
+    summary: "Як відрізняти абстрактне поняття як тему від конкретного випадку або вияву.",
+    aliases: ["абстрактні іменники", "abstract nouns", "nomes abstratos", "артикль з абстракціями"],
+    related: ["zero-article", "articles-definite", "generic-reference-articles", "specificity"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Абстрактність сама по собі не визначає артикль. Такі іменники, як medo, amor, liberdade або paciência, можуть стояти без артикля в одних конструкціях і з означеним чи неозначеним — в інших. Вирішальними є референція, конструкція, кількісна інтерпретація та контекст.",
+    definition: "Вибір детермінатора з абстрактним іменником залежить не від ознаки «абстрактний» як такої, а від того, як мовець структурує референт іменної групи.",
+    uses: [
+      { title: "Стан або властивість у сталому предикаті", body: "Деякі абстрактні іменники вживаються без артикля в усталених моделях.", examples: [ex("Tenho medo.", "Мені страшно / Я боюся."), ex("Ele tem paciência.", "Він має терпіння.")] },
+      { title: "Конкретизоване поняття", body: "Означений артикль може виділяти певний стан, поняття або його вияв.", examples: [ex("O medo desapareceu.", "Страх зник.")] },
+      { title: "Один вияв або різновид", body: "Неозначений артикль може вводити конкретний прояв абстрактної якості.", examples: [ex("Foi uma surpresa.", "Це було несподіванкою.")] }
+    ],
+    examples: [ex("Gosto de liberdade.", "Я люблю свободу."), ex("A liberdade de expressão é importante.", "Свобода слова важлива.")],
+    mistakes: [mistake("вважати, що абстрактні іменники завжди без артикля", "аналізувати конструкцію та референцію", "Абстрактність не є достатньою умовою для вибору нульової форми.", "predicted-l1-transfer", "high")],
+    ukrainian: "Українська так само не вимагає окремого детермінатора для абстрактних іменників, тому форма португальської може здаватися надлишковою. Її треба пов'язувати з референційною структурою.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
+      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
+    ],
+    regional: "Вибір артикля залежить передусім від конструкції та інтерпретації, а не від різновиду португальської."
+  }),
+  page({
+    id: "articles-mass-nouns",
+    slug: "mass-nouns",
+    category: "articles",
+    titleUk: "Артикль із речовинними та масовими іменниками",
+    titlePt: "Artigo com nomes massivos",
+    titleEn: "Articles with mass nouns",
+    summary: "Café, água, vinho та інші масові іменники: речовина, конкретна порція чи певна кількість.",
+    aliases: ["масові іменники", "mass nouns", "nomes massivos", "речовинні іменники"],
+    related: ["zero-article", "articles-definite", "articles-indefinite", "quantifiers-overview"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Масовий іменник називає речовину або масу без обов'язкового підрахунку окремих одиниць. Але це не означає «без артикля». У португальській café, o café та um café можуть мати різні референційні інтерпретації залежно від контексту: речовина, конкретна кава або одна порція/один напій.",
+    definition: "Вибір детермінатора з масовим іменником залежить від того, чи йдеться про речовину загалом, конкретну масу/референт або порцію чи одиницю, що контекстуально виділена.",
+    uses: [
+      { title: "Речовина як клас", body: "Нульова форма може позначати речовину або загальний об'єкт споживання в певних конструкціях.", examples: [ex("Bebo café todos os dias.", "Я п'ю каву щодня.")] },
+      { title: "Конкретна речовина", body: "Означений артикль виділяє певну речовину або масу, ідентифіковану контекстом.", examples: [ex("O café está frio.", "Кава холодна.")] },
+      { title: "Порція або одиниця", body: "Um/uma може переосмислювати масовий іменник як порцію чи одиницю.", examples: [ex("Quero um café.", "Я хочу одну каву / одну порцію кави.")] }
+    ],
+    examples: [ex("Gosto de vinho.", "Я люблю вино."), ex("O vinho que comprámos é caro.", "Вино, яке ми купили, дороге.")],
+    mistakes: [mistake("вважати, що масові іменники завжди без артикля", "визначати референцію: речовина, конкретна маса чи порція", "Категорія масовості не скасовує систему детермінації.", "predicted-l1-transfer", "high")],
+    ukrainian: "Українська так само часто залишає назви речовин без артикля. Португальська може додатково кодувати конкретизацію або порційне читання через детермінатор.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
+      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
+    ],
+    regional: "Порційні та лексикалізовані читання можуть відрізнятися за словом і контекстом; не узагальнюйте один лексемний шаблон."
+  }),
+  page({
+    id: "determiner-stacking",
+    slug: "stacking",
+    category: "determiners",
+    titleUk: "Поєднання та несумісність детермінативів",
+    titlePt: "Combinação e incompatibilidade de determinantes",
+    titleEn: "Determiner stacking and incompatibility",
+    summary: "Чому не всі артиклі, присвійні, вказівні та квантори можна поставити разом.",
+    aliases: ["детермінативи", "stacking", "incompatibility", "поєднання детермінативів"],
+    related: ["determiners-overview", "determiners-agreement", "quantifiers-overview", "articles-definite", "articles-possessives"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Детермінативи утворюють систему, але не довільний список слів перед іменником. Деякі елементи можуть поєднуватися, деякі конкурують за одну позицію, а деякі комбінації мають спеціальні значення або обмеження. Для студента важливо вчити не «скільки слів можна поставити перед іменником», а структуру конкретної іменної групи.",
+    definition: "Детермінативна система має власні правила сумісності: артикль, вказівний, присвійний, квантор або неозначений детермінатив можуть займати різні структурні позиції або конкурувати в одній.",
+    uses: [
+      { title: "Артикль + присвійний", body: "У багатьох стандартних моделях означений артикль і присвійний детермінатив поєднуються.", examples: [ex("o meu livro", "моя книжка"), ex("a nossa casa", "наш будинок")] },
+      { title: "Вказівний + іменна група", body: "Вказівні вже виконують детермінативну функцію, тому не можна механічно додавати ще один конкуруючий детермінатор.", examples: [ex("este livro", "ця книжка"), ex("aquele problema", "та проблема")] },
+      { title: "Квантор як окрема модель", body: "todo, cada, algum, nenhum та інші елементи мають власну сумісність; вона залежить від лексеми, числа та структури.", examples: [ex("todos os livros", "усі книжки"), ex("cada livro", "кожна книжка"), ex("alguns livros", "деякі книжки")] }
+    ],
+    examples: [ex("O meu livro está aqui.", "Моя книжка тут."), ex("Estes livros são novos.", "Ці книжки нові."), ex("Todos os alunos chegaram.", "Усі студенти прийшли.")],
+    mistakes: [mistake("додавати артикль перед кожним детермінативом або прибирати його перед усіма присвійними", "визначати тип детермінатива та його структурну позицію", "Сумісність не виводиться з українського порядку слів.", "predicted-l1-transfer", "high")],
+    ukrainian: "Українська також має обмеження в поєднанні вказівних, присвійних і кількісних слів, але не має португальської артиклевої системи. Порівнювати треба структуру, а не окремі переклади.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" },
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/" },
+      { label: "Camões — Referencial Camões PLE", url: "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple" }
+    ],
+    regional: "Сумісність окремих детермінативів може залежати від конструкції та різновиду; конкретні варіанти варто фіксувати лише з джерелом."
+  }),
 ];
