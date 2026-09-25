@@ -74,11 +74,11 @@ export type Source = {
 };
 
 export type TopicRelations = {
-  prerequisites: string[];
-  related: string[];
-  contrast: string[];
-  next: string[];
-  variant: string[];
+  prerequisites?: string[];
+  related?: string[];
+  contrast?: string[];
+  next?: string[];
+  variant?: string[];
   partOf?: string;
 };
 
@@ -93,7 +93,8 @@ export type GrammarPage = TopicRelations & {
   summary: string;
   aliases: string[];
 
-  status: ContentStatus;
+  status?: ContentStatus;
+  origin?: "handwritten" | "generated";
   depth: "high" | "medium" | "short";
   register?: Register;
   variety?: Variety[];
@@ -129,7 +130,8 @@ export type TopicMeta = TopicRelations & {
   summary: string;
   aliases: string[];
   depth: "high" | "medium" | "short";
-  status: ContentStatus;
+  status?: ContentStatus;
+  origin?: "handwritten" | "generated";
   ukrainianContrast: "high" | "medium" | "low" | "none";
   register?: Register;
   variety?: Variety[];
