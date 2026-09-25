@@ -19,7 +19,9 @@ UI не повинен знати граматичну логіку. Конте�
 
 ## 2. Канонічний потік
 
-Canonical grammar inventory → ontology/topic definition → catalog → article content → content QA → search/related graph → GrammarPage → presentation.
+Canonical grammar inventory (`docs/CANONICAL-GRAMMAR-INVENTORY.md`) → ontology/topic definition → catalog → article content → content QA → search/related graph → GrammarPage → presentation.
+
+`docs/CANONICAL-GRAMMAR-INVENTORY.md` is the **coverage source of truth**. `src/content/catalog.ts` is the navigation/runtime catalog and must not silently redefine grammar scope.
 
 Основні принципи:
 
@@ -294,7 +296,15 @@ src/content/pages/regional
 - invented claims about typical Ukrainian errors;
 - identical template forced onto every article.
 
-## 18. Definition of Done
+## 18. Coverage closure
+
+The repository must distinguish **coverage ontology** from **page count**. The canonical inventory currently defines 742 coverage units across foundations, morphology, syntax, semantics, pragmatics, discourse, phonology/orthography, lexical grammar and variation. These are not 742 mandatory URLs: a unit may be an article, an explicit module, or a typed cross-link. Coverage is closed only when every unit has a documented disposition and no major phenomenon is covered accidentally.
+
+Before mass rewriting, the team must produce a machine-checkable mapping:
+
+`canonical unit → current topic ID(s) → disposition → article type → depth → prerequisites → related topics → evidence requirements → review status`.
+
+## 19. Definition of Done
 
 Article-level DoD визначено в docs/ARTICLE-REQUIREMENTS.md.
 
@@ -311,7 +321,7 @@ Architecture-level DoD:
 - migration strategy documented;
 - representative sample validated before mass migration.
 
-## 19. Порядок міграції
+## 20. Порядок міграції
 
 Не переписувати всі 260 topics одночасно.
 
@@ -327,6 +337,6 @@ Architecture-level DoD:
 8. removal of legacy format;
 9. domain-folder refactor, якщо він став виправданим.
 
-## 20. Архітектурний принцип одним реченням
+## 21. Архітектурний принцип одним реченням
 
 Граматика є структурованими даними; український контраст є педагогічним шаром; learner evidence і variation мають provenance; ontology зв'язує теми; UI лише відображає модель.
