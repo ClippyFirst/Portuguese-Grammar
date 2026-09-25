@@ -253,6 +253,7 @@ export type GrammarPage = TopicRelations & {
 
   sources?: Source[];
   reviewedAt?: string;
+  learnerQuestions?: string[];
 };
 
 export type TopicMeta = TopicRelations & {
