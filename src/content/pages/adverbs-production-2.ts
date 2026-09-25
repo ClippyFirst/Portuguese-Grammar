@@ -86,4 +86,99 @@ export const pages: GrammarPage[] = [
     regional: "Конкретна частотність форм і їхня позиція можуть залежати від регістру та різновиду. Такі відмінності слід підтверджувати корпусними або описовими джерелами.",
     sources: [{ label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: GULBENKIAN_II }, { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. III", url: GULBENKIAN_III }, { label: "Camões — Referencial Camões PLE", url: CAMOES_PLE }]
   })
-];
+,
+  page({
+    id: "adverb-scope", slug: "adverb-scope", category: "adverbs",
+    titleUk: "Область дії прислівника", titlePt: "Escopo dos advérbios", titleEn: "Adverb scope",
+    summary: "Як визначати, до чого саме належить прислівник.",
+    aliases: ["область дії прислівника", "adverb scope", "escopo dos advérbios"],
+    related: ["adverb-position", "scope-and-reference", "semantic-ambiguity", "adverbs-degree"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Одна з головних причин неоднозначності прислівників — їхня область дії. Só, também, provavelmente та майже можуть стосуватися різних компонентів висловлення. Тому недостатньо перекласти прислівник окремим словом: треба встановити, який компонент він модифікує.",
+    definition: "Область дії прислівника — компонент або рівень висловлення, на який поширюється його семантичний чи прагматичний вплив.",
+    uses: [
+      { title: "Обмеження компонента", body: "Só може обмежувати конкретну групу, а не все речення.", examples: [ex("Só a Ana veio.", "Прийшла лише Ана.")] },
+      { title: "Додавання", body: "Também може приєднувати новий факт до вже відомого контексту.", examples: [ex("A Ana também veio.", "Ана теж прийшла.")] },
+      { title: "Широка область дії", body: "Епістемічний прислівник може стосуватися всієї пропозиції.", examples: [ex("Provavelmente, a Ana vem amanhã.", "Імовірно, Ана прийде завтра.")] }
+    ],
+    examples: [ex("Só a Ana veio.", "Прийшла лише Ана.", { purpose: "comprehension" }), ex("A Ana também veio.", "Ана теж прийшла.", { purpose: "production" })],
+    mistakes: [mistake("не визначати, який компонент прислівник обмежує або коментує", "перефразувати речення українською так, щоб було видно область дії", "Український переклад може приховувати структурний зв'язок.", "predicted-l1-transfer", "high")],
+    ukrainian: "Українська також має прислівники з різною областю дії. Корисно порівнювати не слова, а структуру.",
+    sources: [{ label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: GULBENKIAN_II }, { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. III", url: GULBENKIAN_III }]
+  }),
+  page({
+    id: "sentence-adverbs", slug: "sentence-adverbs", category: "adverbs",
+    titleUk: "Прислівники всього речення", titlePt: "Advérbios de frase", titleEn: "Sentence adverbs",
+    summary: "Прислівники, що коментують пропозицію або ставлення мовця до неї.",
+    aliases: ["прислівники речення", "sentence adverbs", "advérbios de frase"],
+    related: ["adverbs-overview", "epistemic-adverbs", "discourse-markers", "adverb-position"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Деякі прислівники не описують спосіб дії, а коментують усе висловлення: оцінюють ситуацію або ступінь упевненості мовця.",
+    definition: "Прислівник речення — елемент, чия область дії охоплює пропозицію або ставлення мовця до неї.",
+    uses: [
+      { title: "Епістемічна оцінка", body: "Прислівник виражає оцінку ймовірності істинності висловлення.", examples: [ex("Provavelmente, ele já chegou.", "Імовірно, він уже прийшов.")] },
+      { title: "Оцінка ситуації", body: "Оціночний прислівник характеризує ситуацію з погляду мовця.", examples: [ex("Infelizmente, não podemos ficar.", "На жаль, ми не можемо залишитися.")] }
+    ],
+    examples: [ex("Provavelmente, ele já chegou.", "Імовірно, він уже прийшов.", { purpose: "comprehension" }), ex("Infelizmente, não podemos ficar.", "На жаль, ми не можемо залишитися.", { purpose: "production" })],
+    mistakes: [mistake("вважати всі прислівники обставинами способу", "визначати, чи прислівник описує подію, чи коментує всю пропозицію", "Українська теж має слова широкої області дії.", "predicted-l1-transfer", "medium")],
+    ukrainian: "Українська має подібну відмінність між обставинними прислівниками та словами, що коментують усе повідомлення.",
+    sources: [{ label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: GULBENKIAN_II }, { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. III", url: GULBENKIAN_III }, { label: "Camões — Referencial Camões PLE", url: CAMOES_PLE }]
+  }),
+  page({
+    id: "epistemic-adverbs", slug: "epistemic-adverbs", category: "adverbs",
+    titleUk: "Епістемічні прислівники", titlePt: "Advérbios epistémicos", titleEn: "Epistemic adverbs",
+    summary: "Як прислівники виражають упевненість, припущення та оцінку істинності.",
+    aliases: ["епістемічні прислівники", "epistemic adverbs", "advérbios epistémicos"],
+    related: ["sentence-adverbs", "modality-overview", "adverb-scope", "modal-particles"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Епістемічні прислівники виражають ставлення мовця до істинності висловлення. Provavelmente, talvez і certamente можуть мати різний ступінь упевненості.",
+    definition: "Епістемічний прислівник — прислівниковий засіб, що сигналізує оцінку ймовірності або впевненості щодо пропозиції.",
+    uses: [
+      { title: "Упевненість", body: "Certamente подає висловлення як дуже ймовірне або певне.", examples: [ex("Certamente, ele sabe a resposta.", "Безперечно, він знає відповідь.")] },
+      { title: "Імовірність", body: "Provavelmente послаблює категоричність твердження.", examples: [ex("Provavelmente, ela chega amanhã.", "Імовірно, вона приїде завтра.")] },
+      { title: "Можливість", body: "Talvez вводить припущення й може взаємодіяти з вибором способу.", examples: [ex("Talvez ele venha amanhã.", "Можливо, він прийде завтра.")] }
+    ],
+    examples: [ex("Certamente, ele sabe a resposta.", "Безперечно, він знає відповідь.", { purpose: "comprehension" }), ex("Talvez ele venha amanhã.", "Можливо, він прийде завтра.", { purpose: "production" })],
+    mistakes: [mistake("вважати епістемічний прислівник простим синонімом модального дієслова", "визначати, яким граматичним засобом виражена модальність", "Українське «можливо» може відповідати різним португальським конструкціям.", "predicted-l1-transfer", "medium")],
+    ukrainian: "Українська має функціональні відповідники «можливо», «ймовірно», «безперечно». Португальський вибір залежить від конструкції та комунікативної мети.",
+    sources: [{ label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: GULBENKIAN_II }, { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. III", url: GULBENKIAN_III }, { label: "Camões — Referencial Camões PLE", url: CAMOES_PLE }]
+  }),
+  page({
+    id: "connective-adverbs", slug: "connective-adverbs", category: "adverbs",
+    titleUk: "Зв'язкові прислівники", titlePt: "Advérbios conectivos", titleEn: "Connective adverbs",
+    summary: "Як прислівникові елементи організовують зв'язок між висловленнями.",
+    aliases: ["зв'язкові прислівники", "connective adverbs", "advérbios conectivos"],
+    related: ["adverbs-overview", "discourse-markers", "coordinating", "subordinating"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Деякі прислівникові елементи показують додавання, протиставлення, наслідок або висновок. Їх не слід автоматично називати сполучниками.",
+    definition: "Зв'язковий прислівник — елемент, який організовує логічний чи дискурсивний зв'язок між частинами тексту.",
+    uses: [
+      { title: "Наслідок", body: "Portanto може сигналізувати висновок.", examples: [ex("Estava cansado; portanto, foi para casa.", "Він був утомлений; тому пішов додому.")] },
+      { title: "Протиставлення", body: "Contudo може вводити контраст.", examples: [ex("Queria ir; contudo, fiquei em casa.", "Я хотів/хотіла піти, проте залишився/залишилася вдома.")] },
+      { title: "Додавання", body: "Além disso додає новий факт або аргумент.", examples: [ex("É barato e, além disso, funciona bem.", "Це дешево й, крім того, добре працює.")] }
+    ],
+    examples: [ex("Estava cansado; portanto, foi para casa.", "Він був утомлений; тому пішов додому.", { purpose: "comprehension" }), ex("É barato e, além disso, funciona bem.", "Це дешево й, крім того, добре працює.", { purpose: "production" })],
+    mistakes: [mistake("називати всі зв'язкові слова сполучниками", "перевіряти синтаксичний статус елемента", "Українські відповідники теж можуть мати різний синтаксичний статус.", "predicted-l1-transfer", "high")],
+    ukrainian: "Українська також має зв'язкові прислівники та сполуки. Порівнюйте їх за функцією й синтаксичним статусом.",
+    sources: [{ label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: GULBENKIAN_II }, { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. III", url: GULBENKIAN_III }, { label: "Camões — Referencial Camões PLE", url: CAMOES_PLE }]
+  }),
+  page({
+    id: "adverbs-mente", slug: "adverbs-mente", category: "adverbs",
+    titleUk: "Прислівники на -mente", titlePt: "Advérbios em -mente", titleEn: "Adverbs ending in -mente",
+    summary: "Як утворюються та функціонують прислівники на -mente.",
+    aliases: ["прислівники на -mente", "adverbs in -mente", "advérbios em -mente"],
+    related: ["mente-formation", "adverb-position", "sentence-adverbs", "adjective-agreement"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Суфікс -mente утворює багато прислівників від прикметників: claro → claramente, rápido → rapidamente. Модель не варто зводити до механічного додавання суфікса без урахування форми основи, орфографії та функції.",
+    definition: "Прислівник на -mente — прислівникова форма, пов'язана з прикметниковою основою та компонентом mente.",
+    uses: [
+      { title: "Утворення", body: "У багатьох випадках до жіночої форми прикметника додається -mente.", examples: [ex("clara → claramente", "чітка → чітко")] },
+      { title: "Незмінність", body: "Утворений прислівник не узгоджується з підметом чи іменником.", examples: [ex("Eles falaram claramente.", "Вони говорили чітко.")] },
+      { title: "Функція", body: "Форма на -mente може бути прислівником способу або мати ширшу область дії.", examples: [ex("Felizmente, chegámos cedo.", "На щастя, ми прийшли рано.")] }
+    ],
+    examples: [ex("Ela explicou claramente o problema.", "Вона чітко пояснила проблему.", { purpose: "production" }), ex("Felizmente, chegámos cedo.", "На щастя, ми прийшли рано.", { purpose: "contrast" })],
+    mistakes: [mistake("вважати будь-яке слово на -mente механічним перекладом українського прислівника на -о", "визначати твірний прикметник, форму та функцію", "Українська має іншу словотвірну систему.", "predicted-l1-transfer", "medium")],
+    ukrainian: "Українська широко утворює прислівники від прикметників, тому загальна аналогія корисна. Португальську модель -mente треба засвоювати окремо.",
+    sources: [{ label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. I", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/" }, { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: GULBENKIAN_II }, { label: "Camões — Referencial Camões PLE", url: CAMOES_PLE }]
+  })
+]
