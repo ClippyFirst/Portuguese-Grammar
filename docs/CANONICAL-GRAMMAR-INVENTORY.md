@@ -900,146 +900,146 @@ A canonical topic is **closed** only when:
 
 ### AA. Semantics and interpretation
 
-615. lexical vs grammatical meaning
-616. tense meaning
-617. aspect
-618. lexical aspect
-619. event structure
-620. states
-621. activities
-622. accomplishments
-623. achievements
-624. habituality
-625. iteration
-626. inception
-627. continuation
-628. termination
-629. resultative meaning
-630. modality
-631. possibility
-632. necessity
-633. permission
-634. volition
-635. evidential/epistemic interpretation where grammatically relevant
-636. definiteness
-637. specificity
-638. genericity
-639. deixis
-640. anaphora
-641. cataphora
-642. quantification
-643. scope
-644. semantic ambiguity
-645. structural ambiguity
-646. lexical ambiguity
-647. semantic contrasts that affect grammar choice
+616. lexical vs grammatical meaning
+617. tense meaning
+618. aspect
+619. lexical aspect
+620. event structure
+621. states
+622. activities
+623. accomplishments
+624. achievements
+625. habituality
+626. iteration
+627. inception
+628. continuation
+629. termination
+630. resultative meaning
+631. modality
+632. possibility
+633. necessity
+634. permission
+635. volition
+636. evidential/epistemic interpretation where grammatically relevant
+637. definiteness
+638. specificity
+639. genericity
+640. deixis
+641. anaphora
+642. cataphora
+643. quantification
+644. scope
+645. semantic ambiguity
+646. structural ambiguity
+647. lexical ambiguity
+648. semantic contrasts that affect grammar choice
 
 ### AB. Pragmatics
 
-648. pragmatics overview
-649. speech acts
-650. requests
-651. commands
-652. advice
-653. offers
-654. invitations
-655. permission
-656. prohibition
-657. agreement and disagreement
-658. correction
-659. confirmation
-660. refusal
-661. politeness
-662. directness and indirectness
-663. hedging
-664. social distance
-665. forms of address
-666. pragmatic particles
-667. pragmatic uses of tense/mood
-668. pragmatic uses of negation
-669. pragmatic uses of diminutives
-670. register
-671. formality
-672. conversational implicature where relevant
-673. discourse-sensitive interpretation
+649. pragmatics overview
+650. speech acts
+651. requests
+652. commands
+653. advice
+654. offers
+655. invitations
+656. permission
+657. prohibition
+658. agreement and disagreement
+659. correction
+660. confirmation
+661. refusal
+662. politeness
+663. directness and indirectness
+664. hedging
+665. social distance
+666. forms of address
+667. pragmatic particles
+668. pragmatic uses of tense/mood
+669. pragmatic uses of negation
+670. pragmatic uses of diminutives
+671. register
+672. formality
+673. conversational implicature where relevant
+674. discourse-sensitive interpretation
 
 ### AC. Discourse and text
 
-674. discourse overview
-675. topic/comment
-676. theme/rheme
-677. focus
-678. given/new information
-679. contrastive focus
-680. anaphoric cohesion
-681. lexical cohesion
-682. textual reference
-683. ellipsis
-684. discourse markers
-685. paragraph-level cohesion
-686. sequencing
-687. narrative discourse
-688. description
-689. exposition
-690. argumentation
-691. academic/formal prose
-692. journalistic prose
-693. spoken discourse
-694. direct speech
-695. indirect speech
-696. reported speech
-697. sequence of tense in reported speech
-698. deictic shift in reported speech
-699. pronoun shift in reported speech
-700. paraphrase and grammatical reformulation
+675. discourse overview
+676. topic/comment
+677. theme/rheme
+678. focus
+679. given/new information
+680. contrastive focus
+681. anaphoric cohesion
+682. lexical cohesion
+683. textual reference
+684. ellipsis
+685. discourse markers
+686. paragraph-level cohesion
+687. sequencing
+688. narrative discourse
+689. description
+690. exposition
+691. argumentation
+692. academic/formal prose
+693. journalistic prose
+694. spoken discourse
+695. direct speech
+696. indirect speech
+697. reported speech
+698. sequence of tense in reported speech
+699. deictic shift in reported speech
+700. pronoun shift in reported speech
+701. paraphrase and grammatical reformulation
 
 ### AD. Lexical grammar
 
-701. collocations overview
-702. verb-noun collocations
-703. adjective-noun collocations
-704. verb-preposition collocations
-705. adjective-preposition collocations
-706. noun-preposition collocations
-707. lexicalised constructions
-708. fixed prepositional frames
-709. semantic restrictions on lexical combinations
-710. support/light verbs
-711. multiword expressions
-712. formulaic sequences
-713. false friends for Ukrainian speakers
-714. lexical calques
-715. lexical choice constrained by grammar
-716. lexical variation by register
-717. lexical variation by region
+702. collocations overview
+703. verb-noun collocations
+704. adjective-noun collocations
+705. verb-preposition collocations
+706. adjective-preposition collocations
+707. noun-preposition collocations
+708. lexicalised constructions
+709. fixed prepositional frames
+710. semantic restrictions on lexical combinations
+711. support/light verbs
+712. multiword expressions
+713. formulaic sequences
+714. false friends for Ukrainian speakers
+715. lexical calques
+716. lexical choice constrained by grammar
+717. lexical variation by register
+718. lexical variation by region
 
 ### AE. Variation, standards and registers
 
-718. pluricentric Portuguese
-719. European Portuguese
-720. Brazilian Portuguese
-721. Angolan Portuguese
-722. Mozambican Portuguese
-723. other Lusophone varieties
-724. standard language vs descriptive variation
-725. grammaticality vs normative status
-726. frequency vs grammaticality
-727. regional variation
-728. social variation
-729. register variation
-730. spoken vs written variation
-731. formal vs informal variation
-732. address-system variation
-733. clitic-placement variation
-734. progressive-construction variation
-735. article variation
-736. pronunciation variation
-737. lexical variation
-738. spelling variation
-739. variation in agreement
-740. variation in syntax
-741. variation in discourse/pragmatics
-742. evidence-scoped regional notes
+719. pluricentric Portuguese
+720. European Portuguese
+721. Brazilian Portuguese
+722. Angolan Portuguese
+723. Mozambican Portuguese
+724. other Lusophone varieties
+725. standard language vs descriptive variation
+726. grammaticality vs normative status
+727. frequency vs grammaticality
+728. regional variation
+729. social variation
+730. register variation
+731. spoken vs written variation
+732. formal vs informal variation
+733. address-system variation
+734. clitic-placement variation
+735. progressive-construction variation
+736. article variation
+737. pronunciation variation
+738. lexical variation
+739. spelling variation
+740. variation in agreement
+741. variation in syntax
+742. variation in discourse/pragmatics
+743. evidence-scoped regional notes
 
 ## 4. Explicit closure requirements
 
@@ -1121,15 +1121,15 @@ An item may have secondary modules, but it must have one canonical home.
 
 For every substantive article, the editorial workflow must ask:
 
-1. Is there a Ukrainian analogue?
-2. If yes, does it function the same way?
-3. If no, what Ukrainian structure normally expresses the same meaning?
-4. Does Portuguese encode a distinction Ukrainian leaves implicit?
-5. Does Ukrainian encode a distinction Portuguese expresses differently?
-6. Is there a false formal equivalent?
-7. Does a Ukrainian translation hide the Portuguese construction?
-8. Is positive transfer plausible?
-9. Is a learner-error claim documented, or merely predicted?
+2. Is there a Ukrainian analogue?
+3. If yes, does it function the same way?
+4. If no, what Ukrainian structure normally expresses the same meaning?
+5. Does Portuguese encode a distinction Ukrainian leaves implicit?
+6. Does Ukrainian encode a distinction Portuguese expresses differently?
+7. Is there a false formal equivalent?
+8. Does a Ukrainian translation hide the Portuguese construction?
+9. Is positive transfer plausible?
+10. Is a learner-error claim documented, or merely predicted?
 
 The ninth question is critical: the repository must never present an invented statement such as “Ukrainians usually make X error” as an established fact.
 
@@ -1189,9 +1189,9 @@ The target is not “the largest possible number of pages”. The target is **cl
 
 The Portuguese grammar reference is considered **coverage-complete** when a Ukrainian-speaking learner can reasonably search for any central Portuguese grammatical, phonological, orthographic, semantic, pragmatic, discourse or lexical-grammatical phenomenon and receive either:
 
-1. a dedicated canonical article;
-2. a clearly identified module in a canonical article; or
-3. a typed redirect to the canonical article that owns the concept.
+2. a dedicated canonical article;
+3. a clearly identified module in a canonical article; or
+4. a typed redirect to the canonical article that owns the concept.
 
 No major phenomenon should exist only accidentally inside an unrelated page.
 
@@ -1199,7 +1199,7 @@ No major phenomenon should exist only accidentally inside an unrelated page.
 
 ### Completeness audit — 2026-09-25
 
-A second scope audit was performed against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. The audit identified four structural domains that were underrepresented in the original 742-unit ontology: **adverbs/adverbial locutions, conjunctions/connective expressions, interjections/exclamatives, and explicit sentence types/illocutionary force**. Camões explicitly treats adverbs and locutions, conjunctions, phrase constituents and sentence types as core grammatical inventory categories; the Gulbenkian reference separately covers sentence types and illocutionary force, discourse and morphology. These additions are therefore coverage requirements, not merely optional enrichment. The expanded inventory now contains **874 canonical coverage units**. A final boundary audit also identified a small advanced layer that should be represented explicitly: prepositional locutions, reticências, and construction-level stylistic syntax. These are not evidence for indefinite scope expansion; they are a bounded extension needed to prevent advanced phenomena from remaining hidden in generic syntax/punctuation pages. The unit count remains an ontology count, not a page count.
+A second scope audit was performed against the Camões PLE grammatical inventory and the published scope of *Gramática do Português*. The audit identified four structural domains that were underrepresented in the original 742-unit ontology: **adverbs/adverbial locutions, conjunctions/connective expressions, interjections/exclamatives, and explicit sentence types/illocutionary force**. Camões explicitly treats adverbs and locutions, conjunctions, phrase constituents and sentence types as core grammatical inventory categories; the Gulbenkian reference separately covers sentence types and illocutionary force, discourse and morphology. These additions are therefore coverage requirements, not merely optional enrichment. The expanded inventory now contains **875 canonical coverage units**. A final boundary audit also identified a small advanced layer that should be represented explicitly: prepositional locutions, reticências, and construction-level stylistic syntax. These are not evidence for indefinite scope expansion; they are a bounded extension needed to prevent advanced phenomena from remaining hidden in generic syntax/punctuation pages. The unit count remains an ontology count, not a page count.
 
 The audit also confirmed that the repository already contains substantial coverage of pronouns, determiners, quantification, prepositions, verb morphology, tense/mood, clitics, subordination, agreement, word formation, phonology, orthography, semantics, pragmatics, discourse and variation. Those domains should be mapped and de-duplicated during the next coverage phase rather than expanded indiscriminately.
 
