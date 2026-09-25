@@ -218,6 +218,8 @@ A canonical topic is **closed** only when:
 885. definite null subjects
 886. indefinite null subjects
 887. expletive null subjects
+888. secondary stress
+889. discourse markers and discourse-marker functions
 
 ### AF. Adverbs and adverbial locutions
 
