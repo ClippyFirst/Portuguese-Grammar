@@ -681,7 +681,7 @@ Object.assign(SPECIAL, {
     mistakes: [{ wrong: "Вважати, що всі відмінності написання після 1990 зникли.", right: "Перевіряти конкретне слово й національний стандарт.", why: "Угода гармонізує частину орфографії, але допускає або зберігає варіантність у певних зонах." }],
     ukrainian: "Для україномовного студента важливо не змішувати орфографічну варіантність із «помилкою»: спочатку визначте стандарт і словникову норму.",
     brPt: "Окремі відмінності, як fato/facto, пов'язані з вимовою та національним стандартом і не зводяться до простої «старої/нової орфографії»."
-  }
+  },
 
   "subjunctive-present": {
     formulas: [{ pattern: "que + presente do conjuntivo → vontade, dúvida, avaliação, necessidade, finalidade, condição não factual", note: "O conjuntivo não é simplesmente «tempo de incerteza»: a seleção depende da construção e da modalidade." }],
