@@ -82,7 +82,7 @@
     "zustand": "^5.0.0"
   },
   "devDependencies": {
-    "@eslint/js": "^10.11.0",
+    "@eslint/js": "^10.0.1",
     "@types/node": "^22.16.5",
     "@types/pg": "^8.11.10",
     "@vitejs/plugin-react": "^5.2.0",
