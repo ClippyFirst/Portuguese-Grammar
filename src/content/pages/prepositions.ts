@@ -8,7 +8,39 @@ p("prep-em","em","Прийменник em","Preposição em","Preposition em","�
 p("prep-por","por","Прийменник por","Preposição por","Preposition por","Шлях, причина, засіб, тривалість та агент пасиву.","por має кілька системних значень і контрагується з артиклем у pelo/pela/pelos/pelas.","Не зводьте por до одного українського «через».",[{pt:"Passei por Lisboa.",uk:"Я проїхав/проїхала через Лісабон."},{pt:"Foi escrito por Ana.",uk:"Це було написано Аною."}],["por-article","ser-passive","por-para"]),
 p("prep-para","para","Прийменник para","Preposição para","Preposition para","Напрямок, мета, адресат і призначення.","para часто виражає спрямованість до цілі, призначення або адресата. У розмовній мові, особливо в PT-BR, можливе скорочення pra.","Не змішуйте para з por лише за українським перекладом.",[{pt:"Vou para casa.",uk:"Я йду додому."},{pt:"Isto é para ti.",uk:"Це для тебе."}],["por-para","infinitive-prepositions"]),
 p("por-para","por-para","por чи para","Por ou para","por vs para","Контраст траєкторії/причини та цілі/спрямованості.","Контраст залежить від конструкції. para часто кодує ціль, адресата або призначення; por — шлях, причину, обмін, тривалість або агента пасиву. Це не абсолютна семантична дихотомія.","Вивчайте дієслово та прийменникову рамку разом.",[{pt:"Estudo para aprender.",uk:"Я навчаюся, щоб навчитися."},{pt:"Passei por Coimbra.",uk:"Я проїхав/проїхала через Коїмбру."}],["prep-por","prep-para","government-overview"]),
-p("prep-com","com-sem","com і sem","Com e sem","com and sem","Супровід, інструмент і відсутність.","com виражає супровід або засіб, sem — відсутність. com має особливі займенникові форми comigo, contigo тощо.","Порівнюйте прийменник із займенниковою формою.",[{pt:"Vou com ele.",uk:"Я йду з ним."},{pt:"Café sem açúcar.",uk:"Кава без цукру."}],["prepositional-pronouns"]),
+{
+ id:"prep-com",slug:"com-sem",category:"prepositions",
+ titleUk:"com і sem",titlePt:"Com e sem",titleEn:"com and sem",
+ summary:"Супровід, інструмент, спосіб, матеріал і відсутність; займенникові форми comigo тощо.",
+ aliases:["com","sem","comigo","contigo","consigo","без"],
+ related:["prepositional-pronouns","prep-de","prep-por","compound-prepositions"],
+ intro:"Прийменники `com` і `sem` утворюють протиставну пару: `com` додає учасника, засіб або супровід, а `sem` прибирає його. Але переклад «з/без» не охоплює всіх уживань: `com` може вводити інструмент, спосіб або матеріал, а `sem` — відсутність очікуваного компонента. Важливо також відрізняти звичайний прийменник від злитих займенникових форм `comigo, contigo, consigo, connosco, convosco`.",
+ definition:"`com` виражає супровід, інструмент, засіб, спосіб або інші залежні відношення; `sem` виражає відсутність. Обидва можуть вводити іменну групу, займенник або, у відповідних конструкціях, інфінітив.",
+ formation:"com + іменна група: `com o João`; com + займенник: `com ele`; sem + іменна група: `sem açúcar`; sem + інфінітив: `sem dizer nada`. Для 1-ї та 2-ї особи після com уживаються спеціальні форми `comigo, contigo, connosco, convosco`; `consigo` має рефлексивне/ввічливе вживання залежно від контексту.",
+ uses:[
+  {title:"Супровід",body:"`com` показує, хто або що супроводжує суб'єкта.",examples:[{pt:"Vou com a minha irmã.",uk:"Я йду з моєю сестрою."},{pt:"Jantei com eles.",uk:"Я вечеряв/вечеряла з ними."}]},
+  {title:"Інструмент і засіб",body:"`com` вводить предмет, яким виконують дію, або засіб, через який вона здійснюється.",examples:[{pt:"Cortei o pão com uma faca.",uk:"Я нарізав/нарізала хліб ножем."},{pt:"Escreveu com cuidado.",uk:"Він/вона писав/писала обережно."}]},
+  {title:"Матеріал або склад",body:"У частині іменних конструкцій `com` описує наявність певного компонента.",examples:[{pt:"Um café com leite.",uk:"Кава з молоком."},{pt:"Uma casa com jardim.",uk:"Будинок із садом."}]},
+  {title:"Відсутність",body:"`sem` позначає відсутній компонент; перед інфінітивом воно часто означає невиконання супровідної дії.",examples:[{pt:"Café sem açúcar.",uk:"Кава без цукру."},{pt:"Saiu sem dizer nada.",uk:"Він/вона вийшов/вийшла, нічого не сказавши."}]},
+  {title:"Займенникові форми",body:"Після `com` не всі наголошені займенники зберігають звичайну форму: `comigo, contigo, connosco, convosco`. `Consigo` пов'язане з рефлексивним/ввічливим займенником `si`.",examples:[{pt:"Vem comigo.",uk:"Ходімо зі мною."},{pt:"Ele falou contigo.",uk:"Він поговорив із тобою."},{pt:"Ela levou o documento consigo.",uk:"Вона взяла документ із собою."}]}
+ ],
+ examples:[
+  {pt:"Trabalho com dados.",uk:"Я працюю з даними."},
+  {pt:"Não saio sem casaco.",uk:"Я не виходжу без пальта."},
+  {pt:"Fiz isso com cuidado.",uk:"Я зробив/зробила це обережно."},
+  {pt:"Ele saiu sem se despedir.",uk:"Він вийшов, не попрощавшись."}
+ ],
+ mistakes:[
+  {wrong:"Vou com eu.",right:"Vou comigo.",why:"Після `com` для 1-ї особи однини використовується спеціальна форма `comigo`, а не звичайне `eu`."},
+  {wrong:"Ela veio com mim.",right:"Ela veio comigo.",why:"`mim` — тонічна форма після багатьох прийменників, але після `com` існує спеціальна форма `comigo`."},
+  {wrong:"Saiu sem falou comigo.",right:"Saiu sem falar comigo.",why:"Після `sem` для одночасного/супровідного суб'єкта типова інфінітивна конструкція: `sem + infinitivo`."}
+ ],
+ ukrainian:"Українські «з/із» і «без» часто передають базову опозицію, але український прийменник не передбачає португальської морфології `comigo/contigo`. Також українське орудне «ножем» у португальській зазвичай виражається `com + NP`: `com uma faca`.",
+ brPt:"Базові функції `com/sem` спільні для PT-BR і PT-PT. Відмінності помітні насамперед у займенникових формах та орфографічній варіантності: PT-PT `connosco/vosco` та PT-BR `conosco/vocês` належать до ширшої системи варіантів; конкретну форму слід співвідносити з різновидом і регістром.",
+ regional:"Опис стосується сучасної стандартної португальської. В окремих розмовних різновидах можливі ширші конструкції та скорочення, але базова семантична опозиція зберігається.",
+ sources:[{label:"Camões — Referencial Camões PLE",url:"https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple"}],
+ depth:"high"
+},
 p("prep-other","other","Інші прийменники","Outras preposições","Other prepositions","sobre, entre, até, desde, contra, perante та інші.","Другорядні прийменники мають конкретні просторові, часові та абстрактні значення. Частина з них входить до складених прийменників.","Вчіть їх через приклади, а не через довгий список перекладів.",[{pt:"entre amigos",uk:"між друзями"},{pt:"desde ontem",uk:"від учора"},{pt:"até amanhã",uk:"до завтра"}],["compound-prepositions","prepositions-overview"]),
 p("verb-preposition","verb-preposition","Дієслово + прийменник","Verbo e preposição","Verb + preposition","Керування дієслів.","Деякі дієслова вибирають прийменник як частину своєї валентної моделі: gostar de, assistir a у нормативній моделі, precisar de. Український переклад не гарантує той самий прийменник.","Запам'ятовуйте дієслово разом із його моделлю.",[{pt:"Gosto de música.",uk:"Я люблю музику."},{pt:"Preciso de ajuda.",uk:"Мені потрібна допомога."}],["government-overview","valency-overview"]),
 {
