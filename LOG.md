@@ -790,5 +790,5 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 
 ### Технічна перевірка
 
-- Content commits: `0c1fa595484619dac976bccb9f285e722786ac64`, `e9584490ccc478a5586e8bb53a82d37fb15b86d4`.
+- Content commits: `0c1fa595484619dac976bccb9f285e722786ac64`, `e9584490ccc478a5586e8bb53a82d37fb15b86d4`, `d46a0c455c5de1ef9dd503144a9a96b2c29800f5`.
 - Новий production-файл: `src/content/pages/coverage-closure-production.ts`.
