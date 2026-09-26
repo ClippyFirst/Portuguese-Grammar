@@ -2247,7 +2247,7 @@ function makePage(meta: (typeof CATALOG)[number]): GrammarPage {
 }
 
 export const GENERATED_PAGES: GrammarPage[] = CATALOG
-  .filter((meta) => meta.category !== "comparisons" && meta.category !== "regional")
+  .filter((meta) => meta.category !== "regional")
   .map(makePage);
 
 export function generatedPageFor(category: string, slug: string): GrammarPage | null {
