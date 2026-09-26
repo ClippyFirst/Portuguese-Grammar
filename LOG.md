@@ -1341,3 +1341,24 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 - Залишилося canonical topics: **0/352**.
 - Quality/depth pass продовжується; Batch 35: **3 джерела контенту**.
 
+
+
+## Batch 36 — quality/depth pass: pronoun agreement diagnostic (2026-09-26)
+
+Продовжено перевірку вже наявних статей без розширення canonical inventory.
+
+- `pronouns.ts` — у `nós e a gente` уточнено діагностику узгодження: `a gente` має форму 3-ї особи однини при значенні «ми»; розділено граматичне узгодження присудка та семантичну референцію конструкції.
+- Повторний пошук потенційно помилкових subjunctive-прикладів (`Quero que tu vens`, `Sei que ele esteja`, `Acho que seja`) не виявив додаткових збігів у GitHub code search.
+
+### QA
+
+- Canonical coverage: **352/352**; нових canonical IDs: **0**.
+- Зміна: **1 наявний page module**.
+- Academic Writing Toolkit для нового prose-фрагмента: логічних конфліктів не виявлено; British English — без issues.
+- CI/status checks для актуального head через GitHub connector не повернуті, тому стан CI не оголошується.
+
+### Лічильник
+
+- Canonical topics: **352/352 написано**, **0 залишилося**.
+- Quality/depth pass триває.
+\n
