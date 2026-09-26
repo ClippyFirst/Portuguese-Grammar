@@ -6,7 +6,7 @@ const GULBENKIAN_III="https://gulbenkian.pt/publications/gramatica-do-portugues-
 const CAMOES_PLE="https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple";
 
 
-export const additionalPages = [
+export const pages = [
   page({
     id: "adverb-formation", slug: "adverb-formation", category: "adverbs",
     titleUk: "Творення прислівників", titlePt: "Formação de advérbios", titleEn: "Adverb formation",
