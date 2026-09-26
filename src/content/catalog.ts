@@ -88,7 +88,7 @@ const ROWS: Row[] = [
   ["homograph-accents", "spelling", "homograph-accents", "pôr / por, tem / têm, pode / pôde", "Acentos distintivos", "Distinctive accents", "Орфографічні пари, де наголос розрізняє форми.", "pôr,por,tem,têm,pode,pôde,pelo", "diacritics,stress,ter", "medium"],
   ["capitalization", "spelling", "capitalization", "Великі літери", "Maiúsculas", "Capitalization", "Коли португальська пише з великої — і коли ні.", "великі літери,maiúsculas,капіталізація", "punctuation,articles-proper-names", "high"],
   ["punctuation", "spelling", "punctuation", "Пунктуація", "Pontuação", "Punctuation", "Кома, двокрапка, тире, лапки, знак питання.", "кома,пунктуація,interrogação", "questions-yesno,relative-restrictive", "high"],
-  ["acordo-ortografico", "spelling", "acordo-ortografico", "Орфографічна угода", "Acordo Ortográfico", "Spelling agreement", "Що змінила угода 1990 і де лишаються варіанти.", "acordo,реформа,орфографія", "spelling-br-pt,diacritics", "short"],
+  ["acordo-ortografico", "spelling", "acordo-ortografico", "Орфографічна угода", "Acordo Ortográfico", "Spelling agreement", "Що змінила угода 1990 і де лишаються варіанти.", "acordo,реформа,орфографія", "spelling-br-pt,diacritics", "high"],
   ["spelling-br-pt", "spelling", "spelling-br-pt", "Орфографія PT-BR і PT-PT", "Ortografia BR/PT", "BR vs PT spelling", "facto/fato, aceção/acepção та живі відмінності після угоди.", "орфографія,fato,facto", "acordo-ortografico,pt-br-pt-pt", "medium"],
 
   ["noun-gender", "nouns", "noun-gender", "Рід іменників", "Género dos nomes", "Noun gender", "Чоловічий і жіночий рід, формальні моделі й пастки.", "рід,género,gênero,masculino,feminino", "gender-vs-ukrainian,professions-gender,adjective-agreement", "high"],
@@ -118,7 +118,7 @@ const ROWS: Row[] = [
   ["adjective-meaning", "adjectives", "position-meaning", "Зміна значення від позиції", "Sentido e posição", "Meaning and position", "grande homem vs homem grande, pobre vs pobre.", "grande,pobre,certo,próprio", "adjective-position", "high"],
   ["comparatives", "adjectives", "comparatives", "Порівняльний ступінь", "Comparativo", "Comparatives", "mais... do que, tão... como, melhor / pior.", "порівняння,mais que,do que,melhor", "superlatives,comparative-clauses", "medium"],
   ["superlatives", "adjectives", "superlatives", "Суперлатив", "Superlativo relativo", "Superlative", "o mais..., o melhor — відносний суперлатив.", "суперлатив,o mais,o melhor", "comparatives,absolute-superlative", "medium"],
-  ["absolute-superlative", "adjectives", "absolute-superlative", "Абсолютний суперлатив", "Superlativo absoluto", "Absolute superlative", "muito + adj vs -íssimo / -érrimo.", "íssimo,muito,absolutний", "superlatives,adverbs-degree", "short"],
+  ["absolute-superlative", "adjectives", "absolute-superlative", "Абсолютний суперлатив", "Superlativo absoluto", "Absolute superlative", "muito + adj vs -íssimo / -érrimo.", "íssimo,muito,absolutний", "superlatives,adverbs-degree", "high"],
   ["irregular-adjectives", "adjectives", "irregular", "Неправильні прикметники", "Adjetivos irregulares", "Irregular adjectives", "bom, mau, grande, pequeno та апокопа.", "bom,mau,grande,pequeno", "comparatives,adjective-agreement", "medium"],
 
   ["adverb-position", "adverbs", "position", "Позиція прислівника", "Posição do advérbio", "Adverb position", "Де стоїть прислівник у реченні.", "позиція прислівника,adverb position,posição do advérbio", "word-order,information-structure", "medium"],
