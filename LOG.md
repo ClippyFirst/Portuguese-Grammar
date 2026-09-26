@@ -1203,3 +1203,25 @@ Academic Writing Toolkit: для irregular-plurals і compound-nouns логіч�
 - Залишилося canonical topics: 0/352.
 - Quality/depth pass у Batch 29: 3 статті.
 - Metadata short: 0.
+
+
+## Batch 30 — depth pass: gerúndio and comparative clauses (2026-09-26)
+
+Після закриття canonical coverage продовжено окремий quality/depth pass. Нових canonical IDs не створювалося.
+
+### Поглиблено 2 статті
+
+- gerund-form — розширено продуктивні моделі -ando/-endo/-indo, окремі високочастотні форми (vir → vindo, pôr → pondo, ter → tendo), відмінність орфографічної адаптації від морфологічної нерегулярності та різницю між формою gerúndio і всією конструкцією;
+- comparative-clauses — уточнено ступеневі порівняння, другий член після do que, рівність, порівняння способу та відмежування від proportional/conformative конструкцій; додано приклад і окрему типову помилку.
+
+### QA
+
+Academic Writing Toolkit застосовано до нових prose-фрагментів. Він повернув лише generic short-paragraph сигнали для коротких ізольованих тестових блоків; змістових логічних суперечностей у перевірених формулюваннях не виявлено.
+
+### Лічильник
+
+- Canonical coverage: 352/352 написано.
+- Залишилося canonical topics: 0/352.
+- Quality/depth pass у Batch 30: 2 статті.
+- Загалом у depth-pass після закриття coverage: 5 статей у Batch 29–30.
+- Metadata short: 0.
