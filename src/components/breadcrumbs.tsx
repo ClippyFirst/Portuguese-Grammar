@@ -37,6 +37,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components -- utility intentionally co-located with the breadcrumb component
 export function categoryCrumb(slug: string): Crumb {
   const cat = CATEGORY_BY_SLUG[slug];
   return {

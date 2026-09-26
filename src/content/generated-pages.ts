@@ -2149,8 +2149,6 @@ function examplesFor(category: string, id: string): Example[] {
 function makePage(meta: (typeof CATALOG)[number]): GrammarPage {
   const layer = { ...genericLayer(meta), ...(SPECIAL[meta.id] ?? {}) };
   const examples = examplesFor(meta.category, meta.id);
-  const first = examples[0];
-
   const formulas = layer.formulas ?? [{
     pattern: "форма → функція → контекст",
     note: "Для теми «" + meta.titleUk + "» не достатньо запам'ятати один український відповідник: перевіряйте синтаксичну функцію та регістр.",

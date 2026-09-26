@@ -147,6 +147,12 @@ function authPopupPlugin(): Plugin {
 // AGENTS.md § "First scaffold".
 export default defineConfig(({ command, isPreview, mode }) => ({
   base: mode === "github-pages" ? "/Portuguese-Grammar/" : "/",
+  // The TanStack Router vendor chunk is ~678 kB uncompressed but ~143 kB gzip.
+  // Keep the warning threshold just above that measured vendor size rather than
+  // hiding unexpectedly large application chunks with a much higher global limit.
+  build: {
+    chunkSizeWarningLimit: 700,
+  },
   server: {
     host: "0.0.0.0",
     port: 8080,
