@@ -13,6 +13,8 @@ type Row = [
   related: string,
   depth: TopicMeta["depth"],
   ["adverb-formation", "adverbs", "adverb-formation", "Творення прислівників", "Formação de advérbios", "Adverb formation", "Основні способи творення португальських прислівників і межі продуктивних моделей.", "творення прислівників,adverb formation,formação de advérbios", "adverbs-overview,adverbs-mente,adverbial-locutions,suffixation", "high"],
+  ["adverbs-vs-adjectives", "adverbs", "adverbs-vs-adjectives", "Прислівник і прикметник: як розрізняти функцію", "Advérbio e adjetivo: como distinguir a função", "Adverbs vs adjectives", "Формальні та синтаксичні критерії розмежування прислівників і прикметників.", "прислівник і прикметник,adverbs vs adjectives,advérbio e adjetivo", "adverbs-overview,adverb-adjective,adverb-formation,adverbs-mente", "high"],
+  ["focus-adverbs", "adverbs", "focus-adverbs", "Фокусувальні прислівники", "Advérbios focalizadores", "Focus adverbs", "Прислівники, що виділяють, обмежують або приєднують компонент до інформаційного фокусу.", "фокусувальні прислівники,focus adverbs,advérbios focalizadores", "adverbs-overview,adverb-scope,restriction-exclusion-adverbs,information-structure", "high"],
 ];
 
 const ROWS: Row[] = [
