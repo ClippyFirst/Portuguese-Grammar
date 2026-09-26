@@ -8,7 +8,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Загальні питання",
     titlePt: "Perguntas totais",
     titleEn: "Yes/no questions",
-    summary: "Інтонація, чи, inversion у PT-PT.",
+    summary: "Інтонація, питальні слова та порядок слів; окремі відмінності PT-PT.",
     aliases: ["загальні питання", "sim não"],
     related: ["question-word-order", "questions-br-pt", "inversion"],
     intro:
@@ -53,8 +53,8 @@ export const pages: GrammarPage[] = [
     mistakes: [
       {
         wrong: "Que tu queres?",
-        right: "O que tu queres? / Que queres tu?",
-        why: "Самостійне «що?» — `o que` (або `que` в деяких фіксованих схемах), не голе `que tu`.",
+        right: "O que tu queres? / Que queres? / Que queres tu?", 
+        why: "Для самостійного «що?» нейтральною моделлю є `o que`; `que` також можливе в інших синтаксичних позиціях, зокрема в `Que queres?`. Не переносіть одну модель на всі різновиди та конструкції.",
       },
     ],
 
