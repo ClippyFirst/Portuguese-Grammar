@@ -4,8 +4,7 @@ import { ex, mistake } from "../helpers";
 export const pages: GrammarPage[] = [
   {
     id: "complement-clauses-advanced",
-    slug: "complement-clauses-advanced",
-    category: "syntax",
+    slug: "complement-advanced", category: "subordinate",
     titleUk: "Складні додаткові речення: que, infinitivo та conjuntivo",
     titlePt: "Orações completivas avançadas",
     titleEn: "Advanced complement clauses",
@@ -43,7 +42,7 @@ export const pages: GrammarPage[] = [
   {
     id: "clitic-clusters",
     slug: "clitic-clusters",
-    category: "syntax",
+    category: "pronouns",
     titleUk: "Подвійні клітики: комбінації o/a/os/as + lhe/lhes",
     titlePt: "Combinação de pronomes clíticos",
     titleEn: "Clitic clusters",
