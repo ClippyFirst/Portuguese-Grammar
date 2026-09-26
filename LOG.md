@@ -1273,3 +1273,26 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 - Нових related IDs не додано.
 - Academic Writing Toolkit застосовано до нових prose-блоків; він повернув лише generic `short-paragraph` сигнали технічного контейнера, без змістових логічних суперечностей у перевіреному матеріалі.
 - GitHub connector не повертає доступних status checks/workflow runs для цих оновлень, тому CI green не заявляється.
+
+## Batch 33 — quality/depth pass: prepositions, tense/aspect, conditionals, relatives, questions, word formation (2026-09-26)
+
+Продовжено systematic quality/depth pass після закриття canonical coverage. Нових canonical IDs не створювалося.
+
+### Поглиблено та уточнено 6 наявних модулів
+
+- `prepositions.ts` — у `por-para` додано часовий контраст: `por` для тривалості та `para` для строку/цілі; це допомагає не переносити українське «на» як готовий вибір прийменника;
+- `tenses.ts` — у `perfeito-vs-imperfeito` додано мінімальний контраст `jantava / jantou` з явною часовою перспективою, щоб не зводити систему до української пари доконаний/недоконаний вид;
+- `subordinate.ts` — у `conditional-clauses` додано третю конфігурацію `Se tivesse tido tempo, teria ido`, яка відділяє нереалізовану минулу умову від відкритої майбутньої та гіпотетичної;
+- `pronouns.ts` — у `relative-pronouns` додано контраст прямого додатка `que vi` та прийменникової рамки `de quem falei`;
+- `questions.ts` — виправлено змішаний нерозмічений приклад `Por que / Porque é que...`: PT-BR і PT-PT тепер подані окремими прикладами з відповідними variety labels;
+- `word-formation.ts` — уточнено, що продуктивна словотвірна модель не означає вільного вибору суфікса для будь-якої основи; конкретні номіналізації часто лексикалізовані.
+
+### QA
+
+- Compare між попереднім Batch 32 log commit і поточним head показує **6 послідовних content commits**, змінено 6 існуючих page modules.
+- Canonical coverage не змінювався: **352/352**.
+- Нових canonical IDs: **0**.
+- Нових related IDs: **0**.
+- Academic Writing Toolkit застосовано до нових prose-фрагментів; British English check — **0 issues**. Paragraph reviewer повернув лише generic `short-paragraph` signal для одного короткого блоку, без змістового логічного конфлікту.
+- GitHub connector не повертає доступних workflow runs/status checks для цього head, тому CI green не заявляється.
+\n
