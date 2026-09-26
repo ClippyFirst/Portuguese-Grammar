@@ -577,3 +577,48 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 - Це **quality upgrade**, а не штучне збільшення coverage counter.
 - Fallback/generated pages не враховуються.
 
+
+
+## 2026-09-26 — content production batch 11: advanced subordinate structures
+
+Продовжено наповнення canonical corpus на робочій гілці `content/production-2026-09-batch-01`. Цього разу закрито наступний кластер підрядності, який у каталозі вже був заявлений, але не мав окремих dedicated GrammarPage-статей.
+
+### Додано 8 нових dedicated GrammarPage-статей
+
+У `src/content/pages/subordinate-production-4.ts` створено:
+
+- `conformative-clauses` — відповідні / конформативні підрядні;
+- `proportional-clauses` — пропорційні;
+- `modal-clauses` — модальні;
+- `locative-clauses` — локативні;
+- `reduced-clauses` — зредуковані підрядні як клас;
+- `infinitival-reduced-clauses` — інфінітивні зредуковані;
+- `gerundial-reduced-clauses` — герундіальні зредуковані;
+- `participial-reduced-clauses` — дієприкметникові зредуковані.
+
+### Якість
+
+Пакет спеціально продовжує системне покриття subordinate grammar, а не додає фрагментарні словникові сторінки. У статтях розмежовано:
+
+- conformidade, comparação, causa та спосіб дії — особливо для багатозначного `como`;
+- proportional relation та звичайне comparative;
+- modal clauses та ширше поняття lexical modality;
+- locative clauses та relative constructions з `onde`;
+- reduced clauses як клас і три основні нефінітні типи;
+- infinitive, gerúndio та particípio як предикативні центри залежних конструкцій;
+- роль personal infinitive у вираженні суб'єкта;
+- різницю між самостійним gerúndio та `estar + gerúndio`;
+- participial reduced clauses та `ser/estar + particípio`.
+
+Кожна сторінка містить definition, функціональні підрозділи, приклади з українським перекладом, типові learner mistakes, український контраст, PT-BR/PT-PT scope та джерельний блок. Для спеціалізованих тверджень орієнтирами залишаються `Gramática do Português` (Fundação Calouste Gulbenkian) і Referencial Camões PLE.
+
+Academic Writing Toolkit застосовано для paragraph-level logic review підготовленого контентного пакета. Єдиний отриманий сигнал — технічний `short-paragraph` на рівні всього input-контейнера; предметних логічних суперечностей інструмент не вказав. Це не трактуємо як заміну повному редакторському proofread.
+
+### Лічильник покриття
+
+- Було: **274 / 349 написано**.
+- Додано нових canonical IDs: **8**.
+- Стало: **282 / 349 написано**.
+- Залишилося: **67 / 349**.
+- Fallback/generated pages не зараховуються.
+- Переписування вже наявних dedicated IDs не збільшує coverage counter.
