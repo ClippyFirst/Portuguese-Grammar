@@ -1,5 +1,3 @@
 import type { GrammarPage } from "../types";
-import { ex, mistake } from "../helpers";
 
-export const pages: GrammarPage[] = [
-  ];
+export const pages: GrammarPage[] = [];
