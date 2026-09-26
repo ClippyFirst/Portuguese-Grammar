@@ -1225,3 +1225,27 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 - Quality/depth pass у Batch 30: 2 статті.
 - Загалом у depth-pass після закриття coverage: 5 статей у Batch 29–30.
 - Metadata short: 0.
+
+
+## Batch 31 — quality/depth pass: high-risk grammar diagnostics (2026-09-26)
+
+Продовжено quality/depth pass після закриття canonical coverage. Нових canonical IDs не створювалося.
+
+### Поглиблено 4 наявні статті
+
+- `futuro-subjuntivo` — додано алгоритм розмежування futuro do conjuntivo та особового інфінітива, а також системний блок про відкриті майбутні умови, часові й відносні конструкції;
+- `clitic-placement` — уточнено поняття проклітичного тригера, відмежовано його від простого порядку слів і розширено діагностику clitic climbing у перифразах;
+- `crase` — розширено діагностику з географічними та власними назвами й окремо зафіксовано варіантність конструкцій після `até`, без перетворення її на універсальне правило;
+- `se-overview` — додано алгоритм розмежування пасивного та безособового `se`, тест узгодження й окреме розрізнення займенникового `se` та сполучника `se` «якщо».
+
+### Методологія
+
+Редактура виконана за canonical content contract: form → function → interpretation → Ukrainian contrast → regional scope. Нові приклади спрямовані на реальні learner decisions, а варіантні явища описуються з прив'язкою до різновиду та регістру, без універсалізації одного локального патерну.
+
+### QA
+
+- Змінено 4 існуючі page modules; canonical coverage залишається **352/352**.
+- Нових canonical IDs: **0**.
+- Нових related IDs не додано.
+- Academic Writing Toolkit застосовано до нових prose-блоків; технічні short-paragraph сигнали не трактуються як змістові дефекти.
+- Structural/typecheck/lint/build мають бути підтверджені PR CI перед merge.
