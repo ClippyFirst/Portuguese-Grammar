@@ -2,7 +2,6 @@ import type { GrammarPage } from "../types";
 const p=(id:string,slug:string,t:string,pt:string,en:string,s:string,i:string,teachingNote:string,e:GrammarPage["examples"],r:string[]=[]):GrammarPage=>({id,slug,category:"gerund",titleUk:t,titlePt:pt,titleEn:en,summary:s,aliases:[t,slug],related:r,intro:teachingNote ? `${i}\n\n${teachingNote}` : i,examples:e});
 export const pages:GrammarPage[]=[
 {
-{
   id: "gerund-form",
   slug: "form",
   category: "gerund",
