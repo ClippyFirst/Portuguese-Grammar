@@ -175,7 +175,7 @@ export const pages: GrammarPage[] = [
           ex("Que te corra bem a entrevista!", "Нехай співбесіда пройде добре!"),
         ],
       },
-      { title: "Вибір часу: не лише «теперішній / минулий»", body: "Час кон'юнктива визначає часову перспективу підрядної ситуації щодо головної, а не просто час головного дієслова. `Espero que tenha chegado` позначає передування, `esperava que tivesse chegado` — передування щодо минулої точки, а `quando tiveres acabado` — завершення до майбутньої точки відліку.", examples: [ex("Espero que tenha chegado bem.", "Сподіваюся, ти добре доїхав/доїхала."), ex("Esperava que tivesses chegado antes.", "Я сподівався/сподівалася, що ти приїдеш раніше."), ex("Quando tiveres acabado, avisa-me.", "Коли закінчиш, повідом мені.")] },
+      { title: "Вибір часу: не лише «теперішній / минулий»", body: "Час кон'юнктива визначає часову перспективу підрядної ситуації щодо точки відліку, а не просто час головного дієслова. `Espero que tenha chegado` позначає передування до моменту сподівання, `esperava que tivesse chegado` — передування до минулої точки відліку, а `quando tiveres acabado` — завершення до майбутньої точки. Отже, складена форма кодує не «більшу невпевненість», а часовий зв'язок.", examples: [ex("Espero que tenha chegado bem.", "Сподіваюся, ти добре доїхав/доїхала."), ex("Esperava que tivesses chegado antes.", "Я сподівався/сподівалася, що ти приїдеш раніше."), ex("Quando tiveres acabado, avisa-me.", "Коли закінчиш, повідом мені.")] },
     ],
     examples: [
       ex("Não creio que ele saiba.", "Не вірю, що він знає."),
