@@ -192,7 +192,7 @@ export const pages: GrammarPage[] = [
     ukrainian: "Українська також має іменний складений присудок: «Будинок великий», «Вона втомлена». Тому синтаксична функція знайома; складнішим є португальське розмежування ser, estar і ficar.",
     regional: "Предикативні прикметники є спільною системою PT-BR і PT-PT. Відмінності стосуються насамперед деяких copular/periphrastic patterns та частотності, а не базового принципу.",
     sources: [
-      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: GULBENKINKAN_II },
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: GULBENKIAN_II },
       { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. III", url: GULBENKIAN_III }
     ]
   }),
