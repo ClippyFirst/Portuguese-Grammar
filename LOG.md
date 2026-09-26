@@ -1179,3 +1179,27 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 Academic Writing Toolkit: для irregular-plurals і compound-nouns логічних проблем не виявлено; для capitalization зафіксовано один технічний сигнал short-paragraph у контейнері chapters/input.md, без змістової логічної проблеми в самій статті.
 
 Лічильник: 352/352 канонічних тем, 0 залишилось; short metadata: 0. Depth-pass Batch 28: 3 статті.
+
+## Batch 29 — depth pass: noun number, compound prepositions and spelling-changing verbs (2026-09-26)
+
+Продовжено systematic quality/depth pass після повного canonical coverage. Нових canonical IDs не створювалося.
+
+### Поглиблено 3 наявні статті
+
+- noun-number — розширено моделі множини після голосного, -r/-z/-m, -al/-el/-ol/-ul та -ão; додано незмінювані графічні форми, сигнали числа від артикля/квантора/узгодження, наголос і типові помилки;
+- compound-prepositions — розширено locuções prepositivas через причину, відповідність, допустовість, заміну, мету та додаткові частотні рамки; уточнено скорочення de + артикль і відмінність готової прийменникової рамки від буквального перекладу;
+- spelling-changing — розширено c→qu, g→gu, ç→c, зв'язок із конкретним закінченням і вимовою та відмінність орфографічної адаптації від морфологічної нерегулярності.
+
+### QA
+
+- Academic Writing Toolkit застосовано до нових prose-блоків усіх трьох статей. Reviewer повернув лише generic short-paragraph сигнали для окремих структурованих абзаців; змістових логічних суперечностей не виявлено.
+- Перевірено, що всі три цільові IDs залишаються canonical і мають high depth.
+- Canonical coverage залишається 352/352; нових canonical IDs: 0; metadata short: 0.
+- CI green не заявляється без підтвердженого workflow/status run.
+
+### Лічильник
+
+- Canonical coverage: 352/352 написано.
+- Залишилося canonical topics: 0/352.
+- Quality/depth pass у Batch 29: 3 статті.
+- Metadata short: 0.
