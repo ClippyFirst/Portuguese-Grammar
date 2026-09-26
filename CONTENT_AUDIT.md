@@ -1,10 +1,10 @@
 # Content & static-reference audit
 
 **Audit target:** `codex/complete-static-reference`  
-**Catalog:** 225 topics  
+**Catalog:** 356 topics  
 **Dedicated content modules:** 93 topics  
-**Coverage fallback:** 132 topics  
-**Effective navigation coverage:** 225 / 225
+**Coverage fallback:** 263 topics  
+**Effective navigation coverage:** 356 / 356
 
 ## 1. What was fixed
 
@@ -12,9 +12,9 @@
 
 Previously, the catalog contained 225 topics while only 93 had a page module. The remaining 132 topics could be listed by the UI but resolved to 404.
 
-The repository now has a conservative static fallback provider:
+The repository now has a conservative static fallback provider for every catalogue topic without a dedicated module:
 
-- `src/content/generated-pages.ts`
+- `src/content/generated-pages.ts` (including comparison topics)
 - `src/content/load.ts`
 
 A dedicated hand-written module always wins. The fallback only supplies the missing page provider.
@@ -79,7 +79,7 @@ These modules contain the deeper explanatory structure: formulas, examples, mist
 
 ### Coverage layer
 
-The 132 fallback topics are intentionally conservative. They contain:
+The 263 fallback topics are intentionally conservative. They contain:
 
 - title and summary from the catalog;
 - a structured introduction;
@@ -129,4 +129,4 @@ The project should be considered content-complete only when:
 - the reference does not require authentication or database state;
 - SEO/accessibility/static-hosting behavior has been verified on the deployed build.
 
-**Important:** 225/225 navigation coverage is now achieved, but this is not the same as 225/225 linguistic fact-check coverage.
+**Important:** 356/356 navigation coverage is now achieved, but this is not the same as 225/225 linguistic fact-check coverage.
