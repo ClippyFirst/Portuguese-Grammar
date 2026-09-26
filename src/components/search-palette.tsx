@@ -40,21 +40,17 @@ export function SearchPalette({
     return () => window.clearTimeout(t);
   }, [open]);
 
-  useEffect(() => {
-    if (!open) {
-      setQ("");
-      setActiveIndex(0);
-    }
-  }, [open]);
-
-  useEffect(() => {
-    setActiveIndex(0);
-  }, [q]);
 
   if (!open) return null;
 
-  function go(href: string) {
+  function handleClose() {
+    setQ("");
+    setActiveIndex(0);
     onClose();
+  }
+
+  function go(href: string) {
+    handleClose();
     void navigate({ to: href });
   }
 
@@ -72,11 +68,14 @@ export function SearchPalette({
           <input
             ref={inputRef}
             value={q}
-            onChange={(e) => setQ(e.target.value)}
+            onChange={(e) => {
+              setQ(e.target.value);
+              setActiveIndex(0);
+            }}
             onKeyDown={(e) => {
               if (e.key === "Escape") {
                 e.preventDefault();
-                onClose();
+                handleClose();
                 return;
               }
               if (e.key === "ArrowDown" && hits.length) {
@@ -107,7 +106,7 @@ export function SearchPalette({
           />
           <button
             type="button"
-            onClick={onClose}
+            onClick={handleClose}
             className="inline-flex size-11 items-center justify-center text-muted hover:text-ink"
             aria-label="Закрити"
           >
