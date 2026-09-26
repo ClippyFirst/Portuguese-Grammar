@@ -344,7 +344,6 @@ const ROWS: Row[] = [
   ["concessive-clauses", "subordinate", "concessive", "Допустові речення", "Concessivas", "Concessive clauses", "embora, mesmo que, apesar de.", "допустові,embora,mesmo que", "subjunctive-triggers,compound-prepositions", "medium"],
   ["temporal-clauses", "subordinate", "temporal", "Часові підрядні", "Temporais", "Temporal clauses", "quando + futuro do conjuntivo; antes que vs depois que.", "часові,quando,assim que,antes que", "futuro-subjuntivo,ja-ainda", "high"],
   ["consecutive-clauses", "subordinate", "consecutive", "Наслідкові речення", "Consecutivas", "Consecutive clauses", "tão... que, de modo que.", "наслідок,tão que,de modo que", "comparatives,adverbs-degree", "short"],
-  ["comparative-clauses", "subordinate", "comparative", "Порівняльні речення", "Comparativas", "Comparative clauses", "mais do que, tão como, quanto mais.", "порівняльні речення,do que", "comparatives", "short"],
 
   ["ser-passive", "passive", "ser-passive", "Пасив із ser", "Passiva com ser", "ser passive", "ser + particípio + por.", "пасив,ser particípio,voz passiva", "se-passive,estar-participle", "high"],
   ["passive-vs-impersonal", "passive", "passive-vs-impersonal", "Пасив vs безособові", "Passiva vs impessoal", "Passive vs impersonal", "Коли природніше se / підмет довільний.", "пасив безособове", "ser-passive,se-impersonal,se-passive", "high"],
@@ -391,7 +390,6 @@ const ROWS: Row[] = [
 
 
 
-  ["interjections", "fundamentals", "interjections", "Вигуки", "Interjeições", "Interjections", "Реакція, заклик, привітання та інші вигукові функції.", "вигуки,interjeições,interjections", "parts-of-speech,speech-acts,punctuation", "medium"],
   ["direct-speech", "discourse", "direct-speech", "Пряма мова", "Discurso direto", "Direct speech", "Передавання репліки мовця з її власним оформленням.", "пряма мова,discurso direto,direct speech", "reported-speech,indirect-speech,punctuation", "medium"],
   ["indirect-speech", "discourse", "indirect-speech", "Непряма мова", "Discurso indireto", "Indirect speech", "Передавання змісту висловлення через підрядну або іншу вбудовану конструкцію.", "непряма мова,discurso indireto,indirect speech", "direct-speech,reported-speech,sequence-of-tenses", "medium"],
   ["exclamatives", "syntax", "exclamatives", "Окличні конструкції", "Construções exclamativas", "Exclamative constructions", "Граматичні способи вираження високої інтенсивності, оцінки або емоційної реакції.", "окличні речення,exclamatives,exclamativas", "speech-acts,information-structure,punctuation", "medium"],
