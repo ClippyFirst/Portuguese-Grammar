@@ -42,7 +42,7 @@ export const pages: GrammarPage[] = [
     aliases: ["спеціальні питання", "o que", "quem"],
     related: ["interrogative-pronouns", "porque-forms", "question-word-order"],
     intro:
-      "Питальне слово зазвичай стоїть на початку: `O que queres?`, `Onde moras?`, `Quando chegas?`, `Como está?`, `Quanto custa?`\n\n`Que` вживається, зокрема, як визначник перед іменником: `Que horas são?`; `o que` — поширена займенникова модель, коли запитується про річ/ситуацію без названого іменника. `Quem` — про особу. Після прийменника: `Com quem falas?`, `De que se trata?`",
+      "Питальне слово часто стоїть на початку: `O que queres?`, `Onde moras?`, `Quando chegas?`, `Como está?`, `Quanto custa?`. Але порядок слів може залежати від структури питання, різновиду мови та інформаційного фокусу, тому початкову позицію не слід перетворювати на абсолютне правило.\n\n`Que` вживається, зокрема, як визначник перед іменником: `Que horas são?`; `o que` — поширена займенникова модель, коли запитується про річ/ситуацію без названого іменника. `Quem` — про особу. Після прийменника: `Com quem falas?`, `De que se trata?`",
     examples: [
       { pt: "O que aconteceu?", uk: "Що сталося?" },
       { pt: "Quem é aquela pessoa?", uk: "Хто та людина?" },
