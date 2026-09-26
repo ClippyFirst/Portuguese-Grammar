@@ -1139,3 +1139,5 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 - d558e6533ddf324504fad3ecbf2a2dfadb123cab — clitic climbing;
 - bade872f997e2d4631edc32531c80a7d872474e3 — agreement edge cases;
 - f839b2e7bdb867cf52d064a075e428f55d1f4315 — advanced complement clauses.
+
+- 9582a77e3ad7d27f5128686e79c5a70fb405775c — catalog depth promotion for parts-of-speech and gender-number-person.
