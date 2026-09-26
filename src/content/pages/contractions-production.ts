@@ -7,6 +7,4 @@ const C="https://www.instituto-camoes.pt/activity/centro-virtual/referencial-cam
 const draft=(p:GrammarPage):GrammarPage=>({...p,status:"draft",origin:"handwritten"});
 
 export const pages:GrammarPage[]=[
-draft(),
-draft()
 ];
