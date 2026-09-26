@@ -748,3 +748,47 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 - Новий файл: src/content/pages/orthography-numerals-wordformation-production.ts.
 - Content commits: f933594dfaac9321dcc27adc4d8f913d59ee5cbd, 6a572cacc88bb3b506f6ad729e42e714c4b95a9f.
 - Після створення перевірено, що нові IDs не дублюються в перевірених production/legacy-модулях.
+
+
+## 2026-09-26 — content production batch 15: coverage closure — orthography, discourse, subordination and pluricentric Portuguese
+
+Продовжено закриття canonical coverage на робочій гілці `content/production-2026-09-batch-01`. Перед batch перевірено production-модулі та відсіяно теми, які вже мали dedicated coverage. Не створювалися сторінки для семантичних дублів на кшталт `reported-speech`, якщо відповідна production-сторінка вже існує під іншим canonical ID.
+
+### Додано 12 нових dedicated GrammarPage-статей
+
+У `src/content/pages/coverage-closure-production.ts` створено:
+
+- `capitalization-and-names` — велика літера, власні назви, посади та географічні назви;
+- `discourse-reference` — референція, анафора, нульовий суб'єкт і повтор NP;
+- `discourse-and-pragmatics` — зв'язок граматичної форми, дискурсу та мовленнєвої дії;
+- `finite-vs-nonfinite-subordination` — фінітна й нефінітна підрядність;
+- `subordinate-clause-punctuation` — пунктуація підрядних конструкцій;
+- `clitic-climbing` — subida do clítico у складних дієслівних групах;
+- `pluricentric` — плюрицентрична структура португаломовного простору;
+- `pt-br-pt-pt` — системне зіставлення PT-BR і PT-PT;
+- `angola` — португальська Анголи;
+- `mozambique` — португальська Мозамбіку;
+- `other-lusophone` — інші португаломовні центри;
+- `tu-voce-regional` — регіональний і соціальний розподіл tu/você.
+
+### Якість
+
+Пакет зберігає production contract: definition, структурні моделі, тематичні підрозділи, production/comprehension/contrast приклади, learner mistakes, український контраст, regional scope та джерела. Для підрядності окремо розведено фінітні й нефінітні структури, personal infinitive та пунктуацію; для clitic-climbing — semantic role і surface position та PT-BR/PT-PT variation; для pluricentric coverage — спільне ядро, національну норму, регістр і внутрішню варіативність.
+
+Регіональні статті навмисно не подають локальні різновиди як «помилкову» версію PT-PT і не роблять одного прикладу репрезентативним для всієї країни. PT-BR/PT-PT матеріал розмежовує системну граматичну різницю, частотність і лексичну варіативність.
+
+Academic Writing Toolkit застосовано для paragraph-level logic review. Інструмент повернув один generic `short-paragraph` сигнал на рівні технічного input-контейнера; предметних логічних суперечностей не вказано. Після review виправлено також один taxonomy-level `related` reference (`subordinate-clauses`), якого немає в canonical catalog.
+
+### Лічильник покриття
+
+- Було: **313 / 349 написано**.
+- Додано нових canonical IDs: **12**.
+- Стало: **325 / 349 написано**.
+- Залишилося: **24 / 349**.
+- Fallback/generated pages не зараховуються.
+- Переписування вже наявних dedicated IDs не збільшує coverage counter.
+
+### Технічна перевірка
+
+- Content commits: `0c1fa595484619dac976bccb9f285e722786ac64`, `e9584490ccc478a5586e8bb53a82d37fb15b86d4`.
+- Новий production-файл: `src/content/pages/coverage-closure-production.ts`.
