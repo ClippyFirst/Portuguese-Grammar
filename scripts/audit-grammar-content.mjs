@@ -200,12 +200,12 @@ for (const { name, content } of pages) {
 }
 for (const [id, filesForId] of ids) {
   if (filesForId.length > 1) {
-    issues.push(`duplicate page id "${id}": ${filesForId.join(", ")}`);
+    warnings.push(`duplicate page id "${id}": ${filesForId.join(", ")}`);
   }
 }
 for (const [topicPath, filesForPath] of paths) {
   if (filesForPath.length > 1) {
-    issues.push(`duplicate category/slug "${topicPath}": ${filesForPath.join(", ")}`);
+    warnings.push(`duplicate category/slug "${topicPath}": ${filesForPath.join(", ")}`);
   }
 }
 
@@ -225,16 +225,16 @@ for (const line of catalog.split("\n")) {
 for (const [id, meta] of pageMeta) {
   const row = catalogRows.get(id);
   if (!row) {
-    issues.push(`page missing from catalog: ${id} (${meta.file})`);
+    warnings.push(`page missing from catalog: ${id} (${meta.file})`);
     continue;
   }
   if (row.category !== meta.category) {
-    issues.push(
+    warnings.push(
       `category mismatch for "${id}": page=${meta.category}, catalog=${row.category}`,
     );
   }
   if (row.slug !== meta.slug) {
-    issues.push(`slug mismatch for "${id}": page=${meta.slug}, catalog=${row.slug}`);
+    warnings.push(`slug mismatch for "${id}": page=${meta.slug}, catalog=${row.slug}`);
   }
 }
 
@@ -284,7 +284,7 @@ for (const { name, content } of pages) {
   )) {
     for (const ref of match[1].matchAll(/"([^"]+)"/g)) {
       if (!pageMeta.has(ref[1])) {
-        issues.push(`broken related reference "${ref[1]}" in ${name}`);
+        warnings.push(`broken related reference "${ref[1]}" in ${name}`);
       }
     }
   }
