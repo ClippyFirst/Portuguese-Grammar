@@ -7,7 +7,4 @@ const CD="https://ciberduvidas.iscte-iul.pt/";
 const draft=(p:GrammarPage):GrammarPage=>({...p,status:"draft",origin:"handwritten"});
 
 export const pages:GrammarPage[]=[
-draft(),
-draft(),
-draft()
 ];
