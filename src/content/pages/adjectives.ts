@@ -33,5 +33,34 @@ p("superlatives","superlatives","Відносний суперлатив","Super
  sources:[{label:"Camões — Referencial Camões PLE",url:"https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple"}],
  depth:"high"
 },
-p("irregular-adjectives","irregular","Нерегулярні прикметники","Adjetivos irregulares","Irregular adjectives","Нерегулярні форми ступенів порівняння.","bom → melhor, mau → pior, grande → maior, pequeno → menor мають окремі порівняльні форми. Вони не є просто суфіксальними варіантами.","Вивчайте їх разом із моделлю порівняння.",[{pt:"Este livro é melhor.",uk:"Ця книжка краща."},{pt:"A cidade é maior.",uk:"Місто більше."}],["comparatives","adjective-meaning"])
+{
+  id:"irregular-adjectives",slug:"irregular-adjectives",category:"adjectives",
+  titleUk:"Нерегулярні прикметники",titlePt:"Adjetivos irregulares",titleEn:"Irregular adjectives",
+  summary:"Нерегулярні форми ступенів порівняння: melhor, pior, maior, menor та їхня поведінка в контексті.",
+  aliases:["нерегулярні прикметники","adjetivos irregulares","melhor","pior","maior","menor"],
+  related:["comparatives","adjective-meaning","superlatives"],
+  intro:"У португальській частина найуживаніших прикметників має нерегулярні порівняльні форми: bom → melhor, mau → pior, grande → maior, pequeno → menor. Вони не утворюються простим додаванням mais до прикметника. Водночас форма mais + прикметник може з'являтися в інших контекстах, тому базову порівняльну пару краще вчити як окрему лексичну модель.\n\nНерегулярна форма не має лише одного можливого контексту. Melhor може бути порівняльною формою de bom, але також входить до іменних конструкцій: o melhor. Maior та menor можуть порівнювати фізичний розмір, вік, кількість, статус або іншу шкалу — інтерпретацію визначає іменник і контекст.\n\nДля продукції корисно спочатку визначити, яку шкалу порівнюють, потім вибрати прикметникову пару, а вже після цього додати рамку порівняння: melhor do que, pior do que, maior do que, menor do que. Не переносіть українські «кращий/найкращий» чи «більший/найбільший» на португальську без перевірки, чи потрібне порівняння між референтами, чи суперлатив у групі.",
+  definition:"Нерегулярні прикметники — прикметники, у яких одна або більше форм ступеня порівняння мають окрему лексичну форму, яку не можна вивести лише механічним додаванням стандартного маркера.",
+  formation:"Основні пари: bom → melhor, mau → pior, grande → maior, pequeno → menor. Порівняльна форма може поєднуватися з do que/que залежно від конструкції: melhor do que eu, maior que o anterior. Для суперлатива групи використовується окрема модель із mais: o melhor da equipa, a maior cidade do país.",
+  uses:[
+    {title:"bom → melhor",body:"Оцінює якість або відповідність порівняно з іншим референтом.",examples:[ex("Este livro é melhor do que aquele.","Ця книжка краща за ту."),ex("Ela fez o melhor trabalho da equipa.","Вона виконала найкращу роботу в команді.")]},
+    {title:"mau → pior",body:"Виражає нижчу якість або несприятливішу оцінку.",examples:[ex("Hoje estou pior.","Сьогодні мені гірше."),ex("Foi o pior resultado do ano.","Це був найгірший результат року.")]},
+    {title:"grande → maior",body:"Може позначати більший розмір, вік, кількість, значущість або іншу шкалу.",examples:[ex("Esta cidade é maior do que a outra.","Це місто більше за інше."),ex("O meu irmão é maior.","Значення визначає контекст: наприклад, «старший» або «більший».")]},
+    {title:"pequeno → menor",body:"Протиставляється maior і може позначати менший розмір, вік, кількість чи ступінь.",examples:[ex("A empresa é menor do que antes.","Компанія менша, ніж раніше."),ex("A menor diferença já importa.","Навіть найменша різниця має значення.")]},
+    {title:"Порівняльна форма і суперлатив",body:"Не змішуйте нерегулярну порівняльну форму з відносним суперлативом. Melhor означає «кращий» у порівнянні, тоді як o melhor da turma — «найкращий у групі».",examples:[ex("O João é melhor do que o Pedro.","Жуан кращий за Педру."),ex("O João é o melhor da turma.","Жуан найкращий у групі.")]},
+    {title:"Субстантивація",body:"Прикметникова форма може вживатися як іменна група, коли артикль і контекст роблять референт зрозумілим.",examples:[ex("Escolhi o melhor.","Я вибрав/вибрала найкраще."),ex("Entre os dois, este é o pior.","Із двох цей гірший.")]}
+  ],
+  examples:[ex("Este é melhor do que aquele.","Це краще за те."),ex("A situação está pior hoje.","Ситуація сьогодні гірша."),ex("A maior cidade fica no litoral.","Найбільше місто розташоване на узбережжі."),ex("O menor valor é suficiente.","Найменшого значення достатньо.")],
+  mistakes:[
+    mistake("bom → mais bom","bom → melhor","У базовому порівнянні найуживаніша нерегулярна форма — melhor."),
+    mistake("mau → mais mau","mau → pior","Порівняльна форма від mau — pior."),
+    mistake("grande → mais grande у звичайному значенні «більший»","grande → maior","Для стандартного порівняння розміру чи іншої шкали використовується maior."),
+    mistake("o melhor = просто «кращий»","o melhor = «найкращий / найкраще» у відповідному контексті","Артикль може вводити суперлативну або субстантивовану інтерпретацію.")
+  ],
+  ukrainian:"Українські «кращий, гірший, більший, менший» теж мають нерегулярні основи. Важлива відмінність — португальська використовує окремі лексичні форми melhor, pior, maior, menor, а суперлатив групи будує за іншою моделлю: o mais..., не просто додаючи окремий префікс до прикметника.",
+  brPt:"Основні нерегулярні форми спільні для PT-BR і PT-PT. Конкретний вибір порівняльної рамки та частотність do que/que можуть відрізнятися за регістром і різновидом.",
+  regional:"Опис стосується стандартної сучасної мови; варіантність конструкцій не означає двох різних наборів нерегулярних прикметників.",
+  sources:[{label:"Camões — Referencial Camões PLE",url:"https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple"}],
+  depth:"high"
+}
 ];
