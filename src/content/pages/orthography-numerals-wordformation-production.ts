@@ -2,7 +2,6 @@ import type { GrammarPage } from "../types";
 import { ex, mistake, page } from "../helpers";
 
 const GULBENKIAN_I = "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-i/";
-const GULBENKIAN_II = "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/";
 const CAMOES_PLE = "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple";
 const CIBERDUVIDAS = "https://ciberduvidas.iscte-iul.pt/";
 
