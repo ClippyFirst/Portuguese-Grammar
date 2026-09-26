@@ -238,9 +238,18 @@ for (const [id, meta] of pageMeta) {
   }
 }
 
+function isResolvablePageId(id) {
+  if (pageMeta.has(id)) return true;
+  const row = catalogRows.get(id);
+  // Most catalog topics have an explicit module OR a generated fallback page.
+  // Comparisons and regional topics use dedicated loaders and are excluded from
+  // generated-pages.ts, so they still require an explicit page/module.
+  return Boolean(row && row.category !== "comparisons" && row.category !== "regional");
+}
+
 for (const [id, row] of catalogRows) {
-  if (!pageMeta.has(id)) {
-    issues.push(`catalog entry has no page module: ${id} (${row.category}/${row.slug})`);
+  if (!isResolvablePageId(id)) {
+    issues.push(`catalog entry has no resolvable page: ${id} (${row.category}/${row.slug})`);
   }
 }
 
@@ -283,7 +292,7 @@ for (const { name, content } of pages) {
     /related:\s*\[([\s\S]*?)\]/g,
   )) {
     for (const ref of match[1].matchAll(/"([^"]+)"/g)) {
-      if (!pageMeta.has(ref[1])) {
+      if (!isResolvablePageId(ref[1])) {
         warnings.push(`broken related reference "${ref[1]}" in ${name}`);
       }
     }
@@ -296,7 +305,7 @@ for (const { name, content } of pages) {
     /\bp\([\s\S]*?,\s*\[([^\]]*)\]\s*\)/gu,
   )) {
     for (const ref of call[1].matchAll(/"([^"]+)"/gu)) {
-      if (!pageMeta.has(ref[1])) {
+      if (!isResolvablePageId(ref[1])) {
         issues.push(`broken related reference "${ref[1]}" in ${name}`);
       }
     }
