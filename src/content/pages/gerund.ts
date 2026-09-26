@@ -58,9 +58,9 @@ p("irregular-participles","irregular-participles","Нерегулярні partic
  ],
  examples:[{pt:"Já tinha imprimido o relatório.",uk:"Я вже надрукував/ла звіт."},{pt:"O relatório foi impresso.",uk:"Звіт було надруковано."},{pt:"Ela tinha acendido a luz.",uk:"Вона увімкнула світло."},{pt:"A luz estava acesa.",uk:"Світло було увімкнене."}],
  mistakes:[
-  {wrong:"вважати одну форму універсальною для всіх конструкцій","вивчати пару разом із ter/haver та ser/estar","Розподіл подвійних participles лексично нерівномірний."},
-  {wrong:"foi imprimido як єдина пасивна форма","foi impresso","У багатьох конструкціях коротка форма є типовою пасивною формою."},
-  {wrong:"aceitado і aceite — два різні дієслова","aceitar → aceitado / aceite","Це дві форми participle одного лексичного дієслова."}
+  {wrong:"вважати одну форму універсальною для всіх конструкцій",right:"вивчати пару разом із ter/haver та ser/estar",why:"Розподіл подвійних participles лексично нерівномірний."},
+  {wrong:"foi imprimido як єдина пасивна форма",right:"foi impresso",why:"У багатьох конструкціях коротка форма є типовою пасивною формою."},
+  {wrong:"aceitado і aceite — два різні дієслова",right:"aceitar → aceitado / aceite",why:"Це дві форми participle одного лексичного дієслова."}
  ],
  ukrainian:"Українська не має повністю аналогічного системного розподілу двох participle одного дієслова після ter/ser, тому корисно запам'ятовувати форму разом із конструкцією.",
  brPt:"PT-BR і PT-PT можуть розходитися у виборі короткої форми: aceito типова для бразильської норми, тоді як aceite широко вживається в європейській.",
