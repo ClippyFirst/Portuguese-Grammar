@@ -23,6 +23,10 @@ type Row = [
   ["evaluative-adverbs","adverbs","evaluative-adverbs","Оцінні прислівники","Advérbios avaliativos","Evaluative adverbs","Прислівникові засоби оцінки ситуації та способу дії.","оцінні прислівники,evaluative adverbs,advérbios avaliativos"],
   ["interrogative-adverbs","adverbs","interrogative-adverbs","Питальні прислівники","Advérbios interrogativos","Interrogative adverbs","onde, quando, como, por que та їхня питальна функція.","питальні прислівники,interrogative adverbs,advérbios interrogativos"],
   ["relative-adverbs","adverbs","relative-adverbs","Відносні прислівники","Advérbios relativos","Relative adverbs","Відносні прислівники, передусім onde, та їхня локативна функція.","відносні прислівники,relative adverbs,advérbios relativos"],
+  ["negative-adverbs","adverbs","negative-adverbs","Заперечні прислівники","Advérbios de negação","Negative adverbs","não, nunca, jamais та взаємодія із заперечною полярністю.","заперечні прислівники,negative adverbs,advérbios de negação"],
+  ["adverb-scope","adverbs","adverb-scope","Область дії прислівника","Escopo do advérbio","Adverb scope","Як scope визначає семантичний компонент, який модифікує прислівник.","область дії прислівника,adverb scope,escopo do advérbio"],
+  ["adverb-adjective","adverbs","adverb-adjective","Прислівник + прикметник","Advérbio + adjetivo","Adverb + adjective","Модифікація прикметника за ступенем, інтенсивністю та порівнянням.","прислівник прикметник,adverb adjective,advérbio adjetivo"],
+  ["adverb-adverb","adverbs","adverb-adverb","Прислівник + прислівник","Advérbio + advérbio","Adverb + adverb","Модифікація одного прислівника іншим.","прислівник плюс прислівник,adverb adverb,advérbio advérbio"],
 ];
 
 const ROWS: Row[] = [
