@@ -258,8 +258,15 @@ for (const [id, row] of catalogRows) {
   const meta = pageMeta.get(id);
   if (!meta) continue;
   const source = pages.find((p) => p.name === meta.file)?.content ?? "";
-  const start = source.indexOf(`id: "${id}"`);
-  const next = source.indexOf('id: "', start + 1);
+  const idMarker = source.indexOf(`id: "${id}"`);
+  const compactIdMarker = source.indexOf(`id:"${id}"`);
+  const startCandidates = [idMarker, compactIdMarker].filter((value) => value >= 0);
+  const start = startCandidates.length ? Math.min(...startCandidates) : -1;
+  const nextMarkers = [
+    source.indexOf('id: "', start + 1),
+    source.indexOf('id:"', start + 1),
+  ].filter((value) => value >= 0);
+  const next = nextMarkers.length ? Math.min(...nextMarkers) : -1;
   const block = start >= 0 ? source.slice(start, next >= 0 ? next : undefined) : "";
 
   // Compact `p(...)` pages do not expose named `examples:` / `uses:`
