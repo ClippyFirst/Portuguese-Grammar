@@ -67,6 +67,47 @@ function splitTopLevelArguments(source) {
   return args;
 }
 
+function findBalancedCallEnd(source, open) {
+  const stack = ["("];
+  let quote = null;
+  let escaped = false;
+
+  for (let i = open; i < source.length; i += 1) {
+    const char = source[i];
+
+    if (quote) {
+      if (escaped) {
+        escaped = false;
+      } else if (char === "\\") {
+        escaped = true;
+      } else if (char === quote) {
+        quote = null;
+      }
+      continue;
+    }
+
+    if (char === '"' || char === "'" || char === "`") {
+      quote = char;
+      continue;
+    }
+
+    if (char === "(" || char === "[" || char === "{") {
+      stack.push(char);
+      continue;
+    }
+
+    if (char === ")" || char === "]" || char === "}") {
+      const expected =
+        char === ")" ? "(" : char === "]" ? "[" : "{";
+      if (stack.at(-1) !== expected) return -1;
+      stack.pop();
+      if (stack.length === 0) return i;
+    }
+  }
+
+  return -1;
+}
+
 function auditCompactPageConstructors(content, file) {
   const hasTeachingNoteHelper =
     /const\s+p\s*=\s*\([^)]*\bteachingNote:string\b[^)]*\):GrammarPage/u.test(
@@ -76,42 +117,10 @@ function auditCompactPageConstructors(content, file) {
 
   for (const match of content.matchAll(/\bp\(/gu)) {
     const open = match.index + match[0].length;
-    let depth = 1;
-    let quote = null;
-    let escaped = false;
-    let close = -1;
-
-    for (let i = open; i < content.length; i += 1) {
-      const char = content[i];
-
-      if (quote) {
-        if (escaped) {
-          escaped = false;
-        } else if (char === "\\") {
-          escaped = true;
-        } else if (char === quote) {
-          quote = null;
-        }
-        continue;
-      }
-
-      if (char === '"' || char === "'" || char === "`") {
-        quote = char;
-        continue;
-      }
-
-      if (char === "(") depth += 1;
-      if (char === ")") {
-        depth -= 1;
-        if (depth === 0) {
-          close = i;
-          break;
-        }
-      }
-    }
+    const close = findBalancedCallEnd(content, open);
 
     if (close < 0) {
-      issues.push(`unterminated compact page constructor in ${file}`);
+      issues.push(`unterminated or unbalanced compact page constructor in ${file}`);
       continue;
     }
 
