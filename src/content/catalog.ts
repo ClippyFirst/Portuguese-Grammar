@@ -76,10 +76,10 @@ const ROWS: Row[] = [
 
 
   ["sentence-basics", "fundamentals", "sentence-basics", "Базова структура речення", "Estrutura da frase", "Basic sentence structure", "Підмет, присудок, додатки й базовий порядок SVO.", "речення,SVO,підмет,присудок,frase", "null-subject,word-order,parts-of-speech", "medium"],
-  ["parts-of-speech", "fundamentals", "parts-of-speech", "Частини мови", "Classes de palavras", "Parts of speech", "Змінні й незмінні частини мови в португальській.", "частини мови,морфологія,classes de palavras", "sentence-basics,noun-gender,verb-system", "short"],
+  ["parts-of-speech", "fundamentals", "parts-of-speech", "Частини мови", "Classes de palavras", "Parts of speech", "Змінні й незмінні частини мови в португальській.", "частини мови,морфологія,classes de palavras", "sentence-basics,noun-gender,verb-system", "medium"],
   ["gender-number-person", "fundamentals", "gender-number-person", "Рід, число, особа", "Género, número, pessoa", "Gender, number, person", "Граматичні категорії, які пронизують усю систему.", "рід,число,особа,género,gênero", "noun-gender,adjective-agreement,agreement-sv", "medium"],
   ["null-subject", "fundamentals", "null-subject", "Пропуск підмета", "Sujeito nulo", "Null subject", "Коли підмет можна й варто опускати.", "пропуск підмета,sujeito oculto,pro-drop", "subject-pronouns,word-order,tu-voce", "high"],
-  ["register", "fundamentals", "register", "Регістри мови", "Registos", "Register", "Розмовне, нейтральне, формальне й книжне.", "регістр,формальне,розмовне,coloquial", "pt-br-pt-pt,forms-of-address", "short"],
+  ["register", "fundamentals", "register", "Регістри мови", "Registos", "Register", "Розмовне, нейтральне, формальне й книжне.", "регістр,формальне,розмовне,coloquial", "pt-br-pt-pt,forms-of-address", "medium"],
 
   ["alphabet", "spelling", "alphabet", "Алфавіт і читання", "Alfabeto", "Alphabet", "Літери, назви та базові правила читання.", "алфавіт,вимова,alphabet,leitura", "stress,diacritics,reading-rules", "medium"],
   ["reading-rules", "spelling", "reading-rules", "Правила читання", "Regras de leitura", "Reading rules", "Голосні, приголосні, диграфи nh, lh, ch, rr.", "читання,nh,lh,ch,диграфи", "alphabet,stress,spelling-br-pt", "medium"],
@@ -119,11 +119,11 @@ const ROWS: Row[] = [
   ["comparatives", "adjectives", "comparatives", "Порівняльний ступінь", "Comparativo", "Comparatives", "mais... do que, tão... como, melhor / pior.", "порівняння,mais que,do que,melhor", "superlatives,comparative-clauses", "medium"],
   ["superlatives", "adjectives", "superlatives", "Суперлатив", "Superlativo relativo", "Superlative", "o mais..., o melhor — відносний суперлатив.", "суперлатив,o mais,o melhor", "comparatives,absolute-superlative", "medium"],
   ["absolute-superlative", "adjectives", "absolute-superlative", "Абсолютний суперлатив", "Superlativo absoluto", "Absolute superlative", "muito + adj vs -íssimo / -érrimo.", "íssimo,muito,absolutний", "superlatives,adverbs-degree", "short"],
-  ["irregular-adjectives", "adjectives", "irregular", "Неправильні прикметники", "Adjetivos irregulares", "Irregular adjectives", "bom, mau, grande, pequeno та апокопа.", "bom,mau,grande,pequeno", "comparatives,adjective-agreement", "short"],
+  ["irregular-adjectives", "adjectives", "irregular", "Неправильні прикметники", "Adjetivos irregulares", "Irregular adjectives", "bom, mau, grande, pequeno та апокопа.", "bom,mau,grande,pequeno", "comparatives,adjective-agreement", "medium"],
 
   ["adverb-position", "adverbs", "position", "Позиція прислівника", "Posição do advérbio", "Adverb position", "Де стоїть прислівник у реченні.", "позиція прислівника,adverb position,posição do advérbio", "word-order,information-structure", "medium"],
   ["adverbs-overview", "adverbs", "overview", "Прислівники: огляд", "Advérbios", "Adverbs overview", "Класи прислівників і відмінність від прикметників.", "прислівник,advérbio,bem,bom", "mente-formation,adverb-position", "medium"],
-  ["mente-formation", "adverbs", "mente", "Утворення на -mente", "Advérbios em -mente", "-mente formation", "Жіноча основа + -mente; кілька прислівників поспіль.", "mente,rapidamente", "adverbs-overview,adverb-position", "short"],
+  ["mente-formation", "adverbs", "mente", "Утворення на -mente", "Advérbios em -mente", "-mente formation", "Жіноча основа + -mente; кілька прислівників поспіль.", "mente,rapidamente", "adverbs-overview,adverb-position", "medium"],
   ["ja-ainda", "adverbs", "ja-ainda", "já, ainda, sempre, nunca", "já / ainda / sempre", "já, ainda, sempre", "Аспект і дискурс, не лише «вже / ще».", "já,ainda,sempre,nunca,ще,вже", "negation-nao,tense-aspect", "high"],
   ["sim-nao-emphasis", "adverbs", "sim-nao", "Емфатичні sim і não", "sim e não enfáticos", "Emphatic sim / não", "Ele sim veio. Não é que...", "емфаза sim,não enfático", "clefts,emphasis-focus", "high"],
   ["adverbs-degree", "adverbs", "degree", "Ступінь і кількість", "Grau e quantidade", "Degree and quantity", "muito, pouco, bastante, demais, tão, tanto.", "muito,demais,bastante,tão,tanto", "comparatives,adverbs-overview", "medium"],
