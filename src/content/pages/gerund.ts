@@ -38,7 +38,32 @@ p("estar-a-infinitive","estar-a-infinitive","estar a + infinitivo","Estar a + in
 p("progressive-br-pt","progressive-br-pt","Прогресив: PT-BR і PT-PT","Progressivo BR e PT","Progressive BR vs PT","estar + gerúndio та estar a + infinitivo.","Обидві конструкції існують у португальській, але їхня частотність відрізняється за різновидами. Для нейтрального тексту враховуйте аудиторію.","Не називайте одну модель неправильною лише через різновид.",[{pt:"Estou estudando.",uk:"Я зараз навчаюся.",variety:"BR"},{pt:"Estou a estudar.",uk:"Я зараз навчаюся.",variety:"PT"}],["estar-gerundio","estar-a-infinitive"]),
 p("participle","participle","Дієприкметник минулого часу","Particípio","Past participle","Форма для складених часів і пасивних конструкцій.","Particípio використовується з ter/haver у складених конструкціях та з ser/estar в інших предикатних моделях. Частина форм нерегулярна.","Розрізняйте форму participle і її синтаксичну функцію.",[{pt:"tenho feito",uk:"я робив/робила"},{pt:"foi escrito",uk:"було написано"}],["compound-tenses","ser-passive"]),
 p("irregular-participles","irregular-participles","Нерегулярні participles","Particípios irregulares","Irregular participles","feito, dito, visto, escrito та інші.","Частотні дієслова мають нерегулярні participles. Їх треба вчити як окремі форми, особливо для складених часів.","Не виводьте participle лише з інфінітива.",[{pt:"fazer → feito",uk:"робити → зроблений"},{pt:"dizer → dito",uk:"казати → сказаний"},{pt:"ver → visto",uk:"бачити → побачений"}],["participle","irregular-verbs"]),
-p("double-participles","double-participles","Подвійні participles","Particípios duplos","Double participles","Дієслова з двома participle-формами.","Деякі дієслова мають сильну та слабку форми participle з різним розподілом у конструкціях. Вибір залежить від допоміжного дієслова та норми конкретного слова.","Вивчайте такі пари разом із ter/ser.",[{pt:"tinha aceitado",uk:"прийняв/ла до того моменту"},{pt:"foi aceite",uk:"було прийнято",variety:"PT"}],["participle","compound-tenses"]),
+{
+ id:"double-participles",slug:"double-participles",category:"gerund",
+ titleUk:"Подвійні participles",titlePt:"Particípios duplos",titleEn:"Double participles",
+ summary:"Деякі дієслова мають дві форми participle, розподілені за конструкцією, стилем або різновидом мови.",
+ aliases:["подвійні дієприкметники","particípios duplos","aceitado","aceite"],
+ related:["participle","compound-tenses","irregular-participles","ser-passive"],
+ intro:"У португальській частина дієслів має дві форми participle: довшу і коротшу. Традиційне правило пов'язує довгі форми з ter/haver, а короткі — з ser/estar у пасивних конструкціях, але сучасна норма не зводиться до механічного правила: окремі дієслова мають власний розподіл і частотність.",
+ definition:"Подвійний participle — пара форм одного дієслова, які можуть мати різний розподіл у складених часах і пасивних конструкціях.",
+ formation:"Форми треба вивчати разом із дієсловом і типовими допоміжними дієсловами. Наприклад, aceitar має aceitado та aceite; imprimir — imprimido та impresso; acender — acendido та aceso.",
+ uses:[
+  {title:"ter/haver + participle",body:"Довга форма традиційно типова після ter/haver у складеному часі.",examples:[{pt:"Tinha aceitado a proposta.",uk:"Він/вона прийняв/ла пропозицію до того моменту."},{pt:"Tinham imprimido o documento.",uk:"Вони надрукували документ."}]},
+  {title:"ser/estar + коротка форма",body:"Короткі форми часто вживаються в пасивних конструкціях, особливо з ser.",examples:[{pt:"A proposta foi aceite.",uk:"Пропозицію було прийнято.",variety:"PT"},{pt:"O documento foi impresso.",uk:"Документ було надруковано."}]},
+  {title:"Лексикалізовані пари",body:"Не всі пари поводяться однаково, тому словникова перевірка важливіша за механічне правило.",examples:[{pt:"A luz está acesa.",uk:"Світло увімкнене."},{pt:"A loja está aberta.",uk:"Магазин відкритий."}]},
+  {title:"Варіантність",body:"Окремі короткі форми мають різну частотність або нормативну перевагу за різновидами.",examples:[{pt:"O pedido foi aceito.",uk:"Замовлення було прийнято.",variety:"BR"},{pt:"O pedido foi aceite.",uk:"Замовлення було прийнято.",variety:"PT"}]}
+ ],
+ examples:[{pt:"Já tinha imprimido o relatório.",uk:"Я вже надрукував/ла звіт."},{pt:"O relatório foi impresso.",uk:"Звіт було надруковано."},{pt:"Ela tinha acendido a luz.",uk:"Вона увімкнула світло."},{pt:"A luz estava acesa.",uk:"Світло було увімкнене."}],
+ mistakes:[
+  {wrong:"вважати одну форму універсальною для всіх конструкцій","вивчати пару разом із ter/haver та ser/estar","Розподіл подвійних participles лексично нерівномірний."},
+  {wrong:"foi imprimido як єдина пасивна форма","foi impresso","У багатьох конструкціях коротка форма є типовою пасивною формою."},
+  {wrong:"aceitado і aceite — два різні дієслова","aceitar → aceitado / aceite","Це дві форми participle одного лексичного дієслова."}
+ ],
+ ukrainian:"Українська не має повністю аналогічного системного розподілу двох participle одного дієслова після ter/ser, тому корисно запам'ятовувати форму разом із конструкцією.",
+ brPt:"PT-BR і PT-PT можуть розходитися у виборі короткої форми: aceito типова для бразильської норми, тоді як aceite широко вживається в європейській.",
+ regional:"Подвійні participles добре показують плюрицентричність португальської. Конкретну форму варто перевіряти за словником відповідного різновиду.",
+ depth:"high"
+},
 p("ter-haver-participle","ter-haver-participle","ter/haver + participle","Ter/haver + particípio","ter/haver + participle","Складені конструкції з participle.","ter і haver можуть бути допоміжними у складених часах. Значення форми визначається часом допоміжного та типом конструкції.","Не плутайте допоміжне ter з повнозначним «мати».",[{pt:"Tenho visto isso.",uk:"Я бачив/бачила це."},{pt:"Tinha feito o trabalho.",uk:"Я зробив/зробила роботу до того моменту."}],["ter-haver","compound-tenses"]),
 p("estar-participle","estar-participle","estar + participle","Estar + particípio","estar + participle","Становий результативний предикат.","estar + participle може описувати стан як результат попередньої події. Важливо відрізняти його від серійного пасиву з ser.","Порівнюйте процес пасиву та результативний стан.",[{pt:"A porta está fechada.",uk:"Двері зачинені / перебувають зачиненими."}],["ser-passive","ser-estar"])
 ];
