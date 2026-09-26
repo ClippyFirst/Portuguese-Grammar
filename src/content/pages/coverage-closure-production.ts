@@ -261,7 +261,7 @@ export const pages: GrammarPage[] = [
     titleUk: "PT-BR і PT-PT: системне порівняння", titlePt: "Português do Brasil e português europeu", titleEn: "Brazilian vs European Portuguese",
     summary: "Ключові системні відмінності бразильської та європейської португальської без подання одного різновиду як «правильнішого».",
     aliases: ["PT-BR PT-PT", "Brazilian European Portuguese", "бразильська європейська", "порівняння різновидів"],
-    related: ["pluricentric", "tu-voce", "clitic-br-pt", "progressive-br-pt", "sentence-type-variation-pt-br-pt-pt"],
+    related: ["pluricentric", "tu-voce", "clitics-br-pt", "progressive-br-pt", "sentence-type-variation-pt-br-pt-pt"],
     status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "PT-BR і PT-PT — дві великі нормативні реалізації португальської з величезним спільним ядром і систематичними відмінностями. Вони розходяться не в кожному правилі: значна частина граматики однакова. Найбільше навчальне значення мають займенники й звертання, позиція clitic, progressive constructions, лексика, вимова та деякі синтаксичні переваги.",
     definition: "PT-BR і PT-PT — позначення бразильського та європейського національних різновидів португальської; порівняння має описувати конкретну варіативність, а не створювати дві ізольовані граматики.",
