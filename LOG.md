@@ -1451,3 +1451,18 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 - Canonical coverage: **352/352**.
 - Нових canonical IDs: **0**.
 - Quality/depth pass триває.
+
+
+## 2026-09-26 — Batch 40 continuation: coverage, generator safety, comparison/regional pass
+
+- Catalog re-counted from current `src/content/catalog.ts`: **356 topics** (not the older 352 figure).
+- Added the missing regional article `sentence-type-variation-pt-br-pt-pt`; the regional catalogue is now internally covered.
+- Deepened the generated learner layer for four high-value topics: `ficar`, `preterito-imperfeito`, `progressive-br-pt`, `prepositions-overview`.
+- Added comparison-layer material for `personal-vs-impersonal`, `saber-conhecer`, `levar-trazer`, and `a-vs-crase`.
+- Enabled the generated coverage provider for comparison-category entries while retaining dedicated modules as authoritative.
+- Changed `scripts/gen_grammar_pages.py` to **fail closed** when reviewed KB content is absent; it no longer fabricates fallback/filler articles.
+- Refreshed `CONTENT_AUDIT.md` to the current 356-topic catalogue and current fallback coverage model.
+- Re-checked `src/components/prose.tsx`: HTML escaping and `[[id|label]]` wiki-link handling are now present; the historical audit finding is no longer applicable.
+- Academic Writing Toolkit review of the newly edited explanatory prose found no British-English issues; paragraph review only flagged that isolated snippets are short when detached from their surrounding article, not a substantive grammar/logic error.
+- A full local npm QA run remains unavailable in this environment because the container cannot resolve `github.com`; no green build/typecheck claim is made without executable CI evidence.
+- Current HEAD before this log commit: `a625c3a3997e3ceaf77e8f475a09cd648f398d4`.
