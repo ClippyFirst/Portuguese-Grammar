@@ -9,7 +9,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Indicativo vs conjuntivo",
     titlePt: "Indicativo vs conjuntivo",
     titleEn: "Indicative vs subjunctive",
-    summary: "Факт / пресупозиція vs не-факт.",
+    summary: "Ствердження пропозиції, модальність і контекст: indicativo vs conjuntivo.",
     aliases: [
       "індикатив кон'юнктив",
       "subjuntivo",
