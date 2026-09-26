@@ -33,6 +33,7 @@ function wikiAnchor(id: string, label: string): string {
 }
 
 /** Lightweight markup: paragraphs split by blank lines; `*em*`; **strong**; `code`; [[id|label]] wiki-links. */
+// eslint-disable-next-line react-refresh/only-export-components -- exported formatter is a shared rendering utility
 export function toHtml(src: string): string {
   const escaped = escapeHtml(src);
   const withMarks = escaped
