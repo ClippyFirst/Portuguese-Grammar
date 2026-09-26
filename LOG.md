@@ -1248,4 +1248,4 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 - Нових canonical IDs: **0**.
 - Нових related IDs не додано.
 - Academic Writing Toolkit застосовано до нових prose-блоків; технічні short-paragraph сигнали не трактуються як змістові дефекти.
-- Structural/typecheck/lint/build мають бути підтверджені PR CI перед merge.
+- GitHub connector не повернув status checks/workflow runs для цього commit, тому CI green не заявляється; після merge виконано окрему перевірку main і зафіксовано відсутність доступних status checks.
