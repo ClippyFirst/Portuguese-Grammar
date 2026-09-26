@@ -83,7 +83,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Сурядність і підрядність", titlePt: "Coordenação e subordinação", titleEn: "Coordination and subordination",
     summary: "Як розрізняти координацію та залежність між частинами складного речення.",
     aliases: ["сурядність і підрядність", "coordination subordination", "coordenação e subordinação", "складне речення"],
-    related: ["coordination", "coordinating", "subordinating", "complement-clauses", "subordinate-clauses", "finite-vs-nonfinite-subordination"],
+    related: ["coordination", "coordinating", "subordinating", "complement-clauses", "subordination-and-coordination", "finite-vs-nonfinite-subordination"],
     status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Сурядність і підрядність часто перекладаються однаково українськими сполучниками на кшталт «і», «але», «що», «коли», але синтаксичні відносини між частинами різні. У координації частини мають відносно рівний статус; у підрядності одна конструкція структурно залежить від іншої та може виконувати роль додатка, означення або обставини.",
     definition: "Координація поєднує синтаксично співвідносні компоненти, а субординація створює залежну конструкцію. Різниця визначається не лише сполучником, а й синтаксичною функцією та структурою всього речення.",
