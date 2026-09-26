@@ -941,3 +941,12 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 
 - `5aca07a334b87dece95ac858c822b187d2799ad6` — первинне додавання фінального coverage-модуля;
 - `0eeecd4f02def1d19bbb52d6f2424afc9d885e13` — видалення двох дубльованих adjective IDs після перевірки coverage;\n- `472c046e9137944e416c299ba3f58b99b2221986` — нормалізація останнього `related` ID (`habituality` → `time-adverbs`).
+
+
+## Batch 19 — quality/depth pass
+
+- Revised 4 existing canonical articles: `parts-of-speech`, `gender-number-person`, `irregular-adjectives`, `adverb-position`.
+- Deepened Ukrainian explanations, Portuguese examples, contrastive notes, learner mistakes, and PT-BR/PT-PT framing where useful.
+- Updated catalog depth metadata for the four revised articles from `short` to `medium`.
+- Academic Writing Toolkit paragraph-logic review: no content-level issues identified; the single reported `short-paragraph` warning is the known technical input-container artifact when multiple source files are concatenated.
+- Canonical coverage remains **352/352**; remaining canonical topics: **0**.
