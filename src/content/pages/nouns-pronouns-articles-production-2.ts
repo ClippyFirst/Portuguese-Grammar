@@ -370,3 +370,186 @@ export const pages: GrammarPage[] = [
     ]
   })
 ];
+,
+  page({
+    id: "demonstratives",
+    slug: "demonstratives",
+    category: "pronouns",
+    titleUk: "Вказівні займенники й детермінативи",
+    titlePt: "Demonstrativos",
+    titleEn: "Demonstratives",
+    summary: "este, esse, aquele та isto, isso, aquilo: просторове, дискурсивне й анафоричне відсилання.",
+    aliases: ["вказівні", "demonstratives", "demonstrativos", "este", "esse", "aquele"],
+    related: ["personal-pronouns", "articles-definite", "prep-demonstrative", "information-structure"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Португальські demonstrativos не зводяться до механічної трійки «цей — той — он той». Вибір este/esse/aquele може залежати від простору, дискурсу, спільної уваги та різновиду португальської. Окремо треба розрізняти атрибутивні форми este livro та самостійні isto, isso, aquilo.",
+    definition: "Вказівний займенник або детермінатив указує на референт через просторовий, дискурсивний чи анафоричний зв'язок із ситуацією мовлення.",
+    uses: [
+      { title: "Вказування в просторі", body: "Три серії можуть протиставляти близькість і віддаленість, але просторові межі не є математичними.", examples: [ex("Este livro está aqui.", "Ця книжка тут.", { purpose: "production" }), ex("Aquele prédio fica ali.", "Та будівля он там.", { purpose: "comprehension" })] },
+      { title: "Дискурсивне відсилання", body: "Вказівний може відсилати не до фізичного предмета, а до вже сказаного або наступного змісту.", examples: [ex("Isso é importante.", "Це важливо.", { purpose: "contrast" })] },
+      { title: "Самостійні форми", body: "isto, isso, aquilo не узгоджуються з пропущеним іменником так, як este/essa.", examples: [ex("Não quero isso.", "Я цього не хочу.", { purpose: "production" })] }
+    ],
+    examples: [
+      ex("Este problema é difícil.", "Ця проблема складна.", { purpose: "production" }),
+      ex("Esse problema já foi resolvido.", "Цю/ту проблему вже розв'язано.", { purpose: "contrast" }),
+      ex("Aquele dia foi inesquecível.", "Той день був незабутнім.", { purpose: "comprehension" }),
+      ex("Isto não faz sentido.", "Це не має сенсу.", { purpose: "production" })
+    ],
+    mistakes: [
+      mistake("вибирати este/esse/aquele лише за українським «цей/той»", "враховувати простір і дискурс", "Дискурсивна відстань може бути важливішою за фізичну.", "predicted-l1-transfer", "high"),
+      mistake("плутати este з isto та esse з isso", "розрізняти форми перед іменником і самостійні форми", "Este livro та isto são diferentes за синтаксичною будовою.", "editorial", "high"),
+      mistake("вважати систему однаковою в усіх різновидах", "позначати регіональну варіативність", "У PT-BR і PT-PT розподіл серій може частково відрізнятися.", "editorial", "medium")
+    ],
+    ukrainian: "Українські «цей/той» також мають просторове й дискурсивне значення, тому базова категорія знайома. Водночас португальська має три серії та окремі нейтральні форми isto/isso/aquilo; українське «це» не дає автоматичної відповідності кожній із них.",
+    regional: "Розподіл este/esse/aquele є однією з ділянок, де опис PT-BR і PT-PT не варто зводити до однієї схеми. Значення формується простором, дискурсом і локальною нормою.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: GULBENKIAN_II },
+      { label: "Camões — Referencial Camões PLE", url: CAMOES_PLE }
+    ]
+  }),
+  page({
+    id: "possessives",
+    slug: "possessives",
+    category: "pronouns",
+    titleUk: "Присвійні форми",
+    titlePt: "Possessivos",
+    titleEn: "Possessives",
+    summary: "meu, teu, seu, nosso, vosso та їхні форми: узгодження, референція й неоднозначність.",
+    aliases: ["присвійні", "possessives", "possessivos", "meu", "seu", "nosso"],
+    related: ["articles-possessives", "determiners-agreement", "personal-pronouns", "prepositional-pronouns"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Португальські присвійні форми узгоджуються насамперед із позначуваним предметом, а не з власником. meu livro і minha casa показують рід і число речі. Особливої уваги потребує seu, який може бути неоднозначним щодо того, кому саме належить предмет.",
+    definition: "Присвійна форма виражає відношення володіння або належності. У португальській вона має форми, що узгоджуються з іменником за родом і числом, тоді як особа власника кодується самою парадигмою.",
+    uses: [
+      { title: "Узгодження з річчю", body: "meu/minha та nosso/nossa змінюються відповідно до іменника.", examples: [ex("o meu livro", "моя книжка? — ні, моя книга: мій підручник", { purpose: "contrast" }), ex("a minha casa", "мій будинок? — ні, мій дім; форма жіночого роду", { purpose: "contrast" })] },
+      { title: "Референція власника", body: "seu може стосуватися різних осіб, тому контекст або явна конструкція часто потрібні для зняття неоднозначності.", examples: [ex("Ele encontrou o seu irmão.", "Він зустрів свого/його брата.", { purpose: "comprehension" })] },
+      { title: "Артикль і присвійний", body: "Окремо треба вчити, коли присвійна група має артикль у відповідному різновиді та регістрі.", examples: [ex("O meu carro está aqui.", "Моя машина тут.", { purpose: "production" })] }
+    ],
+    examples: [
+      ex("A minha irmã mora aqui.", "Моя сестра живе тут.", { purpose: "production" }),
+      ex("Os nossos amigos chegaram.", "Наші друзі прийшли.", { purpose: "production" }),
+      ex("Ele perdeu o seu passaporte.", "Він загубив свій/його паспорт.", { purpose: "contrast" }),
+      ex("Onde estão as tuas chaves?", "Де твої ключі?", { purpose: "comprehension" })
+    ],
+    mistakes: [
+      mistake("узгоджувати meu/minha з власником", "узгоджувати присвійне з іменником", "meu livro, minha casa: рід визначає річ.", "predicted-l1-transfer", "high"),
+      mistake("вважати seu однозначним", "перевіряти референцію власника за контекстом", "Для ясності може знадобитися dele/dela або інша конструкція.", "editorial", "high"),
+      mistake("переносити модель артикля з одного різновиду на інший", "перевіряти PT-BR/PT-PT та регістр", "Артикль перед присвійним має регіональні й стилістичні закономірності.", "editorial", "medium")
+    ],
+    ukrainian: "Українське «мій/моя/моє» теж узгоджується з предметом, тому тут є корисна паралель. Складність для українця виникає через систему артикля та через неоднозначність seu, яка не має простого українського відповідника.",
+    regional: "У PT-BR і PT-PT є відмінності у частотності артикля перед присвійним. Форми самого присвійного в основному спільні, але конкретна конструкція залежить від різновиду й регістру.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: GULBENKIAN_II },
+      { label: "Camões — Referencial Camões PLE", url: CAMOES_PLE }
+    ]
+  }),
+  page({
+    id: "indefinites",
+    slug: "indefinites",
+    category: "pronouns",
+    titleUk: "Неозначені займенники та детермінативи",
+    titlePt: "Pronomes e determinantes indefinidos",
+    titleEn: "Indefinites",
+    summary: "alguém, ninguém, algum, nenhum, todo, tudo та інші форми невизначеної референції.",
+    aliases: ["неозначені", "indefinites", "indefinidos", "alguém", "ninguém", "todo"],
+    related: ["negation-ninguem", "quantifiers-overview", "articles-indefinite", "generic-reference"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Неозначені форми утворюють не один список, а систему різних типів референції: особа невідома, кількість невизначена, вибір довільний, множина охоплена повністю тощо. alguém і algum не є взаємозамінними, так само як tudo і todo.",
+    definition: "Неозначені займенники та детермінативи кодують невизначену або неідентифіковану референцію, кількість, вибір чи охоплення множини.",
+    uses: [
+      { title: "Особа чи річ", body: "alguém і ninguém типово стосуються людей, тоді як algo і nada — речей або ситуацій.", examples: [ex("Alguém ligou.", "Хтось подзвонив.", { purpose: "production" }), ex("Ninguém respondeu.", "Ніхто не відповів.", { purpose: "production" })] },
+      { title: "Детермінатив перед іменником", body: "algum, nenhum, todo та інші форми супроводжують іменник і узгоджуються з ним.", examples: [ex("Alguns alunos chegaram.", "Деякі студенти прийшли.", { purpose: "comprehension" })] },
+      { title: "Займенникове вживання", body: "todo і tudo мають різну граматичну будову: перше узгоджується з іменником, друге є самостійною формою.", examples: [ex("Tudo está pronto.", "Усе готово.", { purpose: "contrast" })] }
+    ],
+    examples: [
+      ex("Algum aluno sabe a resposta.", "Якийсь студент знає відповідь.", { purpose: "production" }),
+      ex("Nenhum aluno faltou.", "Жоден студент не був відсутній.", { purpose: "production" }),
+      ex("Tudo correu bem.", "Усе пройшло добре.", { purpose: "comprehension" }),
+      ex("Qualquer pessoa pode participar.", "Будь-яка людина може взяти участь.", { purpose: "contrast" })
+    ],
+    mistakes: [
+      mistake("плутати alguém/algum і tudo/todo", "визначати синтаксичну позицію та тип референції", "Неозначені форми мають різні граматичні ролі.", "predicted-l1-transfer", "high"),
+      mistake("вживати *ninguém não як універсальну модель", "враховувати negative concord", "Заперечні елементи взаємодіють із não за правилами португальського речення.", "editorial", "high"),
+      mistake("вважати qualquer простим синонімом algum", "розрізняти невизначеність і довільний вибір", "У конкретному контексті значення може бути «будь-хто/будь-який».", "semantic", "medium")
+    ],
+    ukrainian: "Українські «хтось/ніхто/щось/ніщо/кожен/будь-хто» дають добру семантичну опору, але синтаксична класифікація не збігається повністю. Особливо важливо не перекладати todo і tudo одним словом «все» без урахування їхньої форми.",
+    regional: "Базова система неозначених форм спільна для PT-BR і PT-PT. Різниця частіше стосується частотності, розмовних альтернатив та дискурсивних уподобань.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: GULBENKIAN_II },
+      { label: "Camões — Referencial Camões PLE", url: CAMOES_PLE }
+    ]
+  }),
+  page({
+    id: "interrogative-pronouns",
+    slug: "interrogative-pronouns",
+    category: "pronouns",
+    titleUk: "Питальні займенники",
+    titlePt: "Pronomes interrogativos",
+    titleEn: "Interrogative pronouns",
+    summary: "que, quem, qual, quanto та їхня роль у спеціальних питаннях.",
+    aliases: ["питальні займенники", "interrogative pronouns", "interrogativos", "que", "quem", "qual"],
+    related: ["wh-questions", "question-word-order", "relative-pronouns", "interrogative-clauses"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Питальні форми визначають не тільки «питальне слово», а й тип інформації, яку шукає мовець. que зазвичай запитує про ідентичність або клас предмета, quem — про особу, qual — про вибір у множині можливостей, quanto — про кількість або міру.",
+    definition: "Питальний займенник — форма, що займає синтаксичну позицію невідомого компонента та формує спеціальне питання.",
+    uses: [
+      { title: "Особа", body: "quem запитує про людину або людей.", examples: [ex("Quem chegou?", "Хто прийшов?", { purpose: "production" })] },
+      { title: "Предмет або зміст", body: "que та o que беруть участь у питаннях про предмет, подію або зміст.", examples: [ex("O que aconteceu?", "Що сталося?", { purpose: "production" })] },
+      { title: "Вибір і кількість", body: "qual/qual(is) та quanto(a/os/as) узгоджуються з відповідними іменними структурами.", examples: [ex("Qual livro preferes?", "Яку книжку ти віддаєш перевагу?", { purpose: "contrast" }), ex("Quantos livros leste?", "Скільки книжок ти прочитав/прочитала?", { purpose: "production" })] }
+    ],
+    examples: [
+      ex("Quem telefonou?", "Хто подзвонив?", { purpose: "production" }),
+      ex("O que procuras?", "Що ти шукаєш?", { purpose: "production" }),
+      ex("Qual é a tua escolha?", "Який твій вибір?", { purpose: "comprehension" }),
+      ex("Quanto custa?", "Скільки це коштує?", { purpose: "contrast" })
+    ],
+    mistakes: [
+      mistake("використовувати quem для предметів", "розрізняти особу та неособовий референт", "Для предмета типово que/o que або відповідна конструкція.", "predicted-l1-transfer", "high"),
+      mistake("вважати qual повним синонімом que", "розрізняти ідентифікацію та вибір", "qual часто передбачає вибір із набору.", "semantic", "high"),
+      mistake("ігнорувати узгодження quanto", "узгоджувати форму з іменником", "quanto/quantos/quantas мають граматичні форми.", "editorial", "medium")
+    ],
+    ukrainian: "Українські «хто/що/який/скільки» добре показують семантичний поділ, але португальські конструкції мають власні обмеження й позиційні моделі. Особливо не слід механічно переносити українське «що» на всі значення que/o que.",
+    regional: "Основні питальні форми спільні. Відмінності PT-BR/PT-PT помітні передусім у синтаксисі питань, а не в самій базовій парадигмі займенників.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: GULBENKIAN_II },
+      { label: "Camões — Referencial Camões PLE", url: CAMOES_PLE }
+    ]
+  }),
+  page({
+    id: "relative-pronouns",
+    slug: "relative-pronouns",
+    category: "pronouns",
+    titleUk: "Відносні займенники: система",
+    titlePt: "Pronomes relativos",
+    titleEn: "Relative pronouns",
+    summary: "Огляд que, quem, o qual, cujo, onde та їхньої синтаксичної ролі у відносних конструкціях.",
+    aliases: ["відносні займенники", "relative pronouns", "pronomes relativos", "que", "quem", "cujo"],
+    related: ["relative-que", "relative-quem", "relative-o-qual", "relative-cujo", "relative-onde"],
+    status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    intro: "Відносний займенник одночасно пов'язує підрядну частину з антецедентом і займає синтаксичну позицію всередині підрядної. Тому вибір que, quem, o qual, cujo або onde залежить не тільки від перекладу «який/хто/чий», а й від типу антецедента, прийменника та потрібного зв'язку.",
+    definition: "Відносний займенник — елемент відносної конструкції, який встановлює зв'язок з антецедентом і виконує синтаксичну роль у підрядній частині.",
+    uses: [
+      { title: "Загальний відносний que", body: "que є найчастотнішою формою для багатьох антецедентів.", examples: [ex("O livro que comprei é novo.", "Книжка, яку я купив/купила, нова.", { purpose: "production" })] },
+      { title: "Особа та прийменник", body: "quem особливо типовий для людських антецедентів у відповідних конструкціях.", examples: [ex("A pessoa com quem falei chegou.", "Людина, з якою я говорив/говорила, прийшла.", { purpose: "contrast" })] },
+      { title: "Посесивний зв'язок", body: "cujo узгоджується з наступним іменником, а не з власником.", examples: [ex("A autora cujo livro li chegou.", "Авторка, книжку якої я прочитав/прочитала, прийшла.", { purpose: "production" })] }
+    ],
+    examples: [
+      ex("A casa onde moro é antiga.", "Будинок, де я живу, старий.", { purpose: "production" }),
+      ex("O professor a quem escrevi respondeu.", "Викладач, якому я написав/написала, відповів.", { purpose: "comprehension" }),
+      ex("O projeto no qual trabalho é grande.", "Проєкт, над яким я працюю, великий.", { purpose: "contrast" }),
+      ex("Conheci a pessoa cujo trabalho admiras.", "Я познайомився/познайомилася з людиною, чию роботу ти цінуєш.", { purpose: "production" })
+    ],
+    mistakes: [
+      mistake("перекладати всі відносні форми одним українським «який»", "визначати синтаксичну роль і тип антецедента", "Форми мають різні обмеження.", "predicted-l1-transfer", "high"),
+      mistake("плутати cujo з присвійним займенником", "перевіряти узгодження з наступним іменником", "cujo livro, cuja casa.", "editorial", "high"),
+      mistake("ігнорувати прийменник перед відносною формою", "вивчати всю рамку: com quem, a quem, no qual тощо", "Прийменник часто є частиною синтаксичної моделі.", "editorial", "high")
+    ],
+    ukrainian: "Українська має відносні «який, хто, чий, де», тому категорія добре знайома. Водночас португальський вибір форми тісно пов'язаний із прийменником і структурою відносної конструкції. Особливо важливо не переносити українське «який» на cujo або quem.",
+    regional: "Базовий інвентар спільний. PT-BR і PT-PT можуть відрізнятися в розмовних стратегіях прийменникових відносних конструкцій, тому формальний o qual не слід трактувати як єдину модель у всіх регістрах.",
+    sources: [
+      { label: "Fundação Calouste Gulbenkian — Gramática do Português, Vol. II", url: GULBENKIAN_II },
+      { label: "Camões — Referencial Camões PLE", url: CAMOES_PLE }
+    ]
+  })
+
+];
