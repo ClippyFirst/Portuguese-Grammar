@@ -940,4 +940,4 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 ### Git
 
 - `5aca07a334b87dece95ac858c822b187d2799ad6` — первинне додавання фінального coverage-модуля;
-- `0eeecd4f02def1d19bbb52d6f2424afc9d885e13` — видалення двох дубльованих adjective IDs після перевірки coverage;
+- `0eeecd4f02def1d19bbb52d6f2424afc9d885e13` — видалення двох дубльованих adjective IDs після перевірки coverage;\n- `472c046e9137944e416c299ba3f58b99b2221986` — нормалізація останнього `related` ID (`habituality` → `time-adverbs`).
