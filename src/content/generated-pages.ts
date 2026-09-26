@@ -2200,6 +2200,102 @@ Object.assign(SPECIAL, {
     ukrainian: "Українські відмінки часто стискають відмінності, які в португальській виражаються прийменниковими групами або окремими займенниковими формами. Тому порівнюйте роль, керування й конструкцію, а не лише питання «кого? чого?».",
     learnerQuestions: ["Скільки аргументів вибирає саме це значення дієслова?", "Яку семантичну роль має кожен аргумент?", "Як аргумент реалізований: іменною групою, прийменниковою групою, підрядною частиною чи інфінітивом?", "Що в реченні є вільним модифікатором, а не аргументом?", "Чи змінюється рамка при зміні значення, різновиду або регістру?"]
   }
+
+  "preterito-perfeito": {
+    formulas: [{ pattern: "pretérito perfeito simples → подія як завершений/цілісний епізод у минулому", note: "Часова перспектива не є прямим відповідником українського доконаного виду." }],
+    examples: [
+      { pt: "Ontem estudei duas horas.", uk: "Учора я вчився/вчилася дві години." },
+      { pt: "Ela chegou às oito.", uk: "Вона прийшла о восьмій." },
+      { pt: "Já terminei o trabalho.", uk: "Я вже закінчив/закінчила роботу." }
+    ],
+    mistakes: [{ wrong: "Pretérito perfeito = завжди український доконаний вид.", right: "Враховувати часову перспективу та межі події.", why: "Португальський час і український вид кодують різні граматичні параметри." }],
+    ukrainian: "Український вид допомагає перекладати контекст, але не є таблицею відповідників: завершеність і часовий інтервал треба встановлювати окремо.",
+    learnerQuestions: ["Подія подається як завершений епізод?", "Чи важлива межа події?", "Чи потрібен контраст із imperfeito?"]
+  },
+  "perfeito-vs-imperfeito": {
+    formulas: [{ pattern: "perfeito → епізод; imperfeito → фон, звичність, тривалість або незавершена перспектива в минулому", note: "Контраст не зводиться до українського «доконаний/недоконаний»." }],
+    examples: [
+      { pt: "Quando cheguei, ela estudava.", uk: "Коли я прийшов/прийшла, вона навчалася." },
+      { pt: "Todos os domingos, estudávamos juntos.", uk: "Щонеділі ми вчилися разом." },
+      { pt: "Ela estudou duas horas e saiu.", uk: "Вона повчилася дві години й пішла." }
+    ],
+    mistakes: [{ wrong: "Imperfeito означає будь-яку незавершену дію.", right: "Враховувати фон, звичність, тривалість і часову точку відліку.", why: "Вибір imperfeito залежить від способу представлення минулої ситуації." }],
+    ukrainian: "Український недоконаний вид часто дає корисну підказку, але imperfeito має власні функції, зокрема звичність і фон.",
+    learnerQuestions: ["Подія є фоном чи окремим епізодом?", "Йдеться про звичність?", "Яку часову точку встановлює контекст?"]
+  },
+  "indicative-vs-subjunctive": {
+    formulas: [{ pattern: "indicativo → assertive presentation; conjuntivo → non-asserted, evaluated, desired, hypothetical or dependent content", note: "Вибір mode визначається всією конструкцією, а не одним українським відповідником." }],
+    examples: [
+      { pt: "Sei que ele vem.", uk: "Я знаю, що він приходить/прийде." },
+      { pt: "Quero que ele venha.", uk: "Я хочу, щоб він прийшов." },
+      { pt: "Embora esteja cansado, continuo.", uk: "Хоча я втомлений/втомлена, я продовжую." }
+    ],
+    mistakes: [{ wrong: "Conjuntivo = просто «умовний спосіб».", right: "Визначати його за конструкцією та семантикою залежного змісту.", why: "Conjuntivo охоплює бажання, оцінку, сумнів, гіпотезу та інші типи залежності." }],
+    ukrainian: "Український умовний спосіб — лише частковий аналог; український переклад не визначає португальський mode автоматично.",
+    learnerQuestions: ["Зміст стверджується як факт?", "Який предикат або сполучник створює залежність?", "Чи є бажання, сумнів, оцінка або гіпотеза?"]
+  },
+  "subjunctive-triggers": {
+    formulas: [{ pattern: "trigger + que + conjuntivo → залежний зміст за семантичною/синтаксичною умовою", note: "Тригер треба розуміти як частину всієї конструкції, а не як ізольований список слів." }],
+    examples: [
+      { pt: "É importante que estudes.", uk: "Важливо, щоб ти навчався/навчалася." },
+      { pt: "Duvido que ele venha.", uk: "Я сумніваюся, що він прийде." },
+      { pt: "Espero que corra tudo bem.", uk: "Сподіваюся, що все буде добре." }
+    ],
+    mistakes: [{ wrong: "Після будь-якого que ставиться conjuntivo.", right: "Визначати семантичне відношення між частинами.", why: "que може вводити й асертовані пропозиції." }],
+    learnerQuestions: ["Головний предикат виражає знання, бажання, сумнів чи оцінку?", "Залежна частина подається як факт?", "Яка усталена модель керування?"]
+  },
+  "prep-a": {
+    formulas: [{ pattern: "a → напрямок, адресат, часові та конструкційні значення", note: "Вибір a визначається конкретною конструкцією, а не одним українським «до»." }],
+    examples: [
+      { pt: "Vou a Lisboa.", uk: "Я їду до Лісабона." },
+      { pt: "Entreguei o livro a Ana.", uk: "Я передав/передала книжку Ані." },
+      { pt: "Comecei a estudar.", uk: "Я почав/почала навчатися." }
+    ],
+    mistakes: [{ wrong: "a завжди означає рух «до».", right: "Перевіряти керування та тип конструкції.", why: "a має просторові, об'єктні, часові та перифрастичні функції." }],
+    ukrainian: "Українські відмінки часто виражають те, що португальська кодує прийменником a; керування варто вчити разом із дієсловом.",
+    learnerQuestions: ["Це напрямок, адресат чи частина конструкції?", "Чи відбувається контракція з артиклем?", "Чи a вимагається конкретним дієсловом?"]
+  },
+  "prepositional-pronouns": {
+    formulas: [{ pattern: "preposição + mim/ti/ele...; para + eu/tu... when pronoun is infinitive subject", note: "Форма залежить від синтаксичної ролі займенника." }],
+    examples: [
+      { pt: "Isto é para mim.", uk: "Це для мене." },
+      { pt: "Isto é para eu fazer amanhã.", uk: "Це мені зробити завтра.", note: "eu є підметом інфінітива." },
+      { pt: "Entre mim e ti, tudo está bem.", uk: "Між мною і тобою все гаразд." }
+    ],
+    mistakes: [{ wrong: "Isto é para mim fazer amanhã.", right: "Isto é para eu fazer amanhã.", why: "eu тут є підметом fazer, а не об'єктом прийменника." }],
+    ukrainian: "Українські «я/мене/мені» не передають механічно розподіл eu/mim; спершу визначте синтаксичну роль.",
+    learnerQuestions: ["Займенник є додатком прийменника чи підметом інфінітива?", "Який прийменник стоїть перед формою?", "Чи є варіантна форма в конкретному різновиді?"]
+  },
+  "relative-cujo": {
+    formulas: [{ pattern: "antecedent + cujo/a/os/as + noun → possessive relative", note: "cujo узгоджується з наступним іменником, а не з antecedent." }],
+    examples: [
+      { pt: "A autora cujo livro li chegou.", uk: "Авторка, книжку якої я прочитав/прочитала, прийшла." },
+      { pt: "O homem cujas ideias conhecemos.", uk: "Чоловік, чиї ідеї ми знаємо." }
+    ],
+    mistakes: [{ wrong: "A autora cuja li o livro.", right: "A autora cujo livro li.", why: "cujo стоїть перед іменником, який позначає належний об'єкт." }],
+    learnerQuestions: ["Хто є antecedent?", "Який іменник позначає належний об'єкт?", "З яким іменником узгоджується cujo?"]
+  },
+  "conditional-clauses": {
+    formulas: [{ pattern: "se + condição → oração principal; сценарій визначає часово-модовий вибір", note: "Не всі умовні речення мають однакову форму після se." }],
+    examples: [
+      { pt: "Se tiver tempo, vou.", uk: "Якщо матиму час, піду." },
+      { pt: "Se tivesse tempo, iria.", uk: "Якби мав/мала час, пішов/пішла б." },
+      { pt: "Se tivesse estudado, teria passado.", uk: "Якби я навчався/навчалася, склав/склала б." }
+    ],
+    mistakes: [{ wrong: "Se eu teria tempo, iria.", right: "Se eu tivesse tempo, iria.", why: "У цій гіпотетичній моделі protasis використовує imperfeito do conjuntivo, а не futuro do pretérito." }],
+    ukrainian: "Українське «якщо/якби» корисне для семантики, але португальська розподіляє часово-модові форми інакше.",
+    learnerQuestions: ["Сценарій відкритий чи гіпотетичний?", "Умова стосується теперішнього/майбутнього чи минулого?", "Які форми потрібні в protasis та apodosis?"]
+  },
+  "concessive-clauses": {
+    formulas: [{ pattern: "embora / ainda que / mesmo que + oração → concessive relation", note: "У цих моделях типовим є conjuntivo; конкретний час залежить від часової перспективи." }],
+    examples: [
+      { pt: "Embora esteja cansado, continuo.", uk: "Хоча я втомлений/втомлена, я продовжую." },
+      { pt: "Embora estivesse cansado, continuei.", uk: "Хоча я був/була втомлений/втомлена, я продовжив/продовжила." },
+      { pt: "Mesmo que chova, vamos.", uk: "Навіть якщо буде дощ, ми підемо." }
+    ],
+    mistakes: [{ wrong: "Embora estou cansado.", right: "Embora esteja cansado.", why: "У цій concessive-конструкції потрібен conjuntivo." }],
+    learnerQuestions: ["Це факт чи гіпотеза?", "Який сполучник вводить concessive clause?", "Який час conjuntivo відповідає часовій перспективі?"]
+  },
 });
 
 function genericLayer(meta: (typeof CATALOG)[number]): LearnerLayer {
