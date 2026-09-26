@@ -343,7 +343,7 @@ export const pages: GrammarPage[] = [
     examples: [
       ex("A casa onde moro fica perto daqui.", "Будинок, де я живу, неподалік.", { purpose: "production" }),
       ex("A cidade em que nasci mudou muito.", "Місто, у якому я народився/народилася, сильно змінилося.", { purpose: "contrast" }),
-      ex("O país no qual trabalhei tinha outra legislação.", "Країна, у якій я працював/працювала, мала інше законодавство.", { purpose: "formal" }),
+      ex("O país no qual trabalhei tinha outra legislação.", "Країна, у якій я працював/працювала, мала інше законодавство.", { register: "formal", purpose: "comprehension" }),
       ex("O texto em que escreveste a palavra está aqui.", "Текст, у якому ти написав/написала це слово, тут.", { purpose: "comprehension" }),
     ],
     mistakes: [
