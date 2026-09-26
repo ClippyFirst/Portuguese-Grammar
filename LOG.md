@@ -622,3 +622,40 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 - Залишилося: **67 / 349**.
 - Fallback/generated pages не зараховуються.
 - Переписування вже наявних dedicated IDs не збільшує coverage counter.
+
+
+## 2026-09-26 — content production batch 12: lexical, predicate and discourse coverage
+
+Продовжено наповнення canonical corpus на робочій гілці `content/production-2026-09-batch-01`. Цього разу взято теми, які вже були представлені в каталозі або legacy/fallback-модулях, але ще не мали окремої handwritten production-статті.
+
+### Додано 10 нових dedicated GrammarPage-статей
+
+У `src/content/pages/lexical-syntax-discourse-production.ts` створено:
+
+- `collocations-overview` — система колокацій;
+- `verb-noun-collocations` — колокації дієслово + іменник;
+- `adjective-government` — керування прикметників;
+- `false-friends` — хибні друзі перекладача;
+- `nominalization` — номіналізація;
+- `complex-predicates` — складні предикати;
+- `discourse-overview` — дискурс як рівень організації мовлення;
+- `discourse-markers` — дискурс-маркери;
+- `cohesion-reference` — когезія та референція;
+- `modal-particles` — модальні частки.
+
+### Якість
+
+Пакет не дублює вже створені production IDs: теми перевірено проти поточного production-контенту та legacy-модулів. Статті розмежовують lexical collocation і вільне словосполучення, verb–noun selection і verb government, adjective government і crase, nominalization і простий словотвір, complex predicates і координацію незалежних дієслів, а також discourse-level cohesion, discourse markers та modal particles.
+
+Кожна сторінка має definition, функціональні підрозділи, production/comprehension/contrast приклади, типові learner mistakes, український контраст, PT-BR/PT-PT scope та джерела. Окремо враховано український L1 transfer: дослівний вибір прийменника, лексичних партнерів, перекладу модальних/дискурсивних елементів та керування.
+
+Academic Writing Toolkit застосовано для paragraph-level logic review підготовленого пакета; цього разу інструмент повернув **0 логічних проблем**.
+
+### Лічильник покриття
+
+- Було: **282 / 349 написано**.
+- Додано нових canonical IDs: **10**.
+- Стало: **292 / 349 написано**.
+- Залишилося: **57 / 349**.
+- Fallback/generated pages не зараховуються.
+- Переписування вже наявних dedicated IDs не збільшує coverage counter.
