@@ -546,3 +546,34 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 - Залишилося: **75 / 349**.
 - Fallback/generated pages не зараховуються.
 - Переписування вже наявних dedicated IDs не збільшує coverage counter.
+
+## 2026-09-26 — content quality batch 10: relative clauses
+
+Продовжено роботу на `content/production-2026-09-batch-01`.
+
+### Що зроблено
+
+Не створювалися нові canonical IDs: шість наявних relative-сторінок переписано з компактних legacy-описів у повноцінні learner-facing reference articles:
+
+- `relative-que`;
+- `relative-quem`;
+- `relative-o-qual`;
+- `relative-cujo`;
+- `relative-onde`;
+- `relative-restrictive`.
+
+### Якість
+
+Оновлені статті тепер системно розрізняють синтаксичну функцію відносного компонента, antecedent, restrictive/explicative interpretation, прийменникове керування, узгодження `o qual` та `cujo`, локативний розподіл `onde / em que / no qual`, а також типові труднощі україномовного студента.
+
+Для джерельного контролю використано `Gramática do Português`, Referencial Camões PLE та релевантні консультаційні матеріали Ciberdúvidas щодо `que/o qual`, `cujo` і `onde`.
+
+### Лічильник покриття
+
+- Було: **274 / 349 написано**.
+- Додано нових canonical IDs: **0**.
+- Стало: **274 / 349 написано**.
+- Залишилося: **75 / 349**.
+- Це **quality upgrade**, а не штучне збільшення coverage counter.
+- Fallback/generated pages не враховуються.
+
