@@ -36,8 +36,6 @@ p("homograph-accents","homograph-accents","Акцент як розрізнен�
   regional:"Опис стосується стандартного сучасного письма. Офіційні документи, установи та назви організацій можуть мати власні стилістичні правила.",
   sources:[{label:"Camões — Referencial Camões PLE",url:"https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple"}],
   depth:"high"
-}
-
 },
 {
   id: "punctuation",
