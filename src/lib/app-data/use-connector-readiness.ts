@@ -53,7 +53,6 @@ export function useRefetchWhenConnectorReady(
 ): ConnectorWaitStatus {
   const refetchRef = useRef(refetch);
   const [timedOut, setTimedOut] = useState(false);
-  const [notEmbedded, setNotEmbedded] = useState(false);
 
   useEffect(() => {
     refetchRef.current = refetch;
@@ -61,10 +60,7 @@ export function useRefetchWhenConnectorReady(
 
   useEffect(() => {
     if (!waiting) return;
-    if (!isFramed()) {
-      setNotEmbedded(true);
-      return () => setNotEmbedded(false);
-    }
+    if (!isFramed()) return;
     let cancelled = false;
     let refetching = false;
     let attempt = 0;
@@ -115,6 +111,6 @@ export function useRefetchWhenConnectorReady(
   }, [waiting]);
 
   if (!waiting) return "idle";
-  if (notEmbedded) return "not_embedded";
+  if (waiting && !isFramed()) return "not_embedded";
   return timedOut ? "timed_out" : "waiting";
 }
