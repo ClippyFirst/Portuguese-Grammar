@@ -35,7 +35,7 @@ p("superlatives","superlatives","Відносний суперлатив","Super
  depth:"high"
 },
 {
-  id:"irregular-adjectives",slug:"irregular-adjectives",category:"adjectives",
+  id:"irregular-adjectives",slug:"irregular",category:"adjectives",
   titleUk:"Нерегулярні прикметники",titlePt:"Adjetivos irregulares",titleEn:"Irregular adjectives",
   summary:"Нерегулярні форми ступенів порівняння: melhor, pior, maior, menor та їхня поведінка в контексті.",
   aliases:["нерегулярні прикметники","adjetivos irregulares","melhor","pior","maior","menor"],
