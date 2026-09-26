@@ -546,6 +546,10 @@ export const COMPARISON_IDS = [
   "tense-vs-ukrainian",
   "a-vs-crase",
   "pt-br-pt-pt",
+  ["primary-interjections","pragmatics","primary-interjections","Первинні вигуки","Interjeições primárias","Primary interjections","Короткі самостійні реакції, заклики та сигнали контакту.","первинні вигуки,primary interjections,interjeições primárias","interjections,exclamative-sentences,intonation","high"],
+  ["secondary-interjections","pragmatics","secondary-interjections","Вторинні вигуки","Interjeições secundárias","Secondary interjections","Повнозначні слова та форми, що в контексті набувають вигукової функції.","вторинні вигуки,secondary interjections,interjeições secundárias","interjections,discourse-pragmatics,lexicalisation","high"],
+  ["interjectional-locutions","pragmatics","interjectional-locutions","Вигукові локції","Locuções interjetivas","Interjectional locutions","Багатослівні готові вирази з вигуковою функцією.","вигукові локції,interjectional locutions,locuções interjetivas","interjections,fixed-expressions,prepositional-locutions","high"],
+  ["vocal-reactions-written-interjections","pragmatics","vocal-reactions-written-interjections","Вокальні реакції та вигуки на письмі","Reações vocais e interjeições na escrita","Vocal reactions and written interjections","Графічне передавання вокальних реакцій, подовження, повторів та інтонаційних ефектів.","вокальні реакції,vocal reactions,interjeições na escrita","interjections,writing,punctuation,intonation","high"],
 ] as const;
 
 
