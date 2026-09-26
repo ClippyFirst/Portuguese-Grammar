@@ -6,6 +6,8 @@ on:
       - fix/remaining-ci-warnings
   workflow_dispatch:
 
+# Temporary lockfile reconciliation workflow; removed after the lockfile is committed.
+
 permissions:
   contents: write
 
