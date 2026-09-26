@@ -22,9 +22,9 @@ export const pages:GrammarPage[]=[
   ],
   examples:[{pt:"Estou estudando português.",uk:"Я вчу португальську."},{pt:"Ela entrou sorrindo.",uk:"Вона увійшла, усміхаючись."}],
   mistakes:[
-    {wrong:"falarendo",correct:"falando",explanation:"Дієслова на -ar утворюють gerúndio на -ando."},
-    {wrong:"partendo",correct:"partindo",explanation:"Дієслова на -ir мають закінчення -indo."},
-    {wrong:"називати gerúndio часом",correct:"нефінітна форма",explanation:"Час і аспект визначає вся конструкція, а не суфікс gerúndio сам по собі."}
+    {wrong:"falarendo",right:"falando",why:"Дієслова на -ar утворюють gerúndio на -ando."},
+    {wrong:"partendo",right:"partindo",why:"Дієслова на -ir мають закінчення -indo."},
+    {wrong:"називати gerúndio часом",right:"нефінітна форма",why:"Час і аспект визначає вся конструкція, а не суфікс gerúndio сам по собі."}
   ],
   ukrainian:"Український дієприслівник теж є нефінітною формою, але його значення та синтаксичні обмеження не збігаються з португальським gerúndio. Не перекладайте кожне -ando/-endo/-indo автоматично одним українським суфіксом.",
   brPt:"Gerúndio є спільною граматичною формою PT-BR і PT-PT. Відмінність полягає насамперед у продуктивності деяких прогресивних конструкцій: PT-BR частіше використовує estar + gerúndio, тоді як PT-PT має сильну конкуренцію з estar a + infinitivo.",
