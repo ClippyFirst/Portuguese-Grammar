@@ -1465,4 +1465,4 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 - Re-checked `src/components/prose.tsx`: HTML escaping and `[[id|label]]` wiki-link handling are now present; the historical audit finding is no longer applicable.
 - Academic Writing Toolkit review of the newly edited explanatory prose found no British-English issues; paragraph review only flagged that isolated snippets are short when detached from their surrounding article, not a substantive grammar/logic error.
 - A full local npm QA run remains unavailable in this environment because the container cannot resolve `github.com`; no green build/typecheck claim is made without executable CI evidence.
-- Current HEAD before this log commit: `a625c3a3997e3ceaf77e8f475a09cd648f398d4`.
+- Current HEAD before this log commit: `a625c3a3997e3ceaf77f8ef475a09cd648f398d4`.
