@@ -33,7 +33,30 @@ p("ter-de","ter-de","ter de + infinitivo","Ter de + infinitivo","ter de + infini
   depth:"high"
 },
 p("acabar-de","acabar-de","acabar de + infinitivo","Acabar de + infinitivo","acabar de + infinitive","Нещодавно завершена дія.","acabar de + infinitivo позначає подію, що відбулася щойно або безпосередньо перед моментом відліку.","Не плутайте з простим завершеним часом.",[{pt:"Acabei de chegar.",uk:"Я щойно прийшов/прийшла."}],["aspect-overview","infinitive-prepositions"]),
-p("voltar-a","voltar-a","voltar a + infinitivo","Voltar a + infinitivo","voltar a + infinitive","Повторення дії.","voltar a + infinitivo означає повторне виконання дії: «знову зробити».","Значення повторення походить від конструкції, а не лише від дієслова voltar.",[{pt:"Voltou a chover.",uk:"Знову почався дощ."}],["aspect-overview","infinitive-prepositions"]),
+{
+ id:"voltar-a",slug:"voltar-a",category:"periphrases",
+ titleUk:"voltar a + infinitivo",titlePt:"Voltar a + infinitivo",titleEn:"voltar a + infinitive",
+ summary:"Конструкція повторної дії: voltar a + infinitivo = знову зробити.",
+ aliases:["voltar a","знову","повторна дія"],
+ related:["aspect-overview","infinitive-prepositions"],
+ intro:"Voltar a + infinitivo виражає повторення попередньої або вже знайомої дії. Дієслово voltar буквально означає «повертатися», але з інфінітивом конструкція набуває аспектового значення «зробити знову».",
+ definition:"Конструкція позначає відновлення або повторне виконання дії.",
+ formation:"voltar у потрібному часі + a + infinitivo: volto a ler, voltou a chover, voltaremos a tentar.",
+ uses:[
+  {title:"Повторна дія",body:"Найтиповіше значення — дія відбувається ще раз.",examples:[{pt:"Voltei a ler o livro.",uk:"Я знову почав/ла читати книжку."},{pt:"Ela voltou a ligar.",uk:"Вона знову подзвонила."}]},
+  {title:"Повторення процесу",body:"Конструкція може описувати повторне виникнення події або стану, зокрема безособово.",examples:[{pt:"Voltou a chover.",uk:"Знову почався дощ."}]},
+  {title:"Часова форма voltar",body:"Саме voltar відмінюється за часом і особою; infinitivo залишається в простій формі.",examples:[{pt:"Vamos voltar a tentar.",uk:"Ми знову спробуємо."}]}
+ ],
+ examples:[{pt:"Ele voltou a estudar português.",uk:"Він знову почав вивчати португальську."},{pt:"Não quero voltar a cometer o mesmo erro.",uk:"Я не хочу знову припуститися тієї самої помилки."}],
+ mistakes:[
+  {wrong:"voltou de chover для «знову почався дощ»",right:"voltou a chover",why:"Аспектову конструкцію повторення утворює voltar a + infinitivo."},
+  {wrong:"voltou a chovendo",right:"voltou a chover",why:"Після a тут потрібен infinitivo, не gerúndio."}
+ ],
+ ukrainian:"Українське «знову» часто є окремим прислівником, тому легко пропустити аспектову конструкцію. В українському перекладі можливі «знову», «знову почав», «повторно», залежно від контексту.",
+ brPt:"Конструкція нормативна в PT-BR і PT-PT. Вибір між voltar a та простим повтором із прислівником залежить від стилю й контексту.",
+ regional:"Базове значення повторення спільне для португаломовних різновидів.",
+ depth:"high"
+},
 p("comecar-a","comecar-a","começar a + infinitivo","Começar a + infinitivo","começar a + infinitive","Початок дії.","começar a + infinitivo позначає початок ситуації або процесу. Це фазова перифраза.","Відрізняйте її від простого початку об'єкта: починається саме дія.",[{pt:"Começou a chover.",uk:"Почався дощ."}],["aspect-overview","infinitive-prepositions"]),
 p("ir-infinitive","ir-infinitive","ir + infinitivo","Ir + infinitivo","ir + infinitive","Плановане або близьке майбутнє.","ir + infinitivo широко вживається для майбутніх ситуацій, особливо в розмовній мові. Часова перспектива залежить від форми ir.","Не плутайте його з буквальним рухом: vou estudar може не означати «іду вчитися».",[{pt:"Vou estudar amanhã.",uk:"Я завтра вчитимуся / збираюся вчитися."}],["futuro","verb-system"]),
 p("other-periphrases","other","Інші перифрази","Outras perífrases","Other periphrases","andar a, ficar a, vir a та estar para: додаткові перифрастичні моделі.","Португальська має низку перифрастичних конструкцій, у яких допоміжне або напівдопоміжне дієслово додає фазове, аспектуальне чи часово-модальне значення. andar a + infinitivo може позначати тривалу або повторювану дію; ficar a + infinitivo — стан або дію, що продовжується після певної події; vir a + infinitivo — розвиток до результату; estar para + infinitivo — близькість або підготовленість до дії залежно від контексту.","Не перекладайте ці моделі механічно за значенням окремого дієслова: перифраза утворює власну конструктивну інтерпретацію. Розподіл окремих моделей також залежить від різновиду португальської.",[{pt:"Ando a estudar português.",uk:"Я зараз активно / останнім часом вивчаю португальську.",variety:"PT"},{pt:"Ficou a trabalhar até tarde.",uk:"Він / вона залишився працювати допізна."},{pt:"Veio a descobrir a verdade.",uk:"Зрештою він / вона дізнався / дізналася правду."},{pt:"O comboio está para chegar.",uk:"Потяг має ось-ось прибути."}],["progressive-br-pt","aspect-overview","complex-predicates","estar-a-infinitive"])
