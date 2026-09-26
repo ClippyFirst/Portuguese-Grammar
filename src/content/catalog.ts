@@ -93,7 +93,7 @@ const ROWS: Row[] = [
 
   ["noun-gender", "nouns", "noun-gender", "Рід іменників", "Género dos nomes", "Noun gender", "Чоловічий і жіночий рід, формальні моделі й пастки.", "рід,género,gênero,masculino,feminino", "gender-vs-ukrainian,professions-gender,adjective-agreement", "high"],
   ["gender-vs-ukrainian", "nouns", "gender-vs-ukrainian", "Рід: португальська vs українська", "Género e o ucraniano", "Gender vs Ukrainian", "Чому o mapa і a foto не збігаються з українським родом.", "рід українська,mapa,foto,problema", "noun-gender,articles-definite", "high"],
-  ["noun-number", "nouns", "noun-number", "Число іменників", "Número", "Noun number", "Однина й множина, злічувані та речовинні.", "число,однина,множина,plural", "plural-formation,irregular-plurals", "short"],
+  ["noun-number", "nouns", "noun-number", "Число іменників", "Número", "Noun number", "Однина й множина, злічувані та речовинні.", "число,однина,множина,plural", "plural-formation,irregular-plurals", "high"],
   ["plural-formation", "nouns", "plural-formation", "Утворення множини", "Plural", "Plural formation", "Голосний, приголосний, -ão, -l, -m, -r.", "множина,plural,-ões,-ães", "ao-plurals,irregular-plurals", "medium"],
   ["ao-plurals", "nouns", "ao-plurals", "Множина на -ão", "Plural em -ão", "Plurals in -ão", "Três modelos: -ões, -ães, -ãos.", "ão,ões,ães,mãos,pães", "plural-formation,noun-gender", "medium"],
   ["irregular-plurals", "nouns", "irregular-plurals", "Неправильна множина", "Plurais irregulares", "Irregular plurals", "Незмінювані, тільки множина, зміна значення.", "plural irregular,óculos,férias", "plural-formation,compound-nouns", "short"],
@@ -211,7 +211,7 @@ const ROWS: Row[] = [
   ["ir-vir", "verbs", "ir-vir", "ir vs vir", "ir vs vir", "ir vs vir", "Йти / їхати туди vs сюди; ir + inf.", "ir,vir,йти,приходити", "levar-trazer,ir-infinitive", "high"],
   ["poder-dever-querer", "verbs", "poder-dever-querer", "poder, dever, querer", "poder, dever, querer", "Modals poder dever querer", "Модальність: змога, повинність, воля.", "poder,dever,querer,можу,маю", "ter-de,subjunctive-triggers", "medium"],
   ["pronominal-verbs", "verbs", "pronominal", "Прономінальні дієслова", "Verbos pronominais", "Pronominal verbs", "lembrar-se, esquecer-se, ir-se: se як частина лексеми.", "прономінальні,lembrar-se,esquecer-se", "se-pronominal,se-reflexive", "medium"],
-  ["por-verb", "verbs", "por-verb", "pôr і похідні", "verbo pôr", "pôr", "pôr, dispor, compor, repor.", "pôr,poner,класти", "irregular-verbs,homograph-accents", "short"],
+  ["por-verb", "verbs", "por-verb", "pôr і похідні", "verbo pôr", "pôr", "pôr, dispor, compor, repor.", "pôr,poner,класти", "irregular-verbs,homograph-accents", "high"],
 
   ["presente", "tenses", "presente", "Presente do indicativo", "Presente do indicativo", "Present indicative", "Зараз, звичка, загальна істина, майбутнє.", "теперішній,presente", "verb-system,futuro,ir-infinitive", "high"],
   ["preterito-perfeito", "tenses", "preterito-perfeito", "Pretérito perfeito simples", "Pretérito perfeito", "Preterite", "Завершена дія як подія розповіді.", "перфект,pretérito perfeito,минулий", "preterito-imperfeito,perfeito-vs-imperfeito", "high"],
@@ -246,7 +246,7 @@ const ROWS: Row[] = [
   ["infinitive-vs-subjunctive", "infinitive", "infinitive-vs-subjunctive", "Інфінітив vs кон'юнктив", "Infinitivo vs conjuntivo", "Infinitive vs subjunctive", "para fazer vs para que faça.", "інфінітив кон'юнктив,para que", "personal-infinitive,purpose-clauses", "high"],
   ["infinitive-prepositions", "infinitive", "after-prepositions", "Інфінітив після прийменників", "Infinitivo após preposição", "Infinitive after prepositions", "de, a, para, por, sem, até + infinitivo.", "прийменник інфінітив,ao chegar", "personal-infinitive,compound-prepositions", "medium"],
 
-  ["gerund-form", "gerund", "form", "Gerúndio: утворення", "Gerúndio", "Gerund formation", "-ando, -endo, -indo.", "герундій,gerúndio,falando", "gerund-usage,estar-gerundio", "short"],
+  ["gerund-form", "gerund", "form", "Gerúndio: утворення", "Gerúndio", "Gerund formation", "-ando, -endo, -indo.", "герундій,gerúndio,falando", "gerund-usage,estar-gerundio", "high"],
   ["gerund-usage", "gerund", "usage", "Вживання герундія", "Uso do gerúndio", "Gerund usage", "Одночасність, спосіб, причина; не калькувати англійський -ing.", "герундій вживання", "estar-gerundio,progressive-br-pt", "medium"],
   ["estar-gerundio", "gerund", "estar-gerundio", "estar + gerúndio", "estar + gerúndio", "estar + gerund", "Прогресив, типовий для PT-BR.", "estou fazendo,прогресив бразилія", "estar-a-infinitive,progressive-br-pt", "high"],
   ["estar-a-infinitive", "gerund", "estar-a-infinitive", "estar a + infinitivo", "estar a + infinitivo", "estar a + infinitive", "Прогресив європейської португальської.", "estou a fazer,прогресив португалія", "estar-gerundio,progressive-br-pt", "high"],
@@ -258,7 +258,7 @@ const ROWS: Row[] = [
   ["estar-participle", "gerund", "estar-participle", "estar + particípio", "estar + particípio", "estar + participle", "Результативний стан vs пасив дії.", "estar feito,результатив", "ser-passive,estar", "medium"],
 
   ["ter-de", "periphrases", "ter-de", "ter de / ter que", "ter de / ter que", "ter de / ter que", "Обов'язок: ter de (обидва) і ter que (часто PT-BR).", "ter de,ter que,мусити", "haver-de,poder-dever-querer", "medium"],
-  ["haver-de", "periphrases", "haver-de", "haver de", "haver de", "haver de", "Намір, приреченість, формальний обов'язок.", "haver de,hei de", "ter-de,haver", "short"],
+  ["haver-de", "periphrases", "haver-de", "haver de", "haver de", "haver de", "Намір, приреченість, формальний обов'язок.", "haver de,hei de", "ter-de,haver", "high"],
   ["acabar-de", "periphrases", "acabar-de", "acabar de", "acabar de", "acabar de", "Щойно: acabo de chegar.", "acabar de,щойно", "comecar-a,tense-aspect", "medium"],
   ["voltar-a", "periphrases", "voltar-a", "voltar a", "voltar a", "voltar a", "Повторна дія: voltou a chover.", "voltar a,знову", "comecar-a", "short"],
   ["comecar-a", "periphrases", "comecar-a", "começar a / continuar a / deixar de", "Perífrases aspetuais", "Aspectual periphrases", "Початок, тривання, припинення.", "começar a,continuar a,deixar de", "acabar-de,gerund-usage", "medium"],
