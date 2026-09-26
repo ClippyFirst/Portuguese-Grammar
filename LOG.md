@@ -842,3 +842,54 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 
 - `9abe0980fb6195ed71edd312cd07e214ed75f068` — первинне додавання Batch 16.
 - `829fe7a626024c1cbdf94720c2c70724ae794fd5` — QA-виправлення canonical related IDs і глоса.
+
+
+## 2026-09-26 — Batch 17: clitic placement and prepositional pronoun forms
+
+Продовжено роботу на актуальній робочій гілці `content/production-2026-09-batch-01`. Перед додаванням перевірено каталог і наявні page modules; створено лише IDs, для яких dedicated authored coverage не було виявлено.
+
+### Додано 5 нових dedicated GrammarPage-статей
+
+`src/content/pages/clitics-production-2.ts`:
+- `clitics-infinitive` — клитики з інфінітивом;
+- `clitics-gerund` — клитики з герундієм;
+- `clitics-imperative` — клитики з імперативом.
+
+`src/content/pages/contractions-production.ts`:
+- `prep-demonstrative` — прийменник + вказівний займенник;
+- `prep-pronoun-contr` — прийменник + займенник.
+
+### Якість
+
+Пакет закриває не просто п'ять словникових пунктів, а п'ять окремих learner decisions:
+
+- для інфінітива розведено передінфінітивну позицію та енклізу, а також PT-BR/PT-PT distribution;
+- для gerúndio показано різницю між герундіальною та прогресивною конструкцією і не прирівняно позиційну варіативність до зміни значення;
+- для імператива окремо розведено стверджувальну енклізу й заперечну проклізу;
+- для demonstrativos показано регулярні злиття `em/de/a + demonstrativo` та окремо пояснено crase у `àquele/àquela/àquilo`;
+- для займенникових форм розведено `dele/nele/comigo/consigo` і клітики `lhe/me`.
+
+Усі статті містять definition, структурні моделі, функціональні підрозділи, приклади з українськими перекладами, типові помилки, український контраст, regional/PT-BR/PT-PT scope та джерела.
+
+### QA
+
+- Academic Writing Toolkit застосовано для paragraph-level logic review. Він повернув 2 generic `short-paragraph` сигнали на рівні технічного input-контейнера; предметних логічних суперечностей не вказано.
+- Усі 5 IDs присутні в актуальному `catalog.ts`.
+- Перед додаванням перевірено page modules і не створено повторних canonical IDs.
+- `related` посилання нових статей використовують наявні canonical IDs.
+- Нові модулі автоматично підхоплюються `import.meta.glob("./pages/*.ts")`; окремого ручного реєстратора модулів у `load.ts` немає.
+
+### Лічильник
+
+- За останнім зафіксованим Batch 16: **334 / 349**.
+- Після трьох нових authored IDs, доданих на актуальній гілці після Batch 16: **337 / 352**.
+- Додано в Batch 17: **5**.
+- Поточне покриття: **342 / 352**.
+- Залишилося: **10**.
+
+> Примітка: історичний production counter у попередніх записах фіксував `349` canonical topics; актуальний branch `catalog.ts` уже містить `352` topics. Щоб не приховувати розширення corpus, цей batch рахується від фактичного поточного catalog size.
+
+### Git
+
+- `f8cd5ef718aa1b1f578acb95cdd43ad58950cdb3` — clitic articles.
+- `ee0481c4169bf389e783f6ed87776f35ab2a2dcc` — contraction/pronoun articles.
