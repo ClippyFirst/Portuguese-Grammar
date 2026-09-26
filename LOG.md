@@ -1466,3 +1466,13 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 - Academic Writing Toolkit review of the newly edited explanatory prose found no British-English issues; paragraph review only flagged that isolated snippets are short when detached from their surrounding article, not a substantive grammar/logic error.
 - A full local npm QA run remains unavailable in this environment because the container cannot resolve `github.com`; no green build/typecheck claim is made without executable CI evidence.
 - Current HEAD before this log commit: `a625c3a3997e3ceaf77f8ef475a09cd648f398d4`.
+
+
+## Batch 40 — continued depth pass (2026-09-26, continuation)
+
+- Extended the reviewed learner layer in `src/content/generated-pages.ts` with dedicated treatment for high-value catalogue topics: `preterito-perfeito`, `perfeito-vs-imperfeito`, `indicative-vs-subjunctive`, `subjunctive-triggers`, `prep-a`, `prepositional-pronouns`, `relative-cujo`, `conditional-clauses`, and `concessive-clauses`.
+- The additions explicitly separate Portuguese tense/mood systems from one-to-one Ukrainian translations and include learner diagnostics, examples, and targeted error corrections.
+- Academic Writing Toolkit review of the new prose found no British-English spelling issues. The paragraph reviewer only flagged the deliberately isolated review snippets as short paragraphs; no substantive logic defect was identified.
+- Structural verification of `generated-pages.ts` passed a balanced delimiter/string scan after the edit.
+- Full local npm QA remains unavailable in this environment because the container cannot resolve `github.com`; no claim of a green build/typecheck/test run is made.
+- Commit: `1fc0f2eebf14611cce0c56d7b521cb8ffa1a873d`.
