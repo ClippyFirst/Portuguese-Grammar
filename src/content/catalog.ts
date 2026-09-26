@@ -356,6 +356,7 @@ const ROWS: Row[] = [
   ["capitalization-and-names", "spelling", "capitalization-names", "Капіталізація назв", "Maiúsculas e nomes", "Capitalization and names", "Власні назви, посади, свята та географічні назви.", "великі літери,назви,capitalization", "capitalization,punctuation,articles-proper-names", "medium"],
   ["discourse-and-pragmatics", "pragmatics", "discourse-pragmatics", "Дискурс і прагматичне значення", "Discurso e pragmática", "Discourse and pragmatics", "Непрямі прохання, соціальна дистанція та контекст.", "дискурс,прагматика,непряме прохання", "pragmatics-overview,speech-acts,register-and-directness", "high"],
 
+  ["syllepsis", "syntax", "syllepsis", "Силепсис і узгодження за змістом", "Silepse e construção por sentido", "Syllepsis", "Узгодження з семантичним або дискурсивним референтом, а не лише з формальною структурою.", "силепсис,узгодження за змістом,silepse", "agreement,subject-verb-agreement,collective-nouns", "high"],
   // Pages that previously existed in page modules but were absent from the navigation catalog.
 
 
