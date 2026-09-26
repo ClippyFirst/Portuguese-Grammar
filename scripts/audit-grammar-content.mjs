@@ -24,8 +24,8 @@ function add(map, key, value) {
 
 function splitTopLevelArguments(source) {
   const args = [];
+  const stack = [];
   let start = 0;
-  let depth = 0;
   let quote = null;
   let escaped = false;
 
@@ -49,15 +49,16 @@ function splitTopLevelArguments(source) {
     }
 
     if (char === "(" || char === "[" || char === "{") {
-      depth += 1;
-      continue;
-    }
-    if (char === ")" || char === "]" || char === "}") {
-      depth -= 1;
+      stack.push(char);
       continue;
     }
 
-    if (char === "," && depth === 0) {
+    if (char === ")" || char === "]" || char === "}") {
+      stack.pop();
+      continue;
+    }
+
+    if (char === "," && stack.length === 0) {
       args.push(source.slice(start, i).trim());
       start = i + 1;
     }
