@@ -341,6 +341,7 @@ export const pages: GrammarPage[] = [
           }),
           ex("Diz-me só uma coisa.", "Скажи мені лише одне.", { variety: "PT" }),
           ex("Não me digas isso.", "Не кажи мені цього."),
+          ex("Se me disseres a verdade, ajudo-te.", "Якщо скажеш мені правду, я тобі допоможу.", { variety: "PT", purpose: "contrast", note: "У підрядній частині futuro do conjuntivo разом із se створює середовище для проклізи; у головній частині без тригера енкліза залишається можливою." }),
         ],
       },
     ],
