@@ -8,5 +8,30 @@ p("conditional-clauses","conditional-clauses","Умовні речення","Ora
 p("concessive-clauses","concessive","Допустові підрядні","Orações concessivas","Concessive clauses","embora, apesar de та інші конструкції.","Допустові конструкції виражають ситуацію, яка не усуває очікуваного наслідку. embora типово поєднується з conjuntivo; apesar de — з іменною або інфінітивною конструкцією.","Відрізняйте concessão від простої причини.",[{pt:"Embora esteja cansado, vou.",uk:"Хоча я втомлений, я піду."},{pt:"Apesar de estar cansado, vou.",uk:"Попри втому, я піду."}],["subjunctive-triggers","infinitive-prepositions"]),
 p("temporal-clauses","temporal","Часові підрядні","Orações temporais","Temporal clauses","quando, enquanto, antes de, depois de та інші.","Часові конструкції співвідносять дві події. Вибір modo залежить від того, чи подія подається як фактична, повторювана, майбутня або залежна від умови.","Не переносіть український час без аналізу часової перспективи.",[{pt:"Quando cheguei, ele saiu.",uk:"Коли я прийшов/прийшла, він вийшов."},{pt:"Quando chegares, liga-me.",uk:"Коли прийдеш, подзвони мені."}],["futuro-subjuntivo","sequence-of-tenses"]),
 p("consecutive-clauses","consecutive","Наслідкові підрядні","Orações consecutivas","Consecutive clauses","так що, настільки що та наслідок.","Конструкції nas consequências виражають результат або наслідок ступеня чи події. Важливо не плутати їх із причинними.","Зв'язок може бути explícito через tão/tanto + que.",[{pt:"Estava tão cansado que dormi.",uk:"Я був такий втомлений, що заснув."}],["subordinating","comparative-clauses"]),
-p("comparative-clauses","comparative","Порівняльні підрядні","Orações comparativas","Comparative clauses","como, do que, quanto та порівняльні рамки.","Порівняльні конструкції можуть бути простими або містити ціле підрядне. Вибір зв'язки залежить від моделі порівняння.","Порівнюйте структуру, а не окремий сполучник.",[{pt:"Ele trabalha mais do que eu.",uk:"Він працює більше, ніж я."},{pt:"Tão rápido como antes.",uk:"Так само швидко, як раніше."}],["comparatives","subordinating"])
+{
+  id:"comparative-clauses",
+  slug:"comparative",
+  category:"subordinate",
+  titleUk:"Порівняльні підрядні",
+  titlePt:"Orações comparativas",
+  titleEn:"Comparative clauses",
+  summary:"Порівняльні конструкції з como, do que, quanto та їхні неповні й повні підрядні моделі.",
+  aliases:["порівняльні підрядні","orações comparativas","mais do que","tão como","quanto"],
+  related:["comparatives","subordinating","coordination"],
+  intro:"Порівняльна конструкція встановлює відношення між двома величинами, властивостями, діями або ситуаціями. Після comparativo частина порівняння часто є еліптичною: Ele trabalha mais do que eu означає «більше, ніж я [працюю]». Тому do que тут не слід аналізувати як простий український відповідник «ніж» без урахування структури.",
+  definition:"Порівняльне підрядне або порівняльна група — конструкція, яка задає стандарт чи другий полюс порівняння.",
+  formation:"Для нерівності типові mais/menos + ... + do que; для рівності — tão + прикметник/прислівник + como/quanto. Зі ступеневими конструкціями можливі корелятивні моделі quanto mais..., mais... та quanto menos..., menos....",
+  uses:[
+    {title:"Нерівність",body:"mais/menos ... do que вводить стандарт порівняння; друга частина може бути повним реченням або еліптичною.",examples:[{pt:"Ele trabalha mais do que eu.",uk:"Він працює більше, ніж я."},{pt:"Ela corre menos do que o irmão.",uk:"Вона бігає менше, ніж її брат."}]},
+    {title:"Рівність",body:"tão ... como/quanto виражає рівність міри або властивості.",examples:[{pt:"É tão rápido como antes.",uk:"Це так само швидко, як раніше."},{pt:"Ele é tão alto quanto o irmão.",uk:"Він такий самий високий, як його брат."}]},
+    {title:"Корелятивне порівняння",body:"quanto mais/menos ... mais/menos... показує паралельну зміну двох величин.",examples:[{pt:"Quanto mais estudo, mais aprendo.",uk:"Що більше я вчуся, то більше дізнаюся."},{pt:"Quanto menos dormes, mais cansado ficas.",uk:"Що менше ти спиш, то більш утомленим стаєш."}]},
+    {title:"Порівняння дії",body:"Порівнювати можна не лише прикметники, а й дію або кількість.",examples:[{pt:"Ele lê mais do que escreve.",uk:"Він більше читає, ніж пише."}]}
+  ],
+  examples:[{pt:"A casa é maior do que a outra.",uk:"Будинок більший за інший."},{pt:"Trabalha tanto como eu.",uk:"Він працює стільки ж, як я."}],
+  ukrainian:"Українське «ніж» часто перекладає do que після comparativo, а «як» — como/quanto після конструкції рівності. Проте українські конструкції можуть мати іншу синтаксичну організацію, тому не підставляйте сполучник без перевірки всієї порівняльної рамки.",
+  brPt:"Базові порівняльні моделі спільні для PT-BR і PT-PT. Конкретний вибір como/quanto та варіанти в розмовній мові можуть відрізнятися за контекстом і регістром.",
+  regional:"Порівняльні конструкції є спільною частиною стандартної граматики португальської; варіативність здебільшого стосується конкретних формулювань.",
+  sources:[{label:"Camões — Referencial Camões PLE",url:"https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple"}],
+  depth:"high"
+},
 ];
