@@ -488,7 +488,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Interrogative pronouns",
     summary: "que, quem, qual, quanto та їхня роль у спеціальних питаннях.",
     aliases: ["питальні займенники", "interrogative pronouns", "interrogativos", "que", "quem", "qual"],
-    related: ["wh-questions", "question-word-order", "relative-pronouns", "interrogative-clauses"],
+    related: ["wh-questions", "question-word-order", "relative-pronouns"],
     status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Питальні форми визначають не тільки «питальне слово», а й тип інформації, яку шукає мовець. que зазвичай запитує про ідентичність або клас предмета, quem — про особу, qual — про вибір у множині можливостей, quanto — про кількість або міру.",
     definition: "Питальний займенник — форма, що займає синтаксичну позицію невідомого компонента та формує спеціальне питання.",
