@@ -1,4 +1,5 @@
 import type { GrammarPage } from "../types";
+import { ex, mistake } from "../helpers";
 const p=(id:string,slug:string,titleUk:string,titlePt:string,titleEn:string,summary:string,intro:string,teachingNote:string,examples:GrammarPage["examples"],related:string[]=[]):GrammarPage=>({id,slug,category:"adjectives",titleUk,titlePt,titleEn,summary,aliases:[titleUk,slug],related,intro:teachingNote ? `${intro}\n\n${teachingNote}` : intro,examples,markers:[],mistakes:[]});
 export const pages:GrammarPage[]=[
 p("adjective-agreement","agreement","Узгодження прикметників","Concordância dos adjetivos","Adjective agreement","Рід і число прикметника.","Атрибутивний прикметник узгоджується з іменником у роді та числі. Для прикметників на -e або приголосний форма може не змінювати рід, але число зазвичай маркується.","Аналізуйте форму прикметника разом із головним іменником.",[{pt:"casa bonita",uk:"гарний будинок"},{pt:"casas bonitas",uk:"гарні будинки"},{pt:"homens inteligentes",uk:"розумні чоловіки"}],["noun-gender","noun-number","agreement-na"]),
