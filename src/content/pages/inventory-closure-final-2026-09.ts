@@ -16,7 +16,7 @@ export const pages: GrammarPage[] = [
     summary: "Системний модуль для фундаментальних одиниць інвентарю 1–25 і чотирьох явно недоохоплених номінальних одиниць 26, 27, 31 і 32.",
     aliases: ["частини мови", "граматичні категорії", "словосполучення і речення", "foundations closure"],
     related: ["syntax", "word-order", "subject-placement", "null-and-expletive-subjects", "noun-gender", "noun-number"],
-    status: "review", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    status: "review", origin: "handwritten", depth: "high", ukrainianContrast: "high", reviewedAt: "2026-09-26",
     intro: "Фундаментальні одиниці інвентарю не повинні залишатися лише припущеними передумовами інших статей. Цей матеріал дає окрему карту понять 1–25, а також закриває 26, 27, 31 і 32 там, де вони потрібні для цілісного переходу від лексеми до іменної групи.",
     definition: "Граматична архітектура описує рівні аналізу від лексичної одиниці та морфеми до слова, словоформи, фрази, клаузи й речення, а також синтаксичні ролі та граматичні категорії, що пов'язують ці рівні.",
     uses: [
@@ -47,7 +47,7 @@ export const pages: GrammarPage[] = [
     summary: "Явне покриття інвентарних модулів 796–813: порівняльні, наслідкові, conformative, proportional, modal, locative, correlative та інші конструкції.",
     aliases: ["додаткові сполучники", "conjunction remaining closure"],
     related: ["conjunction-system", "subordinating-conjunctions", "conjunction-vs-discourse-connective", "subordinate-clauses", "conjunctions-and-punctuation"],
-    status: "review", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    status: "review", origin: "handwritten", depth: "high", ukrainianContrast: "high", reviewedAt: "2026-09-26",
     intro: "Після окремого опрацювання базових типів сполучників залишаються конструкційні та функціональні підкласи, які легко загубити в оглядовій статті. Тут кожен модуль 796–813 отримує власне пояснення або явно визначений home.",
     definition: "Conjunctions link grammatical constituents or clauses; connective expressions may instead organise discourse without being syntactic conjunctions. Their distinction depends on distribution, scope and constructional behaviour.",
     uses: [
@@ -79,7 +79,7 @@ export const pages: GrammarPage[] = [
     summary: "Явне покриття модулів 819–830: привітання, звернення, емоційні реакції, дискурс-менеджмент, пунктуація та українсько-португальські хибні відповідники.",
     aliases: ["вигуки та реакції", "interjection remaining closure"],
     related: ["primary-interjections", "secondary-interjections", "interjectional-locutions", "vocal-reactions-written-interjections", "interjections"],
-    status: "review", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    status: "review", origin: "handwritten", depth: "high", ukrainianContrast: "high", reviewedAt: "2026-09-26",
     intro: "Interjections form a heterogeneous class at the boundary of grammar, lexicon, prosody and interaction. This closure makes each functional subdomain searchable without claiming that all reactions have identical grammatical status.",
     definition: "An interjectional expression is a form or construction used to perform an immediate expressive, reactive, attention-getting or discourse-management function; its syntactic integration and lexical status vary.",
     uses: [
@@ -113,7 +113,7 @@ export const pages: GrammarPage[] = [
     summary: "Системне покриття декларативів, питань, вигуків, імперативів, optative/hortative конструкцій, полярності, фрагментів, tags, echo/rhetorical questions та illocutionary force.",
     aliases: ["типи речень", "sentence types closure", "illocutionary force"],
     related: ["exclamatives", "question-tags", "echo-questions", "rhetorical-questions", "sentence-fragments", "syntax"],
-    status: "review", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    status: "review", origin: "handwritten", depth: "high", ukrainianContrast: "high", reviewedAt: "2026-09-26",
     intro: "Sentence type і speech act не є одним рівнем опису. Одна граматична форма може виконувати різні дії, а одна прагматична дія може реалізовуватися кількома граматичними формами. Модулі 831–853 тому розглядаються як взаємопов'язана система.",
     definition: "Sentence type is a grammatical/syntactic classification such as declarative, interrogative, exclamative or imperative; illocutionary force is the communicative action performed in context.",
     uses: [
@@ -145,7 +145,7 @@ export const pages: GrammarPage[] = [
     summary: "Явне покриття додаткової constituent structure, ellipsis, discourse, rhetorical syntax, null objects/possessors, bare nominals, topic-subject constructions, null-subject subtypes, secondary stress і discourse markers.",
     aliases: ["advanced syntax closure", "розширений синтаксис", "нулеві додатки та дискурс"],
     related: ["syntax-advanced", "syntax-gaps", "closure-syntax-discourse", "closure-syntax-figures-2", "closure-discourse-markers-2"],
-    status: "review", origin: "handwritten", depth: "high", ukrainianContrast: "high",
+    status: "review", origin: "handwritten", depth: "high", ukrainianContrast: "high", reviewedAt: "2026-09-26",
     intro: "Модулі 854–889 є фінальним шаром інвентарю: вони деталізують constituent structure, ellipsis, stylistic syntax, null arguments, nominal reference, Brazilian topic-subject constructions, null-subject subtypes, prosody та discourse markers. Їх не слід зводити до одного загального «розділу синтаксису».",
     definition: "Advanced syntax connects phrase structure, ellipsis, information structure, discourse organisation and constructional variation while keeping grammatical, prosodic and pragmatic levels distinct.",
     uses: [
