@@ -90,8 +90,8 @@ const BASE_EXAMPLES: Record<string, Example[]> = {
   ],
   passive: [
     { pt: "A ponte foi construída em 2020.", uk: "Міст було збудовано 2020 року." },
-    { pt: "Há muitas pessoas aqui.", uk: "Тут багато людей." },
-    { pt: "É preciso estudar.", uk: "Потрібно вчитися." },
+    { pt: "As cartas foram enviadas ontem.", uk: "Листи було надіслано вчора." },
+    { pt: "A porta está fechada.", uk: "Двері зачинені." },
   ],
   syntax: [
     { pt: "A Maria comprou o livro.", uk: "Марія купила книжку." },
