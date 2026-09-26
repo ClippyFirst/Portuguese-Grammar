@@ -153,7 +153,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Negative questions",
     summary: "Полярні питання із запереченням та їхня взаємодія з очікуванням, здивуванням і підтвердженням.",
     aliases: ["заперечні питання", "negative questions", "perguntas negativas"],
-    related: ["polar-questions", "negation", "minimal-answers"],
+    related: ["polar-questions", "negation-nao", "minimal-answers"],
     status: "draft",
     origin: "handwritten",
     depth: "high",
