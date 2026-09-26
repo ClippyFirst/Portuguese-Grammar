@@ -70,7 +70,7 @@ export const pages: GrammarPage[] = [
   }),
   page({
     id: "minimal-yes-no-answers",
-    slug: "minimal-answers",
+    slug: "minimal-yes-no-answers",
     category: "syntax",
     titleUk: "Короткі відповіді на питання так/ні",
     titlePt: "Respostas mínimas a perguntas de sim/não",
