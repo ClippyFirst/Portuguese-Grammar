@@ -43,6 +43,5 @@ export const pages: GrammarPage[] = [
       { label: "Gramática do Português — Fundação Calouste Gulbenkian", url: "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-iii/" },
       { label: "Ciberdúvidas — Infinitivo pessoal, ou impessoal?", url: "https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/infinitivo-pessoal-ou-impessoal/30188" }
     ],
-    brPt: "",
   }),
 ];
