@@ -171,7 +171,7 @@ const ROWS: Row[] = [
   ["prep-com", "prepositions", "com-sem", "com і sem", "com e sem", "com and sem", "Супровід, інструмент, відсутність; comigo.", "com,sem,з,без", "prepositional-pronouns", "short"],
   ["prep-other", "prepositions", "other", "sobre, entre, até, desde", "Outras preposições", "Other prepositions", "Простір, час, межа, джерело.", "sobre,entre,até,desde,após", "existential,temporal-clauses", "medium"],
   ["verb-preposition", "prepositions", "verb-preposition", "Дієслово + прийменник", "Regência verbal", "Verb + preposition", "gostar de, pensar em, assistir a, namorar.", "регенція,gostar de,pensar em", "gostar,prep-de,prep-a", "high"],
-  ["compound-prepositions", "prepositions", "compound", "Складені прийменники", "Locuções prepositivas", "Compound prepositions", "apesar de, a fim de, em vez de, devido a.", "apesar de,a fim de,em vez de", "concessive-clauses,purpose-clauses", "short"],
+  ["compound-prepositions", "prepositions", "compound", "Складені прийменники", "Locuções prepositivas", "Compound prepositions", "apesar de, a fim de, em vez de, devido a.", "apesar de,a fim de,em vez de", "concessive-clauses,purpose-clauses", "high"],
 
   ["contractions-overview", "contractions", "overview", "Контракції: огляд", "Contrações", "Contractions overview", "Обов'язкове злиття прийменника з артиклем.", "контракції,contrações,do,no,ao", "de-article,em-article,a-article,por-article", "high"],
   ["de-article", "contractions", "de-article", "de + артикль", "de + artigo", "de + article", "do, da, dos, das.", "do,da,dos,das", "prep-de,contractions-overview", "medium"],
@@ -312,7 +312,7 @@ const ROWS: Row[] = [
   ["concessive-clauses", "subordinate", "concessive", "Допустові речення", "Concessivas", "Concessive clauses", "embora, mesmo que, apesar de.", "допустові,embora,mesmo que", "subjunctive-triggers,compound-prepositions", "medium"],
   ["temporal-clauses", "subordinate", "temporal", "Часові підрядні", "Temporais", "Temporal clauses", "quando + futuro do conjuntivo; antes que vs depois que.", "часові,quando,assim que,antes que", "futuro-subjuntivo,ja-ainda", "high"],
   ["consecutive-clauses", "subordinate", "consecutive", "Наслідкові речення", "Consecutivas", "Consecutive clauses", "tão... que, de modo que.", "наслідок,tão que,de modo que", "comparatives,adverbs-degree", "short"],
-  ["comparative-clauses", "subordinate", "comparative", "Порівняльні речення", "Comparativas", "Comparative clauses", "mais do que, tão como, quanto mais.", "порівняльні речення,do que", "comparatives", "short"],
+  ["comparative-clauses", "subordinate", "comparative", "Порівняльні речення", "Comparativas", "Comparative clauses", "mais do que, tão como, quanto mais.", "порівняльні речення,do que", "comparatives", "high"],
 
   ["ser-passive", "passive", "ser-passive", "Пасив із ser", "Passiva com ser", "ser passive", "ser + particípio + por.", "пасив,ser particípio,voz passiva", "se-passive,estar-participle", "high"],
   ["passive-vs-impersonal", "passive", "passive-vs-impersonal", "Пасив vs безособові", "Passiva vs impessoal", "Passive vs impersonal", "Коли природніше se / підмет довільний.", "пасив безособове", "ser-passive,se-impersonal,se-passive", "high"],
