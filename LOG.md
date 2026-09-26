@@ -1406,3 +1406,24 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 
 - Canonical topics: **352/352 написано**, **0 залишилося**.
 - Quality/depth pass триває.
+## Batch 39 — quality/depth pass: variation and learner diagnostics (2026-09-26)
+
+Продовжено редакторський аудит уже написаного canonical content без розширення inventory.
+
+### Виправлено 2 наявні модулі
+
+- `articles.ts` — уточнено описи артикля з присвійними та конструкцій із `todo`: regional variation тепер не подається як абсолютна дихотомія PT-PT/PT-BR, а scoped до конкретних конструкцій;
+- `questions.ts` — замінено надто категоричне правило про початкову позицію питального слова на обережніший опис із застереженням про структуру, різновид та інформаційний фокус;
+- `pronouns.ts` — уточнено опис `lhe` vs `o/a/os/as`, щоб формальний розподіл не видавався повним описом усіх розмовних стратегій PT-BR.
+
+### QA
+
+- Canonical coverage: **352/352**; нових canonical IDs: **0**.
+- Зміни: **2 page modules** (із трьома точковими редакторськими правками; `articles.ts` містить дві).
+- Academic Writing Toolkit застосовано до всіх чотирьох нових prose-фрагментів: British English — **0 issues**; paragraph reviewer повернув лише generic `short-paragraph` signal для ізольованих фрагментів, без змістового логічного конфлікту.
+- GitHub connector не повертає workflow runs/status checks для актуального head, тому CI green не заявляється.
+
+### Лічильник
+
+- Canonical topics: **352/352 написано**, **0 залишилося**.
+- Quality/depth pass триває.
