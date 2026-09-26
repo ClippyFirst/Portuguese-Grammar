@@ -1141,3 +1141,28 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 - f839b2e7bdb867cf52d064a075e428f55d1f4315 — advanced complement clauses.
 
 - 9582a77e3ad7d27f5128686e79c5a70fb405775c — catalog depth promotion for parts-of-speech and gender-number-person.
+
+
+## Batch 27 — quality/depth pass: exclamatives, adverb position and irregular adjectives
+
+Продовжено systematic quality/depth pass після повного canonical coverage. Нових canonical IDs не створювалося.
+
+### Поглиблено 3 наявні статті
+
+- `exclamatives` — розширено структурний аналіз моделей `que + іменна група`, `como + предикат`, вкладеного `que`, еліптичних окличних форм та ролі інтонації; додано практичний алгоритм розбору й негативні оцінні приклади.
+- `adverb-position` — розширено аналіз сфери дії, інформаційного фокусу та позиції прислівників часу/місця/міри; окремо показано контраст `Só a Ana respondeu` / `A Ana só respondeu` та різницю між локативним і реченнєвим прислівником.
+- `irregular-adjectives` — перетворено короткий запис на повноцінну довідникову статтю про `melhor, pior, maior, menor`, їхні шкали значення, порівняльну рамку, суперлатив і субстантивацію; додано типові помилки та український контраст.
+
+### QA
+
+- Academic Writing Toolkit застосовано до всіх трьох нових prose-блоків. Reviewer повернув лише generic `short-paragraph` сигнали технічного input-контейнера; змістових логічних суперечностей не виявлено.
+- Каталог перевірено після batch: **352 rows**, canonical coverage **352/352**, metadata `short`: **0**.
+- Цільові статті залишаються canonical IDs і не збільшують coverage counter.
+- Для GitHub Actions/status checks окремого підтвердженого green run не отримано, тому CI green не заявляється.
+
+### Лічильник
+
+- Canonical coverage: **352/352 написано**.
+- Залишилося canonical topics: **0/352**.
+- Quality/depth pass у Batch 27: **3 статті**.
+- Metadata `short`: **0**.
