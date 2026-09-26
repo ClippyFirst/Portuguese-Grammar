@@ -1,4 +1,5 @@
 import type { GrammarPage } from "../types";
+import { ex, mistake } from "../helpers";
 const p=(id:string,slug:string,titleUk:string,titlePt:string,titleEn:string,summary:string,intro:string,teachingNote:string,examples:GrammarPage["examples"],related:string[]=[]):GrammarPage=>({id,slug,category:"nouns",titleUk,titlePt,titleEn,summary,aliases:[titleUk,slug],related,intro:teachingNote ? `${intro}\n\n${teachingNote}` : intro,examples,markers:[],mistakes:[]});
 export const pages:GrammarPage[]=[
 p("noun-gender","noun-gender","Рід іменників","Género dos nomes","Noun gender","Чоловічий і жіночий рід.","Рід у португальській — граматична властивість іменника, від якої залежать артиклі та узгодження. Закінчення допомагають, але не гарантують рід: ` o problema `, ` a mão `.","Вивчайте іменник разом з артиклем, особливо для винятків.",[{pt:"o problema",uk:"проблема"},{pt:"a mão",uk:"рука"},{pt:"o mapa",uk:"карта"}],["gender-vs-ukrainian","articles-definite","adjective-agreement"]),
