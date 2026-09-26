@@ -187,7 +187,7 @@ export const pages: GrammarPage[] = [
     titleEn: "Frequency adverbs",
     summary: "Як позначати регулярність і повторюваність подій.",
     aliases: ["прислівники частотності", "frequency adverbs", "advérbios de frequência"],
-    related: ["adverbs-overview", "adverb-position", "adverb-scope", "habituality"],
+    related: ["adverbs-overview", "adverb-position", "adverb-scope", "time-adverbs"],
     status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Прислівники частотності описують, як часто або наскільки регулярно відбувається ситуація: sempre, frequentemente, normalmente, às vezes, raramente, nunca. Їхня позиція не є суто механічним правилом «перед або після дієслова»: вона залежить від типу прислівника, заперечення, складеного присудка та інформаційної структури.",
     definition: "Прислівник частотності — прислівникова одиниця, яка характеризує повторюваність або регулярність ситуації.",
