@@ -600,6 +600,25 @@ export const pages: GrammarPage[] = [
         ],
       },
     ],
+      {
+        title: "Відкрита майбутня умова, час і відносна характеристика",
+        body: "Futuro do conjuntivo не означає «майбутній час» сам по собі. Він з'являється в конструкціях, де майбутня ситуація ще не подана як здійснений факт: умови з `se/caso`, часові сполучники `quando/assim que/logo que` та деякі відносні конструкції з невизначеним майбутнім референтом. У головній частині час і спосіб визначаються окремо.",
+        examples: [
+          ex("Se tiveres tempo, telefona-me.", "Якщо матимеш час, зателефонуй мені.", { purpose: "production" }),
+          ex("Quando terminares o trabalho, envia-mo.", "Коли закінчиш роботу, надішли її мені.", { purpose: "production" }),
+          ex("Quem chegar primeiro abre a porta.", "Хто прийде першим, той відчиняє двері.", { purpose: "comprehension" }),
+        ],
+      },
+      {
+        title: "Як відрізнити futuro do conjuntivo від особового інфінітива",
+        body: "У правильних дієслів форми можуть збігатися: `falares, falarmos, falarem`. Розрізнення робить синтаксичний контекст: після `se/quando` у відкритій майбутній ситуації це futuro do conjuntivo; після прийменника `para/de/sem/ao` — особовий інфінітив. У неправильних дієслів форми часто різні: `quando formos` проти `para sermos`.",
+        examples: [
+          ex("Quando formos a Lisboa, visitaremos o museu.", "Коли поїдемо до Лісабона, відвідаємо музей.", { purpose: "contrast" }),
+          ex("Antes de sermos ricos, temos de trabalhar.", "Перш ніж стати багатими, нам треба працювати.", { purpose: "contrast" }),
+          ex("Se tiverem dúvidas, perguntem.", "Якщо матимуть сумніви, запитайте.", { purpose: "contrast" }),
+          ex("Para terem acesso, precisam de uma senha.", "Щоб отримати доступ, їм потрібен пароль.", { purpose: "contrast" }),
+        ],
+      },
     examples: [
       ex("Se eu for eleito, mudo a lei.", "Якщо мене оберуть, я зміню закон."),
       ex("Quando tiveres 18 anos, decides sozinho.", "Коли тобі буде 18, вирішуватимеш сам."),
