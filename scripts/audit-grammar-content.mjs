@@ -252,9 +252,9 @@ function isResolvablePageId(id) {
   if (pageMeta.has(id)) return true;
   const row = catalogRows.get(id);
   // Most catalog topics have an explicit module OR a generated fallback page.
-  // Comparisons and regional topics use dedicated loaders and are excluded from
-  // generated-pages.ts, so they still require an explicit page/module.
-  return Boolean(row && row.category !== "comparisons" && row.category !== "regional");
+  // Regional topics use a dedicated module. All other catalogue topics, including
+  // comparisons, have a generated coverage provider when no dedicated module exists.
+  return Boolean(row && row.category !== "regional");
 }
 
 for (const [id, row] of catalogRows) {
