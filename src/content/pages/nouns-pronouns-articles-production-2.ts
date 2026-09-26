@@ -369,7 +369,6 @@ export const pages: GrammarPage[] = [
       { label: "Camões — Referencial Camões PLE", url: CAMOES_PLE }
     ]
   })
-];
 ,
   page({
     id: "demonstratives",
