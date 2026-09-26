@@ -111,7 +111,7 @@ export function GrammarArticle({ page }: { page: GrammarPage }) {
         <section className="my-8" id="uses">
           <h2 className="mb-4 font-display text-xl text-ink">Використання</h2>
           <ol className="flex flex-col gap-6">
-            {page.uses.map((u, i) => (
+            {page.uses.filter((u): u is NonNullable<typeof u> => Boolean(u)).map((u, i) => (
               <li key={i} id={headingId(u.title)} className="rounded-lg border border-line bg-surface p-4 sm:p-5">
                 <h3 className="font-display text-lg text-ink">
                   <span className="mr-2 font-mono text-sm text-azulejo">{i + 1}.</span>
@@ -198,7 +198,7 @@ export function GrammarArticle({ page }: { page: GrammarPage }) {
         </section>
       ) : null}
 
-      <RelatedTopics ids={page.related} />
+      <RelatedTopics ids={page.related ?? []} />
 
       {(previousTopic || nextTopic) ? (
         <nav

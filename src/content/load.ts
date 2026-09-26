@@ -32,6 +32,21 @@ function assertGrammarPageShape(page: GrammarPage, source: string): void {
     }
   }
 
+  if (page.uses) {
+    for (const [index, use] of page.uses.entries()) {
+      if (!use || typeof use !== "object") {
+        throw new TypeError(
+          `Invalid grammar page data in ${source}: ${page.category}/${page.slug} has uses[${index}]=${String(use)}; expected a use-case object.`,
+        );
+      }
+      if (use.examples !== undefined && !Array.isArray(use.examples)) {
+        throw new TypeError(
+          `Invalid grammar page data in ${source}: ${page.category}/${page.slug} has uses[${index}].examples=${typeof use.examples}; expected an array.`,
+        );
+      }
+    }
+  }
+
   if (!page.category || !page.slug || !page.id) {
     throw new TypeError(
       `Invalid grammar page metadata in ${source}: id/category/slug are required.`,

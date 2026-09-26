@@ -337,21 +337,6 @@ Object.assign(SPECIAL, {
   "verb-com-government": SPECIAL["verb-government-com"],
   "verb-por-government": SPECIAL["verb-government-por"],
   "verb-government-alternations": SPECIAL["verb-government-alternations"],
-  "government-overview": {
-    ...SPECIAL["government-overview"],
-    formation: "Керування (regência) описує, яку синтаксичну рамку вибирає головна лексема. Для дієслів корисно вчити не просто «дієслово + прийменник», а «значення + complement + прийменник + приклад».",
-    examples: [
-      ...SPECIAL["government-overview"].examples ?? [],
-      { pt: "Confio em ti.", uk: "Я тобі довіряю." },
-      { pt: "Lembro-me desse dia.", uk: "Я пам'ятаю той день.", variety: "PT" },
-      { pt: "Assisti ao filme ontem.", uk: "Я вчора подивився/подивилася фільм." }
-    ],
-    learnerQuestions: [
-      ...(SPECIAL["government-overview"].learnerQuestions ?? []),
-      "Чи є прийменник частиною лексичної валентності, а не вільним обставинним модифікатором?",
-      "Чи змінюється рамка разом зі значенням дієслова?"
-    ]
-  }
 });
 
 
@@ -474,7 +459,6 @@ Object.assign(SPECIAL, {
     examples:[{pt:"Eu te vi ontem.",uk:"Я бачив/бачила тебе вчора.",variety:"BR"},{pt:"Eu vi ele ontem.",uk:"Я бачив/бачила його вчора.",variety:"BR",register:"colloquial"},{pt:"Eu o vi ontem.",uk:"Я бачив/бачила його вчора.",variety:"BR",register:"formal"}],
     learnerQuestions:["Який саме шар PT-BR я описую?","Чи приклад призначений для формального письма чи розмови?","Чи повний займенник конкурує з clitic?"],
   },
-});
 
 
   "ter": {
@@ -682,7 +666,7 @@ Object.assign(SPECIAL, {
     mistakes: [{ wrong: "Вважати, що всі відмінності написання після 1990 зникли.", right: "Перевіряти конкретне слово й національний стандарт.", why: "Угода гармонізує частину орфографії, але допускає або зберігає варіантність у певних зонах." }],
     ukrainian: "Для україномовного студента важливо не змішувати орфографічну варіантність із «помилкою»: спочатку визначте стандарт і словникову норму.",
     brPt: "Окремі відмінності, як fato/facto, пов'язані з вимовою та національним стандартом і не зводяться до простої «старої/нової орфографії»."
-  }
+  },
 
   "subjunctive-present": {
     formulas: [{ pattern: "que + presente do conjuntivo → vontade, dúvida, avaliação, necessidade, finalidade, condição não factual", note: "O conjuntivo não é simplesmente «tempo de incerteza»: a seleção depende da construção e da modalidade." }],
@@ -1066,7 +1050,7 @@ Object.assign(SPECIAL, {
     ukrainian: "Українське «щоб» часто покриває кілька португальських структур. Порівнюйте суб'єкт, контроль і регістр.",
     learnerQuestions: ["Чи збігаються підмети?", "Чи інфінітив має власного явного суб'єкта?", "Чи конструкція допускає conjuntivo?", "Який стиль природніший?"]
   },
--pragmatics": {
+"pragmatics": {
     formulas: [{ pattern: "form + context + interlocutor relation → pragmatic interpretation", note: "Прагматичний ефект не завжди кодується окремим граматичним маркером." }],
     examples: [
       { pt: "Pode fechar a porta?", uk: "Можете зачинити двері?" },
@@ -1121,14 +1105,21 @@ Object.assign(SPECIAL, {
   },
   "government-overview": {
     formulas: [{ pattern: "V/N/Adj + selected complement → regência", note: "Керування — це вибір предикатом або іншою лексемою структури complement; прийменник є частиною моделі." }],
+    formation: "Керування (regência) описує, яку синтаксичну рамку вибирає головна лексема. Для дієслів корисно вчити не просто «дієслово + прийменник», а «значення + complement + прийменник + приклад».",
     examples: [
       { pt: "Gosto de música.", uk: "Я люблю музику." },
       { pt: "Penso em viajar.", uk: "Я думаю про подорож." },
-      { pt: "Preciso de ajuda.", uk: "Мені потрібна допомога." }
+      { pt: "Preciso de ajuda.", uk: "Мені потрібна допомога." },
+      { pt: "Confio em ti.", uk: "Я тобі довіряю." },
+      { pt: "Lembro-me desse dia.", uk: "Я пам'ятаю той день.", variety: "PT" },
+      { pt: "Assisti ao filme ontem.", uk: "Я вчора подивився/подивилася фільм." },
     ],
     mistakes: [{ wrong: "Підставляти прийменник за українським перекладом.", right: "gostar de / pensar em / precisar de", why: "Лексичне керування не є прямим перекладним відповідником." }],
     ukrainian: "Для україномовного це одна з ключових зон інтерференції: український відмінок часто приховує португальський прийменник.",
-    learnerQuestions: ["Який компонент є головним (head)?", "Який додаток (complement) він вибирає?", "Чи прийменник лексично закріплений?", "Чи змінюється модель у PT-BR/PT-PT?"]
+    learnerQuestions: ["Який компонент є головним (head)?", "Який додаток (complement) він вибирає?", "Чи прийменник лексично закріплений?", "Чи змінюється модель у PT-BR/PT-PT?",
+      "Чи є прийменник частиною лексичної валентності, а не вільним обставинним модифікатором?",
+      "Чи змінюється рамка разом зі значенням дієслова?",
+    ]
   },
   "argument-vs-adjunct": {
     formulas: [{ pattern: "predicate-selected complement ≠ optional adjunct", note: "Аргумент є частиною валентності предиката; adjunct додає обставинну інформацію без такого самого лексичного вибору." }],
@@ -1874,7 +1865,7 @@ Object.assign(SPECIAL, {
   },
 
 
-};
+});
 
 const SPECIAL_ALIASES: Record<string, string> = {
   "subjunctive-triggers": "subjunctive-triggers-advanced",
@@ -1906,15 +1897,12 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "generic-reference-articles": "articles-ukrainian",
   "articles-regional": "articles-ukrainian",
   "adjective-agreement": "agreement-na",
-  "comparatives": "comparatives-advanced",
   "clitic-pronouns": "clitic-placement",
-  "clitic-combinations": "clitic-clusters",
   "crase-rules": "crase",
   "a-vs-crase": "crase",
   "indicative-vs-subjunctive": "subjunctive-overview",
   "presente-subjuntivo": "subjunctive-present",
   "imperfeito-subjuntivo": "subjunctive-imperfect",
-  "subjunctive-triggers": "subjunctive-triggers-advanced",
   "personal-vs-impersonal": "personal-infinitive",
   "estar-gerundio": "progressive-br-pt",
   "estar-a-infinitive": "progressive-br-pt",
@@ -1928,7 +1916,6 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "word-order": "subject-object-order",
   "subject-placement": "subject-object-order",
   "topicalization": "subject-object-order",
-  "clefts": "clefts-advanced",
   "emphasis-focus": "clefts-advanced",
   "coordination": "subordination-and-coordination",
   "relative-que": "relative-pronouns",
@@ -1938,7 +1925,6 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "relative-onde": "relative-pronouns",
   "relative-restrictive": "relative-pronouns",
   "complement-clauses": "complement-clauses-advanced",
-  "conditional-clauses": "conditional-clauses-advanced",
   "passive-vs-impersonal": "passive",
   "existential": "null-and-expletive-subjects",
   "impersonal-constructions": "null-and-expletive-subjects",
@@ -1947,7 +1933,6 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "reading-rules": "consonants-phonetics",
   "diacritics": "accentuation-advanced",
   "homograph-accents": "accentuation-advanced",
-  "capitalization": "capitalization-and-names",
   "gender-vs-ukrainian": "articles-ukrainian",
   "plural-formation": "agreement-na",
   "common-epicene": "agreement-na",
@@ -1969,7 +1954,6 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "compound-prepositions": "government-overview",
   "coordinating": "subordination-and-coordination",
   "subordinating": "subordination-and-coordination",
-  "que-de-que": "que-complementizer",
   "verb-system": "tenses",
   "regular-ar": "tenses",
   "regular-er": "tenses",
@@ -1980,7 +1964,6 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "saber-conhecer": "verb-preposition",
   "poder-dever-querer": "modality-overview",
   "pronominal-verbs": "se-system",
-  "indicative-vs-subjunctive": "subjunctive-overview",
   "compound-subjunctive": "subjunctive-overview",
   "subjunctive-not": "subjunctive-triggers-advanced",
   "subjunctive-logic": "subjunctive-triggers-advanced",
@@ -2001,7 +1984,6 @@ const SPECIAL_ALIASES: Record<string, string> = {
   "other-periphrases": "periphrases",
   "se-reciprocal": "se-system",
   "nominalization": "nominalization-advanced",
-  "stress-phonology": "stress",
   "parts-of-speech": "parts-of-speech-advanced",
   "gender-number-person": "gender-number-person",
   "register": "register-fundamentals",

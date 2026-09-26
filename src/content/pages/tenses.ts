@@ -8,7 +8,30 @@ p("perfeito-vs-imperfeito","perfeito-vs-imperfeito","Pretérito perfeito vs impe
 p("perfeito-composto","perfeito-composto","Pretérito perfeito composto","Pretérito perfeito composto","Compound perfect","Повторювана або тривала ситуація до теперішнього моменту.","ter + particípio у цій конструкції має інше значення, ніж англійський present perfect: часто йдеться про повторення або тривалість ситуації.","Не перекладайте механічно через українське «вже зробив».",[{pt:"Tenho estudado muito.",uk:"Я останнім часом багато вчуся."}],["compound-tenses","ter-haver"]),
 p("mais-que-perfeito","mais-que-perfeito","Pretérito mais-que-perfeito","Pretérito mais-que-perfeito","Pluperfect","Подія перед іншою минулою подією.","Аналітична форма tinha + particípio дуже поширена. Синтетичний tivera має книжніший/формальніший характер.","У сучасній мові не плутайте його з простим perfeito.",[{pt:"Quando cheguei, ele já tinha saído.",uk:"Коли я прийшов/прийшла, він уже пішов."}],["compound-tenses","sequence-of-tenses"]),
 p("futuro","futuro","Майбутній час","Futuro do indicativo","Future","Майбутнє, припущення та інші значення.","Futuro do indicativo утворюється синтетично і може мати не лише часову, а й модальну інтерпретацію. У розмовній мові часто конкурує з ir + infinitivo.","Розрізняйте час і значення припущення.",[{pt:"Amanhã estudarei.",uk:"Завтра я навчатимусь."},{pt:"Será verdade?",uk:"Це, мабуть, правда?"}],["futuro-composto","ir-infinitive","modality-overview"]),
-p("futuro-composto","futuro-composto","Futuro composto","Futuro composto","Future perfect","Майбутня завершеність.","ter + particípio у майбутньому часі подає ситуацію, завершену до майбутнього моменту.","Контекст часто містить до якого часу або події.",[{pt:"Quando chegares, já terei terminado.",uk:"Коли ти прийдеш, я вже закінчу."}],["futuro","compound-tenses","futuro-subjuntivo"]),
+{
+ id:"futuro-composto",slug:"futuro-composto",category:"tenses",
+ titleUk:"Futuro composto",titlePt:"Futuro composto",titleEn:"Future perfect",
+ summary:"ter у майбутньому + participle: ситуація, завершена до майбутньої точки або події.",
+ aliases:["futuro composto","future perfect","terei feito"],
+ related:["futuro","compound-tenses","futuro-subjuntivo"],
+ intro:"Futuro composto утворюється за схемою ter у futuro do indicativo + particípio passado: terei feito, terás chegado, terá terminado. Він переносить завершеність на майбутню часову точку; у контексті може також виражати припущення про вже завершену ситуацію.",
+ definition:"Конструкція позначає дію або стан, який буде завершено до певного майбутнього моменту, а інколи — припущення про завершену ситуацію.",
+ formation:"terei/terás/terá/teremos/tereis/terão + particípio passado. Зазвичай participle не узгоджується з підметом у конструкції з ter.",
+ uses:[
+  {title:"Завершення до майбутнього моменту",body:"Найтиповіше значення — дія буде вже завершена, коли настане інша майбутня подія.",examples:[{pt:"Quando chegares, já terei terminado.",uk:"Коли ти прийдеш, я вже закінчу."},{pt:"Até amanhã, teremos resolvido o problema.",uk:"До завтра ми вже розв'яжемо проблему."}]},
+  {title:"Завершення до дедлайну",body:"Часові маркери até, antes de та до певної дати добре підкреслюють межу.",examples:[{pt:"Até sexta-feira, terão enviado o relatório.",uk:"До п'ятниці вони вже надішлють звіт."}]},
+  {title:"Припущення про завершену ситуацію",body:"У контексті майбутній складений час може мати модальне значення припущення: мовцеві йдеться про те, що, ймовірно, вже сталося.",examples:[{pt:"Ele terá esquecido o encontro.",uk:"Мабуть, він забув про зустріч."}]}
+ ],
+ examples:[{pt:"Quando voltares, já terei feito o jantar.",uk:"Коли ти повернешся, я вже приготую вечерю."},{pt:"Teremos terminado antes das oito.",uk:"Ми закінчимо до восьмої."}],
+ mistakes:[
+  {wrong:"Quando chegares, já terei terminar.",right:"Quando chegares, já terei terminado.",why:"Після ter потрібен particípio passado, а не infinitivo."},
+  {wrong:"terei fazendo",right:"terei feito",why:"Futuro composto використовує participle; герундій належить до інших конструкцій."}
+ ],
+ ukrainian:"Українське майбутнє часто передає значення через «вже зроблю до…», тому форма тісно пов'язана з контекстом межі. Не перекладайте futuro composto механічно одним українським часом.",
+ brPt:"Основна граматична модель спільна для PT-BR і PT-PT. Різнитися можуть лексичні та стилістичні уподобання щодо альтернативних часових конструкцій.",
+ regional:"У лузофонних різновидах базова форма ter + participle зберігає те саме часово-аспектуальне ядро.",
+ depth:"high"
+},
 p("condicional","condicional","Condicional","Condicional","Conditional","Гіпотетичність, ввічливість та майбутнє в минулому.","Condicional може виражати гіпотезу, наслідок, обережність або майбутнє щодо минулого. Значення визначається конструкцією.","Не прирівнюйте його до одного українського часу.",[{pt:"Eu faria isso.",uk:"Я б це зробив/зробила."},{pt:"Disse que viria.",uk:"Він сказав, що прийде."}],["conditional-clauses","modality-overview"]),
 p("compound-tenses","compound","Складені часи","Tempos compostos","Compound tenses","Допоміжне ter/haver + participle.","Складені часові форми будуються з допоміжним дієсловом та participle. Значення залежить від конкретної конструкції, а не лише від наявності participle.","Порівнюйте ter + participle у різних часових рамках.",[{pt:"Tinha estudado.",uk:"Я вивчив/вивчила до того моменту."},{pt:"Tenho estudado.",uk:"Я навчаюся останнім часом."}],["ter-haver-participle","perfeito-composto"]),
 p("tense-aspect","aspect","Час і аспект","Tempo e aspeto","Tense and aspect","Часова локалізація та внутрішня структура події.","Час відповідає на питання про часову локалізацію, аспект — як подається подія: завершеною, тривалою, повторюваною тощо. Категорії взаємодіють, але не тотожні.","Не переносіть український граматичний вид як готову карту португальських часів.",[{pt:"Li o livro.",uk:"Я прочитав/прочитала книжку."},{pt:"Lia o livro.",uk:"Я читав/читала книжку."}],["aspect-overview","perfeito-vs-imperfeito"]),
