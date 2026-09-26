@@ -9,7 +9,7 @@ const CAMOES_PLE = "https://www.instituto-camoes.pt/activity/centro-virtual/refe
 export const pages: GrammarPage[] = [
   page({
     id: "adverb-scope",
-    slug: "scope",
+    slug: "adverb-scope",
     category: "adverbs",
     titleUk: "Область дії прислівника",
     titlePt: "Escopo dos advérbios",
@@ -160,7 +160,7 @@ export const pages: GrammarPage[] = [
   }),
   page({
     id: "adverbs-mente",
-    slug: "mente",
+    slug: "adverbs-mente",
     category: "adverbs",
     titleUk: "Прислівники на -mente",
     titlePt: "Advérbios em -mente",
