@@ -1362,3 +1362,25 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 - Canonical topics: **352/352 написано**, **0 залишилося**.
 - Quality/depth pass триває.
 \n
+
+## Batch 37 — quality/depth pass: modality, subordinate clauses, prose precision (2026-09-26)
+
+Продовжено поступовий quality/depth pass уже написаних тем; canonical inventory не розширювався.
+
+### Виправлено 3 наявні модулі
+
+- `moods.ts` — у `indicative-vs-subjunctive` пом'якшено надто категоричну формулу для відносних речень: індикатив / кон'юнктив тепер подані як сильна діагностика, але не механічне правило; вибір залежить від референції та значення всієї конструкції. Також summary більше не зводить опозицію до спрощеного «факт / не-факт».
+- `subordinate.ts` — у `conditional-clauses` прибрано випадково продубльоване речення про futuro do conjuntivo / imperfeito do conjuntivo / condicional.
+- `subordinate.ts` — у `consecutive-clauses` виправлено змішану українсько-португальську прозу (`nas consequências`, `explícito`) на нормативні українські формулювання.
+
+### QA
+
+- Canonical coverage: **352/352**; нових canonical IDs: **0**.
+- Зміни: **3 наявні page modules**.
+- Academic Writing Toolkit застосовано до всіх нових prose-фрагментів: змістових логічних конфліктів не виявлено; British English — **0 issues**. Reviewer дає лише generic `short-paragraph` signal для коротких ізольованих фрагментів.
+- GitHub connector не повернув workflow runs/status checks для актуальних content commits, тому CI green не заявляється.
+
+### Лічильник
+
+- Canonical topics: **352/352 написано**, **0 залишилося**.
+- Quality/depth pass триває.
