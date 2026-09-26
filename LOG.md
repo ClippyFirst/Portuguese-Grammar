@@ -950,3 +950,12 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 - Updated catalog depth metadata for the four revised articles from `short` to `medium`.
 - Academic Writing Toolkit paragraph-logic review: no content-level issues identified; the single reported `short-paragraph` warning is the known technical input-container artifact when multiple source files are concatenated.
 - Canonical coverage remains **352/352**; remaining canonical topics: **0**.
+
+
+## Batch 20 — quality/depth pass
+
+- Поглиблено ще **4** наявні canonical articles: `agreement-edge-cases`, `clitic-climbing`, `complement-clauses-advanced`, `exclamatives`.
+- Для складних тем додано структурні пояснення, моделі, контрастивні приклади та типові помилки українськомовного студента.
+- Оновлено depth metadata цих чотирьох статей до `high`.
+- Academic Writing Toolkit: структурний paragraph review виконався; його короткі-paragraph warnings стосуються структурованих полів довідника й не виявили змістової суперечності.
+- Canonical coverage: **352/352**; remaining canonical topics: **0**.
