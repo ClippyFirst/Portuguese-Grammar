@@ -647,7 +647,7 @@ export const pages: GrammarPage[] = [
     ],
     markers: ["alugam-se", "vendem-se", "aceitam-se", "falam-se", "inaugurou-se"],
     exceptions:
-      "Якщо пацієнс — особовий займенник, пасивне `se` стикається з клитиками і часто уникається: замість `*viu-se-o` скажуть `ele foi visto` або актив. З людьми взагалі частіший аналітичний пасив `ser` + particípio, бо `se` може прочитатися як рефлексив: `Matou-se o rei` двозначне.\n\nУ перфекті з `ter` конструкція рідкісна: `*têm-se alugado quartos` звучить важко; беруть простий час або `ser`.",
+      "Якщо пацієнс — особовий займенник, пасивне `se` стикається з клитиками і часто уникається: замість `*viu-se-o` скажуть `ele foi visto` або актив. З людьми взагалі частіший аналітичний пасив `ser` + particípio, бо `se` може прочитатися як рефлексив: `Matou-se o rei` двозначне.\n\nСкладені часові форми з `ter` у конструкціях із `se` потребують окремого аналізу; вони не є найпростішою моделлю для навчання. Наприклад, `têm-se alugado quartos` можливе як складена форма, але для базового діагностування пасивного `se` простіше починати з `Alugam-se quartos` і `Quartos são alugados`.",
     mistakes: [
       mistake(
         "Aluga-se quartos. (як єдина «правильна» форма)",
@@ -859,7 +859,7 @@ export const pages: GrammarPage[] = [
       "falam-se",
     ],
     exceptions:
-      "`Trata-se de` ніколи не узгоджується з іменником після `de`: `Trata-se de problemas`, не `*Tratam-se de problemas` у значенні «йдеться».\n\nЯкщо іменник стоїть **перед** дієсловом і виглядає як підмет, узгодження майже обов'язкове навіть у PT-BR: `Casas como estas vendem-se rápido`, рідко `*Casas como estas vende-se rápido`.\n\nЗбірні іменники (`a gente`, `o povo`) мають власні правила узгодження, незалежні від `se`.",
+      "У конструкції `trata-se de` в значенні «йдеться про / це стосується» дієслово не узгоджується з іменником після `de`: `Trata-se de problemas`, не `*Tratam-se de problemas`. Це відрізняється від пасивної моделі `Vendem-se casas`, де `casas` є підметом і узгоджує дієслово.\n\nЯкщо іменник стоїть **перед** дієсловом і виглядає як підмет, узгодження майже обов'язкове навіть у PT-BR: `Casas como estas vendem-se rápido`, рідко `*Casas como estas vende-se rápido`.\n\nЗбірні іменники (`a gente`, `o povo`) мають власні правила узгодження, незалежні від `se`.",
     mistakes: [
       mistake(
         "Tratam-se de erros graves.",
