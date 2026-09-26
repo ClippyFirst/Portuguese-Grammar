@@ -45,7 +45,6 @@ p("gender-vs-ukrainian","gender-vs-ukrainian","Португальський рі
   regional: "Опис стосується стандартної сучасної португальської. Окремі запозичення, терміни та рідкісні слова можуть мати варіантні способи множини; не переносіть продуктивну модель на лексему без перевірки.",
   sources: [{label:"Camões — Referencial Camões PLE",url:"https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple"}],
   depth: "high"
-}
 },
 p("plural-formation","plural-formation","Утворення множини","Formação do plural","Plural formation","Регулярні моделі множини.","Найтиповіша множина додає ` -s `, але ` -r, -z, -m, -al/-el/-ol/-ul ` мають окремі моделі. Деякі форми треба вчити лексично.","Форма множини може змінювати наголос або голосний, тому орфографія й фонетика пов'язані.",[{pt:"flor → flores",uk:"квітка → квіти"},{pt:"animal → animais",uk:"тварина → тварини"},{pt:"homem → homens",uk:"чоловік → чоловіки"}],["noun-number","irregular-plurals","ao-plurals"]),
 p("ao-plurals","ao-plurals","Множина на -ão","Plural em -ão","-ão plurals","Три основні моделі множини слів на -ão.","Слова на ` -ão ` можуть мати множину ` -ões, -ães ` або ` -ãos `; вибір значною мірою лексичний. Не виводьте форму лише з одного універсального правила.","Запам'ятовуйте частотні слова разом із множиною.",[{pt:"nação → nações",uk:"нація → нації"},{pt:"pão → pães",uk:"хліб → хліби"},{pt:"irmão → irmãos",uk:"брат → брати"}],["plural-formation","irregular-plurals"]),
@@ -107,7 +106,6 @@ p("ao-plurals","ao-plurals","Множина на -ão","Plural em -ão","-ão pl
   regional:"Описує стандартну норму; для нових складених слів, запозичень і термінології вживання може коливатися, тому словник конкретної норми має пріоритет.",
   sources:[{label:"Camões — Referencial Camões PLE",url:"https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple"}],
   depth:"high"
-}
 },
 p("common-epicene","common-epicene","Спільний рід і назви статі","Nomes comuns de dois géneros","Common-gender nouns","Іменники, де рід не виражений окремою формою слова.","У деяких назвах професій і осіб форма іменника спільна, а рід показує артикль або узгодження: ` o estudante / a estudante `. Це відрізняється від слів із двома лексичними формами.","Не створюйте жіночу форму автоматично лише за аналогією.",[{pt:"o estudante / a estudante",uk:"студент / студентка"},{pt:"o artista / a artista",uk:"артист / артистка"}],["professions-gender","noun-gender"]),
 p("professions-gender","professions-gender","Назви професій і рід","Género das profissões","Gender of professions","Форми назв професій у чоловічому та жіночому роді.","Португальська має як парні форми, так і спільнорідні назви. Жіночі форми не слід механічно будувати одним суфіксом.","Сучасна нормативна практика приймає багато жіночих назв професій, але конкретна форма може бути лексичною.",[{pt:"o professor / a professora",uk:"викладач / викладачка"},{pt:"o estudante / a estudante",uk:"студент / студентка"},{pt:"a médica",uk:"лікарка"}],["common-epicene","noun-gender"]),
