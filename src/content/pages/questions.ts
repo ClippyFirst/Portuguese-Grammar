@@ -47,7 +47,8 @@ export const pages: GrammarPage[] = [
       { pt: "O que aconteceu?", uk: "Що сталося?" },
       { pt: "Quem é aquela pessoa?", uk: "Хто та людина?" },
       { pt: "A que horas começa?", uk: "О котрій починається?" },
-      { pt: "Por que / Porque é que não vieste?", uk: "Чому ти не прийшов/прийшла?" },
+      { pt: "Por que você não veio?", uk: "Чому ти не прийшов/прийшла?", variety: "BR" },
+      { pt: "Porque é que não vieste?", uk: "Чому ти не прийшов/прийшла?", variety: "PT" },
     ],
     mistakes: [
       {
