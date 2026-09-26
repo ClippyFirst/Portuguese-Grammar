@@ -22,5 +22,35 @@ p("levar-trazer","levar-trazer","levar і trazer","Levar e trazer","levar vs tra
 p("ir-vir","ir-vir","ir і vir","Ir e vir","ir vs vir","Йти/їхати від і до точки відліку.","ir позначає рух від деїктичного центру, vir — до нього. У непрямій мові точка відліку може змінюватися.","Контекст важливіший за сталий переклад «йти/приходити».",[{pt:"Vou para casa.",uk:"Я йду додому."},{pt:"Vem cá.",uk:"Іди сюди / приходь сюди."}],["levar-trazer","reference-overview"]),
 p("poder-dever-querer","poder-dever-querer","poder, dever, querer","Poder, dever, querer","poder, dever, querer","Можливість, обов'язок і воля.","Ці дієслова формують модальні конструкції з інфінітивом. Їхня семантика залежить від часу, способу й контексту.","Порівнюйте dever як обов'язок і висновок та poder як можливість, дозвіл або ввічливе прохання.",[{pt:"Posso entrar?",uk:"Можна увійти?"},{pt:"Deves estudar.",uk:"Тобі слід вчитися."},{pt:"Quero sair.",uk:"Я хочу вийти."}],["modality-overview","infinitive-vs-subjunctive"]),
 p("pronominal-verbs","pronominal","Зворотні та прономінальні дієслова","Verbos pronominais","Pronominal verbs","Дієслова з обов'язковою або лексичною займенниковою формою.","Частина дієслів уживається з clitic pronoun як частина лексичної моделі: lembrar-se, queixar-se тощо. Це не завжди просте зворотне значення.","Вивчайте дієслово разом із його займенниковою рамкою.",[{pt:"Lembro-me disso.",uk:"Я це пам'ятаю.",variety:"PT"},{pt:"Ele queixou-se.",uk:"Він поскаржився.",variety:"PT"}],["se-pronominal","clitic-placement"]),
-p("por-verb","por-verb","Дієслово pôr і похідні","Pôr e derivados","pôr and derivatives","Нерегулярна модель pôr.","pôr має окрему парадигму та похідні типу propor, compor, impor. В орфографії його треба відрізняти від прийменника por.","Наголос і діакритика тут мають функціональне значення.",[{pt:"Vou pôr a mesa.",uk:"Я накрию на стіл."},{pt:"Ele põe o livro aqui.",uk:"Він кладе книжку сюди."}],["irregular-verbs","homograph-accents"])
+{
+  id: "por-verb",
+  slug: "por-verb",
+  category: "verbs",
+  titleUk: "Дієслово pôr і похідні",
+  titlePt: "Pôr e derivados",
+  titleEn: "pôr and derivatives",
+  summary: "Парадигма pôr, ключові форми та похідні дієслова з основою -por.",
+  aliases: ["pôr", "por", "pôr e derivados", "дієслово pôr"],
+  related: ["irregular-verbs", "homograph-accents", "verb-system"],
+  intro: "Pôr — високочастотне нерегулярне дієслово зі значенням «класти, ставити, поміщати». Його треба відрізняти від прийменника por: діакритика в інфінітиві є частиною нормативного написання, тоді як форми парадигми мають інші акцентні моделі.",
+  definition: "Pôr — нерегулярне дієслово; його форми не виводяться з сучасної регулярної моделі дієслів на -or.",
+  formation: "У теперішньому часі: ponho, pões, põe, pomos, pondes, põem. У минулому perfeito simples: pus, puseste, pôs, pusemos, pusestes, puseram. У майбутньому простому: porei, porás, porá, poremos, poreis, porão. Інфінітив зберігає циркумфлекс: pôr.",
+  uses: [
+    {title:"Базове значення",body:"Позначає розміщення або встановлення предмета.",examples:[{pt:"Vou pôr o livro na mesa.",uk:"Я покладу книжку на стіл."},{pt:"Põe as chaves aqui.",uk:"Поклади ключі сюди."}]},
+    {title:"Теперішній час",body:"Форми мають окрему основу pon-.",examples:[{pt:"Ela põe o café na mesa.",uk:"Вона ставить каву на стіл."},{pt:"Nós pomos tudo no lugar.",uk:"Ми все кладемо на місце."}]},
+    {title:"Минулий час",body:"Форми perfeito simples мають основу pus-.",examples:[{pt:"Ontem pus o livro aqui.",uk:"Учора я поклав/поклала книжку сюди."},{pt:"Eles puseram tudo em ordem.",uk:"Вони все впорядкували."}]},
+    {title:"Похідні",body:"compor, propor, impor, repor, dispor та інші дієслова успадковують частину нерегулярної морфології, але мають власні значення.",examples:[{pt:"Ela propôs uma solução.",uk:"Вона запропонувала рішення."},{pt:"O regulamento impõe limites.",uk:"Положення встановлює обмеження."}]}
+  ],
+  examples:[{pt:"Vou pôr a mesa.",uk:"Я накрию на стіл."},{pt:"Ele põe o livro aqui.",uk:"Він кладе книжку сюди."},{pt:"Ontem pus as chaves na gaveta.",uk:"Учора я поклав/поклала ключі в шухляду."}],
+  mistakes:[
+    {wrong:"por",correct:"pôr",explanation:"В інфінітиві дієслово пишеться pôr; por без акценту — прийменник."},
+    {wrong:"poni",correct:"pus",explanation:"Минулий час має нерегулярну основу pus-."},
+    {wrong:"porei = регулярне дієслово porear",correct:"porei",explanation:"Майбутні форми походять від інфінітива pôr із власною парадигмою."}
+  ],
+  ukrainian:"Українські дієслова «класти», «ставити», «покласти» розподіляють значення інакше. Pôr має ширший набір конструкцій, тому переклад «класти» не охоплює всіх уживань. Українська також не має прямого орфографічного аналога пари pôr / por.",
+  brPt:"Парадигма pôr спільна для PT-BR і PT-PT. Відмінності тут переважно лексичні або стилістичні, а не морфологічні.",
+  regional:"Стандартна парадигма є спільною для основних національних різновидів португальської.",
+  sources:[{label:"Camões — Referencial Camões PLE",url:"https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple"}],
+  depth:"high"
+},
 ];
