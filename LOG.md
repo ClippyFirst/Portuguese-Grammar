@@ -1053,3 +1053,24 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 - Залишилося canonical topics: **0/352**.
 - Quality/depth pass у Batch 23: **2 статті**.
 - Залишилося `short`: **14**.
+
+
+## Batch 24 — quality/depth pass: time, aspect and participles
+
+Продовжено поглиблення вже покритих canonical topics; нових canonical IDs не додавалося.
+
+### Поглиблено
+
+- `ordinals` — уточнено узгодження, складені порядкові, датування, скорочення та PT-BR/PT-PT відмінності в нумерації поверхів.
+- `futuro-composto` — розведено завершення до майбутньої точки та модальне припущення; описано формулу `ter + particípio`, контекстні маркери й типові помилки.
+- `double-participles` — поглиблено розподіл довгих/коротких participles, обмеження традиційного правила ter/ser, лексикалізацію та варіантність PT-BR/PT-PT.
+- `voltar-a` — розгорнуто аспектове значення повторення, часові форми voltar, контраст із простим прислівником «знову» та типові помилки.
+
+### QA / лічильник
+
+- Canonical coverage: **352/352**.
+- Нових canonical topics: **0**.
+- Після Batch 24 залишилося **10 short** metadata-сторінок.
+- Чотири опрацьовані IDs перевірені в каталозі та переведені з `short` до `high`.
+- Academic Writing Toolkit skill у поточному доступному каталозі інструментів не експонується, тому окремий автоматизований academic-writing review цього batch не заявляється.
+- CI green не заявляється без підтвердженого workflow/status run.
