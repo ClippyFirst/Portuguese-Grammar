@@ -36,8 +36,8 @@ export function searchTopics(query: string, limit = 20): SearchHit[] {
     const summary = fold(topic.summary);
     const aliases = topic.aliases.map(fold);
 
-    let score = 0;
-    let reason = topic.summary;
+    let score: number;
+    let reason: string;
 
     if (titleUk === q || titlePt === q || titleEn === q || id === q) {
       score = 100;
