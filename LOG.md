@@ -1109,3 +1109,33 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 - Залишилося canonical topics: **0/352**.
 - Quality/depth pass у Batch 25: **10 статей**.
 - Залишилося сторінок із `short` depth metadata: **0**.
+
+
+## Batch 26 — quality/depth pass: foundational syntax and agreement
+
+Після закриття всіх short metadata-сторінок продовжено не coverage, а поглиблення слабших high-depth статей.
+
+### Поглиблено 5 наявних статей
+
+- parts-of-speech — додано практичний алгоритм класифікації за синтаксичною функцією, контраст muito trabalho / trabalha muito, a як артикля/прийменника та que як багатофункціональної форми;
+- gender-number-person — уточнено різницю між родом і закінченням, винятки, семантичну й граматичну особу та você як 3-тю особу;
+- clitic-climbing — розгорнуто умови підняття клітики, роль заперечення, аргументну роль нижчого дієслова та PT-BR/PT-PT розподіл;
+- agreement-edge-cases — додано кількісні/колективні групи, mais de um, дроби, um dos, варіантність a maioria dos alunos chegou/chegaram та метод визначення граматичного центру;
+- complement-clauses-advanced — уточнено алгоритм вибору між infinitivo, indicativo та conjuntivo, роль матричного предиката, різних суб'єктів і заперечення.
+
+### QA
+
+- Academic Writing Toolkit застосовано після редагування всіх нових prose-блоків.
+- Автоматичний reviewer повертав лише відомі generic short-paragraph сигнали для технічного контейнера структурованого input; змістових логічних суперечностей у нових редакціях не виявлено.
+- Нових canonical IDs: **0**.
+- Canonical coverage залишається **352/352**.
+- Metadata short: **0**.
+- Робота Batch 26 — саме quality/depth pass; переписування наявних сторінок не збільшує coverage counter.
+
+### Git
+
+- 3b6fe49a39a8b7e1d91e7faccc5d3b9fb2fd9b99 — parts of speech;
+- 88c93f77cb6ca418ce4140458f9bc43975d2ae31 — gender/number/person;
+- d558e6533ddf324504fad3ecbf2a2dfadb123cab — clitic climbing;
+- bade872f997e2d4631edc32531c80a7d872474e3 — agreement edge cases;
+- f839b2e7bdb867cf52d064a075e428f55d1f4315 — advanced complement clauses.
