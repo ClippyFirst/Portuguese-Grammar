@@ -1295,4 +1295,4 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 - Нових related IDs: **0**.
 - Academic Writing Toolkit застосовано до нових prose-фрагментів; British English check — **0 issues**. Paragraph reviewer повернув лише generic `short-paragraph` signal для одного короткого блоку, без змістового логічного конфлікту.
 - GitHub connector не повертає доступних workflow runs/status checks для цього head, тому CI green не заявляється.
-\n
+
