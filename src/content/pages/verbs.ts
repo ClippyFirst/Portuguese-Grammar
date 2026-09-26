@@ -1,4 +1,5 @@
 import type { GrammarPage } from "../types";
+import { ex, mistake } from "../helpers";
 const p=(id:string,slug:string,t:string,pt:string,en:string,s:string,i:string,teachingNote:string,e:GrammarPage["examples"],r:string[]=[]):GrammarPage=>({id,slug,category:"verbs",titleUk:t,titlePt:pt,titleEn:en,summary:s,aliases:[t,slug],related:r,intro:teachingNote ? `${i}\n\n${teachingNote}` : i,examples:e});
 export const pages:GrammarPage[]=[
 p("verb-system","system","Дієслівна система","Sistema verbal","Verb system","Особа, час, спосіб і перифрази.","Португальське дієслово кодує особу, число, час, спосіб та інші граматичні значення. Частина значень виражається аналітично.","Не вчіть форми лише як таблицю: пов'язуйте їх із синтаксичною функцією.",[{pt:"eu falo",uk:"я говорю"},{pt:"nós falámos",uk:"ми говорили / поговорили",variety:"PT"}],["verb-system","subjunctive-overview","ir-infinitive"]),
