@@ -992,3 +992,39 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 - Залишилося canonical topics: **0/352**.
 - Quality/depth pass у Batch 21: **6 статей**.
 - Загальна мета тепер — не вигадувати 353-й topic, а системно піднімати слабші `short`/середні сторінки до рівня повноцінного довідника.
+
+
+## Batch 22 — quality/depth pass: spelling, punctuation and core morphology
+
+Продовжено quality/depth pass на актуальній робочій гілці `content/production-2026-09-batch-01`. Canonical coverage вже становить **352/352**, тому нових штучних topic IDs не створювалося.
+
+### Поглиблено 6 наявних статей
+
+- `capitalization` — розведено початок речення, власні назви, дні/місяці та назви посад; додано приклади, типові помилки й PT-BR/PT-PT scope;
+- `punctuation` — розширено зв'язок пунктуації із синтаксичною структурою, координацією, підрядністю, відносними частинами та пояснювальними конструкціями;
+- `irregular-plurals` — систематизовано чергування, моделі на `-ão`, незмінювані форми та лексикалізовані множини;
+- `compound-nouns` — розведено моделі множини складених іменників, множення одного/кількох компонентів та лексичну фіксацію;
+- `coordinating` — переведено на high-depth metadata після перевірки вже розгорнутого довідникового матеріалу про `e, nem, ou, mas, porém, logo, portanto, pois`;
+- `spelling-changing` — розширено орфографічні чергування `c/ç/qu`, `g/gu`, їхній зв'язок із вимовою та відмінність від морфологічної нерегулярності.
+
+Для нових редакцій збережено production contract: визначення, структурна модель, функціональні підрозділи, приклади португальською з українськими відповідниками, learner mistakes, український контраст, pluricentric scope та джерела там, де вони змістовно потрібні.
+
+### QA
+
+- Academic Writing Toolkit після редагування: **0 issues** у paragraph-level logic review.
+- Перевірено актуальний каталог: **352 rows**, canonical coverage **352/352**.
+- Після цього batch у каталозі залишилося **16 short** статей.
+- Усі 6 цільових IDs присутні та мають `high` depth.
+- Нових canonical IDs: **0**; coverage counter не змінюється.
+- CI green не заявляється: для цієї гілки не було підтвердженого workflow/status прогону через доступний GitHub connector.
+
+### Лічильник
+
+- Canonical coverage: **352/352 написано**.
+- Залишилося canonical topics: **0/352**.
+- Quality/depth pass у Batch 22: **6 статей**.
+- Залишилося сторінок із `short` depth metadata: **16**.
+
+### Git
+
+- Branch HEAD після batch: `eaff8b6ded0d175ce9f78068d26897b744ee3f21`.
