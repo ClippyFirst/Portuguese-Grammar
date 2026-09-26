@@ -154,7 +154,7 @@ export const pages: GrammarPage[] = [
     titleUk: "Пунктуація підрядних речень", titlePt: "Pontuação das orações subordinadas", titleEn: "Subordinate-clause punctuation",
     summary: "Коми й інші розділові знаки в португальських підрядних конструкціях: позиція, тип зв'язку та інформаційна структура.",
     aliases: ["пунктуація підрядних", "subordinate clause punctuation", "pontuação subordinada", "кома"],
-    related: ["subordination-and-coordination", "subordinate-clauses", "relative-restrictive", "sentence-type-vs-punctuation", "punctuation"],
+    related: ["subordination-and-coordination", "relative-restrictive", "sentence-type-vs-punctuation", "punctuation"],
     status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
     intro: "Кома в португальському складному реченні не є механічною копією української. Важливі тип підрядної, її позиція, ступінь інтегрованості, інформаційна структура та конкретна орфографічна норма. Особливо небезпечно переносити правило «перед будь-яким que ставимо кому» або «підрядна на початку завжди відокремлюється однаково».",
     definition: "Пунктуація підрядності — система графічного оформлення межі між головною та залежною частинами відповідно до синтаксичної структури й інформаційної організації.",
