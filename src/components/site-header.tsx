@@ -11,6 +11,9 @@ export function SiteHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
   useEffect(() => {
+    // Route changes must close the transient mobile drawer; this is intentional
+    // state synchronization with the router rather than derived render state.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setOpen(false);
   }, [pathname]);
 
