@@ -893,3 +893,51 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 
 - `f8cd5ef718aa1b1f578acb95cdd43ad58950cdb3` — clitic articles.
 - `ee0481c4169bf389e783f6ed87776f35ab2a2dcc` — contraction/pronoun articles.
+
+
+## 2026-09-26 — Batch 18: final canonical coverage closure
+
+Продовжено закриття canonical coverage на актуальній робочій гілці `content/production-2026-09-batch-01`. Перед додаванням окремо перевірено блок тем, які ще не мали dedicated authored coverage. Два вже наявні IDs (`adjective-coordination`, `adjective-intensification`) не створювалися повторно; вони вже були покриті в попередніх production-модулях.
+
+### Додано 10 нових dedicated GrammarPage-статей
+
+У `src/content/pages/coverage-closure-production-3.ts` створено:
+
+- `question-tags` — питання-підтвердження та апендикси;
+- `echo-questions` — реактивні ехо-питання;
+- `sentence-fragments` — фрагменти речення та бездієслівні висловлення;
+- `optative-wish-constructions` — оптативні та побажальні конструкції;
+- `hortative-exhortative-constructions` — хортативні та спонукальні конструкції;
+- `frequency-adverbs` — прислівники частотності;
+- `attributive-adjectives` — атрибутивні прикметники;
+- `predicative-adjectives` — предикативні прикметники;
+- `compound-adjectives` — складні прикметники;
+- `adjective-substantivisation` — субстантивація прикметників.
+
+### Якість
+
+Пакет закриває останні canonical gaps не короткими заглушками, а окремими довідниковими статтями. Для синтаксичних і прагматичних тем розведено граматичну форму та комунікативну функцію; для прислівників — семантичну частотність і позиційну поведінку; для прикметників — атрибутивну/предикативну функцію, координацію, складність та субстантивацію.
+
+Кожна нова сторінка має definition, структурні моделі там, де вони справді потрібні, функціональні підрозділи, production/comprehension/contrast приклади з українськими перекладами, типові learner mistakes, український контраст, PT-BR/PT-PT scope та джерела. Формулювання навмисно не перетворюють частотність, регіональну тенденцію або прагматичний ефект на абсолютне правило.
+
+### QA
+
+- Academic Writing Toolkit застосовано для paragraph-level logic review: єдиний сигнал — generic `short-paragraph` на рівні технічного input-контейнера; предметних логічних суперечностей не вказано.
+- Перевірено, що всі 10 нових IDs присутні в актуальному `catalog.ts`.
+- Окремо перевірено, що `adjective-coordination` та `adjective-intensification` вже були covered і тому після QA видалені з нового модуля як дублікати.
+- Новий модуль автоматично підхоплюється `import.meta.glob("./pages/*.ts")`; ручна реєстрація в `load.ts` не потрібна.
+- Workflow/status для нового commit через GitHub не повернув активних workflow runs або status checks, тому CI green не заявляється.
+
+### Лічильник
+
+- До Batch 18: **342 / 352 написано**.
+- Додано нових canonical IDs: **10**.
+- Поточне покриття: **352 / 352**.
+- Залишилося: **0 / 352**.
+- Fallback/generated pages не зараховуються.
+- Переписування вже наявних dedicated IDs не збільшує coverage counter.
+
+### Git
+
+- `5aca07a334b87dece95ac858c822b187d2799ad6` — первинне додавання фінального coverage-модуля;
+- `0eeecd4f02def1d19bbb52d6f2424afc9d885e13` — видалення двох дубльованих adjective IDs після перевірки coverage;
