@@ -269,23 +269,25 @@ export const pages: GrammarPage[] = [
     titleUk: "Порівняльні підрядні конструкції",
     titlePt: "Orações comparativas",
     titleEn: "Comparative clauses",
-    summary: "Конструкції, що зіставляють ступінь, кількість, якість або спосіб двох ситуацій.",
+    summary: "Конструкції, що зіставляють ступінь, кількість, якість або спосіб двох ситуацій, і корелятивні моделі ступеня.",
     aliases: ["порівняльні підрядні", "comparative clauses", "orações comparativas", "do que", "como", "quanto"],
     related: ["comparatives", "consecutive-clauses", "conformative-clauses", "subordinating"],
     status: "draft", origin: "handwritten", depth: "high", ukrainianContrast: "high",
-    intro: "Порівняльна конструкція встановлює співвідношення між двома величинами або ситуаціями. У португальській вона може бути частиною comparativo — mais/menos/tão... do que/como — або мати повнішу підрядну структуру. Форма como особливо багатозначна: вона може вводити порівняння, відповідність або інші конструкції, тому сам сполучник не є достатньою підставою для аналізу.",
+    intro: "Порівняльна конструкція встановлює співвідношення між двома величинами або ситуаціями. Треба розрізняти ступеневе порівняння (mais/menos/tão... do que/como), порівняння способу та корелятивні моделі типу quanto mais... mais. Один конектор не визначає клас конструкції: como може бути порівняльним або конформативним, а quanto — частиною кореляції ступенів. Аналізуйте всю рамку, а не окреме слово.",
     definition: "Порівняльна конструкція — структура, яка зіставляє два члени за ступенем, кількістю, якістю, способом або іншою релевантною властивістю.",
     uses: [
-      { title: "Mais/menos ... do que", body: "Після порівняльного показника do que часто вводить другий член порівняння.", examples: [ex("Ele trabalha mais do que eu.", "Він працює більше, ніж я.", { purpose: "production" })] },
+      { title: "Mais/menos ... do que", body: "Після порівняльного показника do que часто вводить другий член порівняння.", examples: [ex("Ele trabalha mais do que eu.", "Він працює більше, ніж я.", { purpose: "production" }), ex("Este relatório é menos claro do que o anterior.", "Цей звіт менш зрозумілий, ніж попередній.", { purpose: "production" })] },
       { title: "Tão ... como/quanto", body: "Конструкція рівності зіставляє два елементи за певною властивістю.", examples: [ex("Ela é tão alta como a irmã.", "Вона така ж висока, як її сестра.", { purpose: "production" })] },
       { title: "Порівняння способу", body: "Como може порівнювати спосіб дії, але тут потрібно відрізняти порівняльне значення від conformative або relative-like конструкцій.", examples: [ex("Ele fala como o pai falava.", "Він говорить так, як говорив його батько.", { purpose: "comprehension" })] }
     ],
     examples: [
       ex("Este livro é mais interessante do que aquele.", "Ця книжка цікавіша за ту.", { purpose: "production" }),
+      ex("A tarefa foi menos difícil do que esperávamos.", "Завдання було менш складним, ніж ми очікували.", { purpose: "production" }),
       ex("Trabalha tanto como antes.", "Він/вона працює так само багато, як раніше.", { purpose: "contrast" }),
       ex("Quanto mais estudas, melhor compreendes.", "Що більше ти вчишся, то краще розумієш.", { purpose: "comprehension" })
     ],
     mistakes: [
+      mistake("плутати do que після comparativo з будь-яким que", "шукати показник порівняння на кшталт mais, menos, melhor або pior", "У ступеневому порівнянні do que вводить другий член зіставлення; звичайне que після дієслова не має цієї функції.", "editorial", "medium"),
       mistake("вважати do que і como взаємозамінними в усіх моделях", "визначати тип порівняльної конструкції", "Розподіл залежить від comparativo та конкретної структури.", "editorial", "medium"),
       mistake("аналізувати кожне como як порівняльне", "перевіряти, чи є реальний другий член порівняння", "Como може бути causal, conformative, relative-like та частиною інших структур.", "predicted-l1-transfer", "high"),
       mistake("плутати proporcional із звичайним comparative", "перевіряти, чи порівнюються дві величини чи корелюють дві зміни", "Quanto mais... mais виражає кореляцію ступенів, а не просто один порівняльний член.", "editorial", "high")
