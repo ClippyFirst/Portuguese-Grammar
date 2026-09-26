@@ -87,65 +87,19 @@ def add(id_: str, **kwargs):
     KB[id_] = kwargs
 
 
-# Will be filled by subsequent sections imported below via exec of data.
-# For robustness, a generic-but-accurate fallback is built from linguistic templates.
-
-TEMPLATES = {
-    "high": "deep",
-    "medium": "mid",
-    "short": "short",
-}
+# The generator is intentionally fail-closed. A catalogue entry without reviewed
+# knowledge must not receive a generic article: that creates the appearance of
+# coverage while teaching content that has not been individually reviewed.
 
 
-def fallback(meta: dict) -> dict:
-    """Accurate mini-article if a topic is missing from KB — still unique via titles/examples bank."""
-    ident = meta["id"]
-    title_pt = meta["titlePt"]
-    title_uk = meta["titleUk"]
-    summary = meta["summary"]
-    bank = EXAMPLE_BANK.get(ident) or EXAMPLE_BANK.get(meta["category"]) or DEFAULT_EXAMPLES
-    intro = (
-        f"**{title_pt}** — {summary}\n\n"
-        f"У довіднику ця тема пояснюється з погляду логіки португальської системи, а не як список гасел. "
-        f"Українська тут — мова пояснення й порівняння, а не матриця, на яку треба «накласти» португальські форми.\n\n"
-        f"Дивіться формули, мінімальні пари та блок типових помилок: саме вони показують, коли конструкцію варто обрати, а коли — ні."
-    )
-    return {
-        "intro": intro,
-        "formulas": [formula(f"S + V", note=f"Базова рамка для теми «{title_uk}». Уточнення — в прикладах.")],
-        "uses": [
-            use(
-                "Основне вживання",
-                f"{title_pt} входить у спільну португальську граматику. Там, де PT-BR і PT-PT розходяться, це зазначено окремо.",
-                bank[:2],
-            ),
-            use(
-                "Коли не вживати",
-                "Не переносьте українську відмінкову чи видову модель один до одного. Перевірте регістр і варіант (PT-BR / PT-PT).",
-                bank[2:3] if len(bank) > 2 else bank[:1],
-            ),
-        ],
-        "examples": bank,
-        "mistakes": [
-            mist(
-                f"[калька] {title_pt}",
-                bank[0]["pt"] if bank else title_pt,
-                "Найчастіша помилка — дослівний переклад з української або іспанської. Португальська вимагає власної конструкції.",
-            )
-        ],
-        "ukrainian": f"Для україномовних «{title_uk}» часто виглядає зайвим або, навпаки, обов'язковим не там. Порівнюйте не слова, а функції в реченні.",
-        "brPt": "Якщо правило спільне — воно подане без прапорця. Відмінності PT-BR / PT-PT марковані в прикладах.",
-    }
-
-
-DEFAULT_EXAMPLES = [
-    ex("Ela chegou cedo.", "Вона прийшла рано."),
-    ex("Não sei se ele vem.", "Не знаю, чи він прийде."),
-    ex("Estamos a falar / Estamos falando disso.", "Ми про це говоримо.", note="PT-PT / PT-BR"),
-    ex("Quando eu chegar, ligo.", "Коли дійду — зателефоную."),
-]
-
-EXAMPLE_BANK: dict[str, list] = {}
+def require_knowledge(meta: dict) -> dict:
+    body = KB.get(meta["id"])
+    if body is None:
+        raise SystemExit(
+            f'Missing reviewed knowledge for {meta["id"]} '
+            f'({meta["category"]}/{meta["slug"]}); refusing to generate filler.'
+        )
+    return body
 
 
 def emit_category(cat: str, pages: list[dict]) -> str:
@@ -162,7 +116,7 @@ def main():
         raise SystemExit(f"catalog parse failed: {len(catalog)} rows")
     by_cat: dict[str, list] = {}
     for meta in catalog:
-        body = KB.get(meta["id"]) or fallback(meta)
+        body = require_knowledge(meta)
         by_cat.setdefault(meta["category"], []).append({"meta": meta, "body": body})
     for cat, pages in by_cat.items():
         target = OUT / f"{cat}.ts"
