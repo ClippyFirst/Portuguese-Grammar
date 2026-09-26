@@ -344,6 +344,25 @@ export const pages: GrammarPage[] = [
         ],
       },
     ],
+      {
+        title: "Тригер не дорівнює просто «слову перед дієсловом»",
+        body: "Для аналізу важливо знайти синтаксичний тригер, а не ставити клитик після першого слова речення. Заперечення, відносні та питальні елементи, підрядні сполучники й частина кванторів створюють проклітичне середовище; звичайний виражений підмет сам по собі такого ефекту не створює. У складній групі перевіряйте тригер щодо всього дієслівного комплексу.",
+        examples: [
+          ex("A pessoa que me ajudou já saiu.", "Людина, яка мені допомогла, уже пішла.", { purpose: "comprehension" }),
+          ex("Quem te contou isso?", "Хто тобі це розповів?", { purpose: "comprehension" }),
+          ex("O João chamou-me ontem.", "Жуан учора мені зателефонував.", { variety: "PT", purpose: "contrast" }),
+          ex("O João me chamou ontem.", "Жуан учора мені зателефонував.", { variety: "BR", purpose: "contrast" }),
+        ],
+      },
+      {
+        title: "Позиція клитика і структура перифрази — різні питання",
+        body: "У `vou dizer-te`, `vou-te dizer` та `te vou dizer` змінюється поверхнева позиція клитика, але не його аргументна роль: він усе ще є об'єктом інфінітива `dizer`. Це особливо важливо під час аналізу clitic climbing: спершу визначте, яке дієслово керує клитиком, а вже потім описуйте його поверхневу позицію.",
+        examples: [
+          ex("Vou explicar-te o problema.", "Я поясню тобі проблему.", { variety: "PT", purpose: "production" }),
+          ex("Vou-te explicar o problema.", "Я поясню тобі проблему.", { variety: "PT", purpose: "contrast" }),
+          ex("Vou te explicar o problema.", "Я поясню тобі проблему.", { variety: "BR", purpose: "contrast" }),
+        ],
+      },
     examples: [
       ex("Sempre me lembro daquele dia.", "Я завжди пам'ятаю той день."),
       ex("Talvez se enganem.", "Можливо, вони помиляються."),
