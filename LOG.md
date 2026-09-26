@@ -659,3 +659,55 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 - Залишилося: **57 / 349**.
 - Fallback/generated pages не зараховуються.
 - Переписування вже наявних dedicated IDs не збільшує coverage counter.
+
+
+## 2026-09-26 — content production batch 13: nouns, articles and pronouns
+
+Продовжено наповнення canonical corpus на робочій гілці `content/production-2026-09-batch-01`. Перед створенням нового набору перевірено каталог і вже створені production-модулі; семантичні дублікати та вже наявні dedicated IDs не зараховувалися повторно.
+
+### Додано 10 нових dedicated GrammarPage-статей
+
+У `src/content/pages/nouns-pronouns-articles-production-2.ts` створено:
+
+- `compound-nouns` — складні іменники;
+- `common-epicene` — common de dois та epiceno;
+- `professions-gender` — назви професій і граматичний рід;
+- `diminutives` — зменшувальні форми;
+- `augmentatives` — збільшувальні та інтенсивні форми;
+- `articles-geography` — артикль із географічними назвами;
+- `articles-regional` — регіональна варіативність артикля;
+- `voces-vos` — vocês і vós;
+- `nos-a-gente` — nós і a gente;
+- `prepositional-pronouns` — займенники після прийменників;
+- `demonstratives` — вказівні займенники;
+- `possessives` — присвійні форми;
+- `indefinites` — неозначені займенники та детермінативи;
+- `interrogative-pronouns` — питальні займенники;
+- `relative-pronouns` — система відносних займенників.
+
+**Примітка:** у цьому batch фактично створено **15** нових IDs, а не 10; лічильник збільшується на всі 15, оскільки кожна сторінка має окремий canonical ID і не була production-covered на старті batch.
+
+### Якість
+
+Статті побудовано за тим самим production contract: definition, formation/структурний опис, функціональні підрозділи, production/comprehension/contrast приклади з українськими перекладами, типові learner mistakes, український контраст, PT-BR/PT-PT scope та source metadata. Окремо перевірено related IDs: після локальної перевірки `interrogative-clauses`, якого немає в catalog, було прибрано це посилання до фінального коміту.
+
+Пакет спеціально закриває теми, де україномовний студент легко переносить рідну систему: множину складних іменників, граматичний рід назв професій, значення diminutivo/aumentativo, артиклі з топонімами, vocês/vós, nós/a gente, прийменникові займенники та відмінності між este/esse/aquele, meu/seu, alguém/algum, que/quem/qual/quanto і відносними формами.
+
+Academic Writing Toolkit застосовано для paragraph-level logic review. Інструмент повернув лише два generic `short-paragraph` сигнали на рівні технічного input-контейнера; предметних логічних суперечностей у підготовлених статтях не було вказано. Це не трактуємо як повний редакторський proofread.
+
+### Лічильник покриття
+
+- Було: **292 / 349 написано**.
+- Додано нових canonical IDs: **15**.
+- Стало: **307 / 349 написано**.
+- Залишилося: **42 / 349**.
+- Fallback/generated pages не враховуються.
+- Переписування вже наявних dedicated IDs не збільшує coverage counter.
+
+### Технічна примітка
+
+Content commit-и batch 13:
+- `cb6801236a0810130bfe6460c20d495b42d38240` — перші 5 статей;
+- `42fc0908ed7bd20964becd2aa4f097827c65b76f` — ще 5 статей;
+- `3489b3cd6a0dd67de253e5962df164e04d607cb0` — ще 5 статей + нормалізація related reference.
+
