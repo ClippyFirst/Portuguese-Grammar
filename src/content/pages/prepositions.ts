@@ -11,5 +11,30 @@ p("por-para","por-para","por чи para","Por ou para","por vs para","Контр�
 p("prep-com","com-sem","com і sem","Com e sem","com and sem","Супровід, інструмент і відсутність.","com виражає супровід або засіб, sem — відсутність. com має особливі займенникові форми comigo, contigo тощо.","Порівнюйте прийменник із займенниковою формою.",[{pt:"Vou com ele.",uk:"Я йду з ним."},{pt:"Café sem açúcar.",uk:"Кава без цукру."}],["prepositional-pronouns"]),
 p("prep-other","other","Інші прийменники","Outras preposições","Other prepositions","sobre, entre, até, desde, contra, perante та інші.","Другорядні прийменники мають конкретні просторові, часові та абстрактні значення. Частина з них входить до складених прийменників.","Вчіть їх через приклади, а не через довгий список перекладів.",[{pt:"entre amigos",uk:"між друзями"},{pt:"desde ontem",uk:"від учора"},{pt:"até amanhã",uk:"до завтра"}],["compound-prepositions","prepositions-overview"]),
 p("verb-preposition","verb-preposition","Дієслово + прийменник","Verbo e preposição","Verb + preposition","Керування дієслів.","Деякі дієслова вибирають прийменник як частину своєї валентної моделі: gostar de, assistir a у нормативній моделі, precisar de. Український переклад не гарантує той самий прийменник.","Запам'ятовуйте дієслово разом із його моделлю.",[{pt:"Gosto de música.",uk:"Я люблю музику."},{pt:"Preciso de ajuda.",uk:"Мені потрібна допомога."}],["government-overview","valency-overview"]),
-p("compound-prepositions","compound","Складені прийменники","Locuções prepositivas","Compound prepositions","de acordo com, por causa de, apesar de та інші.","Складені прийменники функціонують як одна прийменникова рамка, хоча графічно складаються з кількох слів.","Їхня семантика часто не дорівнює сумі окремих слів.",[{pt:"por causa da chuva",uk:"через дощ"},{pt:"de acordo com a lei",uk:"відповідно до закону"}],["prep-other","subordinating"])
+{
+  id:"compound-prepositions",
+  slug:"compound",
+  category:"prepositions",
+  titleUk:"Складені прийменники",
+  titlePt:"Locuções prepositivas",
+  titleEn:"Compound prepositions",
+  summary:"Прийменникові сполуки на кшталт de acordo com, por causa de, apesar de та їхня синтаксична рамка.",
+  aliases:["складені прийменники","locuções prepositivas","por causa de","de acordo com","apesar de"],
+  related:["prep-other","subordinating","concessive-clauses","purpose-clauses"],
+  intro:"Складена прийменникова конструкція (locução prepositiva) складається з кількох слів, але функціонує як одна прийменникова рамка. Для користувача важливо вчити не окремі компоненти, а всю модель: por causa de + іменна група, de acordo com + іменна група, apesar de + іменна група або інфінітив.",
+  definition:"Locução prepositiva — стійка багатослівна конструкція, яка вводить залежний компонент і виконує прийменникову функцію.",
+  formation:"Типові рамки мають форму прийменникового компонента + іменник + простий прийменник: por causa de, de acordo com, em vez de. У частині конструкцій після рамки можливий інфінітив: apesar de estar cansado, a fim de estudar.",
+  uses:[
+    {title:"Причина",body:"por causa de вводить причину, зазвичай іменну групу.",examples:[{pt:"Fiquei em casa por causa da chuva.",uk:"Я залишився/залишилася вдома через дощ."}]},
+    {title:"Відповідність",body:"de acordo com вводить джерело, правило або критерій, з яким щось узгоджується.",examples:[{pt:"De acordo com a lei, isto é permitido.",uk:"Відповідно до закону це дозволено."}]},
+    {title:"Допустовість",body:"apesar de вводить обставину, яка не скасовує основного твердження; після нього можливі іменна група та інфінітив.",examples:[{pt:"Apesar do frio, saímos.",uk:"Попри холод, ми вийшли."},{pt:"Apesar de estar cansado, continuou.",uk:"Попри втому, він продовжив."}]},
+    {title:"Заміна та мета",body:"em vez de виражає заміну, а a fim de — мету в книжнішій конструкції.",examples:[{pt:"Em vez de sair, ficou em casa.",uk:"Замість того щоб вийти, він залишився вдома."},{pt:"Estudo a fim de melhorar.",uk:"Я навчаюся, щоб покращити результат."}]}
+  ],
+  examples:[{pt:"por causa do trabalho",uk:"через роботу"},{pt:"de acordo com os dados",uk:"відповідно до даних"},{pt:"apesar da dificuldade",uk:"попри труднощі"}],
+  ukrainian:"Українські «через», «відповідно до», «попри», «замість» частково відповідають португальським locuções, але одна українська прийменникова форма не обов'язково відповідає одному португальському слову. Вивчайте рамку цілком, особливо те, що стоїть після de.",
+  brPt:"Основні locuções prepositivas спільні для PT-BR і PT-PT. Відмінності частіше стосуються частотності, регістру та лексичних альтернатив, а не базової синтаксичної функції.",
+  regional:"Опис стосується стандартної сучасної португальської; окремі сполуки можуть бути стилістично книжними або мати жанрові переваги.",
+  sources:[{label:"Camões — Referencial Camões PLE",url:"https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple"}],
+  depth:"high"
+},
 ];
