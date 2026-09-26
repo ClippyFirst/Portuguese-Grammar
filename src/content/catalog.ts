@@ -76,8 +76,8 @@ const ROWS: Row[] = [
 
 
   ["sentence-basics", "fundamentals", "sentence-basics", "Базова структура речення", "Estrutura da frase", "Basic sentence structure", "Підмет, присудок, додатки й базовий порядок SVO.", "речення,SVO,підмет,присудок,frase", "null-subject,word-order,parts-of-speech", "medium"],
-  ["parts-of-speech", "fundamentals", "parts-of-speech", "Частини мови", "Classes de palavras", "Parts of speech", "Змінні й незмінні частини мови в португальській.", "частини мови,морфологія,classes de palavras", "sentence-basics,noun-gender,verb-system", "medium"],
-  ["gender-number-person", "fundamentals", "gender-number-person", "Рід, число, особа", "Género, número, pessoa", "Gender, number, person", "Граматичні категорії, які пронизують усю систему.", "рід,число,особа,género,gênero", "noun-gender,adjective-agreement,agreement-sv", "medium"],
+  ["parts-of-speech", "fundamentals", "parts-of-speech", "Частини мови", "Classes de palavras", "Parts of speech", "Змінні й незмінні частини мови в португальській.", "частини мови,морфологія,classes de palavras", "sentence-basics,noun-gender,verb-system", "high"],
+  ["gender-number-person", "fundamentals", "gender-number-person", "Рід, число, особа", "Género, número, pessoa", "Gender, number, person", "Граматичні категорії, які пронизують усю систему.", "рід,число,особа,género,gênero", "noun-gender,adjective-agreement,agreement-sv", "high"],
   ["null-subject", "fundamentals", "null-subject", "Пропуск підмета", "Sujeito nulo", "Null subject", "Коли підмет можна й варто опускати.", "пропуск підмета,sujeito oculto,pro-drop", "subject-pronouns,word-order,tu-voce", "high"],
   ["register", "fundamentals", "register", "Регістри мови", "Registos", "Register", "Розмовне, нейтральне, формальне й книжне.", "регістр,формальне,розмовне,coloquial", "pt-br-pt-pt,forms-of-address", "medium"],
 
