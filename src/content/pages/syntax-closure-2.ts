@@ -1,9 +1,7 @@
 import type { GrammarPage } from "../types";
 import { ex, mistake, page } from "../helpers";
 
-const GULBENKIAN_II = "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/";
 const GULBENKIAN_III = "https://gulbenkian.pt/publications/gramatica-do-portugues-vol-iii/";
-const CAMOES_PLE = "https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple";
 const DGE_DT = "https://area.dge.mec.pt/gramatica/DT_2008.pdf";
 
 export const pages: GrammarPage[] = [
