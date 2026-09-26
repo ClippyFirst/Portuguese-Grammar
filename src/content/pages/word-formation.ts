@@ -28,7 +28,7 @@ export const pages: GrammarPage[] = [
       },
     ],
     formation:
-      "Найчастотніші заперечні префікси: `in-` (і фонетичні варіанти `im-`, `i-`, `ir-`) та `des-`. `in-` ближчий до латинського «не-»; `des-` часто означає обернення дії (`fazer` → `desfazer`).\n\nСуфікси номіналізації: `-ção` (`formação`), `-mento` (`movimento`), `-idade` (`felicidade`), `-ência` (`preferência`), `-agem` (`viagem`). Прикметникові: `-ável / -ível` (`lavável`, `possível`), `-oso` (`perigoso`), `-al` (`nacional`). Дієслівні: `-izar` (`organizar`), `-ecer` (`anoitecer`), `-ificar` (`simplificar`).\n\nПеред `r` префікс `in-` дає `ir-` (`irreal`); перед губним — `im-` (`impossível`); перед `l` — `i-` (`ilegal`). Це морфонологія, не «винятки для запам'ятовування списком».",
+      "Найчастотніші заперечні префікси: `in-` (і фонетичні варіанти `im-`, `i-`, `ir-`) та `des-`. `in-` ближчий до латинського «не-»; `des-` часто означає обернення дії (`fazer` → `desfazer`).\n\nСуфікси номіналізації: `-ção` (`formação`), `-mento` (`movimento`), `-idade` (`felicidade`), `-ência` (`preferência`), `-agem` (`viagem`). Ці моделі допомагають розпізнавати та групувати похідні, але не означають вільного вибору суфікса для будь-якої основи: конкретні номіналізації часто лексикалізовані. Прикметникові: `-ável / -ível` (`lavável`, `possível`), `-oso` (`perigoso`), `-al` (`nacional`). Дієслівні: `-izar` (`organizar`), `-ecer` (`anoitecer`), `-ificar` (`simplificar`).\n\nПеред `r` префікс `in-` дає `ir-` (`irreal`); перед губним — `im-` (`impossível`); перед `l` — `i-` (`ilegal`). Це морфонологія, не «винятки для запам'ятовування списком».",
     uses: [
       {
         title: "Заперечення якості",
