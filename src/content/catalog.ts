@@ -12,6 +12,7 @@ type Row = [
   aliases: string,
   related: string,
   depth: TopicMeta["depth"],
+  ["adverb-formation", "adverbs", "adverb-formation", "Творення прислівників", "Formação de advérbios", "Adverb formation", "Основні способи творення португальських прислівників і межі продуктивних моделей.", "творення прислівників,adverb formation,formação de advérbios", "adverbs-overview,adverbs-mente,adverbial-locutions,suffixation", "high"],
 ];
 
 const ROWS: Row[] = [
