@@ -8,7 +8,7 @@ const CD = "https://ciberduvidas.iscte-iul.pt/";
 
 export const pages: GrammarPage[] = [
   page({
-    id: "capitalization-and-names", slug: "capitalization-and-names", category: "spelling",
+    id: "capitalization-and-names", slug: "capitalization-names", category: "spelling",
     titleUk: "Велика літера та власні назви", titlePt: "Maiúsculas e nomes próprios", titleEn: "Capitalisation and proper names",
     summary: "Системне вживання великої літери в португальській: власні назви, установи, географічні назви, назви творів і похідні.",
     aliases: ["велика літера", "capitalization", "maiúsculas", "nomes próprios", "власні назви"],
@@ -45,7 +45,7 @@ export const pages: GrammarPage[] = [
   }),
 
   page({
-    id: "discourse-reference", slug: "discourse-reference", category: "discourse",
+    id: "discourse-reference", slug: "reference", category: "discourse",
     titleUk: "Референція в дискурсі", titlePt: "Referência no discurso", titleEn: "Discourse reference",
     summary: "Як португальська підтримує референцію через займенники, повтор, еліпсис, означеність і контекст.",
     aliases: ["референція в дискурсі", "discourse reference", "referência discursiva", "анафора"],
@@ -80,7 +80,7 @@ export const pages: GrammarPage[] = [
   }),
 
   page({
-    id: "discourse-and-pragmatics", slug: "discourse-and-pragmatics", category: "pragmatics",
+    id: "discourse-and-pragmatics", slug: "discourse-pragmatics", category: "pragmatics",
     titleUk: "Дискурс і прагматика", titlePt: "Discurso e pragmática", titleEn: "Discourse and pragmatics",
     summary: "Різниця між граматичною формою, організацією тексту та комунікативним значенням у ситуації.",
     aliases: ["дискурс і прагматика", "discourse and pragmatics", "discurso e pragmática"],
