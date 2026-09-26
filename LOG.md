@@ -1249,3 +1249,27 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 - Нових related IDs не додано.
 - Academic Writing Toolkit застосовано до нових prose-блоків; технічні short-paragraph сигнали не трактуються як змістові дефекти.
 - GitHub connector не повернув status checks/workflow runs для цього commit, тому CI green не заявляється; після merge виконано окрему перевірку main і зафіксовано відсутність доступних status checks.
+
+
+## Batch 32 — quality/depth pass: core distinctions and diagnostics (2026-09-26)
+
+Продовжено systematic quality/depth pass після повного canonical coverage. Нових canonical IDs не створювалося.
+
+### Поглиблено 4 наявні статті
+
+- `ser-estar` — розширено мінімальні контрасти `é / está / ficou`, щоб відокремити характеристику, актуальний стан і зміну стану та не відтворювати спрощене правило «постійне / тимчасове»;
+- `subjunctive-overview` — уточнено часову перспективу складених форм кон'юнктива та показано передування щодо теперішньої, минулої й майбутньої точки відліку;
+- `articles-definite` — додано діагностику випадків, де означеність не зводиться до простої «відомості»: анафора, узагальнення та нульова детермінація;
+- `ser-passive` — посилено розмежування пасивної події з `ser + particípio` та результативного/стативного опису з `estar + particípio`.
+
+### Методологія
+
+Продовжено canonical content contract: form → function → interpretation → Ukrainian contrast → regional scope. Нові приклади додають мінімальні контрасти й часові точки відліку, тобто перевіряють реальні рішення читача, а не лише збільшують обсяг тексту.
+
+### QA
+
+- Змінено 4 існуючі page modules; canonical coverage залишається **352/352**.
+- Нових canonical IDs: **0**.
+- Нових related IDs не додано.
+- Academic Writing Toolkit застосовано до нових prose-блоків; він повернув лише generic `short-paragraph` сигнали технічного контейнера, без змістових логічних суперечностей у перевіреному матеріалі.
+- GitHub connector не повертає доступних status checks/workflow runs для цих оновлень, тому CI green не заявляється.
