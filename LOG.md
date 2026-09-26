@@ -1296,3 +1296,24 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 - Academic Writing Toolkit застосовано до нових prose-фрагментів; British English check — **0 issues**. Paragraph reviewer повернув лише generic `short-paragraph` signal для одного короткого блоку, без змістового логічного конфлікту.
 - GitHub connector не повертає доступних workflow runs/status checks для цього head, тому CI green не заявляється.
 
+## Batch 34 — quality/depth pass: subjunctive, clitics, conditionals, relatives, ter/haver, tense/aspect (2026-09-26)
+
+Продовжено quality/depth pass без створення нових canonical IDs. Фокус — прибрати спрощення, які могли дати україномовному читачеві хибний діагностичний алгоритм.
+
+### Поглиблено 6 наявних модулів
+
+- `moods.ts` — у `subjunctive-overview` уточнено, що складені часи кон'юнктива кодують часовий зв'язок із точкою відліку, а не «більшу невпевненість»;
+- `clitics.ts` — у `clitic-placement` додано приклад, де майбутня підрядна умова з `se` створює проклітичне середовище, і відмежовано його від позиції клитика в головній частині;
+- `subordinate.ts` — у `conditional-clauses` уточнено, що минула форма сама по собі не є достатнім тестом на контрфактичність;
+- `pronouns.ts` — у `relative-pronouns` посилено аналіз прийменникового керування на контрасті `de quem` / `com quem`;
+- `verbs.ts` — у `ter-haver` уточнено, що екзистенційне `há` є окремим уживанням `haver`, а не характеристикою всіх його конструкцій;
+- `tenses.ts` — у `perfeito-vs-imperfeito` прямо зафіксовано, що `imperfeito` не можна механічно ототожнювати з українським недоконаним видом.
+
+### QA
+
+- Compare від попереднього Batch 33 head: **6 content commits**, змінено 6 існуючих page modules.
+- Canonical coverage: **352/352**; нових canonical IDs: **0**.
+- Нових related IDs: **0**.
+- Academic Writing Toolkit: у перевірених нових фрагментах **0 substantive logic conflicts**; British English check — **0 issues**. Paragraph reviewer показав лише generic `short-paragraph` сигнали для коротких окремих блоків, що є властивістю поданого контейнера, а не змістовною помилкою.
+- GitHub connector для актуального head не надав status checks/workflow runs, тому CI green не заявляється.
+
