@@ -1028,3 +1028,28 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 ### Git
 
 - Branch HEAD після batch: `eaff8b6ded0d175ce9f78068d26897b744ee3f21`.
+
+
+## Batch 23 — quality/depth pass: orthography and adjective intensity
+
+Продовжено quality/depth pass без створення нових canonical topics.
+
+### Поглиблено
+
+- `acordo-ortografico` — розведено мету AO90, варіантність написань, акцентуацію, дефіс, k/w/y та відмінність орфографії від граматики; окремо зафіксовано pluricentric scope PT-BR/PT-PT.
+- `absolute-superlative` — розведено `muito + adjetivo`, `-íssimo/-íssima`, лексикалізовані форми та відносний суперлатив; додано контраст із українським «най-» і типові помилки.
+
+### QA
+
+- Перевірено каталог після batch: canonical coverage **352/352**.
+- Після Batch 23 залишилося **14 short** сторінок.
+- Обидва опрацьовані IDs присутні в каталозі та мають `high` depth.
+- Нових canonical IDs: **0**.
+- CI green не заявляється без підтвердженого workflow/status run.
+
+### Лічильник
+
+- Canonical coverage: **352/352 написано**.
+- Залишилося canonical topics: **0/352**.
+- Quality/depth pass у Batch 23: **2 статті**.
+- Залишилося `short`: **14**.
