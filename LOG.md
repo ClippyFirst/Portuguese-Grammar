@@ -1384,3 +1384,25 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 
 - Canonical topics: **352/352 написано**, **0 залишилося**.
 - Quality/depth pass триває.
+## Batch 38 — quality/depth pass: questions, ter/haver, temporal clauses, prose precision (2026-09-26)
+
+Продовжено поступовий quality/depth pass уже написаних тем; canonical inventory не розширювався.
+
+### Виправлено та поглиблено 4 наявні модулі
+
+- `questions.ts` — уточнено summary про структуру загальних питань, розширено нормативні варіанти `o que / que` у спеціальних питаннях та прибрано надто вузьке формулювання щодо PT-BR/PT-PT у блоці `porque`;
+- `articles.ts` — виправлено дрібну текстову помилку в таблиці регіональних відмінностей (`dril`);
+- `verbs.ts` — у `ter-haver` додано функціональний контраст між екзистенційним `há`, складеною конструкцією з `ter` та конструкцією `há de ser`;
+- `subordinate.ts` — у `temporal-clauses` уточнено контраст індикатива й conjuntivo після `quando` залежно від часової перспективи та статусу події.
+
+### QA
+
+- Canonical coverage: **352/352**; нових canonical IDs: **0**.
+- Зміни: **4 наявні page modules**.
+- Academic Writing Toolkit застосовано до всіх нових prose-фрагментів: змістових логічних конфліктів не виявлено. British English — **0 issues** для всіх фрагментів. Paragraph reviewer повернув лише generic `short-paragraph` signal для двох коротких ізольованих фрагментів; це артефакт формату перевірки, а не змістова помилка.
+- GitHub connector не повертає workflow runs/status checks для актуальних content commits, тому CI green не заявляється.
+
+### Лічильник
+
+- Canonical topics: **352/352 написано**, **0 залишилося**.
+- Quality/depth pass триває.
