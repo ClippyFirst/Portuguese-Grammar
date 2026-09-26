@@ -711,3 +711,40 @@ Content commit-и batch 13:
 - `42fc0908ed7bd20964becd2aa4f097827c65b76f` — ще 5 статей;
 - `3489b3cd6a0dd67de253e5962df164e04d607cb0` — ще 5 статей + нормалізація related reference.
 
+
+
+## 2026-09-26 — content production batch 14: orthography, numerals and word formation
+
+Продовжено закриття canonical coverage без створення штучних сторінок-дублів. Перед batch перевірено відповідні legacy-модулі: accentuation-advanced і hyphenation були лише в каталозі, а cardinals, ordinals, dates-time та word-formation-affixes мали старі compact-сторінки, але ще не мали окремих handwritten production IDs.
+
+### Додано 6 нових dedicated GrammarPage-статей
+
+У src/content/pages/orthography-numerals-wordformation-production.ts створено:
+
+- accentuation-advanced — поглиблена акцентуація, hiato, дифтонги, акценти та омографічні контрасти;
+- hyphenation — сучасне використання дефіса, префіксальні моделі та clitic-конструкції;
+- cardinals — кількісні числівники, рід, сотні, mil/milhão;
+- ordinals — порядкові числівники та їхнє узгодження;
+- dates-time — години, хвилини, календарні дати, місяці й роки;
+- word-formation-affixes — префікси, суфікси, словотвір vs словозміна та лексикалізація.
+
+### Якість
+
+Усі шість сторінок мають definition, структурні моделі, функціональні підрозділи, приклади для production/comprehension/contrast, типові learner mistakes, український контраст, PT-BR/PT-PT scope та джерела. Особливо пропрацьовано типові точки L1-transfer: механічне позначення наголосу, перенесення українських правил дефіса, рід числівників, конструкції з milhão, відмінність ordinal від простого номера та механічне тлумачення португальських афіксів.
+
+Academic Writing Toolkit застосовано для paragraph-level logic review. Інструмент не виявив предметних логічних суперечностей; єдиний сигнал був generic short-paragraph на рівні технічного input-контейнера. Після цього окремо відредаговано кілька неприродних українських глос до прикладів із числівниками.
+
+### Лічильник покриття
+
+- Було: **307 / 349 написано**.
+- Додано нових canonical IDs: **6**.
+- Стало: **313 / 349 написано**.
+- Залишилося: **36 / 349**.
+- Fallback/generated pages не враховуються.
+- Переписування вже наявних dedicated IDs не збільшує coverage counter.
+
+### Технічна перевірка
+
+- Новий файл: src/content/pages/orthography-numerals-wordformation-production.ts.
+- Content commits: f933594dfaac9321dcc27adc4d8f913d59ee5cbd, 6a572cacc88bb3b506f6ad729e42e714c4b95a9f.
+- Після створення перевірено, що нові IDs не дублюються в перевірених production/legacy-модулях.
