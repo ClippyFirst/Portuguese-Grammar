@@ -1074,3 +1074,38 @@ Academic Writing Toolkit застосовано для paragraph-level logic rev
 - Чотири опрацьовані IDs перевірені в каталозі та переведені з `short` до `high`.
 - Academic Writing Toolkit skill у поточному доступному каталозі інструментів не експонується, тому окремий автоматизований academic-writing review цього batch не заявляється.
 - CI green не заявляється без підтвердженого workflow/status run.
+
+
+## Batch 25 — quality/depth pass: final short-metadata closure
+
+Продовжено quality/depth pass після досягнення повного canonical coverage. Нових canonical IDs для лічильника не вигадувалося: робота була спрямована на завершення десяти сторінок, які ще мали metadata `short`.
+
+### Поглиблено / завершено 10 статей
+
+- `augmentatives` — створено окрему dedicated статтю про aumentativos: розмір, інтенсивність, оцінка, лексикалізація, типові суфікси та відмінність від абсолютного суперлатива;
+- `clitics-gerund` — наявний розгорнутий матеріал перевірено та переведено до `high`;
+- `prep-com` — переписано з короткого словникового запису в повний довідниковий матеріал про `com/sem`, супровід, інструмент, матеріал, відсутність, `comigo/contigo/consigo` та інфінітивні конструкції;
+- `se-reciprocal` — наявний розгорнутий матеріал про взаємне значення, двозначність із рефлексивом та PT-BR `a gente se` переведено до `high`;
+- `inversion` — наявний матеріал про V–S, питання та варіантність PT-PT/PT-BR переведено до `high`;
+- `coordination` — розгорнутий матеріал про сурядність/підрядність та невимеханічний вибір indicativo/conjuntivo переведено до `high`;
+- `consecutive-clauses` — розгорнутий матеріал про `tão... que`, `tanto... que` та наслідкові моделі переведено до `high`;
+- `agent-expression` — наявний матеріал про агенса пасиву з `por` переведено до `high`;
+- `word-formation-affixes` — розгорнутий матеріал про `in-/im-/i-/ir-`, `des-`, номіналізацію та словотвір переведено до `high`;
+- `other-lusophone` — наявний матеріал про Кабо-Верде, Гвінею-Бісау, Сан-Томе й Тимор-Лешті переведено до `high`.
+
+### QA
+
+- Catalog: **352/352 canonical topics**.
+- Metadata `short`: **0**.
+- Усі 10 фінальних IDs присутні в каталозі та мають `high`.
+- `augmentatives-production.ts` підхоплюється через існуючий `import.meta.glob("./pages/*.ts")`; окремої ручної реєстрації не потрібно.
+- Academic Writing Toolkit застосовано до нового/оновленого prose. Єдиний сигнал — generic `short-paragraph` у технічному контейнері `chapters/input.md:1`; змістової логічної проблеми інструмент не виявив.
+- Перевірено, що related IDs фінального десятка посилаються на canonical topics.
+- CI green не заявляється без підтвердженого workflow/status run.
+
+### Лічильник
+
+- Canonical coverage: **352/352 написано**.
+- Залишилося canonical topics: **0/352**.
+- Quality/depth pass у Batch 25: **10 статей**.
+- Залишилося сторінок із `short` depth metadata: **0**.
