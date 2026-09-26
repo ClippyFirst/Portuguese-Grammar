@@ -2,33 +2,37 @@ import type { GrammarPage } from "../types";
 const p=(id:string,slug:string,t:string,pt:string,en:string,s:string,i:string,teachingNote:string,e:GrammarPage["examples"],r:string[]=[]):GrammarPage=>({id,slug,category:"gerund",titleUk:t,titlePt:pt,titleEn:en,summary:s,aliases:[t,slug],related:r,intro:teachingNote ? `${i}\n\n${teachingNote}` : i,examples:e});
 export const pages:GrammarPage[]=[
 {
+{
   id: "gerund-form",
   slug: "form",
   category: "gerund",
   titleUk: "Утворення gerúndio",
   titlePt: "Gerúndio: formação",
   titleEn: "Gerund formation",
-  summary: "Морфологічна форма gerúndio, три основні закінчення та зв'язок із нерегулярністю дієслова.",
+  summary: "Морфологічна форма gerúndio, основні закінчення та випадки, де форма не зводиться до механічної заміни інфінітивного закінчення.",
   aliases: ["gerúndio", "gerund", "формування герундія", "-ando", "-endo", "-indo"],
-  related: ["gerund-usage", "estar-gerundio", "verb-system"],
-  intro: "Gerúndio — нефінітна форма дієслова, яка найчастіше закінчується на -ando, -endo або -indo. Форма сама по собі не виражає особу й число; часово-аспектуальне значення визначає вся конструкція.",
-  definition: "Gerúndio — нефінітна дієслівна форма, типово утворена від основи дієслова із закінченням -ando для -ar, -endo для -er і -indo для -ir.",
-  formation: "falar → falando, comer → comendo, partir → partindo. Якщо дієслово має нерегулярну основу або орфографічну особливість, вона може зберігатися й у gerúndio. На відміну від особових форм, gerúndio не має закінчень для eu, tu, ele тощо.",
+  related: ["gerund-usage", "estar-gerundio", "verb-system", "spelling-changing"],
+  intro: "Gerúndio — нефінітна дієслівна форма, яка типово закінчується на -ando, -endo або -indo. Вона не виражає особу й число самостійно: хто виконує дію та її часово-аспектовий статус визначає вся конструкція. Тому falando — це форма, а estou falando — вже предикативна конструкція.",
+  definition: "Для регулярних дієслів gerúndio утворюється від дієслівної основи із закінченням -ando для -ar, -endo для -er і -indo для -ir. Нерегулярні або орфографічно особливі дієслова можуть мати окремі форми, які треба перевіряти за словником.",
+  formation: "falar → falando, comer → comendo, partir → partindo. Важливо не переносити модель на все дієслово без перевірки: vir → vindo, pôr → pondo, ter → tendo показують, що частотні нерегулярні форми краще запам'ятовувати цілком.",
   uses: [
-    {title:"Дієслова на -ar",body:"Основа поєднується з -ando.",examples:[{pt:"falar → falando",uk:"говорити → говорячи"},{pt:"estudar → estudando",uk:"вчитися → навчаючись"}]},
-    {title:"Дієслова на -er",body:"Основа поєднується з -endo.",examples:[{pt:"comer → comendo",uk:"їсти → їдячи"},{pt:"vender → vendendo",uk:"продавати → продаючи"}]},
-    {title:"Дієслова на -ir",body:"Основа поєднується з -indo.",examples:[{pt:"partir → partindo",uk:"вирушати → вирушаючи"},{pt:"abrir → abrindo",uk:"відчиняти → відчиняючи"}]},
-    {title:"Форма не дорівнює значенню конструкції",body:"falando — лише форма. Її часово-аспектуальне значення залежить від конструкції: está falando, continua falando тощо.",examples:[{pt:"Ela está falando.",uk:"Вона говорить / розмовляє зараз."},{pt:"Ele saiu falando ao telefone.",uk:"Він вийшов, розмовляючи телефоном."}]}
+    {title:"-ar → -ando",body:"Для регулярних дієслів на -ar інфінітивне -ar замінюється моделлю -ando.",examples:[{pt:"falar → falando",uk:"говорити → говорячи"},{pt:"estudar → estudando",uk:"вчитися → навчаючись"},{pt:"trabalhar → trabalhando",uk:"працювати → працюючи"}]},
+    {title:"-er → -endo",body:"Для регулярних дієслів на -er використовується -endo.",examples:[{pt:"comer → comendo",uk:"їсти → їдячи"},{pt:"vender → vendendo",uk:"продавати → продаючи"},{pt:"beber → bebendo",uk:"пити → п'ючи"}]},
+    {title:"-ir → -indo",body:"Для регулярних дієслів на -ir використовується -indo.",examples:[{pt:"partir → partindo",uk:"вирушати → вирушаючи"},{pt:"abrir → abrindo",uk:"відчиняти → відчиняючи"},{pt:"assistir → assistindo",uk:"дивитися → дивлячись"}]},
+    {title:"Нерегулярні форми",body:"Деякі високочастотні дієслова мають gerúndio, який не варто виводити механічно з інфінітива. Їх корисно вчити як пару infinitivo → gerúndio.",examples:[{pt:"vir → vindo",uk:"приходити → приходячи"},{pt:"pôr → pondo",uk:"класти → кладучи"},{pt:"ter → tendo",uk:"мати → маючи"}]},
+    {title:"Орфографічна зміна ≠ нерегулярність",body:"Не кожна відмінність від поверхневої форми інфінітива означає морфологічне чергування. Написання може пристосовуватися до орфографічних правил, тоді як морфологічна модель залишається регулярною.",examples:[{pt:"ficar → ficando",uk:"залишатися → залишаючись"},{pt:"chegar → chegando",uk:"приходити → приходячи"},{pt:"pagar → pagando",uk:"платити → платячи"}]},
+    {title:"Gerúndio не є часом",body:"Форма не кодує особу й сама по собі не встановлює часу. У estou estudando особові та часові характеристики належать estou, а gerúndio називає процес.",examples:[{pt:"Estou estudando.",uk:"Я зараз навчаюся."},{pt:"Estávamos a conversar.",uk:"Ми були в процесі розмови.",variety:"PT"},{pt:"Ela entrou sorrindo.",uk:"Вона увійшла, усміхаючись."}]}
   ],
-  examples:[{pt:"Estou estudando português.",uk:"Я вчу португальську."},{pt:"Ela entrou sorrindo.",uk:"Вона увійшла, усміхаючись."}],
+  examples:[{pt:"Estou estudando português.",uk:"Я зараз вивчаю португальську."},{pt:"Ela entrou sorrindo.",uk:"Вона увійшла, усміхаючись."},{pt:"Eles continuam trabalhando.",uk:"Вони продовжують працювати."}],
   mistakes:[
     {wrong:"falarendo",right:"falando",why:"Дієслова на -ar утворюють gerúndio на -ando."},
-    {wrong:"partendo",right:"partindo",why:"Дієслова на -ir мають закінчення -indo."},
-    {wrong:"називати gerúndio часом",right:"нефінітна форма",why:"Час і аспект визначає вся конструкція, а не суфікс gerúndio сам по собі."}
+    {wrong:"partendo",right:"partindo",why:"Дієслова на -ir мають модель -indo."},
+    {wrong:"називати gerúndio часом",right:"нефінітна форма",why:"Часове та аспектове значення залежить від конструкції, а не від форми gerúndio самостійно."},
+    {wrong:"перекладати кожен gerúndio українським дієприслівником",right:"визначати синтаксичну функцію",why:"Український дієприслівник і португальський gerúndio частково відповідають один одному, але не мають тотожної дистрибуції."}
   ],
-  ukrainian:"Український дієприслівник теж є нефінітною формою, але його значення та синтаксичні обмеження не збігаються з португальським gerúndio. Не перекладайте кожне -ando/-endo/-indo автоматично одним українським суфіксом.",
-  brPt:"Gerúndio є спільною граматичною формою PT-BR і PT-PT. Відмінність полягає насамперед у продуктивності деяких прогресивних конструкцій: PT-BR частіше використовує estar + gerúndio, тоді як PT-PT має сильну конкуренцію з estar a + infinitivo.",
-  regional:"Форма gerúndio існує в усіх основних національних різновидах португальської; її частотність у прогресивних конструкціях варіює.",
+  ukrainian:"Український дієприслівник частково функціонально відповідає португальському gerúndio в конструкціях на кшталт entrou sorrindo, але відповідність не механічна. Португальський gerúndio також входить до прогресивних конструкцій, де українська зазвичай використовує особову форму дієслова.",
+  brPt:"Gerúndio є спільною формою PT-BR і PT-PT. Відмінність стосується передусім частотності прогресивних конструкцій: PT-BR значно продуктивніше використовує estar + gerúndio, тоді як у PT-PT широко вживається estar a + infinitivo.",
+  regional:"Опис стосується стандартної сучасної португальської. Частотність gerúndio в прогресивних конструкціях залежить від різновиду, але сама морфологічна форма не є виключно бразильською чи європейською.",
   sources:[{label:"Camões — Referencial Camões PLE",url:"https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple"}],
   depth:"high"
 },
