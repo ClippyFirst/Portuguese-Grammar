@@ -1317,3 +1317,27 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 - Academic Writing Toolkit: у перевірених нових фрагментах **0 substantive logic conflicts**; British English check — **0 issues**. Paragraph reviewer показав лише generic `short-paragraph` сигнали для коротких окремих блоків, що є властивістю поданого контейнера, а не змістовною помилкою.
 - GitHub connector для актуального head не надав status checks/workflow runs, тому CI green не заявляється.
 
+## Batch 35 — quality/depth pass: learner examples and fallback accuracy (2026-09-26)
+
+Продовжено поступовий quality/depth pass. Цього разу фокус був не на кількості статей, а на точності прикладів і fallback-контенту.
+
+### Виправлено 3 наявні джерела контенту
+
+- `adjectives.ts` — виправлено українські глоси для `casa bonita / casas bonitas` і додано `mulher inteligente`; пояснення узгодження уточнено для форм прикметника, які не маркують рід окремим закінченням;
+- `adverbs.ts` — приклад `Muito interessante` замінено на повне `É muito interessante`, а огляд тепер чіткіше розрізняє прислівникову функцію `muito` при прикметнику та при дієслівній групі;
+- `generated-pages.ts` — fallback-приклади для категорії `passive` очищено від нерелевантних `Há muitas pessoas aqui` та `É preciso estudar`; замість них додано ще два справжні пасивні/результативні приклади.
+
+### QA
+
+- Нових canonical IDs: **0**.
+- Canonical coverage: **352/352**.
+- Academic Writing Toolkit: British English check — **0 issues**; paragraph reviewer дав лише generic `short-paragraph` сигнал на ізольованих prose inputs, без змістового логічного конфлікту.
+- Перевірено джерело щодо `porque / por que / porquê`: наявне формулювання в `questions.ts` відповідає описаному розподілу PT-PT/PT-BR; окремого виправлення не потрібно.
+- GitHub status checks/workflow runs для актуального head не доступні через connector, тому CI green не заявляється.
+
+### Лічильник
+
+- Canonical coverage: **352/352 написано**.
+- Залишилося canonical topics: **0/352**.
+- Quality/depth pass продовжується; Batch 35: **3 джерела контенту**.
+
