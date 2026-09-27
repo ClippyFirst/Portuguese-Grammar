@@ -1507,3 +1507,12 @@ Commit: `0d0fc57e7fccb322f64b4b4f9f81ff9190f95929`.
 - Academic Writing Toolkit: British English — **0 issues**. Paragraph reviewer raised only the expected isolated-snippet `short-paragraph` signal; no substantive logic defect was found.
 - Full local npm QA remains unavailable in this environment because the shell cannot resolve GitHub; no green build/typecheck/test claim is made.
 - Commits: `3319c159779708647bfe1559d40e0cdd84257b79`, `0bdbfd48ce4c37a1ab211e670c59d2820ec85974`, `80a3e483f2f29cc7094fed837b30e7e94b0d23b6`.
+
+
+## Batch 40 continuation — discourse, determiner and ellipsis depth pass (2026-09-27)
+
+- Promoted eight high-value catalogue topics from generic generated coverage to reviewed SPECIAL treatment in src/content/generated-pages.ts: null-direct-objects, null-oblique-objects, vp-ellipsis, bare-nominals, determiner-stacking, question-tags, echo-questions, and rhetorical-questions.
+- Added learner-facing distinctions for discourse recoverability, argument omission, determiner distribution, question function, register/variety, and Ukrainian interference.
+- Examples were deliberately kept contextual rather than presenting one-to-one translation rules as grammar.
+- Commit: 07448338ac14966180889a622781232e13d8c725.
+- Full local npm QA remains unavailable because this environment cannot resolve github.com; no green build/typecheck/test claim is made.
