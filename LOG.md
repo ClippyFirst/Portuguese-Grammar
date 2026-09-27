@@ -1516,3 +1516,35 @@ Commit: `0d0fc57e7fccb322f64b4b4f9f81ff9190f95929`.
 - Examples were deliberately kept contextual rather than presenting one-to-one translation rules as grammar.
 - Commit: 07448338ac14966180889a622781232e13d8c725.
 - Full local npm QA remains unavailable because this environment cannot resolve github.com; no green build/typecheck/test claim is made.
+
+
+## Batch 40 continuation — dedicated valency and question depth pass (2026-09-27)
+
+Продовжено editorial depth pass за чергою generic topics. Цього разу частину high-depth тем винесено з generic generated scaffold у окремий page module, щоб вони отримали самостійний, перевірюваний навчальний текст.
+
+### Додано 8 окремих сторінок
+
+- `verb-valency-frames` — валентна рамка як модель аргументів і керування;
+- `verb-valency-arguments` — аргументи проти семантичних ролей та їхньої синтаксичної реалізації;
+- `verb-ditransitive-frames` — передавання, адресат і тема; окремо враховано PT-BR `para + NP`;
+- `verb-complement-types` — NP, PP, інфінітив і finite clause як різні типи доповнення;
+- `verb-clitic-frames` — зв'язок валентної ролі з `o/a`, `lhe` та прийменниковими займенниками;
+- `relative-que` — роль `que`, прийменникові конструкції та інтерференція з українською;
+- `relative-restrictive` — restrictive/non-restrictive читання та роль ком у письмі;
+- `wh-questions` — питальні слова, синтаксична роль і відмінності PT-BR/PT-PT без англійського do-support.
+
+Новий модуль: `src/content/pages/advanced-syntax.ts`. Runtime loader автоматично підхоплює його через `import.meta.glob("./pages/*.ts")`, тому окремий ручний registry не потрібен.
+
+### Точність контенту
+
+- Не подано валентність як просту таблицю «переклад → прийменник»: пояснено роль предиката, аргументів, керування та контексту.
+- PT-BR/PT-PT відмінності позначені лише там, де вони впливають на навчальну інтерпретацію; жоден різновид не подано як єдино правильний.
+- Відносні речення пов'язані з попереднім виправленням restrictive-читання в `spelling.ts`, щоб термінологія та приклади не суперечили один одному.
+
+### QA
+
+- Додано regression test у `scripts/audit-grammar-content.test.mjs`, який вимагає наявності всіх 8 нових high-depth IDs у dedicated module.
+- Academic Writing Toolkit для нового prose: British English — **0 issues**; paragraph reviewer повернув лише generic `short-paragraph` сигнали, спричинені тим, що фрагменти подавалися окремо від повних статей; змістових логічних конфліктів не виявлено.
+- Повний локальний npm QA у цьому середовищі не виконаний через недоступний DNS до `github.com`; тому green build/typecheck/test не заявляється.
+
+Commits: `6dd6ace22da76751be00d416efc36f2e5fa3ab88` (regression test), `b9fc92d86b87515afc448156175d297eec7f0fe0` (content).
