@@ -1581,3 +1581,41 @@ Commits: `6dd6ace22da76751be00d416efc36f2e5fa3ab88` (regression test), `b9fc92d8
 
 Commits: `161ef509630190d8420d10b54058e6872329a44d` (content), `4e0b10e381562af67c8443488bde145b08850a0c` (regression test).
 
+## Batch 40 continuation — sentence, clause and subject/object depth pass (2026-09-27)
+
+Продовжено editorial depth pass за high-depth generic queue. Цього разу додано **10 окремих reviewed page entries** у `src/content/pages/advanced-structure.ts`:
+
+- `sentence-type-vs-intonation` — взаємодія типу речення, інтонації та контексту;
+- `sentence-type-vs-punctuation` — розмежування граматичного типу, пунктуації та комунікативної функції;
+- `illocutionary-force-and-grammatical-form` — іллокутивна сила та непрямі мовленнєві акти;
+- `grammaticalisation-of-discourse-functions` — синхронний опис проти діахронічної граматикалізації;
+- `null-and-expletive-subjects` — нульові, неозначені та формальні підмети;
+- `subject-object-order` — базовий SVO, топікалізація та фокус;
+- `subordination-and-coordination` — структурне розрізнення координації та субординації;
+- `reduced-clauses` — загальна система нефінітних зредукованих конструкцій;
+- `infinitival-reduced-clauses` — інфінітивні залежні конструкції та особистий інфінітив;
+- `gerundial-reduced-clauses` — герундіальні зредуковані конструкції та їхній зв'язок із прогресивом.
+
+### Регресійний контроль
+
+- Перед production-кодом додано test coverage у `scripts/audit-grammar-content.test.mjs` для всіх 10 нових IDs.
+- Після реалізації виконано структурну перевірку нового модуля: **10/10 IDs присутні, catalog metadata знайдені, дублювання IDs немає, дужки/рядкові літерали збалансовані**.
+- Додатково перевірено всі `related` посилання нового модуля проти каталогу: **битих посилань немає**.
+
+### Academic Writing Toolkit
+
+- British English checker: **2 низькопріоритетні збіги `favor → favour`**, обидва в португальському `por favor`; це false positive, заміну не виконано.
+- Paragraph logic reviewer: лише generic `short-paragraph` signal через формат перевірки TS-файлу; змістового логічного дефекту не встановлено.
+
+### Виправлення після первинної перевірки
+
+Первинна перевірка виявила 5 неіснуючих related IDs (`intonation`, `questions`, `subordinate`, `conjunctions-overview`, `gerund`). Їх замінено на наявні каталогом IDs (`wh-questions`, `question-word-order`, `subordinating`, `finite-vs-nonfinite-subordination`, `gerund-form`) до фінального запису.
+
+### QA
+
+Повний локальний npm QA в цьому середовищі не виконано: shell не може розв'язати `github.com`. GitHub connector також не повернув workflow/status checks для цих комітів, тому green build/typecheck/test не заявляється.
+
+Commits:
+- regression test: `5dcf7ae057e3f684cd3b51391050bf7c27b3fe49`;
+- content: `a17beafea4212fc333053a5b841d15a550c5fc98`;
+- related-link repair: `adbc5be335db0472ae1ffc6c403f9b806ec0ac2c`.
