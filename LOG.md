@@ -1476,3 +1476,25 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 - Structural verification of `generated-pages.ts` passed a balanced delimiter/string scan after the edit.
 - Full local npm QA remains unavailable in this environment because the container cannot resolve `github.com`; no claim of a green build/typecheck/test run is made.
 - Commit: `1fc0f2eebf14611cce0c56d7b521cb8ffa1a873d`.
+
+## Batch 40 continuation — coverage-model audit (2026-09-27)
+
+Продовжено роботу не лише над кількістю статей, а над тим, щоб сам audit не створював хибного відчуття глибини.
+
+### Виправлено
+
+- `scripts/audit-grammar-content.mjs` тепер окремо рахує чотири моделі покриття каталогу:
+  - `dedicated` — сторінка має окремий page module;
+  - `generated-special` — тема обслуговується окремим reviewed entry у `SPECIAL`;
+  - `generated-generic` — тема використовує лише загальний generated scaffold;
+  - `regional` — регіональна dedicated coverage.
+- `generated-generic` тепер явно виводиться в audit як warning. Це навмисно не є structural failure: маршрут може бути resolvable, але така сторінка не повинна помилково трактуватися як індивідуально відредагована граматична стаття.
+- Audit залишає попередню fail-closed перевірку структурних проблем, related references і компактних `p(...)` constructor contracts без зміни їхньої семантики.
+
+### QA
+
+- Нову prose-ноту перевірено Academic Writing Toolkit: British English — **0 issues**, paragraph logic — **0 issues**.
+- GitHub Actions workflow runs для нового commit через connector не повернулися, тому CI green не заявляється.
+- Наступний етап — використовувати новий coverage model як карту для поглиблення тонких/generated тем, не збільшуючи canonical inventory штучними дублями.
+
+Commit: `0d0fc57e7fccb322f64b4b4f9f81ff9190f95929`.
