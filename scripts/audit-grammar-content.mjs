@@ -329,6 +329,49 @@ for (const { name, content } of pages) {
   }
 }
 
+const generatedPagesSource = fs.readFileSync(
+  path.resolve("src/content/generated-pages.ts"),
+  "utf8",
+);
+const specialIds = new Set(
+  [...generatedPagesSource.matchAll(/^  "([^"]+)":\s*\{/gmu)].map((match) => match[1]),
+);
+const coverageModel = {
+  dedicated: 0,
+  generatedSpecial: 0,
+  generatedGeneric: 0,
+  regional: 0,
+};
+for (const [id, row] of catalogRows) {
+  if (row.category === "regional") {
+    coverageModel.regional += 1;
+  } else if (pageMeta.has(id)) {
+    coverageModel.dedicated += 1;
+  } else if (specialIds.has(id)) {
+    coverageModel.generatedSpecial += 1;
+  } else {
+    coverageModel.generatedGeneric += 1;
+  }
+}
+
+console.log(
+  [
+    "Coverage model:",
+    "dedicated=" + coverageModel.dedicated,
+    "generated-special=" + coverageModel.generatedSpecial,
+    "generated-generic=" + coverageModel.generatedGeneric,
+    "regional=" + coverageModel.regional,
+  ].join(" "),
+);
+
+if (coverageModel.generatedGeneric > 0) {
+  warnings.push(
+    "catalog topics still use generic generated coverage: " +
+      coverageModel.generatedGeneric +
+      "; these are navigation coverage, not dedicated reviewed articles",
+  );
+}
+
 const absolute =
   /\b(?:завжди|ніколи|обов['’]язково|неможливо|always|never|must|impossible)\b/iu;
 const proseFields =
