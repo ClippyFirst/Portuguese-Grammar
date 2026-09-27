@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
+import fs from "node:fs";
 import test from "node:test";
 
 test("grammar content audit passes, including compact constructor contracts", () => {
@@ -9,9 +10,10 @@ test("grammar content audit passes, including compact constructor contracts", ()
       stdio: "pipe",
       encoding: "utf8",
     });
+  });
+});
 
 test("advanced syntax reference modules cover the next high-depth valency and question topics", () => {
-  const fs = require("node:fs");
   const source = fs.readFileSync("src/content/pages/advanced-syntax.ts", "utf8");
   for (const id of [
     "verb-valency-frames",
@@ -25,6 +27,4 @@ test("advanced syntax reference modules cover the next high-depth valency and qu
   ]) {
     assert.match(source, new RegExp('id: "' + id + '"'));
   }
-});
-  });
 });
