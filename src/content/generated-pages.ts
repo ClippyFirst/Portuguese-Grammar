@@ -2,11 +2,12 @@ import type { Example, Formula, GrammarPage, Mistake } from "./types";
 import { CATALOG } from "./catalog";
 
 /**
- * Learner-oriented coverage layer.
+ * Learner-oriented generated coverage layer.
  *
- * Every fallback topic is structured around concept -> form -> function ->
- * context -> variety -> Ukrainian interference -> diagnostics. Dedicated
- * linguistically reviewed modules in src/content/pages/ take precedence.
+ * Reviewed SPECIAL entries receive topic-specific treatment. Topics without
+ * a reviewed entry use the generic category scaffold for navigation continuity;
+ * that scaffold is deliberately not treated as equivalent to a dedicated article.
+ * Dedicated linguistically reviewed modules in src/content/pages/ take precedence.
  */
 
 type LearnerLayer = {
