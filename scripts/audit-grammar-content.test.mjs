@@ -9,5 +9,22 @@ test("grammar content audit passes, including compact constructor contracts", ()
       stdio: "pipe",
       encoding: "utf8",
     });
+
+test("advanced syntax reference modules cover the next high-depth valency and question topics", () => {
+  const fs = require("node:fs");
+  const source = fs.readFileSync("src/content/pages/advanced-syntax.ts", "utf8");
+  for (const id of [
+    "verb-valency-frames",
+    "verb-valency-arguments",
+    "verb-ditransitive-frames",
+    "verb-complement-types",
+    "verb-clitic-frames",
+    "relative-que",
+    "relative-restrictive",
+    "wh-questions",
+  ]) {
+    assert.match(source, new RegExp('id: "' + id + '"'));
+  }
+});
   });
 });
