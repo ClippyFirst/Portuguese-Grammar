@@ -1,6 +1,6 @@
 # Content & static-reference audit
 
-**Audit target:** `codex/complete-static-reference`  
+**Audit target:** `main`  
 **Catalog:** 356 topics  
 **Dedicated content modules:** 93 topics  
 **Coverage fallback:** 263 topics  
@@ -23,7 +23,7 @@ This restores navigation integrity without pretending that generated material ha
 
 ### Navigation contracts
 
-`scripts/content-audit.mjs` checks:
+`scripts/audit-grammar-content.mjs` checks:
 
 - duplicate catalog IDs;
 - duplicate dedicated page IDs;
@@ -79,23 +79,27 @@ These modules contain the deeper explanatory structure: formulas, examples, mist
 
 ### Coverage layer
 
-The 263 fallback topics are intentionally conservative. They contain:
+The generated coverage topics are intentionally conservative. The exact split between dedicated modules, reviewed generated `SPECIAL` entries, generic generated coverage, and regional modules is now reported by `scripts/audit-grammar-content.mjs`; generic IDs are printed as a deterministic editorial queue.
 
 - title and summary from the catalog;
 - a structured introduction;
 - a reference formula;
-- examples;
-- common-mistake block;
+- category-level examples;
+- a common diagnostic structure;
 - Ukrainian-specific note;
 - regional / PT-BR / PT-PT note;
 - related topics;
 - a small navigation table.
 
-They are **not** treated as equivalent to a fully fact-checked grammar article.
+They are **not** treated as equivalent to a fully fact-checked grammar article. Reviewed `SPECIAL` entries are more specific, but they still belong to the generated coverage layer rather than the dedicated module layer.
 
-## 3. Next linguistic pass
+## 3. Current editorial workflow
 
-The next pass should replace fallback pages with dedicated articles in this order:
+The repository now treats coverage and depth as separate QA dimensions. Navigation coverage can be complete while linguistic review remains incomplete. The audit therefore exposes generic-generated IDs explicitly, and the editorial pass should promote those topics in coherent batches rather than expanding the catalog further.
+
+## 4. Next linguistic pass
+
+The next pass should replace generic generated pages with dedicated articles in this order:
 
 1. core verbs: `ser`, `estar`, `ficar`, `ter`, `haver`;
 2. tense system: `presente`, `pretérito perfeito`, `imperfeito`, `perfeito vs imperfeito`;
@@ -116,7 +120,7 @@ For every promoted page, verify claims against authoritative Portuguese referenc
 - register;
 - descriptive variation vs normative recommendation.
 
-## 4. Acceptance criteria
+## 5. Acceptance criteria
 
 The project should be considered content-complete only when:
 
@@ -129,4 +133,4 @@ The project should be considered content-complete only when:
 - the reference does not require authentication or database state;
 - SEO/accessibility/static-hosting behavior has been verified on the deployed build.
 
-**Important:** 356/356 navigation coverage is now achieved, but this is not the same as 225/225 linguistic fact-check coverage.
+****Important:** 356/356 effective navigation coverage is now achieved, but this is not the same as 356/356 dedicated linguistic fact-check coverage. The repository intentionally keeps that distinction visible in QA.
