@@ -42,3 +42,20 @@ test("advanced discourse module covers sentence-fragment and speech-act depth to
     assert.match(source, new RegExp('id: "' + id + '"'));
   }
 });
+test("advanced structure module covers sentence, clause and subject-object depth topics", () => {
+  const source = fs.readFileSync("src/content/pages/advanced-structure.ts", "utf8");
+  for (const id of [
+    "sentence-type-vs-intonation",
+    "sentence-type-vs-punctuation",
+    "illocutionary-force-and-grammatical-form",
+    "grammaticalisation-of-discourse-functions",
+    "null-and-expletive-subjects",
+    "subject-object-order",
+    "subordination-and-coordination",
+    "reduced-clauses",
+    "infinitival-reduced-clauses",
+    "gerundial-reduced-clauses",
+  ]) {
+    assert.match(source, new RegExp('id: "' + id + '"'));
+  }
+});
