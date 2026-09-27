@@ -336,6 +336,7 @@ const generatedPagesSource = fs.readFileSync(
 const specialIds = new Set(
   [...generatedPagesSource.matchAll(/^  "([^"]+)":\s*\{/gmu)].map((match) => match[1]),
 );
+const generatedGenericIds = [];
 const coverageModel = {
   dedicated: 0,
   generatedSpecial: 0,
@@ -351,8 +352,11 @@ for (const [id, row] of catalogRows) {
     coverageModel.generatedSpecial += 1;
   } else {
     coverageModel.generatedGeneric += 1;
+    generatedGenericIds.push(id);
   }
 }
+
+generatedGenericIds.sort();
 
 console.log(
   [
@@ -364,10 +368,12 @@ console.log(
   ].join(" "),
 );
 
-if (coverageModel.generatedGeneric > 0) {
+if (generatedGenericIds.length) {
+  console.log("Generic generated IDs:");
+  for (const id of generatedGenericIds) console.log("- " + id);
   warnings.push(
     "catalog topics still use generic generated coverage: " +
-      coverageModel.generatedGeneric +
+      generatedGenericIds.length +
       "; these are navigation coverage, not dedicated reviewed articles",
   );
 }
