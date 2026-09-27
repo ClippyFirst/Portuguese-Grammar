@@ -1498,3 +1498,12 @@ Academic Writing Toolkit застосовано до нових prose-фрагм
 - Наступний етап — використовувати новий coverage model як карту для поглиблення тонких/generated тем, не збільшуючи canonical inventory штучними дублями.
 
 Commit: `0d0fc57e7fccb322f64b4b4f9f81ff9190f95929`.
+
+## Batch 40 continuation — make coverage warnings actionable + semantic example repair (2026-09-27)
+
+- `scripts/audit-grammar-content.mjs` now emits the exact, sorted IDs that still use `generated-generic` coverage, rather than only reporting a count. This turns the warning into a deterministic editorial queue for subsequent depth passes.
+- `src/content/generated-pages.ts` documentation now distinguishes reviewed `SPECIAL` entries from the generic category scaffold, so the generated layer no longer describes all fallback topics as equally structured/reviewed.
+- `src/content/pages/spelling.ts` corrected the restrictive relative-clause example: `Os alunos que estudaram passaram.` is explicitly glossed as referring to the subset of pupils who studied, avoiding an accidental Ukrainian comma pattern that would suggest a non-restrictive reading.
+- Academic Writing Toolkit: British English — **0 issues**. Paragraph reviewer raised only the expected isolated-snippet `short-paragraph` signal; no substantive logic defect was found.
+- Full local npm QA remains unavailable in this environment because the shell cannot resolve GitHub; no green build/typecheck/test claim is made.
+- Commits: `3319c159779708647bfe1559d40e0cdd84257b79`, `0bdbfd48ce4c37a1ab211e670c59d2820ec85974`, `80a3e483f2f29cc7094fed837b30e7e94b0d23b6`.
