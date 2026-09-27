@@ -28,3 +28,17 @@ test("advanced syntax reference modules cover the next high-depth valency and qu
     assert.match(source, new RegExp('id: "' + id + '"'));
   }
 });
+
+test("advanced discourse module covers sentence-fragment and speech-act depth topics", () => {
+  const source = fs.readFileSync("src/content/pages/advanced-discourse.ts", "utf8");
+  for (const id of [
+    "sentence-fragments",
+    "optative-wish-constructions",
+    "hortative-exhortative-constructions",
+    "exclamative-word-order",
+    "imperative-softening-intensification",
+    "sentence-type-vs-speech-act",
+  ]) {
+    assert.match(source, new RegExp('id: "' + id + '"'));
+  }
+});
