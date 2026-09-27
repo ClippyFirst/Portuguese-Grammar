@@ -1548,3 +1548,36 @@ Commit: `0d0fc57e7fccb322f64b4b4f9f81ff9190f95929`.
 - Повний локальний npm QA у цьому середовищі не виконаний через недоступний DNS до `github.com`; тому green build/typecheck/test не заявляється.
 
 Commits: `6dd6ace22da76751be00d416efc36f2e5fa3ab88` (regression test), `b9fc92d86b87515afc448156175d297eec7f0fe0` (content).
+
+## Batch 40 continuation — sentence fragments, directives and speech-act depth (2026-09-27)
+
+Продовжено editorial depth pass за high-depth каталогом, цього разу в зоні синтаксису та прагматики, де generic scaffold особливо легко створює хибне відчуття повноти.
+
+### Додано 6 окремих reviewed pages
+
+- `sentence-fragments` — фрагменти речення та бездієслівні висловлення; розмежовано граматичну неповноту й комунікативну повноцінність;
+- `optative-wish-constructions` — побажальні конструкції та зв'язок із conjuntivo;
+- `hortative-exhortative-constructions` — спонукання до спільної дії та конструкції `vamos + infinitivo`;
+- `exclamative-word-order` — окличність, порядок слів, фокус та інтонаційний контекст;
+- `imperative-softening-intensification` — прямота імператива, прохання, `por favor`, непрямі директиви та регістр;
+- `sentence-type-vs-speech-act` — відмінність граматичного типу речення від мовленнєвого акту.
+
+Новий модуль: `src/content/pages/advanced-discourse.ts`. Runtime loader підхоплює page modules автоматично.
+
+### Регресійний контроль
+
+- `scripts/audit-grammar-content.test.mjs` доповнено перевіркою всіх 6 нових IDs у dedicated module.
+- Новий модуль використовує тільки наявні каталогом пов'язані теми; регіональні твердження сформульовано обережно, без перетворення частотності на абсолютне правило.
+
+### Academic Writing Toolkit
+
+- British English checker повернув 6 низькопріоритетних збігів `favor → favour`. Усі вони походять від нормативної португальської формули `por favor`, тому це **не** британсько-англійські помилки й заміна була навмисно не виконана.
+- Paragraph reviewer повернув один generic `short-paragraph` сигнал через технічний формат перевірки всього TS-файлу; змістового логічного дефекту не встановлено.
+
+### QA
+
+- Повний локальний npm QA у цьому середовищі не виконаний через недоступний DNS до `github.com`; green build/typecheck/test не заявляється.
+- Наступний editorial крок — продовжувати з high-depth generic queue та одночасно переглядати вже написані модулі там, де нові сторінки створюють можливість перевірити перехресну термінологію.
+
+Commits: `161ef509630190d8420d10b54058e6872329a44d` (content), `4e0b10e381562af67c8443488bde145b08850a0c` (regression test).
+
