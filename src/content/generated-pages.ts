@@ -1959,6 +1959,8 @@ Object.assign(SPECIAL, {
     ukrainian: "Українська не має такої графічної контракції, тому корисно спершу розкласти à на її синтаксичні компоненти."
   },
 
+});
+
 const SPECIAL_ALIASES: Record<string, string> = {
   "subjunctive-triggers": "subjunctive-triggers-advanced",
   "conditional-clauses": "conditional-clauses-advanced",
