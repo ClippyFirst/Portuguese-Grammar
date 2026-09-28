@@ -1,0 +1,445 @@
+# Portuguese Grammar — comprehensive QA/build diagnostic
+Generated: 2026-09-28T13:48:06.211Z
+Repository: https://github.com/ClippyFirst/Portuguese-Grammar.git
+HEAD: 30e962b50a02b41c20afab599f4759d43e575526
+Node: v24.19.0
+npm: unavailable
+Platform: win32 x64
+
+## Summary: 1/6 phases passed; 5 failed; 0 parsed diagnostics
+
+## Phase results
+- FAILED — content audit — exit=1 — 2 ms — 0 diagnostics
+- FAILED — typecheck — exit=1 — 0 ms — 0 diagnostics
+- FAILED — lint — exit=1 — 1 ms — 0 diagnostics
+- FAILED — tests — exit=1 — 1 ms — 0 diagnostics
+- PASSED — production Vite build — exit=0 — 5843 ms — 0 diagnostics
+- FAILED — database migration — exit=1 — 1 ms — 0 diagnostics
+
+## Parsed diagnostics
+No file/line diagnostics parsed.
+
+## content audit
+Command: npm run audit:content
+Status: failed; exit=1; signal=none
+
+```text
+(no output)
+```
+
+## typecheck
+Command: npm run typecheck
+Status: failed; exit=1; signal=none
+
+```text
+(no output)
+```
+
+## lint
+Command: npm run lint
+Status: failed; exit=1; signal=none
+
+```text
+(no output)
+```
+
+## tests
+Command: npm test
+Status: failed; exit=1; signal=none
+
+```text
+(no output)
+```
+
+## production Vite build
+Command: node scripts/with-app-env.mjs vite build
+Status: passed; exit=0; signal=none
+
+```text
+[90m[[90mnitro:vercel[90m][39m [36mℹ[39m Using [36mnodejs24.x[39m runtime.
+[90m[[90mnitro:vercel[90m][39m [36mℹ[39m Using [36mweb[39m entry format.
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 1958 modules transformed.
+rendering chunks...
+computing gzip size...
+.vercel/output/static/assets/styles-BjiB-LIt.css                                         35.06 kB │ gzip:   7.51 kB
+.vercel/output/static/assets/adjectives-adverbs-production-3-DJVpA89Z.js                  0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/adjectives-nouns-production-2-DJVpA89Z.js                    0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/augmentatives-production-DJVpA89Z.js                         0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/choice-and-determiners-production-DJVpA89Z.js                0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/clitics-production-2-DJVpA89Z.js                             0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/contractions-production-DJVpA89Z.js                          0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/discourse-gaps-DJVpA89Z.js                                   0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/discourse-production-2-DJVpA89Z.js                           0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/lexical-syntax-discourse-production-DJVpA89Z.js              0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/nouns-pronouns-articles-production-2-DJVpA89Z.js             0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/pragmatics-gaps-DJVpA89Z.js                                  0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/pragmatics-production-2-DJVpA89Z.js                          0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/production-batch-02-DJVpA89Z.js                              0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/pronouns-production-DJVpA89Z.js                              0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/spelling-gaps-DJVpA89Z.js                                    0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/subordinate-production-3-DJVpA89Z.js                         0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/subordinate-production-DJVpA89Z.js                           0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/syntax-gaps-DJVpA89Z.js                                      0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/time-adverbs-production-DJVpA89Z.js                          0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/valency-production-3-DJVpA89Z.js                             0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/valency-syntax-closure-production-DJVpA89Z.js                0.02 kB │ gzip:   0.04 kB
+.vercel/output/static/assets/not-found-i5RsCZif.js                                        0.11 kB │ gzip:   0.11 kB
+.vercel/output/static/assets/comparisons-CjnTXnAh.js                                      0.13 kB │ gzip:   0.13 kB
+.vercel/output/static/assets/pt-CjnTXnAh.js                                               0.13 kB │ gzip:   0.13 kB
+.vercel/output/static/assets/pt._category-CjnTXnAh.js                                     0.13 kB │ gzip:   0.13 kB
+.vercel/output/static/assets/regional-CjnTXnAh.js                                         0.13 kB │ gzip:   0.13 kB
+.vercel/output/static/assets/tables-CjnTXnAh.js                                           0.13 kB │ gzip:   0.13 kB
+.vercel/output/static/assets/arrow-right-DpZnPBfi.js                                      0.15 kB │ gzip:   0.15 kB
+.vercel/output/static/assets/matchContext-D_yddPR9.js                                     0.15 kB │ gzip:   0.14 kB
+.vercel/output/static/assets/helpers-CT-VpZEq.js                                          0.18 kB │ gzip:   0.14 kB
+.vercel/output/static/assets/pt._category._slug-Ca68y26A.js                               0.23 kB │ gzip:   0.18 kB
+.vercel/output/static/assets/comparisons._slug-DVK_y2nn.js                                0.23 kB │ gzip:   0.18 kB
+.vercel/output/static/assets/regional._slug-UX4gU7Uw.js                                   0.23 kB │ gzip:   0.19 kB
+.vercel/output/static/assets/topic-nav-link-Dmku6MOf.js                                   0.61 kB │ gzip:   0.27 kB
+.vercel/output/static/assets/pt._category.index-CNq9l_Il.js                               0.69 kB │ gzip:   0.41 kB
+.vercel/output/static/assets/topic-list-DMbSE75a.js                                       0.73 kB │ gzip:   0.41 kB
+.vercel/output/static/assets/comparisons.index-By884f7R.js                                0.81 kB │ gzip:   0.53 kB
+.vercel/output/static/assets/breadcrumbs-CSCHIF8k.js                                      0.82 kB │ gzip:   0.50 kB
+.vercel/output/static/assets/regional.index-C4NapcJR.js                                   0.94 kB │ gzip:   0.58 kB
+.vercel/output/static/assets/tables.index-BZTsz46_.js                                     1.39 kB │ gzip:   0.80 kB
+.vercel/output/static/assets/pt.index-C9iqXyFU.js                                         1.58 kB │ gzip:   0.78 kB
+.vercel/output/static/assets/search-DKhZD1Ye.js                                           1.77 kB │ gzip:   0.92 kB
+.vercel/output/static/assets/sentence-types-production-skva4rgP.js                        3.65 kB │ gzip:   1.60 kB
+.vercel/output/static/assets/valency-production-Nve_4zt-.js                               3.92 kB │ gzip:   1.56 kB
+.vercel/output/static/assets/passive-CZn3qhd1.js                                          4.27 kB │ gzip:   1.82 kB
+.vercel/output/static/assets/adverbs-production-2-CGRveGd2.js                             4.36 kB │ gzip:   1.81 kB
+.vercel/output/static/assets/fundamentals-production-BM53XTkz.js                          4.69 kB │ gzip:   2.02 kB
+.vercel/output/static/assets/agreement-CEOzjRX_.js                                        5.12 kB │ gzip:   2.08 kB
+.vercel/output/static/assets/preload-helper-DQ0aMlUJ.js                                   5.64 kB │ gzip:   2.21 kB
+.vercel/output/static/assets/routes-BFUDa5Fn.js                                           5.83 kB │ gzip:   2.07 kB
+.vercel/output/static/assets/syntax-closure-2-BwgWL9QG.js                                 6.08 kB │ gzip:   2.26 kB
+.vercel/output/static/assets/discourse-production-BXaHepX1.js                             6.69 kB │ gzip:   2.37 kB
+.vercel/output/static/assets/syntax-production-gavVxAgf.js                                6.72 kB │ gzip:   2.48 kB
+.vercel/output/static/assets/adjectives-production-2-Vjdx1xRG.js                          7.30 kB │ gzip:   2.50 kB
+.vercel/output/static/assets/subordinate-production-2-CdQ5Hfnw.js                         7.59 kB │ gzip:   2.69 kB
+.vercel/output/static/assets/agreement-production-Cnpcwer6.js                             7.66 kB │ gzip:   2.69 kB
+.vercel/output/static/assets/syntax-clitic-climbing-DQgGDpCw.js                           7.67 kB │ gzip:   2.72 kB
+.vercel/output/static/assets/negation-BewUZRrO.js                                         8.40 kB │ gzip:   3.02 kB
+.vercel/output/static/assets/adverbs-kgupJ9nq.js                                          8.47 kB │ gzip:   3.07 kB
+.vercel/output/static/assets/word-formation-Bcal5-bF.js                                   9.61 kB │ gzip:   3.66 kB
+.vercel/output/static/assets/questions-kdgNpKKx.js                                        9.63 kB │ gzip:   3.40 kB
+.vercel/output/static/assets/lexical-grammar-CHuCx7nP.js                                  9.88 kB │ gzip:   3.21 kB
+.vercel/output/static/assets/discourse-ByFpFwcD.js                                        9.91 kB │ gzip:   3.54 kB
+.vercel/output/static/assets/subordinate-BYD7AFDY.js                                     10.41 kB │ gzip:   3.77 kB
+.vercel/output/static/assets/useStore-CP8wJgJA.js                                        10.52 kB │ gzip:   3.93 kB
+.vercel/output/static/assets/phonetics-DOYk7QaJ.js                                       10.55 kB │ gzip:   3.58 kB
+.vercel/output/static/assets/determiners-CDDonyfH.js                                     11.12 kB │ gzip:   3.77 kB
+.vercel/output/static/assets/semantics-DahkYCpb.js                                       11.27 kB │ gzip:   3.91 kB
+.vercel/output/static/assets/adverbs-production-3-C5i7JXZB.js                            11.86 kB │ gzip:   3.68 kB
+.vercel/output/static/assets/pragmatics-Bn2P9Gb4.js                                      11.88 kB │ gzip:   3.94 kB
+.vercel/output/static/assets/syntax-production-3-C46uz_gi.js                             12.10 kB │ gzip:   4.07 kB
+.vercel/output/static/assets/periphrases-7jFQ_1co.js                                     12.46 kB │ gzip:   4.18 kB
+.vercel/output/static/assets/syntax-advanced-KqUz92CW.js                                 12.49 kB │ gzip:   4.39 kB
+.vercel/output/static/assets/tenses-DAJxXgGi.js                                          13.21 kB │ gzip:   4.37 kB
+.vercel/output/static/assets/pronouns-Dn04UXNG.js                                        13.40 kB │ gzip:   4.52 kB
+.vercel/output/static/assets/comparisons-BhJhnfI0.js                                     14.33 kB │ gzip:   5.20 kB
+.vercel/output/static/assets/grammar-article-Do-jzr98.js                                 14.85 kB │ gzip:   4.18 kB
+.vercel/output/static/assets/orthography-numerals-wordformation-production-iM12aeyu.js   14.97 kB │ gzip:   4.92 kB
+.vercel/output/static/assets/adjectives-B-QKX2Se.js                                      16.56 kB │ gzip:   5.22 kB
+.vercel/output/static/assets/gerund-iWTrVH9o.js                                          17.69 kB │ gzip:   5.27 kB
+.vercel/output/static/assets/syntax-B-P4_Ysk.js                                          17.94 kB │ gzip:   6.22 kB
+.vercel/output/static/assets/numerals-ugRHHxHs.js                                        18.69 kB │ gzip:   6.78 kB
+.vercel/output/static/assets/conjunctions-DYDz5KVn.js                                    18.76 kB │ gzip:   6.55 kB
+.vercel/output/static/assets/regional-W6XFlnap.js                                        18.85 kB │ gzip:   5.87 kB
+.vercel/output/static/assets/coverage-closure-production-2-CTzyV8la.js                   19.10 kB │ gzip:   6.02 kB
+.vercel/output/static/assets/coverage-missing-production-Cqf6Yv8_.js                     19.58 kB │ gzip:   5.39 kB
+.vercel/output/static/assets/coverage-closure-production-BU-D8t9x.js                     20.74 kB │ gzip:   6.56 kB
+.vercel/output/static/assets/core-production-3-CynrpH4j.js                               21.00 kB │ gzip:   5.92 kB
+.vercel/output/static/assets/prepositions-CYMCtoTS.js                                    21.83 kB │ gzip:   7.04 kB
+.vercel/output/static/assets/adverbs-deep-BLL2fz6y.js                                    21.89 kB │ gzip:   5.78 kB
+.vercel/output/static/assets/spelling-D8j8_EJR.js                                        24.27 kB │ gzip:   7.76 kB
+.vercel/output/static/assets/reference-production-2-EaOLIiTz.js                          25.01 kB │ gzip:   6.55 kB
+.vercel/output/static/assets/sentence-types-production-2-DppoQl28.js                     26.23 kB │ gzip:   6.59 kB
+.vercel/output/static/assets/verbs-_ib_r3AT.js                                           26.24 kB │ gzip:   8.05 kB
+.vercel/output/static/assets/nouns-BFHgC23N.js                                           29.16 kB │ gzip:   8.25 kB
+.vercel/output/static/assets/valency-qEVufU_E.js                                         31.68 kB │ gzip:   8.37 kB
+.vercel/output/static/assets/relative-C8NHBfub.js                                        33.50 kB │ gzip:   8.77 kB
+.vercel/output/static/assets/subordinate-production-4-DmEtNbii.js                        36.46 kB │ gzip:   9.46 kB
+.vercel/output/static/assets/crase-BStcwsnC.js                                           38.74 kB │ gzip:  12.42 kB
+.vercel/output/static/assets/fundamentals-B2re2jSJ.js                                    38.87 kB │ gzip:  12.33 kB
+.vercel/output/static/assets/core-production-2-C8zaaydg.js                               40.95 kB │ gzip:  10.05 kB
+.vercel/output/static/assets/contractions-Da8xS3_H.js                                    46.92 kB │ gzip:  15.38 kB
+.vercel/output/static/assets/coverage-closure-production-3-BnLlBVhd.js                   51.69 kB │ gzip:  12.19 kB
+.vercel/output/static/assets/se-9nlDbKGk.js                                              57.81 kB │ gzip:  17.08 kB
+.vercel/output/static/assets/infinitive-B5pdQNZf.js                                      59.76 kB │ gzip:  17.11 kB
+.vercel/output/static/assets/clitics-Bt_RuNEv.js                                         81.90 kB │ gzip:  22.92 kB
+.vercel/output/static/assets/articles-CRPn_ny6.js                                        92.47 kB │ gzip:  27.31 kB
+.vercel/output/static/assets/moods-D74Q5cAX.js                                          104.02 kB │ gzip:  30.43 kB
+.vercel/output/static/assets/catalog-DPHF24NG.js                                        132.78 kB │ gzip:  37.92 kB
+.vercel/output/static/assets/index-DWCqWmNl.js                                          698.13 kB │ gzip: 201.67 kB
+
+[32m✓ built in 1.47s[39m
+[36mvite v8.2.2 [32mbuilding ssr environment for production...[36m[39m
+transforming...
+✓ 189 modules transformed.
+rendering chunks...
+computing gzip size...
+node_modules/.nitro/vite/services/ssr/assets/styles-BjiB-LIt.css                                         35.06 kB │ gzip:  7.51 kB
+node_modules/.nitro/vite/services/ssr/assets/syntax-gaps-BKyddvB-.js                                      0.09 kB │ gzip:  0.09 kB
+node_modules/.nitro/vite/services/ssr/assets/spelling-gaps-CWaZLY1c.js                                    0.09 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/discourse-gaps-7VzAIV6a.js                                   0.09 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/pragmatics-gaps-D1nItQWi.js                                  0.09 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/production-batch-02-CEtrcybF.js                              0.09 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/pronouns-production-Zf4x-OHp.js                              0.09 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/clitics-production-2-D8GUD0Z1.js                             0.09 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/valency-production-3-DGbqPVzX.js                             0.09 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/discourse-production-2-BL-boA4s.js                           0.10 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/subordinate-production-Cbnr4J0R.js                           0.10 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/contractions-production-DO7m_2hI.js                          0.10 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/pragmatics-production-2-CEj2ebte.js                          0.10 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/time-adverbs-production-QKD9hyNo.js                          0.10 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/augmentatives-production-CWAk3n0r.js                         0.10 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/subordinate-production-3-Dc8_YMTm.js                         0.10 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/adjectives-nouns-production-2-Du6ewDIP.js                    0.10 kB │ gzip:  0.10 kB
+node_modules/.nitro/vite/services/ssr/assets/adjectives-adverbs-production-3---gSMUgN.js                  0.11 kB │ gzip:  0.11 kB
+node_modules/.nitro/vite/services/ssr/assets/choice-and-determiners-production-CWLW5KVy.js                0.11 kB │ gzip:  0.11 kB
+node_modules/.nitro/vite/services/ssr/assets/valency-syntax-closure-production-GwRO-mvQ.js                0.11 kB │ gzip:  0.11 kB
+node_modules/.nitro/vite/services/ssr/assets/lexical-syntax-discourse-production-BgDfBQQ6.js              0.11 kB │ gzip:  0.11 kB
+node_modules/.nitro/vite/services/ssr/assets/nouns-pronouns-articles-production-2-Dggijhvd.js             0.11 kB │ gzip:  0.11 kB
+node_modules/.nitro/vite/services/ssr/assets/start-5Z2QO8AU.js                                            0.14 kB │ gzip:  0.13 kB
+node_modules/.nitro/vite/services/ssr/assets/empty-plugin-adapters-D9UWiqvJ.js                            0.22 kB │ gzip:  0.16 kB
+node_modules/.nitro/vite/services/ssr/assets/pt-Cna-5HV0.js                                               0.25 kB │ gzip:  0.18 kB
+node_modules/.nitro/vite/services/ssr/assets/tables-CdQ-LQa2.js                                           0.25 kB │ gzip:  0.19 kB
+node_modules/.nitro/vite/services/ssr/assets/regional-BzepCgJ3.js                                         0.25 kB │ gzip:  0.19 kB
+node_modules/.nitro/vite/services/ssr/assets/comparisons-CidPsXoO.js                                      0.26 kB │ gzip:  0.19 kB
+node_modules/.nitro/vite/services/ssr/assets/pt._category-DKaqS058.js                                     0.26 kB │ gzip:  0.19 kB
+node_modules/.nitro/vite/services/ssr/assets/helpers-DHvTmJyu.js                                          0.35 kB │ gzip:  0.21 kB
+node_modules/.nitro/vite/services/ssr/assets/pt._category._slug-CdHvh3MJ.js                               0.39 kB │ gzip:  0.27 kB
+node_modules/.nitro/vite/services/ssr/assets/regional._slug-CwZvZyze.js                                   0.39 kB │ gzip:  0.26 kB
+node_modules/.nitro/vite/services/ssr/assets/comparisons._slug-DkW_wxBe.js                                0.40 kB │ gzip:  0.26 kB
+node_modules/.nitro/vite/services/ssr/assets/topic-nav-link-DYZx_S_a.js                                   0.91 kB │ gzip:  0.35 kB
+node_modules/.nitro/vite/services/ssr/assets/topic-list-DB7Zhbkk.js                                       1.04 kB │ gzip:  0.50 kB
+node_modules/.nitro/vite/services/ssr/assets/pt._category.index-Dg80ekbR.js                               1.04 kB │ gzip:  0.52 kB
+node_modules/.nitro/vite/services/ssr/assets/comparisons.index-BXqFCxa0.js                                1.18 kB │ gzip:  0.67 kB
+node_modules/.nitro/vite/services/ssr/assets/breadcrumbs-B_Ccq6m5.js                                      1.21 kB │ gzip:  0.62 kB
+node_modules/.nitro/vite/services/ssr/assets/regional.index-B6F-GeNK.js                                   1.25 kB │ gzip:  0.69 kB
+node_modules/.nitro/vite/services/ssr/assets/tables.index-CFey0m17.js                                     1.89 kB │ gzip:  0.98 kB
+node_modules/.nitro/vite/services/ssr/assets/pt.index-NMlS6dg0.js                                         2.38 kB │ gzip:  1.02 kB
+node_modules/.nitro/vite/services/ssr/assets/search-DTAskZ29.js                                           2.40 kB │ gzip:  1.06 kB
+node_modules/.nitro/vite/services/ssr/assets/sentence-types-production-DJmPF50O.js                        3.86 kB │ gzip:  1.66 kB
+node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-BaJ7GcV1.js                       3.97 kB │ gzip:  0.86 kB
+node_modules/.nitro/vite/services/ssr/assets/valency-production-V0LGNBXc.js                               4.27 kB │ gzip:  1.66 kB
+node_modules/.nitro/vite/services/ssr/assets/adverbs-production-2-DN6BXx4C.js                             4.66 kB │ gzip:  1.88 kB
+node_modules/.nitro/vite/services/ssr/assets/passive-CgbVvaf0.js                                          4.70 kB │ gzip:  1.95 kB
+node_modules/.nitro/vite/services/ssr/assets/fundamentals-production-BnJTCA_v.js                          5.01 kB │ gzip:  2.12 kB
+node_modules/.nitro/vite/services/ssr/assets/agreement-ch55Lkow.js                                        5.72 kB │ gzip:  2.20 kB
+node_modules/.nitro/vite/services/ssr/assets/syntax-closure-2-B7l5yk1f.js                                 6.41 kB │ gzip:  2.33 kB
+node_modules/.nitro/vite/services/ssr/assets/syntax-production-Cx_qaIw8.js                                7.04 kB │ gzip:  2.58 kB
+node_modules/.nitro/vite/services/ssr/assets/discourse-production-D_H17yRM.js                             7.10 kB │ gzip:  2.45 kB
+node_modules/.nitro/vite/services/ssr/assets/routes-2bXVUGBF.js                                           7.37 kB │ gzip:  2.19 kB
+node_modules/.nitro/vite/services/ssr/assets/adjectives-production-2-ARIWRAVw.js                          7.83 kB │ gzip:  2.61 kB
+node_modules/.nitro/vite/services/ssr/assets/subordinate-production-2-CUWoDj_a.js                         8.16 kB │ gzip:  2.84 kB
+node_modules/.nitro/vite/services/ssr/assets/agreement-production-DAp2c8W2.js                             8.23 kB │ gzip:  2.80 kB
+node_modules/.nitro/vite/services/ssr/assets/syntax-clitic-climbing-BDZWH7Rr.js                           8.26 kB │ gzip:  2.83 kB
+node_modules/.nitro/vite/services/ssr/assets/adverbs-Cen_v4OV.js                                          9.03 kB │ gzip:  3.21 kB
+node_modules/.nitro/vite/services/ssr/assets/categories-BURn4Alw.js                                       9.12 kB │ gzip:  2.88 kB
+node_modules/.nitro/vite/services/ssr/assets/negation-D5mhPsDl.js                                         9.34 kB │ gzip:  3.14 kB
+node_modules/.nitro/vite/services/ssr/assets/word-formation-D0hgwP8j.js                                  10.35 kB │ gzip:  3.80 kB
+node_modules/.nitro/vite/services/ssr/assets/lexical-grammar-CxoQE6K5.js                                 10.65 kB │ gzip:  3.35 kB
+node_modules/.nitro/vite/services/ssr/assets/questions-CkIc2ckR.js                                       10.68 kB │ gzip:  3.57 kB
+node_modules/.nitro/vite/services/ssr/assets/discourse-BtUFF3AB.js                                       10.82 kB │ gzip:  3.69 kB
+node_modules/.nitro/vite/services/ssr/assets/subordinate-C4sqXyqM.js                                     11.22 kB │ gzip:  3.96 kB
+node_modules/.nitro/vite/services/ssr/assets/phonetics-B81x1V6T.js                                       11.46 kB │ gzip:  3.70 kB
+node_modules/.nitro/vite/services/ssr/assets/semantics-BTrqbEz7.js                                       12.19 kB │ gzip:  4.03 kB
+node_modules/.nitro/vite/services/ssr/assets/determiners-DMFpcfIn.js                                     12.33 kB │ gzip:  3.95 kB
+node_modules/.nitro/vite/services/ssr/assets/adverbs-production-3-DRk0SZ-C.js                            12.64 kB │ gzip:  3.82 kB
+node_modules/.nitro/vite/services/ssr/assets/syntax-production-3-4Lttiyqu.js                             12.87 kB │ gzip:  4.23 kB
+node_modules/.nitro/vite/services/ssr/assets/pragmatics-C4hzEcwY.js                                      13.03 kB │ gzip:  4.08 kB
+node_modules/.nitro/vite/services/ssr/assets/syntax-advanced-C9lhc3pk.js                                 13.47 kB │ gzip:  4.54 kB
+node_modules/.nitro/vite/services/ssr/assets/periphrases-DRZesW35.js                                     13.55 kB │ gzip:  4.39 kB
+node_modules/.nitro/vite/services/ssr/assets/tenses-CcdlfKDa.js                                          14.12 kB │ gzip:  4.58 kB
+node_modules/.nitro/vite/services/ssr/assets/pronouns-CCUECR56.js                                        14.26 kB │ gzip:  4.68 kB
+node_modules/.nitro/vite/services/ssr/assets/comparisons-BfVo-d-Z.js                                     15.08 kB │ gzip:  5.35 kB
+node_modules/.nitro/vite/services/ssr/assets/orthography-numerals-wordformation-production-uwrARH8y.js   16.17 kB │ gzip:  5.11 kB
+node_modules/.nitro/vite/services/ssr/assets/adjectives-_nOOySz-.js                                      17.75 kB │ gzip:  5.43 kB
+node_modules/.nitro/vite/services/ssr/assets/gerund-GZz_gNSU.js                                          19.71 kB │ gzip:  5.55 kB
+node_modules/.nitro/vite/services/ssr/assets/syntax-BIEetxeh.js                                          19.90 kB │ gzip:  6.43 kB
+node_modules/.nitro/vite/services/ssr/assets/regional-CmjH6myN.js                                        20.27 kB │ gzip:  6.01 kB
+node_modules/.nitro/vite/services/ssr/assets/conjunctions-lSD0LsIT.js                                    20.47 kB │ gzip:  6.80 kB
+node_modules/.nitro/vite/services/ssr/assets/coverage-closure-production-2-1p8JGFD7.js                   20.54 kB │ gzip:  6.18 kB
+node_modules/.nitro/vite/services/ssr/assets/numerals-CuThc13C.js                                        20.54 kB │ gzip:  7.03 kB
+node_modules/.nitro/vite/services/ssr/assets/coverage-missing-production-B2o0WsDu.js                     21.07 kB │ gzip:  5.58 kB
+node_modules/.nitro/vite/services/ssr/assets/grammar-article-Bv8Z8YPt.js                                 21.73 kB │ gzip:  5.30 kB
+node_modules/.nitro/vite/services/ssr/assets/coverage-closure-production-DsJ2k7uZ.js                     22.26 kB │ gzip:  6.76 kB
+node_modules/.nitro/vite/services/ssr/assets/core-production-3-DkWxDq1f.js                               22.68 kB │ gzip:  6.13 kB
+node_modules/.nitro/vite/services/ssr/assets/adverbs-deep-Dof6xvLt.js                                    23.88 kB │ gzip:  5.98 kB
+node_modules/.nitro/vite/services/ssr/assets/prepositions-D5ZMQJrW.js                                    23.97 kB │ gzip:  7.35 kB
+node_modules/.nitro/vite/services/ssr/assets/spelling-sRnc_PTt.js                                        26.16 kB │ gzip:  8.04 kB
+node_modules/.nitro/vite/services/ssr/assets/reference-production-2-ClKXmLOQ.js                          26.88 kB │ gzip:  6.75 kB
+node_modules/.nitro/vite/services/ssr/assets/sentence-types-production-2-CJxe21QS.js                     28.10 kB │ gzip:  6.79 kB
+node_modules/.nitro/vite/services/ssr/assets/verbs-CXuzkr8A.js                                           28.26 kB │ gzip:  8.37 kB
+node_modules/.nitro/vite/services/ssr/assets/nouns-DQrzd_7G.js                                           31.81 kB │ gzip:  8.59 kB
+node_modules/.nitro/vite/services/ssr/assets/valency-qEgDue0y.js                                         34.28 kB │ gzip:  8.60 kB
+node_modules/.nitro/vite/services/ssr/assets/relative-BGoX7xAA.js                                        36.04 kB │ gzip:  9.08 kB
+node_modules/.nitro/vite/services/ssr/assets/router-CLBIl4mD.js                                          38.09 kB │ gzip: 10.30 kB
+node_modules/.nitro/vite/services/ssr/assets/subordinate-production-4-DrwZxGst.js                        39.38 kB │ gzip:  9.67 kB
+node_modules/.nitro/vite/services/ssr/assets/crase-CvuSvfTn.js                                           41.68 kB │ gzip: 12.76 kB
+node_modules/.nitro/vite/services/ssr/assets/fundamentals-BvTqmK-Y.js                                    42.04 kB │ gzip: 12.70 kB
+node_modules/.nitro/vite/services/ssr/assets/core-production-2-CEbqltSe.js                               44.17 kB │ gzip: 10.32 kB
+node_modules/.nitro/vite/services/ssr/assets/contractions-BoUsrLc8.js                                    50.84 kB │ gzip: 15.91 kB
+node_modules/.nitro/vite/services/ssr/assets/coverage-closure-production-3-DM7Hy0VS.js                   55.86 kB │ gzip: 12.52 kB
+node_modules/.nitro/vite/services/ssr/assets/se-ClxpZpH6.js                                              61.62 kB │ gzip: 17.56 kB
+node_modules/.nitro/vite/services/ssr/index.js                                                           62.55 kB │ gzip: 15.92 kB
+node_modules/.nitro/vite/services/ssr/assets/infinitive-CTETph1w.js                                      64.52 kB │ gzip: 17.65 kB
+node_modules/.nitro/vite/services/ssr/assets/clitics-3TxwVxEL.js                                         90.07 kB │ gzip: 23.80 kB
+node_modules/.nitro/vite/services/ssr/assets/articles-BIAQg86o.js                                        97.99 kB │ gzip: 27.88 kB
+node_modules/.nitro/vite/services/ssr/assets/moods-AcKaU88g.js                                          114.97 kB │ gzip: 31.61 kB
+node_modules/.nitro/vite/services/ssr/assets/catalog-B1mGBgST.js                                        125.94 kB │ gzip: 30.86 kB
+node_modules/.nitro/vite/services/ssr/assets/load-CITqD7dy.js                                           305.10 kB │ gzip: 73.33 kB
+
+[32m✓ built in 895ms[39m
+
+[90m[[90mnitro[90m][39m [35m◐[39m Building [[35mNitro[39m] [2m(preset: [36mvercel[39m, compatibility: [36m2026-09-28[39m)[22m
+[90m[[90mnitro[90m][39m [32m✔[39m Generated public [36m.vercel/output/static[39m
+[36mvite v8.2.2 [32mbuilding nitro environment for production...[36m[39m
+transforming...
+✓ 1974 modules transformed.
+rendering chunks...
+computing gzip size...
+.vercel/output/functions/__server.func/_ssr/syntax-gaps-BKyddvB-.mjs                                      0.12 kB │ gzip:   0.12 kB
+.vercel/output/functions/__server.func/_ssr/spelling-gaps-CWaZLY1c.mjs                                    0.12 kB │ gzip:   0.12 kB
+.vercel/output/functions/__server.func/_ssr/discourse-gaps-7VzAIV6a.mjs                                   0.12 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/pragmatics-gaps-D1nItQWi.mjs                                  0.13 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/production-batch-02-CEtrcybF.mjs                              0.13 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/pronouns-production-Zf4x-OHp.mjs                              0.13 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/clitics-production-2-D8GUD0Z1.mjs                             0.13 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/valency-production-3-DGbqPVzX.mjs                             0.13 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/discourse-production-2-BL-boA4s.mjs                           0.13 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/subordinate-production-Cbnr4J0R.mjs                           0.13 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/contractions-production-DO7m_2hI.mjs                          0.13 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/pragmatics-production-2-CEj2ebte.mjs                          0.13 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/time-adverbs-production-QKD9hyNo.mjs                          0.13 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/augmentatives-production-CWAk3n0r.mjs                         0.13 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/subordinate-production-3-Dc8_YMTm.mjs                         0.13 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/start-5Z2QO8AU.mjs                                            0.14 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/adjectives-nouns-production-2-Du6ewDIP.mjs                    0.14 kB │ gzip:   0.14 kB
+.vercel/output/functions/__server.func/_ssr/adjectives-adverbs-production-3---gSMUgN.mjs                  0.14 kB │ gzip:   0.14 kB
+.vercel/output/functions/__server.func/_ssr/choice-and-determiners-production-CWLW5KVy.mjs                0.14 kB │ gzip:   0.14 kB
+.vercel/output/functions/__server.func/_ssr/valency-syntax-closure-production-GwRO-mvQ.mjs                0.14 kB │ gzip:   0.14 kB
+.vercel/output/functions/__server.func/_ssr/lexical-syntax-discourse-production-BgDfBQQ6.mjs              0.15 kB │ gzip:   0.14 kB
+.vercel/output/functions/__server.func/_ssr/nouns-pronouns-articles-production-2-Dggijhvd.mjs             0.15 kB │ gzip:   0.13 kB
+.vercel/output/functions/__server.func/_ssr/empty-plugin-adapters-D9UWiqvJ.mjs                            0.23 kB │ gzip:   0.16 kB
+.vercel/output/functions/__server.func/_ssr/pt-Cna-5HV0.mjs                                               0.35 kB │ gzip:   0.25 kB
+.vercel/output/functions/__server.func/_ssr/tables-CdQ-LQa2.mjs                                           0.35 kB │ gzip:   0.25 kB
+.vercel/output/functions/__server.func/_ssr/regional-BzepCgJ3.mjs                                         0.36 kB │ gzip:   0.25 kB
+.vercel/output/functions/__server.func/_ssr/comparisons-CidPsXoO.mjs                                      0.36 kB │ gzip:   0.25 kB
+.vercel/output/functions/__server.func/_ssr/pt._category-DKaqS058.mjs                                     0.36 kB │ gzip:   0.25 kB
+.vercel/output/functions/__server.func/_ssr/helpers-DHvTmJyu.mjs                                          0.40 kB │ gzip:   0.25 kB
+.vercel/output/functions/__server.func/_ssr/pt._category._slug-CdHvh3MJ.mjs                               0.53 kB │ gzip:   0.34 kB
+.vercel/output/functions/__server.func/_ssr/regional._slug-CwZvZyze.mjs                                   0.54 kB │ gzip:   0.33 kB
+.vercel/output/functions/__server.func/_ssr/comparisons._slug-DkW_wxBe.mjs                                0.55 kB │ gzip:   0.34 kB
+.vercel/output/functions/__server.func/_libs/clsx.mjs                                                     0.55 kB │ gzip:   0.31 kB
+.vercel/output/functions/__server.func/_chunks/ssr-renderer.mjs                                           0.96 kB │ gzip:   0.49 kB
+.vercel/output/functions/__server.func/_ssr/topic-nav-link-DYZx_S_a.mjs                                   1.10 kB │ gzip:   0.42 kB
+.vercel/output/functions/__server.func/_ssr/topic-list-DB7Zhbkk.mjs                                       1.31 kB │ gzip:   0.58 kB
+.vercel/output/functions/__server.func/_ssr/pt._category.index-Dg80ekbR.mjs                               1.33 kB │ gzip:   0.60 kB
+.vercel/output/functions/__server.func/_ssr/comparisons.index-BXqFCxa0.mjs                                1.44 kB │ gzip:   0.76 kB
+.vercel/output/functions/__server.func/_ssr/breadcrumbs-B_Ccq6m5.mjs                                      1.45 kB │ gzip:   0.69 kB
+.vercel/output/functions/__server.func/_ssr/regional.index-B6F-GeNK.mjs                                   1.51 kB │ gzip:   0.77 kB
+.vercel/output/functions/__server.func/_runtime.mjs                                                       1.58 kB │ gzip:   0.74 kB
+.vercel/output/functions/__server.func/_ssr/tables.index-CFey0m17.mjs                                     2.21 kB │ gzip:   1.05 kB
+.vercel/output/functions/__server.func/_ssr/pt.index-NMlS6dg0.mjs                                         2.85 kB │ gzip:   1.11 kB
+.vercel/output/functions/__server.func/_ssr/search-DTAskZ29.mjs                                           2.93 kB │ gzip:   1.17 kB
+.vercel/output/functions/__server.func/_ssr/sentence-types-production-DJmPF50O.mjs                        3.95 kB │ gzip:   1.73 kB
+.vercel/output/functions/__server.func/_tanstack-start-manifest_v-BaJ7GcV1.mjs                            4.02 kB │ gzip:   0.90 kB
+.vercel/output/functions/__server.func/_ssr/valency-production-V0LGNBXc.mjs                               4.31 kB │ gzip:   1.70 kB
+.vercel/output/functions/__server.func/_ssr/passive-CgbVvaf0.mjs                                          4.74 kB │ gzip:   1.98 kB
+.vercel/output/functions/__server.func/_ssr/adverbs-production-2-DN6BXx4C.mjs                             4.75 kB │ gzip:   1.94 kB
+.vercel/output/functions/__server.func/_ssr/fundamentals-production-BnJTCA_v.mjs                          5.05 kB │ gzip:   2.16 kB
+.vercel/output/functions/__server.func/_ssr/agreement-ch55Lkow.mjs                                        5.76 kB │ gzip:   2.23 kB
+.vercel/output/functions/__server.func/_libs/lucide-react.mjs                                             6.30 kB │ gzip:   1.81 kB
+.vercel/output/functions/__server.func/_ssr/syntax-closure-2-B7l5yk1f.mjs                                 6.49 kB │ gzip:   2.40 kB
+.vercel/output/functions/__server.func/_ssr/syntax-production-Cx_qaIw8.mjs                                7.08 kB │ gzip:   2.61 kB
+.vercel/output/functions/__server.func/_ssr/discourse-production-D_H17yRM.mjs                             7.13 kB │ gzip:   2.49 kB
+.vercel/output/functions/__server.func/_ssr/adjectives-production-2-ARIWRAVw.mjs                          7.87 kB │ gzip:   2.65 kB
+.vercel/output/functions/__server.func/_ssr/subordinate-production-2-CUWoDj_a.mjs                         8.20 kB │ gzip:   2.87 kB
+.vercel/output/functions/__server.func/_ssr/agreement-production-DAp2c8W2.mjs                             8.26 kB │ gzip:   2.84 kB
+.vercel/output/functions/__server.func/_ssr/syntax-clitic-climbing-BDZWH7Rr.mjs                           8.30 kB │ gzip:   2.87 kB
+.vercel/output/functions/__server.func/_ssr/routes-2bXVUGBF.mjs                                           8.58 kB │ gzip:   2.27 kB
+.vercel/output/functions/__server.func/_ssr/adverbs-Cen_v4OV.mjs                                          9.07 kB │ gzip:   3.25 kB
+.vercel/output/functions/__server.func/_ssr/negation-D5mhPsDl.mjs                                         9.38 kB │ gzip:   3.18 kB
+.vercel/output/functions/__server.func/_libs/h3-v2+rou3.mjs                                               9.83 kB │ gzip:   3.05 kB
+.vercel/output/functions/__server.func/_ssr/word-formation-D0hgwP8j.mjs                                  10.39 kB │ gzip:   3.83 kB
+.vercel/output/functions/__server.func/_ssr/lexical-grammar-CxoQE6K5.mjs                                 10.69 kB │ gzip:   3.39 kB
+.vercel/output/functions/__server.func/_ssr/questions-CkIc2ckR.mjs                                       10.72 kB │ gzip:   3.60 kB
+.vercel/output/functions/__server.func/_ssr/discourse-BtUFF3AB.mjs                                       10.85 kB │ gzip:   3.73 kB
+.vercel/output/functions/__server.func/_ssr/subordinate-C4sqXyqM.mjs                                     11.25 kB │ gzip:   4.00 kB
+.vercel/output/functions/__server.func/_ssr/phonetics-B81x1V6T.mjs                                       11.50 kB │ gzip:   3.74 kB
+.vercel/output/functions/__server.func/_ssr/semantics-BTrqbEz7.mjs                                       12.23 kB │ gzip:   4.07 kB
+.vercel/output/functions/__server.func/_libs/tanstack__history.mjs                                       12.26 kB │ gzip:   3.48 kB
+.vercel/output/functions/__server.func/_ssr/determiners-DMFpcfIn.mjs                                     12.37 kB │ gzip:   3.98 kB
+.vercel/output/functions/__server.func/_ssr/adverbs-production-3-DRk0SZ-C.mjs                            12.68 kB │ gzip:   3.85 kB
+.vercel/output/functions/__server.func/_ssr/syntax-production-3-4Lttiyqu.mjs                             12.91 kB │ gzip:   4.27 kB
+.vercel/output/functions/__server.func/_ssr/pragmatics-C4hzEcwY.mjs                                      13.06 kB │ gzip:   4.12 kB
+.vercel/output/functions/__server.func/_ssr/syntax-advanced-C9lhc3pk.mjs                                 13.51 kB │ gzip:   4.58 kB
+.vercel/output/functions/__server.func/_ssr/periphrases-DRZesW35.mjs                                     13.59 kB │ gzip:   4.43 kB
+.vercel/output/functions/__server.func/_ssr/tenses-CcdlfKDa.mjs                                          14.16 kB │ gzip:   4.61 kB
+.vercel/output/functions/__server.func/_ssr/pronouns-CCUECR56.mjs                                        14.29 kB │ gzip:   4.72 kB
+.vercel/output/functions/__server.func/_ssr/comparisons-BfVo-d-Z.mjs                                     15.11 kB │ gzip:   5.39 kB
+.vercel/output/functions/__server.func/_ssr/orthography-numerals-wordformation-production-uwrARH8y.mjs   16.21 kB │ gzip:   5.15 kB
+.vercel/output/functions/__server.func/_ssr/adjectives-_nOOySz-.mjs                                      17.79 kB │ gzip:   5.46 kB
+.vercel/output/functions/__server.func/_ssr/gerund-GZz_gNSU.mjs                                          19.74 kB │ gzip:   5.59 kB
+.vercel/output/functions/__server.func/_ssr/syntax-BIEetxeh.mjs                                          19.93 kB │ gzip:   6.47 kB
+.vercel/output/functions/__server.func/_ssr/regional-CmjH6myN.mjs                                        20.31 kB │ gzip:   6.05 kB
+.vercel/output/functions/__server.func/_ssr/conjunctions-lSD0LsIT.mjs                                    20.50 kB │ gzip:   6.84 kB
+.vercel/output/functions/__server.func/_ssr/coverage-closure-production-2-1p8JGFD7.mjs                   20.57 kB │ gzip:   6.22 kB
+.vercel/output/functions/__server.func/_ssr/numerals-CuThc13C.mjs                                        20.57 kB │ gzip:   7.07 kB
+.vercel/output/functions/__server.func/_ssr/coverage-missing-production-B2o0WsDu.mjs                     21.10 kB │ gzip:   5.62 kB
+.vercel/output/functions/__server.func/_ssr/coverage-closure-production-DsJ2k7uZ.mjs                     22.29 kB │ gzip:   6.80 kB
+.vercel/output/functions/__server.func/_libs/h3+rou3+srvx.mjs                                            22.57 kB │ gzip:   6.12 kB
+.vercel/output/functions/__server.func/_ssr/core-production-3-DkWxDq1f.mjs                               22.72 kB │ gzip:   6.17 kB
+.vercel/output/functions/__server.func/_ssr/adverbs-deep-Dof6xvLt.mjs                                    23.91 kB │ gzip:   6.01 kB
+.vercel/output/functions/__server.func/_ssr/prepositions-D5ZMQJrW.mjs                                    24.00 kB │ gzip:   7.39 kB
+.vercel/output/functions/__server.func/_ssr/grammar-article-Bv8Z8YPt.mjs                                 24.57 kB │ gzip:   5.37 kB
+.vercel/output/functions/__server.func/_ssr/spelling-sRnc_PTt.mjs                                        26.19 kB │ gzip:   8.07 kB
+.vercel/output/functions/__server.func/_ssr/reference-production-2-ClKXmLOQ.mjs                          26.91 kB │ gzip:   6.79 kB
+.vercel/output/functions/__server.func/_ssr/sentence-types-production-2-CJxe21QS.mjs                     28.13 kB │ gzip:   6.83 kB
+.vercel/output/functions/__server.func/_ssr/verbs-CXuzkr8A.mjs                                           28.30 kB │ gzip:   8.40 kB
+.vercel/output/functions/__server.func/index.mjs                                                         31.82 kB │ gzip:  10.05 kB
+.vercel/output/functions/__server.func/_ssr/nouns-DQrzd_7G.mjs                                           31.85 kB │ gzip:   8.63 kB
+.vercel/output/functions/__server.func/_ssr/valency-qEgDue0y.mjs                                         34.32 kB │ gzip:   8.63 kB
+.vercel/output/functions/__server.func/_ssr/relative-BGoX7xAA.mjs                                        36.07 kB │ gzip:   9.12 kB
+.vercel/output/functions/__server.func/_ssr/subordinate-production-4-DrwZxGst.mjs                        39.41 kB │ gzip:   9.71 kB
+.vercel/output/functions/__server.func/_ssr/crase-CvuSvfTn.mjs                                           41.71 kB │ gzip:  12.80 kB
+.vercel/output/functions/__server.func/_ssr/fundamentals-BvTqmK-Y.mjs                                    42.07 kB │ gzip:  12.74 kB
+.vercel/output/functions/__server.func/_ssr/core-production-2-CEbqltSe.mjs                               44.20 kB │ gzip:  10.36 kB
+.vercel/output/functions/__server.func/_ssr/contractions-BoUsrLc8.mjs                                    50.88 kB │ gzip:  15.95 kB
+.vercel/output/functions/__server.func/_ssr/coverage-closure-production-3-DM7Hy0VS.mjs                   55.90 kB │ gzip:  12.56 kB
+.vercel/output/functions/__server.func/_ssr/ssr.mjs                                                      60.83 kB │ gzip:  15.83 kB
+.vercel/output/functions/__server.func/_ssr/se-ClxpZpH6.mjs                                              61.66 kB │ gzip:  17.60 kB
+.vercel/output/functions/__server.func/_ssr/infinitive-CTETph1w.mjs                                      64.56 kB │ gzip:  17.69 kB
+.vercel/output/functions/__server.func/_libs/tailwind-merge.mjs                                          88.13 kB │ gzip:  15.66 kB
+.vercel/output/functions/__server.func/_ssr/clitics-3TxwVxEL.mjs                                         90.11 kB │ gzip:  23.84 kB
+.vercel/output/functions/__server.func/_ssr/articles-BIAQg86o.mjs                                        98.03 kB │ gzip:  27.92 kB
+.vercel/output/functions/__server.func/_ssr/moods-AcKaU88g.mjs                                          115.01 kB │ gzip:  31.64 kB
+.vercel/output/functions/__server.func/_libs/@tanstack/router-core+[...].mjs                            123.11 kB │ gzip:  25.92 kB
+.vercel/output/functions/__server.func/_ssr/catalog-B1mGBgST.mjs                                        125.98 kB │ gzip:  30.90 kB
+.vercel/output/functions/__server.func/_libs/zod.mjs                                                    159.58 kB │ gzip:  34.87 kB
+.vercel/output/functions/__server.func/_ssr/router-CLBIl4mD.mjs                                         353.03 kB │ gzip:  85.50 kB
+.vercel/output/functions/__server.func/_libs/@tanstack/react-router+[...].mjs                           678.12 kB │ gzip: 143.22 kB
+
+[32m✓ built in 853ms[39m
+[36mℹ[39m Generated [36m.vercel/output/nitro.json[39m
+
+[90m[[90mnitro[90m][39m [32m✔[39m You can preview this build using [36mnpx vite preview[39m
+[90m[[90mnitro[90m][39m [32m✔[39m You can deploy this build using [36mnpx nitro deploy --prebuilt[39m
+
+(node:25344) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+```
+
+## database migration
+Command: npm run db:migrate
+Status: failed; exit=1; signal=none
+
+```text
+(no output)
+```
+
