@@ -8,8 +8,12 @@ const MAX_BUFFER = 32 * 1024 * 1024;
 const TIMEOUT_MS = 15 * 60 * 1000;
 
 function commandFor(command, args) {
-  const executable = process.platform === "win32" ? "npm.cmd" : "npm";
-  if (command === "npm") return { executable, args };
+  if (command === "npm" && process.platform === "win32") {
+    return {
+      executable: process.env.ComSpec || "cmd.exe",
+      args: ["/d", "/s", "/c", "npm " + args.map((arg) => JSON.stringify(arg)).join(" ")],
+    };
+  }
   return { executable: command, args };
 }
 
