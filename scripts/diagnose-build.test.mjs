@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { extractDiagnostics, summarizePhase } from "./diagnose-build.mjs";
+import { buildLog, extractDiagnostics, summarizePhase } from "./diagnose-build.mjs";
 
 test("extractDiagnostics finds Vite/Rolldown source locations and error messages", () => {
   const output = [
@@ -40,4 +40,36 @@ test("summarizePhase records exit status and diagnostics", () => {
   assert.equal(result.status, "failed");
   assert.equal(result.exitCode, 1);
   assert.equal(result.diagnostics.length, 1);
+});
+
+
+test("summarizePhase preserves raw output for the final QA log", () => {
+  const output = "command failed" + String.fromCharCode(10) + "src/example.ts:4:2";
+  const result = summarizePhase({
+    name: "test phase",
+    command: "test command",
+    code: 1,
+    signal: null,
+    output,
+    durationMs: 10,
+  });
+  assert.equal(result.output, output);
+});
+
+test("buildLog never crashes when a phase has no output or diagnostics", () => {
+  const log = buildLog([{
+    name: "empty phase",
+    command: "noop",
+    status: "failed",
+    exitCode: 1,
+    signal: null,
+    durationMs: 0,
+  }], {
+    repository: "test-repo",
+    head: "test-head",
+    node: "v24",
+    npm: "11",
+  });
+  assert.match(log, /\(no output\)/);
+  assert.match(log, /0 diagnostics/);
 });
