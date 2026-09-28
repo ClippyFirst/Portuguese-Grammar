@@ -11,7 +11,7 @@ function commandFor(command, args) {
   if (command === "npm" && process.platform === "win32") {
     return {
       executable: process.env.ComSpec || "cmd.exe",
-      args: ["/d", "/s", "/c", "npm " + args.map((arg) => JSON.stringify(arg)).join(" ")],
+      args: ["/d", "/s", "/c", ["npm", ...args].join(" ")],
     };
   }
   return { executable: command, args };
