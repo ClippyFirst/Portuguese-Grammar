@@ -21,6 +21,7 @@ export function extractDiagnostics(output) {
   const lines = output.split(String.fromCharCode(10));
   const found = new Map();
   let pendingMessage = null;
+  let pendingSeverity = null;
 
   const add = (diagnostic) => {
     if (!diagnostic?.message) return;
@@ -33,7 +34,10 @@ export function extractDiagnostics(output) {
     if (!line) continue;
 
     const viteMessage = line.match(/^(?:\[.*?\]\s*)?(?:error(?: during build)?[: ]+)(.+)$/i);
-    if (viteMessage) pendingMessage = viteMessage[1].trim();
+    if (viteMessage) {
+      pendingMessage = viteMessage[1].trim() || null;
+      pendingSeverity = /error/i.test(line) ? "error" : "warning";
+    }
 
     const inline = line.match(/^(.+?\.(?:[cm]?[jt]sx?|vue|css|json))(?::|\()([0-9]+)(?::|,)([0-9]+)\)?(?::?\s*(?:error\s+[^:]+:\s*)?(.+))?$/i);
     const viteLocation = line.match(/^(.*?\.(?:[cm]?[jt]sx?|vue|css|json)):(\d+):(\d+)$/i);
@@ -42,6 +46,7 @@ export function extractDiagnostics(output) {
       const message = (inline[4] || pendingMessage || lines[i - 1]?.trim() || "Build diagnostic").replace(/^[-–—]\s*/, "").trim();
       add({ severity: /\berror\b/i.test(line) || /error/i.test(message) ? "error" : "warning", file: inline[1], line: Number(inline[2]), column: Number(inline[3]), message });
       pendingMessage = null;
+      pendingSeverity = null;
       continue;
     }
 
@@ -49,6 +54,7 @@ export function extractDiagnostics(output) {
       const message = (pendingMessage || lines[i - 1]?.trim() || "Build diagnostic").replace(/^[-–—]\s*/, "").trim();
       add({ severity: /error|expected|failed|cannot|invalid|missing/i.test(message) ? "error" : "warning", file: viteLocation[1], line: Number(viteLocation[2]), column: Number(viteLocation[3]), message });
       pendingMessage = null;
+      pendingSeverity = null;
     }
   }
 
