@@ -66,8 +66,7 @@ function run(command, args) {
   });
   const stdout = result.stdout ?? "";
   const stderr = result.stderr ?? "";
-  const output = [stdout, stderr].filter(Boolean).join("
-");
+  const output = [stdout, stderr].filter(Boolean).join(String.fromCharCode(10));
   return {
     code: result.status ?? 1,
     signal: result.signal ?? null,
@@ -124,8 +123,7 @@ export function buildLog(phases, meta) {
     out.push("```");
     out.push("");
   }
-  return out.join("
-");
+  return out.join(String.fromCharCode(10));
 }
 
 export function main() {
@@ -143,10 +141,8 @@ export function main() {
     npm: shellInfo(process.platform === "win32" ? "npm.cmd" : "npm", ["--version"]),
   };
   const log = buildLog(phases.map((p) => summarizePhase(p)), meta);
-  writeFileSync(LOG_FILE, log + "
-", "utf8");
-  process.stdout.write(log + "
-");
+  writeFileSync(LOG_FILE, log + String.fromCharCode(10), "utf8");
+  process.stdout.write(log + String.fromCharCode(10));
   process.exitCode = phases.some((p) => p.code !== 0) ? 1 : 0;
 }
 
