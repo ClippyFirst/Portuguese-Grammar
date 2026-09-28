@@ -1,1 +1,44 @@
-import test from "node:test";\nimport assert from "node:assert/strict";\nimport { extractDiagnostics, summarizePhase } from "./diagnose-build.mjs";\n\ntest("extractDiagnostics finds Vite/Rolldown source locations and error messages", () => {\n  const output = [\n    "error during build:",\n    "Expected `,` or `}` but found `string`",\n    "src/content/generated-pages.ts:2208:3",\n    "Build failed with 1 error:",\n  ].join("\n");\n  assert.deepEqual(extractDiagnostics(output), [{\n    severity: "error",\n    file: "src/content/generated-pages.ts",\n    line: 2208,\n    column: 3,\n    message: "Expected `,` or `}` but found `string`",\n  }]);\n});\n\ntest("extractDiagnostics deduplicates repeated diagnostics", () => {\n  const output = [\n    "error TS1005: ',' expected.",\n    "src/content/generated-pages.ts:2208:3",\n    "error TS1005: ',' expected.",\n    "src/content/generated-pages.ts:2208:3",\n  ].join("\n");\n  assert.equal(extractDiagnostics(output).length, 1);\n});\n\ntest("summarizePhase records exit status and diagnostics", () => {\n  const result = summarizePhase({\n    name: "vite build",\n    command: "node vite build",\n    code: 1,\n    signal: null,\n    output: "Expected `:` but found Identifier\nsrc/content/generated-pages.ts:1962:7",\n    durationMs: 1234,\n  });\n  assert.equal(result.status, "failed");\n  assert.equal(result.exitCode, 1);\n  assert.equal(result.diagnostics.length, 1);\n});\n
+import test from "node:test";
+import assert from "node:assert/strict";
+import { extractDiagnostics, summarizePhase } from "./diagnose-build.mjs";
+
+test("extractDiagnostics finds Vite/Rolldown source locations and error messages", () => {
+  const output = [
+    "error during build:",
+    "Expected `,` or `}` but found `string`",
+    "src/content/generated-pages.ts:2208:3",
+    "Build failed with 1 error:",
+  ].join(String.fromCharCode(10));
+  assert.deepEqual(extractDiagnostics(output), [{
+    severity: "error",
+    file: "src/content/generated-pages.ts",
+    line: 2208,
+    column: 3,
+    message: "Expected `,` or `}` but found `string`",
+  }]);
+});
+
+test("extractDiagnostics deduplicates repeated diagnostics", () => {
+  const output = [
+    "error TS1005: ',' expected.",
+    "src/content/generated-pages.ts:2208:3",
+    "error TS1005: ',' expected.",
+    "src/content/generated-pages.ts:2208:3",
+  ].join(String.fromCharCode(10));
+  assert.equal(extractDiagnostics(output).length, 1);
+});
+
+test("summarizePhase records exit status and diagnostics", () => {
+  const result = summarizePhase({
+    name: "vite build",
+    command: "node vite build",
+    code: 1,
+    signal: null,
+    output: "Expected `:` but found Identifier
+src/content/generated-pages.ts:1962:7",
+    durationMs: 1234,
+  });
+  assert.equal(result.status, "failed");
+  assert.equal(result.exitCode, 1);
+  assert.equal(result.diagnostics.length, 1);
+});
