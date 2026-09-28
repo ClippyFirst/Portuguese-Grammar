@@ -13,49 +13,52 @@ test("grammar content audit passes, including compact constructor contracts", ()
   });
 });
 
-test("advanced syntax reference modules cover the next high-depth valency and question topics", () => {
-  const source = fs.readFileSync("src/content/pages/advanced-syntax.ts", "utf8");
-  for (const id of [
-    "verb-valency-frames",
-    "verb-valency-arguments",
-    "verb-ditransitive-frames",
-    "verb-complement-types",
-    "verb-clitic-frames",
-    "relative-que",
-    "relative-restrictive",
-    "wh-questions",
-  ]) {
-    assert.match(source, new RegExp('id: "' + id + '"'));
-  }
-});
+test("reviewed high-depth pages remain in their canonical content modules", () => {
+  const expected = new Map([
+    ["src/content/pages/valency.ts", [
+      "verb-valency-frames",
+      "verb-valency-arguments",
+      "verb-ditransitive-frames",
+      "verb-complement-types",
+      "verb-clitic-frames",
+    ]],
+    ["src/content/pages/relative.ts", [
+      "relative-que",
+      "relative-restrictive",
+    ]],
+    ["src/content/pages/questions.ts", [
+      "wh-questions",
+    ]],
+    ["src/content/pages/coverage-closure-production-3.ts", [
+      "sentence-fragments",
+      "optative-wish-constructions",
+      "hortative-exhortative-constructions",
+    ]],
+    ["src/content/pages/sentence-types-production-2.ts", [
+      "exclamative-word-order",
+      "imperative-softening-intensification",
+      "sentence-type-vs-speech-act",
+      "sentence-type-vs-intonation",
+      "sentence-type-vs-punctuation",
+      "illocutionary-force-and-grammatical-form",
+      "grammaticalisation-of-discourse-functions",
+    ]],
+    ["src/content/pages/coverage-closure-production-2.ts", [
+      "null-and-expletive-subjects",
+      "subject-object-order",
+      "subordination-and-coordination",
+    ]],
+    ["src/content/pages/subordinate-production-4.ts", [
+      "reduced-clauses",
+      "infinitival-reduced-clauses",
+      "gerundial-reduced-clauses",
+    ]],
+  ]);
 
-test("advanced discourse module covers sentence-fragment and speech-act depth topics", () => {
-  const source = fs.readFileSync("src/content/pages/advanced-discourse.ts", "utf8");
-  for (const id of [
-    "sentence-fragments",
-    "optative-wish-constructions",
-    "hortative-exhortative-constructions",
-    "exclamative-word-order",
-    "imperative-softening-intensification",
-    "sentence-type-vs-speech-act",
-  ]) {
-    assert.match(source, new RegExp('id: "' + id + '"'));
-  }
-});
-test("advanced structure module covers sentence, clause and subject-object depth topics", () => {
-  const source = fs.readFileSync("src/content/pages/advanced-structure.ts", "utf8");
-  for (const id of [
-    "sentence-type-vs-intonation",
-    "sentence-type-vs-punctuation",
-    "illocutionary-force-and-grammatical-form",
-    "grammaticalisation-of-discourse-functions",
-    "null-and-expletive-subjects",
-    "subject-object-order",
-    "subordination-and-coordination",
-    "reduced-clauses",
-    "infinitival-reduced-clauses",
-    "gerundial-reduced-clauses",
-  ]) {
-    assert.match(source, new RegExp('id: "' + id + '"'));
+  for (const [path, ids] of expected) {
+    const source = fs.readFileSync(path, "utf8");
+    for (const id of ids) {
+      assert.match(source, new RegExp('id: "' + id + '"'), path + ": " + id);
+    }
   }
 });
