@@ -44,7 +44,7 @@ export function extractDiagnostics(output) {
 
     if (inline) {
       const message = (inline[4] || pendingMessage || lines[i - 1]?.trim() || "Build diagnostic").replace(/^[-–—]\s*/, "").trim();
-      add({ severity: /\berror\b/i.test(line) || /error/i.test(message) ? "error" : "warning", file: inline[1], line: Number(inline[2]), column: Number(inline[3]), message });
+      add({ severity: pendingSeverity || (/\berror\b/i.test(line) || /error/i.test(message) ? "error" : "warning"), file: inline[1], line: Number(inline[2]), column: Number(inline[3]), message });
       pendingMessage = null;
       pendingSeverity = null;
       continue;
