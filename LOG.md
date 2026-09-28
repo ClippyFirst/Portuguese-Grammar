@@ -1619,3 +1619,16 @@ Commits:
 - regression test: `5dcf7ae057e3f684cd3b51391050bf7c27b3fe49`;
 - content: `a17beafea4212fc333053a5b841d15a550c5fc98`;
 - related-link repair: `adbc5be335db0472ae1ffc6c403f9b806ec0ac2c`.
+
+
+## Batch 40 continuation — duplicate-module cleanup after local build (2026-09-28)
+
+- **Trigger:** user-run `npm run build` reached `audit:content` and reported 48 warnings.
+- **Root cause:** the latest `advanced-syntax.ts`, `advanced-discourse.ts`, and `advanced-structure.ts` modules duplicated pages already present in canonical modules (`valency.ts`, `relative.ts`, `questions.ts`, `coverage-closure-production-2.ts`, `coverage-closure-production-3.ts`, `sentence-types-production-2.ts`, `subordinate-production-4.ts`). `regional-production-2.ts` likewise duplicated the regional page already in `regional.ts`.
+- **Fix:** removed all four duplicate modules rather than retaining parallel copies; updated the regression test to assert the high-depth page IDs in their canonical modules.
+- **Removed duplicate page modules:** `advanced-syntax.ts`, `advanced-discourse.ts`, `advanced-structure.ts`, `regional-production-2.ts`.
+- **Regression-test repair:** `scripts/audit-grammar-content.test.mjs` now checks the canonical module for each affected reviewed topic, so future content additions cannot silently reintroduce the duplicate-module pattern.
+- **Local verification:** the user's `npm run build` output established that the audit itself completed and enumerated the duplicate set; the remaining Vite/database build stages were not reached because the audit command emitted warnings and the pasted output stops there. Remote connector execution cannot run the user's Windows working tree.
+- **Repository verification:** duplicate sources were inspected on the current default branch before deletion; no content was deleted from the canonical modules containing the same IDs.
+- **Commit sequence:** duplicate-module deletions were committed as `18d4bb6`, `36ac4fb`, `f6090fb`, `1c5ee58`; regression-test repair as `b24206e`.
+- **CI:** no green CI claim is made unless GitHub exposes a successful workflow/status for the resulting HEAD.
