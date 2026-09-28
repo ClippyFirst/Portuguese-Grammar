@@ -52,7 +52,7 @@ export function extractDiagnostics(output) {
 }
 
 export function summarizePhase({ name, command, code, signal, output, durationMs }) {
-  const diagnostics = extractDiagnostics(output);
+  const diagnostics = extractDiagnostics(output ?? "");
   return {
     name, command, status: code === 0 ? "passed" : "failed", exitCode: code, signal, durationMs, diagnostics, output,
   };
@@ -94,7 +94,7 @@ export function buildLog(phases, meta) {
   const total = phases.length;
   const passed = phases.filter((p) => p.status === "passed").length;
   const failed = phases.length - passed;
-  const diagnostics = phases.flatMap((p) => p.diagnostics.map((d) => ({ ...d, phase: p.name })));
+  const diagnostics = phases.flatMap((p) => (p.diagnostics ?? []).map((d) => ({ ...d, phase: p.name })));
   const out = [];
   out.push("# Portuguese Grammar — comprehensive QA/build diagnostic");
   out.push(`Generated: ${new Date().toISOString()}`);
@@ -107,7 +107,7 @@ export function buildLog(phases, meta) {
   out.push(`## Summary: ${passed}/${total} phases passed; ${failed} failed; ${diagnostics.length} parsed diagnostics`);
   out.push("");
   out.push("## Phase results");
-  for (const p of phases) out.push(`- ${p.status.toUpperCase()} — ${p.name} — exit=${p.exitCode} — ${p.durationMs} ms — ${p.diagnostics.length} diagnostics`);
+  for (const p of phases) out.push(`- ${p.status.toUpperCase()} — ${p.name} — exit=${p.exitCode} — ${p.durationMs} ms — ${(p.diagnostics ?? []).length} diagnostics`);
   out.push("");
   out.push("## Parsed diagnostics");
   if (!diagnostics.length) out.push("No file/line diagnostics parsed.");
