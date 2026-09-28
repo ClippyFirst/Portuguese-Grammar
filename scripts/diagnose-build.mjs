@@ -54,7 +54,7 @@ export function extractDiagnostics(output) {
 export function summarizePhase({ name, command, code, signal, output, durationMs }) {
   const diagnostics = extractDiagnostics(output);
   return {
-    name, command, status: code === 0 ? "passed" : "failed", exitCode: code, signal, durationMs, diagnostics,
+    name, command, status: code === 0 ? "passed" : "failed", exitCode: code, signal, durationMs, diagnostics, output,
   };
 }
 
@@ -119,7 +119,7 @@ export function buildLog(phases, meta) {
     out.push(`Status: ${p.status}; exit=${p.exitCode}; signal=${p.signal ?? "none"}`);
     out.push("");
     out.push("```text");
-    out.push(p.output.trimEnd() || "(no output)");
+    out.push((p.output ?? "").trimEnd() || "(no output)");
     out.push("```");
     out.push("");
   }
