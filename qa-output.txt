@@ -1,24 +1,23 @@
 # Portuguese Grammar — comprehensive QA/build diagnostic
-Generated: 2026-09-28T14:16:36.053Z
+Generated: 2026-09-28T14:21:08.792Z
 Repository: https://github.com/ClippyFirst/Portuguese-Grammar.git
-HEAD: 04e76b767292a7f5517102cc14359884076d7b26
+HEAD: 5c2530f9388fdf98ba9af84f38e51c2866ccb7fc
 Node: v24.19.0
 npm: unavailable
 Platform: win32 x64
 
-## Summary: 5/6 phases passed; 1 failed; 2 parsed diagnostics
+## Summary: 6/6 phases passed; 0 failed; 0 parsed diagnostics
 
 ## Phase results
-- PASSED — content audit — exit=0 — 965 ms — 0 diagnostics
-- PASSED — typecheck — exit=0 — 10731 ms — 0 diagnostics
-- PASSED — lint — exit=0 — 10468 ms — 0 diagnostics
-- FAILED — tests — exit=1 — 2617 ms — 2 diagnostics
-- PASSED — production Vite build — exit=0 — 10107 ms — 0 diagnostics
-- PASSED — database migration — exit=0 — 946 ms — 0 diagnostics
+- PASSED — content audit — exit=0 — 1378 ms — 0 diagnostics
+- PASSED — typecheck — exit=0 — 12657 ms — 0 diagnostics
+- PASSED — lint — exit=0 — 14136 ms — 0 diagnostics
+- PASSED — tests — exit=0 — 6289 ms — 0 diagnostics
+- PASSED — production Vite build — exit=0 — 9916 ms — 0 diagnostics
+- PASSED — database migration — exit=0 — 915 ms — 0 diagnostics
 
 ## Parsed diagnostics
-1. [warning] tests — test at scripts\diagnose-build.test.mjs:5:1 — Build diagnostic
-2. [warning] tests — at TestContext.<anonymous> (file:///F:/GitHub/Grammars/Portuguese%20Grammar/scripts/diagnose-build.test.mjs:12:10 — Build diagnostic
+No file/line diagnostics parsed.
 
 ## content audit
 Command: npm run audit:content
@@ -55,7 +54,7 @@ Status: passed; exit=0; signal=none
 
 ## tests
 Command: npm test
-Status: failed; exit=1; signal=none
+Status: passed; exit=0; signal=none
 
 ```text
 
@@ -63,247 +62,316 @@ Status: failed; exit=1; signal=none
 > node scripts/run-node-tests.mjs && node --experimental-strip-types --test scripts/diagnose-build.test.mjs src/lib/app-data/app-data.test.ts src/lib/app-data/readiness-schedule.test.ts src/lib/auth/gate-identity.test.ts src/lib/auth/sign-in-gate.test.ts
 
 Running 11 script test file(s) with Node's test runner.
-✔ grammar content audit passes, including compact constructor contracts (450.181ms)
-✔ reviewed high-depth pages remain in their canonical content modules (13.7378ms)
-✔ non-canvas app with no custom card gets a soft BRAND NOTE (utility exception) (17.232ms)
-✔ non-canvas app with a compliant card is silent (29.063ms)
-✔ card file without site.json card=custom warns (25.0216ms)
-✔ card file with missing site.json warns for card=custom (6.7162ms)
-✔ card file with invalid site.json warns for card=custom (10.7819ms)
-✔ oversized card warns for non-canvas apps too (13.5397ms)
-✔ canvas app with no card warns 'missing' and missing og:type (9.5438ms)
-✔ canvas card without type still warns for og:type (12.0353ms)
-✔ oversized card warns on the scraper budget (jpg and legacy png) (28.2841ms)
-✔ compliant game (custom card + site.json type + x-banner) is silent (12.821ms)
-✔ __root.tsx og:type no longer satisfies the canvas gate (23.5553ms)
-✔ oversized x-banner warns on the same scraper budget as og.jpg (22.8659ms)
-✔ legacy png + site.json type still needs the X feed card (12.2915ms)
-✔ siteDeclaresOgTypeGame reads the site contract (0.3448ms)
-✔ a fresh og-pending marker silences the whole gate view (8.8301ms)
-✔ a stale og-pending marker is ignored and the warnings return (9.3495ms)
-✔ the marker goes stale on the clock, not on the file (12.437ms)
-✔ no marker means nothing is in flight (5.3928ms)
-✔ parseBrandCheckArgs takes --game, --placeholder-ok and --root, and rejects the rest (0.8257ms)
-✔ cli: a game missing its card reports JSON and exits 1 (245.8485ms)
-✔ cli: a compliant game passes (168.7007ms)
-✔ cli: the task's own marker is reported, not honoured (179.7781ms)
-✔ cli: a bad argument fails with JSON on stderr (166.5034ms)
-✔ cli: a non-game with no card fails too — the pass exists to produce one (148.9891ms)
-✔ cli: --placeholder-ok is how a plain-utility pass reports no card as expected (234.523ms)
-✔ cli: a non-game with a compliant card passes (118.3831ms)
-✔ SKILL.md and AGENTS.md name the marker path and bound this script uses (1.9284ms)
-✔ the sections that own the brand-task prohibition never affirm a wait (3.218ms)
-✔ SKILL.md tells the pass to self-check with the flag this CLI accepts (1.1875ms)
-✔ normalizes whitespace before hashing (4.7032ms)
-✔ nullish and blank body text normalize to the empty string (0.3926ms)
-✔ body text prefix is normalized and capped (0.339ms)
-✔ identical runs do not diverge (1.9869ms)
-✔ status change diverges (0.6683ms)
-✔ title change diverges (0.4869ms)
-✔ title comparison is skipped when either side lacks one (0.412ms)
-✔ canvas disappearing diverges; canvas appearing does not (0.8945ms)
-✔ horizontal overflow appearing diverges; clearing does not (0.4439ms)
-✔ new console errors diverge (0.7073ms)
-✔ errors already present in the baseline do not re-diverge (0.448ms)
-✔ body text collapse diverges (0.3311ms)
-✔ body text dropping to zero reports collapse (0.4069ms)
-✔ zero-length baseline reports growth via the hash branch, not collapse (0.3953ms)
-✔ hash mismatch with a trivial length delta and same page start is tolerated (0.2419ms)
-✔ hash mismatch with a trivial length delta but changed page start diverges (0.3057ms)
-✔ prefix check is skipped when either side lacks a prefix (0.369ms)
-✔ length-delta tolerance boundary: 50 tolerated, 51 diverges (500-char baseline) (0.2759ms)
-✔ length-delta floor dominates small baselines: 20 tolerated, 21 diverges (100-char baseline) (0.2689ms)
-✔ collapse boundary: exactly half is 'changed', one below is 'collapsed' (0.3094ms)
-✔ missing baseline viewport diverges (0.2706ms)
-✔ empty or null baseline diverges for every viewport (0.3331ms)
-✔ degenerate current verdict fails closed (0.5912ms)
-✔ multiple signals across viewports all accumulate (0.278ms)
-✔ baselineComparison round-trips a valid baseline (0.4492ms)
-✔ baselineComparison fails closed on malformed or wrong-shape baselines (1.221ms)
-✔ parseSmokeArgs defaults (0.5371ms)
-✔ parseSmokeArgs consumes --baseline without shifting positionals (0.3043ms)
-✔ parseSmokeArgs rejects a trailing --baseline flag (0.2549ms)
-✔ parseSmokeArgs supports the --baseline= form (0.2897ms)
-✔ parseSmokeArgs rejects unknown flags instead of treating them as positionals (0.2706ms)
-✔ parseSmokeArgs env fallback and flag precedence (0.2592ms)
-✔ derivedPaths handles .png, .PNG, and extensionless inputs (0.5803ms)
-✔ exitCodeFor: clean run exits 0 (0.3894ms)
-✔ exitCodeFor: errors in any single viewport exit 2 (0.246ms)
-✔ exitCodeFor: navigation failure in any viewport exits 1, beating errors (0.3682ms)
-✔ exitCodeFor: 4xx boundary and missing status (0.2833ms)
-✔ exitCodeFor: no viewport data is a failure (0.2515ms)
-✔ browser-smoke wires the guard and verdict helpers (2.1261ms)
-✔ browser-smoke file I/O only touches guarded paths (2.4688ms)
-✔ the flag predicate matches src/lib/auth (2.9479ms)
-✔ reads the value a live dev server resolved (0.782ms)
-✔ a server started without the flag reads as sign-in on (0.5022ms)
-✔ agreement passes (0.7814ms)
-✔ divergence fails in either direction (1.1988ms)
-✔ an unobservable dev server is indeterminate, not agreement (0.3441ms)
-✔ a dev server that cannot be reached probes as null (0.5649ms)
-✔ a server without the endpoint probes as null, not as agreement (0.7808ms)
-✔ only a divergence warns the smoke verdict (2.6425ms)
-✔ the build side resolves the template's shipped app-env (5.9796ms)
-﹣ the CLI reports rather than silently passing when run via a symlink (4.9187ms) # Windows does not permit this symlink in the current test environment
-✖ extractDiagnostics finds Vite/Rolldown source locations and error messages (11.2394ms)
-✔ extractDiagnostics deduplicates repeated diagnostics (0.9917ms)
-✔ summarizePhase records exit status and diagnostics (1.085ms)
-✔ summarizePhase preserves raw output for the final QA log (0.6318ms)
-✔ buildLog never crashes when a phase has no output or diagnostics (5.5722ms)
-✔ injects before </head> (12.9591ms)
-✔ injects the extensions script without a project id (3.0973ms)
-✔ injects project id on the script and meta when provided (2.1937ms)
-✔ does not duplicate grok:app_id (5.4682ms)
-✔ omits x:creator tags without both creator values (14.9171ms)
-✔ injects x:creator tags when both creator values are set (2.1266ms)
-✔ escapes x:creator values (0.3819ms)
-✔ does not duplicate x:creator tags (3.8998ms)
-✔ platform chrome overwrites share-card metas and always sets og:title (2.9494ms)
-✔ does not duplicate twitter:card or og:title (5.5701ms)
-✔ a baked site.image is treated as a custom card (3.1877ms)
-✔ baked identity does not need a workspace filesystem (2.969ms)
-✔ a public card file wins over a baked site without card=custom (4.2126ms)
-✔ public/og.png wins when jpg is absent (3.5149ms)
-✔ resolveOgCardAsset: disk file, then bake, then empty (placeholder) (6.3705ms)
-✔ snapshotOgIdentity stamps card=custom from a public card file (4.5052ms)
-✔ snapshotOgIdentity stamps banner from public/x-banner.jpg (5.3527ms)
-✔ emits x:game:image for a public host when site.banner is set (1.2366ms)
-✔ does not emit x:game:image without a public host or banner (1.3078ms)
-✔ site title Grok App is a real name, not a sentinel (0.7344ms)
-✔ published grok.me slug is still a title fallback (2.9072ms)
-✔ rejects Vercel system hosts as og:image origins (0.261ms)
-✔ published VITE_PUBLIC_HOSTNAME wins over request Host for og:image (2.0835ms)
-✔ vercel Host without a public hostname emits no og:image (0.6846ms)
-✔ emits og:image for a public host and prefers a custom card (6.1684ms)
-✔ placeholder og:image appends site.color when it is 6-digit hex (8.4174ms)
-✔ document title entities are not double-escaped on og:title (2.2349ms)
-✔ site.json title wins over the host slug (1.0391ms)
-✔ injects into documents with no head element (2.364ms)
-✔ streaming injector matches </HEAD> case-insensitively (4.2166ms)
-✔ does not duplicate the extensions script (4.5203ms)
-✔ is idempotent (3.8814ms)
-✔ uses the app name in the injected title tag (2.0661ms)
-✔ streaming injector handles </head> split across chunks (3.6101ms)
-✔ streaming injector passes post-head chunks through untouched (2.5002ms)
-✔ streaming injector falls back when no </head> is seen (3.6006ms)
-✔ detects install query (0.578ms)
-✔ filters non-document paths (0.7346ms)
-✔ strips install params from the app link (0.3774ms)
-✔ names the install page from host slug (0.2775ms)
-✔ rejects hosts that are not plain slugs (0.2375ms)
-✔ renders install page markup (1.9073ms)
-✔ escapes host-derived values in the install page (1.5009ms)
-✔ renders the manifest with the per-app name (0.482ms)
-✔ vite config keeps the nitro serverDir wiring (1.6138ms)
-✔ nitro middleware and its bundled assets exist (6.4633ms)
-✔ vite plugin bakes og identity as a virtual module (1.877ms)
-✔ _migrations keys on basename, not path (2.6723ms)
-✔ a file already applied from another directory does not re-apply (2.5511ms)
-✔ pending migrations are returned in name order (51.8452ms)
-✔ non-.sql entries are dropped (readdir also yields the auth/ directory) (0.9044ms)
-✔ the auth schema ships outside the globbed directory (1.1585ms)
-✔ this workspace's auth schema copy is byte-identical to its source (0.7118ms)
-✔ the copy check reads both files and catches an edit (20.9629ms)
-✔ parsePreviewArgs accepts the two actions (4.9465ms)
-✔ parsePreviewArgs rejects missing, unknown and extra arguments (1.035ms)
-✔ parsePid reads a pidfile and rejects junk (0.4463ms)
-✔ parsePgid reads the pgrp field past a comm containing spaces (0.5537ms)
-✔ parseListenerInodes picks LISTEN sockets on the wanted port only (0.804ms)
-✔ parseListenerInodes reads the tcp6 dump the same way (0.382ms)
-✔ looksLikePreviewProcess matches the npm wrapper and its vite child (1.083ms)
-✔ looksLikePreviewProcess spares the sibling scripts and re-used pids (0.5927ms)
-✔ previewOwners trusts port owners and dedupes the pidfile pid (0.4842ms)
-✔ previewOwners adds a pidfile pid whose command line is still the preview (1.0285ms)
-✔ previewOwners drops a stale pidfile pid re-used by another process (0.7004ms)
-✔ previewOwners drops a pidfile pid that no longer exists (0.7019ms)
-✔ previewOwners on a free port with no pidfile signals nothing (1.0422ms)
-✔ stopOutcome fails when a pid survives or the port is still held (0.6269ms)
-✔ stopOutcome reports a verified free port (0.4328ms)
-✔ stopOutcome fails on a listener whose owner cannot be attributed (0.3642ms)
-✔ terminatePids SIGTERMs live pids and skips dead ones (1.1681ms)
-✔ terminatePids escalates to SIGKILL when SIGTERM is ignored (0.7817ms)
-✔ terminatePids reports a pid that survives SIGKILL as stubborn (1.4335ms)
-✔ terminatePids on a free port signals nothing (1.0602ms)
-✔ preview: a successful sign-out clears the token, then redirects (6.9406ms)
-✔ preview: a rejected sign-out still clears the token and redirects (1.0651ms)
-✔ preview: a sign-out that throws synchronously still clears and redirects (0.6247ms)
-✔ preview: a sign-out that never settles clears and redirects once the wait expires (18.3073ms)
-✔ preview: no bearer means nothing to invalidate, so no request is made (0.9729ms)
-✔ preview: a stored bearer is still invalidated server-side (0.4475ms)
-✔ deployed: a confirmed sign-out clears the token, then redirects (0.5732ms)
-✔ deployed: a sign-out that never settles throws and does NOT redirect (24.2376ms)
-✔ deployed: a rejected sign-out throws and does NOT redirect (1.4287ms)
-✔ deployed: the timeout is distinguishable from a rejection (29.5668ms)
-✔ settleWithin reports the outcome and never rejects (31.2864ms)
-✔ settleWithin waits its full window, then gives up rather than hanging (2.5781ms)
-✔ pre-sign-in: the preview clear gives up at the preview bound (2.3637ms)
-✔ pre-sign-in: a deployed session gets the deployed window, not the preview one (1.6201ms)
-✔ pre-sign-in: a failed clear never blocks sign-in (0.7768ms)
-✔ pre-sign-in: the preview skips the request when there is no bearer (0.3868ms)
-✔ every sign-out bound comes from one rule (0.2104ms)
-✔ the defaults are bounded, and deployed waits longer than preview (0.6943ms)
-✔ keeps VITE_-prefixed string entries (4.8279ms)
-✔ drops non-VITE keys, non-string values and malformed documents (0.5516ms)
-✔ a missing app-env.json is a clean no-op (6.4428ms)
-✔ reads the app env from a workspace (5.8038ms)
-✔ an explicit process-env override wins over the file (0.5883ms)
-✔ the template ships auth off (1.9107ms)
-✔ vite loadEnv resolves the wrapped value (5.3473ms)
-✔ the wrapped command runs with the app env applied (326.0173ms)
-✔ the wrapped command sees an explicit override, not the file value (292.8032ms)
-✔ the wrapper propagates the command's exit code (226.8838ms)
-✔ a signal-killed command is never reported as success (191.1639ms)
-﹣ the CLI still runs when invoked through a symlinked path (2.8507ms) # Windows does not permit this symlink in the current test environment
-✔ parseWriteAtomicArgs needs exactly a staged file and a target (6.3321ms)
-✔ stagingError refuses a temp inside public/ and a no-op move (0.8007ms)
-✔ handOver replaces the target and clears the staged file (9.5222ms)
-✔ handOver creates a missing target directory (10.0797ms)
-✔ an interrupted pass leaves the target on its old bytes, temp-free (71.3456ms)
-✔ a failed hand-over creates no directory for the target it never wrote (3.6565ms)
-✔ a staged file on another filesystem is refused, not copied (7.3052ms)
-✔ cli: hands the file over, and refuses a temp staged in public/ (309.8302ms)
-✔ cli: relative paths follow the script's root, not the caller's cwd (161.0585ms)
-✔ every hand-over the og skill prints is one this script accepts (9.5638ms)
-✔ cli: a missing staged file fails without touching the target (127.6258ms)
+✔ grammar content audit passes, including compact constructor contracts (709.3548ms)
+✔ reviewed high-depth pages remain in their canonical content modules (13.6402ms)
+✔ non-canvas app with no custom card gets a soft BRAND NOTE (utility exception) (17.1368ms)
+✔ non-canvas app with a compliant card is silent (14.6783ms)
+✔ card file without site.json card=custom warns (14.7733ms)
+✔ card file with missing site.json warns for card=custom (20.2343ms)
+✔ card file with invalid site.json warns for card=custom (18.112ms)
+✔ oversized card warns for non-canvas apps too (19.1128ms)
+✔ canvas app with no card warns 'missing' and missing og:type (10.2539ms)
+✔ canvas card without type still warns for og:type (18.3708ms)
+✔ oversized card warns on the scraper budget (jpg and legacy png) (35.9994ms)
+✔ compliant game (custom card + site.json type + x-banner) is silent (14.8343ms)
+✔ __root.tsx og:type no longer satisfies the canvas gate (20.5328ms)
+✔ oversized x-banner warns on the same scraper budget as og.jpg (16.5462ms)
+✔ legacy png + site.json type still needs the X feed card (15.4328ms)
+✔ siteDeclaresOgTypeGame reads the site contract (0.3505ms)
+✔ a fresh og-pending marker silences the whole gate view (11.3745ms)
+✔ a stale og-pending marker is ignored and the warnings return (10.9905ms)
+✔ the marker goes stale on the clock, not on the file (11.5965ms)
+✔ no marker means nothing is in flight (7.4534ms)
+✔ parseBrandCheckArgs takes --game, --placeholder-ok and --root, and rejects the rest (0.9311ms)
+✔ cli: a game missing its card reports JSON and exits 1 (239.0323ms)
+✔ cli: a compliant game passes (200.4095ms)
+✔ cli: the task's own marker is reported, not honoured (199.8019ms)
+✔ cli: a bad argument fails with JSON on stderr (208.5867ms)
+✔ cli: a non-game with no card fails too — the pass exists to produce one (179.4868ms)
+✔ cli: --placeholder-ok is how a plain-utility pass reports no card as expected (285.6668ms)
+✔ cli: a non-game with a compliant card passes (146.9936ms)
+✔ SKILL.md and AGENTS.md name the marker path and bound this script uses (2.5354ms)
+✔ the sections that own the brand-task prohibition never affirm a wait (2.6927ms)
+✔ SKILL.md tells the pass to self-check with the flag this CLI accepts (1.9527ms)
+✔ normalizes whitespace before hashing (6.068ms)
+✔ nullish and blank body text normalize to the empty string (0.5281ms)
+✔ body text prefix is normalized and capped (0.4758ms)
+✔ identical runs do not diverge (4.071ms)
+✔ status change diverges (1.0401ms)
+✔ title change diverges (1.5162ms)
+✔ title comparison is skipped when either side lacks one (0.9274ms)
+✔ canvas disappearing diverges; canvas appearing does not (0.5874ms)
+✔ horizontal overflow appearing diverges; clearing does not (1.1561ms)
+✔ new console errors diverge (13.8772ms)
+✔ errors already present in the baseline do not re-diverge (1.8654ms)
+✔ body text collapse diverges (0.4263ms)
+✔ body text dropping to zero reports collapse (0.2796ms)
+✔ zero-length baseline reports growth via the hash branch, not collapse (0.3237ms)
+✔ hash mismatch with a trivial length delta and same page start is tolerated (0.197ms)
+✔ hash mismatch with a trivial length delta but changed page start diverges (0.232ms)
+✔ prefix check is skipped when either side lacks a prefix (0.3249ms)
+✔ length-delta tolerance boundary: 50 tolerated, 51 diverges (500-char baseline) (0.5003ms)
+✔ length-delta floor dominates small baselines: 20 tolerated, 21 diverges (100-char baseline) (0.3665ms)
+✔ collapse boundary: exactly half is 'changed', one below is 'collapsed' (0.3185ms)
+✔ missing baseline viewport diverges (0.2644ms)
+✔ empty or null baseline diverges for every viewport (0.5495ms)
+✔ degenerate current verdict fails closed (0.7902ms)
+✔ multiple signals across viewports all accumulate (0.3209ms)
+✔ baselineComparison round-trips a valid baseline (0.4694ms)
+✔ baselineComparison fails closed on malformed or wrong-shape baselines (0.9841ms)
+✔ parseSmokeArgs defaults (0.8005ms)
+✔ parseSmokeArgs consumes --baseline without shifting positionals (0.2837ms)
+✔ parseSmokeArgs rejects a trailing --baseline flag (0.2753ms)
+✔ parseSmokeArgs supports the --baseline= form (0.2397ms)
+✔ parseSmokeArgs rejects unknown flags instead of treating them as positionals (0.2472ms)
+✔ parseSmokeArgs env fallback and flag precedence (0.2572ms)
+✔ derivedPaths handles .png, .PNG, and extensionless inputs (0.5761ms)
+✔ exitCodeFor: clean run exits 0 (0.4026ms)
+✔ exitCodeFor: errors in any single viewport exit 2 (0.2608ms)
+✔ exitCodeFor: navigation failure in any viewport exits 1, beating errors (0.3696ms)
+✔ exitCodeFor: 4xx boundary and missing status (1.202ms)
+✔ exitCodeFor: no viewport data is a failure (0.465ms)
+✔ browser-smoke wires the guard and verdict helpers (7.4047ms)
+✔ browser-smoke file I/O only touches guarded paths (3.6415ms)
+✔ the flag predicate matches src/lib/auth (2.969ms)
+✔ reads the value a live dev server resolved (0.7659ms)
+✔ a server started without the flag reads as sign-in on (0.4164ms)
+✔ agreement passes (0.5756ms)
+✔ divergence fails in either direction (0.7028ms)
+✔ an unobservable dev server is indeterminate, not agreement (0.3059ms)
+✔ a dev server that cannot be reached probes as null (0.5014ms)
+✔ a server without the endpoint probes as null, not as agreement (0.8405ms)
+✔ only a divergence warns the smoke verdict (3.1852ms)
+✔ the build side resolves the template's shipped app-env (11.3903ms)
+﹣ the CLI reports rather than silently passing when run via a symlink (3.8774ms) # Windows does not permit this symlink in the current test environment
+✔ extractDiagnostics finds Vite/Rolldown source locations and error messages (10.1033ms)
+✔ extractDiagnostics deduplicates repeated diagnostics (0.7612ms)
+✔ summarizePhase records exit status and diagnostics (0.7119ms)
+✔ summarizePhase preserves raw output for the final QA log (0.649ms)
+✔ buildLog never crashes when a phase has no output or diagnostics (3.7813ms)
+✔ injects before </head> (19.4854ms)
+✔ injects the extensions script without a project id (3.2237ms)
+✔ injects project id on the script and meta when provided (3.06ms)
+✔ does not duplicate grok:app_id (7.344ms)
+✔ omits x:creator tags without both creator values (6.3533ms)
+✔ injects x:creator tags when both creator values are set (2.5224ms)
+✔ escapes x:creator values (0.3682ms)
+✔ does not duplicate x:creator tags (4.4075ms)
+✔ platform chrome overwrites share-card metas and always sets og:title (11.9533ms)
+✔ does not duplicate twitter:card or og:title (8.0904ms)
+✔ a baked site.image is treated as a custom card (4.4563ms)
+✔ baked identity does not need a workspace filesystem (3.2158ms)
+✔ a public card file wins over a baked site without card=custom (4.8978ms)
+✔ public/og.png wins when jpg is absent (4.9456ms)
+✔ resolveOgCardAsset: disk file, then bake, then empty (placeholder) (5.9164ms)
+✔ snapshotOgIdentity stamps card=custom from a public card file (3.6659ms)
+✔ snapshotOgIdentity stamps banner from public/x-banner.jpg (4.7405ms)
+✔ emits x:game:image for a public host when site.banner is set (1.0091ms)
+✔ does not emit x:game:image without a public host or banner (1.2657ms)
+✔ site title Grok App is a real name, not a sentinel (0.7518ms)
+✔ published grok.me slug is still a title fallback (2.9988ms)
+✔ rejects Vercel system hosts as og:image origins (0.3243ms)
+✔ published VITE_PUBLIC_HOSTNAME wins over request Host for og:image (3.9205ms)
+✔ vercel Host without a public hostname emits no og:image (0.8222ms)
+✔ emits og:image for a public host and prefers a custom card (6.9334ms)
+✔ placeholder og:image appends site.color when it is 6-digit hex (7.6417ms)
+✔ document title entities are not double-escaped on og:title (2.237ms)
+✔ site.json title wins over the host slug (0.7597ms)
+✔ injects into documents with no head element (2.5405ms)
+✔ streaming injector matches </HEAD> case-insensitively (3.6631ms)
+✔ does not duplicate the extensions script (4.1764ms)
+✔ is idempotent (4.1345ms)
+✔ uses the app name in the injected title tag (2.3373ms)
+✔ streaming injector handles </head> split across chunks (3.9295ms)
+✔ streaming injector passes post-head chunks through untouched (4.5845ms)
+✔ streaming injector falls back when no </head> is seen (6.1148ms)
+✔ detects install query (0.5613ms)
+✔ filters non-document paths (0.8828ms)
+✔ strips install params from the app link (0.3994ms)
+✔ names the install page from host slug (0.2453ms)
+✔ rejects hosts that are not plain slugs (0.2114ms)
+✔ renders install page markup (5.6105ms)
+✔ escapes host-derived values in the install page (7.2345ms)
+✔ renders the manifest with the per-app name (0.4444ms)
+✔ vite config keeps the nitro serverDir wiring (4.8667ms)
+✔ nitro middleware and its bundled assets exist (16.9068ms)
+✔ vite plugin bakes og identity as a virtual module (3.5726ms)
+✔ _migrations keys on basename, not path (3.0236ms)
+✔ a file already applied from another directory does not re-apply (2.6295ms)
+✔ pending migrations are returned in name order (48.962ms)
+✔ non-.sql entries are dropped (readdir also yields the auth/ directory) (0.4206ms)
+✔ the auth schema ships outside the globbed directory (1.5771ms)
+✔ this workspace's auth schema copy is byte-identical to its source (0.908ms)
+✔ the copy check reads both files and catches an edit (18.2132ms)
+✔ parsePreviewArgs accepts the two actions (6.6637ms)
+✔ parsePreviewArgs rejects missing, unknown and extra arguments (4.2664ms)
+✔ parsePid reads a pidfile and rejects junk (0.858ms)
+✔ parsePgid reads the pgrp field past a comm containing spaces (0.7062ms)
+✔ parseListenerInodes picks LISTEN sockets on the wanted port only (1.3776ms)
+✔ parseListenerInodes reads the tcp6 dump the same way (1.2763ms)
+✔ looksLikePreviewProcess matches the npm wrapper and its vite child (1.013ms)
+✔ looksLikePreviewProcess spares the sibling scripts and re-used pids (0.5549ms)
+✔ previewOwners trusts port owners and dedupes the pidfile pid (0.7261ms)
+✔ previewOwners adds a pidfile pid whose command line is still the preview (0.7309ms)
+✔ previewOwners drops a stale pidfile pid re-used by another process (0.5477ms)
+✔ previewOwners drops a pidfile pid that no longer exists (0.4995ms)
+✔ previewOwners on a free port with no pidfile signals nothing (0.4297ms)
+✔ stopOutcome fails when a pid survives or the port is still held (2.4033ms)
+✔ stopOutcome reports a verified free port (0.4777ms)
+✔ stopOutcome fails on a listener whose owner cannot be attributed (0.346ms)
+✔ terminatePids SIGTERMs live pids and skips dead ones (1.8592ms)
+✔ terminatePids escalates to SIGKILL when SIGTERM is ignored (1.5067ms)
+✔ terminatePids reports a pid that survives SIGKILL as stubborn (1.423ms)
+✔ terminatePids on a free port signals nothing (0.4576ms)
+✔ preview: a successful sign-out clears the token, then redirects (5.5509ms)
+✔ preview: a rejected sign-out still clears the token and redirects (0.738ms)
+✔ preview: a sign-out that throws synchronously still clears and redirects (0.5478ms)
+✔ preview: a sign-out that never settles clears and redirects once the wait expires (21.5735ms)
+✔ preview: no bearer means nothing to invalidate, so no request is made (0.7886ms)
+✔ preview: a stored bearer is still invalidated server-side (0.479ms)
+✔ deployed: a confirmed sign-out clears the token, then redirects (0.6659ms)
+✔ deployed: a sign-out that never settles throws and does NOT redirect (31.3172ms)
+✔ deployed: a rejected sign-out throws and does NOT redirect (1.2918ms)
+✔ deployed: the timeout is distinguishable from a rejection (25.1649ms)
+✔ settleWithin reports the outcome and never rejects (22.6806ms)
+✔ settleWithin waits its full window, then gives up rather than hanging (1.3934ms)
+✔ pre-sign-in: the preview clear gives up at the preview bound (3.4436ms)
+✔ pre-sign-in: a deployed session gets the deployed window, not the preview one (1.5956ms)
+✔ pre-sign-in: a failed clear never blocks sign-in (0.9496ms)
+✔ pre-sign-in: the preview skips the request when there is no bearer (0.2853ms)
+✔ every sign-out bound comes from one rule (0.2017ms)
+✔ the defaults are bounded, and deployed waits longer than preview (0.5728ms)
+✔ keeps VITE_-prefixed string entries (5.5931ms)
+✔ drops non-VITE keys, non-string values and malformed documents (0.5693ms)
+✔ a missing app-env.json is a clean no-op (2.3677ms)
+✔ reads the app env from a workspace (5.7438ms)
+✔ an explicit process-env override wins over the file (0.6163ms)
+✔ the template ships auth off (2.6089ms)
+✔ vite loadEnv resolves the wrapped value (7.0091ms)
+✔ the wrapped command runs with the app env applied (346.7201ms)
+✔ the wrapped command sees an explicit override, not the file value (344.554ms)
+✔ the wrapper propagates the command's exit code (264.2083ms)
+✔ a signal-killed command is never reported as success (236.1866ms)
+﹣ the CLI still runs when invoked through a symlinked path (3.4995ms) # Windows does not permit this symlink in the current test environment
+✔ parseWriteAtomicArgs needs exactly a staged file and a target (5.9065ms)
+✔ stagingError refuses a temp inside public/ and a no-op move (1.0212ms)
+✔ handOver replaces the target and clears the staged file (11.4242ms)
+✔ handOver creates a missing target directory (16.8845ms)
+✔ an interrupted pass leaves the target on its old bytes, temp-free (11.4196ms)
+✔ a failed hand-over creates no directory for the target it never wrote (4.8196ms)
+✔ a staged file on another filesystem is refused, not copied (9.6862ms)
+✔ cli: hands the file over, and refuses a temp staged in public/ (384.1303ms)
+✔ cli: relative paths follow the script's root, not the caller's cwd (158.0097ms)
+✔ every hand-over the og skill prints is one this script accepts (11.3742ms)
+✔ cli: a missing staged file fails without touching the target (148.1328ms)
 ℹ tests 202
 ℹ suites 0
-ℹ pass 199
-ℹ fail 1
+ℹ pass 200
+ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 2
 ℹ todo 0
-ℹ duration_ms 1795.283
-
-✖ failing tests:
-
-test at scripts\diagnose-build.test.mjs:5:1
-✖ extractDiagnostics finds Vite/Rolldown source locations and error messages (11.2394ms)
-  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
-  + actual - expected
-  
-    [
-      {
-        column: 3,
-        file: 'src/content/generated-pages.ts',
-        line: 2208,
-  +     message: 'during build:',
-  -     message: 'Expected `,` or `}` but found `string`',
-        severity: 'error'
-      }
-    ]
-  
-      at TestContext.<anonymous> (file:///F:/GitHub/Grammars/Portuguese%20Grammar/scripts/diagnose-build.test.mjs:12:10)
-      at Test.runInAsyncScope (node:async_hooks:227:14)
-      at Test.run (node:internal/test_runner/test:1382:25)
-      at Test.start (node:internal/test_runner/test:1242:17)
-      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
-    generatedMessage: true,
-    code: 'ERR_ASSERTION',
-    actual: [ { severity: 'error', file: 'src/content/generated-pages.ts', line: 2208, column: 3, message: 'during build:' } ],
-    expected: [ { severity: 'error', file: 'src/content/generated-pages.ts', line: 2208, column: 3, message: 'Expected `,` or `}` but found `string`' } ],
-    operator: 'deepStrictEqual',
-    diff: 'simple'
-  }
+ℹ duration_ms 2077.8194
+✔ extractDiagnostics finds Vite/Rolldown source locations and error messages (9.0156ms)
+✔ extractDiagnostics deduplicates repeated diagnostics (0.7069ms)
+✔ summarizePhase records exit status and diagnostics (0.7304ms)
+✔ summarizePhase preserves raw output for the final QA log (14.0267ms)
+✔ buildLog never crashes when a phase has no output or diagnostics (3.8645ms)
+▶ callTool failure memo
+  ✔ replays an identical failure within the memo window without refetching (11.9439ms)
+  ✔ keys by token identity so a reminted token shares the memo entry (3.3142ms)
+  ✔ sweeps expired entries on write so unique keys do not accumulate (5.7748ms)
+  ✔ never memoizes login-required 401s (3.6897ms)
+✔ callTool failure memo (28.1637ms)
+▶ callTool in the workspace preview vs deployed
+  ✔ returns pending (no loginRequired) when the preview has no token yet (3.0856ms)
+  ✔ returns a plain error (no sign-in CTA) when a deployed app has no token (1.0185ms)
+  ✔ treats a gate 401 in the preview as pending and parks the rejected token (2.8186ms)
+  ✔ keeps loginRequired for a gate 401 on a deployed app (2.197ms)
+✔ callTool in the workspace preview vs deployed (10.1144ms)
+▶ callTool
+  ✔ resolves ok:false for non-serializable args instead of rejecting (1.2526ms)
+✔ callTool (1.8327ms)
+▶ isLoginRequired
+  ✔ is true only for login-required failures (0.8296ms)
+✔ isLoginRequired (1.1001ms)
+▶ redirectToLoginIfRequired
+  ✔ no-ops when login is not required (1.2258ms)
+  ✔ navigates to the server-built loginUrl in the browser (0.7084ms)
+  ✔ opens a new tab instead of navigating when framed (0.462ms)
+  ✔ falls back to navigation when framed and the popup is blocked (2.033ms)
+  ✔ returns false when the result has no loginUrl (0.3461ms)
+  ✔ returns false on the server (no window) (0.4099ms)
+✔ redirectToLoginIfRequired (6.0667ms)
+▶ GoogleCalendarTools
+  ✔ does not expose a list_events name (0.4569ms)
+✔ GoogleCalendarTools (0.7397ms)
+▶ classifyCallToolError
+  ✔ returns null for successful results (0.8551ms)
+  ✔ classifies a pending preview token as pending before any other kind (0.5068ms)
+  ✔ classifies a deployed missing token as error, not a login CTA (0.447ms)
+  ✔ classifies gate loginRequired without a missing-token message as login (0.282ms)
+  ✔ classifies not_connected and failed_precondition (0.3893ms)
+  ✔ classifies scope_denied without claiming a missing grant (0.3171ms)
+  ✔ classifies access_denied (0.4223ms)
+  ✔ falls back to a generic error with the raw message (0.3942ms)
+✔ classifyCallToolError (4.6158ms)
+▶ readinessProbeDelayMs
+  ✔ backs off through the schedule and then holds the last delay (2.6036ms)
+  ✔ clamps a negative attempt to the first delay (0.3306ms)
+✔ readinessProbeDelayMs (5.7029ms)
+▶ readinessProbeExhausted
+  ✔ gives up only once the total wait budget has elapsed (0.3291ms)
+✔ readinessProbeExhausted (0.6273ms)
+▶ verifyGateIdentityToken
+  ✔ returns the identity for a valid token (31.4247ms)
+  ✔ omits optional claims as nulls (9.193ms)
+  ✔ rejects a wrong audience (4.1722ms)
+  ✔ rejects a wrong issuer (2.8058ms)
+  ✔ rejects an expired token (3.3453ms)
+  ✔ rejects a token without exp (3.5236ms)
+  ✔ rejects a token signed by a different key with the same kid (4.7685ms)
+  ✔ refetches the JWKS when the kid rotates (6.2592ms)
+✔ verifyGateIdentityToken (69.9854ms)
+▶ gateIdentityFromHeaders
+  ✔ verifies the header token end to end and fails closed without it (57.2546ms)
+  ✔ activates on a deployed-shaped request without GROK_GATE_ORIGIN (3.6559ms)
+  ✔ verifies a preview-audience token with no gate env vars via the loopback default (1.9352ms)
+  ✔ rejects a wrong-issuer token in the loopback default mode (2.8434ms)
+  ✔ verifies a preview-audience token when only GROK_GATE_ORIGIN is set (2.7018ms)
+  ✔ rejects a preview-audience token when GROK_PROJECT_ID is set (2.1669ms)
+  ✔ rejects an app-audience token in preview mode (2.4611ms)
+✔ gateIdentityFromHeaders (74.7495ms)
+▶ gateIdentityEnabled
+  ✔ is enabled by default with no gate env vars (0.4274ms)
+  ✔ is disabled when VITE_AUTH_ENABLED is false (0.3117ms)
+✔ gateIdentityEnabled (1.1302ms)
+▶ gateTokenAudience
+  ✔ pins app:<id> when GROK_PROJECT_ID is set, even alongside GROK_GATE_ORIGIN (0.3958ms)
+  ✔ pins preview when GROK_PROJECT_ID is unset (0.2806ms)
+✔ gateTokenAudience (0.9667ms)
+▶ gateIdentityUserInfo
+  ✔ falls back to a synthetic email and name for sub-only claims (0.3944ms)
+  ✔ keeps real claims, lowercasing the email and marking it verified (0.2522ms)
+✔ gateIdentityUserInfo (0.9343ms)
+▶ sessionBoundToGateIdentity
+  ✔ keeps the session when it is bound to the same gate sub (0.4125ms)
+  ✔ rotates when the session belongs to a different gate sub (0.2038ms)
+  ✔ rotates when the session user has no gate-bound account (0.2025ms)
+✔ sessionBoundToGateIdentity (1.1671ms)
+▶ resolveSignInGateState
+  ✔ is pending while the session check is in flight, user or not (1.3266ms)
+  ✔ is signed_in once a user is present (0.2558ms)
+  ✔ is signed_out only after the check resolved with no user (0.3016ms)
+✔ resolveSignInGateState (3.9746ms)
+ℹ tests 60
+ℹ suites 16
+ℹ pass 60
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2957.4683
 ```
 
 ## production Vite build
@@ -430,7 +498,7 @@ computing gzip size...
 .vercel/output/static/assets/catalog-DPHF24NG.js                                        132.78 kB │ gzip:  37.92 kB
 .vercel/output/static/assets/index-DWCqWmNl.js                                          698.13 kB │ gzip: 201.67 kB
 
-[32m✓ built in 2.75s[39m
+[32m✓ built in 2.69s[39m
 [36mvite v8.2.2 [32mbuilding ssr environment for production...[36m[39m
 transforming...
 ✓ 189 modules transformed.
@@ -549,7 +617,7 @@ node_modules/.nitro/vite/services/ssr/assets/moods-AcKaU88g.js                  
 node_modules/.nitro/vite/services/ssr/assets/catalog-B1mGBgST.js                                        125.94 kB │ gzip: 30.86 kB
 node_modules/.nitro/vite/services/ssr/assets/load-CITqD7dy.js                                           305.10 kB │ gzip: 73.33 kB
 
-[32m✓ built in 1.94s[39m
+[32m✓ built in 1.79s[39m
 
 [90m[[90mnitro[90m][39m [35m◐[39m Building [[35mNitro[39m] [2m(preset: [36mvercel[39m, compatibility: [36m2026-09-28[39m)[22m
 [90m[[90mnitro[90m][39m [32m✔[39m Generated public [36m.vercel/output/static[39m
@@ -686,7 +754,7 @@ computing gzip size...
 [90m[[90mnitro[90m][39m [32m✔[39m You can preview this build using [36mnpx vite preview[39m
 [90m[[90mnitro[90m][39m [32m✔[39m You can deploy this build using [36mnpx nitro deploy --prebuilt[39m
 
-(node:17728) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(node:1296) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
