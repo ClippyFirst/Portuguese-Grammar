@@ -1869,6 +1869,7 @@ Object.assign(SPECIAL, {
 });
 
 
+Object.assign(SPECIAL, {
   "ficar": {
     formulas: [{ pattern: "ficar + predicativo / localização", note: "ficar може описувати стан, що настає або зберігається, а також місцезнаходження; значення визначає конструкція." }],
     examples: [
