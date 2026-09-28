@@ -334,7 +334,7 @@ const generatedPagesSource = fs.readFileSync(
   "utf8",
 );
 const specialIds = new Set(
-  [...generatedPagesSource.matchAll(/^  "([^"]+)":\s*\{/gmu)].map((match) => match[1]),
+  [...generatedPagesSource.matchAll(/^ {2}"([^"]+)":\s*\{/gmu)].map((match) => match[1]),
 );
 const generatedGenericIds = [];
 const coverageModel = {
