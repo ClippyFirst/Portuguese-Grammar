@@ -86,7 +86,10 @@ function nodePhase(name, args) {
 }
 
 function shellInfo(command, args = []) {
-  try {\n    const executable = process.platform === "win32" && command === "npm" ? "npm.cmd" : command;\n    return execFileSync(executable, args, { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim();\n  }
+  try {
+    const executable = process.platform === "win32" && command === "npm" ? "npm.cmd" : command;
+    return execFileSync(executable, args, { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim();
+  }
   catch { return "unavailable"; }
 }
 
