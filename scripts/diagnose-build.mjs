@@ -33,10 +33,14 @@ export function extractDiagnostics(output) {
     const line = lines[i].trim();
     if (!line) continue;
 
-    const viteMessage = line.match(/^(?:\[.*?\]\s*)?(?:error(?: during build)?[: ]+)(.+)$/i);
-    if (viteMessage) {
+    const viteBuildHeader = line.match(/^(?:\[.*?\]\s*)?error\s+during\s+build\s*:\s*$/i);
+    const viteMessage = line.match(/^(?:\[.*?\]\s*)?error(?::|\s+)(.+)$/i);
+    if (viteBuildHeader) {
+      pendingMessage = null;
+      pendingSeverity = "error";
+    } else if (viteMessage) {
       pendingMessage = viteMessage[1].trim() || null;
-      pendingSeverity = /error/i.test(line) ? "error" : "warning";
+      pendingSeverity = "error";
     }
 
     const inline = line.match(/^(.+?\.(?:[cm]?[jt]sx?|vue|css|json))(?::|\()([0-9]+)(?::|,)([0-9]+)\)?(?::?\s*(?:error\s+[^:]+:\s*)?(.+))?$/i);
