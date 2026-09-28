@@ -1,7 +1,7 @@
 # Portuguese Grammar — comprehensive QA/build diagnostic
-Generated: 2026-09-28T13:53:02.930Z
+Generated: 2026-09-28T13:59:40.798Z
 Repository: https://github.com/ClippyFirst/Portuguese-Grammar.git
-HEAD: a27d7e4cd692904983e76779cb56922337aaa527
+HEAD: 66f9e284e4e4edd501411882b44ad53d7fdfe0f4
 Node: v24.19.0
 npm: unavailable
 Platform: win32 x64
@@ -9,12 +9,12 @@ Platform: win32 x64
 ## Summary: 1/6 phases passed; 5 failed; 0 parsed diagnostics
 
 ## Phase results
-- FAILED — content audit — exit=1 — 2 ms — 0 diagnostics
-- FAILED — typecheck — exit=1 — 0 ms — 0 diagnostics
-- FAILED — lint — exit=1 — 2 ms — 0 diagnostics
-- FAILED — tests — exit=1 — 0 ms — 0 diagnostics
-- PASSED — production Vite build — exit=0 — 6898 ms — 0 diagnostics
-- FAILED — database migration — exit=1 — 1 ms — 0 diagnostics
+- FAILED — content audit — exit=1 — 883 ms — 0 diagnostics
+- FAILED — typecheck — exit=1 — 916 ms — 0 diagnostics
+- FAILED — lint — exit=1 — 772 ms — 0 diagnostics
+- FAILED — tests — exit=1 — 803 ms — 0 diagnostics
+- PASSED — production Vite build — exit=0 — 9880 ms — 0 diagnostics
+- FAILED — database migration — exit=1 — 760 ms — 0 diagnostics
 
 ## Parsed diagnostics
 No file/line diagnostics parsed.
@@ -24,7 +24,10 @@ Command: npm run audit:content
 Status: failed; exit=1; signal=none
 
 ```text
-(no output)
+Unknown command: ""run""
+
+To see a list of supported npm commands, run:
+  npm help
 ```
 
 ## typecheck
@@ -32,7 +35,10 @@ Command: npm run typecheck
 Status: failed; exit=1; signal=none
 
 ```text
-(no output)
+Unknown command: ""run""
+
+To see a list of supported npm commands, run:
+  npm help
 ```
 
 ## lint
@@ -40,7 +46,10 @@ Command: npm run lint
 Status: failed; exit=1; signal=none
 
 ```text
-(no output)
+Unknown command: ""run""
+
+To see a list of supported npm commands, run:
+  npm help
 ```
 
 ## tests
@@ -48,7 +57,13 @@ Command: npm test
 Status: failed; exit=1; signal=none
 
 ```text
-(no output)
+Unknown command: ""test""
+
+
+Did you mean this?
+  npm test # Test a package
+To see a list of supported npm commands, run:
+  npm help
 ```
 
 ## production Vite build
@@ -175,7 +190,7 @@ computing gzip size...
 .vercel/output/static/assets/catalog-DPHF24NG.js                                        132.78 kB │ gzip:  37.92 kB
 .vercel/output/static/assets/index-DWCqWmNl.js                                          698.13 kB │ gzip: 201.67 kB
 
-[32m✓ built in 1.78s[39m
+[32m✓ built in 2.20s[39m
 [36mvite v8.2.2 [32mbuilding ssr environment for production...[36m[39m
 transforming...
 ✓ 189 modules transformed.
@@ -294,7 +309,7 @@ node_modules/.nitro/vite/services/ssr/assets/moods-AcKaU88g.js                  
 node_modules/.nitro/vite/services/ssr/assets/catalog-B1mGBgST.js                                        125.94 kB │ gzip: 30.86 kB
 node_modules/.nitro/vite/services/ssr/assets/load-CITqD7dy.js                                           305.10 kB │ gzip: 73.33 kB
 
-[32m✓ built in 1.54s[39m
+[32m✓ built in 1.53s[39m
 
 [90m[[90mnitro[90m][39m [35m◐[39m Building [[35mNitro[39m] [2m(preset: [36mvercel[39m, compatibility: [36m2026-09-28[39m)[22m
 [90m[[90mnitro[90m][39m [32m✔[39m Generated public [36m.vercel/output/static[39m
@@ -425,13 +440,13 @@ computing gzip size...
 .vercel/output/functions/__server.func/_ssr/router-CLBIl4mD.mjs                                         353.03 kB │ gzip:  85.50 kB
 .vercel/output/functions/__server.func/_libs/@tanstack/react-router+[...].mjs                           678.12 kB │ gzip: 143.22 kB
 
-[32m✓ built in 1.05s[39m
+[32m✓ built in 883ms[39m
 [36mℹ[39m Generated [36m.vercel/output/nitro.json[39m
 
 [90m[[90mnitro[90m][39m [32m✔[39m You can preview this build using [36mnpx vite preview[39m
 [90m[[90mnitro[90m][39m [32m✔[39m You can deploy this build using [36mnpx nitro deploy --prebuilt[39m
 
-(node:9204) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(node:20196) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -440,6 +455,9 @@ Command: npm run db:migrate
 Status: failed; exit=1; signal=none
 
 ```text
-(no output)
+Unknown command: ""run""
+
+To see a list of supported npm commands, run:
+  npm help
 ```
 
