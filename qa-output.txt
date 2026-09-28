@@ -1,44 +1,48 @@
 # Portuguese Grammar — comprehensive QA/build diagnostic
-Generated: 2026-09-28T13:59:40.798Z
+Generated: 2026-09-28T14:07:53.719Z
 Repository: https://github.com/ClippyFirst/Portuguese-Grammar.git
-HEAD: 66f9e284e4e4edd501411882b44ad53d7fdfe0f4
+HEAD: 0b6dab6e52064e44a035c87d299d039901236007
 Node: v24.19.0
 npm: unavailable
 Platform: win32 x64
 
-## Summary: 1/6 phases passed; 5 failed; 0 parsed diagnostics
+## Summary: 4/6 phases passed; 2 failed; 4 parsed diagnostics
 
 ## Phase results
-- FAILED — content audit — exit=1 — 883 ms — 0 diagnostics
-- FAILED — typecheck — exit=1 — 916 ms — 0 diagnostics
-- FAILED — lint — exit=1 — 772 ms — 0 diagnostics
-- FAILED — tests — exit=1 — 803 ms — 0 diagnostics
-- PASSED — production Vite build — exit=0 — 9880 ms — 0 diagnostics
-- FAILED — database migration — exit=1 — 760 ms — 0 diagnostics
+- PASSED — content audit — exit=0 — 959 ms — 0 diagnostics
+- PASSED — typecheck — exit=0 — 8755 ms — 0 diagnostics
+- FAILED — lint — exit=1 — 8897 ms — 0 diagnostics
+- FAILED — tests — exit=1 — 2270 ms — 4 diagnostics
+- PASSED — production Vite build — exit=0 — 7663 ms — 0 diagnostics
+- PASSED — database migration — exit=0 — 1176 ms — 0 diagnostics
 
 ## Parsed diagnostics
-No file/line diagnostics parsed.
+1. [warning] tests — test at scripts\audit-grammar-content.test.mjs:16:1 — Build diagnostic
+2. [error] tests — at TestContext.<anonymous> (file:///F:/GitHub/Grammars/Portuguese%20Grammar/scripts/audit-grammar-content.test.mjs:61:14 — AssertionError [ERR_ASSERTION]: src/content/pages/subordinate-production-4.ts: reduced-clauses
+3. [warning] tests — test at scripts\diagnose-build.test.mjs:5:1 — Build diagnostic
+4. [warning] tests — at TestContext.<anonymous> (file:///F:/GitHub/Grammars/Portuguese%20Grammar/scripts/diagnose-build.test.mjs:12:10 — Build diagnostic
 
 ## content audit
 Command: npm run audit:content
-Status: failed; exit=1; signal=none
+Status: passed; exit=0; signal=none
 
 ```text
-Unknown command: ""run""
 
-To see a list of supported npm commands, run:
-  npm help
+> audit:content
+> node scripts/audit-grammar-content.mjs
+
+Coverage model: dedicated=345 generated-special=0 generated-generic=0 regional=7
+Grammar content audit passed: 83 modules, 352 pages, 352 catalog entries, 352 unique category/slug paths.
 ```
 
 ## typecheck
 Command: npm run typecheck
-Status: failed; exit=1; signal=none
+Status: passed; exit=0; signal=none
 
 ```text
-Unknown command: ""run""
 
-To see a list of supported npm commands, run:
-  npm help
+> typecheck
+> tsc --noEmit
 ```
 
 ## lint
@@ -46,10 +50,16 @@ Command: npm run lint
 Status: failed; exit=1; signal=none
 
 ```text
-Unknown command: ""run""
 
-To see a list of supported npm commands, run:
-  npm help
+> lint
+> eslint .
+
+
+F:\GitHub\Grammars\Portuguese Grammar\scripts\audit-grammar-content.mjs
+  337:37  error  Spaces are hard to count. Use {2}  no-regex-spaces
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
 ```
 
 ## tests
@@ -57,13 +67,271 @@ Command: npm test
 Status: failed; exit=1; signal=none
 
 ```text
-Unknown command: ""test""
 
+> test
+> node scripts/run-node-tests.mjs && node --experimental-strip-types --test scripts/diagnose-build.test.mjs src/lib/app-data/app-data.test.ts src/lib/app-data/readiness-schedule.test.ts src/lib/auth/gate-identity.test.ts src/lib/auth/sign-in-gate.test.ts
 
-Did you mean this?
-  npm test # Test a package
-To see a list of supported npm commands, run:
-  npm help
+Running 11 script test file(s) with Node's test runner.
+✔ grammar content audit passes, including compact constructor contracts (465.598ms)
+✖ reviewed high-depth pages remain in their canonical content modules (12.7341ms)
+✔ non-canvas app with no custom card gets a soft BRAND NOTE (utility exception) (16.0088ms)
+✔ non-canvas app with a compliant card is silent (18.5071ms)
+✔ card file without site.json card=custom warns (15.0081ms)
+✔ card file with missing site.json warns for card=custom (7.5874ms)
+✔ card file with invalid site.json warns for card=custom (20.518ms)
+✔ oversized card warns for non-canvas apps too (15.0002ms)
+✔ canvas app with no card warns 'missing' and missing og:type (12.4428ms)
+✔ canvas card without type still warns for og:type (11.4402ms)
+✔ oversized card warns on the scraper budget (jpg and legacy png) (28.4432ms)
+✔ compliant game (custom card + site.json type + x-banner) is silent (16.1928ms)
+✔ __root.tsx og:type no longer satisfies the canvas gate (17.7945ms)
+✔ oversized x-banner warns on the same scraper budget as og.jpg (20.1058ms)
+✔ legacy png + site.json type still needs the X feed card (14.1121ms)
+✔ siteDeclaresOgTypeGame reads the site contract (0.3963ms)
+✔ a fresh og-pending marker silences the whole gate view (8.0679ms)
+✔ a stale og-pending marker is ignored and the warnings return (13.0116ms)
+✔ the marker goes stale on the clock, not on the file (10.436ms)
+✔ no marker means nothing is in flight (8.8139ms)
+✔ parseBrandCheckArgs takes --game, --placeholder-ok and --root, and rejects the rest (0.9129ms)
+✔ cli: a game missing its card reports JSON and exits 1 (178.2161ms)
+✔ cli: a compliant game passes (123.8424ms)
+✔ cli: the task's own marker is reported, not honoured (118.7085ms)
+✔ cli: a bad argument fails with JSON on stderr (116.354ms)
+✔ cli: a non-game with no card fails too — the pass exists to produce one (123.4516ms)
+✔ cli: --placeholder-ok is how a plain-utility pass reports no card as expected (225.9176ms)
+✔ cli: a non-game with a compliant card passes (102.2383ms)
+✔ SKILL.md and AGENTS.md name the marker path and bound this script uses (1.4339ms)
+✔ the sections that own the brand-task prohibition never affirm a wait (2.0082ms)
+✔ SKILL.md tells the pass to self-check with the flag this CLI accepts (1.0369ms)
+✔ normalizes whitespace before hashing (4.5101ms)
+✔ nullish and blank body text normalize to the empty string (0.4436ms)
+✔ body text prefix is normalized and capped (0.3885ms)
+✔ identical runs do not diverge (2.1101ms)
+✔ status change diverges (0.6849ms)
+✔ title change diverges (0.4018ms)
+✔ title comparison is skipped when either side lacks one (0.4092ms)
+✔ canvas disappearing diverges; canvas appearing does not (0.5059ms)
+✔ horizontal overflow appearing diverges; clearing does not (0.4941ms)
+✔ new console errors diverge (0.5251ms)
+✔ errors already present in the baseline do not re-diverge (0.3435ms)
+✔ body text collapse diverges (0.3195ms)
+✔ body text dropping to zero reports collapse (0.3404ms)
+✔ zero-length baseline reports growth via the hash branch, not collapse (0.2832ms)
+✔ hash mismatch with a trivial length delta and same page start is tolerated (0.2165ms)
+✔ hash mismatch with a trivial length delta but changed page start diverges (0.2307ms)
+✔ prefix check is skipped when either side lacks a prefix (0.3139ms)
+✔ length-delta tolerance boundary: 50 tolerated, 51 diverges (500-char baseline) (0.2372ms)
+✔ length-delta floor dominates small baselines: 20 tolerated, 21 diverges (100-char baseline) (0.2133ms)
+✔ collapse boundary: exactly half is 'changed', one below is 'collapsed' (0.2448ms)
+✔ missing baseline viewport diverges (0.2385ms)
+✔ empty or null baseline diverges for every viewport (0.2695ms)
+✔ degenerate current verdict fails closed (1.0787ms)
+✔ multiple signals across viewports all accumulate (0.2952ms)
+✔ baselineComparison round-trips a valid baseline (0.6109ms)
+✔ baselineComparison fails closed on malformed or wrong-shape baselines (0.9221ms)
+✔ parseSmokeArgs defaults (0.4274ms)
+✔ parseSmokeArgs consumes --baseline without shifting positionals (0.3218ms)
+✔ parseSmokeArgs rejects a trailing --baseline flag (0.2661ms)
+✔ parseSmokeArgs supports the --baseline= form (0.2481ms)
+✔ parseSmokeArgs rejects unknown flags instead of treating them as positionals (0.775ms)
+✔ parseSmokeArgs env fallback and flag precedence (0.2782ms)
+✔ derivedPaths handles .png, .PNG, and extensionless inputs (0.4996ms)
+✔ exitCodeFor: clean run exits 0 (0.3301ms)
+✔ exitCodeFor: errors in any single viewport exit 2 (0.2655ms)
+✔ exitCodeFor: navigation failure in any viewport exits 1, beating errors (0.3366ms)
+✔ exitCodeFor: 4xx boundary and missing status (0.2958ms)
+✔ exitCodeFor: no viewport data is a failure (0.2698ms)
+✔ browser-smoke wires the guard and verdict helpers (4.6527ms)
+✔ browser-smoke file I/O only touches guarded paths (3.0752ms)
+✔ the flag predicate matches src/lib/auth (2.5314ms)
+✔ reads the value a live dev server resolved (0.6778ms)
+✔ a server started without the flag reads as sign-in on (0.393ms)
+✔ agreement passes (0.454ms)
+✔ divergence fails in either direction (0.6001ms)
+✔ an unobservable dev server is indeterminate, not agreement (0.3606ms)
+✔ a dev server that cannot be reached probes as null (0.4513ms)
+✔ a server without the endpoint probes as null, not as agreement (0.7106ms)
+✔ only a divergence warns the smoke verdict (3.4712ms)
+✔ the build side resolves the template's shipped app-env (11.0589ms)
+﹣ the CLI reports rather than silently passing when run via a symlink (5.0722ms) # Windows does not permit this symlink in the current test environment
+✖ extractDiagnostics finds Vite/Rolldown source locations and error messages (8.1916ms)
+✔ extractDiagnostics deduplicates repeated diagnostics (1.0568ms)
+✔ summarizePhase records exit status and diagnostics (0.6626ms)
+✔ summarizePhase preserves raw output for the final QA log (0.4622ms)
+✔ buildLog never crashes when a phase has no output or diagnostics (7.3974ms)
+✔ injects before </head> (10.7537ms)
+✔ injects the extensions script without a project id (4.2995ms)
+✔ injects project id on the script and meta when provided (2.2979ms)
+✔ does not duplicate grok:app_id (5.3163ms)
+✔ omits x:creator tags without both creator values (3.727ms)
+✔ injects x:creator tags when both creator values are set (2.6397ms)
+✔ escapes x:creator values (0.4612ms)
+✔ does not duplicate x:creator tags (4.9241ms)
+✔ platform chrome overwrites share-card metas and always sets og:title (3.2516ms)
+✔ does not duplicate twitter:card or og:title (3.9023ms)
+✔ a baked site.image is treated as a custom card (2.6974ms)
+✔ baked identity does not need a workspace filesystem (2.3665ms)
+✔ a public card file wins over a baked site without card=custom (3.5416ms)
+✔ public/og.png wins when jpg is absent (4.8393ms)
+✔ resolveOgCardAsset: disk file, then bake, then empty (placeholder) (7.8731ms)
+✔ snapshotOgIdentity stamps card=custom from a public card file (3.6048ms)
+✔ snapshotOgIdentity stamps banner from public/x-banner.jpg (5.1263ms)
+✔ emits x:game:image for a public host when site.banner is set (0.927ms)
+✔ does not emit x:game:image without a public host or banner (1.3168ms)
+✔ site title Grok App is a real name, not a sentinel (0.7005ms)
+✔ published grok.me slug is still a title fallback (3.0595ms)
+✔ rejects Vercel system hosts as og:image origins (0.2792ms)
+✔ published VITE_PUBLIC_HOSTNAME wins over request Host for og:image (1.3891ms)
+✔ vercel Host without a public hostname emits no og:image (0.6323ms)
+✔ emits og:image for a public host and prefers a custom card (5.8102ms)
+✔ placeholder og:image appends site.color when it is 6-digit hex (7.5876ms)
+✔ document title entities are not double-escaped on og:title (3.4479ms)
+✔ site.json title wins over the host slug (0.7611ms)
+✔ injects into documents with no head element (2.4078ms)
+✔ streaming injector matches </HEAD> case-insensitively (3.0314ms)
+✔ does not duplicate the extensions script (6.9779ms)
+✔ is idempotent (3.8486ms)
+✔ uses the app name in the injected title tag (1.9992ms)
+✔ streaming injector handles </head> split across chunks (2.7563ms)
+✔ streaming injector passes post-head chunks through untouched (2.6328ms)
+✔ streaming injector falls back when no </head> is seen (4.0881ms)
+✔ detects install query (0.5735ms)
+✔ filters non-document paths (0.7148ms)
+✔ strips install params from the app link (0.357ms)
+✔ names the install page from host slug (0.2231ms)
+✔ rejects hosts that are not plain slugs (0.1889ms)
+✔ renders install page markup (1.8921ms)
+✔ escapes host-derived values in the install page (1.5471ms)
+✔ renders the manifest with the per-app name (0.4513ms)
+✔ vite config keeps the nitro serverDir wiring (2.2798ms)
+✔ nitro middleware and its bundled assets exist (9.0404ms)
+✔ vite plugin bakes og identity as a virtual module (4.7962ms)
+✔ _migrations keys on basename, not path (2.8908ms)
+✔ a file already applied from another directory does not re-apply (1.8846ms)
+✔ pending migrations are returned in name order (41.6823ms)
+✔ non-.sql entries are dropped (readdir also yields the auth/ directory) (0.4216ms)
+✔ the auth schema ships outside the globbed directory (1.799ms)
+✔ this workspace's auth schema copy is byte-identical to its source (0.7239ms)
+✔ the copy check reads both files and catches an edit (18.6794ms)
+✔ parsePreviewArgs accepts the two actions (5.7273ms)
+✔ parsePreviewArgs rejects missing, unknown and extra arguments (0.7755ms)
+✔ parsePid reads a pidfile and rejects junk (0.5555ms)
+✔ parsePgid reads the pgrp field past a comm containing spaces (0.6689ms)
+✔ parseListenerInodes picks LISTEN sockets on the wanted port only (0.9845ms)
+✔ parseListenerInodes reads the tcp6 dump the same way (0.4667ms)
+✔ looksLikePreviewProcess matches the npm wrapper and its vite child (1.2259ms)
+✔ looksLikePreviewProcess spares the sibling scripts and re-used pids (0.5029ms)
+✔ previewOwners trusts port owners and dedupes the pidfile pid (0.5037ms)
+✔ previewOwners adds a pidfile pid whose command line is still the preview (0.6661ms)
+✔ previewOwners drops a stale pidfile pid re-used by another process (0.87ms)
+✔ previewOwners drops a pidfile pid that no longer exists (0.3132ms)
+✔ previewOwners on a free port with no pidfile signals nothing (0.2468ms)
+✔ stopOutcome fails when a pid survives or the port is still held (2.1394ms)
+✔ stopOutcome reports a verified free port (0.416ms)
+✔ stopOutcome fails on a listener whose owner cannot be attributed (0.3019ms)
+✔ terminatePids SIGTERMs live pids and skips dead ones (0.9573ms)
+✔ terminatePids escalates to SIGKILL when SIGTERM is ignored (0.9245ms)
+✔ terminatePids reports a pid that survives SIGKILL as stubborn (0.8673ms)
+✔ terminatePids on a free port signals nothing (0.3371ms)
+✔ preview: a successful sign-out clears the token, then redirects (6.4427ms)
+✔ preview: a rejected sign-out still clears the token and redirects (0.6917ms)
+✔ preview: a sign-out that throws synchronously still clears and redirects (0.4976ms)
+✔ preview: a sign-out that never settles clears and redirects once the wait expires (24.844ms)
+✔ preview: no bearer means nothing to invalidate, so no request is made (0.5751ms)
+✔ preview: a stored bearer is still invalidated server-side (0.3662ms)
+✔ deployed: a confirmed sign-out clears the token, then redirects (0.424ms)
+✔ deployed: a sign-out that never settles throws and does NOT redirect (21.4258ms)
+✔ deployed: a rejected sign-out throws and does NOT redirect (0.7456ms)
+✔ deployed: the timeout is distinguishable from a rejection (29.4028ms)
+✔ settleWithin reports the outcome and never rejects (31.6503ms)
+✔ settleWithin waits its full window, then gives up rather than hanging (1.4911ms)
+✔ pre-sign-in: the preview clear gives up at the preview bound (1.1426ms)
+✔ pre-sign-in: a deployed session gets the deployed window, not the preview one (1.2637ms)
+✔ pre-sign-in: a failed clear never blocks sign-in (0.7014ms)
+✔ pre-sign-in: the preview skips the request when there is no bearer (0.2539ms)
+✔ every sign-out bound comes from one rule (0.1731ms)
+✔ the defaults are bounded, and deployed waits longer than preview (0.3974ms)
+✔ keeps VITE_-prefixed string entries (4.384ms)
+✔ drops non-VITE keys, non-string values and malformed documents (0.5146ms)
+✔ a missing app-env.json is a clean no-op (3.077ms)
+✔ reads the app env from a workspace (5.0428ms)
+✔ an explicit process-env override wins over the file (0.6855ms)
+✔ the template ships auth off (5.6159ms)
+✔ vite loadEnv resolves the wrapped value (4.6533ms)
+✔ the wrapped command runs with the app env applied (244.9911ms)
+✔ the wrapped command sees an explicit override, not the file value (185.5701ms)
+✔ the wrapper propagates the command's exit code (193.2153ms)
+✔ a signal-killed command is never reported as success (185.8212ms)
+﹣ the CLI still runs when invoked through a symlinked path (3.7633ms) # Windows does not permit this symlink in the current test environment
+✔ parseWriteAtomicArgs needs exactly a staged file and a target (4.2794ms)
+✔ stagingError refuses a temp inside public/ and a no-op move (0.6265ms)
+✔ handOver replaces the target and clears the staged file (8.311ms)
+✔ handOver creates a missing target directory (9.3983ms)
+✔ an interrupted pass leaves the target on its old bytes, temp-free (8.4803ms)
+✔ a failed hand-over creates no directory for the target it never wrote (2.8505ms)
+✔ a staged file on another filesystem is refused, not copied (6.331ms)
+✔ cli: hands the file over, and refuses a temp staged in public/ (222.496ms)
+✔ cli: relative paths follow the script's root, not the caller's cwd (112.8443ms)
+✔ every hand-over the og skill prints is one this script accepts (7.2063ms)
+✔ cli: a missing staged file fails without touching the target (115.0678ms)
+ℹ tests 202
+ℹ suites 0
+ℹ pass 198
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 2
+ℹ todo 0
+ℹ duration_ms 1498.1445
+
+✖ failing tests:
+
+test at scripts\audit-grammar-content.test.mjs:16:1
+✖ reviewed high-depth pages remain in their canonical content modules (12.7341ms)
+  AssertionError [ERR_ASSERTION]: src/content/pages/subordinate-production-4.ts: reduced-clauses
+      at TestContext.<anonymous> (file:///F:/GitHub/Grammars/Portuguese%20Grammar/scripts/audit-grammar-content.test.mjs:61:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: `import type { GrammarPage } from "../types";\r\nimport { ex, mistake, page } from "../helpers";\r\n\r\nconst G2="https://gulbenkian.pt/publications/gramatica-do-portugues-vol-ii/";\r\nconst CAM="https://www.instituto-camoes.pt/activity/centro-virtual/referencial-camoes-ple";\r\n\r\nexport const pages: GrammarPage[]=[\r\npage({id:"conformative-clauses",slug:"conformative",category:"subordinate",titleUk:"Відповідні (конформативні) підрядні",titlePt:"Orações conformativas",titleEn:"Conformative clauses",summary:"Підрядні конструкції, що показують відповідність джерелу, правилу, домовленості або способу.",aliases:["конформативні підрядні","conformative clauses","orações conformativas","conforme","segundo"],related:["causal-clauses","comparative-clauses","modal-clauses","subordination-and-coordination"],status:"draft",origin:"handwritten",depth:"high",ukrainianContrast:"high",intro:"Конформативна підрядна показує, що ситуація відповідає певному джерелу, правилу, інструкції, домовленості або способу. Типові засоби — conforme, segundo, como та близькі моделі. Важливо не плутати conformidade з причинністю: відповідність правилу не є причиною події. Так само como багатозначне, тому клас конструкції визначається всім реченням, а не одним словом.",definition:"Conformative clause — залежна конструкція, яка подає зміст як такий, що узгоджується з джерелом інформації, нормою, домовленістю, способом або описаною моделлю.",uses:[{title:"Відповідність джерелу",body:"Підрядна може посилатися на документ, повідомлення, прогноз або чиєсь твердження.",examples:[ex("Conforme o relatório indica, os custos diminuíram.","Згідно зі звітом, витрати зменшилися.",{purpose:"production"}),ex("Segundo dizem, o projeto começa em outubro.","Як кажуть, проєкт починається в жовтні.",{purpose:"comprehension"})]},{title:"Правило або домовленість",body:"Конструкція задає нормативну чи організаційну рамку.",examples:[ex("Fizemos tudo conforme estava previsto.","Ми зробили все так, як було передбачено.",{purpose:"production"})]},{title:"Спосіб як модель",body:"Como/conforme можуть показувати, за яким зразком виконується дія.",examples:[ex("Organiza o trabalho conforme combinámos.","Організуй роботу так, як ми домовилися.",{purpose:"contrast"})]}],examples:[ex("Conforme foi anunciado, a reunião será amanhã.","Як було оголошено, зустріч буде завтра.",{purpose:"production"}),ex("Segundo o contrato, o pagamento deve ser feito até sexta-feira.","Згідно з договором, оплату треба здійснити до п'ятниці.",{purpose:"comprehension"}),ex("Tudo aconteceu como previsto.","Усе сталося так, як було передбачено.",{purpose:"contrast"}),ex("Agimos conforme as instruções recebidas.","Ми діяли відповідно до отриманих інструкцій.",{purpose:"production"})],mistakes:[mistake("визначати como лише за перекладом «як»","аналізувати зв'язок між двома ситуаціями","Como може бути порівняльним, причинним, часовим, конформативним та іншим засобом.","predicted-l1-transfer","high"),mistake("плутати conforme з porque","перевіряти, чи йдеться про джерело/норму, а не причину","Conformidade означає відповідність; причинність пояснює підставу події.","predicted-l1-transfer","high"),mistake("вважати segundo часовим маркером","перевіряти значення «згідно з / за словами»","У відповідній конструкції segundo вводить джерело або критерій.","predicted-l1-transfer","medium")],ukrainian:"Українські «згідно з», «відповідно до», «як зазначено», «так, як» передають різні реалізації conformidade. Важливо відрізняти відповідність від причини та порівняння.",regional:"Conforme, segundo та пов'язані моделі є загальнопортугальськими. PT-BR/PT-PT можуть відрізнятися частотністю окремих формул і регістром.",sources:[{label:"Fundação Calouste Gulbenkian — Gramática do Português, Vol. II",url:G2},{label:"Camões — Referencial Camões PLE",url:CAM}]}),\r\npage({id:"proportional-clauses",slug:"proportional",category:"subordinate",titleUk:"Пропорційні підрядні",titlePt:"Orações proporcionais",titleEn:"Proportional clauses",summary:"Конструкції, що виражають корельовану зміну двох ситуацій, величин або ступенів.",aliases:["пропорційні підрядні","proportional clauses","orações proporcionais","à medida que","quanto mais"],related:["comparative-clauses","temporal-clauses","consecutive-clauses","adverb-scope"],status:"draft",origin:"handwritten",depth:"high",ukrainianContrast:"high",intro:"Пропорційна конструкція описує не просто порівняння, а залежну зміну двох величин або ситуацій. Типові моделі — à medida que та quanto mais..., mais.... Українські «чим..., тим...» і «у міру того як» добре показують функцію, але португальська конструкція має власну синтаксичну організацію.",definition:"Proportional clause — залежна конструкція, у якій зміна однієї ситуації корелює зі зміною іншої.",uses:[{title:"Паралельна зміна",body:"À medida que показує розвиток двох ситуацій у взаємозв'язку.",examples:[ex("À medida que o tempo passava, ficava mais tranquilo.","У міру того як минав час, він ставав спокійнішим.",{purpose:"production"})]},{title:"Кореляція ступенів",body:"Quanto mais/menos... mais/menos... створює двочленну шкалу.",examples:[ex("Quanto mais estudas, mais compreendes.","Чим більше ти вчишся, тим більше розумієш.",{purpose:"contrast"})]},{title:"Обернена залежність",body:"Одна величина може зростати, а інша — зменшуватися.",examples:[ex("Quanto mais avançava a noite, menos pessoas havia na rua.","Чим далі просувалася ніч, тим менше людей було на вулиці.",{purpose:"comprehension"})]}],examples:[ex("À medida que aprendia, ganhava confiança.","У міру того як він/вона навчався/навчалася, він/вона набував/набувала впевненості.",{purpose:"production"}),ex("Quanto mais praticas, melhor escreves.","Чим більше практикуєшся, тим краще пишеш.",{purpose:"production"}),ex("Quanto menos dormimos, mais cansados ficamos.","Чим менше ми спимо, тим більше втомлюємося.",{purpose:"contrast"}),ex("À proporção que a procura aumentava, os preços subiam.","У міру зростання попиту ціни підвищувалися.",{purpose:"comprehension"})],mistakes:[mistake("називати будь-яке mais... mais... звичайним comparativo","перевіряти, чи є дві взаємопов'язані зміни","Proportional описує кореляцію, а не лише зіставлення об'єктів.","editorial","high"),mistake("перекладати quanto окремо як «скільки»","аналізувати всю корелятивну пару","У quanto mais... mais... значення виникає з усієї конструкції.","predicted-l1-transfer","high"),mistake("вважати à medida que простим синонімом quando","перевіряти, чи важлива саме паралельна зміна","À medida que підкреслює розвиток/пропорцію, а не лише момент.","editorial","medium")],ukrainian:"Українські «чим..., тим...» і «у міру того як» майже безпосередньо підказують функцію. Але proportional — окремий тип зв'язку, навіть коли переклад нагадує часове речення.",regional:"Основні моделі спільні для PT-BR і PT-PT. Відрізнятися може частотність книжних сполук та конкретних конекторів.",sources:[{label:"Fundação Calouste Gulbenkian — Gramática do Português, Vol. II",url:G2},{label:"Camões — Referencial Camões PLE",url:CAM}]}),\r\npage({id:"modal-clauses",slug:"modal",category:"subordinate",titleUk:"Модальні підрядні",titlePt:"Orações modais",titleEn:"Modal clauses",summary:"Конструкції, що описують спосіб або манеру перебігу ситуації.",aliases:["модальні підрядні","modal clauses","orações modais","como","sem que"],related:["conformative-clauses","temporal-clauses","comparative-clauses","gerundial-reduced-clauses"],status:"draft",origin:"handwritten",depth:"high",ukrainianContrast:"high",intro:"Модальна підрядна в цьому синтаксичному значенні описує спосіб, у який відбувається ситуація: «так, як...». Її не слід змішувати з широким поняттям modality — можливістю, необхідністю чи бажанням. Типовим конектором є como, але його багатозначність робить контекст критично важливим.",definition:"Modal clause — залежна конструкція, яка характеризує спосіб або манеру реалізації ситуації головної частини.",uses:[{title:"Спосіб дії",body:"Como може показувати, у який спосіб відбувається дія.",examples:[ex("Faz como te expliquei.","Зроби так, як я тобі пояснив/пояснила.",{purpose:"production"})]},{title:"Модель організації",body:"Підрядна описує спосіб, за яким організовано процес.",examples:[ex("Organizou os dados como o professor pediu.","Він/вона організував/організувала дані так, як попросив викладач.",{purpose:"comprehension"})]},{title:"Відсутність супровідної дії",body:"Sem que може виражати ситуацію, яка не відбулася разом із головною.",examples:[ex("Saiu sem que ninguém percebesse.","Він вийшов так, що ніхто цього не помітив.",{purpose:"contrast"})]}],examples:[ex("Resolve o problema como quiseres.","Розв'яжи проблему так, як хочеш.",{purpose:"production"}),ex("Tudo aconteceu como tínhamos previsto.","Усе сталося так, як ми передбачали.",{purpose:"comprehension"}),ex("Entrou sem que eu o visse.","Він увійшов так, що я його не побачив/побачила.",{purpose:"contrast"}),ex("Explicou o assunto de modo que todos pudessem compreender.","Він пояснив тему так, щоб усі могли зрозуміти.",{purpose:"production"})],mistakes:[mistake("називати кожне como модальним","визначати семантичний зв'язок","Como має також часові, причинні, порівняльні та конформативні вживання.","predicted-l1-transfer","high"),mistake("плутати modal clause з poder/dever","розрізняти спосіб дії та можливість/необхідність","Це різні рівні опису: manner проти modal status.","editorial","high"),mistake("читати sem que як просте заперечення","аналізувати відношення супровідної ситуації до головної","Sem que формує окрему залежну конструкцію.","editorial","medium")],ukrainian:"Українські «так, як», «так, щоб», «без того щоб» можуть передавати модальні відношення. Не варто перекладати кожне como однаково.",regional:"Основні модальні конструкції спільні. Частотність окремих сполук може залежати від регістру й різновиду.",sources:[{label:"Fundação Calouste Gulbenkian — Gramática do Português, Vol. II",url:G2},{label:"Camões — Referencial Camões PLE",url:CAM}]}),\r\npage({id:"locative-clauses",slug:"locative",`... 15724 more characters,
+    expected: /id: "reduced-clauses"/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at scripts\diagnose-build.test.mjs:5:1
+✖ extractDiagnostics finds Vite/Rolldown source locations and error messages (8.1916ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      {
+        column: 3,
+        file: 'src/content/generated-pages.ts',
+        line: 2208,
+  +     message: 'during build:',
+  +     severity: 'warning'
+  -     message: 'Expected `,` or `}` but found `string`',
+  -     severity: 'error'
+      }
+    ]
+  
+      at TestContext.<anonymous> (file:///F:/GitHub/Grammars/Portuguese%20Grammar/scripts/diagnose-build.test.mjs:12:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ { severity: 'warning', file: 'src/content/generated-pages.ts', line: 2208, column: 3, message: 'during build:' } ],
+    expected: [ { severity: 'error', file: 'src/content/generated-pages.ts', line: 2208, column: 3, message: 'Expected `,` or `}` but found `string`' } ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
 ```
 
 ## production Vite build
@@ -190,7 +458,7 @@ computing gzip size...
 .vercel/output/static/assets/catalog-DPHF24NG.js                                        132.78 kB │ gzip:  37.92 kB
 .vercel/output/static/assets/index-DWCqWmNl.js                                          698.13 kB │ gzip: 201.67 kB
 
-[32m✓ built in 2.20s[39m
+[32m✓ built in 2.11s[39m
 [36mvite v8.2.2 [32mbuilding ssr environment for production...[36m[39m
 transforming...
 ✓ 189 modules transformed.
@@ -309,7 +577,7 @@ node_modules/.nitro/vite/services/ssr/assets/moods-AcKaU88g.js                  
 node_modules/.nitro/vite/services/ssr/assets/catalog-B1mGBgST.js                                        125.94 kB │ gzip: 30.86 kB
 node_modules/.nitro/vite/services/ssr/assets/load-CITqD7dy.js                                           305.10 kB │ gzip: 73.33 kB
 
-[32m✓ built in 1.53s[39m
+[32m✓ built in 1.43s[39m
 
 [90m[[90mnitro[90m][39m [35m◐[39m Building [[35mNitro[39m] [2m(preset: [36mvercel[39m, compatibility: [36m2026-09-28[39m)[22m
 [90m[[90mnitro[90m][39m [32m✔[39m Generated public [36m.vercel/output/static[39m
@@ -440,24 +708,25 @@ computing gzip size...
 .vercel/output/functions/__server.func/_ssr/router-CLBIl4mD.mjs                                         353.03 kB │ gzip:  85.50 kB
 .vercel/output/functions/__server.func/_libs/@tanstack/react-router+[...].mjs                           678.12 kB │ gzip: 143.22 kB
 
-[32m✓ built in 883ms[39m
+[32m✓ built in 1.05s[39m
 [36mℹ[39m Generated [36m.vercel/output/nitro.json[39m
 
 [90m[[90mnitro[90m][39m [32m✔[39m You can preview this build using [36mnpx vite preview[39m
 [90m[[90mnitro[90m][39m [32m✔[39m You can deploy this build using [36mnpx nitro deploy --prebuilt[39m
 
-(node:20196) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(node:24852) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
 ## database migration
 Command: npm run db:migrate
-Status: failed; exit=1; signal=none
+Status: passed; exit=0; signal=none
 
 ```text
-Unknown command: ""run""
 
-To see a list of supported npm commands, run:
-  npm help
+> db:migrate
+> node scripts/migrate.mjs
+
+[migrate] DATABASE_URL not set — skipping (the PGLite fallback migrates itself).
 ```
 
