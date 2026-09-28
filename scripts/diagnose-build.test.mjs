@@ -34,8 +34,7 @@ test("summarizePhase records exit status and diagnostics", () => {
     command: "node vite build",
     code: 1,
     signal: null,
-    output: "Expected `:` but found Identifier
-src/content/generated-pages.ts:1962:7",
+    output: ["Expected `:` but found Identifier", "src/content/generated-pages.ts:1962:7"].join(String.fromCharCode(10)),
     durationMs: 1234,
   });
   assert.equal(result.status, "failed");
