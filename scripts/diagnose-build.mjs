@@ -131,6 +131,7 @@ export function main() {
     npmPhase("content audit", ["run", "audit:content"]),
     npmPhase("typecheck", ["run", "typecheck"]),
     npmPhase("lint", ["run", "lint"]),
+    npmPhase("tests", ["test"]),
     nodePhase("production Vite build", ["scripts/with-app-env.mjs", "vite", "build"]),
     npmPhase("database migration", ["run", "db:migrate"]),
   ];
