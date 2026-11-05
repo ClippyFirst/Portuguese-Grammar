@@ -599,11 +599,11 @@ export const pages: GrammarPage[] = [
           ex("Quero que sejas feliz. (не *que fores)", "Хочу, щоб ти був щасливий."),
         ],
       },
-    ],
       {
         title: "Відкрита майбутня умова, час і відносна характеристика",
         body: "Futuro do conjuntivo не означає «майбутній час» сам по собі. Він з'являється в конструкціях, де майбутня ситуація ще не подана як здійснений факт: умови з `se/caso`, часові сполучники `quando/assim que/logo que` та деякі відносні конструкції з невизначеним майбутнім референтом. У головній частині час і спосіб визначаються окремо.",
-        examples: [
+        ],
+    examples: [
           ex("Se tiveres tempo, telefona-me.", "Якщо матимеш час, зателефонуй мені.", { purpose: "production" }),
           ex("Quando terminares o trabalho, envia-mo.", "Коли закінчиш роботу, надішли її мені.", { purpose: "production" }),
           ex("Quem chegar primeiro abre a porta.", "Хто прийде першим, той відчиняє двері.", { purpose: "comprehension" }),
